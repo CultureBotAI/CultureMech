@@ -1,0 +1,5158 @@
+# Source and formulation review: annwoodia_medium (CultureMech:001495)
+
+- Review: 20261021T162014Z-culturemech-001495-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T16:17:49Z
+- Finished UTC: 2026-10-21T16:20:14Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact DSMZ 389 identifies the ANNWOODIA recipe, but the generated target flattens A/B/C/D and the trace stock. Both maintained owners only partly repaired the trace topology. Stock concentrations, receiving amounts and stage pH are conflated; ammonium heptamolybdate has an incompatible mapping. Current primary amounts are available, while the asserted historical stock-volume basis remains unresolved.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 281; batch 029 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-eight task batches contain 280 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 283 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001495 | data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml | generated | annwoodia_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001495 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001495 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/281/strict.tsv |
+| validate-terms | passed | True | CultureMech:001495 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001495 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001495 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required source assembly/denominator clarification | unavailable | True | CultureMech:001495 | Required authentication of the persisted provider claim that trace stock was prepared to 1000 mL and that the receiving dose is 10 mL/L remains unavailable. Current primary states 1000 mL water plus unquantified titration and four nominal receiving volumes, not a measured final stock/medium volume; both current exact API attempts failed 503. Current source batch quantities and the confirmed structural defects are fully assessed. Optional KOMODO detail failure alone does not cause partial completion. |
+| Exact source content access: mediadive389api | unavailable | False | CultureMech:001495 | Retained exact mediadive389api access result 503; no failed response is treated as formulation or historical absence evidence. |
+| Exact source content access: mediadive389api_retry | unavailable | False | CultureMech:001495 | Retained exact mediadive389api_retry access result 503; no failed response is treated as formulation or historical absence evidence. |
+| Exact source content access: komodo389detail | unavailable | False | CultureMech:001495 | Retained exact komodo389detail access result 403; no failed response is treated as formulation or historical absence evidence. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001495.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001495.
+
+28 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Na2HPO4 x 2 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "79",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "79",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "79",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Solution A",
+      "source_mass_g": 7.9,
+      "source_water_input_ml": 100,
+      "finished_stage_volume_ml": null,
+      "independently_verified_transferred_mass_g": null,
+      "final_medium_g_per_l": null
+    },
+    "rationale": "Restore the literal mass in its source stage. The local rate corresponds approximately to division by the stage water input, not a direct final-medium concentration. The source calls for the stated A/B/D volumes; retain this assembly without treating water input as a measured finished stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution A table",
+        "exact_source_quote": "Na2HPO4 x 2 H2O 7.90 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "KH2PO4",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Solution A",
+      "source_mass_g": 1.5,
+      "source_water_input_ml": 100,
+      "finished_stage_volume_ml": null,
+      "independently_verified_transferred_mass_g": null,
+      "final_medium_g_per_l": null
+    },
+    "rationale": "Restore the literal mass in its source stage. The local rate corresponds approximately to division by the stage water input, not a direct final-medium concentration. The source calls for the stated A/B/D volumes; retain this assembly without treating water input as a measured finished stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution A table",
+        "exact_source_quote": "KH2PO4 1.50 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "NH4Cl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.45977",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.45977",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.45977",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Solution B",
+      "source_mass_g": 0.4,
+      "source_water_input_ml": 870,
+      "finished_stage_volume_ml": null,
+      "independently_verified_transferred_mass_g": null,
+      "final_medium_g_per_l": null
+    },
+    "rationale": "Restore the literal mass in its source stage. The local rate corresponds approximately to division by the stage water input, not a direct final-medium concentration. The source calls for the stated A/B/D volumes; retain this assembly without treating water input as a measured finished stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution B table",
+        "exact_source_quote": "NH4Cl 0.40 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "MgSO4 x 7 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.114943",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.114943",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.114943",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Solution B",
+      "source_mass_g": 0.1,
+      "source_water_input_ml": 870,
+      "finished_stage_volume_ml": null,
+      "independently_verified_transferred_mass_g": null,
+      "final_medium_g_per_l": null
+    },
+    "rationale": "Restore the literal mass in its source stage. The local rate corresponds approximately to division by the stage water input, not a direct final-medium concentration. The source calls for the stated A/B/D volumes; retain this assembly without treating water input as a measured finished stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution B table",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Agar",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "17.2414",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "17.2414",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "17.2414",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Solution B",
+      "source_mass_g": 15,
+      "source_water_input_ml": 870,
+      "finished_stage_volume_ml": null,
+      "independently_verified_transferred_mass_g": null,
+      "final_medium_g_per_l": null
+    },
+    "rationale": "Restore the literal mass in its source stage. The local rate corresponds approximately to division by the stage water input, not a direct final-medium concentration. The source calls for the stated A/B/D volumes; retain this assembly without treating water input as a measured finished stock volume. Agar is explicitly conditional on the solid branch.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution B table",
+        "exact_source_quote": "Agar, for solid medium 15.00 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Na2S2O3 x 5 H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "250",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "250",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "250",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Solution D",
+      "source_mass_g": 5,
+      "source_water_input_ml": 20,
+      "finished_stage_volume_ml": null,
+      "independently_verified_transferred_mass_g": null,
+      "final_medium_g_per_l": null
+    },
+    "rationale": "Restore the literal mass in its source stage. The local rate corresponds approximately to division by the stage water input, not a direct final-medium concentration. The source calls for the stated A/B/D volumes; retain this assembly without treating water input as a measured finished stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution D table",
+        "exact_source_quote": "Na2S2O3 x 5 H2O 5.00 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Na2-EDTA in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "50",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "50",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "50",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 50,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "Na2-EDTA 50.00 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "ZnSO4 x 7 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "11",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions[0].composition[0].concentration",
+        "stored": {
+          "value": "11",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions[0].composition[0].concentration",
+        "stored": {
+          "value": "11",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 11,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "ZnSO4 x 7 H2O 11.00 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "CaCl2 x 2 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "7.34",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "7.34",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "7.34",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 7.34,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "CaCl2 x 2 H2O 7.34 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "MnCl2 x 4 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions[0].composition[1].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions[0].composition[1].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 2.5,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "MnCl2 x 4 H2O 2.50 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "CoCl2 x 6 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 0.5,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.50 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "(NH4)6Mo7O24 x 4 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 0.5,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "(NH4)6Mo7O24 x 4 H2O 0.50 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "FeSO4 x 7 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions[0].composition[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions[0].composition[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 5,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "FeSO4 x 7 H2O 5.00 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "CuSO4 x 5 H2O in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 0.2,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.20 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "NaOH in trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "11",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "11",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "11",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace-element stock, used as Solution C",
+      "source_mass_g": 11,
+      "water_input_ml": 1000,
+      "additional_titrant_volume": null,
+      "finished_stock_volume_ml": null,
+      "receiving_dose_ml": 10
+    },
+    "rationale": "The mass belongs to the trace stock, not the main medium. Three maintained-owner constituents are already nested, but their asserted g/L basis still relies on an unauthenticated finished stock volume. The current primary lists 1000 mL water plus unquantified titration; retain batch masses without inferring stock or final-medium g/L.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Pages 1–2 Trace element solution table",
+        "exact_source_quote": "NaOH 11.00 g",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Solution A receiving volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_volume_ml": 100,
+      "stage": "Solution A"
+    },
+    "rationale": "Represent the explicit receiving volume separately from each stage composition. The four nominal inputs total 1000 mL; this is a recipe assembly sum, not an independently measured final physical volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 main assembly table",
+        "exact_source_quote": "Solution A 100.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Solution B receiving volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_volume_ml": 870,
+      "stage": "Solution B"
+    },
+    "rationale": "Represent the explicit receiving volume separately from each stage composition. The four nominal inputs total 1000 mL; this is a recipe assembly sum, not an independently measured final physical volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 main assembly table",
+        "exact_source_quote": "Solution B 870.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Solution C receiving volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_volume_ml": 10,
+      "stage": "Solution C"
+    },
+    "rationale": "Represent the explicit receiving volume separately from each stage composition. The four nominal inputs total 1000 mL; this is a recipe assembly sum, not an independently measured final physical volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 main assembly table",
+        "exact_source_quote": "Solution C 10.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Solution D receiving volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_volume_ml": 20,
+      "stage": "Solution D"
+    },
+    "rationale": "Represent the explicit receiving volume separately from each stage composition. The four nominal inputs total 1000 mL; this is a recipe assembly sum, not an independently measured final physical volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 main assembly table",
+        "exact_source_quote": "Solution D 20.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Trace stock used as Solution C",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "ML_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "ML_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_dose_ml": 10,
+      "stored_owner_ml_per_l": 10,
+      "verified_final_volume_basis": false
+    },
+    "rationale": "The maintained owners contain an addition rate, but the exact primary states a 10 mL assembly input. Preserve that literal dose and keep the historical provider denominator claim separate; the target lacks the stock entirely.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution C table",
+        "exact_source_quote": "Trace element solution 10.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "A water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "water_input_ml": 100,
+      "final_volume_ml": null
+    },
+    "rationale": "Add the missing solvent input in its own stage. Do not sum these waters into a direct final-medium ingredient or infer final volume from solvent input.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Solution A water table row",
+        "exact_source_quote": "Distilled water 100.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "B water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "B",
+      "water_input_ml": 870,
+      "final_volume_ml": null
+    },
+    "rationale": "Add the missing solvent input in its own stage. Do not sum these waters into a direct final-medium ingredient or infer final volume from solvent input.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Solution B water table row",
+        "exact_source_quote": "Distilled water 870.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "D water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "D",
+      "water_input_ml": 20,
+      "final_volume_ml": null
+    },
+    "rationale": "Add the missing solvent input in its own stage. Do not sum these waters into a direct final-medium ingredient or infer final volume from solvent input.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Solution D water table row",
+        "exact_source_quote": "Distilled water 20.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Trace water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace",
+      "water_input_ml": 1000,
+      "final_volume_ml": null
+    },
+    "rationale": "Add the missing solvent input in its own stage. Do not sum these waters into a direct final-medium ingredient or infer final volume from solvent input.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Solution trace water table row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Solution A pH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.6,
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.6,
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.6,
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust to pH 7.6.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust to pH 7.6.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "pH": 7.6,
+      "main_final_pH": null
+    },
+    "rationale": "The source pH belongs to Solution A. Root ph_value and the unscoped preparation sentence must not assert a complete-medium endpoint.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 Solution A, after its water row",
+        "exact_source_quote": "Adjust to pH 7.6.",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Trace-stock staged pH and base strength",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds. Adjust pH of final solution to 6.0 with NaOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds. Adjust pH of final solution to 6.0 with NaOH.",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "trace stock",
+      "initial_pH": 7,
+      "initial_base_normality": 2,
+      "final_stock_pH": 6,
+      "base_doses": null
+    },
+    "rationale": "Retain the literal sequence and stated NaOH reagents without chemically rewriting the source. Its final solution is the trace stock, not the complete medium. Neither owner stock note supplies the primary sequence or authenticates the declared prepared volume.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 2 trace-stock preparation",
+        "exact_source_quote": "Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other\ncompounds. Adjust pH of final solution to 6.0 with NaOH.",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Unquantified titrant doses",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            },
+            "preparation_notes": "Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition and volume from MediaDive (#150)."
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "solutions",
+        "stored": [
+          {
+            "preferred_term": "Trace element solution",
+            "composition": [
+              {
+                "preferred_term": "ZnSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "11",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:32312",
+                  "label": "zinc sulfate heptahydrate"
+                }
+              },
+              {
+                "preferred_term": "MnCl2 x 4 H2O",
+                "term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                },
+                "concentration": {
+                  "value": "2.5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:86368",
+                  "label": "manganese(II) chloride tetrahydrate"
+                }
+              },
+              {
+                "preferred_term": "FeSO4 x 7 H2O",
+                "term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                },
+                "concentration": {
+                  "value": "5",
+                  "unit": "G_PER_L"
+                },
+                "mediaingredientmech_chebi_term": {
+                  "id": "CHEBI:75836",
+                  "label": "iron(2+) sulfate heptahydrate"
+                }
+              }
+            ],
+            "preparation_notes": "Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive recipe, identified by this record reproducing that medium's composition exactly (15/15 shared compounds at identical values) despite the upstream rename to 'ANNWOODIA MEDIUM' (#262).",
+            "concentration": {
+              "value": "10",
+              "unit": "ML_PER_L"
+            }
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "initial_2N_NaOH_dose_ml": null,
+      "later_NaOH_dose_ml": null
+    },
+    "rationale": "Explicit pH endpoints and base identity do not specify titrant volumes; no fixed amount or finished-stock-volume inference is supported.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 2 trace-stock preparation",
+        "exact_source_quote": "Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other\ncompounds. Adjust pH of final solution to 6.0 with NaOH.",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Stage-specific sterilization and unquantified cycle",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Autoclave solutions A, B and C and filter sterilize solution D. To complete the medium combine sterile solutions when cool.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Autoclave solutions A, B and C and filter sterilize solution D. To complete the medium combine sterile solutions when cool.",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "autoclave_stages": [
+        "A",
+        "B",
+        "C"
+      ],
+      "filter_stage": "D",
+      "combine": "when cool",
+      "temperature": null,
+      "duration": null
+    },
+    "rationale": "Preserve the target/DSMZ-owner existing instruction with evidence; add it to the KOMODO owner. No temperature or duration is printed, so do not invent a cycle.",
+    "source_snippets": [
+      {
+        "source_key": "dsmz389",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf",
+        "source_locator": "Page 1 main preparation",
+        "exact_source_quote": "Autoclave solutions A, B and C and filter sterilize solution D. To complete the medium\ncombine sterile solutions when cool.",
+        "snapshot_sha256": "154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b",
+        "parsed_text_sha256": "7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba",
+        "accessed_at": "2026-10-21T15:56:58.368239Z"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:001495.
+
+15 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 15/15 primary and 14/15 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 15: primary 100.00%; secondary 93.33%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:001495.
+
+24 timestamp instances inspected; 2 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession, stable owners and duplicate relation
+
+identity: supported. Targets: CultureMech:001495.
+
+DSM389 and the exact KOMODO389 catalog row support the two named source owners and their accession correspondence. SOURCE_DUPLICATE relationships resolve to exact stable IDs and paths. Identical copied ingredient signatures do not establish scientific correctness or authenticate the historical stock denominator. No organism identifier or growth claim follows from the renamed medium.
+
+### Ingredient and stock evidence placement
+
+evidence: concern. Targets: CultureMech:001495.
+
+All target and owner ingredient amounts lack attached claim-level source evidence. Current exact primary supports stage-specific masses and volumes, not the flattened rates. Later owner history asserts MediaDive stock volume and dose without preserved matching raw response in this bound set; both current attempts returned 503. This is an unresolved historical quantity basis, not proof the old provider statement was false.
+
+### Exact molybdate stoichiometry and EDTA specificity
+
+grounding: concern. Targets: CultureMech:001495.
+
+The source (NH4)6Mo7O24·4H2O is not CHEBI:91249, whose OLS composition is ammonium orthomolybdate with a 2:1 ammonium/molybdate relation. Source Na2-EDTA leaves hydration unqualified while CHEBI:64734 explicitly says anhydrous. Preserve the source masses; neither a valid label nor the current secondary snapshot resolves these supplied-form claims.
+
+### Preparation and conditions remain stage-specific
+
+completeness: concern. Targets: CultureMech:001495.
+
+Target and DSMZ owner retain the main sterilization instruction, but the KOMODO owner omits it. Solution A pH 7.6 and trace-stock pH/2 N base instructions sit at main root; partial owner stock notes instead assert a historical volume basis. Restore all stages and the literal sequence without inventing final medium pH, cycle or titrant dose.
+
+### Conditional physical state and composition scope
+
+scope: concern. Targets: CultureMech:001495.
+
+The source describes an inorganic formulation with agar only for the solid branch. SOLID_AGAR is compatible with that selected branch but does not encode the alternative liquid branch; DEFINED annotations must state whether they concern the inorganic base or the agar-containing recipe. No undefined nutrient is inferred solely from a salt or solvent, and no growth evidence is inferred from the catalog aerobic field or generic application.
+
+### Current writers and maintained input follow-up
+
+provenance: concern. Targets: CultureMech:001495.
+
+Current importer separates first-solution ingredients from later stock additions but collects preparation from multiple sections. Current nesting guards can skip already structured records; the two owners retain only three nested trace components. Composition matching and promotion history do not authenticate all source stages or measured volumes. Current code is not historical replay. Correct both maintained owners and explicit source scope before separately authorized regeneration; preserve append-only history.
+
+## Findings
+
+### f1: Main and stock stages are collapsed into direct concentrations
+
+blocker / open / confirmed; issue key: culturemech.001495.stock-stage-collapse.
+
+The generated target has 15 direct stock-derived rates. Both maintained owners move only Zn/Mn/Fe into an incomplete trace stock while six other trace constituents remain direct. A/B/D rates, water inputs and receiving volumes are not correctly scoped.
+
+### f2: Heptamolybdate has an incompatible chemical mapping
+
+major / open / confirmed; issue key: culturemech.001495.molybdate-form.
+
+The source ammonium heptamolybdate tetrahydrate is mapped to ammonium orthomolybdate CHEBI:91249 in all layers. This changes stoichiometry, not only hydration. EDTA anhydrous specificity remains separately unverified.
+
+### f3: Stock pH and preparation are attributed to the whole medium
+
+major / open / confirmed; issue key: culturemech.001495.stage-ph-preparation.
+
+Root pH 7.6 belongs to Solution A; the trace-stock sequence is also unscoped at main root. The KOMODO owner lacks the primary main sterilization procedure.
+
+### f4: Conditional agar is not represented as an explicit branch
+
+minor / open / confirmed; issue key: culturemech.001495.branch-scope.
+
+Agar is explicitly optional for solid medium, while physical state and composition annotations do not distinguish the defined inorganic base from the selected agar-containing branch.
+
+### f5: KOMODO history contains malformed and timezone-naive timestamps
+
+minor / open / confirmed; issue key: culturemech.001495.history-shape.
+
+Historical KOMODO import/enrichment timestamps retain malformed .fZ and timezone-naive shapes. The later volume promotion is a provenance assertion rather than independent primary evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore A/B/C/D and all nine trace solutes with exact source masses, solvent inputs and assembly volumes in both owners. Correct the partial nesting rather than merely copying it to the target. Preserve the unresolved historical final-volume basis and attach claim-level evidence before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify a source-compatible heptamolybdate identifier without guessing; independently assess any secondary mapping. Resolve or qualify EDTA specificity while retaining literal masses and source forms.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Relocate stage-specific pH/base instructions and add the missing KOMODO preparation. Retain the stated autoclave/filter/cooling order without inventing duration, temperature or a final medium pH.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Retain the solid option and explicitly scope alternative liquid/solid forms and composition annotations; do not delete the source agar or infer a new biological application.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve old events; append a dated clarification with exact evidence when curation is authorized, and address future writer formatting separately.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/annwoodia_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch029/281/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/281/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml:1:id: CultureMech:001495<br>./data/normalized_yaml/bacterial/annwoodia_medium.yaml:1:id: CultureMech:001495<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/281/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 20 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/281/evidence-context-original.json; Complete target and maintained owner; source and identifier search contexts | context_only | Whole fresh target and owner read; all frozen local-record objects equal the fresh inspected YAML. Source interpretations are independently checked against actual bound raw/text bytes. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf; Pages 1–2, complete A/B/C/D formula and trace-element subsection | supports | Exact primary supplies four separately prepared solutions, receiving volumes and the complete nine-solute trace stock. Water inputs and stage-specific pH do not establish measured final volumes. The self-contained trace subsection is attributed to medium 333; no other medium 333 content transfers. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact MediaInfo389 row and table header | supports | KOMODO389 THIOBACILLUS AQUAESULIS MEDIUM maps to DSM389. This authenticates accession provenance only; its aerobic column and historical signature match do not establish growth or stock-volume correctness. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch029/281/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32150 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91249; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91249 resolves to ammonium molybdate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91258; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91258 resolves to disodium hydrogenphosphate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32150": [{"label": "Na2S2O3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32150", "preferred_term": "Na2S2O3 x 5 H2O", "ontology_id": "CHEBI:32150", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:64734": [{"label": "Na2-EDTA", "match_type": "preferred_term", "identifier": "CHEBI:64734", "preferred_term": "Na2-EDTA", "ontology_id": "CHEBI:64734", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91258": [{"label": "Na2HPO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91258", "preferred_term": "Na2HPO4 x 2 H2O", "ontology_id": "CHEBI:91258", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml; data/normalized_yaml/bacterial/annwoodia_medium.yaml; data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.631616"}]}] |
+| current-code-0 | src/culturemech/import/mediadive_importer.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients from later stock additions but collects preparation from multiple sections. Current nesting guards can skip already structured records; the two owners retain only three nested trace components. Composition matching and promotion history do not authenticate all source stages or measured volumes. Current code is not historical replay. Correct both maintained owners and explicit source scope before separately authorized regeneration; preserve append-only history. |
+| current-code-1 | src/culturemech/merge/merger.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients from later stock additions but collects preparation from multiple sections. Current nesting guards can skip already structured records; the two owners retain only three nested trace components. Composition matching and promotion history do not authenticate all source stages or measured volumes. Current code is not historical replay. Correct both maintained owners and explicit source scope before separately authorized regeneration; preserve append-only history. |
+| current-code-2 | src/culturemech/merge/fingerprint.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients from later stock additions but collects preparation from multiple sections. Current nesting guards can skip already structured records; the two owners retain only three nested trace components. Composition matching and promotion history do not authenticate all source stages or measured volumes. Current code is not historical replay. Correct both maintained owners and explicit source scope before separately authorized regeneration; preserve append-only history. |
+| current-code-3 | scripts/apply_cocktail_nesting.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients from later stock additions but collects preparation from multiple sections. Current nesting guards can skip already structured records; the two owners retain only three nested trace components. Composition matching and promotion history do not authenticate all source stages or measured volumes. Current code is not historical replay. Correct both maintained owners and explicit source scope before separately authorized regeneration; preserve append-only history. |
+| current-code-4 | scripts/promote_komodo_volume_candidates.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current importer separates first-solution ingredients from later stock additions but collects preparation from multiple sections. Current nesting guards can skip already structured records; the two owners retain only three nested trace components. Composition matching and promotion history do not authenticate all source stages or measured volumes. Current code is not historical replay. Correct both maintained owners and explicit source scope before separately authorized regeneration; preserve append-only history. |
+| mediadive389api-attempt | https://mediadive.dsmz.de/rest/medium/389; Preserved exact public retrieval result | context_only | Retained exact mediadive389api access result 503; no failed response is treated as formulation or historical absence evidence. |
+| mediadive389api_retry-attempt | https://mediadive.dsmz.de/rest/medium/389; Preserved exact public retrieval result | context_only | Retained exact mediadive389api_retry access result 503; no failed response is treated as formulation or historical absence evidence. |
+| komodo389detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=389; Preserved exact public retrieval result | context_only | Retained exact komodo389detail access result 403; no failed response is treated as formulation or historical absence evidence. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Required authentication of the persisted provider claim that trace stock was prepared to 1000 mL and that the receiving dose is 10 mL/L remains unavailable. Current primary states 1000 mL water plus unquantified titration and four nominal receiving volumes, not a measured final stock/medium volume; both current exact API attempts failed 503. Current source batch quantities and the confirmed structural defects are fully assessed. Optional KOMODO detail failure alone does not cause partial completion.
+- Retained exact mediadive389api access result 503; no failed response is treated as formulation or historical absence evidence.
+- Retained exact mediadive389api_retry access result 503; no failed response is treated as formulation or historical absence evidence.
+- Retained exact komodo389detail access result 403; no failed response is treated as formulation or historical absence evidence.
+- The exact primary includes the complete trace subsection attributed to medium 333; no unrelated parent formula, phenotype or culture claim is transferred. Current failures do not establish chronology or invalidate historical assertions by themselves.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T162014Z-culturemech-001495-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: annwoodia_medium (CultureMech:001495)'
+started_at: '2026-10-21T16:17:49Z'
+finished_at: '2026-10-21T16:20:14Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact DSMZ 389 identifies the ANNWOODIA recipe, but the generated target
+  flattens A/B/C/D and the trace stock. Both maintained owners only partly repaired
+  the trace topology. Stock concentrations, receiving amounts and stage pH are conflated;
+  ammonium heptamolybdate has an incompatible mapping. Current primary amounts are
+  available, while the asserted historical stock-volume basis remains unresolved.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+    sha256: 87e4a228e158e9b0084bdfc2aba9f27c0a19223443515587a7bc1a490491f1c3
+    role: target
+  - path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    sha256: a9fa8d56a378a8ee43cc4f4b0637a551583fd822c0d7b84915bf4058f3c5f6a5
+    role: context
+  - path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    sha256: e4a339e5ab01a384a74954898b55e47a376f1d70e6f95660c36ff8f9fcc7a5af
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_komodo_base_volumes.py
+    sha256: 9dad49c380422b2e7d3f40b4ff713d59360d22f6eec9b55068e050099cb9cffa
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/identify_cocktail_stocks.py
+    sha256: 8811249ada4a931e1d0c616648ac91a5a81aba728babf6436462c577a40f0638
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 281; batch 029 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-eight task batches
+    contain 280 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 283 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001495
+targets:
+- target_id: CultureMech:001495
+  path: data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  label: annwoodia_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch029/281/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/281/strict.tsv"
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001495
+- check_id: source-assembly-basis
+  name: Required source assembly/denominator clarification
+  required: true
+  status: unavailable
+  summary: Required authentication of the persisted provider claim that trace stock
+    was prepared to 1000 mL and that the receiving dose is 10 mL/L remains unavailable.
+    Current primary states 1000 mL water plus unquantified titration and four nominal
+    receiving volumes, not a measured final stock/medium volume; both current exact
+    API attempts failed 503. Current source batch quantities and the confirmed structural
+    defects are fully assessed. Optional KOMODO detail failure alone does not cause
+    partial completion.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - bound-owner-context
+- check_id: mediadive389api-source-access
+  name: 'Exact source content access: mediadive389api'
+  required: false
+  status: unavailable
+  summary: Retained exact mediadive389api access result 503; no failed response is
+    treated as formulation or historical absence evidence.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - mediadive389api-attempt
+- check_id: mediadive389api_retry-source-access
+  name: 'Exact source content access: mediadive389api_retry'
+  required: false
+  status: unavailable
+  summary: Retained exact mediadive389api_retry access result 503; no failed response
+    is treated as formulation or historical absence evidence.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - mediadive389api_retry-attempt
+- check_id: komodo389detail-source-access
+  name: 'Exact source content access: komodo389detail'
+  required: false
+  status: unavailable
+  summary: Retained exact komodo389detail access result 403; no failed response is
+    treated as formulation or historical absence evidence.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - komodo389detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:01.546723Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch029/281/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:02.970479Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/281/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:04.987187Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:06.014796Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml:1:id: CultureMech:001495
+
+    ./data/normalized_yaml/bacterial/annwoodia_medium.yaml:1:id: CultureMech:001495
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/281/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: supports
+  summary: 20 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: e6c650f44732bab1e6dba23c9073e38cb719b48044bc96574578836a381b398f
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/281/evidence-context-original.json
+  locator: Complete target and maintained owner; source and identifier search contexts
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Whole fresh target and owner read; all frozen local-record objects equal
+    the fresh inspected YAML. Source interpretations are independently checked against
+    actual bound raw/text bytes.
+  snapshot_sha256: b359325652d822403a21ad185b77a989cff9e1770ebaf6a144eb9a993f6dae59
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf
+  locator: Pages 1–2, complete A/B/C/D formula and trace-element subsection
+  accessed_at: '2026-10-21T15:56:58.368239Z'
+  support: supports
+  summary: Exact primary supplies four separately prepared solutions, receiving volumes
+    and the complete nine-solute trace stock. Water inputs and stage-specific pH do
+    not establish measured final volumes. The self-contained trace subsection is attributed
+    to medium 333; no other medium 333 content transfers.
+  snapshot_sha256: 154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact MediaInfo389 row and table header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: KOMODO389 THIOBACILLUS AQUAESULIS MEDIUM maps to DSM389. This authenticates
+    accession provenance only; its aerobic column and historical signature match do
+    not establish growth or stock-volume correctness.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/281/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: b015fcc3a24249df52e5fa197763a2fce47878f61461946a58397e339760d3d4
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32150
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32150
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:01:47.429763Z'
+  support: supports
+  summary: CHEBI:32150 resolves to sodium thiosulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 910d65eb9be29c9371cb79a32bcbe81bdb57d8143d21fbf7c4a1a915b5a79999
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi91249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T15:28:32.029158Z'
+  support: supports
+  summary: CHEBI:91249 resolves to ammonium molybdate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 9a2c54385944d7bc3885d681295f3d476e3103d45179b57b846b0a1d5616edf2
+- evidence_id: chebi91258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91258
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:28:27.054091Z'
+  support: supports
+  summary: CHEBI:91258 resolves to disodium hydrogenphosphate dihydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: f6c74e6e0b876aadf2fe47494521d320abb79244773bf4c44da7b288b1e27319
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label":
+    "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type":
+    "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id":
+    "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32150":
+    [{"label": "Na2S2O3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32150",
+    "preferred_term": "Na2S2O3 x 5 H2O", "ontology_id": "CHEBI:32150", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type":
+    "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride
+    hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:64734": [{"label":
+    "Na2-EDTA", "match_type": "preferred_term", "identifier": "CHEBI:64734", "preferred_term":
+    "Na2-EDTA", "ontology_id": "CHEBI:64734", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158":
+    [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term":
+    "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:91258": [{"label": "Na2HPO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:91258", "preferred_term": "Na2HPO4 x 2 H2O", "ontology_id":
+    "CHEBI:91258", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml; data/normalized_yaml/bacterial/annwoodia_medium.yaml;
+    data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/annwoodia_medium.yaml",
+    "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml",
+    "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.631616"}]}]'
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients from later stock
+    additions but collects preparation from multiple sections. Current nesting guards
+    can skip already structured records; the two owners retain only three nested trace
+    components. Composition matching and promotion history do not authenticate all
+    source stages or measured volumes. Current code is not historical replay. Correct
+    both maintained owners and explicit source scope before separately authorized
+    regeneration; preserve append-only history.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: current-code-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients from later stock
+    additions but collects preparation from multiple sections. Current nesting guards
+    can skip already structured records; the two owners retain only three nested trace
+    components. Composition matching and promotion history do not authenticate all
+    source stages or measured volumes. Current code is not historical replay. Correct
+    both maintained owners and explicit source scope before separately authorized
+    regeneration; preserve append-only history.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: current-code-2
+  kind: record_content
+  reference: src/culturemech/merge/fingerprint.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients from later stock
+    additions but collects preparation from multiple sections. Current nesting guards
+    can skip already structured records; the two owners retain only three nested trace
+    components. Composition matching and promotion history do not authenticate all
+    source stages or measured volumes. Current code is not historical replay. Correct
+    both maintained owners and explicit source scope before separately authorized
+    regeneration; preserve append-only history.
+  snapshot_sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+- evidence_id: current-code-3
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients from later stock
+    additions but collects preparation from multiple sections. Current nesting guards
+    can skip already structured records; the two owners retain only three nested trace
+    components. Composition matching and promotion history do not authenticate all
+    source stages or measured volumes. Current code is not historical replay. Correct
+    both maintained owners and explicit source scope before separately authorized
+    regeneration; preserve append-only history.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: current-code-4
+  kind: record_content
+  reference: scripts/promote_komodo_volume_candidates.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:20:12Z'
+  support: context_only
+  summary: Current importer separates first-solution ingredients from later stock
+    additions but collects preparation from multiple sections. Current nesting guards
+    can skip already structured records; the two owners retain only three nested trace
+    components. Composition matching and promotion history do not authenticate all
+    source stages or measured volumes. Current code is not historical replay. Correct
+    both maintained owners and explicit source scope before separately authorized
+    regeneration; preserve append-only history.
+  snapshot_sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+- evidence_id: mediadive389api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/389
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:56:57.295197Z'
+  support: context_only
+  summary: Retained exact mediadive389api access result 503; no failed response is
+    treated as formulation or historical absence evidence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive389api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/389
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:01:09.142686Z'
+  support: context_only
+  summary: Retained exact mediadive389api_retry access result 503; no failed response
+    is treated as formulation or historical absence evidence.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo389detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=389
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:56:57.033680Z'
+  support: context_only
+  summary: Retained exact komodo389detail access result 403; no failed response is
+    treated as formulation or historical absence evidence.
+  snapshot_sha256: f481fae57577914b460b655cac21e1e1320ca70cea38b6463e471dbfe28e1a93
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 28 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Na2HPO4 x 2 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"79\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"79\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"79\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Solution A\",\n      \"source_mass_g\": 7.9,\n      \"\
+    source_water_input_ml\": 100,\n      \"finished_stage_volume_ml\": null,\n   \
+    \   \"independently_verified_transferred_mass_g\": null,\n      \"final_medium_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Restore the literal mass in its source stage.\
+    \ The local rate corresponds approximately to division by the stage water input,\
+    \ not a direct final-medium concentration. The source calls for the stated A/B/D\
+    \ volumes; retain this assembly without treating water input as a measured finished\
+    \ stock volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Solution A table\",\n        \"exact_source_quote\"\
+    : \"Na2HPO4 x 2 H2O 7.90 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"KH2PO4\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\":\
+    \ \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Solution A\",\n      \"source_mass_g\": 1.5,\n      \"\
+    source_water_input_ml\": 100,\n      \"finished_stage_volume_ml\": null,\n   \
+    \   \"independently_verified_transferred_mass_g\": null,\n      \"final_medium_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Restore the literal mass in its source stage.\
+    \ The local rate corresponds approximately to division by the stage water input,\
+    \ not a direct final-medium concentration. The source calls for the stated A/B/D\
+    \ volumes; retain this assembly without treating water input as a measured finished\
+    \ stock volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Solution A table\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 1.50 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"NH4Cl\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.45977\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.45977\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[2].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.45977\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Solution B\",\n      \"source_mass_g\": 0.4,\n      \"\
+    source_water_input_ml\": 870,\n      \"finished_stage_volume_ml\": null,\n   \
+    \   \"independently_verified_transferred_mass_g\": null,\n      \"final_medium_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Restore the literal mass in its source stage.\
+    \ The local rate corresponds approximately to division by the stage water input,\
+    \ not a direct final-medium concentration. The source calls for the stated A/B/D\
+    \ volumes; retain this assembly without treating water input as a measured finished\
+    \ stock volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Solution B table\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.40 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"MgSO4\
+    \ x 7 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.114943\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.114943\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.114943\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Solution B\",\n      \"source_mass_g\": 0.1,\n      \"\
+    source_water_input_ml\": 870,\n      \"finished_stage_volume_ml\": null,\n   \
+    \   \"independently_verified_transferred_mass_g\": null,\n      \"final_medium_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Restore the literal mass in its source stage.\
+    \ The local rate corresponds approximately to division by the stage water input,\
+    \ not a direct final-medium concentration. The source calls for the stated A/B/D\
+    \ volumes; retain this assembly without treating water input as a measured finished\
+    \ stock volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Solution B table\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Agar\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"17.2414\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"17.2414\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[4].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"17.2414\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Solution B\",\n      \"source_mass_g\": 15,\n      \"\
+    source_water_input_ml\": 870,\n      \"finished_stage_volume_ml\": null,\n   \
+    \   \"independently_verified_transferred_mass_g\": null,\n      \"final_medium_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Restore the literal mass in its source stage.\
+    \ The local rate corresponds approximately to division by the stage water input,\
+    \ not a direct final-medium concentration. The source calls for the stated A/B/D\
+    \ volumes; retain this assembly without treating water input as a measured finished\
+    \ stock volume. Agar is explicitly conditional on the solid branch.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz389\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Solution B table\",\n        \"exact_source_quote\"\
+    : \"Agar, for solid medium 15.00 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Na2S2O3\
+    \ x 5 H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"250\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"250\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"250\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Solution D\",\n      \"source_mass_g\": 5,\n      \"source_water_input_ml\"\
+    : 20,\n      \"finished_stage_volume_ml\": null,\n      \"independently_verified_transferred_mass_g\"\
+    : null,\n      \"final_medium_g_per_l\": null\n    },\n    \"rationale\": \"Restore\
+    \ the literal mass in its source stage. The local rate corresponds approximately\
+    \ to division by the stage water input, not a direct final-medium concentration.\
+    \ The source calls for the stated A/B/D volumes; retain this assembly without\
+    \ treating water input as a measured finished stock volume.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Page 1 Solution D table\",\n        \"exact_source_quote\"\
+    : \"Na2S2O3 x 5 H2O 5.00 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Na2-EDTA\
+    \ in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 50,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\": null,\n\
+    \      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\": 10\n\
+    \    },\n    \"rationale\": \"The mass belongs to the trace stock, not the main\
+    \ medium. Three maintained-owner constituents are already nested, but their asserted\
+    \ g/L basis still relies on an unauthenticated finished stock volume. The current\
+    \ primary lists 1000 mL water plus unquantified titration; retain batch masses\
+    \ without inferring stock or final-medium g/L.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2 Trace element solution table\",\n \
+    \       \"exact_source_quote\": \"Na2-EDTA 50.00 g\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"ZnSO4\
+    \ x 7 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"11\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"11\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"11\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 11,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\": null,\n\
+    \      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\": 10\n\
+    \    },\n    \"rationale\": \"The mass belongs to the trace stock, not the main\
+    \ medium. Three maintained-owner constituents are already nested, but their asserted\
+    \ g/L basis still relies on an unauthenticated finished stock volume. The current\
+    \ primary lists 1000 mL water plus unquantified titration; retain batch masses\
+    \ without inferring stock or final-medium g/L.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2 Trace element solution table\",\n \
+    \       \"exact_source_quote\": \"ZnSO4 x 7 H2O 11.00 g\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"CaCl2\
+    \ x 2 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.34\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"7.34\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.34\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 7.34,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\"\
+    : null,\n      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The mass belongs to the trace stock, not the\
+    \ main medium. Three maintained-owner constituents are already nested, but their\
+    \ asserted g/L basis still relies on an unauthenticated finished stock volume.\
+    \ The current primary lists 1000 mL water plus unquantified titration; retain\
+    \ batch masses without inferring stock or final-medium g/L.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Pages 1–2 Trace element solution table\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 7.34 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"MnCl2\
+    \ x 4 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[1].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[1].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 2.5,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\":\
+    \ null,\n      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The mass belongs to the trace stock, not the\
+    \ main medium. Three maintained-owner constituents are already nested, but their\
+    \ asserted g/L basis still relies on an unauthenticated finished stock volume.\
+    \ The current primary lists 1000 mL water plus unquantified titration; retain\
+    \ batch masses without inferring stock or final-medium g/L.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Pages 1–2 Trace element solution table\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O 2.50 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"CoCl2\
+    \ x 6 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 0.5,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\":\
+    \ null,\n      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The mass belongs to the trace stock, not the\
+    \ main medium. Three maintained-owner constituents are already nested, but their\
+    \ asserted g/L basis still relies on an unauthenticated finished stock volume.\
+    \ The current primary lists 1000 mL water plus unquantified titration; retain\
+    \ batch masses without inferring stock or final-medium g/L.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Pages 1–2 Trace element solution table\",\n        \"exact_source_quote\"\
+    : \"CoCl2 x 6 H2O 0.50 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"(NH4)6Mo7O24\
+    \ x 4 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 0.5,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\":\
+    \ null,\n      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The mass belongs to the trace stock, not the\
+    \ main medium. Three maintained-owner constituents are already nested, but their\
+    \ asserted g/L basis still relies on an unauthenticated finished stock volume.\
+    \ The current primary lists 1000 mL water plus unquantified titration; retain\
+    \ batch masses without inferring stock or final-medium g/L.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Pages 1–2 Trace element solution table\",\n        \"exact_source_quote\"\
+    : \"(NH4)6Mo7O24 x 4 H2O 0.50 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"FeSO4\
+    \ x 7 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[2].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[2].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 5,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\": null,\n\
+    \      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\": 10\n\
+    \    },\n    \"rationale\": \"The mass belongs to the trace stock, not the main\
+    \ medium. Three maintained-owner constituents are already nested, but their asserted\
+    \ g/L basis still relies on an unauthenticated finished stock volume. The current\
+    \ primary lists 1000 mL water plus unquantified titration; retain batch masses\
+    \ without inferring stock or final-medium g/L.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2 Trace element solution table\",\n \
+    \       \"exact_source_quote\": \"FeSO4 x 7 H2O 5.00 g\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\": \"CuSO4\
+    \ x 5 H2O in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 0.2,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\":\
+    \ null,\n      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\"\
+    : 10\n    },\n    \"rationale\": \"The mass belongs to the trace stock, not the\
+    \ main medium. Three maintained-owner constituents are already nested, but their\
+    \ asserted g/L basis still relies on an unauthenticated finished stock volume.\
+    \ The current primary lists 1000 mL water plus unquantified titration; retain\
+    \ batch masses without inferring stock or final-medium g/L.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Pages 1–2 Trace element solution table\",\n        \"exact_source_quote\"\
+    : \"CuSO4 x 5 H2O 0.20 g\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"NaOH\
+    \ in trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"11\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"11\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"11\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"trace-element stock, used as Solution C\",\n      \"source_mass_g\"\
+    : 11,\n      \"water_input_ml\": 1000,\n      \"additional_titrant_volume\": null,\n\
+    \      \"finished_stock_volume_ml\": null,\n      \"receiving_dose_ml\": 10\n\
+    \    },\n    \"rationale\": \"The mass belongs to the trace stock, not the main\
+    \ medium. Three maintained-owner constituents are already nested, but their asserted\
+    \ g/L basis still relies on an unauthenticated finished stock volume. The current\
+    \ primary lists 1000 mL water plus unquantified titration; retain batch masses\
+    \ without inferring stock or final-medium g/L.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Pages 1–2 Trace element solution table\",\n \
+    \       \"exact_source_quote\": \"NaOH 11.00 g\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\": \"Solution\
+    \ A receiving volume\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"source_volume_ml\": 100,\n  \
+    \    \"stage\": \"Solution A\"\n    },\n    \"rationale\": \"Represent the explicit\
+    \ receiving volume separately from each stage composition. The four nominal inputs\
+    \ total 1000 mL; this is a recipe assembly sum, not an independently measured\
+    \ final physical volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main assembly table\",\n        \"exact_source_quote\"\
+    : \"Solution A 100.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\": \"Solution\
+    \ B receiving volume\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"source_volume_ml\": 870,\n  \
+    \    \"stage\": \"Solution B\"\n    },\n    \"rationale\": \"Represent the explicit\
+    \ receiving volume separately from each stage composition. The four nominal inputs\
+    \ total 1000 mL; this is a recipe assembly sum, not an independently measured\
+    \ final physical volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main assembly table\",\n        \"exact_source_quote\"\
+    : \"Solution B 870.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\": \"Solution\
+    \ C receiving volume\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"source_volume_ml\": 10,\n   \
+    \   \"stage\": \"Solution C\"\n    },\n    \"rationale\": \"Represent the explicit\
+    \ receiving volume separately from each stage composition. The four nominal inputs\
+    \ total 1000 mL; this is a recipe assembly sum, not an independently measured\
+    \ final physical volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main assembly table\",\n        \"exact_source_quote\"\
+    : \"Solution C 10.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\": \"Solution\
+    \ D receiving volume\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"source_volume_ml\": 20,\n   \
+    \   \"stage\": \"Solution D\"\n    },\n    \"rationale\": \"Represent the explicit\
+    \ receiving volume separately from each stage composition. The four nominal inputs\
+    \ total 1000 mL; this is a recipe assembly sum, not an independently measured\
+    \ final physical volume.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main assembly table\",\n        \"exact_source_quote\"\
+    : \"Solution D 20.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\": \"Trace\
+    \ stock used as Solution C\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\",\n        \"field_path\"\
+    : \"solutions[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"10\",\n          \"unit\": \"ML_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"ML_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_dose_ml\": 10,\n      \"stored_owner_ml_per_l\": 10,\n   \
+    \   \"verified_final_volume_basis\": false\n    },\n    \"rationale\": \"The maintained\
+    \ owners contain an addition rate, but the exact primary states a 10 mL assembly\
+    \ input. Preserve that literal dose and keep the historical provider denominator\
+    \ claim separate; the target lacks the stock entirely.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Page 1 Solution C table\",\n        \"exact_source_quote\"\
+    : \"Trace element solution 10.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\": \"A water\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"stage\": \"A\",\n      \"water_input_ml\"\
+    : 100,\n      \"final_volume_ml\": null\n    },\n    \"rationale\": \"Add the\
+    \ missing solvent input in its own stage. Do not sum these waters into a direct\
+    \ final-medium ingredient or infer final volume from solvent input.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz389\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Solution A water table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 100.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\": \"B water\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"stage\": \"B\",\n      \"water_input_ml\"\
+    : 870,\n      \"final_volume_ml\": null\n    },\n    \"rationale\": \"Add the\
+    \ missing solvent input in its own stage. Do not sum these waters into a direct\
+    \ final-medium ingredient or infer final volume from solvent input.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz389\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Solution B water table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 870.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\": \"D water\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"stage\": \"D\",\n      \"water_input_ml\"\
+    : 20,\n      \"final_volume_ml\": null\n    },\n    \"rationale\": \"Add the missing\
+    \ solvent input in its own stage. Do not sum these waters into a direct final-medium\
+    \ ingredient or infer final volume from solvent input.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Solution D water table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 20.00 ml\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\": \"Trace\
+    \ water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"stage\": \"trace\",\n      \"\
+    water_input_ml\": 1000,\n      \"final_volume_ml\": null\n    },\n    \"rationale\"\
+    : \"Add the missing solvent input in its own stage. Do not sum these waters into\
+    \ a direct final-medium ingredient or infer final volume from solvent input.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz389\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Solution trace water table row\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\": \"Solution\
+    \ A pH\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"ph_value\",\n        \"stored\": 7.6,\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.6,\n        \"\
+    decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.6,\n        \"\
+    decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.6.\",\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust to pH 7.6.\",\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"pH\": 7.6,\n      \"main_final_pH\": null\n\
+    \    },\n    \"rationale\": \"The source pH belongs to Solution A. Root ph_value\
+    \ and the unscoped preparation sentence must not assert a complete-medium endpoint.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz389\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Solution A, after its water row\",\n \
+    \       \"exact_source_quote\": \"Adjust to pH 7.6.\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\": \"Trace-stock\
+    \ staged pH and base strength\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then\
+    \ add other compounds. Adjust pH of final solution to 6.0 with NaOH.\",\n    \
+    \    \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then\
+    \ add other compounds. Adjust pH of final solution to 6.0 with NaOH.\",\n    \
+    \    \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions[0].preparation_notes\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : \"Stock prepared in 1000 ml; added at 10 ml per litre of medium. Composition\
+    \ and volume from MediaDive (#150).\",\n        \"decision\": \"correct\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n        \"decision\": \"correct\"\n      }\n\
+    \    ],\n    \"proposed_source_representation\": {\n      \"stage\": \"trace stock\"\
+    ,\n      \"initial_pH\": 7,\n      \"initial_base_normality\": 2,\n      \"final_stock_pH\"\
+    : 6,\n      \"base_doses\": null\n    },\n    \"rationale\": \"Retain the literal\
+    \ sequence and stated NaOH reagents without chemically rewriting the source. Its\
+    \ final solution is the trace stock, not the complete medium. Neither owner stock\
+    \ note supplies the primary sequence or authenticates the declared prepared volume.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz389\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 2 trace-stock preparation\",\n        \"\
+    exact_source_quote\": \"Dissolve EDTA in distilled water and adjust pH to 7.0\
+    \ using 2 N NaOH; then add other\\ncompounds. Adjust pH of final solution to 6.0\
+    \ with NaOH.\",\n        \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\": \"Unquantified\
+    \ titrant doses\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"concentration\"\
+    : {\n              \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n\
+    \            },\n            \"preparation_notes\": \"Stock prepared in 1000 ml;\
+    \ added at 10 ml per litre of medium. Composition and volume from MediaDive (#150).\"\
+    \n          }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"Trace element solution\",\n            \"composition\"\
+    : [\n              {\n                \"preferred_term\": \"ZnSO4 x 7 H2O\",\n\
+    \                \"term\": {\n                  \"id\": \"CHEBI:32312\",\n   \
+    \               \"label\": \"zinc sulfate heptahydrate\"\n                },\n\
+    \                \"concentration\": {\n                  \"value\": \"11\",\n\
+    \                  \"unit\": \"G_PER_L\"\n                },\n               \
+    \ \"mediaingredientmech_chebi_term\": {\n                  \"id\": \"CHEBI:32312\"\
+    ,\n                  \"label\": \"zinc sulfate heptahydrate\"\n              \
+    \  }\n              },\n              {\n                \"preferred_term\": \"\
+    MnCl2 x 4 H2O\",\n                \"term\": {\n                  \"id\": \"CHEBI:86368\"\
+    ,\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\n    \
+    \            },\n                \"concentration\": {\n                  \"value\"\
+    : \"2.5\",\n                  \"unit\": \"G_PER_L\"\n                },\n    \
+    \            \"mediaingredientmech_chebi_term\": {\n                  \"id\":\
+    \ \"CHEBI:86368\",\n                  \"label\": \"manganese(II) chloride tetrahydrate\"\
+    \n                }\n              },\n              {\n                \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n                \"term\": {\n                  \"id\": \"\
+    CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                },\n                \"concentration\": {\n                 \
+    \ \"value\": \"5\",\n                  \"unit\": \"G_PER_L\"\n               \
+    \ },\n                \"mediaingredientmech_chebi_term\": {\n                \
+    \  \"id\": \"CHEBI:75836\",\n                  \"label\": \"iron(2+) sulfate heptahydrate\"\
+    \n                }\n              }\n            ],\n            \"preparation_notes\"\
+    : \"Stock prepared in 1000 ml. Composition and volume from medium 389's own MediaDive\
+    \ recipe, identified by this record reproducing that medium's composition exactly\
+    \ (15/15 shared compounds at identical values) despite the upstream rename to\
+    \ 'ANNWOODIA MEDIUM' (#262).\",\n            \"concentration\": {\n          \
+    \    \"value\": \"10\",\n              \"unit\": \"ML_PER_L\"\n            }\n\
+    \          }\n        ],\n        \"decision\": \"add\"\n      }\n    ],\n   \
+    \ \"proposed_source_representation\": {\n      \"initial_2N_NaOH_dose_ml\": null,\n\
+    \      \"later_NaOH_dose_ml\": null\n    },\n    \"rationale\": \"Explicit pH\
+    \ endpoints and base identity do not specify titrant volumes; no fixed amount\
+    \ or finished-stock-volume inference is supported.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz389\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\",\n        \"\
+    source_locator\": \"Page 2 trace-stock preparation\",\n        \"exact_source_quote\"\
+    : \"Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then\
+    \ add other\\ncompounds. Adjust pH of final solution to 6.0 with NaOH.\",\n  \
+    \      \"snapshot_sha256\": \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\"\
+    ,\n        \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\": \"Stage-specific\
+    \ sterilization and unquantified cycle\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANNWOODIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Autoclave solutions A, B and C and filter sterilize solution D. To complete\
+    \ the medium combine sterile solutions when cool.\",\n        \"decision\": \"\
+    evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/annwoodia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Autoclave solutions A, B and C and filter sterilize solution D. To complete\
+    \ the medium combine sterile solutions when cool.\",\n        \"decision\": \"\
+    evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"autoclave_stages\": [\n        \"A\",\n        \"B\",\n        \"\
+    C\"\n      ],\n      \"filter_stage\": \"D\",\n      \"combine\": \"when cool\"\
+    ,\n      \"temperature\": null,\n      \"duration\": null\n    },\n    \"rationale\"\
+    : \"Preserve the target/DSMZ-owner existing instruction with evidence; add it\
+    \ to the KOMODO owner. No temperature or duration is printed, so do not invent\
+    \ a cycle.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz389\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium389.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main preparation\",\n        \"exact_source_quote\"\
+    : \"Autoclave solutions A, B and C and filter sterilize solution D. To complete\
+    \ the medium\\ncombine sterile solutions when cool.\",\n        \"snapshot_sha256\"\
+    : \"154b8c46b0791d26b62a9ef9e98cdce23ef1c5ab73348dc76a20e4a40687d55b\",\n    \
+    \    \"parsed_text_sha256\": \"7cabb50ce5079312db84d01e7e912ff50dbc0e59a1d57abc14682c1a4d532aba\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:58.368239Z\"\n      }\n    ]\n\
+    \  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '15 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 15/15
+    primary and 14/15 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi2509
+  - chebi31206
+  - chebi31440
+  - chebi31795
+  - chebi32145
+  - chebi32150
+  - chebi32312
+  - chebi53503
+  - chebi63036
+  - chebi64734
+  - chebi75836
+  - chebi86158
+  - chebi86368
+  - chebi91249
+  - chebi91258
+  details: 'Instance coverage on a 0–100 percent scale, denominator 15: primary 100.00%;
+    secondary 93.33%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 24 timestamp instances inspected; 2 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, stable owners and duplicate relation
+  outcome: supported
+  summary: DSM389 and the exact KOMODO389 catalog row support the two named source
+    owners and their accession correspondence. SOURCE_DUPLICATE relationships resolve
+    to exact stable IDs and paths. Identical copied ingredient signatures do not establish
+    scientific correctness or authenticate the historical stock denominator. No organism
+    identifier or growth claim follows from the renamed medium.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - catalog
+  - id-search
+- assessment_id: evidence
+  area: evidence
+  topic: Ingredient and stock evidence placement
+  outcome: concern
+  summary: All target and owner ingredient amounts lack attached claim-level source
+    evidence. Current exact primary supports stage-specific masses and volumes, not
+    the flattened rates. Later owner history asserts MediaDive stock volume and dose
+    without preserved matching raw response in this bound set; both current attempts
+    returned 503. This is an unresolved historical quantity basis, not proof the old
+    provider statement was false.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - quantity-inventory
+  - bound-owner-context
+- assessment_id: forms
+  area: grounding
+  topic: Exact molybdate stoichiometry and EDTA specificity
+  outcome: concern
+  summary: The source (NH4)6Mo7O24·4H2O is not CHEBI:91249, whose OLS composition
+    is ammonium orthomolybdate with a 2:1 ammonium/molybdate relation. Source Na2-EDTA
+    leaves hydration unqualified while CHEBI:64734 explicitly says anhydrous. Preserve
+    the source masses; neither a valid label nor the current secondary snapshot resolves
+    these supplied-form claims.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - primary
+  - chebi91249
+  - chebi64734
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation and conditions remain stage-specific
+  outcome: concern
+  summary: Target and DSMZ owner retain the main sterilization instruction, but the
+    KOMODO owner omits it. Solution A pH 7.6 and trace-stock pH/2 N base instructions
+    sit at main root; partial owner stock notes instead assert a historical volume
+    basis. Restore all stages and the literal sequence without inventing final medium
+    pH, cycle or titrant dose.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Conditional physical state and composition scope
+  outcome: concern
+  summary: The source describes an inorganic formulation with agar only for the solid
+    branch. SOLID_AGAR is compatible with that selected branch but does not encode
+    the alternative liquid branch; DEFINED annotations must state whether they concern
+    the inorganic base or the agar-containing recipe. No undefined nutrient is inferred
+    solely from a salt or solvent, and no growth evidence is inferred from the catalog
+    aerobic field or generic application.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and maintained input follow-up
+  outcome: concern
+  summary: Current importer separates first-solution ingredients from later stock
+    additions but collects preparation from multiple sections. Current nesting guards
+    can skip already structured records; the two owners retain only three nested trace
+    components. Composition matching and promotion history do not authenticate all
+    source stages or measured volumes. Current code is not historical replay. Correct
+    both maintained owners and explicit source scope before separately authorized
+    regeneration; preserve append-only history.
+  target_ids:
+  - CultureMech:001495
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+  - current-code-3
+  - current-code-4
+findings:
+- finding_id: f1
+  issue_key: culturemech.001495.stock-stage-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Main and stock stages are collapsed into direct concentrations
+  description: The generated target has 15 direct stock-derived rates. Both maintained
+    owners move only Zn/Mn/Fe into an incomplete trace stock while six other trace
+    constituents remain direct. A/B/D rates, water inputs and receiving volumes are
+    not correctly scoped.
+  target_ids:
+  - CultureMech:001495
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.001495.molybdate-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Heptamolybdate has an incompatible chemical mapping
+  description: The source ammonium heptamolybdate tetrahydrate is mapped to ammonium
+    orthomolybdate CHEBI:91249 in all layers. This changes stoichiometry, not only
+    hydration. EDTA anhydrous specificity remains separately unverified.
+  target_ids:
+  - CultureMech:001495
+  field_paths:
+  - ingredients[11].term
+  - ingredients[6].term
+  - ingredients[6].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi91249
+  - chebi64734
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.001495.stage-ph-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock pH and preparation are attributed to the whole medium
+  description: Root pH 7.6 belongs to Solution A; the trace-stock sequence is also
+    unscoped at main root. The KOMODO owner lacks the primary main sterilization procedure.
+  target_ids:
+  - CultureMech:001495
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.001495.branch-scope
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Conditional agar is not represented as an explicit branch
+  description: Agar is explicitly optional for solid medium, while physical state
+    and composition annotations do not distinguish the defined inorganic base from
+    the selected agar-containing branch.
+  target_ids:
+  - CultureMech:001495
+  field_paths:
+  - ingredients[4].notes
+  - physical_state
+  - composition_type
+  - medium_type
+  evidence_ids:
+  - primary
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.001495.history-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO history contains malformed and timezone-naive timestamps
+  description: Historical KOMODO import/enrichment timestamps retain malformed .fZ
+    and timezone-naive shapes. The later volume promotion is a provenance assertion
+    rather than independent primary evidence.
+  target_ids:
+  - CultureMech:001495
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.4
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore A/B/C/D and all nine trace solutes with exact source masses,
+    solvent inputs and assembly volumes in both owners. Correct the partial nesting
+    rather than merely copying it to the target. Preserve the unresolved historical
+    final-volume basis and attach claim-level evidence before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001495
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify a source-compatible heptamolybdate identifier without guessing;
+    independently assess any secondary mapping. Resolve or qualify EDTA specificity
+    while retaining literal masses and source forms.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001495
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Relocate stage-specific pH/base instructions and add the missing KOMODO
+    preparation. Retain the stated autoclave/filter/cooling order without inventing
+    duration, temperature or a final medium pH.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001495
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Retain the solid option and explicitly scope alternative liquid/solid
+    forms and composition annotations; do not delete the source agar or infer a new
+    biological application.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001495
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve old events; append a dated clarification with exact evidence
+    when curation is authorized, and address future writer formatting separately.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:001495
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Required authentication of the persisted provider claim that trace stock was prepared
+  to 1000 mL and that the receiving dose is 10 mL/L remains unavailable. Current primary
+  states 1000 mL water plus unquantified titration and four nominal receiving volumes,
+  not a measured final stock/medium volume; both current exact API attempts failed
+  503. Current source batch quantities and the confirmed structural defects are fully
+  assessed. Optional KOMODO detail failure alone does not cause partial completion.
+- Retained exact mediadive389api access result 503; no failed response is treated
+  as formulation or historical absence evidence.
+- Retained exact mediadive389api_retry access result 503; no failed response is treated
+  as formulation or historical absence evidence.
+- Retained exact komodo389detail access result 403; no failed response is treated
+  as formulation or historical absence evidence.
+- The exact primary includes the complete trace subsection attributed to medium 333;
+  no unrelated parent formula, phenotype or culture claim is transferred. Current
+  failures do not establish chronology or invalidate historical assertions by themselves.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-029
+- generated-medium
+```

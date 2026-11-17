@@ -1,0 +1,6992 @@
+# Source and formulation review: ant (CultureMech:000042)
+
+- Review: 20261021T162234Z-culturemech-000042-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T16:17:54Z
+- Finished UTC: 2026-10-21T16:22:34Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The CCAP ANT record mixes seven trace-stock strengths with three final-medium amounts, omitting the stock aliquot, Tris, vitamins, seawater and preparation. Restore the exact CCAP formulation in its sole algae owner, correct two hydrate identities and unsupported generic culture conditions, then regenerate. The bacterial ANT namesake is outside this target’s ownership and evidence obligations.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 287; batch 029 item 7 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-eight task batches contain 280 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 283 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000042 | data/merge_yaml/merged/ANT.yaml | generated | ant |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000042 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000042 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/287/strict.tsv |
+| validate-terms | passed | True | CultureMech:000042 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000042 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000042 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadiveC3context | unavailable | False | CultureMech:000042 | mediadiveC3context: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| Exact source content access: mediadiveC3retry | unavailable | False | CultureMech:000042 | mediadiveC3retry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000042.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:000042.
+
+10 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 10/10 primary and 0/10 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 10: primary 100.00%; secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:000042.
+
+20 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### CCAP ANT and sole maintained algae owner
+
+identity: supported. Targets: CultureMech:000042.
+
+The exact target ID, CCAP:ANT reference, original CCAP import event and single ant.yaml merge-source occurrence resolve the algae owner. Its later structured-source repair adds the correct CCAP URL but leaves the incomplete formula unchanged. The bacterial namesake is distinct contextual material only.
+
+### Seven stock components versus final-medium recipe
+
+consistency: concern. Targets: CultureMech:000042.
+
+Both local layers contain seven trace constituents at stock strength and only potassium nitrate, phosphate and glycine from the final medium. The explicit2.5 mL aliquot, Tris1 g, thiamine500 micrograms, cyanocobalamin2 micrograms, biotin1 microgram and natural seawater800 mL are missing. The source specifies separate stock and final make-up to1 L, so the stock-to-final factor is0.0025 rather than1.
+
+### Distinct stock and final preparation
+
+completeness: concern. Targets: CultureMech:000042.
+
+No local preparation is represented. The stock is made up to1 L, adjusted to pH7.6–7.8 using dilute HCl or NaOH and stored frozen. The final medium is made up to1 L, autoclaved at15psi and has final pH7.6–7.8. Neither a temperature, duration nor titrant dose is stated; retain those unknowns.
+
+### Source hydrates and truncated preferred names
+
+grounding: concern. Targets: CultureMech:000042.
+
+EDTA.Na2.2H2O and NaH2PO4.2H2O are explicit source dihydrates, while CHEBI:64734 and37585 encode anhydrous compositions. The source EDTA and nitrate names also retain digits lost from local preferred_term strings EDTA.Na .2H O and KNO. Other explicit hydrate terms match their captured formulas; no replacement ID is invented.
+
+### Classification and unsupported general culture guidance
+
+scope: concern. Targets: CultureMech:000042.
+
+The collection identifies an algal medium with natural seawater; LIQUID and complex/undefined classification are consistent with that mixed ingredient. The supplied PDF does not establish artificial seawater as equivalent, light50–100, cycles12:12 or16:8, or temperature15–30°C. Generic applications do not constitute strain-specific growth evidence. No target organism, DOI, PMID, taxonomy or genome accession is asserted. The two bibliography entries printed in the source were read as provenance; the papers were not independently inspected and no paper-level claim is transferred.
+
+### Automated metadata and current source repair
+
+provenance: concern. Targets: CultureMech:000042.
+
+All ten ingredient source strings identify the collection PDF but contain no exact claim-level amount evidence. Confidence0.95/1.0, ingredients_curated and automated-expert labels do not establish formulation completeness. The September source repair copies source identity only. Current formulation merge logic preserves evidence only for compatible scientific content; it cannot cure the owner’s incomplete expansion.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000042.
+
+25 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Trace stock EDTA.Na2.2H2O",
+    "field_path": "ingredients[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "3.24",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "EDTA.Na2.2H2O  3.24 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "3.24 g / 1 L stock × 0.0025 L aliquot = 0.008100 g in the source final1 L medium, therefore 0.008100 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "Trace stock FeCl3.6H2O",
+    "field_path": "ingredients[1].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1.08",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "FeCl3.6H2O  1.08 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1.08 g / 1 L stock × 0.0025 L aliquot = 0.002700 g in the source final1 L medium, therefore 0.002700 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "Trace stock MnSO4.4H2O",
+    "field_path": "ingredients[2].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.450",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "MnSO4.4H2O  0.450 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.450 g / 1 L stock × 0.0025 L aliquot = 0.0011250 g in the source final1 L medium, therefore 0.0011250 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "Trace stock ZnSO4.7H2O",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.230",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "ZnSO4.7H2O  0.230 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.230 g / 1 L stock × 0.0025 L aliquot = 0.0005750 g in the source final1 L medium, therefore 0.0005750 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "Trace stock Na2MoO4.2H2O",
+    "field_path": "ingredients[4].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.097",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "Na2MoO4.2H2O  0.097 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.097 g / 1 L stock × 0.0025 L aliquot = 0.0002425 g in the source final1 L medium, therefore 0.0002425 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "Trace stock CuSO4.5H2O",
+    "field_path": "ingredients[5].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "CuSO4.5H2O  0.01 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.01 g / 1 L stock × 0.0025 L aliquot = 0.000025 g in the source final1 L medium, therefore 0.000025 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "Trace stock CoSO4.7H2O",
+    "field_path": "ingredients[6].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.0056",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock per1000 cm³ table; named row",
+        "exact_source_quote": "CoSO4.7H2O  0.0056 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source quantity is stock concentration after explicit make-up to1 L. Move it to the separate stock recipe and add2.5 mL to the final1 L medium; the current direct-medium field is400-fold the intended trace contribution.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "0.0056 g / 1 L stock × 0.0025 L aliquot = 0.00001400 g in the source final1 L medium, therefore 0.00001400 g/L. This uses both explicit make-up instructions, not water alone."
+  },
+  {
+    "ingredient_or_context": "KNO3",
+    "field_path": "ingredients[7].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "KNO3  0.05 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The amount agrees with the final1 L recipe, but neither layer has matching attached claim evidence. Preserve amount/unit; the separate hydrate or preferred-name issue does not change the source mass.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "NaH2PO4.2H2O",
+    "field_path": "ingredients[8].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.0078",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "NaH2PO4.2H2O  0.0078 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The amount agrees with the final1 L recipe, but neither layer has matching attached claim evidence. Preserve amount/unit; the separate hydrate or preferred-name issue does not change the source mass.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Glycine",
+    "field_path": "ingredients[9].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.3",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Glycine  0.3 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The amount agrees with the final1 L recipe, but neither layer has matching attached claim evidence. Preserve amount/unit; the separate hydrate or preferred-name issue does not change the source mass.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Tris",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": [
+      {
+        "preferred_term": "EDTA.Na .2H O",
+        "term": {
+          "id": "CHEBI:64734",
+          "label": "EDTA disodium salt (anhydrous)"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085697",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "FeCl3 x 6 H2O",
+        "term": {
+          "id": "CHEBI:86254",
+          "label": "iron trichloride hexahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085701",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "MnSO4 x 4 H2O",
+        "term": {
+          "id": "CHEBI:86358",
+          "label": "manganese(II) sulfate tetrahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085703",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "ZnSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085706",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Na2MoO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085708",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CuSO4 x 5 H2O",
+        "term": {
+          "id": "CHEBI:31440",
+          "label": "copper(II) sulfate pentahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085712",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CoSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:91244",
+          "label": "cobalt(2+) sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085715",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "KNO",
+        "term": {
+          "id": "CHEBI:63043",
+          "label": "potassium nitrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085717",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "NaH2PO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:37585",
+          "label": "sodium dihydrogenphosphate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085719",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Glycine",
+        "term": {
+          "id": "CHEBI:15428",
+          "label": "glycine"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085721",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Tris [tris(hydroxymethyl)aminomethane]  1.0 g",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Add the explicit source-only quantity in the correct main or stock-addition stage. Existing ingredient containers are retained as stored; their presence is not an assertion of the missing component.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "1 g / explicit final1 L =1 g/L."
+  },
+  {
+    "ingredient_or_context": "Thiamine HCl",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": [
+      {
+        "preferred_term": "EDTA.Na .2H O",
+        "term": {
+          "id": "CHEBI:64734",
+          "label": "EDTA disodium salt (anhydrous)"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085697",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "FeCl3 x 6 H2O",
+        "term": {
+          "id": "CHEBI:86254",
+          "label": "iron trichloride hexahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085701",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "MnSO4 x 4 H2O",
+        "term": {
+          "id": "CHEBI:86358",
+          "label": "manganese(II) sulfate tetrahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085703",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "ZnSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085706",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Na2MoO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085708",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CuSO4 x 5 H2O",
+        "term": {
+          "id": "CHEBI:31440",
+          "label": "copper(II) sulfate pentahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085712",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CoSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:91244",
+          "label": "cobalt(2+) sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085715",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "KNO",
+        "term": {
+          "id": "CHEBI:63043",
+          "label": "potassium nitrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085717",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "NaH2PO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:37585",
+          "label": "sodium dihydrogenphosphate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085719",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Glycine",
+        "term": {
+          "id": "CHEBI:15428",
+          "label": "glycine"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085721",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Thiamine HCl  500.0 µg",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Add the explicit source-only quantity in the correct main or stock-addition stage. Existing ingredient containers are retained as stored; their presence is not an assertion of the missing component.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "500 µg / explicit final1 L =500 µg/L; equivalently0.0005 g/L."
+  },
+  {
+    "ingredient_or_context": "Cyanocobalamin",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": [
+      {
+        "preferred_term": "EDTA.Na .2H O",
+        "term": {
+          "id": "CHEBI:64734",
+          "label": "EDTA disodium salt (anhydrous)"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085697",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "FeCl3 x 6 H2O",
+        "term": {
+          "id": "CHEBI:86254",
+          "label": "iron trichloride hexahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085701",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "MnSO4 x 4 H2O",
+        "term": {
+          "id": "CHEBI:86358",
+          "label": "manganese(II) sulfate tetrahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085703",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "ZnSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085706",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Na2MoO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085708",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CuSO4 x 5 H2O",
+        "term": {
+          "id": "CHEBI:31440",
+          "label": "copper(II) sulfate pentahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085712",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CoSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:91244",
+          "label": "cobalt(2+) sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085715",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "KNO",
+        "term": {
+          "id": "CHEBI:63043",
+          "label": "potassium nitrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085717",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "NaH2PO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:37585",
+          "label": "sodium dihydrogenphosphate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085719",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Glycine",
+        "term": {
+          "id": "CHEBI:15428",
+          "label": "glycine"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085721",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Cyanocobalamin  (Vitamin B12)  2.0 µg",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Add the explicit source-only quantity in the correct main or stock-addition stage. Existing ingredient containers are retained as stored; their presence is not an assertion of the missing component.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "2 µg / explicit final1 L =2 µg/L; equivalently0.000002 g/L."
+  },
+  {
+    "ingredient_or_context": "Biotin",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": [
+      {
+        "preferred_term": "EDTA.Na .2H O",
+        "term": {
+          "id": "CHEBI:64734",
+          "label": "EDTA disodium salt (anhydrous)"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085697",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "FeCl3 x 6 H2O",
+        "term": {
+          "id": "CHEBI:86254",
+          "label": "iron trichloride hexahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085701",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "MnSO4 x 4 H2O",
+        "term": {
+          "id": "CHEBI:86358",
+          "label": "manganese(II) sulfate tetrahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085703",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "ZnSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085706",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Na2MoO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085708",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CuSO4 x 5 H2O",
+        "term": {
+          "id": "CHEBI:31440",
+          "label": "copper(II) sulfate pentahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085712",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CoSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:91244",
+          "label": "cobalt(2+) sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085715",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "KNO",
+        "term": {
+          "id": "CHEBI:63043",
+          "label": "potassium nitrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085717",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "NaH2PO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:37585",
+          "label": "sodium dihydrogenphosphate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085719",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Glycine",
+        "term": {
+          "id": "CHEBI:15428",
+          "label": "glycine"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085721",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Biotin  1.0 µg",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Add the explicit source-only quantity in the correct main or stock-addition stage. Existing ingredient containers are retained as stored; their presence is not an assertion of the missing component.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "1 µg / explicit final1 L =1 µg/L; equivalently0.000001 g/L."
+  },
+  {
+    "ingredient_or_context": "Filtered natural seawater",
+    "field_path": "ingredients",
+    "decision": "add",
+    "local": [
+      {
+        "preferred_term": "EDTA.Na .2H O",
+        "term": {
+          "id": "CHEBI:64734",
+          "label": "EDTA disodium salt (anhydrous)"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085697",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "3.24",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "FeCl3 x 6 H2O",
+        "term": {
+          "id": "CHEBI:86254",
+          "label": "iron trichloride hexahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 0.95,
+          "curation_date": "2026-04-04T20:18:55.085701",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "1.08",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "MnSO4 x 4 H2O",
+        "term": {
+          "id": "CHEBI:86358",
+          "label": "manganese(II) sulfate tetrahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085703",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.450",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "ZnSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:32312",
+          "label": "zinc sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085706",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.230",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Na2MoO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:75213",
+          "label": "sodium molybdate dihydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085708",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CuSO4 x 5 H2O",
+        "term": {
+          "id": "CHEBI:31440",
+          "label": "copper(II) sulfate pentahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085712",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "CoSO4 x 7 H2O",
+        "term": {
+          "id": "CHEBI:91244",
+          "label": "cobalt(2+) sulfate heptahydrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085715",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0056",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "KNO",
+        "term": {
+          "id": "CHEBI:63043",
+          "label": "potassium nitrate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085717",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "NaH2PO4 x 2 H2O",
+        "term": {
+          "id": "CHEBI:37585",
+          "label": "sodium dihydrogenphosphate"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085719",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.0078",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      },
+      {
+        "preferred_term": "Glycine",
+        "term": {
+          "id": "CHEBI:15428",
+          "label": "glycine"
+        },
+        "curation_metadata": {
+          "mapping_quality": "LLM_ASSISTED",
+          "confidence_score": 1.0,
+          "curation_date": "2026-04-04T20:18:55.085721",
+          "ontology_source": "CHEBI"
+        },
+        "concentration": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "source": "CCAP Medium MR_ANT.pdf",
+        "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Filtered natural seawater  800.0 ml",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Add the explicit source-only quantity in the correct main or stock-addition stage. Existing ingredient containers are retained as stored; their presence is not an assertion of the missing component.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "EDTA.Na .2H O",
+            "term": {
+              "id": "CHEBI:64734",
+              "label": "EDTA disodium salt (anhydrous)"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085697",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "3.24",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "FeCl3 x 6 H2O",
+            "term": {
+              "id": "CHEBI:86254",
+              "label": "iron trichloride hexahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 0.95,
+              "curation_date": "2026-04-04T20:18:55.085701",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "1.08",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085703",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.450",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085706",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.230",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085708",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.097",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085712",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "CoSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:91244",
+              "label": "cobalt(2+) sulfate heptahydrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085715",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0056",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "KNO",
+            "term": {
+              "id": "CHEBI:63043",
+              "label": "potassium nitrate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085717",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.05",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "NaH2PO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:37585",
+              "label": "sodium dihydrogenphosphate"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085719",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.0078",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          },
+          {
+            "preferred_term": "Glycine",
+            "term": {
+              "id": "CHEBI:15428",
+              "label": "glycine"
+            },
+            "curation_metadata": {
+              "mapping_quality": "LLM_ASSISTED",
+              "confidence_score": 1.0,
+              "curation_date": "2026-04-04T20:18:55.085721",
+              "ontology_source": "CHEBI"
+            },
+            "concentration": {
+              "value": "0.3",
+              "unit": "G_PER_L"
+            },
+            "source": "CCAP Medium MR_ANT.pdf",
+            "notes": "From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "800 mL of natural seawater is a volume input to the explicit final1 L recipe, not800 g or an artificial-seawater substitution."
+  },
+  {
+    "ingredient_or_context": "Trace stock dose",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF medium per1000 cm³ table; named row",
+        "exact_source_quote": "Trace metals stock solution (chelated) (1) 2.5 ml",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Add the explicit source-only quantity in the correct main or stock-addition stage. Existing ingredient containers are retained as stored; their presence is not an assertion of the missing component.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "2.5 mL /1000 mL final medium; the source stock is separately made up to1 L."
+  },
+  {
+    "ingredient_or_context": "Stock final volume",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock preparation",
+        "exact_source_quote": "Make up to 1 litre with distilled water and adjust",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Keep this explicit quantity with its own stock or final-medium stage. Make-up gives total volume, not a separately measured distilled-water amount; pressure does not specify a cycle temperature or duration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main final volume",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF main preparation",
+        "exact_source_quote": "Make up to 1 litre with distilled water and autoclave",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Keep this explicit quantity with its own stock or final-medium stage. Make-up gives total volume, not a separately measured distilled-water amount; pressure does not specify a cycle temperature or duration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Stock pH range",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock preparation",
+        "exact_source_quote": "adjust pH to 7.6 ­ 7.8",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Keep this explicit quantity with its own stock or final-medium stage. Make-up gives total volume, not a separately measured distilled-water amount; pressure does not specify a cycle temperature or duration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Final medium pH range",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF main preparation",
+        "exact_source_quote": "Final pH should be 7.6 ­ 7.8.",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Keep this explicit quantity with its own stock or final-medium stage. Make-up gives total volume, not a separately measured distilled-water amount; pressure does not specify a cycle temperature or duration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Autoclave pressure",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF main preparation",
+        "exact_source_quote": "autoclave at 15 psi.",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "Keep this explicit quantity with its own stock or final-medium stage. Make-up gives total volume, not a separately measured distilled-water amount; pressure does not specify a cycle temperature or duration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Unquantified stock titrant strengths and doses",
+    "field_path": "solutions",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "PDF stock pH adjustment",
+        "exact_source_quote": "with dilute HCl or NaOH.",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The source identifies dilute HCl or NaOH but gives no strength or volume; retain unknown values rather than inventing amounts.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Unsupported generic light_intensity",
+    "field_path": "light_intensity",
+    "decision": "unsupported",
+    "local": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹",
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "Entire PDF medium section and preparation; no incubation/light specification",
+        "exact_source_quote": "Medium  per 1000 cm 3",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The complete inspected collection source gives no support for this stored numeric culture guidance. Qualify or remove it unless exact organism/formulation evidence is supplied; do not import another medium’s values.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "light_intensity",
+        "stored": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "light_intensity",
+        "stored": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹",
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Unsupported generic light_cycle",
+    "field_path": "light_cycle",
+    "decision": "unsupported",
+    "local": "Varies by species; commonly 12:12 or 16:8 light:dark",
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "Entire PDF medium section and preparation; no incubation/light specification",
+        "exact_source_quote": "Medium  per 1000 cm 3",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The complete inspected collection source gives no support for this stored numeric culture guidance. Qualify or remove it unless exact organism/formulation evidence is supplied; do not import another medium’s values.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "light_cycle",
+        "stored": "Varies by species; commonly 12:12 or 16:8 light:dark",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "light_cycle",
+        "stored": "Varies by species; commonly 12:12 or 16:8 light:dark",
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Unsupported generic temperature_range",
+    "field_path": "temperature_range",
+    "decision": "unsupported",
+    "local": "15-30°C depending on species",
+    "source_snippets": [
+      {
+        "source_key": "ccapANT",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf",
+        "source_locator": "Entire PDF medium section and preparation; no incubation/light specification",
+        "exact_source_quote": "Medium  per 1000 cm 3",
+        "snapshot_sha256": "7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14",
+        "parsed_text_sha256": "c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb"
+      }
+    ],
+    "rationale": "The complete inspected collection source gives no support for this stored numeric culture guidance. Qualify or remove it unless exact organism/formulation evidence is supplied; do not import another medium’s values.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "temperature_range",
+        "stored": "15-30°C depending on species",
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/algae/ant.yaml",
+        "field_path": "temperature_range",
+        "stored": "15-30°C depending on species",
+        "decision": "unsupported"
+      }
+    ]
+  }
+]
+
+## Findings
+
+### f1: Undiluted stock values and omitted main components change ANT identity
+
+blocker / open / confirmed; issue key: ant-stock-and-formula-loss.
+
+Seven trace-stock strengths are represented as direct final-medium g/L, a400-fold error relative to the explicit2.5 mL per1 L recipe. Tris, all three vitamins, natural seawater and the aliquot are absent. The maintained algae owner has the same defects.
+
+### f2: Two source dihydrates are mapped to anhydrous terms
+
+major / open / confirmed; issue key: ant-hydrate-and-name-loss.
+
+The collection specifies disodium EDTA dihydrate and sodium dihydrogenphosphate dihydrate, but the corresponding primary terms encode anhydrous compositions. EDTA and nitrate preferred names also lose source formula digits.
+
+### f3: Stock and final-medium preparation are absent
+
+major / open / confirmed; issue key: ant-preparation-omitted.
+
+Both layers omit stock pH7.6–7.8 and frozen storage, final make-up,15psi sterilization and final pH7.6–7.8. Missing source-specific sterilization and preparation impair reproducibility.
+
+### f4: Generic culture conditions and artificial seawater lack source support
+
+major / open / confirmed; issue key: ant-unsupported-generic-conditions.
+
+The record asserts light50–100, cycles12:12 or16:8, temperature15–30°C and natural-or-artificial seawater. The exact collection recipe specifies filtered natural seawater and no such incubation or lighting regime. These claims overextend the evidence.
+
+### f5: Automated curation metadata overstates evidential confidence
+
+minor / open / confirmed; issue key: ant-curation-metadata-limits.
+
+Confidence scores and ingredients_curated flags coexist with an incomplete formula, malformed preferred names and no attached amount snippets. Four history timestamps and20 ingredient curation dates lack timezones. The owner’s source repair is real but not a scientific recipe review.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the complete collection main formulation and separate trace stock in the algae owner, preserving exact doses and both make-up instructions; then regenerate. Do not treat the unrelated bacterial ANT as an owner.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify source-matching hydrate identities without inventing IDs, retain source masses/stages, and restore legible exact formula names in the maintained owner.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add scoped collection preparation with exact evidence. Keep stock/main pH and make-up separate, and leave unprinted autoclave temperature/duration and titrant doses unknown.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Retain natural seawater and qualify or remove unsupported generic numeric guidance unless exact formulation/organism evidence is independently supplied. Do not infer growth from a collection title.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Reassess current quality assertions after evidence-backed owner correction and append provenance clarification without rewriting historical timestamps or guessing timezones.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANT.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/algae/ant.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANT.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANT.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch029/287/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/287/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANT.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANT.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/algae/ant.yaml:1:id: CultureMech:000042<br>./data/merge_yaml/merged/ANT.yaml:1:id: CultureMech:000042<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/287/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 13 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/287/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | scripts/repair_ccap_sources_score10.py; Full captured writer source; relevant methods independently read | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-4 | src/culturemech/import/ccap_importer.py; Full captured writer source; relevant methods independently read | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| ccapANT | https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf; Entire one-page CCAP ANT PDF; stock, final medium, preparation and bibliography | supports | The complete PDF text and image were read. Stock make-up to1 L, final2.5 mL aliquot and separate final make-up to1 L are explicit. Natural seawater800 mL, three vitamin doses and15psi autoclaving belong to the final recipe. |
+| mediadiveC3context-attempt | https://mediadive.dsmz.de/rest/medium/C3; Preserved exact public retrieval result | context_only | mediadiveC3context: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| mediadiveC3retry-attempt | https://mediadive.dsmz.de/rest/medium/C3; Preserved exact public retrieval result | context_only | mediadiveC3retry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| chebi15428 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15428; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15428 resolves to glycine. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi37585 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:37585 resolves to sodium dihydrogenphosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63043 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63043 resolves to potassium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86358 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86358; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86358 resolves to manganese(II) sulfate tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}} |
+| history-metadata | data/merge_yaml/merged/ANT.yaml; data/normalized_yaml/algae/ant.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 3, "issue": "timezone absent", "value": "2026-02-03T11:26:43.449352"}, {"index": 6, "issue": "timezone absent", "value": "2026-04-04T20:18:55.085724"}]}, {"input": "data/normalized_yaml/algae/ant.yaml", "events": 10, "timestamp_issues": [{"index": 3, "issue": "timezone absent", "value": "2026-02-03T11:26:43.449352"}, {"index": 6, "issue": "timezone absent", "value": "2026-04-04T20:18:55.085724"}]}] |
+| excluded-namesake | data/normalized_yaml/bacterial/ant.yaml; Entire distinct bacterial ANT record and exact stable ID | context_only | CultureMech:000349 is an excluded namesake, not a contributor to this CultureMech:000042 target. Its MediaDiveC3 failures and legacyMIM000170 assertions do not impose target requirements. |
+| ingredient-curation-dates | data/merge_yaml/merged/ANT.yaml; data/normalized_yaml/algae/ant.yaml; All20 ingredient curation_date metadata values | context_only | All20 dates are timezone-naive. This is additional to the four naive history timestamps counted by history-metadata; no timezone is inferred. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch029/287/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch029/287/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- mediadiveC3context: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence.
+- mediadiveC3retry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence.
+- Only the algae owner belongs to this target. The C3 API failures and excluded bacterial legacy linkage remain optional contextual checks, not required unavailable checks for this record.
+- The CCAP recipe bibliography is provenance only; the cited papers were not independently reviewed and no organism-level claim is inferred.
+- This scientific assessment preceded formal review validation and saving; their results are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T162234Z-culturemech-000042-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: ant (CultureMech:000042)'
+started_at: '2026-10-21T16:17:54Z'
+finished_at: '2026-10-21T16:22:34Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The CCAP ANT record mixes seven trace-stock strengths with three final-medium
+  amounts, omitting the stock aliquot, Tris, vitamins, seawater and preparation. Restore
+  the exact CCAP formulation in its sole algae owner, correct two hydrate identities
+  and unsupported generic culture conditions, then regenerate. The bacterial ANT namesake
+  is outside this target’s ownership and evidence obligations.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANT.yaml
+    sha256: 87e7c7ab4d1a27a83d73a1094cea2105774601364e2b502fd64761eaf1cf3f4c
+    role: target
+  - path: data/normalized_yaml/algae/ant.yaml
+    sha256: f752767278734f1019e58c0f099c13175df7c01ec785943d225330d9c15aa44b
+    role: context
+  - path: data/normalized_yaml/bacterial/ant.yaml
+    sha256: 67addb8bdcc23881f5f230cce4309b5a1815075cd06afcfb35c42f0265f9210f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/ant.yaml.md
+    sha256: 72efe92ef04d004a017c4415506a94b4a37ea6bb6d577e1564088a82e0b819e8
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/ccap_raw_yaml.py
+    sha256: f2c119c4f67bd245c9fbd2b7480c1c6454a64b79922599cb583203628f476a8c
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/ccap_fetcher.py
+    sha256: 09e297722639216f5211096bcac559fae674a03a46e0d324f8360996836368e8
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 287; batch 029 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-eight task batches
+    contain 280 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 283 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000042
+targets:
+- target_id: CultureMech:000042
+  path: data/merge_yaml/merged/ANT.yaml
+  label: ant
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANT.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANT.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch029/287/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/287/strict.tsv"
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANT.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANT.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000042
+- check_id: mediadiveC3context-source-access
+  name: 'Exact source content access: mediadiveC3context'
+  required: false
+  status: unavailable
+  summary: 'mediadiveC3context: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - mediadiveC3context-attempt
+- check_id: mediadiveC3retry-source-access
+  name: 'Exact source content access: mediadiveC3retry'
+  required: false
+  status: unavailable
+  summary: 'mediadiveC3retry: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - mediadiveC3retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANT.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/ant.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANT.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:29.795747Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANT.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch029/287/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:31.107270Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/287/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANT.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:32.576827Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANT.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:33.481359Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: supports
+  summary: './data/normalized_yaml/algae/ant.yaml:1:id: CultureMech:000042
+
+    ./data/merge_yaml/merged/ANT.yaml:1:id: CultureMech:000042
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/287/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: supports
+  summary: 13 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: c8737108c7098d84f09881f29dc9fe2618913a7adc0df89b6d8d0101cc47fec7
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/287/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: f00affcc524b34b6267dd7a1ef97ad735422c752e685cf16da4b344b7e7188f4
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: scripts/repair_ccap_sources_score10.py
+  locator: Full captured writer source; relevant methods independently read
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+- evidence_id: writer-context-4
+  kind: record_content
+  reference: src/culturemech/import/ccap_importer.py
+  locator: Full captured writer source; relevant methods independently read
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+- evidence_id: ccapANT
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf
+  locator: Entire one-page CCAP ANT PDF; stock, final medium, preparation and bibliography
+  accessed_at: '2026-10-21T16:01:40.476047Z'
+  support: supports
+  summary: The complete PDF text and image were read. Stock make-up to1 L, final2.5
+    mL aliquot and separate final make-up to1 L are explicit. Natural seawater800
+    mL, three vitamin doses and15psi autoclaving belong to the final recipe.
+  snapshot_sha256: 7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14
+- evidence_id: mediadiveC3context-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/C3
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:01:39.518756Z'
+  support: context_only
+  summary: 'mediadiveC3context: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveC3retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/C3
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:03:01.045495Z'
+  support: context_only
+  summary: 'mediadiveC3retry: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi15428
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15428
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T10:12:25.545400Z'
+  support: supports
+  summary: CHEBI:15428 resolves to glycine. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe15e67af15eb83fc8824f11d1ba2dec039cb13dee005535e9acc71c1a2dd9d2
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi37585
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_37585
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.640347Z'
+  support: supports
+  summary: CHEBI:37585 resolves to sodium dihydrogenphosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 41dce71ee822e488298c467569974159cbd109700160a5863720dd3ae3213b13
+- evidence_id: chebi63043
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:40.679699Z'
+  support: supports
+  summary: CHEBI:63043 resolves to potassium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: c324450e6330a169c708c32a7908b6df0276f4dc76da413e473b563928f61c13
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86358
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86358
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:18.556599Z'
+  support: supports
+  summary: CHEBI:86358 resolves to manganese(II) sulfate tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 072159a9c46c0968f25bba11a0baf83019fabb4f6f296084d2b3ef7ee1cc360c
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANT.yaml; data/normalized_yaml/algae/ant.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 3, "issue":
+    "timezone absent", "value": "2026-02-03T11:26:43.449352"}, {"index": 6, "issue":
+    "timezone absent", "value": "2026-04-04T20:18:55.085724"}]}, {"input": "data/normalized_yaml/algae/ant.yaml",
+    "events": 10, "timestamp_issues": [{"index": 3, "issue": "timezone absent", "value":
+    "2026-02-03T11:26:43.449352"}, {"index": 6, "issue": "timezone absent", "value":
+    "2026-04-04T20:18:55.085724"}]}]'
+- evidence_id: excluded-namesake
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/ant.yaml
+  locator: Entire distinct bacterial ANT record and exact stable ID
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: CultureMech:000349 is an excluded namesake, not a contributor to this CultureMech:000042
+    target. Its MediaDiveC3 failures and legacyMIM000170 assertions do not impose
+    target requirements.
+  snapshot_sha256: 67addb8bdcc23881f5f230cce4309b5a1815075cd06afcfb35c42f0265f9210f
+- evidence_id: ingredient-curation-dates
+  kind: record_content
+  reference: data/merge_yaml/merged/ANT.yaml; data/normalized_yaml/algae/ant.yaml
+  locator: All20 ingredient curation_date metadata values
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: All20 dates are timezone-naive. This is additional to the four naive history
+    timestamps counted by history-metadata; no timezone is inferred.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/287/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 00ee3b0b17407e193da2ce3a47a335a496aaa5b527b724e7185bff9eaa90a210
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/287/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T16:22:33Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 708bfa1ae1efb2d3604fafdbec51ca612d14e17883fcbdb2bdfd36a1edd92a97
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '10 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 10/10
+    primary and 0/10 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15428
+  - chebi31440
+  - chebi32312
+  - chebi37585
+  - chebi63043
+  - chebi64734
+  - chebi75213
+  - chebi86254
+  - chebi86358
+  - chebi91244
+  details: 'Instance coverage on a 0–100 percent scale, denominator 10: primary 100.00%;
+    secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 20 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: CCAP ANT and sole maintained algae owner
+  outcome: supported
+  summary: The exact target ID, CCAP:ANT reference, original CCAP import event and
+    single ant.yaml merge-source occurrence resolve the algae owner. Its later structured-source
+    repair adds the correct CCAP URL but leaves the incomplete formula unchanged.
+    The bacterial namesake is distinct contextual material only.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - ccapANT
+  - excluded-namesake
+- assessment_id: formulation
+  area: consistency
+  topic: Seven stock components versus final-medium recipe
+  outcome: concern
+  summary: Both local layers contain seven trace constituents at stock strength and
+    only potassium nitrate, phosphate and glycine from the final medium. The explicit2.5
+    mL aliquot, Tris1 g, thiamine500 micrograms, cyanocobalamin2 micrograms, biotin1
+    microgram and natural seawater800 mL are missing. The source specifies separate
+    stock and final make-up to1 L, so the stock-to-final factor is0.0025 rather than1.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+- assessment_id: preparation
+  area: completeness
+  topic: Distinct stock and final preparation
+  outcome: concern
+  summary: No local preparation is represented. The stock is made up to1 L, adjusted
+    to pH7.6–7.8 using dilute HCl or NaOH and stored frozen. The final medium is made
+    up to1 L, autoclaved at15psi and has final pH7.6–7.8. Neither a temperature, duration
+    nor titrant dose is stated; retain those unknowns.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+- assessment_id: chemical-forms
+  area: grounding
+  topic: Source hydrates and truncated preferred names
+  outcome: concern
+  summary: EDTA.Na2.2H2O and NaH2PO4.2H2O are explicit source dihydrates, while CHEBI:64734
+    and37585 encode anhydrous compositions. The source EDTA and nitrate names also
+    retain digits lost from local preferred_term strings EDTA.Na .2H O and KNO. Other
+    explicit hydrate terms match their captured formulas; no replacement ID is invented.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - ccapANT
+  - chebi64734
+  - chebi37585
+  - chebi63043
+- assessment_id: conditions
+  area: scope
+  topic: Classification and unsupported general culture guidance
+  outcome: concern
+  summary: The collection identifies an algal medium with natural seawater; LIQUID
+    and complex/undefined classification are consistent with that mixed ingredient.
+    The supplied PDF does not establish artificial seawater as equivalent, light50–100,
+    cycles12:12 or16:8, or temperature15–30°C. Generic applications do not constitute
+    strain-specific growth evidence. No target organism, DOI, PMID, taxonomy or genome
+    accession is asserted. The two bibliography entries printed in the source were
+    read as provenance; the papers were not independently inspected and no paper-level
+    claim is transferred.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+- assessment_id: provenance
+  area: provenance
+  topic: Automated metadata and current source repair
+  outcome: concern
+  summary: All ten ingredient source strings identify the collection PDF but contain
+    no exact claim-level amount evidence. Confidence0.95/1.0, ingredients_curated
+    and automated-expert labels do not establish formulation completeness. The September
+    source repair copies source identity only. Current formulation merge logic preserves
+    evidence only for compatible scientific content; it cannot cure the owner’s incomplete
+    expansion.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+  - writer-context-4
+  - ingredient-curation-dates
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 25 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000042
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Trace stock EDTA.Na2.2H2O\",\n\
+    \    \"field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"3.24\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapANT\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"EDTA.Na2.2H2O  3.24 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"3.24\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.24\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"3.24 g / 1 L stock × 0.0025 L aliquot = 0.008100 g in the source final1 L\
+    \ medium, therefore 0.008100 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock\
+    \ FeCl3.6H2O\",\n    \"field_path\": \"ingredients[1].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": {\n      \"value\": \"1.08\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"FeCl3.6H2O  1.08 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.08\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"1.08 g / 1 L stock × 0.0025 L aliquot = 0.002700 g in the source final1 L\
+    \ medium, therefore 0.002700 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock\
+    \ MnSO4.4H2O\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.450\",\n    \
+    \  \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"MnSO4.4H2O  0.450 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"0.450 g / 1 L stock × 0.0025 L aliquot = 0.0011250 g in the source final1\
+    \ L medium, therefore 0.0011250 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock\
+    \ ZnSO4.7H2O\",\n    \"field_path\": \"ingredients[3].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.230\",\n    \
+    \  \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"ZnSO4.7H2O  0.230 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.230\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.230\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"0.230 g / 1 L stock × 0.0025 L aliquot = 0.0005750 g in the source final1\
+    \ L medium, therefore 0.0005750 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock\
+    \ Na2MoO4.2H2O\",\n    \"field_path\": \"ingredients[4].concentration\",\n   \
+    \ \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.097\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"Na2MoO4.2H2O  0.097 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"0.097 g / 1 L stock × 0.0025 L aliquot = 0.0002425 g in the source final1\
+    \ L medium, therefore 0.0002425 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock\
+    \ CuSO4.5H2O\",\n    \"field_path\": \"ingredients[5].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.01\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"CuSO4.5H2O  0.01 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"0.01 g / 1 L stock × 0.0025 L aliquot = 0.000025 g in the source final1 L\
+    \ medium, therefore 0.000025 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock\
+    \ CoSO4.7H2O\",\n    \"field_path\": \"ingredients[6].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.0056\",\n   \
+    \   \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock per1000 cm³ table; named row\",\n \
+    \       \"exact_source_quote\": \"CoSO4.7H2O  0.0056 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source quantity is stock concentration\
+    \ after explicit make-up to1 L. Move it to the separate stock recipe and add2.5\
+    \ mL to the final1 L medium; the current direct-medium field is400-fold the intended\
+    \ trace contribution.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0056\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0056\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"0.0056 g / 1 L stock × 0.0025 L aliquot = 0.00001400 g in the source final1\
+    \ L medium, therefore 0.00001400 g/L. This uses both explicit make-up instructions,\
+    \ not water alone.\"\n  },\n  {\n    \"ingredient_or_context\": \"KNO3\",\n  \
+    \  \"field_path\": \"ingredients[7].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.05\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapANT\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"KNO3  0.05 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount agrees with the final1 L recipe,\
+    \ but neither layer has matching attached claim evidence. Preserve amount/unit;\
+    \ the separate hydrate or preferred-name issue does not change the source mass.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n      \
+    \  \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"NaH2PO4.2H2O\",\n    \"field_path\": \"ingredients[8].concentration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"0.0078\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"NaH2PO4.2H2O  0.0078 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount agrees with the final1 L recipe,\
+    \ but neither layer has matching attached claim evidence. Preserve amount/unit;\
+    \ the separate hydrate or preferred-name issue does not change the source mass.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0078\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n      \
+    \  \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0078\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Glycine\",\n    \"field_path\": \"ingredients[9].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"0.3\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"Glycine  0.3 g\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount agrees with the final1 L recipe,\
+    \ but neither layer has matching attached claim evidence. Preserve amount/unit;\
+    \ the separate hydrate or preferred-name issue does not change the source mass.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"\
+    field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Tris\",\n    \"field_path\": \"ingredients\",\n    \"decision\": \"add\",\n\
+    \    \"local\": [\n      {\n        \"preferred_term\": \"EDTA.Na .2H O\",\n \
+    \       \"term\": {\n          \"id\": \"CHEBI:64734\",\n          \"label\":\
+    \ \"EDTA disodium salt (anhydrous)\"\n        },\n        \"curation_metadata\"\
+    : {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 0.95,\n          \"curation_date\": \"2026-04-04T20:18:55.085697\",\n      \
+    \    \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"3.24\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"FeCl3 x 6 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:86254\",\n          \"label\": \"iron trichloride\
+    \ hexahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 0.95,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085701\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"1.08\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"MnSO4 x 4 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:86358\",\n\
+    \          \"label\": \"manganese(II) sulfate tetrahydrate\"\n        },\n   \
+    \     \"curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n          \"confidence_score\": 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085703\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"\
+    From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\
+    \n      },\n      {\n        \"preferred_term\": \"ZnSO4 x 7 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:32312\",\n          \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085706\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.230\",\n \
+    \         \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Na2MoO4 x 2 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:75213\"\
+    ,\n          \"label\": \"sodium molybdate dihydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085708\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"\
+    From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\
+    \n      },\n      {\n        \"preferred_term\": \"CuSO4 x 5 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:31440\",\n          \"label\": \"copper(II)\
+    \ sulfate pentahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085712\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"CoSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:91244\",\n          \"label\": \"cobalt(2+) sulfate\
+    \ heptahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085715\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0056\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KNO\",\n        \"term\": {\n          \"id\": \"CHEBI:63043\",\n        \
+    \  \"label\": \"potassium nitrate\"\n        },\n        \"curation_metadata\"\
+    : {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085717\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:37585\",\n          \"label\": \"sodium dihydrogenphosphate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085719\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0078\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Glycine\",\n        \"term\": {\n          \"id\": \"CHEBI:15428\",\n    \
+    \      \"label\": \"glycine\"\n        },\n        \"curation_metadata\": {\n\
+    \          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085721\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"Tris [tris(hydroxymethyl)aminomethane]  1.0 g\"\
+    ,\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the explicit source-only quantity\
+    \ in the correct main or stock-addition stage. Existing ingredient containers\
+    \ are retained as stored; their presence is not an assertion of the missing component.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients\"\
+    ,\n        \"stored\": [\n          {\n            \"preferred_term\": \"EDTA.Na\
+    \ .2H O\",\n            \"term\": {\n              \"id\": \"CHEBI:64734\",\n\
+    \              \"label\": \"EDTA disodium salt (anhydrous)\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    3.24\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"FeCl3 x 6 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86254\",\n              \"label\": \"iron trichloride\
+    \ hexahydrate\"\n            },\n            \"curation_metadata\": {\n      \
+    \        \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085701\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1.08\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"curation_metadata\": {\n              \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n              \"confidence_score\": 1.0,\n              \"\
+    curation_date\": \"2026-04-04T20:18:55.085703\",\n              \"ontology_source\"\
+    : \"CHEBI\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n            },\n   \
+    \         \"source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \          },\n          {\n            \"preferred_term\": \"ZnSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32312\",\n         \
+    \     \"label\": \"zinc sulfate heptahydrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n\
+    \        \"field_path\": \"ingredients\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"EDTA.Na .2H O\",\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:64734\",\n              \"label\": \"EDTA disodium\
+    \ salt (anhydrous)\"\n            },\n            \"curation_metadata\": {\n \
+    \             \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085697\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"3.24\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"FeCl3 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86254\"\
+    ,\n              \"label\": \"iron trichloride hexahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085701\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    1.08\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"MnSO4 x 4 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085703\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"ZnSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:32312\"\
+    ,\n              \"label\": \"zinc sulfate heptahydrate\"\n            },\n  \
+    \          \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    }\n    ],\n    \"arithmetic\": \"1 g / explicit final1 L =1 g/L.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Thiamine HCl\",\n    \"field_path\": \"\
+    ingredients\",\n    \"decision\": \"add\",\n    \"local\": [\n      {\n      \
+    \  \"preferred_term\": \"EDTA.Na .2H O\",\n        \"term\": {\n          \"id\"\
+    : \"CHEBI:64734\",\n          \"label\": \"EDTA disodium salt (anhydrous)\"\n\
+    \        },\n        \"curation_metadata\": {\n          \"mapping_quality\":\
+    \ \"LLM_ASSISTED\",\n          \"confidence_score\": 0.95,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"3.24\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"FeCl3 x 6 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:86254\",\n\
+    \          \"label\": \"iron trichloride hexahydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 0.95,\n          \"curation_date\": \"2026-04-04T20:18:55.085701\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"1.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \      },\n      {\n        \"preferred_term\": \"MnSO4 x 4 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:86358\",\n          \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085703\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"ZnSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:32312\",\n          \"label\": \"zinc sulfate heptahydrate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085706\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.230\",\n \
+    \         \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Na2MoO4 x 2 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:75213\"\
+    ,\n          \"label\": \"sodium molybdate dihydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085708\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"\
+    From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\
+    \n      },\n      {\n        \"preferred_term\": \"CuSO4 x 5 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:31440\",\n          \"label\": \"copper(II)\
+    \ sulfate pentahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085712\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"CoSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:91244\",\n          \"label\": \"cobalt(2+) sulfate\
+    \ heptahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085715\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0056\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KNO\",\n        \"term\": {\n          \"id\": \"CHEBI:63043\",\n        \
+    \  \"label\": \"potassium nitrate\"\n        },\n        \"curation_metadata\"\
+    : {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085717\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:37585\",\n          \"label\": \"sodium dihydrogenphosphate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085719\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0078\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Glycine\",\n        \"term\": {\n          \"id\": \"CHEBI:15428\",\n    \
+    \      \"label\": \"glycine\"\n        },\n        \"curation_metadata\": {\n\
+    \          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085721\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"Thiamine HCl  500.0 µg\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the explicit source-only quantity\
+    \ in the correct main or stock-addition stage. Existing ingredient containers\
+    \ are retained as stored; their presence is not an assertion of the missing component.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients\"\
+    ,\n        \"stored\": [\n          {\n            \"preferred_term\": \"EDTA.Na\
+    \ .2H O\",\n            \"term\": {\n              \"id\": \"CHEBI:64734\",\n\
+    \              \"label\": \"EDTA disodium salt (anhydrous)\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    3.24\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"FeCl3 x 6 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86254\",\n              \"label\": \"iron trichloride\
+    \ hexahydrate\"\n            },\n            \"curation_metadata\": {\n      \
+    \        \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085701\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1.08\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"curation_metadata\": {\n              \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n              \"confidence_score\": 1.0,\n              \"\
+    curation_date\": \"2026-04-04T20:18:55.085703\",\n              \"ontology_source\"\
+    : \"CHEBI\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n            },\n   \
+    \         \"source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \          },\n          {\n            \"preferred_term\": \"ZnSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32312\",\n         \
+    \     \"label\": \"zinc sulfate heptahydrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n\
+    \        \"field_path\": \"ingredients\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"EDTA.Na .2H O\",\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:64734\",\n              \"label\": \"EDTA disodium\
+    \ salt (anhydrous)\"\n            },\n            \"curation_metadata\": {\n \
+    \             \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085697\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"3.24\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"FeCl3 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86254\"\
+    ,\n              \"label\": \"iron trichloride hexahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085701\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    1.08\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"MnSO4 x 4 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085703\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"ZnSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:32312\"\
+    ,\n              \"label\": \"zinc sulfate heptahydrate\"\n            },\n  \
+    \          \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    }\n    ],\n    \"arithmetic\": \"500 µg / explicit final1 L =500 µg/L; equivalently0.0005\
+    \ g/L.\"\n  },\n  {\n    \"ingredient_or_context\": \"Cyanocobalamin\",\n    \"\
+    field_path\": \"ingredients\",\n    \"decision\": \"add\",\n    \"local\": [\n\
+    \      {\n        \"preferred_term\": \"EDTA.Na .2H O\",\n        \"term\": {\n\
+    \          \"id\": \"CHEBI:64734\",\n          \"label\": \"EDTA disodium salt\
+    \ (anhydrous)\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 0.95,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"3.24\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"FeCl3 x 6 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:86254\",\n\
+    \          \"label\": \"iron trichloride hexahydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 0.95,\n          \"curation_date\": \"2026-04-04T20:18:55.085701\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"1.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \      },\n      {\n        \"preferred_term\": \"MnSO4 x 4 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:86358\",\n          \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085703\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"ZnSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:32312\",\n          \"label\": \"zinc sulfate heptahydrate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085706\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.230\",\n \
+    \         \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Na2MoO4 x 2 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:75213\"\
+    ,\n          \"label\": \"sodium molybdate dihydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085708\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"\
+    From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\
+    \n      },\n      {\n        \"preferred_term\": \"CuSO4 x 5 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:31440\",\n          \"label\": \"copper(II)\
+    \ sulfate pentahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085712\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"CoSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:91244\",\n          \"label\": \"cobalt(2+) sulfate\
+    \ heptahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085715\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0056\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KNO\",\n        \"term\": {\n          \"id\": \"CHEBI:63043\",\n        \
+    \  \"label\": \"potassium nitrate\"\n        },\n        \"curation_metadata\"\
+    : {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085717\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:37585\",\n          \"label\": \"sodium dihydrogenphosphate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085719\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0078\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Glycine\",\n        \"term\": {\n          \"id\": \"CHEBI:15428\",\n    \
+    \      \"label\": \"glycine\"\n        },\n        \"curation_metadata\": {\n\
+    \          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085721\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"Cyanocobalamin  (Vitamin B12)  2.0 µg\",\n\
+    \        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the explicit source-only quantity\
+    \ in the correct main or stock-addition stage. Existing ingredient containers\
+    \ are retained as stored; their presence is not an assertion of the missing component.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients\"\
+    ,\n        \"stored\": [\n          {\n            \"preferred_term\": \"EDTA.Na\
+    \ .2H O\",\n            \"term\": {\n              \"id\": \"CHEBI:64734\",\n\
+    \              \"label\": \"EDTA disodium salt (anhydrous)\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    3.24\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"FeCl3 x 6 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86254\",\n              \"label\": \"iron trichloride\
+    \ hexahydrate\"\n            },\n            \"curation_metadata\": {\n      \
+    \        \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085701\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1.08\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"curation_metadata\": {\n              \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n              \"confidence_score\": 1.0,\n              \"\
+    curation_date\": \"2026-04-04T20:18:55.085703\",\n              \"ontology_source\"\
+    : \"CHEBI\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n            },\n   \
+    \         \"source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \          },\n          {\n            \"preferred_term\": \"ZnSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32312\",\n         \
+    \     \"label\": \"zinc sulfate heptahydrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n\
+    \        \"field_path\": \"ingredients\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"EDTA.Na .2H O\",\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:64734\",\n              \"label\": \"EDTA disodium\
+    \ salt (anhydrous)\"\n            },\n            \"curation_metadata\": {\n \
+    \             \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085697\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"3.24\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"FeCl3 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86254\"\
+    ,\n              \"label\": \"iron trichloride hexahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085701\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    1.08\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"MnSO4 x 4 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085703\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"ZnSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:32312\"\
+    ,\n              \"label\": \"zinc sulfate heptahydrate\"\n            },\n  \
+    \          \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    }\n    ],\n    \"arithmetic\": \"2 µg / explicit final1 L =2 µg/L; equivalently0.000002\
+    \ g/L.\"\n  },\n  {\n    \"ingredient_or_context\": \"Biotin\",\n    \"field_path\"\
+    : \"ingredients\",\n    \"decision\": \"add\",\n    \"local\": [\n      {\n  \
+    \      \"preferred_term\": \"EDTA.Na .2H O\",\n        \"term\": {\n         \
+    \ \"id\": \"CHEBI:64734\",\n          \"label\": \"EDTA disodium salt (anhydrous)\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 0.95,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"3.24\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"FeCl3 x 6 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:86254\",\n\
+    \          \"label\": \"iron trichloride hexahydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 0.95,\n          \"curation_date\": \"2026-04-04T20:18:55.085701\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"1.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \      },\n      {\n        \"preferred_term\": \"MnSO4 x 4 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:86358\",\n          \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085703\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"ZnSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:32312\",\n          \"label\": \"zinc sulfate heptahydrate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085706\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.230\",\n \
+    \         \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Na2MoO4 x 2 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:75213\"\
+    ,\n          \"label\": \"sodium molybdate dihydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085708\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"\
+    From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\
+    \n      },\n      {\n        \"preferred_term\": \"CuSO4 x 5 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:31440\",\n          \"label\": \"copper(II)\
+    \ sulfate pentahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085712\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"CoSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:91244\",\n          \"label\": \"cobalt(2+) sulfate\
+    \ heptahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085715\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0056\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KNO\",\n        \"term\": {\n          \"id\": \"CHEBI:63043\",\n        \
+    \  \"label\": \"potassium nitrate\"\n        },\n        \"curation_metadata\"\
+    : {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085717\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:37585\",\n          \"label\": \"sodium dihydrogenphosphate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085719\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0078\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Glycine\",\n        \"term\": {\n          \"id\": \"CHEBI:15428\",\n    \
+    \      \"label\": \"glycine\"\n        },\n        \"curation_metadata\": {\n\
+    \          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085721\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"Biotin  1.0 µg\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the explicit source-only quantity\
+    \ in the correct main or stock-addition stage. Existing ingredient containers\
+    \ are retained as stored; their presence is not an assertion of the missing component.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients\"\
+    ,\n        \"stored\": [\n          {\n            \"preferred_term\": \"EDTA.Na\
+    \ .2H O\",\n            \"term\": {\n              \"id\": \"CHEBI:64734\",\n\
+    \              \"label\": \"EDTA disodium salt (anhydrous)\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    3.24\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"FeCl3 x 6 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86254\",\n              \"label\": \"iron trichloride\
+    \ hexahydrate\"\n            },\n            \"curation_metadata\": {\n      \
+    \        \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085701\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1.08\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"curation_metadata\": {\n              \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n              \"confidence_score\": 1.0,\n              \"\
+    curation_date\": \"2026-04-04T20:18:55.085703\",\n              \"ontology_source\"\
+    : \"CHEBI\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n            },\n   \
+    \         \"source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \          },\n          {\n            \"preferred_term\": \"ZnSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32312\",\n         \
+    \     \"label\": \"zinc sulfate heptahydrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n\
+    \        \"field_path\": \"ingredients\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"EDTA.Na .2H O\",\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:64734\",\n              \"label\": \"EDTA disodium\
+    \ salt (anhydrous)\"\n            },\n            \"curation_metadata\": {\n \
+    \             \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085697\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"3.24\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"FeCl3 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86254\"\
+    ,\n              \"label\": \"iron trichloride hexahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085701\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    1.08\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"MnSO4 x 4 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085703\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"ZnSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:32312\"\
+    ,\n              \"label\": \"zinc sulfate heptahydrate\"\n            },\n  \
+    \          \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    }\n    ],\n    \"arithmetic\": \"1 µg / explicit final1 L =1 µg/L; equivalently0.000001\
+    \ g/L.\"\n  },\n  {\n    \"ingredient_or_context\": \"Filtered natural seawater\"\
+    ,\n    \"field_path\": \"ingredients\",\n    \"decision\": \"add\",\n    \"local\"\
+    : [\n      {\n        \"preferred_term\": \"EDTA.Na .2H O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:64734\",\n          \"label\": \"EDTA disodium\
+    \ salt (anhydrous)\"\n        },\n        \"curation_metadata\": {\n         \
+    \ \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\": 0.95,\n\
+    \          \"curation_date\": \"2026-04-04T20:18:55.085697\",\n          \"ontology_source\"\
+    : \"CHEBI\"\n        },\n        \"concentration\": {\n          \"value\": \"\
+    3.24\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP\
+    \ Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated\
+    \ from CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"FeCl3 x 6 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:86254\",\n\
+    \          \"label\": \"iron trichloride hexahydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 0.95,\n          \"curation_date\": \"2026-04-04T20:18:55.085701\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"1.08\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \      },\n      {\n        \"preferred_term\": \"MnSO4 x 4 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:86358\",\n          \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085703\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.450\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"ZnSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:32312\",\n          \"label\": \"zinc sulfate heptahydrate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085706\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.230\",\n \
+    \         \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Na2MoO4 x 2 H2O\",\n        \"term\": {\n          \"id\": \"CHEBI:75213\"\
+    ,\n          \"label\": \"sodium molybdate dihydrate\"\n        },\n        \"\
+    curation_metadata\": {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n   \
+    \       \"confidence_score\": 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085708\"\
+    ,\n          \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"\
+    From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\
+    \n      },\n      {\n        \"preferred_term\": \"CuSO4 x 5 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:31440\",\n          \"label\": \"copper(II)\
+    \ sulfate pentahydrate\"\n        },\n        \"curation_metadata\": {\n     \
+    \     \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\":\
+    \ 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085712\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"CoSO4 x 7 H2O\",\n        \"term\"\
+    : {\n          \"id\": \"CHEBI:91244\",\n          \"label\": \"cobalt(2+) sulfate\
+    \ heptahydrate\"\n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085715\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0056\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"KNO\",\n        \"term\": {\n          \"id\": \"CHEBI:63043\",\n        \
+    \  \"label\": \"potassium nitrate\"\n        },\n        \"curation_metadata\"\
+    : {\n          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085717\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   },\n      {\n        \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n        \"\
+    term\": {\n          \"id\": \"CHEBI:37585\",\n          \"label\": \"sodium dihydrogenphosphate\"\
+    \n        },\n        \"curation_metadata\": {\n          \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n          \"confidence_score\": 1.0,\n          \"curation_date\"\
+    : \"2026-04-04T20:18:55.085719\",\n          \"ontology_source\": \"CHEBI\"\n\
+    \        },\n        \"concentration\": {\n          \"value\": \"0.0078\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"source\": \"CCAP Medium\
+    \ MR_ANT.pdf\",\n        \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from\
+    \ CCAP Medium MR_ANT.pdf specification\"\n      },\n      {\n        \"preferred_term\"\
+    : \"Glycine\",\n        \"term\": {\n          \"id\": \"CHEBI:15428\",\n    \
+    \      \"label\": \"glycine\"\n        },\n        \"curation_metadata\": {\n\
+    \          \"mapping_quality\": \"LLM_ASSISTED\",\n          \"confidence_score\"\
+    : 1.0,\n          \"curation_date\": \"2026-04-04T20:18:55.085721\",\n       \
+    \   \"ontology_source\": \"CHEBI\"\n        },\n        \"concentration\": {\n\
+    \          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"source\": \"CCAP Medium MR_ANT.pdf\",\n        \"notes\": \"From CCAP\
+    \ Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF medium per1000 cm³ table; named row\",\n\
+    \        \"exact_source_quote\": \"Filtered natural seawater  800.0 ml\",\n  \
+    \      \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the explicit source-only quantity\
+    \ in the correct main or stock-addition stage. Existing ingredient containers\
+    \ are retained as stored; their presence is not an assertion of the missing component.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients\"\
+    ,\n        \"stored\": [\n          {\n            \"preferred_term\": \"EDTA.Na\
+    \ .2H O\",\n            \"term\": {\n              \"id\": \"CHEBI:64734\",\n\
+    \              \"label\": \"EDTA disodium salt (anhydrous)\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085697\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    3.24\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"FeCl3 x 6 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86254\",\n              \"label\": \"iron trichloride\
+    \ hexahydrate\"\n            },\n            \"curation_metadata\": {\n      \
+    \        \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085701\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1.08\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"curation_metadata\": {\n              \"mapping_quality\"\
+    : \"LLM_ASSISTED\",\n              \"confidence_score\": 1.0,\n              \"\
+    curation_date\": \"2026-04-04T20:18:55.085703\",\n              \"ontology_source\"\
+    : \"CHEBI\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n            },\n   \
+    \         \"source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From\
+    \ CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n\
+    \          },\n          {\n            \"preferred_term\": \"ZnSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32312\",\n         \
+    \     \"label\": \"zinc sulfate heptahydrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n\
+    \        \"field_path\": \"ingredients\",\n        \"stored\": [\n          {\n\
+    \            \"preferred_term\": \"EDTA.Na .2H O\",\n            \"term\": {\n\
+    \              \"id\": \"CHEBI:64734\",\n              \"label\": \"EDTA disodium\
+    \ salt (anhydrous)\"\n            },\n            \"curation_metadata\": {\n \
+    \             \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 0.95,\n              \"curation_date\": \"2026-04-04T20:18:55.085697\",\n  \
+    \            \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"3.24\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"FeCl3 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86254\"\
+    ,\n              \"label\": \"iron trichloride hexahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 0.95,\n              \"curation_date\"\
+    : \"2026-04-04T20:18:55.085701\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    1.08\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"MnSO4 x 4 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085703\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.450\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"ZnSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:32312\"\
+    ,\n              \"label\": \"zinc sulfate heptahydrate\"\n            },\n  \
+    \          \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085706\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.230\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    source\": \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium\
+    \ MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n\
+    \          {\n            \"preferred_term\": \"Na2MoO4 x 2 H2O\",\n         \
+    \   \"term\": {\n              \"id\": \"CHEBI:75213\",\n              \"label\"\
+    : \"sodium molybdate dihydrate\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085708\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.097\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"CuSO4 x 5 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31440\"\
+    ,\n              \"label\": \"copper(II) sulfate pentahydrate\"\n            },\n\
+    \            \"curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\"\
+    ,\n              \"confidence_score\": 1.0,\n              \"curation_date\":\
+    \ \"2026-04-04T20:18:55.085712\",\n              \"ontology_source\": \"CHEBI\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"CoSO4 x 7 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:91244\",\n              \"label\": \"cobalt(2+)\
+    \ sulfate heptahydrate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085715\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0056\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"KNO\",\n            \"term\": {\n              \"id\": \"CHEBI:63043\",\n\
+    \              \"label\": \"potassium nitrate\"\n            },\n            \"\
+    curation_metadata\": {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n\
+    \              \"confidence_score\": 1.0,\n              \"curation_date\": \"\
+    2026-04-04T20:18:55.085717\",\n              \"ontology_source\": \"CHEBI\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    0.05\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"source\"\
+    : \"CCAP Medium MR_ANT.pdf\",\n            \"notes\": \"From CCAP Medium MR_ANT.pdf;\
+    \ Curated from CCAP Medium MR_ANT.pdf specification\"\n          },\n        \
+    \  {\n            \"preferred_term\": \"NaH2PO4 x 2 H2O\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:37585\",\n              \"label\": \"sodium\
+    \ dihydrogenphosphate\"\n            },\n            \"curation_metadata\": {\n\
+    \              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085719\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.0078\",\n              \"unit\": \"G_PER_L\"\
+    \n            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n      \
+    \      \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          },\n          {\n            \"preferred_term\":\
+    \ \"Glycine\",\n            \"term\": {\n              \"id\": \"CHEBI:15428\"\
+    ,\n              \"label\": \"glycine\"\n            },\n            \"curation_metadata\"\
+    : {\n              \"mapping_quality\": \"LLM_ASSISTED\",\n              \"confidence_score\"\
+    : 1.0,\n              \"curation_date\": \"2026-04-04T20:18:55.085721\",\n   \
+    \           \"ontology_source\": \"CHEBI\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.3\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"source\": \"CCAP Medium MR_ANT.pdf\",\n       \
+    \     \"notes\": \"From CCAP Medium MR_ANT.pdf; Curated from CCAP Medium MR_ANT.pdf\
+    \ specification\"\n          }\n        ],\n        \"decision\": \"add\"\n  \
+    \    }\n    ],\n    \"arithmetic\": \"800 mL of natural seawater is a volume input\
+    \ to the explicit final1 L recipe, not800 g or an artificial-seawater substitution.\"\
+    \n  },\n  {\n    \"ingredient_or_context\": \"Trace stock dose\",\n    \"field_path\"\
+    : \"solutions\",\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapANT\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\",\n        \"source_locator\"\
+    : \"PDF medium per1000 cm³ table; named row\",\n        \"exact_source_quote\"\
+    : \"Trace metals stock solution (chelated) (1) 2.5 ml\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the explicit source-only quantity\
+    \ in the correct main or stock-addition stage. Existing ingredient containers\
+    \ are retained as stored; their presence is not an assertion of the missing component.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     }\n    ],\n    \"arithmetic\": \"2.5 mL /1000 mL final medium; the source\
+    \ stock is separately made up to1 L.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Stock final volume\",\n    \"field_path\": \"solutions\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock preparation\",\n        \"exact_source_quote\"\
+    : \"Make up to 1 litre with distilled water and adjust\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep this explicit quantity with its own\
+    \ stock or final-medium stage. Make-up gives total volume, not a separately measured\
+    \ distilled-water amount; pressure does not specify a cycle temperature or duration.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Main final volume\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF main preparation\",\n        \"exact_source_quote\"\
+    : \"Make up to 1 litre with distilled water and autoclave\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep this explicit quantity with its own\
+    \ stock or final-medium stage. Make-up gives total volume, not a separately measured\
+    \ distilled-water amount; pressure does not specify a cycle temperature or duration.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Stock pH range\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapANT\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF stock preparation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7.6 ­ 7.8\",\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep this explicit quantity with its own\
+    \ stock or final-medium stage. Make-up gives total volume, not a separately measured\
+    \ distilled-water amount; pressure does not specify a cycle temperature or duration.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\"\n \
+    \     }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Final medium pH range\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF main preparation\",\n        \"exact_source_quote\"\
+    : \"Final pH should be 7.6 ­ 7.8.\",\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep this explicit quantity with its own\
+    \ stock or final-medium stage. Make-up gives total volume, not a separately measured\
+    \ distilled-water amount; pressure does not specify a cycle temperature or duration.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Autoclave pressure\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"PDF main preparation\",\n        \"exact_source_quote\"\
+    : \"autoclave at 15 psi.\",\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep this explicit quantity with its own\
+    \ stock or final-medium stage. Make-up gives total volume, not a separately measured\
+    \ distilled-water amount; pressure does not specify a cycle temperature or duration.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null,\n        \"decision\": \"\
+    add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Unquantified\
+    \ stock titrant strengths and doses\",\n    \"field_path\": \"solutions\",\n \
+    \   \"decision\": \"not_quantified\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapANT\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\",\n        \"source_locator\"\
+    : \"PDF stock pH adjustment\",\n        \"exact_source_quote\": \"with dilute HCl or NaOH.\"\
+    ,\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The source identifies dilute HCl or NaOH\
+    \ but gives no strength or volume; retain unknown values rather than inventing\
+    \ amounts.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n   \
+    \ \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Unsupported generic light_intensity\",\n    \"field_path\": \"light_intensity\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": \"Varies by species; typically\
+    \ 50-100 µmol photons m⁻² s⁻¹\",\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"Entire PDF medium section and preparation; no\
+    \ incubation/light specification\",\n        \"exact_source_quote\": \"Medium \
+    \ per 1000 cm 3\",\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The complete inspected collection source\
+    \ gives no support for this stored numeric culture guidance. Qualify or remove\
+    \ it unless exact organism/formulation evidence is supplied; do not import another\
+    \ medium’s values.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"light_intensity\",\n        \"stored\": \"Varies by species;\
+    \ typically 50-100 µmol photons m⁻² s⁻¹\",\n        \"decision\": \"unsupported\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"light_intensity\",\n        \"stored\": \"Varies\
+    \ by species; typically 50-100 µmol photons m⁻² s⁻¹\",\n        \"decision\":\
+    \ \"unsupported\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"\
+    Unsupported generic light_cycle\",\n    \"field_path\": \"light_cycle\",\n   \
+    \ \"decision\": \"unsupported\",\n    \"local\": \"Varies by species; commonly\
+    \ 12:12 or 16:8 light:dark\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"ccapANT\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\"\
+    ,\n        \"source_locator\": \"Entire PDF medium section and preparation; no\
+    \ incubation/light specification\",\n        \"exact_source_quote\": \"Medium \
+    \ per 1000 cm 3\",\n        \"snapshot_sha256\": \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\"\
+    ,\n        \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The complete inspected collection source\
+    \ gives no support for this stored numeric culture guidance. Qualify or remove\
+    \ it unless exact organism/formulation evidence is supplied; do not import another\
+    \ medium’s values.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"light_cycle\",\n        \"stored\": \"Varies by species;\
+    \ commonly 12:12 or 16:8 light:dark\",\n        \"decision\": \"unsupported\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/algae/ant.yaml\"\
+    ,\n        \"field_path\": \"light_cycle\",\n        \"stored\": \"Varies by species;\
+    \ commonly 12:12 or 16:8 light:dark\",\n        \"decision\": \"unsupported\"\n\
+    \      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Unsupported generic\
+    \ temperature_range\",\n    \"field_path\": \"temperature_range\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local\": \"15-30°C depending on species\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapANT\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_ANT.pdf\",\n        \"source_locator\"\
+    : \"Entire PDF medium section and preparation; no incubation/light specification\"\
+    ,\n        \"exact_source_quote\": \"Medium  per 1000 cm 3\",\n        \"snapshot_sha256\"\
+    : \"7fa419492807c328963f21c0850f7b7db4bc32a8a425ad0d96d825560ad53b14\",\n    \
+    \    \"parsed_text_sha256\": \"c1359ad6135388080e23fcb544095702b4570d6eff8f5970b7ecc7dbd6b3d5cb\"\
+    \n      }\n    ],\n    \"rationale\": \"The complete inspected collection source\
+    \ gives no support for this stored numeric culture guidance. Qualify or remove\
+    \ it unless exact organism/formulation evidence is supplied; do not import another\
+    \ medium’s values.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"temperature_range\",\n        \"stored\": \"15-30°C depending\
+    \ on species\",\n        \"decision\": \"unsupported\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/algae/ant.yaml\",\n        \"field_path\"\
+    : \"temperature_range\",\n        \"stored\": \"15-30°C depending on species\"\
+    ,\n        \"decision\": \"unsupported\"\n      }\n    ]\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: ant-stock-and-formula-loss
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Undiluted stock values and omitted main components change ANT identity
+  description: Seven trace-stock strengths are represented as direct final-medium
+    g/L, a400-fold error relative to the explicit2.5 mL per1 L recipe. Tris, all three
+    vitamins, natural seawater and the aliquot are absent. The maintained algae owner
+    has the same defects.
+  target_ids:
+  - CultureMech:000042
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: ant-hydrate-and-name-loss
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two source dihydrates are mapped to anhydrous terms
+  description: The collection specifies disodium EDTA dihydrate and sodium dihydrogenphosphate
+    dihydrate, but the corresponding primary terms encode anhydrous compositions.
+    EDTA and nitrate preferred names also lose source formula digits.
+  target_ids:
+  - CultureMech:000042
+  field_paths:
+  - ingredients[0].term
+  - ingredients[0].preferred_term
+  - ingredients[8].term
+  - ingredients[7].preferred_term
+  evidence_ids:
+  - record
+  - ccapANT
+  - chebi64734
+  - chebi37585
+  - chebi63043
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: ant-preparation-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock and final-medium preparation are absent
+  description: Both layers omit stock pH7.6–7.8 and frozen storage, final make-up,15psi
+    sterilization and final pH7.6–7.8. Missing source-specific sterilization and preparation
+    impair reproducibility.
+  target_ids:
+  - CultureMech:000042
+  field_paths:
+  - preparation_steps
+  - solutions
+  - ph_range
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3.5
+  normalization_reason: Native P3.5 missing sterilization is major here because the
+    complete required stock/final preparation and explicit pressure are absent; the
+    source supports a reproducibility-critical repair without inventing a generic
+    cycle.
+- finding_id: f4
+  issue_key: ant-unsupported-generic-conditions
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic culture conditions and artificial seawater lack source support
+  description: The record asserts light50–100, cycles12:12 or16:8, temperature15–30°C
+    and natural-or-artificial seawater. The exact collection recipe specifies filtered
+    natural seawater and no such incubation or lighting regime. These claims overextend
+    the evidence.
+  target_ids:
+  - CultureMech:000042
+  field_paths:
+  - salinity
+  - light_intensity
+  - light_cycle
+  - temperature_range
+  evidence_ids:
+  - record
+  - owner-0
+  - ccapANT
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: ant-curation-metadata-limits
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Automated curation metadata overstates evidential confidence
+  description: Confidence scores and ingredients_curated flags coexist with an incomplete
+    formula, malformed preferred names and no attached amount snippets. Four history
+    timestamps and20 ingredient curation dates lack timezones. The owner’s source
+    repair is real but not a scientific recipe review.
+  target_ids:
+  - CultureMech:000042
+  field_paths:
+  - data_quality_flags
+  - ingredients
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - ingredient-curation-dates
+  - ccapANT
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the complete collection main formulation and separate trace
+    stock in the algae owner, preserving exact doses and both make-up instructions;
+    then regenerate. Do not treat the unrelated bacterial ANT as an owner.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000042
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify source-matching hydrate identities without inventing IDs, retain
+    source masses/stages, and restore legible exact formula names in the maintained
+    owner.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000042
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add scoped collection preparation with exact evidence. Keep stock/main
+    pH and make-up separate, and leave unprinted autoclave temperature/duration and
+    titrant doses unknown.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000042
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Retain natural seawater and qualify or remove unsupported generic numeric
+    guidance unless exact formulation/organism evidence is independently supplied.
+    Do not infer growth from a collection title.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000042
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Reassess current quality assertions after evidence-backed owner correction
+    and append provenance clarification without rewriting historical timestamps or
+    guessing timezones.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000042
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ant.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'mediadiveC3context: exact public request returned HTTP 503; original access time,
+  response bytes and any separately recorded retry are retained. Error bytes do not
+  establish formulation or historical absence.'
+- 'mediadiveC3retry: exact public request returned HTTP 503; original access time,
+  response bytes and any separately recorded retry are retained. Error bytes do not
+  establish formulation or historical absence.'
+- Only the algae owner belongs to this target. The C3 API failures and excluded bacterial
+  legacy linkage remain optional contextual checks, not required unavailable checks
+  for this record.
+- The CCAP recipe bibliography is provenance only; the cited papers were not independently
+  reviewed and no organism-level claim is inferred.
+- This scientific assessment preceded formal review validation and saving; their results
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-029
+- generated-medium
+```

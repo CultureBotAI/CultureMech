@@ -1,0 +1,3748 @@
+# Source and formulation review: anoxybacillus_tunisiense_medium (CultureMech:010134)
+
+- Review: 20261021T162418Z-culturemech-010134-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T16:17:52Z
+- Finished UTC: 2026-10-21T16:24:18Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact JCM704 and TOGO M726 agree on five separate recipe stages. The target and maintained owner instead pool stock components, sum incompatible water entries, sum nitrilotriacetic acid across stocks, and label four volume doses as g/L. Three source hydrates have incompatible mappings; source pH and sterilization instructions are missing. Current source-stage comparison is complete, without assuming physical final volumes.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 284; batch 029 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-eight task batches contain 280 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 283 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010134 | data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml | generated | anoxybacillus_tunisiense_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010134 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010134 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/284/strict.tsv |
+| validate-terms | passed | True | CultureMech:010134 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010134 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010134 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadiveJ704api | unavailable | False | CultureMech:010134 | Exact mediadiveJ704api returned 503. The original JCM704 and complete TOGO M726 JSON are available and sufficient for current source-stage comparison; this optional provider failure does not make that comparison partial. |
+| Exact source content access: mediadiveJ704api_retry | unavailable | False | CultureMech:010134 | Exact mediadiveJ704api_retry returned 503. The original JCM704 and complete TOGO M726 JSON are available and sufficient for current source-stage comparison; this optional provider failure does not make that comparison partial. |
+| Exact primary/provider stage and quantity comparison | passed | True | CultureMech:010134 | All five source sections, 27 ingredient/dose rows, three pH endpoints and JCM default cycle compared with both local layers. No physical final-volume inference or unsupported density conversion is required to preserve the source recipe. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010134.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:010134.
+
+32 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "main solution 1: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main solution 1",
+      "source_amount": 880,
+      "source_unit": "ml",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local pooled 1873 G_PER_L water into the five exact solvent inputs. Its note sums 880, 990 and three values of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or measured final-volume interpretation is supported.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 880,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "main solution 1 table; exact ingredient row",
+        "exact_source_quote": "Distilled water 880.0 ml",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "main solution 1: Yeast extract (BD-Difco)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main solution 1",
+      "source_amount": 2.5,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Preserve the exact main batch mass and supplier qualifier, but do not call 2.5 g a verified final g/L merely because nominal receiving liquids sum to 1000 mL. No attached ingredient evidence exists. No manufacturer composition is expanded or substituted.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 2.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "main solution 1 table; exact ingredient row",
+        "exact_source_quote": "Yeast extract (BD-Difco) 2.5 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "main solution 1: Tryptone (BD-Difco)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main solution 1",
+      "source_amount": 2.5,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Preserve the exact main batch mass and supplier qualifier, but do not call 2.5 g a verified final g/L merely because nominal receiving liquids sum to 1000 mL. No attached ingredient evidence exists. No manufacturer composition is expanded or substituted.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"Tryptone (BD-Difco)\",\n          \"volume\": 2.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "main solution 1 table; exact ingredient row",
+        "exact_source_quote": "Tryptone (BD-Difco) 2.5 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "main solution 1: Base solution A (see below)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Base solution A (see below)",
+      "source_dose": 100,
+      "source_unit": "ml",
+      "receiving_stage": "main",
+      "final_volume_or_g_per_l": null
+    },
+    "rationale": "The existing dose is incorrectly labelled G_PER_L. Restore the literal volume and receiving stage. A/B feed the main preparation; trace and Fe-citrate stocks feed A, not the main medium directly. Replace empty default-named stock placeholders with source-scoped compositions or supported references.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Base solution A (see below)\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "main solution 1 table; exact ingredient row",
+        "exact_source_quote": "Base solution A (see below) 100.0 ml",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "main solution 1: Base solution B (see below)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Base solution B (see below)",
+      "source_dose": 20,
+      "source_unit": "ml",
+      "receiving_stage": "main",
+      "final_volume_or_g_per_l": null
+    },
+    "rationale": "The existing dose is incorrectly labelled G_PER_L. Restore the literal volume and receiving stage. A/B feed the main preparation; trace and Fe-citrate stocks feed A, not the main medium directly. Replace empty default-named stock placeholders with source-scoped compositions or supported references.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"Base solution B (see below)\",\n          \"volume\": 20,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "main solution 1 table; exact ingredient row",
+        "exact_source_quote": "Base solution B (see below) 20.0 ml",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Base solution A: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution A",
+      "source_amount": 990,
+      "source_unit": "ml",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local pooled 1873 G_PER_L water into the five exact solvent inputs. Its note sums 880, 990 and three values of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or measured final-volume interpretation is supported.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 990,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution A table; exact ingredient row",
+        "exact_source_quote": "Distilled water 990.0 ml",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Base solution A: MgCl2・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution A",
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution A table; exact ingredient row",
+        "exact_source_quote": "MgCl 2 ·6H 2 O 0.2 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Base solution A: Nitrilotriacetic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "14.120000000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "14.120000000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution A",
+      "source_amount": 1.32,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local 14.12 G_PER_L aggregate into 1.32 g in A and 12.8 g in the trace stock. Repeated chemical identity across stages is not a duplicate amount to sum; the trace dose into A and A dose into main are separate.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.32,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution A table; exact ingredient row",
+        "exact_source_quote": "Nitrilotriacetic acid 1.32 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Base solution A: CaSO4・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution A",
+      "source_amount": 0.4,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"CaSO4・2H2O\",\n          \"volume\": 0.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution A table; exact ingredient row",
+        "exact_source_quote": "CaSO 4 ·2H 2 O 0.4 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Base solution A: Trace elements (see below)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Trace elements (see below)",
+      "source_dose": 5,
+      "source_unit": "ml",
+      "receiving_stage": "Base solution A",
+      "final_volume_or_g_per_l": null
+    },
+    "rationale": "The existing dose is incorrectly labelled G_PER_L. Restore the literal volume and receiving stage. A/B feed the main preparation; trace and Fe-citrate stocks feed A, not the main medium directly. Replace empty default-named stock placeholders with source-scoped compositions or supported references.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Trace elements (see below)\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution A table; exact ingredient row",
+        "exact_source_quote": "Trace elements (see below) 5.0 ml",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Base solution A: Fe citrate solution (see below)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "source_stock": "Fe citrate solution (see below)",
+      "source_dose": 5,
+      "source_unit": "ml",
+      "receiving_stage": "Base solution A",
+      "final_volume_or_g_per_l": null
+    },
+    "rationale": "The existing dose is incorrectly labelled G_PER_L. Restore the literal volume and receiving stage. A/B feed the main preparation; trace and Fe-citrate stocks feed A, not the main medium directly. Replace empty default-named stock placeholders with source-scoped compositions or supported references.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Fe citrate solution (see below)\",\n          \"volume\": 5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution A table; exact ingredient row",
+        "exact_source_quote": "Fe citrate solution (see below) 5.0 ml",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Base solution B: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution B",
+      "source_amount": 1,
+      "source_unit": "L",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local pooled 1873 G_PER_L water into the five exact solvent inputs. Its note sums 880, 990 and three values of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or measured final-volume interpretation is supported.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution B table; exact ingredient row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Base solution B: KH2PO4",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5.44",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5.44",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution B",
+      "source_amount": 5.44,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 5.44,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution B table; exact ingredient row",
+        "exact_source_quote": "KH 2 PO 4 5.44 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Base solution B: Na2HPO4・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "21.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "21.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution B",
+      "source_amount": 21.4,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"Na2HPO4・2H2O\",\n          \"volume\": 21.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Base solution B table; exact ingredient row",
+        "exact_source_quote": "Na 2 HPO 4 ·2H 2 O 21.4 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Trace elements: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 1,
+      "source_unit": "L",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local pooled 1873 G_PER_L water into the five exact solvent inputs. Its note sums 880, 990 and three values of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or measured final-volume interpretation is supported.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Trace elements: Na2MoO4・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.05,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 0.05 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Trace elements: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.02,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 0.02,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "H 3 BO 3 0.02 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Trace elements: MnCl2・4H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[3]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "MnCl 2 ·4H 2 O 0.5 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Trace elements: CoCl2・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.3,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[4]",
+        "exact_source_quote": "\"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "CoCl 2 ·6H 2 O 0.3 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Trace elements: NiCl2・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.02,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[5]",
+        "exact_source_quote": "\"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 0.02,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 0.02 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Trace elements: CuCl2・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.05,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[6]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "CuCl 2 ·2H 2 O 0.05 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Trace elements: ZnCl2",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnCl2\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "ZnCl 2 0.2 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Trace elements: Nitrilotriacetic acid",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "14.120000000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "14.120000000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 12.8,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local 14.12 G_PER_L aggregate into 1.32 g in A and 12.8 g in the trace stock. Repeated chemical identity across stages is not a duplicate amount to sum; the trace dose into A and A dose into main are separate.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[8]",
+        "exact_source_quote": "\"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 12.8,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "Nitrilotriacetic acid 12.8 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Trace elements: FeCl2・4H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "source_amount": 1,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[3].items[9]",
+        "exact_source_quote": "\"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace elements table; exact ingredient row",
+        "exact_source_quote": "FeCl 2 ·4H 2 O 1.0 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Fe citrate solution: Distilled water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1873.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Fe citrate solution",
+      "source_amount": 1,
+      "source_unit": "L",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Split the local pooled 1873 G_PER_L water into the five exact solvent inputs. Its note sums 880, 990 and three values of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or measured final-volume interpretation is supported.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[4].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Fe citrate solution table; exact ingredient row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Fe citrate solution: FeCl3・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "2.7",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "2.7",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Fe citrate solution",
+      "source_amount": 2.7,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[4].items[1]",
+        "exact_source_quote": "\"component_name\": \"FeCl3・6H2O\",\n          \"volume\": 2.7,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Fe citrate solution table; exact ingredient row",
+        "exact_source_quote": "FeCl 3 ·6H 2 O 2.7 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Fe citrate solution: Sodium citrate・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "2.94",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "2.94",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Fe citrate solution",
+      "source_amount": 2.94,
+      "source_unit": "g",
+      "finished_volume": null,
+      "direct_main_g_per_l": null
+    },
+    "rationale": "Relocate this literal mass or solvent input to its source stock. The local value is not a direct main-medium concentration. Source water inputs and nominal liquid sums do not prove finished stock volume, so no dilution-derived main concentration is applied.",
+    "source_snippets": [
+      {
+        "source_key": "togoM726",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726",
+        "source_locator": "$.components[4].items[2]",
+        "exact_source_quote": "\"component_name\": \"Sodium citrate・2H2O\",\n          \"volume\": 2.94,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45",
+        "accessed_at": "2026-10-21T15:56:57.876667Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Fe citrate solution table; exact ingredient row",
+        "exact_source_quote": "Sodium citrate·2H 2 O 2.94 g",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Main pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "main",
+      "pH": 8
+    },
+    "rationale": "This explicit source instruction is absent in both layers. Preserve its own stage rather than using the stock endpoint as main-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Exact named stage preparation",
+        "exact_source_quote": "Adjust pH to 8.0.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Base A pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Base solution A",
+      "pH": 7.2
+    },
+    "rationale": "This explicit source instruction is absent in both layers. Preserve its own stage rather than using the stock endpoint as main-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Exact named stage preparation",
+        "exact_source_quote": "Adjust pH to 7.2.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Trace-stock pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "solutions[2].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "solutions[2].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "Trace elements",
+      "pH": [
+        6,
+        6.5
+      ]
+    },
+    "rationale": "This explicit source instruction is absent in both layers. Preserve its own stage rather than using the stock endpoint as main-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Exact named stage preparation",
+        "exact_source_quote": "Adjust pH to 6.0 - 6.5.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "JCM default sterilization cycle",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "method": "autoclave",
+      "temperature_C": 121,
+      "duration_min": 15,
+      "scope": "JCM default unless otherwise stated"
+    },
+    "rationale": "Both layers omit preparation entirely. Restore the exact default instruction with its qualifier; no unprinted separate-stock sterilization sequence is invented.",
+    "source_snippets": [
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Page header, default instruction applicable to704",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Unquantified pH-adjustment reagents and doses",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "reagents": null,
+      "doses": null
+    },
+    "rationale": "The source supplies endpoints but does not name adjustment reagents or fixed amounts. Do not infer a titrant from another recipe or stock.",
+    "source_snippets": [
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "Adjust pH to 8.0.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "A preparation",
+        "exact_source_quote": "Adjust pH to 7.2.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      },
+      {
+        "source_key": "jcm704",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704",
+        "source_locator": "Trace preparation",
+        "exact_source_quote": "Adjust pH to 6.0 - 6.5.",
+        "snapshot_sha256": "70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421",
+        "parsed_text_sha256": "c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa",
+        "accessed_at": "2026-10-21T15:56:59.152552Z"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:010134.
+
+15 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 15/18 primary and 5/18 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 18: primary 83.33%; secondary 27.78%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:010134.
+
+23 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### TOGO M726 and exact JCM704 source identity
+
+identity: supported. Targets: CultureMech:010134.
+
+The full TOGO metadata explicitly names JCM_M704 and the exact captured original URL. Main and all four stock sections agree on their source quantities. The single maintained owner retains the same scientific content as the generated target. Internal M726 stock references resolve to named sections of this recipe, not independent external media; medium title alone is not a taxonomy or growth assertion.
+
+### Every amount and literal stage basis
+
+evidence: concern. Targets: CultureMech:010134.
+
+All 27 source ingredient/dose rows are represented individually with primary and provider snippets. Every existing concentration in target/owner is covered, including all four empty stock placeholders. No amount has attached local evidence. The exact main/stock batch quantities are available; the source leaves finished physical volumes unspecified, so unsupported g/L conversions are replaced in the proposal by literal source quantities.
+
+### Phosphate, cobalt and nickel hydration
+
+grounding: concern. Targets: CultureMech:010134.
+
+Source disodium phosphate dihydrate maps to CHEBI:34683 HO4P.2Na, cobalt chloride hexahydrate to CHEBI:35696 2Cl.Co, and nickel chloride hexahydrate to CHEBI:34887 Cl2Ni. These supplied hydrate compositions differ from the asserted terms. The corresponding source names and masses must be preserved while identifiers are verified. Sodium citrate dihydrate and the commercial nutrient mixtures have no asserted primary IDs; their missing links are not wrong existing identifiers.
+
+### Main and stock pH and sterilization
+
+completeness: concern. Targets: CultureMech:010134.
+
+Both local layers omit main pH 8, A pH 7.2, trace pH 6–6.5 and the explicit JCM default 121°C/15 min cycle. The exact sources do not name titrants or prescribe an additional detailed stock sterilization sequence. Restore stated context at the proper stage, retaining unknown reagent amounts and final volumes.
+
+### Complex liquid medium and source annotation scope
+
+scope: supported. Targets: CultureMech:010134.
+
+COMPLEX/UNDEFINED and LIQUID are consistent with the yeast-extract/tryptone formulation. BD-Difco qualifiers identify source-labelled materials but do not authenticate an exact catalog formulation or authorize chemical expansion. Provider role/property prose remains attributed context; neither it nor the medium title establishes organism growth or an experimental optimum. No taxonomy CURIE or KG match is asserted.
+
+### Current writers and maintained input follow-up
+
+provenance: concern. Targets: CultureMech:010134.
+
+Current TOGO import selects main sections and retains named solution additions; its local-batch water-anchor guard declines normalization when unresolved stock additions do not match stock liquid totals. Current cleanup does not sum conflicting duplicate amounts. Historical notes document earlier flattening/duplicate aggregation but do not prove the updated current functions reproduce that behavior. Correct the maintained M726 owner with five source stages and claim-level evidence, preserve history, and separately authorize regeneration.
+
+## Findings
+
+### f1: Five source stages collapse into invalid direct amounts and empty stocks
+
+blocker / open / confirmed; issue key: culturemech.010134.flattened-stocks-and-units.
+
+Both layers combine five water inputs as 1873 G_PER_L and two nitrilotriacetic-acid stock masses as 14.12 G_PER_L. All stock solutes remain direct, while four source mL additions are empty Unknown solution nodes labelled G_PER_L.
+
+### f2: Three hydrated source salts have incompatible composition mappings
+
+major / open / confirmed; issue key: culturemech.010134.hydrate-grounding.
+
+The dihydrated phosphate and hexahydrated cobalt/nickel sources map to compositions without their waters. Canonical-label validity does not establish exact supplied form.
+
+### f3: Explicit source pH and sterilization instructions are omitted
+
+major / open / confirmed; issue key: culturemech.010134.preparation-omission.
+
+Neither local layer retains the three stage pH endpoints or JCM default autoclave cycle. Combined with the empty stock containers, this prevents faithful source preparation interpretation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct main/A/B/trace/Fe-citrate stages in the maintained owner; split water and repeated solutes by source stage, correct dose units/receiving scopes, and replace empty placeholders with complete stock representations. Preserve literal batch quantities and unknown final volumes; attach exact source evidence before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify exact source-compatible identifiers and independently assess current secondary links where present. Preserve the source hydrate names and masses; leave unresolved IDs explicit rather than guessing replacements.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Restore main and stock pH context and the explicit default 121°C/15 min instruction with its qualifier. Keep titrants/doses unknown and avoid importing procedures from another medium. Preparation omission is materially consequential here; native P3.5 is normalized to major for this record.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch029/284/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/284/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml:1:id: CultureMech:010134<br>./data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml:1:id: CultureMech:010134<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/284/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 20 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/284/evidence-context-original.json; Complete target and maintained owner; source and identifier search contexts | context_only | Whole fresh target and owner read; all frozen local-record objects equal the fresh inspected YAML. Source interpretations are independently checked against actual bound raw/text bytes. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704; Exact medium704, complete main/A/B/trace/Fe-citrate tables and scoped preparation | supports | The original JCM recipe supplies all five stages, four receiving volumes, three pH instructions and its explicit default sterilization statement. No measured final stock or medium volume is claimed. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726; $.meta, five $.components sections and three $.comments entries | supports | Exact TOGO M726 points to JCM_M704 and preserves the same source stages and quantities. Source properties and role annotations are attributed provider metadata, not independent biological evidence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch029/284/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32583 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32583; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32583 resolves to calcium sulfate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34683 resolves to disodium hydrogenphosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49976 resolves to zinc dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml", "events": 11, "timestamp_issues": []}] |
+| current-code-0 | src/culturemech/import/togo_importer.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO import selects main sections and retains named solution additions; its local-batch water-anchor guard declines normalization when unresolved stock additions do not match stock liquid totals. Current cleanup does not sum conflicting duplicate amounts. Historical notes document earlier flattening/duplicate aggregation but do not prove the updated current functions reproduce that behavior. Correct the maintained M726 owner with five source stages and claim-level evidence, preserve history, and separately authorize regeneration. |
+| current-code-1 | scripts/cleanup_media_quality.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO import selects main sections and retains named solution additions; its local-batch water-anchor guard declines normalization when unresolved stock additions do not match stock liquid totals. Current cleanup does not sum conflicting duplicate amounts. Historical notes document earlier flattening/duplicate aggregation but do not prove the updated current functions reproduce that behavior. Correct the maintained M726 owner with five source stages and claim-level evidence, preserve history, and separately authorize regeneration. |
+| current-code-2 | src/culturemech/merge/fingerprint.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO import selects main sections and retains named solution additions; its local-batch water-anchor guard declines normalization when unresolved stock additions do not match stock liquid totals. Current cleanup does not sum conflicting duplicate amounts. Historical notes document earlier flattening/duplicate aggregation but do not prove the updated current functions reproduce that behavior. Correct the maintained M726 owner with five source stages and claim-level evidence, preserve history, and separately authorize regeneration. |
+| mediadiveJ704api-attempt | https://mediadive.dsmz.de/rest/medium/J704; Preserved exact public retrieval result | context_only | Exact mediadiveJ704api returned 503. The original JCM704 and complete TOGO M726 JSON are available and sufficient for current source-stage comparison; this optional provider failure does not make that comparison partial. |
+| mediadiveJ704api_retry-attempt | https://mediadive.dsmz.de/rest/medium/J704; Preserved exact public retrieval result | context_only | Exact mediadiveJ704api_retry returned 503. The original JCM704 and complete TOGO M726 JSON are available and sufficient for current source-stage comparison; this optional provider failure does not make that comparison partial. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact mediadiveJ704api returned 503. The original JCM704 and complete TOGO M726 JSON are available and sufficient for current source-stage comparison; this optional provider failure does not make that comparison partial.
+- Exact mediadiveJ704api_retry returned 503. The original JCM704 and complete TOGO M726 JSON are available and sufficient for current source-stage comparison; this optional provider failure does not make that comparison partial.
+- Finished stock and medium volumes are not stated as measured values. Main nominal liquid inputs total 1000 mL and A nominal inputs total 1000 mL, but no final-concentration calculation is authenticated solely by those sums.
+- The TOGO HTML page is a JavaScript shell; usable provider evidence comes from the exact separately captured JSON. Supplier-specific product formulation and experimental growth were not independently established and are not asserted.
+- Completion describes the source-stage review, not scientific approval of the recipe. Unknown final volumes, titrants and optional missing identifier links remain explicitly bounded.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T162418Z-culturemech-010134-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anoxybacillus_tunisiense_medium (CultureMech:010134)'
+started_at: '2026-10-21T16:17:52Z'
+finished_at: '2026-10-21T16:24:18Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact JCM704 and TOGO M726 agree on five separate recipe stages. The target
+  and maintained owner instead pool stock components, sum incompatible water entries,
+  sum nitrilotriacetic acid across stocks, and label four volume doses as g/L. Three
+  source hydrates have incompatible mappings; source pH and sterilization instructions
+  are missing. Current source-stage comparison is complete, without assuming physical
+  final volumes.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+    sha256: 706f655d1cea7ab1d4ce2066022357d520c8205e03bf81d1d16dcae919b0c766
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    sha256: a8cc50ae65ca603ad2dba8d4da477f6ab7faf85c46de93b4bbd94fd62ec8de6a
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 284; batch 029 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-eight task batches
+    contain 280 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 283 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010134
+targets:
+- target_id: CultureMech:010134
+  path: data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  label: anoxybacillus_tunisiense_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch029/284/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/284/strict.tsv"
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010134
+- check_id: mediadiveJ704api-source-access
+  name: 'Exact source content access: mediadiveJ704api'
+  required: false
+  status: unavailable
+  summary: Exact mediadiveJ704api returned 503. The original JCM704 and complete TOGO
+    M726 JSON are available and sufficient for current source-stage comparison; this
+    optional provider failure does not make that comparison partial.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - mediadiveJ704api-attempt
+- check_id: mediadiveJ704api_retry-source-access
+  name: 'Exact source content access: mediadiveJ704api_retry'
+  required: false
+  status: unavailable
+  summary: Exact mediadiveJ704api_retry returned 503. The original JCM704 and complete
+    TOGO M726 JSON are available and sufficient for current source-stage comparison;
+    this optional provider failure does not make that comparison partial.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - mediadiveJ704api_retry-attempt
+- check_id: complete-source-stage-review
+  name: Exact primary/provider stage and quantity comparison
+  required: true
+  status: passed
+  summary: All five source sections, 27 ingredient/dose rows, three pH endpoints and
+    JCM default cycle compared with both local layers. No physical final-volume inference
+    or unsupported density conversion is required to preserve the source recipe.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:16.210430Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch029/284/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:17.662006Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/284/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:19.058236Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:19.926515Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml:1:id: CultureMech:010134
+
+    ./data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml:1:id:
+    CultureMech:010134
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/284/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: supports
+  summary: 20 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: a995281851977c75dea632e833dccc15e1daa6e9c63bb2bfdf1b790187a84e89
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/284/evidence-context-original.json
+  locator: Complete target and maintained owner; source and identifier search contexts
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Whole fresh target and owner read; all frozen local-record objects equal
+    the fresh inspected YAML. Source interpretations are independently checked against
+    actual bound raw/text bytes.
+  snapshot_sha256: 1dec4a831779e9546396d0a25d354347fd4e0f984ef452805de6389900c55932
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704
+  locator: Exact medium704, complete main/A/B/trace/Fe-citrate tables and scoped preparation
+  accessed_at: '2026-10-21T15:56:59.152552Z'
+  support: supports
+  summary: The original JCM recipe supplies all five stages, four receiving volumes,
+    three pH instructions and its explicit default sterilization statement. No measured
+    final stock or medium volume is claimed.
+  snapshot_sha256: 70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726
+  locator: $.meta, five $.components sections and three $.comments entries
+  accessed_at: '2026-10-21T15:56:57.876667Z'
+  support: supports
+  summary: Exact TOGO M726 points to JCM_M704 and preserves the same source stages
+    and quantities. Source properties and role annotations are attributed provider
+    metadata, not independent biological evidence.
+  snapshot_sha256: b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/284/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: eb8393a08d628983b210c99285fcab5ac92630dfe724a2707e43d1e017f0e654
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi32583
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32583
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.887678Z'
+  support: supports
+  summary: CHEBI:32583 resolves to calcium sulfate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e0851fb219d91e71915c9d74b56d917e393753c4cdb94ade75821d447f4aec3c
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557":
+    [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label":
+    "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term":
+    "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml",
+    "events": 11, "timestamp_issues": []}]'
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Current TOGO import selects main sections and retains named solution additions;
+    its local-batch water-anchor guard declines normalization when unresolved stock
+    additions do not match stock liquid totals. Current cleanup does not sum conflicting
+    duplicate amounts. Historical notes document earlier flattening/duplicate aggregation
+    but do not prove the updated current functions reproduce that behavior. Correct
+    the maintained M726 owner with five source stages and claim-level evidence, preserve
+    history, and separately authorize regeneration.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: current-code-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Current TOGO import selects main sections and retains named solution additions;
+    its local-batch water-anchor guard declines normalization when unresolved stock
+    additions do not match stock liquid totals. Current cleanup does not sum conflicting
+    duplicate amounts. Historical notes document earlier flattening/duplicate aggregation
+    but do not prove the updated current functions reproduce that behavior. Correct
+    the maintained M726 owner with five source stages and claim-level evidence, preserve
+    history, and separately authorize regeneration.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: current-code-2
+  kind: record_content
+  reference: src/culturemech/merge/fingerprint.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T16:24:17Z'
+  support: context_only
+  summary: Current TOGO import selects main sections and retains named solution additions;
+    its local-batch water-anchor guard declines normalization when unresolved stock
+    additions do not match stock liquid totals. Current cleanup does not sum conflicting
+    duplicate amounts. Historical notes document earlier flattening/duplicate aggregation
+    but do not prove the updated current functions reproduce that behavior. Correct
+    the maintained M726 owner with five source stages and claim-level evidence, preserve
+    history, and separately authorize regeneration.
+  snapshot_sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+- evidence_id: mediadiveJ704api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J704
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:56:57.674772Z'
+  support: context_only
+  summary: Exact mediadiveJ704api returned 503. The original JCM704 and complete TOGO
+    M726 JSON are available and sufficient for current source-stage comparison; this
+    optional provider failure does not make that comparison partial.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ704api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J704
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:01:09.778620Z'
+  support: context_only
+  summary: Exact mediadiveJ704api_retry returned 503. The original JCM704 and complete
+    TOGO M726 JSON are available and sufficient for current source-stage comparison;
+    this optional provider failure does not make that comparison partial.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 32 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    main solution 1: Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main solution 1\",\n      \"source_amount\": 880,\n  \
+    \    \"source_unit\": \"ml\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local pooled 1873 G_PER_L water\
+    \ into the five exact solvent inputs. Its note sums 880, 990 and three values\
+    \ of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or\
+    \ measured final-volume interpretation is supported.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 880,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n        \"\
+    accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n        \"\
+    source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"main solution 1 table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 880.0 ml\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"main\
+    \ solution 1: Yeast extract (BD-Difco)\",\n    \"decision\": \"correct\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main solution 1\",\n      \"source_amount\": 2.5,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Preserve the exact main batch mass and supplier\
+    \ qualifier, but do not call 2.5 g a verified final g/L merely because nominal\
+    \ receiving liquids sum to 1000 mL. No attached ingredient evidence exists. No\
+    \ manufacturer composition is expanded or substituted.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract (BD-Difco)\\\",\\n          \\\"\
+    volume\\\": 2.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"main solution 1 table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract (BD-Difco) 2.5 g\",\n     \
+    \   \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"main\
+    \ solution 1: Tryptone (BD-Difco)\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"main solution 1\",\n      \"source_amount\": 2.5,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Preserve the exact main batch mass and supplier\
+    \ qualifier, but do not call 2.5 g a verified final g/L merely because nominal\
+    \ receiving liquids sum to 1000 mL. No attached ingredient evidence exists. No\
+    \ manufacturer composition is expanded or substituted.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Tryptone (BD-Difco)\\\",\\n          \\\"volume\\\
+    \": 2.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"main solution 1 table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Tryptone (BD-Difco) 2.5 g\",\n        \"\
+    snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"main\
+    \ solution 1: Base solution A (see below)\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Base solution A (see below)\",\n      \"source_dose\"\
+    : 100,\n      \"source_unit\": \"ml\",\n      \"receiving_stage\": \"main\",\n\
+    \      \"final_volume_or_g_per_l\": null\n    },\n    \"rationale\": \"The existing\
+    \ dose is incorrectly labelled G_PER_L. Restore the literal volume and receiving\
+    \ stage. A/B feed the main preparation; trace and Fe-citrate stocks feed A, not\
+    \ the main medium directly. Replace empty default-named stock placeholders with\
+    \ source-scoped compositions or supported references.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Base solution A (see below)\\\",\\n          \\\
+    \"volume\\\": 100,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"main solution 1 table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Base solution A (see below) 100.0 ml\",\n\
+    \        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"main\
+    \ solution 1: Base solution B (see below)\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Base solution B (see below)\",\n      \"source_dose\"\
+    : 20,\n      \"source_unit\": \"ml\",\n      \"receiving_stage\": \"main\",\n\
+    \      \"final_volume_or_g_per_l\": null\n    },\n    \"rationale\": \"The existing\
+    \ dose is incorrectly labelled G_PER_L. Restore the literal volume and receiving\
+    \ stage. A/B feed the main preparation; trace and Fe-citrate stocks feed A, not\
+    \ the main medium directly. Replace empty default-named stock placeholders with\
+    \ source-scoped compositions or supported references.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Base solution B (see below)\\\",\\n          \\\
+    \"volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"main solution 1 table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Base solution B (see below) 20.0 ml\",\n\
+    \        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Base\
+    \ solution A: Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution A\",\n      \"source_amount\": 990,\n  \
+    \    \"source_unit\": \"ml\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local pooled 1873 G_PER_L water\
+    \ into the five exact solvent inputs. Its note sums 880, 990 and three values\
+    \ of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or\
+    \ measured final-volume interpretation is supported.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 990,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n        \"\
+    accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n        \"\
+    source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution A table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 990.0 ml\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Base\
+    \ solution A: MgCl2・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution A\",\n      \"source_amount\": 0.2,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 0.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution A table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"MgCl 2 ·6H 2 O 0.2 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Base\
+    \ solution A: Nitrilotriacetic acid\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"14.120000000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"14.120000000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution A\",\n      \"source_amount\": 1.32,\n \
+    \     \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local 14.12 G_PER_L aggregate into\
+    \ 1.32 g in A and 12.8 g in the trace stock. Repeated chemical identity across\
+    \ stages is not a duplicate amount to sum; the trace dose into A and A dose into\
+    \ main are separate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM726\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nitrilotriacetic acid\\\",\\n          \\\"volume\\\
+    \": 1.32,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution A table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Nitrilotriacetic acid 1.32 g\",\n       \
+    \ \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Base\
+    \ solution A: CaSO4・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution A\",\n      \"source_amount\": 0.4,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaSO4・2H2O\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution A table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"CaSO 4 ·2H 2 O 0.4 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Base\
+    \ solution A: Trace elements (see below)\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Trace elements (see below)\",\n      \"source_dose\"\
+    : 5,\n      \"source_unit\": \"ml\",\n      \"receiving_stage\": \"Base solution\
+    \ A\",\n      \"final_volume_or_g_per_l\": null\n    },\n    \"rationale\": \"\
+    The existing dose is incorrectly labelled G_PER_L. Restore the literal volume\
+    \ and receiving stage. A/B feed the main preparation; trace and Fe-citrate stocks\
+    \ feed A, not the main medium directly. Replace empty default-named stock placeholders\
+    \ with source-scoped compositions or supported references.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace elements (see below)\\\",\\n          \\\
+    \"volume\\\": 5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution A table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Trace elements (see below) 5.0 ml\",\n  \
+    \      \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"Base\
+    \ solution A: Fe citrate solution (see below)\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"source_stock\": \"Fe citrate solution (see below)\",\n      \"source_dose\"\
+    : 5,\n      \"source_unit\": \"ml\",\n      \"receiving_stage\": \"Base solution\
+    \ A\",\n      \"final_volume_or_g_per_l\": null\n    },\n    \"rationale\": \"\
+    The existing dose is incorrectly labelled G_PER_L. Restore the literal volume\
+    \ and receiving stage. A/B feed the main preparation; trace and Fe-citrate stocks\
+    \ feed A, not the main medium directly. Replace empty default-named stock placeholders\
+    \ with source-scoped compositions or supported references.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Fe citrate solution (see below)\\\",\\n      \
+    \    \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution A table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Fe citrate solution (see below) 5.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"Base\
+    \ solution B: Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution B\",\n      \"source_amount\": 1,\n    \
+    \  \"source_unit\": \"L\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local pooled 1873 G_PER_L water\
+    \ into the five exact solvent inputs. Its note sums 880, 990 and three values\
+    \ of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or\
+    \ measured final-volume interpretation is supported.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution B table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Base\
+    \ solution B: KH2PO4\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.44\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.44\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution B\",\n      \"source_amount\": 5.44,\n \
+    \     \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 5.44,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution B table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"KH 2 PO 4 5.44 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\": \"Base\
+    \ solution B: Na2HPO4・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"21.4\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"21.4\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution B\",\n      \"source_amount\": 21.4,\n \
+    \     \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2HPO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 21.4,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n        \"\
+    accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n        \"\
+    source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Base solution B table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Na 2 HPO 4 ·2H 2 O 21.4 g\",\n        \"\
+    snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"Trace\
+    \ elements: Distilled water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 1,\n     \
+    \ \"source_unit\": \"L\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local pooled 1873 G_PER_L water\
+    \ into the five exact solvent inputs. Its note sums 880, 990 and three values\
+    \ of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or\
+    \ measured final-volume interpretation is supported.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\": \"Trace\
+    \ elements: Na2MoO4・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.05,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.05,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n        \"\
+    accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n        \"\
+    source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 0.05 g\",\n        \"\
+    snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\": \"Trace\
+    \ elements: H3BO3\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.02,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 0.02,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"H 3 BO 3 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\": \"Trace\
+    \ elements: MnCl2・4H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.5,\n   \
+    \   \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"MnCl 2 ·4H 2 O 0.5 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\": \"Trace\
+    \ elements: CoCl2・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.3,\n   \
+    \   \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2・6H2O\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"CoCl 2 ·6H 2 O 0.3 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\": \"Trace\
+    \ elements: NiCl2・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.02,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 0.02,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"NiCl 2 ·6H 2 O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\": \"Trace\
+    \ elements: CuCl2・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.05,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 0.05,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"CuCl 2 ·2H 2 O 0.05 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\": \"Trace\
+    \ elements: ZnCl2\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 0.2,\n   \
+    \   \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnCl2\\\",\\n          \\\"volume\\\": 0.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"ZnCl 2 0.2 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\": \"Trace\
+    \ elements: Nitrilotriacetic acid\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"14.120000000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"14.120000000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 12.8,\n  \
+    \    \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local 14.12 G_PER_L aggregate into\
+    \ 1.32 g in A and 12.8 g in the trace stock. Repeated chemical identity across\
+    \ stages is not a duplicate amount to sum; the trace dose into A and A dose into\
+    \ main are separate.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM726\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\"\
+    ,\n        \"source_locator\": \"$.components[3].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nitrilotriacetic acid\\\",\\n          \\\"volume\\\
+    \": 12.8,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Nitrilotriacetic acid 12.8 g\",\n       \
+    \ \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\": \"Trace\
+    \ elements: FeCl2・4H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"source_amount\": 1,\n     \
+    \ \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[3].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl2・4H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace elements table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"FeCl 2 ·4H 2 O 1.0 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\": \"Fe\
+    \ citrate solution: Distilled water\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1873.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Fe citrate solution\",\n      \"source_amount\": 1,\n\
+    \      \"source_unit\": \"L\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Split the local pooled 1873 G_PER_L water\
+    \ into the five exact solvent inputs. Its note sums 880, 990 and three values\
+    \ of 1 despite mixed mL/L units and distinct stages. No aggregate main-water or\
+    \ measured final-volume interpretation is supported.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[4].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Fe citrate solution table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\": \"Fe\
+    \ citrate solution: FeCl3・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.7\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.7\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Fe citrate solution\",\n      \"source_amount\": 2.7,\n\
+    \      \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[4].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl3・6H2O\\\",\\n          \\\"volume\\\": 2.7,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Fe citrate solution table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"FeCl 3 ·6H 2 O 2.7 g\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\": \"Fe\
+    \ citrate solution: Sodium citrate・2H2O\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.94\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.94\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Fe citrate solution\",\n      \"source_amount\": 2.94,\n\
+    \      \"source_unit\": \"g\",\n      \"finished_volume\": null,\n      \"direct_main_g_per_l\"\
+    : null\n    },\n    \"rationale\": \"Relocate this literal mass or solvent input\
+    \ to its source stock. The local value is not a direct main-medium concentration.\
+    \ Source water inputs and nominal liquid sums do not prove finished stock volume,\
+    \ so no dilution-derived main concentration is applied.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM726\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M726\",\n     \
+    \   \"source_locator\": \"$.components[4].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Sodium citrate・2H2O\\\",\\n          \\\"volume\\\
+    \": 2.94,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"b946d0d12826629fc20968918e101c268b6b5429b29f37ba5ff28ffed460eb45\",\n    \
+    \    \"accessed_at\": \"2026-10-21T15:56:57.876667Z\"\n      },\n      {\n   \
+    \     \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Fe citrate solution table; exact ingredient row\"\
+    ,\n        \"exact_source_quote\": \"Sodium citrate·2H 2 O 2.94 g\",\n       \
+    \ \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\": \"Main\
+    \ pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\":\
+    \ {\n      \"stage\": \"main\",\n      \"pH\": 8\n    },\n    \"rationale\": \"\
+    This explicit source instruction is absent in both layers. Preserve its own stage\
+    \ rather than using the stock endpoint as main-medium pH.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm704\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\",\n        \"source_locator\"\
+    : \"Exact named stage preparation\",\n        \"exact_source_quote\": \"Adjust\
+    \ pH to 8.0.\",\n        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\": \"Base\
+    \ A pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Base solution A\",\n      \"pH\": 7.2\n    },\n    \"\
+    rationale\": \"This explicit source instruction is absent in both layers. Preserve\
+    \ its own stage rather than using the stock endpoint as main-medium pH.\",\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"jcm704\",\n   \
+    \     \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Exact named stage preparation\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 7.2.\",\n        \"snapshot_sha256\": \"\
+    70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n        \"\
+    parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\": \"Trace-stock\
+    \ pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"Trace elements\",\n      \"pH\": [\n        6,\n     \
+    \   6.5\n      ]\n    },\n    \"rationale\": \"This explicit source instruction\
+    \ is absent in both layers. Preserve its own stage rather than using the stock\
+    \ endpoint as main-medium pH.\",\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Exact named stage preparation\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 6.0 - 6.5.\",\n        \"snapshot_sha256\"\
+    : \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\",\n    \
+    \    \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\": \"JCM\
+    \ default sterilization cycle\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"method\": \"autoclave\",\n      \"temperature_C\": 121,\n      \"\
+    duration_min\": 15,\n      \"scope\": \"JCM default unless otherwise stated\"\n\
+    \    },\n    \"rationale\": \"Both layers omit preparation entirely. Restore the\
+    \ exact default instruction with its qualifier; no unprinted separate-stock sterilization\
+    \ sequence is invented.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Page header, default instruction applicable to704\"\
+    ,\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize media\
+    \ by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\": \"Unquantified\
+    \ pH-adjustment reagents and doses\",\n    \"decision\": \"not_quantified\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"reagents\": null,\n      \"doses\": null\n    },\n    \"rationale\"\
+    : \"The source supplies endpoints but does not name adjustment reagents or fixed\
+    \ amounts. Do not infer a titrant from another recipe or stock.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm704\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\",\n        \"source_locator\"\
+    : \"Main preparation\",\n        \"exact_source_quote\": \"Adjust pH to 8.0.\"\
+    ,\n        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"A preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.2.\",\n        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      },\n      {\n\
+    \        \"source_key\": \"jcm704\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=704\"\
+    ,\n        \"source_locator\": \"Trace preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.0 - 6.5.\",\n        \"snapshot_sha256\": \"70bd6b9b7f89d028ff5643556de91b894e84286df7db3014f117d706b0da8421\"\
+    ,\n        \"parsed_text_sha256\": \"c8b2585c945f521efbd1593b3841c583a2f1affdbf783e172f17ff227c24caaa\"\
+    ,\n        \"accessed_at\": \"2026-10-21T15:56:59.152552Z\"\n      }\n    ]\n\
+    \  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '15 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 15/18
+    primary and 5/18 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi32583
+  - chebi33118
+  - chebi34683
+  - chebi34887
+  - chebi35696
+  - chebi44557
+  - chebi49976
+  - chebi63036
+  - chebi75213
+  - chebi86249
+  - chebi86254
+  - chebi86318
+  - chebi86345
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 18: primary 83.33%;
+    secondary 27.78%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 23 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: TOGO M726 and exact JCM704 source identity
+  outcome: supported
+  summary: The full TOGO metadata explicitly names JCM_M704 and the exact captured
+    original URL. Main and all four stock sections agree on their source quantities.
+    The single maintained owner retains the same scientific content as the generated
+    target. Internal M726 stock references resolve to named sections of this recipe,
+    not independent external media; medium title alone is not a taxonomy or growth
+    assertion.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - id-search
+- assessment_id: evidence
+  area: evidence
+  topic: Every amount and literal stage basis
+  outcome: concern
+  summary: All 27 source ingredient/dose rows are represented individually with primary
+    and provider snippets. Every existing concentration in target/owner is covered,
+    including all four empty stock placeholders. No amount has attached local evidence.
+    The exact main/stock batch quantities are available; the source leaves finished
+    physical volumes unspecified, so unsupported g/L conversions are replaced in the
+    proposal by literal source quantities.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Phosphate, cobalt and nickel hydration
+  outcome: concern
+  summary: Source disodium phosphate dihydrate maps to CHEBI:34683 HO4P.2Na, cobalt
+    chloride hexahydrate to CHEBI:35696 2Cl.Co, and nickel chloride hexahydrate to
+    CHEBI:34887 Cl2Ni. These supplied hydrate compositions differ from the asserted
+    terms. The corresponding source names and masses must be preserved while identifiers
+    are verified. Sodium citrate dihydrate and the commercial nutrient mixtures have
+    no asserted primary IDs; their missing links are not wrong existing identifiers.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - primary
+  - provider
+  - chebi34683
+  - chebi35696
+  - chebi34887
+- assessment_id: preparation
+  area: completeness
+  topic: Main and stock pH and sterilization
+  outcome: concern
+  summary: Both local layers omit main pH 8, A pH 7.2, trace pH 6–6.5 and the explicit
+    JCM default 121°C/15 min cycle. The exact sources do not name titrants or prescribe
+    an additional detailed stock sterilization sequence. Restore stated context at
+    the proper stage, retaining unknown reagent amounts and final volumes.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium and source annotation scope
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID are consistent with the yeast-extract/tryptone
+    formulation. BD-Difco qualifiers identify source-labelled materials but do not
+    authenticate an exact catalog formulation or authorize chemical expansion. Provider
+    role/property prose remains attributed context; neither it nor the medium title
+    establishes organism growth or an experimental optimum. No taxonomy CURIE or KG
+    match is asserted.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - primary
+  - provider
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and maintained input follow-up
+  outcome: concern
+  summary: Current TOGO import selects main sections and retains named solution additions;
+    its local-batch water-anchor guard declines normalization when unresolved stock
+    additions do not match stock liquid totals. Current cleanup does not sum conflicting
+    duplicate amounts. Historical notes document earlier flattening/duplicate aggregation
+    but do not prove the updated current functions reproduce that behavior. Correct
+    the maintained M726 owner with five source stages and claim-level evidence, preserve
+    history, and separately authorize regeneration.
+  target_ids:
+  - CultureMech:010134
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.010134.flattened-stocks-and-units
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Five source stages collapse into invalid direct amounts and empty stocks
+  description: Both layers combine five water inputs as 1873 G_PER_L and two nitrilotriacetic-acid
+    stock masses as 14.12 G_PER_L. All stock solutes remain direct, while four source
+    mL additions are empty Unknown solution nodes labelled G_PER_L.
+  target_ids:
+  - CultureMech:010134
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.010134.hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Three hydrated source salts have incompatible composition mappings
+  description: The dihydrated phosphate and hexahydrated cobalt/nickel sources map
+    to compositions without their waters. Canonical-label validity does not establish
+    exact supplied form.
+  target_ids:
+  - CultureMech:010134
+  field_paths:
+  - ingredients[7].term
+  - ingredients[11].term
+  - ingredients[12].term
+  evidence_ids:
+  - primary
+  - provider
+  - chebi34683
+  - chebi35696
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.010134.preparation-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Explicit source pH and sterilization instructions are omitted
+  description: Neither local layer retains the three stage pH endpoints or JCM default
+    autoclave cycle. Combined with the empty stock containers, this prevents faithful
+    source preparation interpretation.
+  target_ids:
+  - CultureMech:010134
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - solutions
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct main/A/B/trace/Fe-citrate stages in the maintained owner;
+    split water and repeated solutes by source stage, correct dose units/receiving
+    scopes, and replace empty placeholders with complete stock representations. Preserve
+    literal batch quantities and unknown final volumes; attach exact source evidence
+    before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010134
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify exact source-compatible identifiers and independently assess
+    current secondary links where present. Preserve the source hydrate names and masses;
+    leave unresolved IDs explicit rather than guessing replacements.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010134
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore main and stock pH context and the explicit default 121°C/15
+    min instruction with its qualifier. Keep titrants/doses unknown and avoid importing
+    procedures from another medium. Preparation omission is materially consequential
+    here; native P3.5 is normalized to major for this record.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010134
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M726_Anoxybacillus_Tunisiense_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact mediadiveJ704api returned 503. The original JCM704 and complete TOGO M726
+  JSON are available and sufficient for current source-stage comparison; this optional
+  provider failure does not make that comparison partial.
+- Exact mediadiveJ704api_retry returned 503. The original JCM704 and complete TOGO
+  M726 JSON are available and sufficient for current source-stage comparison; this
+  optional provider failure does not make that comparison partial.
+- Finished stock and medium volumes are not stated as measured values. Main nominal
+  liquid inputs total 1000 mL and A nominal inputs total 1000 mL, but no final-concentration
+  calculation is authenticated solely by those sums.
+- The TOGO HTML page is a JavaScript shell; usable provider evidence comes from the
+  exact separately captured JSON. Supplier-specific product formulation and experimental
+  growth were not independently established and are not asserted.
+- Completion describes the source-stage review, not scientific approval of the recipe.
+  Unknown final volumes, titrants and optional missing identifier links remain explicitly
+  bounded.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-029
+- generated-medium
+```

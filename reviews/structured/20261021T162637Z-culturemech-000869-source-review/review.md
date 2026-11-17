@@ -1,0 +1,1443 @@
+# Source and formulation review: anoxynatronum_medium (CultureMech:000869)
+
+- Review: 20261021T162637Z-culturemech-000869-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T16:17:53Z
+- Finished UTC: 2026-10-21T16:26:37Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1408 supports the liquid preparation, pH and three printed batch masses, but its carbonate formula is itself ambiguous. The local record omits the water input, treats batch masses as final concentrations and labels liquid preparation as plate pouring. The asserted KG-Microbe match remains independently unverified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 285; batch 029 item 5 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-eight task batches contain 280 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 283 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000869 | data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml | generated | anoxynatronum_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000869 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000869 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/285/strict.tsv |
+| validate-terms | passed | True | CultureMech:000869 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000869 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000869 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1408api | unavailable | False | CultureMech:000869 | Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared denominator or historical import confirmation was obtained. Primary DSMZ1408 remains available and supports only its own explicit batch/preparation statements. |
+| Exact source content access: mediadive1408api_retry | unavailable | False | CultureMech:000869 | Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared denominator or historical import confirmation was obtained. Primary DSMZ1408 remains available and supports only its own explicit batch/preparation statements. |
+| Independent KG-Microbe projected ingredient-set comparison | unavailable | True | CultureMech:000869 | Not executed: the required graph tables were unavailable in the bounded owned-checkout search. Source accession agreement cannot establish the asserted kg_microbe_match. No graph equality, mismatch or remote absence is claimed. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000869.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:000869.
+
+2 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 2/3 primary and 2/3 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source formula/identifier correspondence remains unresolved and is assessed separately; identifier and label validity do not resolve the intended source notation.
+
+Instance coverage on a 0–100 percent scale, denominator 3: primary 66.67%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Exact record and maintained owner
+
+identity: supported. Targets: CultureMech:000869.
+
+CultureMech:000869 denotes the generated DSMZ 1408 ANOXYNATRONUM medium and has one explicit normalized contributor. The same stable ID in maintained/generated layers is expected. The distinct similarly named DSMZ1187 record is not this recipe. The exact primary title/accession and local source link agree.
+
+### Ambiguous source carbonate notation
+
+grounding: unknown. Targets: CultureMech:000869.
+
+The source and both local layers print NaCO3, while CHEBI:29377 explicitly denotes sodium carbonate, Na2CO3. Matching canonical labels prove identifier metadata, not correction of the source formula. This may be a source typographical error, but no alternate source or product specification resolves it here. Do not call it a local-only transcription defect, invent a replacement ID, or calculate molarity using an assumed form. Yeast extract remains an undefined mixture; absent optional mapping is not permission to substitute a pure molecule.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000869.
+
+6 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "label": "NaCl",
+    "decision": "unsupported",
+    "source_stage": "Main source batch under Mineral Salts Solution heading",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, exact ingredient row",
+        "exact_source_quote": "NaCl 15.0 g",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      },
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, water row",
+        "exact_source_quote": "Distilled Water 1000.0 ml",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      }
+    ],
+    "interpretation": "The printed mass is directly supported, but the local G_PER_L denominator is not established by a water addition alone. Preserve the batch amount and original unit; no measured final volume or density is inferred.",
+    "local_evidence_status": "Neither target nor owner has claim-level concentration evidence. Identical local values do not authenticate their denominator."
+  },
+  {
+    "decision_id": "q2",
+    "label": "Yeast extract",
+    "decision": "unsupported",
+    "source_stage": "Main source batch under Mineral Salts Solution heading",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, exact ingredient row",
+        "exact_source_quote": "Yeast Extract 10.0 g",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      },
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, water row",
+        "exact_source_quote": "Distilled Water 1000.0 ml",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      }
+    ],
+    "interpretation": "The printed mass is directly supported, but the local G_PER_L denominator is not established by a water addition alone. Preserve the batch amount and original unit; no measured final volume or density is inferred.",
+    "local_evidence_status": "Neither target nor owner has claim-level concentration evidence. Identical local values do not authenticate their denominator."
+  },
+  {
+    "decision_id": "q3",
+    "label": "Carbonate as printed",
+    "decision": "conflict",
+    "source_stage": "Main source batch under Mineral Salts Solution heading",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, exact ingredient row",
+        "exact_source_quote": "NaCO3 8.0 g",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      },
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, water row",
+        "exact_source_quote": "Distilled Water 1000.0 ml",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      }
+    ],
+    "interpretation": "The printed mass is directly supported, but the local G_PER_L denominator is not established by a water addition alone. Preserve the batch amount and original unit; no measured final volume or density is inferred. Carbonate identity remains unresolved because the source itself prints NaCO3 while the local ontology asserts Na2CO3.",
+    "local_evidence_status": "Neither target nor owner has claim-level concentration evidence. Identical local values do not authenticate their denominator."
+  },
+  {
+    "decision_id": "q4",
+    "label": "Distilled water input",
+    "decision": "add",
+    "source_stage": "Main source batch solvent input",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3]",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+        "field_path": "ingredients[3]",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, water row",
+        "exact_source_quote": "Distilled Water 1000.0 ml",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      }
+    ],
+    "interpretation": "The complete local ingredient lists contain only three solutes. Represent the missing 1000 mL = 1 L water input with narrow evidence; this does not supply a final-volume denominator or a water mass concentration."
+  },
+  {
+    "decision_id": "q5",
+    "label": "Main pH and ordered liquid preparation",
+    "decision": "evidence_only",
+    "source_stage": "Preparation before nitrogen dispensing and autoclaving",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 10.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 10.0
+      },
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum bottles under gassing with N2. Sterilize by autoclaving"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum bottles under gassing with N2. Sterilize by autoclaving"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, complete preparation paragraph",
+        "exact_source_quote": "Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum bottles \nunder gassing with N2. Sterilize by autoclaving",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      }
+    ],
+    "interpretation": "Retain pH 10.0, liquid state, serum bottles, nitrogen gassing and autoclaving in source order. This is not an optimum-growth claim. The description is supported; its POUR_PLATES action is separately contradicted."
+  },
+  {
+    "decision_id": "q6",
+    "label": "Unspecified gas fraction, sterilization cycle and volume basis",
+    "decision": "not_quantified",
+    "source_stage": "Nitrogen dispensing and autoclaving",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1408",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf",
+        "source_locator": "Page 1, complete preparation paragraph",
+        "exact_source_quote": "Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum bottles \nunder gassing with N2. Sterilize by autoclaving",
+        "snapshot_sha256": "2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89",
+        "parsed_text_sha256": "6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e"
+      }
+    ],
+    "interpretation": "No gas percentage, temperature, duration, pressure, fill volume or measured final-medium volume is stated. Do not turn N2 into a numerical100% claim or invent a standard autoclave cycle."
+  }
+]
+
+### Action contradicts the source-supported liquid instructions
+
+consistency: concern. Targets: CultureMech:000869.
+
+The full description accurately retains liquid preparation, pH10, serum-bottle nitrogen dispensing and autoclaving. Its action POUR_PLATES is incompatible with those instructions and with LIQUID. The source does not ask for plates, agar or a sterilization cycle. A corrected action/step structure must preserve source order without inventing details.
+
+### Classification, organisms and optional annotations
+
+scope: supported. Targets: CultureMech:000869.
+
+COMPLEX/UNDEFINED is consistent with yeast extract, and LIQUID agrees with the primary. Bacterial filing and generic microbial-cultivation application are organizational annotations, not verified strain-specific growth. No target-organism, growth evidence, ingredient role, inline stock, variant or discussion flag is asserted. Absence of optional fields does not justify inferring them from the medium name.
+
+### Asserted KG-Microbe match
+
+graph: unknown. Targets: CultureMech:000869.
+
+The asserted mediadive.medium:1408 accession agrees with the primary identity, but the graph matcher means projected ingredient-set equality rather than full-recipe equivalence. Independent comparison is unavailable. This unresolved required assertion makes this review partial; a failed current API is not itself treated as proof that the match is wrong.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:000869.
+
+13 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Maintained owner and evidence placement
+
+ownership: concern. Targets: CultureMech:000869.
+
+The sole normalized owner carries the same quantity, water-omission, carbonate and action issues. The notes URL is a recoverable primary lead but no root references or narrow concentration evidence are attached. Follow-up belongs in that owner with exact source-stage snippets and append-only provenance, then generated reconciliation; neither the PDF ambiguity nor the graph comparison may be silently resolved by renaming.
+
+## Findings
+
+### f1: Water is omitted and batch masses are presented as final concentrations
+
+major / open / confirmed; issue key: dsmz1408-batch-basis-water-omission.
+
+The primary lists three masses plus1000mL water. Both local layers omit water and encode15/10/8 as G_PER_L without an explicit final-volume basis or attached claim-level evidence. A water input does not by itself establish the final concentration denominator.
+
+### f2: Plate-pouring action contradicts the liquid serum-bottle protocol
+
+major / open / confirmed; issue key: dsmz1408-liquid-action-mismatch.
+
+The action POUR_PLATES contradicts its own description, the LIQUID field and the primary. Consumers acting on the enum could execute the wrong preparation step even though the prose is correct.
+
+### f3: Source formula and asserted carbonate identity are unreconciled
+
+major / open / provisional; issue key: dsmz1408-carbonate-source-form-unresolved.
+
+The primary itself prints NaCO3, while the asserted CHEBI29377 identifies Na2CO3. The discrepancy is real but its intended resolution is not established; this is not a demonstrated local transcription error.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Represent the source batch masses and water input with exact evidence; leave final-medium concentrations unresolved unless a source supplies the denominator. Preserve the separate carbonate identity uncertainty.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Correct the maintained action/step structure to preserve the source liquid preparation, pH adjustment, nitrogen dispensing and autoclaving without adding plate preparation or an invented cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Retain the source notation and document the conflict; seek an exact source correction or product/form statement before asserting a replacement chemical identity or performing mass/molar conversions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/anoxynatronum_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch029/285/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch029/285/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml:1:id: CultureMech:000869<br>./data/normalized_yaml/bacterial/anoxynatronum_medium.yaml:1:id: CultureMech:000869<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch029/source-preflight-bound/285/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 5 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf; Page 1, entire exact DSMZ 1408 recipe | supports | Primary prints NaCl 15 g, yeast extract 10 g, NaCO3 8 g and distilled water 1000 mL, followed by liquid preparation, pH 10, nitrogen dispensing into serum bottles and autoclaving. The ambiguous NaCO3 is in the original page, confirmed visually. Copyright 2012 is not treated as publication year; individual authors and issue date are not supplied. |
+| mediadive1408api-attempt | https://mediadive.dsmz.de/rest/medium/1408; Preserved exact public retrieval result | context_only | Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared denominator or historical import confirmation was obtained. Primary DSMZ1408 remains available and supports only its own explicit batch/preparation statements. |
+| mediadive1408api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1408; Preserved exact public retrieval result | context_only | Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared denominator or historical import confirmation was obtained. Primary DSMZ1408 remains available and supports only its own explicit batch/preparation statements. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch029/285/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| kg-search | /private/tmp/culturemech-review-source-preflight-batch029/285/kg-graph-context.json; Bounded ignored-inclusive source-preflight file search in owned batch028 checkout | context_only | The complete ignored-inclusive listing in the owned batch028 checkout found no graph tables at the documented data/transformed or data/transformed_last9 mediadive locations. This is a bounded completed lookup, not proof that the remote graph or a different checkout lacks the data. No matcher was executed. |
+| kg-implementation | src/culturemech/match/kg_media_matcher.py; Graph loading, direct ingredient extraction and exact-match functions | context_only | Current implementation traverses medium-to-solution-to-ingredient graph edges and compares CHEBI/FOODON sets, ignoring amounts and unmapped components. This target projects to CHEBI:26710 and CHEBI:29377; yeast extract is excluded. The same MediaDive accession is not independent verification of that projected set equality. |
+| history-metadata | data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml; data/normalized_yaml/bacterial/anoxynatronum_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml", "events": 6, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/merge/merge_recipes.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import/preparation and merge implementations are ownership context, not a replay of the historical action classification or concentration conversion. Fix the maintained normalized input and any demonstrated recurrent writer issue, then regenerate derived products only under separate authorization. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import/preparation and merge implementations are ownership context, not a replay of the historical action classification or concentration conversion. Fix the maintained normalized input and any demonstrated recurrent writer issue, then regenerate derived products only under separate authorization. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import/preparation and merge implementations are ownership context, not a replay of the historical action classification or concentration conversion. Fix the maintained normalized input and any demonstrated recurrent writer issue, then regenerate derived products only under separate authorization. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared denominator or historical import confirmation was obtained. Primary DSMZ1408 remains available and supports only its own explicit batch/preparation statements.
+- Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared denominator or historical import confirmation was obtained. Primary DSMZ1408 remains available and supports only its own explicit batch/preparation statements.
+- The current primary and its supplied notation were inspected in text and image. Source stoichiometry ambiguity remains unresolved, not silently corrected.
+- The required graph comparison is unavailable in the stated local scope. The graph assertion is not classified as false; exact graph/version verification remains a follow-up.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T162637Z-culturemech-000869-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anoxynatronum_medium (CultureMech:000869)'
+started_at: '2026-10-21T16:17:53Z'
+finished_at: '2026-10-21T16:26:37Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1408 supports the liquid preparation, pH and three printed batch masses,
+  but its carbonate formula is itself ambiguous. The local record omits the water
+  input, treats batch masses as final concentrations and labels liquid preparation
+  as plate pouring. The asserted KG-Microbe match remains independently unverified.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/match-kg-microbe/SKILL.md
+    sha256: add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+    sha256: 8933448b9ce3cf13495951245f8ef891706ec34ccd6d662b462fb1f5a167d95c
+    role: target
+  - path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    sha256: aae9e195bd5d73a28516a019a7882043bdc8118b6ec6e1b97a8b0f60a5393279
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/kg_microbe_matching.md
+    sha256: 1b01e76b7b7b2067490b1fcd290e906b18bbebecc82ac4c607b6864708ae46c1
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 285; batch 029 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-eight task batches
+    contain 280 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 283 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000869
+targets:
+- target_id: CultureMech:000869
+  path: data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  label: anoxynatronum_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch029/285/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/285/strict.tsv"
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000869
+- check_id: mediadive1408api-source-access
+  name: 'Exact source content access: mediadive1408api'
+  required: false
+  status: unavailable
+  summary: Exact current MediaDive 1408 attempt returned HTTP503; no API formulation,
+    declared denominator or historical import confirmation was obtained. Primary DSMZ1408
+    remains available and supports only its own explicit batch/preparation statements.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - mediadive1408api-attempt
+- check_id: mediadive1408api_retry-source-access
+  name: 'Exact source content access: mediadive1408api_retry'
+  required: false
+  status: unavailable
+  summary: Exact current MediaDive 1408 attempt returned HTTP503; no API formulation,
+    declared denominator or historical import confirmation was obtained. Primary DSMZ1408
+    remains available and supports only its own explicit batch/preparation statements.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - mediadive1408api_retry-attempt
+- check_id: kg-match-source-comparison
+  name: Independent KG-Microbe projected ingredient-set comparison
+  required: true
+  status: unavailable
+  summary: 'Not executed: the required graph tables were unavailable in the bounded
+    owned-checkout search. Source accession agreement cannot establish the asserted
+    kg_microbe_match. No graph equality, mismatch or remote absence is claimed.'
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - kg-search
+  - kg-implementation
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:20.781492Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch029/285/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:22.015484Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-029/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch029/285/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:23.461894Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T16:18:24.312268Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml:1:id: CultureMech:000869
+
+    ./data/normalized_yaml/bacterial/anoxynatronum_medium.yaml:1:id: CultureMech:000869
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/source-preflight-bound/285/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: supports
+  summary: 5 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 8727f354765b9c9ca3a72982c8bb766b9d045e8ba21599061595ae006804b769
+- evidence_id: dsmz
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf
+  locator: Page 1, entire exact DSMZ 1408 recipe
+  accessed_at: '2026-10-21T15:56:58.228373Z'
+  support: supports
+  summary: Primary prints NaCl 15 g, yeast extract 10 g, NaCO3 8 g and distilled water
+    1000 mL, followed by liquid preparation, pH 10, nitrogen dispensing into serum
+    bottles and autoclaving. The ambiguous NaCO3 is in the original page, confirmed
+    visually. Copyright 2012 is not treated as publication year; individual authors
+    and issue date are not supplied.
+  snapshot_sha256: 2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89
+- evidence_id: mediadive1408api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1408
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:56:57.045040Z'
+  support: context_only
+  summary: Exact current MediaDive 1408 attempt returned HTTP503; no API formulation,
+    declared denominator or historical import confirmation was obtained. Primary DSMZ1408
+    remains available and supports only its own explicit batch/preparation statements.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1408api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1408
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T16:01:09.142561Z'
+  support: context_only
+  summary: Exact current MediaDive 1408 attempt returned HTTP503; no API formulation,
+    declared denominator or historical import confirmation was obtained. Primary DSMZ1408
+    remains available and supports only its own explicit batch/preparation statements.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate
+    solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch029/285/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: ee4e22f4d73517b69408b8e2931432886671abd25ff9032145c3cbd773853364
+- evidence_id: kg-search
+  kind: record_content
+  reference: /private/tmp/culturemech-review-source-preflight-batch029/285/kg-graph-context.json
+  locator: Bounded ignored-inclusive source-preflight file search in owned batch028
+    checkout
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: The complete ignored-inclusive listing in the owned batch028 checkout found
+    no graph tables at the documented data/transformed or data/transformed_last9 mediadive
+    locations. This is a bounded completed lookup, not proof that the remote graph
+    or a different checkout lacks the data. No matcher was executed.
+  snapshot_sha256: 715b58bab194694dbe24a5f984197101533d6e94a47c446a8fa541bb568392aa
+  search_scope: Owned028 checkout only, including ignored and hidden files; no claim
+    about other checkouts or remote graph availability.
+- evidence_id: kg-implementation
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: Graph loading, direct ingredient extraction and exact-match functions
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Current implementation traverses medium-to-solution-to-ingredient graph
+    edges and compares CHEBI/FOODON sets, ignoring amounts and unmapped components.
+    This target projects to CHEBI:26710 and CHEBI:29377; yeast extract is excluded.
+    The same MediaDive accession is not independent verification of that projected
+    set equality.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANOXYNATRONUM_MEDIUM.yaml; data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/anoxynatronum_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Current import/preparation and merge implementations are ownership context,
+    not a replay of the historical action classification or concentration conversion.
+    Fix the maintained normalized input and any demonstrated recurrent writer issue,
+    then regenerate derived products only under separate authorization.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Current import/preparation and merge implementations are ownership context,
+    not a replay of the historical action classification or concentration conversion.
+    Fix the maintained normalized input and any demonstrated recurrent writer issue,
+    then regenerate derived products only under separate authorization.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T16:26:36Z'
+  support: context_only
+  summary: Current import/preparation and merge implementations are ownership context,
+    not a replay of the historical action classification or concentration conversion.
+    Fix the maintained normalized input and any demonstrated recurrent writer issue,
+    then regenerate derived products only under separate authorization.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '2 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 2/3 primary
+    and 2/3 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source formula/identifier correspondence remains unresolved and is assessed separately;
+    identifier and label validity do not resolve the intended source notation.'
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi26710
+  - chebi29377
+  details: 'Instance coverage on a 0–100 percent scale, denominator 3: primary 66.67%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: identity
+  area: identity
+  topic: Exact record and maintained owner
+  outcome: supported
+  summary: CultureMech:000869 denotes the generated DSMZ 1408 ANOXYNATRONUM medium
+    and has one explicit normalized contributor. The same stable ID in maintained/generated
+    layers is expected. The distinct similarly named DSMZ1187 record is not this recipe.
+    The exact primary title/accession and local source link agree.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - dsmz
+- assessment_id: source-chemistry
+  area: grounding
+  topic: Ambiguous source carbonate notation
+  outcome: unknown
+  summary: The source and both local layers print NaCO3, while CHEBI:29377 explicitly
+    denotes sodium carbonate, Na2CO3. Matching canonical labels prove identifier metadata,
+    not correction of the source formula. This may be a source typographical error,
+    but no alternate source or product specification resolves it here. Do not call
+    it a local-only transcription defect, invent a replacement ID, or calculate molarity
+    using an assumed form. Yeast extract remains an undefined mixture; absent optional
+    mapping is not permission to substitute a pure molecule.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - chebi29377
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 6 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"label\": \"NaCl\",\n    \"\
+    decision\": \"unsupported\",\n    \"source_stage\": \"Main source batch under\
+    \ Mineral Salts Solution heading\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"15\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anoxynatronum_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1408\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, exact ingredient row\",\n        \"exact_source_quote\"\
+    : \"NaCl 15.0 g\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1408\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\",\n   \
+    \     \"source_locator\": \"Page 1, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled Water 1000.0 ml\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The printed mass is directly supported,\
+    \ but the local G_PER_L denominator is not established by a water addition alone.\
+    \ Preserve the batch amount and original unit; no measured final volume or density\
+    \ is inferred.\",\n    \"local_evidence_status\": \"Neither target nor owner has\
+    \ claim-level concentration evidence. Identical local values do not authenticate\
+    \ their denominator.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"label\"\
+    : \"Yeast extract\",\n    \"decision\": \"unsupported\",\n    \"source_stage\"\
+    : \"Main source batch under Mineral Salts Solution heading\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anoxynatronum_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1408\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, exact ingredient row\",\n        \"exact_source_quote\"\
+    : \"Yeast Extract 10.0 g\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1408\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\",\n   \
+    \     \"source_locator\": \"Page 1, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled Water 1000.0 ml\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The printed mass is directly supported,\
+    \ but the local G_PER_L denominator is not established by a water addition alone.\
+    \ Preserve the batch amount and original unit; no measured final volume or density\
+    \ is inferred.\",\n    \"local_evidence_status\": \"Neither target nor owner has\
+    \ claim-level concentration evidence. Identical local values do not authenticate\
+    \ their denominator.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"label\"\
+    : \"Carbonate as printed\",\n    \"decision\": \"conflict\",\n    \"source_stage\"\
+    : \"Main source batch under Mineral Salts Solution heading\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"8\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anoxynatronum_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1408\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, exact ingredient row\",\n        \"exact_source_quote\"\
+    : \"NaCO3 8.0 g\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1408\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\",\n   \
+    \     \"source_locator\": \"Page 1, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled Water 1000.0 ml\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The printed mass is directly supported,\
+    \ but the local G_PER_L denominator is not established by a water addition alone.\
+    \ Preserve the batch amount and original unit; no measured final volume or density\
+    \ is inferred. Carbonate identity remains unresolved because the source itself\
+    \ prints NaCO3 while the local ontology asserts Na2CO3.\",\n    \"local_evidence_status\"\
+    : \"Neither target nor owner has claim-level concentration evidence. Identical\
+    \ local values do not authenticate their denominator.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q4\",\n    \"label\": \"Distilled water input\",\n    \"decision\": \"add\"\
+    ,\n    \"source_stage\": \"Main source batch solvent input\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3]\"\
+    ,\n        \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anoxynatronum_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3]\",\n        \"stored\": null\n   \
+    \   }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1408\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled Water 1000.0 ml\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The complete local ingredient lists\
+    \ contain only three solutes. Represent the missing 1000 mL = 1 L water input\
+    \ with narrow evidence; this does not supply a final-volume denominator or a water\
+    \ mass concentration.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"label\"\
+    : \"Main pH and ordered liquid preparation\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"source_stage\": \"Preparation before nitrogen dispensing and autoclaving\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ph_value\",\n        \"stored\": 10.0\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/anoxynatronum_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 10.0\n      },\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Prepare the liquid medium. Adjust to pH 10.0. Dispense\
+    \ the medium into serum bottles under gassing with N2. Sterilize by autoclaving\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anoxynatronum_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum\
+    \ bottles under gassing with N2. Sterilize by autoclaving\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1408\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, complete preparation paragraph\",\n \
+    \       \"exact_source_quote\": \"Prepare the liquid medium. Adjust to pH 10.0.\
+    \ Dispense the medium into serum bottles \\nunder gassing with N2. Sterilize by\
+    \ autoclaving\",\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain pH 10.0, liquid state, serum\
+    \ bottles, nitrogen gassing and autoclaving in source order. This is not an optimum-growth\
+    \ claim. The description is supported; its POUR_PLATES action is separately contradicted.\"\
+    \n  },\n  {\n    \"decision_id\": \"q6\",\n    \"label\": \"Unspecified gas fraction,\
+    \ sterilization cycle and volume basis\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"source_stage\": \"Nitrogen dispensing and autoclaving\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1408\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1408.pdf\",\n       \
+    \ \"source_locator\": \"Page 1, complete preparation paragraph\",\n        \"\
+    exact_source_quote\": \"Prepare the liquid medium. Adjust to pH 10.0. Dispense\
+    \ the medium into serum bottles \\nunder gassing with N2. Sterilize by autoclaving\"\
+    ,\n        \"snapshot_sha256\": \"2a5ce577e18078207668803115b6a4e28d9e0913251701247b35a4b7dcfd2b89\"\
+    ,\n        \"parsed_text_sha256\": \"6eb0664d5b2c4d3fc97aa948f2b639a01346ca00bf52ae65deb9b53a56497a4e\"\
+    \n      }\n    ],\n    \"interpretation\": \"No gas percentage, temperature, duration,\
+    \ pressure, fill volume or measured final-medium volume is stated. Do not turn\
+    \ N2 into a numerical100% claim or invent a standard autoclave cycle.\"\n  }\n\
+    ]"
+- assessment_id: preparation
+  area: consistency
+  topic: Action contradicts the source-supported liquid instructions
+  outcome: concern
+  summary: The full description accurately retains liquid preparation, pH10, serum-bottle
+    nitrogen dispensing and autoclaving. Its action POUR_PLATES is incompatible with
+    those instructions and with LIQUID. The source does not ask for plates, agar or
+    a sterilization cycle. A corrected action/step structure must preserve source
+    order without inventing details.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - quantity-inventory
+- assessment_id: classification-growth
+  area: scope
+  topic: Classification, organisms and optional annotations
+  outcome: supported
+  summary: COMPLEX/UNDEFINED is consistent with yeast extract, and LIQUID agrees with
+    the primary. Bacterial filing and generic microbial-cultivation application are
+    organizational annotations, not verified strain-specific growth. No target-organism,
+    growth evidence, ingredient role, inline stock, variant or discussion flag is
+    asserted. Absence of optional fields does not justify inferring them from the
+    medium name.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - dsmz
+- assessment_id: kg-match
+  area: graph
+  topic: Asserted KG-Microbe match
+  outcome: unknown
+  summary: The asserted mediadive.medium:1408 accession agrees with the primary identity,
+    but the graph matcher means projected ingredient-set equality rather than full-recipe
+    equivalence. Independent comparison is unavailable. This unresolved required assertion
+    makes this review partial; a failed current API is not itself treated as proof
+    that the match is wrong.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - dsmz
+  - kg-search
+  - kg-implementation
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: ownership-evidence
+  area: ownership
+  topic: Maintained owner and evidence placement
+  outcome: concern
+  summary: The sole normalized owner carries the same quantity, water-omission, carbonate
+    and action issues. The notes URL is a recoverable primary lead but no root references
+    or narrow concentration evidence are attached. Follow-up belongs in that owner
+    with exact source-stage snippets and append-only provenance, then generated reconciliation;
+    neither the PDF ambiguity nor the graph comparison may be silently resolved by
+    renaming.
+  target_ids:
+  - CultureMech:000869
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - writer-0
+  - writer-1
+  - writer-2
+findings:
+- finding_id: f1
+  issue_key: dsmz1408-batch-basis-water-omission
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water is omitted and batch masses are presented as final concentrations
+  description: The primary lists three masses plus1000mL water. Both local layers
+    omit water and encode15/10/8 as G_PER_L without an explicit final-volume basis
+    or attached claim-level evidence. A water input does not by itself establish the
+    final concentration denominator.
+  target_ids:
+  - CultureMech:000869
+  field_paths:
+  - ingredients[*].concentration
+  - ingredients
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: dsmz1408-liquid-action-mismatch
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Plate-pouring action contradicts the liquid serum-bottle protocol
+  description: The action POUR_PLATES contradicts its own description, the LIQUID
+    field and the primary. Consumers acting on the enum could execute the wrong preparation
+    step even though the prose is correct.
+  target_ids:
+  - CultureMech:000869
+  field_paths:
+  - preparation_steps[0].action
+  - physical_state
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: dsmz1408-carbonate-source-form-unresolved
+  category: grounding
+  severity: major
+  status: open
+  certainty: provisional
+  title: Source formula and asserted carbonate identity are unreconciled
+  description: The primary itself prints NaCO3, while the asserted CHEBI29377 identifies
+    Na2CO3. The discrepancy is real but its intended resolution is not established;
+    this is not a demonstrated local transcription error.
+  target_ids:
+  - CultureMech:000869
+  field_paths:
+  - ingredients[2].preferred_term
+  - ingredients[2].term
+  - ingredients[2].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - chebi29377
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Represent the source batch masses and water input with exact evidence;
+    leave final-medium concentrations unresolved unless a source supplies the denominator.
+    Preserve the separate carbonate identity uncertainty.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000869
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Correct the maintained action/step structure to preserve the source
+    liquid preparation, pH adjustment, nitrogen dispensing and autoclaving without
+    adding plate preparation or an invented cycle.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000869
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain the source notation and document the conflict; seek an exact
+    source correction or product/form statement before asserting a replacement chemical
+    identity or performing mass/molar conversions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000869
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anoxynatronum_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared
+  denominator or historical import confirmation was obtained. Primary DSMZ1408 remains
+  available and supports only its own explicit batch/preparation statements.
+- Exact current MediaDive 1408 attempt returned HTTP503; no API formulation, declared
+  denominator or historical import confirmation was obtained. Primary DSMZ1408 remains
+  available and supports only its own explicit batch/preparation statements.
+- The current primary and its supplied notation were inspected in text and image.
+  Source stoichiometry ambiguity remains unresolved, not silently corrected.
+- The required graph comparison is unavailable in the stated local scope. The graph
+  assertion is not classified as false; exact graph/version verification remains a
+  follow-up.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-029
+- generated-medium
+```
