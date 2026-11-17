@@ -1,0 +1,2232 @@
+# Source and formulation review: brucella_broth (CultureMech:009933)
+
+- Review: 20261022T021224Z-culturemech-009933-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-22T02:02:40Z
+- Finished UTC: 2026-10-22T02:12:24Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The maintained M540 broth and its study-specific Helicobacter pylori variant require separate assessment. The source water unit is wrong locally, and the growth metric combines Table 3 OD620 0.724 with the catalase condition belonging to a different row. Direct primary evidence supports conditional growth; the original required reference check failed because NCBI could not be reached and remains failed.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 447; batch 045 item 7 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-four task batches contain 440 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 443 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009933 | data/merge_yaml/merged/BRUCELLA_BROTH.yaml | generated | brucella_broth |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009933 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:009933 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch045/447/strict.tsv |
+| validate-terms | passed | True | CultureMech:009933 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | failed | True | CultureMech:009933 | Validating evidence references (MediaRecipe)...<br>  [ERROR] Could not fetch reference: PMID:10609610<br>    Location: variants[0].evidence[0].snippet<br>  [ERROR] Could not fetch reference: PMID:10609610<br>    Location: target_organisms[0].growth_metrics[0].evidence[0].snippet<br>  [ERROR] Could not fetch reference: PMID:10609610<br>    Location: target_organisms[0].evidence[0].snippet<br>Reference checks: 3; issues: 3<br><br>WARNING:linkml_reference_validator.etl.sources.pmid:Failed to fetch PMID:10609610 from NCBI: &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;<br>WARNING:linkml_reference_validator.etl.sources.pmid:Failed to fetch PMID:10609610 from NCBI: &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;<br>WARNING:linkml_reference_validator.etl.sources.pmid:Failed to fetch PMID:10609610 from NCBI: &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;<br>error: recipe &#96;validate-references&#96; failed with exit code 1 |
+| iModulonDB applicability | not_applicable | False | CultureMech:009933 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: jcm538 | unavailable | False | CultureMech:009933 | Current JCM538 returned Nothing found. The current M540 provider and separately captured primary study remain available; no unavailable original collection page is treated as formula authentication. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: concern. Targets: CultureMech:009933.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Identifier metadata, exact supplied forms and current secondary bindings
+
+grounding: supported. Targets: CultureMech:009933.
+
+16 asserted slots and 4 distinct captured ontology IDs checked; 0 literal canonical-label differences. 8/8 asserted current CHEBI secondary slots have preferred mapped rows; 0 selected legacy slots remain separately assessed. Target direct-ingredient linkage: 4/7 primary and 4/7 current secondary on a 0–100 percent linkage scale (57.14% and 57.14%), not a correctness score. All asserted selected chemical IDs/labels match captured canonical metadata. Three complex ingredients lack primary/current-secondary links; do not invent single-compound identities for extracts/digests. Sodium hydrogensulfite and bisulfite-less comparator scope are distinct. Taxon210 matches the species; strain identity is established by the paper, not by species taxonomy alone.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:009933.
+
+17 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Claim linkage and historical/current source scope
+
+evidence: concern. Targets: CultureMech:009933.
+
+Both complete histories and all three attached claims per layer were read. Their abstract excerpts support serum/HPOx and relative BLBB growth, but not the selected numerical Table3 condition or all methods. The original reference validator failed all three attempts because of NCBI DNS; preserve this required failed check and partial status. Independently captured PubMed and full paper permit a separate scientific assessment without retroactively converting the failed check to a pass.
+
+### Basal BB, derived BLBB and measured study arm
+
+identity: concern. Targets: CultureMech:009933.
+
+M540/JCM538 identifies the selected basal broth; excluded DSM namesake is not its owner. The paper explicitly distinguishes standard BB from bisulfite-less BLBB. Current growth measurement text selects BLBB but the variant description is broader BB/FBS; preserve distinct experimental recipes and row identity.
+
+### Basal preparation and study conditions
+
+completeness: concern. Targets: CultureMech:009933.
+
+Basal pH7.0 is missing; source water is misunitized. Study serum, peroxide, temperature and time have direct support, while the detailed Table3 treatments require precise arm-specific linkage. No unrelated lysis/analytical reagents are proposed as growth medium ingredients.
+
+### Conditional growth and scientific verdict
+
+scope: concern. Targets: CultureMech:009933.
+
+Complex liquid broth and species identification are supported. The paper supports actual conditional strain growth, but0.724 with catalase is refuted by Table3 and is_max_attainment=true misstates a perturbation experiment. Scope remains partial because the required native reference check failed; direct primary reading is recorded independently.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:009933.
+
+25 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "topic": "Distilled water",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source water is1L, not1g/L; preserve the liquid-input unit and do not infer a measured final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Source water is1L, not1g/L; preserve the liquid-input unit and do not infer a measured final volume."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "Source water is1L, not1g/L; preserve the liquid-input unit and do not infer a measured final volume."
+  },
+  {
+    "quantity_id": "q2",
+    "topic": "Yeast extract",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+  },
+  {
+    "quantity_id": "q3",
+    "topic": "NaCl",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+  },
+  {
+    "quantity_id": "q4",
+    "topic": "Glucose",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"Glucose\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+  },
+  {
+    "quantity_id": "q5",
+    "topic": "NaHSO3",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator. The paper independently states standard BB bisulfite0.1g/litre, approximately1mM; that standard broth must remain distinct from bisulfite-less BLBB."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator. The paper independently states standard BB bisulfite0.1g/litre, approximately1mM; that standard broth must remain distinct from bisulfite-less BLBB."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"NaHSO3\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator. The paper independently states standard BB bisulfite0.1g/litre, approximately1mM; that standard broth must remain distinct from bisulfite-less BLBB."
+  },
+  {
+    "quantity_id": "q6",
+    "topic": "Pancreatic digest of casein",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Pancreatic digest of casein\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+  },
+  {
+    "quantity_id": "q7",
+    "topic": "Peptic digest of animal tissue",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Peptic digest of animal tissue\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "The printed batch mass matches the stored number, but no concentration evidence attaches to either layer. Preserve the literal mass and source water input; the provider does not establish a measured final-volume denominator."
+  },
+  {
+    "quantity_id": "q8",
+    "topic": "Basal pH7.0",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Both local scalars are absent. The provider specifies this basal adjustment; do not transfer unrelated assay-buffer pH to the medium."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Both local scalars are absent. The provider specifies this basal adjustment; do not transfer unrelated assay-buffer pH to the medium."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM540",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Adjust pH to 7.0.",
+        "snapshot_sha256": "07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912"
+      }
+    ],
+    "rationale": "Both local scalars are absent. The provider specifies this basal adjustment; do not transfer unrelated assay-buffer pH to the medium."
+  },
+  {
+    "quantity_id": "q9",
+    "topic": "Study supplementation10%FBS",
+    "decision": "verified",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants[0].modifications[0]",
+        "stored": "Supplement Brucella broth with 10% fetal bovine serum.",
+        "decision": "verified",
+        "rationale": "The attached variant excerpt supports10%FBS for this study; it does not state a percentage basis or replace basal water with an assumed final volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "variants[0].modifications[0]",
+        "stored": "Supplement Brucella broth with 10% fetal bovine serum.",
+        "decision": "verified",
+        "rationale": "The attached variant excerpt supports10%FBS for this study; it does not state a percentage basis or replace basal water with an assumed final volume."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "pubmed10609610",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=10609610&amp;retmode=xml",
+        "source_locator": "PubmedArticle/MedlineCitation/Article/Abstract",
+        "exact_source_quote": "10% fetal bovine serum",
+        "snapshot_sha256": "af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de"
+      }
+    ],
+    "rationale": "The attached variant excerpt supports10%FBS for this study; it does not state a percentage basis or replace basal water with an assumed final volume."
+  },
+  {
+    "quantity_id": "q10",
+    "topic": "HPOx onset0.1mM and maximal stimulation3.5mM",
+    "decision": "verified",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants[0].modifications[1]",
+        "stored": "Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation reported at 3.5 mM H2O2.",
+        "decision": "verified",
+        "rationale": "The attached organism excerpt supports this dose-response statement in BB/FBS. This is not an optimum for all formulations or a standard unperturbed maximum."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "variants[0].modifications[1]",
+        "stored": "Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation reported at 3.5 mM H2O2.",
+        "decision": "verified",
+        "rationale": "The attached organism excerpt supports this dose-response statement in BB/FBS. This is not an optimum for all formulations or a standard unperturbed maximum."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "pubmed10609610",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=10609610&amp;retmode=xml",
+        "source_locator": "PubmedArticle/MedlineCitation/Article/Abstract",
+        "exact_source_quote": "0.1 mM HPOx",
+        "snapshot_sha256": "af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de"
+      },
+      {
+        "source_key": "pubmed10609610",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=10609610&amp;retmode=xml",
+        "source_locator": "PubmedArticle/MedlineCitation/Article/Abstract",
+        "exact_source_quote": "3.5 mM",
+        "snapshot_sha256": "af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de"
+      }
+    ],
+    "rationale": "The attached organism excerpt supports this dose-response statement in BB/FBS. This is not an optimum for all formulations or a standard unperturbed maximum."
+  },
+  {
+    "quantity_id": "q11",
+    "topic": "Study37C,24h,shaking and microaerobic atmosphere",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "variants[0].modifications[2]",
+        "stored": "Incubate microaerobically at 37 C with shaking; source measured OD620 and viable CFU after 24 h.",
+        "decision": "evidence_only",
+        "rationale": "Full methods and Fig1 support these conditions. Existing abstract snippets do not contain all of them; add precise full-text linkage without changing the supported numbers or equating all experiment arms."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "variants[0].modifications[2]",
+        "stored": "Incubate microaerobically at 37 C with shaking; source measured OD620 and viable CFU after 24 h.",
+        "decision": "evidence_only",
+        "rationale": "Full methods and Fig1 support these conditions. Existing abstract snippets do not contain all of them; add precise full-text linkage without changing the supported numbers or equating all experiment arms."
+      },
+      {
+        "input": "target",
+        "field_path": "target_organisms[0].growth_metrics[0].temperature_celsius",
+        "stored": 37,
+        "decision": "evidence_only",
+        "rationale": "Full methods and Fig1 support these conditions. Existing abstract snippets do not contain all of them; add precise full-text linkage without changing the supported numbers or equating all experiment arms."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].temperature_celsius",
+        "stored": 37,
+        "decision": "evidence_only",
+        "rationale": "Full methods and Fig1 support these conditions. Existing abstract snippets do not contain all of them; add precise full-text linkage without changing the supported numbers or equating all experiment arms."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Methods and Fig1 caption",
+        "exact_source_quote": "37 C",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      },
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Methods/results and Fig1 caption",
+        "exact_source_quote": "24 hr",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "Full methods and Fig1 support these conditions. Existing abstract snippets do not contain all of them; add precise full-text linkage without changing the supported numbers or equating all experiment arms."
+  },
+  {
+    "quantity_id": "q12",
+    "topic": "OD6200.724±0.267: HPOx/PB/DW, no catalase",
+    "decision": "conflict",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "target_organisms[0].growth_metrics[0].max_od600",
+        "stored": 0.724,
+        "decision": "conflict",
+        "rationale": "Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee, row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve the actual observation but correct its row-specific condition; do not silently substitute a larger value. The nearby narrative is less precise than the table."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].max_od600",
+        "stored": 0.724,
+        "decision": "conflict",
+        "rationale": "Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee, row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve the actual observation but correct its row-specific condition; do not silently substitute a larger value. The nearby narrative is less precise than the table."
+      },
+      {
+        "input": "target",
+        "field_path": "target_organisms[0].growth_metrics[0].measurement_conditions",
+        "stored": "Bisulfite-less Brucella broth supplemented with 10% fetal bovine serum, pretreated with 3.5 mM H2O2 and catalase; source compared this condition with standard bisulfite-containing Brucella broth and H2O2-supplemented Brucella broth.",
+        "decision": "conflict",
+        "rationale": "Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee, row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve the actual observation but correct its row-specific condition; do not silently substitute a larger value. The nearby narrative is less precise than the table."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].measurement_conditions",
+        "stored": "Bisulfite-less Brucella broth supplemented with 10% fetal bovine serum, pretreated with 3.5 mM H2O2 and catalase; source compared this condition with standard bisulfite-containing Brucella broth and H2O2-supplemented Brucella broth.",
+        "decision": "conflict",
+        "rationale": "Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee, row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve the actual observation but correct its row-specific condition; do not silently substitute a larger value. The nearby narrative is less precise than the table."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "p1012 narrative; numerical row/conditions resolved visually in Table3",
+        "exact_source_quote": "0.724",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee, row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve the actual observation but correct its row-specific condition; do not silently substitute a larger value. The nearby narrative is less precise than the table."
+  },
+  {
+    "quantity_id": "q13",
+    "topic": "Optical wavelength620nm override",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "target_organisms[0].growth_metrics[0].max_od_wavelength_nm",
+        "stored": 620,
+        "decision": "evidence_only",
+        "rationale": "The schema explicitly permits max_od_wavelength_nm to override the default600nm.620nm is supported and is not a naming defect; attach the full-text measurement evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].max_od_wavelength_nm",
+        "stored": 620,
+        "decision": "evidence_only",
+        "rationale": "The schema explicitly permits max_od_wavelength_nm to override the default600nm.620nm is supported and is not a naming defect; attach the full-text measurement evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "p1010 methods",
+        "exact_source_quote": "620 nm",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "The schema explicitly permits max_od_wavelength_nm to override the default600nm.620nm is supported and is not a naming defect; attach the full-text measurement evidence."
+  },
+  {
+    "quantity_id": "q14",
+    "topic": "Conditional experiment versus standard maximum flag",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "target_organisms[0].growth_metrics[0].is_max_attainment",
+        "stored": true,
+        "decision": "correct",
+        "rationale": "The schema defines true as standard/textbook maximum and false for perturbation/nondefault conditions. This selected HPOx/BLBB/FBS experiment requires false; no numerical global maximum is established."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].is_max_attainment",
+        "stored": true,
+        "decision": "correct",
+        "rationale": "The schema defines true as standard/textbook maximum and false for perturbation/nondefault conditions. This selected HPOx/BLBB/FBS experiment requires false; no numerical global maximum is established."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Table3 and adjacent narrative",
+        "exact_source_quote": "0.724",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "The schema defines true as standard/textbook maximum and false for perturbation/nondefault conditions. This selected HPOx/BLBB/FBS experiment requires false; no numerical global maximum is established."
+  },
+  {
+    "quantity_id": "q15",
+    "topic": "Growth tube1ml plus0.1ml inoculum",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "This seed suspension was inoculated             posed by 30 Sigma units of catalase. One Sigma unit is\n into 1 ml of growth media supplemented with 10% FBS            defined by the manufacturer as the amount of catalase\n (0.1 ml/tube) in glass tubes (13 X 100 mm) with silicon        which catalyzes the decomposition of 3.45 pmol of\n spongy caps.",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "The methods distinguish growth-medium volume and inoculation. Do not silently normalize the entire formulation or infer a new final-volume concentration."
+  },
+  {
+    "quantity_id": "q16",
+    "topic": "SeedOD620approximately0.3",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "Systems) at an optical density of approximately 0.3 at         this condition, 30 µmol of HPOx was completely decom-\n 620 nm (OD620).",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "Seed density is not the endpoint measurement."
+  },
+  {
+    "quantity_id": "q17",
+    "topic": "Seed agar5%FBS for2days",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "Md., U.S.A.) supplemented with 5% bovine fetal serum             smol of HPOx) was mixed with 30 l.tlof catalase (Sigma\n (FBS) for 2 days.",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "Separate seed agar from liquid BB/FBS;2days belongs to seed preparation."
+  },
+  {
+    "quantity_id": "q18",
+    "topic": "CFU agar5%FBS,0.1ml/plate and5days",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "forming units (CFU), the bacterial culture was 10-fold         water, were frozen in sherbet-like nitrogen, a solid-liquid\n serially diluted with BHIB. The diluted bacterial sus-         mixture with a melting point of - 210 C. Morphology of\n pension was plated (0.1 ml/plate) in duplicate on brain        the cells was observed after fracturing and etching as\n heart infusion agar (Difco Laboratories, Detroit, Mich.,       previously described (21).\n U.S.A.) supplemented with 5% FBS and incubated for 5\n days. Bisulfite-less Brucella broth (BLBB) was pre-",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "CFU counting uses a separate agar assay,10-fold dilution and5day incubation; do not add those ingredients/conditions to the measured broth."
+  },
+  {
+    "quantity_id": "q19",
+    "topic": "BLBB comparator formula per1litre",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "Dickinson Microbiology Systems [10.0 g of trypticase              Figure 1 illustrates the growth-promoting effect of\npeptone (Becton Dickinson Microbiology Systems),                HPOx in BB/FBS. The addition of 1 mm HPOx into\n 10.0 g of peptamine (Difco Laboratories), 1.0 g of glu-        BB/FBS significantly enhanced the growth of OMU89-\ncose, 2.0 g of yeast extract (Oxide Ltd., England), and 5.0     362 at 24 hr after incubation. The stimulatory effect\n g of sodium chloride, in 1 liter].",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "The separate BLBB formula contains trypticase10g,peptamine10g,glucose1g,yeast2g,NaCl5g per litre and omits bisulfite. These are comparator-specific source amounts, not permission to delete standard BB bisulfite."
+  },
+  {
+    "quantity_id": "q20",
+    "topic": "Table3 first addition0.1ml35mMHPOx orPB",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "0 .1 ml of either 35 mm HPOx or PB.",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "This is the reagent strength and addition volume for the first sequential treatment; preserve the alternative PB arm."
+  },
+  {
+    "quantity_id": "q21",
+    "topic": "Table3 second addition30µl100Sigmaunits/mlcatalase orPB",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "30 µl of either 100 Sigma units/ml catalase or PB",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "This is the second treatment, present only in the catalase rows. It is absent from the0.724 row."
+  },
+  {
+    "quantity_id": "q22",
+    "topic": "Table3 third addition20µl50mMbisulfite orDW",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "20 gl of either 50 mm sodium bisulfite or distilled water              was inoculated into BLBB/FBS containing several concentrations\n                                                                             of either bisulfite (closed square) or bisulfate (open square).\n(DW). Sodium bisulfite was dissolved in DW just before use.",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "Retain the third-arm alternatives and order; lastrow reverses bisulfite/catalase."
+  },
+  {
+    "quantity_id": "q23",
+    "topic": "Table3 each addition heldRT5min",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "third reagents in order. Following each addition, the mixtures were\nkept at room temperature for 5 min.",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "Sequential room-temperature treatment is distinct from37C growth."
+  },
+  {
+    "quantity_id": "q24",
+    "topic": "HPOx above12.5mM inhibitory",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "than 12.5 mm of HPOx was rather inhibitory, probably\nml of BLBB supplemented with 10% FBS to give an                 because of its bactericidal effect.",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "This is a study dose-response limit, not a generally safe or optimal medium concentration."
+  },
+  {
+    "quantity_id": "q25",
+    "topic": "Morphology experiment36h",
+    "decision": "evidence_only",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "jstage10609610",
+        "source_url": "https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf",
+        "source_locator": "Exact full-text clause; printed pages1010–1012, specified method/table footnote",
+        "exact_source_quote": "BLBB at 37 C for 36 hr were harvested by centrifugation",
+        "snapshot_sha256": "66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4",
+        "parsed_text_sha256": "cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d"
+      }
+    ],
+    "rationale": "The36hour morphology experiment is separate from24hour growth comparison."
+  }
+]
+
+## Findings
+
+### f1: Bind the OD measurement to its actual experimental row
+
+major / open / confirmed; issue key: culturemech.009933.growth-row-condition.
+
+The current0.724 measurement is paired with catalase. Table3 assigns0.724±0.267 to HPOx/PB/DW and0.839±0.237 to HPOx/catalase/DW. The true maximum flag also misclassifies a perturbation result.
+
+### f2: Restore the basal water unit and pH instruction
+
+major / open / confirmed; issue key: culturemech.009933.water-and-basal-prep.
+
+Both selected layers record source1Lwater as1G_PER_L and omit the explicit pH7.0 scalar. Other printed masses do not establish a measured final volume.
+
+### f3: Link numerical and method claims to the exact primary sections
+
+minor / open / confirmed; issue key: culturemech.009933.claim-scope.
+
+Current abstract snippets support broad growth statements but do not carry the numerical table condition or every method. The DNS-failed native reference check remains a separate unresolved validation gate.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct row-specific conditions and the standard-maximum flag, retain uncertainty/wavelength and distinguish BB from BLBB; attach a Table3-specific claim without treating the larger row as a replacement maximum.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Represent the1L water input with its correct unit, retain printed masses and add the supported basal pH instruction without inventing final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach concise method/table claims with strain,arm,time,wavelength and original capture metadata; preserve the original failed check and partial status.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BRUCELLA_BROTH.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BRUCELLA_BROTH.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BRUCELLA_BROTH.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch045/447/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch045/447/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BRUCELLA_BROTH.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BRUCELLA_BROTH.yaml; Actual command output | refutes | Validating evidence references (MediaRecipe)...<br>  [ERROR] Could not fetch reference: PMID:10609610<br>    Location: variants[0].evidence[0].snippet<br>  [ERROR] Could not fetch reference: PMID:10609610<br>    Location: target_organisms[0].growth_metrics[0].evidence[0].snippet<br>  [ERROR] Could not fetch reference: PMID:10609610<br>    Location: target_organisms[0].evidence[0].snippet<br>Reference checks: 3; issues: 3<br><br>WARNING:linkml_reference_validator.etl.sources.pmid:Failed to fetch PMID:10609610 from NCBI: &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;<br>WARNING:linkml_reference_validator.etl.sources.pmid:Failed to fetch PMID:10609610 from NCBI: &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;<br>WARNING:linkml_reference_validator.etl.sources.pmid:Failed to fetch PMID:10609610 from NCBI: &lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;<br>error: recipe &#96;validate-references&#96; failed with exit code 1 |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BRUCELLA_BROTH.yaml:1:id: CultureMech:009933<br>./data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml:1:id: CultureMech:009933<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch045/source-preflight-bound/447/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 12 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540; Exact source identity, formulation and scoped preparation | supports | Current M540 identifies JCM538 and supplies seven basal components, pH7.0 and commercial alternatives. Water input is not a measured final volume. |
+| paper | https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf; Printed pp1009–1012; PDF pages1–4, especially Table3 on page4 | supports | Full primary paper, methods and visually inspected Tables1–3. Table3 distinguishes HPOx/PB/DW0.724±0.267 from HPOx/catalase/DW0.839±0.237; these are conditional BLBB/FBS measurements, not textbook maxima. |
+| pubmed | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=10609610&amp;retmode=xml; Exact source identity, formulation and scoped preparation | supports | Exact PMID, DOI, authors, journal/year and complete abstract support conditional serum/HPOx growth, not the numerical Table3 row alone. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=210&amp;retmode=xml; Exact source identity, formulation and scoped preparation | supports | Captured taxon210 identifies Helicobacter pylori. Species identity does not independently authenticate strain OMU89-362; the primary methods name that strain. |
+| jcm538-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=538; Preserved exact public retrieval result | context_only | Current JCM538 returned Nothing found. The current M540 provider and separately captured primary study remain available; no unavailable original collection page is treated as formula authentication. |
+| table3 | https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf; Table3, printed p1012/PDF page4; exact rendered image and labeled human transcription in /private/tmp/culturemech-review-work-batch045/447/table3-visual-evidence.json | refutes | The selected local0.724 value is the HPOx/PB/DW row, without catalase. The catalase row is0.839. Uncertainty is S.D.; transcription is visual, not a fabricated raw-text quote. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact source identity, formulation and scoped preparation | supports | CHEBI:15377 resolves to water. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact source identity, formulation and scoped preparation | supports | CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact source identity, formulation and scoped preparation | supports | CHEBI:17234 resolves to glucose. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi26709 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26709; Exact source identity, formulation and scoped preparation | supports | CHEBI:26709 resolves to sodium hydrogensulfite. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch045/447/grounding-inventory.json; All asserted selected-layer IDs/labels and exact current preferred MIM rows, including negative slots | context_only | All asserted selected chemical IDs/labels match captured canonical metadata. Three complex ingredients lack primary/current-secondary links; do not invent single-compound identities for extracts/digests. Sodium hydrogensulfite and bisulfite-less comparator scope are distinct. Taxon210 matches the species; strain identity is established by the paper, not by species taxonomy alone. |
+| history-metadata | data/merge_yaml/merged/BRUCELLA_BROTH.yaml; data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml", "events": 8, "timestamp_issues": []}] |
+| history-evidence | /private/tmp/culturemech-review-work-batch045/447/history-evidence-inventory.json; Entire selected-layer histories/evidence; exact historical parents and original captured timestamps | context_only | Both complete histories and all three attached claims per layer were read. Their abstract excerpts support serum/HPOx and relative BLBB growth, but not the selected numerical Table3 condition or all methods. The original reference validator failed all three attempts because of NCBI DNS; preserve this required failed check and partial status. Independently captured PubMed and full paper permit a separate scientific assessment without retroactively converting the failed check to a pass. |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current target mirrors its maintained M540 owner for scientific fields. Correct the maintained source and regenerate only after review; the existing manual growth event does not prove that current merger code caused the scientific mismatch. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current target mirrors its maintained M540 owner for scientific fields. Correct the maintained source and regenerate only after review; the existing manual growth event does not prove that current merger code caused the scientific mismatch. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch045/447/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Current JCM538 returned Nothing found. The current M540 provider and separately captured primary study remain available; no unavailable original collection page is treated as formula authentication.
+- The original required reference validation failed with3checks/3issues due to NCBI DNS; no native recheck was performed. Independently captured paper evidence does not erase that failure.
+- Table3 values/conditions were read visually from the pinned PDF image; the table body is absent from text extraction. No visual transcription is presented as a raw-text substring.
+- No unspecified serum percentage basis, measured final volume or unconditional formulation equivalence is inferred.
+- The original required reference validator failed: 3 checks, 3 issues caused by NCBI DNS retrieval failures for PMID10609610. This failure is preserved separately from the independently captured PubMed/full paper and scientific assessment; no native recheck was executed by the draft author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T021224Z-culturemech-009933-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: brucella_broth (CultureMech:009933)'
+started_at: '2026-10-22T02:02:40Z'
+finished_at: '2026-10-22T02:12:24Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The maintained M540 broth and its study-specific Helicobacter pylori variant
+  require separate assessment. The source water unit is wrong locally, and the growth
+  metric combines Table 3 OD620 0.724 with the catalase condition belonging to a different
+  row. Direct primary evidence supports conditional growth; the original required
+  reference check failed because NCBI could not be reached and remains failed.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+    sha256: 9380bd503ce7cff8a30752b4bea4c53f33db061f50bb9d900b73d65802ee7a4d
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    sha256: f292dee86d67451cf7e1cc227e807733d9c3835a9b6b39ad191ef041b809dc10
+    role: context
+  - path: data/normalized_yaml/bacterial/brucella_broth.yaml
+    sha256: 16c33289e86d97a8f13620a2114d9eafcbc22d314b6a81a5fcc5f80562ce4df2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BRUCELLA_BROTH.md
+    sha256: d938bf3a9539db4df109682a0eb877885fc3d020ac700f98c2edd638cd49eb6c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.md
+    sha256: 58728d54920ce94edaae2ac17dcdf74939725fabdfda5790a427b114a582226e
+    role: context
+  - path: reports/yaml_record_review/20260922T004233Z-BRUCELLA_BROTH.md
+    sha256: 5ac87aebe47929961ebd7c61d1b212c8cf86b6d27b019f329f7e62562debd84a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/curate_organism_culture_type.py
+    sha256: 8686de3d3736eaaf3702e2009a299a53819a5ba321966ab2ea01104538ca6a65
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_albumin_counterparts.py
+    sha256: 26fd67dc1773e34b183cfa447b24cf948f52b3e5d229d6532d6d0fee10216a7a
+    role: context
+  - path: scripts/repair_bsk_formulations.py
+    sha256: a0df723b84ed8dfa33b06023b540af8d67af79d33b375f643741d81f7f4cef2c
+    role: context
+  - path: scripts/repair_jcm_albumin_inputs.py
+    sha256: fc166a31e8009a31f2f510cfb4ec59a3d5435f9fbfd0fb75417f99e25b7199f4
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_methanogen_stock_boundaries.py
+    sha256: 8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba
+    role: context
+  - path: scripts/repair_togo_bsk_structure.py
+    sha256: 7be012bb48826f20ede3a560aac5e8369b928bf1315bbed5fd45687ffb74aa9c
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 447; batch 045 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-four task batches
+    contain 440 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 443 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009933
+targets:
+- target_id: CultureMech:009933
+  path: data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  label: brucella_broth
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BRUCELLA_BROTH.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch045/447/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/447/strict.tsv"
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  exit_code: 1
+  required: true
+  status: failed
+  summary: "Validating evidence references (MediaRecipe)...\n  [ERROR] Could not fetch\
+    \ reference: PMID:10609610\n    Location: variants[0].evidence[0].snippet\n  [ERROR]\
+    \ Could not fetch reference: PMID:10609610\n    Location: target_organisms[0].growth_metrics[0].evidence[0].snippet\n\
+    \  [ERROR] Could not fetch reference: PMID:10609610\n    Location: target_organisms[0].evidence[0].snippet\n\
+    Reference checks: 3; issues: 3\n\nWARNING:linkml_reference_validator.etl.sources.pmid:Failed\
+    \ to fetch PMID:10609610 from NCBI: <urlopen error [Errno 8] nodename nor servname\
+    \ provided, or not known>\nWARNING:linkml_reference_validator.etl.sources.pmid:Failed\
+    \ to fetch PMID:10609610 from NCBI: <urlopen error [Errno 8] nodename nor servname\
+    \ provided, or not known>\nWARNING:linkml_reference_validator.etl.sources.pmid:Failed\
+    \ to fetch PMID:10609610 from NCBI: <urlopen error [Errno 8] nodename nor servname\
+    \ provided, or not known>\nerror: recipe `validate-references` failed with exit\
+    \ code 1"
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009933
+- check_id: jcm538-source-access
+  name: 'Exact source content access: jcm538'
+  required: false
+  status: unavailable
+  summary: Current JCM538 returned Nothing found. The current M540 provider and separately
+    captured primary study remain available; no unavailable original collection page
+    is treated as formula authentication.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - jcm538-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:35.816661Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BRUCELLA_BROTH.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch045/447/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:37.753105Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/447/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:03:39.907477Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BRUCELLA_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:12.568599Z'
+  support: refutes
+  summary: "Validating evidence references (MediaRecipe)...\n  [ERROR] Could not fetch\
+    \ reference: PMID:10609610\n    Location: variants[0].evidence[0].snippet\n  [ERROR]\
+    \ Could not fetch reference: PMID:10609610\n    Location: target_organisms[0].growth_metrics[0].evidence[0].snippet\n\
+    \  [ERROR] Could not fetch reference: PMID:10609610\n    Location: target_organisms[0].evidence[0].snippet\n\
+    Reference checks: 3; issues: 3\n\nWARNING:linkml_reference_validator.etl.sources.pmid:Failed\
+    \ to fetch PMID:10609610 from NCBI: <urlopen error [Errno 8] nodename nor servname\
+    \ provided, or not known>\nWARNING:linkml_reference_validator.etl.sources.pmid:Failed\
+    \ to fetch PMID:10609610 from NCBI: <urlopen error [Errno 8] nodename nor servname\
+    \ provided, or not known>\nWARNING:linkml_reference_validator.etl.sources.pmid:Failed\
+    \ to fetch PMID:10609610 from NCBI: <urlopen error [Errno 8] nodename nor servname\
+    \ provided, or not known>\nerror: recipe `validate-references` failed with exit\
+    \ code 1"
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BRUCELLA_BROTH.yaml:1:id: CultureMech:009933
+
+    ./data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml:1:id: CultureMech:009933
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/source-preflight-bound/447/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: bc9c3796c1f17f065ee6d622cde1df6f5a50b11b2dde4af4c6f4239a0741ac6e
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T01:49:42.547961Z'
+  support: supports
+  summary: Current M540 identifies JCM538 and supplies seven basal components, pH7.0
+    and commercial alternatives. Water input is not a measured final volume.
+  snapshot_sha256: 07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912
+- evidence_id: paper
+  kind: database
+  reference: https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf
+  locator: Printed pp1009–1012; PDF pages1–4, especially Table3 on page4
+  accessed_at: '2026-10-22T01:49:44.130120Z'
+  support: supports
+  summary: Full primary paper, methods and visually inspected Tables1–3. Table3 distinguishes
+    HPOx/PB/DW0.724±0.267 from HPOx/catalase/DW0.839±0.237; these are conditional
+    BLBB/FBS measurements, not textbook maxima.
+  snapshot_sha256: 66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4
+- evidence_id: pubmed
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=10609610&retmode=xml
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T01:49:43.831882Z'
+  support: supports
+  summary: Exact PMID, DOI, authors, journal/year and complete abstract support conditional
+    serum/HPOx growth, not the numerical Table3 row alone.
+  snapshot_sha256: af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=210&retmode=xml
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T01:49:44.095091Z'
+  support: supports
+  summary: Captured taxon210 identifies Helicobacter pylori. Species identity does
+    not independently authenticate strain OMU89-362; the primary methods name that
+    strain.
+  snapshot_sha256: af87142ec99f9f639d4d208a1f87d31a4401b7f70f9d755f544e9efb62302392
+- evidence_id: jcm538-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=538
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T01:49:43.242734Z'
+  support: context_only
+  summary: Current JCM538 returned Nothing found. The current M540 provider and separately
+    captured primary study remain available; no unavailable original collection page
+    is treated as formula authentication.
+  snapshot_sha256: 8c826f1851814b1c2a810191e29b1190bea7ed6b5ff4d156a7ec2e97ba395edf
+- evidence_id: table3
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf
+  locator: Table3, printed p1012/PDF page4; exact rendered image and labeled human
+    transcription in /private/tmp/culturemech-review-work-batch045/447/table3-visual-evidence.json
+  accessed_at: '2026-10-22T01:49:44.130120Z'
+  support: refutes
+  summary: The selected local0.724 value is the HPOx/PB/DW row, without catalase.
+    The catalase row is0.839. Uncertainty is S.D.; transcription is visual, not a
+    fabricated raw-text quote.
+  snapshot_sha256: 66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:30.346522Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:31.535358Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26709
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26709
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T01:49:44.442286Z'
+  support: supports
+  summary: CHEBI:26709 resolves to sodium hydrogensulfite. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: a428ce8d313063eab4e742a7d2394c920db886048760beaf8718c3fc82ecf7af
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/447/grounding-inventory.json
+  locator: All asserted selected-layer IDs/labels and exact current preferred MIM
+    rows, including negative slots
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: All asserted selected chemical IDs/labels match captured canonical metadata.
+    Three complex ingredients lack primary/current-secondary links; do not invent
+    single-compound identities for extracts/digests. Sodium hydrogensulfite and bisulfite-less
+    comparator scope are distinct. Taxon210 matches the species; strain identity is
+    established by the paper, not by species taxonomy alone.
+  snapshot_sha256: ee813ff99650cd45fc6238d13450a79a2b912d8eca747de1d292b1e7d36a108e
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BRUCELLA_BROTH.yaml; data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: history-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/447/history-evidence-inventory.json
+  locator: Entire selected-layer histories/evidence; exact historical parents and
+    original captured timestamps
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: Both complete histories and all three attached claims per layer were read.
+    Their abstract excerpts support serum/HPOx and relative BLBB growth, but not the
+    selected numerical Table3 condition or all methods. The original reference validator
+    failed all three attempts because of NCBI DNS; preserve this required failed check
+    and partial status. Independently captured PubMed and full paper permit a separate
+    scientific assessment without retroactively converting the failed check to a pass.
+  snapshot_sha256: 06c85b4623c5c132933303ea0705bef8b7a42431bedf756e002c59a3978e3da4
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: Current target mirrors its maintained M540 owner for scientific fields.
+    Correct the maintained source and regenerate only after review; the existing manual
+    growth event does not prove that current merger code caused the scientific mismatch.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: Current target mirrors its maintained M540 owner for scientific fields.
+    Correct the maintained source and regenerate only after review; the existing manual
+    growth event does not prove that current merger code caused the scientific mismatch.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/447/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T02:10:24Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 62842de2a38f09e5f27142e6ab6cd20ab70a8041e3d4911184f39e7242a32415
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: concern
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact supplied forms and current secondary bindings
+  outcome: supported
+  summary: '16 asserted slots and 4 distinct captured ontology IDs checked; 0 literal
+    canonical-label differences. 8/8 asserted current CHEBI secondary slots have preferred
+    mapped rows; 0 selected legacy slots remain separately assessed. Target direct-ingredient
+    linkage: 4/7 primary and 4/7 current secondary on a 0–100 percent linkage scale
+    (57.14% and 57.14%), not a correctness score. All asserted selected chemical IDs/labels
+    match captured canonical metadata. Three complex ingredients lack primary/current-secondary
+    links; do not invent single-compound identities for extracts/digests. Sodium hydrogensulfite
+    and bisulfite-less comparator scope are distinct. Taxon210 matches the species;
+    strain identity is established by the paper, not by species taxonomy alone.'
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - record
+  - grounding-inventory
+  - chebi15377
+  - chebi26710
+  - chebi17234
+  - chebi26709
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 17 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim linkage and historical/current source scope
+  outcome: concern
+  summary: Both complete histories and all three attached claims per layer were read.
+    Their abstract excerpts support serum/HPOx and relative BLBB growth, but not the
+    selected numerical Table3 condition or all methods. The original reference validator
+    failed all three attempts because of NCBI DNS; preserve this required failed check
+    and partial status. Independently captured PubMed and full paper permit a separate
+    scientific assessment without retroactively converting the failed check to a pass.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - record
+  - history-evidence
+  - bound-source-integrity
+- assessment_id: identity
+  area: identity
+  topic: Basal BB, derived BLBB and measured study arm
+  outcome: concern
+  summary: M540/JCM538 identifies the selected basal broth; excluded DSM namesake
+    is not its owner. The paper explicitly distinguishes standard BB from bisulfite-less
+    BLBB. Current growth measurement text selects BLBB but the variant description
+    is broader BB/FBS; preserve distinct experimental recipes and row identity.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - record
+  - owner-0
+  - provider
+  - paper
+  - table3
+- assessment_id: preparation
+  area: completeness
+  topic: Basal preparation and study conditions
+  outcome: concern
+  summary: Basal pH7.0 is missing; source water is misunitized. Study serum, peroxide,
+    temperature and time have direct support, while the detailed Table3 treatments
+    require precise arm-specific linkage. No unrelated lysis/analytical reagents are
+    proposed as growth medium ingredients.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - provider
+  - paper
+- assessment_id: classification
+  area: scope
+  topic: Conditional growth and scientific verdict
+  outcome: concern
+  summary: Complex liquid broth and species identification are supported. The paper
+    supports actual conditional strain growth, but0.724 with catalase is refuted by
+    Table3 and is_max_attainment=true misstates a perturbation experiment. Scope remains
+    partial because the required native reference check failed; direct primary reading
+    is recorded independently.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - record
+  - paper
+  - table3
+  - taxonomy
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 25 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"Distilled water\"\
+    ,\n    \"decision\": \"correct\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"Source water is1L, not1g/L; preserve the liquid-input unit and do not infer\
+    \ a measured final volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Source water is1L,\
+    \ not1g/L; preserve the liquid-input unit and do not infer a measured final volume.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM540\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\
+    \n      }\n    ],\n    \"rationale\": \"Source water is1L, not1g/L; preserve the\
+    \ liquid-input unit and do not infer a measured final volume.\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q2\",\n    \"topic\": \"Yeast extract\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The printed batch mass matches the stored number, but no concentration evidence\
+    \ attaches to either layer. Preserve the literal mass and source water input;\
+    \ the provider does not establish a measured final-volume denominator.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch mass matches the stored number, but no concentration evidence attaches\
+    \ to either layer. Preserve the literal mass and source water input; the provider\
+    \ does not establish a measured final-volume denominator.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM540\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 2,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed batch mass matches the stored\
+    \ number, but no concentration evidence attaches to either layer. Preserve the\
+    \ literal mass and source water input; the provider does not establish a measured\
+    \ final-volume denominator.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"\
+    topic\": \"NaCl\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The printed batch mass matches the stored number, but no concentration evidence\
+    \ attaches to either layer. Preserve the literal mass and source water input;\
+    \ the provider does not establish a measured final-volume denominator.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch mass matches the stored number, but no concentration evidence attaches\
+    \ to either layer. Preserve the literal mass and source water input; the provider\
+    \ does not establish a measured final-volume denominator.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM540\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 5,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed batch mass matches the stored\
+    \ number, but no concentration evidence attaches to either layer. Preserve the\
+    \ literal mass and source water input; the provider does not establish a measured\
+    \ final-volume denominator.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"\
+    topic\": \"Glucose\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The printed batch mass matches the stored number, but no concentration evidence\
+    \ attaches to either layer. Preserve the literal mass and source water input;\
+    \ the provider does not establish a measured final-volume denominator.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch mass matches the stored number, but no concentration evidence attaches\
+    \ to either layer. Preserve the literal mass and source water input; the provider\
+    \ does not establish a measured final-volume denominator.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM540\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Glucose\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed batch mass matches the stored\
+    \ number, but no concentration evidence attaches to either layer. Preserve the\
+    \ literal mass and source water input; the provider does not establish a measured\
+    \ final-volume denominator.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"\
+    topic\": \"NaHSO3\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The printed batch mass matches the stored number, but no concentration evidence\
+    \ attaches to either layer. Preserve the literal mass and source water input;\
+    \ the provider does not establish a measured final-volume denominator. The paper\
+    \ independently states standard BB bisulfite0.1g/litre, approximately1mM; that\
+    \ standard broth must remain distinct from bisulfite-less BLBB.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch mass matches the stored number, but no concentration evidence attaches\
+    \ to either layer. Preserve the literal mass and source water input; the provider\
+    \ does not establish a measured final-volume denominator. The paper independently\
+    \ states standard BB bisulfite0.1g/litre, approximately1mM; that standard broth\
+    \ must remain distinct from bisulfite-less BLBB.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM540\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\",\n     \
+    \   \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaHSO3\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed batch mass matches the stored\
+    \ number, but no concentration evidence attaches to either layer. Preserve the\
+    \ literal mass and source water input; the provider does not establish a measured\
+    \ final-volume denominator. The paper independently states standard BB bisulfite0.1g/litre,\
+    \ approximately1mM; that standard broth must remain distinct from bisulfite-less\
+    \ BLBB.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"topic\": \"Pancreatic\
+    \ digest of casein\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The printed batch mass matches the stored number, but no concentration evidence\
+    \ attaches to either layer. Preserve the literal mass and source water input;\
+    \ the provider does not establish a measured final-volume denominator.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch mass matches the stored number, but no concentration evidence attaches\
+    \ to either layer. Preserve the literal mass and source water input; the provider\
+    \ does not establish a measured final-volume denominator.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM540\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pancreatic digest of casein\\\",\\n          \\\
+    \"volume\\\": 10,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The printed batch mass matches the stored number,\
+    \ but no concentration evidence attaches to either layer. Preserve the literal\
+    \ mass and source water input; the provider does not establish a measured final-volume\
+    \ denominator.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"topic\": \"Peptic\
+    \ digest of animal tissue\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The printed batch mass matches the stored number, but no concentration evidence\
+    \ attaches to either layer. Preserve the literal mass and source water input;\
+    \ the provider does not establish a measured final-volume denominator.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch mass matches the stored number, but no concentration evidence attaches\
+    \ to either layer. Preserve the literal mass and source water input; the provider\
+    \ does not establish a measured final-volume denominator.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM540\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Peptic digest of animal tissue\\\",\\n       \
+    \   \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The printed batch mass matches the stored number,\
+    \ but no concentration evidence attaches to either layer. Preserve the literal\
+    \ mass and source water input; the provider does not establish a measured final-volume\
+    \ denominator.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"topic\": \"Basal\
+    \ pH7.0\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"ph_value\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\":\
+    \ \"Both local scalars are absent. The provider specifies this basal adjustment;\
+    \ do not transfer unrelated assay-buffer pH to the medium.\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Both local scalars are absent.\
+    \ The provider specifies this basal adjustment; do not transfer unrelated assay-buffer\
+    \ pH to the medium.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM540\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M540\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0.\",\n        \"snapshot_sha256\": \"07438ee7442cc86ec502b0bf8052b8223e13303bd023a2f292291c13de200912\"\
+    \n      }\n    ],\n    \"rationale\": \"Both local scalars are absent. The provider\
+    \ specifies this basal adjustment; do not transfer unrelated assay-buffer pH to\
+    \ the medium.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"topic\": \"Study\
+    \ supplementation10%FBS\",\n    \"decision\": \"verified\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"variants[0].modifications[0]\"\
+    ,\n        \"stored\": \"Supplement Brucella broth with 10% fetal bovine serum.\"\
+    ,\n        \"decision\": \"verified\",\n        \"rationale\": \"The attached\
+    \ variant excerpt supports10%FBS for this study; it does not state a percentage\
+    \ basis or replace basal water with an assumed final volume.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"variants[0].modifications[0]\",\n        \"stored\"\
+    : \"Supplement Brucella broth with 10% fetal bovine serum.\",\n        \"decision\"\
+    : \"verified\",\n        \"rationale\": \"The attached variant excerpt supports10%FBS\
+    \ for this study; it does not state a percentage basis or replace basal water\
+    \ with an assumed final volume.\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"pubmed10609610\",\n        \"source_url\"\
+    : \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=10609610&retmode=xml\"\
+    ,\n        \"source_locator\": \"PubmedArticle/MedlineCitation/Article/Abstract\"\
+    ,\n        \"exact_source_quote\": \"10% fetal bovine serum\",\n        \"snapshot_sha256\"\
+    : \"af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The attached variant excerpt supports10%FBS\
+    \ for this study; it does not state a percentage basis or replace basal water\
+    \ with an assumed final volume.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n\
+    \    \"topic\": \"HPOx onset0.1mM and maximal stimulation3.5mM\",\n    \"decision\"\
+    : \"verified\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"variants[0].modifications[1]\",\n        \"stored\"\
+    : \"Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation\
+    \ reported at 3.5 mM H2O2.\",\n        \"decision\": \"verified\",\n        \"\
+    rationale\": \"The attached organism excerpt supports this dose-response statement\
+    \ in BB/FBS. This is not an optimum for all formulations or a standard unperturbed\
+    \ maximum.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"variants[0].modifications[1]\",\n        \"stored\"\
+    : \"Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation\
+    \ reported at 3.5 mM H2O2.\",\n        \"decision\": \"verified\",\n        \"\
+    rationale\": \"The attached organism excerpt supports this dose-response statement\
+    \ in BB/FBS. This is not an optimum for all formulations or a standard unperturbed\
+    \ maximum.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"pubmed10609610\",\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=10609610&retmode=xml\"\
+    ,\n        \"source_locator\": \"PubmedArticle/MedlineCitation/Article/Abstract\"\
+    ,\n        \"exact_source_quote\": \"0.1 mM HPOx\",\n        \"snapshot_sha256\"\
+    : \"af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de\"\n     \
+    \ },\n      {\n        \"source_key\": \"pubmed10609610\",\n        \"source_url\"\
+    : \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=10609610&retmode=xml\"\
+    ,\n        \"source_locator\": \"PubmedArticle/MedlineCitation/Article/Abstract\"\
+    ,\n        \"exact_source_quote\": \"3.5 mM\",\n        \"snapshot_sha256\": \"\
+    af690b4bdbe0d68d235c8cdd3c2895ff5390e6e540ef3b9adbeb4e7dff0f89de\"\n      }\n\
+    \    ],\n    \"rationale\": \"The attached organism excerpt supports this dose-response\
+    \ statement in BB/FBS. This is not an optimum for all formulations or a standard\
+    \ unperturbed maximum.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"topic\"\
+    : \"Study37C,24h,shaking and microaerobic atmosphere\",\n    \"decision\": \"\
+    evidence_only\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"variants[0].modifications[2]\",\n        \"stored\"\
+    : \"Incubate microaerobically at 37 C with shaking; source measured OD620 and\
+    \ viable CFU after 24 h.\",\n        \"decision\": \"evidence_only\",\n      \
+    \  \"rationale\": \"Full methods and Fig1 support these conditions. Existing abstract\
+    \ snippets do not contain all of them; add precise full-text linkage without changing\
+    \ the supported numbers or equating all experiment arms.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"variants[0].modifications[2]\",\n        \"stored\"\
+    : \"Incubate microaerobically at 37 C with shaking; source measured OD620 and\
+    \ viable CFU after 24 h.\",\n        \"decision\": \"evidence_only\",\n      \
+    \  \"rationale\": \"Full methods and Fig1 support these conditions. Existing abstract\
+    \ snippets do not contain all of them; add precise full-text linkage without changing\
+    \ the supported numbers or equating all experiment arms.\"\n      },\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"target_organisms[0].growth_metrics[0].temperature_celsius\"\
+    ,\n        \"stored\": 37,\n        \"decision\": \"evidence_only\",\n       \
+    \ \"rationale\": \"Full methods and Fig1 support these conditions. Existing abstract\
+    \ snippets do not contain all of them; add precise full-text linkage without changing\
+    \ the supported numbers or equating all experiment arms.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[0].growth_metrics[0].temperature_celsius\"\
+    ,\n        \"stored\": 37,\n        \"decision\": \"evidence_only\",\n       \
+    \ \"rationale\": \"Full methods and Fig1 support these conditions. Existing abstract\
+    \ snippets do not contain all of them; add precise full-text linkage without changing\
+    \ the supported numbers or equating all experiment arms.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jstage10609610\"\
+    ,\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Methods and Fig1 caption\",\n        \"exact_source_quote\"\
+    : \"37 C\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      },\n      {\n        \"source_key\": \"jstage10609610\",\n        \"source_url\"\
+    : \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\",\n\
+    \        \"source_locator\": \"Methods/results and Fig1 caption\",\n        \"\
+    exact_source_quote\": \"24 hr\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"Full methods and Fig1 support these conditions.\
+    \ Existing abstract snippets do not contain all of them; add precise full-text\
+    \ linkage without changing the supported numbers or equating all experiment arms.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"topic\": \"OD6200.724±0.267:\
+    \ HPOx/PB/DW, no catalase\",\n    \"decision\": \"conflict\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"target_organisms[0].growth_metrics[0].max_od600\"\
+    ,\n        \"stored\": 0.724,\n        \"decision\": \"conflict\",\n        \"\
+    rationale\": \"Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee,\
+    \ row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve\
+    \ the actual observation but correct its row-specific condition; do not silently\
+    \ substitute a larger value. The nearby narrative is less precise than the table.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[0].growth_metrics[0].max_od600\"\
+    ,\n        \"stored\": 0.724,\n        \"decision\": \"conflict\",\n        \"\
+    rationale\": \"Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee,\
+    \ row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve\
+    \ the actual observation but correct its row-specific condition; do not silently\
+    \ substitute a larger value. The nearby narrative is less precise than the table.\"\
+    \n      },\n      {\n        \"input\": \"target\",\n        \"field_path\": \"\
+    target_organisms[0].growth_metrics[0].measurement_conditions\",\n        \"stored\"\
+    : \"Bisulfite-less Brucella broth supplemented with 10% fetal bovine serum, pretreated\
+    \ with 3.5 mM H2O2 and catalase; source compared this condition with standard\
+    \ bisulfite-containing Brucella broth and H2O2-supplemented Brucella broth.\"\
+    ,\n        \"decision\": \"conflict\",\n        \"rationale\": \"Table3 visual\
+    \ evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee,\
+    \ row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve\
+    \ the actual observation but correct its row-specific condition; do not silently\
+    \ substitute a larger value. The nearby narrative is less precise than the table.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[0].growth_metrics[0].measurement_conditions\"\
+    ,\n        \"stored\": \"Bisulfite-less Brucella broth supplemented with 10% fetal\
+    \ bovine serum, pretreated with 3.5 mM H2O2 and catalase; source compared this\
+    \ condition with standard bisulfite-containing Brucella broth and H2O2-supplemented\
+    \ Brucella broth.\",\n        \"decision\": \"conflict\",\n        \"rationale\"\
+    : \"Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee,\
+    \ row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve\
+    \ the actual observation but correct its row-specific condition; do not silently\
+    \ substitute a larger value. The nearby narrative is less precise than the table.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jstage10609610\",\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"p1012 narrative; numerical row/conditions resolved\
+    \ visually in Table3\",\n        \"exact_source_quote\": \"0.724\",\n        \"\
+    snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"Table3 visual evidence, image SHA02e8f00814697920171970cc75bec811a6bd997d84758b21d3f46556f3b312ee,\
+    \ row3 is HPOx→PB→DW0.724±0.267. Row4 HPOx→Catalase→DW is0.839±0.237. Preserve\
+    \ the actual observation but correct its row-specific condition; do not silently\
+    \ substitute a larger value. The nearby narrative is less precise than the table.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"topic\": \"Optical wavelength620nm\
+    \ override\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"target_organisms[0].growth_metrics[0].max_od_wavelength_nm\"\
+    ,\n        \"stored\": 620,\n        \"decision\": \"evidence_only\",\n      \
+    \  \"rationale\": \"The schema explicitly permits max_od_wavelength_nm to override\
+    \ the default600nm.620nm is supported and is not a naming defect; attach the full-text\
+    \ measurement evidence.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[0].growth_metrics[0].max_od_wavelength_nm\"\
+    ,\n        \"stored\": 620,\n        \"decision\": \"evidence_only\",\n      \
+    \  \"rationale\": \"The schema explicitly permits max_od_wavelength_nm to override\
+    \ the default600nm.620nm is supported and is not a naming defect; attach the full-text\
+    \ measurement evidence.\"\n      }\n    ],\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"jstage10609610\",\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"p1010 methods\",\n        \"exact_source_quote\"\
+    : \"620 nm\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"The schema explicitly permits max_od_wavelength_nm\
+    \ to override the default600nm.620nm is supported and is not a naming defect;\
+    \ attach the full-text measurement evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q14\",\n    \"topic\": \"Conditional experiment versus standard maximum flag\"\
+    ,\n    \"decision\": \"correct\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"target_organisms[0].growth_metrics[0].is_max_attainment\"\
+    ,\n        \"stored\": true,\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"The schema defines true as standard/textbook maximum and false for perturbation/nondefault\
+    \ conditions. This selected HPOx/BLBB/FBS experiment requires false; no numerical\
+    \ global maximum is established.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[0].growth_metrics[0].is_max_attainment\"\
+    ,\n        \"stored\": true,\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"The schema defines true as standard/textbook maximum and false for perturbation/nondefault\
+    \ conditions. This selected HPOx/BLBB/FBS experiment requires false; no numerical\
+    \ global maximum is established.\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jstage10609610\",\n        \"source_url\"\
+    : \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\",\n\
+    \        \"source_locator\": \"Table3 and adjacent narrative\",\n        \"exact_source_quote\"\
+    : \"0.724\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"The schema defines true as standard/textbook\
+    \ maximum and false for perturbation/nondefault conditions. This selected HPOx/BLBB/FBS\
+    \ experiment requires false; no numerical global maximum is established.\"\n \
+    \ },\n  {\n    \"quantity_id\": \"q15\",\n    \"topic\": \"Growth tube1ml plus0.1ml\
+    \ inoculum\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\":\
+    \ [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jstage10609610\"\
+    ,\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"This seed\
+    \ suspension was inoculated             posed by 30 Sigma units of catalase. One\
+    \ Sigma unit is\\n into 1 ml of growth media supplemented with 10% FBS       \
+    \     defined by the manufacturer as the amount of catalase\\n (0.1 ml/tube) in\
+    \ glass tubes (13 X 100 mm) with silicon        which catalyzes the decomposition\
+    \ of 3.45 pmol of\\n spongy caps.\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"The methods distinguish growth-medium\
+    \ volume and inoculation. Do not silently normalize the entire formulation or\
+    \ infer a new final-volume concentration.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q16\",\n    \"topic\": \"SeedOD620approximately0.3\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"jstage10609610\",\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"Systems)\
+    \ at an optical density of approximately 0.3 at         this condition, 30 µmol\
+    \ of HPOx was completely decom-\\n 620 nm (OD620).\",\n        \"snapshot_sha256\"\
+    : \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\",\n    \
+    \    \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"Seed density is not the endpoint measurement.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"topic\": \"Seed agar5%FBS for2days\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jstage10609610\",\n \
+    \       \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"Md., U.S.A.)\
+    \ supplemented with 5% bovine fetal serum             smol of HPOx) was mixed\
+    \ with 30 l.tlof catalase (Sigma\\n (FBS) for 2 days.\",\n        \"snapshot_sha256\"\
+    : \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\",\n    \
+    \    \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"Separate seed agar from liquid BB/FBS;2days\
+    \ belongs to seed preparation.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n \
+    \   \"topic\": \"CFU agar5%FBS,0.1ml/plate and5days\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"jstage10609610\",\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"forming\
+    \ units (CFU), the bacterial culture was 10-fold         water, were frozen in\
+    \ sherbet-like nitrogen, a solid-liquid\\n serially diluted with BHIB. The diluted\
+    \ bacterial sus-         mixture with a melting point of - 210 C. Morphology of\\\
+    n pension was plated (0.1 ml/plate) in duplicate on brain        the cells was\
+    \ observed after fracturing and etching as\\n heart infusion agar (Difco Laboratories,\
+    \ Detroit, Mich.,       previously described (21).\\n U.S.A.) supplemented with\
+    \ 5% FBS and incubated for 5\\n days. Bisulfite-less Brucella broth (BLBB) was\
+    \ pre-\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"CFU counting uses a separate agar assay,10-fold\
+    \ dilution and5day incubation; do not add those ingredients/conditions to the\
+    \ measured broth.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"topic\":\
+    \ \"BLBB comparator formula per1litre\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"jstage10609610\",\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"Dickinson\
+    \ Microbiology Systems [10.0 g of trypticase              Figure 1 illustrates\
+    \ the growth-promoting effect of\\npeptone (Becton Dickinson Microbiology Systems),\
+    \                HPOx in BB/FBS. The addition of 1 mm HPOx into\\n 10.0 g of peptamine\
+    \ (Difco Laboratories), 1.0 g of glu-        BB/FBS significantly enhanced the\
+    \ growth of OMU89-\\ncose, 2.0 g of yeast extract (Oxide Ltd., England), and 5.0\
+    \     362 at 24 hr after incubation. The stimulatory effect\\n g of sodium chloride,\
+    \ in 1 liter].\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"The separate BLBB formula contains trypticase10g,peptamine10g,glucose1g,yeast2g,NaCl5g\
+    \ per litre and omits bisulfite. These are comparator-specific source amounts,\
+    \ not permission to delete standard BB bisulfite.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q20\",\n    \"topic\": \"Table3 first addition0.1ml35mMHPOx orPB\",\n    \"\
+    decision\": \"evidence_only\",\n    \"layer_decisions\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jstage10609610\",\n        \"source_url\"\
+    : \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\",\n\
+    \        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"0 .1 ml\
+    \ of either 35 mm HPOx or PB.\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"This is the reagent strength and addition\
+    \ volume for the first sequential treatment; preserve the alternative PB arm.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"topic\": \"Table3 second addition30µl100Sigmaunits/mlcatalase\
+    \ orPB\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jstage10609610\"\
+    ,\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"30 µl\
+    \ of either 100 Sigma units/ml catalase or PB\",\n        \"snapshot_sha256\"\
+    : \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\",\n    \
+    \    \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"This is the second treatment, present\
+    \ only in the catalase rows. It is absent from the0.724 row.\"\n  },\n  {\n  \
+    \  \"quantity_id\": \"q22\",\n    \"topic\": \"Table3 third addition20µl50mMbisulfite\
+    \ orDW\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jstage10609610\"\
+    ,\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"20 gl\
+    \ of either 50 mm sodium bisulfite or distilled water              was inoculated\
+    \ into BLBB/FBS containing several concentrations\\n                         \
+    \                                                    of either bisulfite (closed\
+    \ square) or bisulfate (open square).\\n(DW). Sodium bisulfite was dissolved in\
+    \ DW just before use.\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the third-arm alternatives and\
+    \ order; lastrow reverses bisulfite/catalase.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q23\",\n    \"topic\": \"Table3 each addition heldRT5min\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jstage10609610\",\n        \"source_url\"\
+    : \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\",\n\
+    \        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"third\
+    \ reagents in order. Following each addition, the mixtures were\\nkept at room\
+    \ temperature for 5 min.\",\n        \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"Sequential room-temperature treatment\
+    \ is distinct from37C growth.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n  \
+    \  \"topic\": \"HPOx above12.5mM inhibitory\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"jstage10609610\",\n        \"source_url\": \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\"\
+    ,\n        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"than 12.5\
+    \ mm of HPOx was rather inhibitory, probably\\nml of BLBB supplemented with 10%\
+    \ FBS to give an                 because of its bactericidal effect.\",\n    \
+    \    \"snapshot_sha256\": \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\"\
+    ,\n        \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"This is a study dose-response limit, not\
+    \ a generally safe or optimal medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q25\",\n    \"topic\": \"Morphology experiment36h\",\n    \"decision\": \"\
+    evidence_only\",\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"jstage10609610\",\n        \"source_url\":\
+    \ \"https://www.jstage.jst.go.jp/article/mandi1977/43/11/43_11_1009/_pdf\",\n\
+    \        \"source_locator\": \"Exact full-text clause; printed pages1010–1012,\
+    \ specified method/table footnote\",\n        \"exact_source_quote\": \"BLBB at\
+    \ 37 C for 36 hr were harvested by centrifugation\",\n        \"snapshot_sha256\"\
+    : \"66af0886bebeded53755bde28b3398e2b02110be3376917bb7ce4c3941acc1b4\",\n    \
+    \    \"parsed_text_sha256\": \"cfe801a6b07ef712c31a5d670504b8dfa537e6d1d0511d6754e98935313c1d0d\"\
+    \n      }\n    ],\n    \"rationale\": \"The36hour morphology experiment is separate\
+    \ from24hour growth comparison.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.009933.growth-row-condition
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Bind the OD measurement to its actual experimental row
+  description: The current0.724 measurement is paired with catalase. Table3 assigns0.724±0.267
+    to HPOx/PB/DW and0.839±0.237 to HPOx/catalase/DW. The true maximum flag also misclassifies
+    a perturbation result.
+  target_ids:
+  - CultureMech:009933
+  field_paths:
+  - target_organisms[0].growth_metrics[0]
+  - variants[0]
+  evidence_ids:
+  - table3
+  - paper
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.009933.water-and-basal-prep
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore the basal water unit and pH instruction
+  description: Both selected layers record source1Lwater as1G_PER_L and omit the explicit
+    pH7.0 scalar. Other printed masses do not establish a measured final volume.
+  target_ids:
+  - CultureMech:009933
+  field_paths:
+  - ingredients[0].concentration
+  - ph_value
+  - preparation_steps
+  evidence_ids:
+  - provider
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.009933.claim-scope
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Link numerical and method claims to the exact primary sections
+  description: Current abstract snippets support broad growth statements but do not
+    carry the numerical table condition or every method. The DNS-failed native reference
+    check remains a separate unresolved validation gate.
+  target_ids:
+  - CultureMech:009933
+  field_paths:
+  - target_organisms
+  - variants
+  - references
+  evidence_ids:
+  - paper
+  - pubmed
+  - history-evidence
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to minor because exact method/number linkage
+    is missing despite available primary support; the contradictory row and maximum
+    flag remain a separate major finding.
+actions:
+- action_id: a1
+  description: Correct row-specific conditions and the standard-maximum flag, retain
+    uncertainty/wavelength and distinguish BB from BLBB; attach a Table3-specific
+    claim without treating the larger row as a replacement maximum.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009933
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Represent the1L water input with its correct unit, retain printed masses
+    and add the supported basal pH instruction without inventing final volume.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009933
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach concise method/table claims with strain,arm,time,wavelength
+    and original capture metadata; preserve the original failed check and partial
+    status.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009933
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current JCM538 returned Nothing found. The current M540 provider and separately
+  captured primary study remain available; no unavailable original collection page
+  is treated as formula authentication.
+- The original required reference validation failed with3checks/3issues due to NCBI
+  DNS; no native recheck was performed. Independently captured paper evidence does
+  not erase that failure.
+- Table3 values/conditions were read visually from the pinned PDF image; the table
+  body is absent from text extraction. No visual transcription is presented as a raw-text
+  substring.
+- No unspecified serum percentage basis, measured final volume or unconditional formulation
+  equivalence is inferred.
+- 'The original required reference validator failed: 3 checks, 3 issues caused by
+  NCBI DNS retrieval failures for PMID10609610. This failure is preserved separately
+  from the independently captured PubMed/full paper and scientific assessment; no
+  native recheck was executed by the draft author.'
+tags:
+- unreviewed-records
+- batch-045
+- generated-medium
+```
