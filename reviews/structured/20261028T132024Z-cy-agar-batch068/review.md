@@ -1,0 +1,1635 @@
+# Scientific review of cy_agar
+
+- Review: 20261028T132024Z-cy-agar-batch068
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T13:11:48.502041Z
+- Finished UTC: 2026-10-28T13:20:24.216455Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Base CY-AGAR quantities and calcium hydrate identity are supported, but the KG match denotes another medium, the strain wrapper lacks exact formulation authentication, and the generated target omits retained evidence/preparation.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch068 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006279 | data/merge_yaml/merged/CY_Agar.yaml | generated | cy_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006279 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:006279 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:006279 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:006279 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Base, wrapper and KG identity
+
+identity: concern. Targets: CultureMech:006279.
+
+The base is DSM67 CY-AGAR; current DSM49 is C/10 MEDIUM and lacks the yeast-extract row present in 67. A shared two-term CHEBI set cannot establish equality. DSM21789 resolves to environmental Flavobacterium swingsii, but its exact KOMODO wrapper remains unauthenticated. Same-label TOGO/NBRC historical reports were read as excluded comparisons, not additional owners.
+
+### Current retained claims and stale generated output
+
+evidence: concern. Targets: CultureMech:006279.
+
+The eight attached base-owner formulation claims authenticate independently against current API67 bytes. The target and strain wrapper contain no attached formulation claims. Current base-source evidence must not be propagated as proof of a distinct strain modification. The DSM base preparation is already correct and is explicitly credited.
+
+### Supplied form and complex mixtures
+
+grounding: supported. Targets: CultureMech:006279.
+
+Calcium chloride dihydrate and agar resolve to the correct canonical terms in both asserted slots. Casitone and yeast extract remain undefined mixtures; their absence from pure-compound CHEBI slots is not proof of missing composition. Shared grounded identities explain the limited KG-set similarity, not medium equivalence.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:006279.
+
+All nine exact-name historical reports were read, including two excluded same-label TOGO/NBRC comparisons. Current API67 bytes match the cited digest and all eighteen historical source objects. Historical wrapper conflict labels identify missing variant support, not a proven numerical contradiction. Current conservative merge guards are credited; old generated membership is not evidence of current permissive merging. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:006279.
+
+All 16 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:006279", "selected_concentration_field_count": 16, "selected_concentration_fields_covered": 16, "decisions": [{"decision_id": "q1", "subject": "Casitone generated base field", "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied form match the provider-explicit main-recipe g_l and the primary batch amount. The primary lists 1000 ml distilled water but does not independently state final volume. Credit provider normalization, not a final-volume inference. No attached target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\": 84,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Casitone                                    3.00    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject": "Casitone in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3", "unit": "G_PER_L"}}], "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both existing owner ingredient snippets and cited raw SHA match independently. Retain these correct provider-declared amounts and claim scopes. The distinct catalogue mapping and strain wrapper are not authenticated by these claims.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\": 84,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Casitone                                    3.00    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "Casitone in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "3", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch", "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii with medium 67 solid or liquid, but does not authenticate the exact historical KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values remain unresolved for the named wrapper; this is missing branch support rather than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\": 84,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Casitone                                    3.00    g", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67 solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject": "CaCl 2 x 2 H2O generated base field", "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "1.36", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied form match the provider-explicit main-recipe g_l and the primary batch amount. The primary lists 1000 ml distilled water but does not independently state final volume. Credit provider normalization, not a final-volume inference. No attached target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.36,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\": 9.25076,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "CaCl2 x 2 H2O                               1.36    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject": "CaCl 2 x 2 H2O in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "1.36", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "1.36", "unit": "G_PER_L"}}], "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both existing owner ingredient snippets and cited raw SHA match independently. Retain these correct provider-declared amounts and claim scopes. The distinct catalogue mapping and strain wrapper are not authenticated by these claims.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.36,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\": 9.25076,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "CaCl2 x 2 H2O                               1.36    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "CaCl 2 x 2 H2O in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "1.36", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch", "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii with medium 67 solid or liquid, but does not authenticate the exact historical KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values remain unresolved for the named wrapper; this is missing branch support rather than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.36,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\": 9.25076,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "CaCl2 x 2 H2O                               1.36    g", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67 solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "Yeast extract generated base field", "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied form match the provider-explicit main-recipe g_l and the primary batch amount. The primary lists 1000 ml distilled water but does not independently state final volume. Credit provider normalization, not a final-volume inference. No attached target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Yeast extract                               1.00    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject": "Yeast extract in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both existing owner ingredient snippets and cited raw SHA match independently. Retain these correct provider-declared amounts and claim scopes. The distinct catalogue mapping and strain wrapper are not authenticated by these claims.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Yeast extract                               1.00    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject": "Yeast extract in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch", "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii with medium 67 solid or liquid, but does not authenticate the exact historical KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values remain unresolved for the named wrapper; this is missing branch support rather than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Yeast extract                               1.00    g", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67 solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject": "Agar generated base field", "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied form match the provider-explicit main-recipe g_l and the primary batch amount. The primary lists 1000 ml distilled water but does not independently state final volume. Credit provider normalization, not a final-volume inference. No attached target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Agar                                       15.00    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject": "Agar in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both existing owner ingredient snippets and cited raw SHA match independently. Retain these correct provider-declared amounts and claim scopes. The distinct catalogue mapping and strain wrapper are not authenticated by these claims.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Agar                                       15.00    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject": "Agar in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch", "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii with medium 67 solid or liquid, but does not authenticate the exact historical KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values remain unresolved for the named wrapper; this is missing branch support rather than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Agar                                       15.00    g", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67 solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject": "Distilled-water preparation input", "local_fields": [], "decision": "add", "stage": "Base DSM67 only", "interpretation": "The primary and API include 1000 ml distilled water, absent from selected base preparation. Preserve it as a batch solvent volume, not 1000 g/L and not independent evidence for measured final volume. Do not transfer it automatically to the unresolved wrapper.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Distilled water                          1000.00   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject": "Base pH7.2 and retained DSM step", "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml", "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path": "preparation_steps[0].description", "original": "Adjust pH to 7.2."}], "decision": "evidence_only", "stage": "DSM67 base preparation", "interpretation": "The three base pH assertions and the DSM owner ADJUST_PH description are supported. The target and KOMODO base omit that step; preserve the existing DSM procedure while adding claim-scoped evidence.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53", "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"step\": \"Adjust pH to 7.2.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 10-10", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Adjust pH to 7.2.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject": "Wrapper pH7.2", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml", "field_path": "ph_value", "original": 7.2}], "decision": "unsupported", "stage": "KOMODO67_21789 unresolved branch", "interpretation": "This copied pH agrees with the base recipe, but neither the accessible collection page nor the inaccessible exact KOMODO variant establishes the wrapper pH. The historical catalogue row records null pH. Retain uncertainty, not a claim that 7.2 is contradicted.", "sources": [{"locator": "extracted-text lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67 solid or liquid", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 10-10", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Adjust pH to 7.2.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q16", "subject": "Strain association and temperature", "local_fields": [], "decision": "evidence_only", "stage": "Collection guidance context only", "interpretation": "DSM21789 is Flavobacterium swingsii, with medium 830 solid or medium 67 solid/liquid at 24°C in the current collection catalogue. This is collection guidance for one strain; it neither validates an exact KOMODO modification nor establishes a universal CY-AGAR incubation temperature. Medium 830 formulation is excluded.", "sources": [{"locator": "extracted-text lines 193-197", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 830 solid\n, 24°C\nor\nMedium 67 solid or liquid\n, 24°C", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch068/record05/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: supported. Targets: CultureMech:006279.
+
+data/merge_yaml/merged/CY_Agar.yaml: primary 2/4, secondary 2/4; data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml: primary 2/4, secondary 2/4; data/normalized_yaml/bacterial/cy_agar.yaml: primary 2/4, secondary 2/4; data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml: primary 2/4, secondary 2/4. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:006279.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:006279.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: KG match 49 denotes a different medium
+
+major / open / confirmed; issue key: culturemech-006279-kg-medium-identity-mismatch.
+
+The target and all three owners assert mediadive.medium:49. Current 49 is C/10 MEDIUM with casitone, calcium chloride dihydrate and agar; it does not contain the yeast-extract component of current 67. The current KG matcher compares asserted CHEBI/FOODON sets and omits ungrounded components and preparation.
+
+### f2: A named strain wrapper is merged without exact formulation authentication
+
+major / open / confirmed; issue key: culturemech-006279-unverified-strain-wrapper-merge.
+
+The generated base includes the DSM21789 wrapper and SOURCE_DUPLICATE relationships justified by copied ingredient signatures. The current strain catalogue confirms an association with 67 but cannot establish the exact historical modification. The wrapper quantities and pH remain unsupported for that branch, not contradicted by the base source.
+
+### f3: Generated base loses retained evidence and preparation context
+
+major / open / confirmed; issue key: culturemech-006279-base-evidence-preparation-gap.
+
+The target omits eight supported base-owner amount claims and references, and the DSM owner pH procedure. Source water is not represented in base preparation. This does not justify importing those claims into the unresolved strain branch.
+
+### f4: Malformed import time and categorical aeration remain unresolved
+
+minor / open / confirmed; issue key: culturemech-006279-import-time-and-aeration-provenance.
+
+The target and two KOMODO-derived owners retain literal 2026-01-27T01:15:03.fZ and timezone-less resolver events. Aerobic:No and SOURCE_DUPLICATE are not freshly authenticated by an inaccessible catalogue. Neither absence of shaking instructions nor a medium name establishes oxygen requirements.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Reassess the maintained KG match against full source formulation, including ungrounded mixtures. Retain 49 only as explicitly limited computational similarity if the schema supports that meaning; do not present it as exact medium identity or substitute its recipe.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Keep the base and exact named wrapper separately reviewable until the original variant formulation is available. Reassess SOURCE_DUPLICATE and merge membership using verified complete scientific content. Preserve existing historical relationship annotations and append verified correction context.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Preserve authenticated base-owner ingredient evidence, add source-scoped water/preparation evidence to the enclosing base recipe, and regenerate only after current owner differences are resolved. Do not overwrite the already correct DSM pH step or infer a final volume.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Retain original events and add verified provenance with the actual curation date; correct future timestamp formatting without rewriting unknown historical instants. Keep aeration and source identity scope explicitly qualified.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/CY_Agar.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local2 | data/normalized_yaml/bacterial/cy_agar.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local3 | data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch068/record05/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch068/record05/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch068/record05/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch068/record05/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| dsm67 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| api67 | https://mediadive.dsmz.de/rest/medium/67; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current MediaDive API identity, primary recipe, separate stock recipes and preparation read. Explicit g_l values are provider normalization; solution volume metadata and listed water do not establish a measured final medium volume. Supplied mass/form takes priority over unverified mmol_l conversions. |
+| dsm21789 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Official collection catalogue identity, strain aliases, habitat and recommended-medium association read in full. This is collection guidance, not a primary experimental growth measurement or authentication of a different KOMODO recipe. |
+| komodo67 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=67; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| komodo67_21789 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=67_21789; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| api49 | https://mediadive.dsmz.de/rest/medium/49; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Excluded KG comparison identity: current DSM49 is C/10 MEDIUM rather than selected CY-AGAR67. Only the asserted medium identity is compared; its formulation is not transferred. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O']; mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| komodoOriginalList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| grounding | REVIEW_WORK/batch068/record05/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/cy_agar.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. Current api67 raw bytes exactly match the cited historical SHA, and 6 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history1 | reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/records/bacterial/KOMODO_67_CY-AGAR.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. Current api67 raw bytes exactly match the cited historical SHA, and 6 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history2 | reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/records/bacterial/medium_67_modified_for_dsm_21789.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. Current api67 raw bytes exactly match the cited historical SHA, and 6 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cy_agar.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history6 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cy_agar__a735039c.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history7 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CY_Agar.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history8 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cy_agar__2b917782.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch068/record05/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer28 | scripts/apply_mim_groundings.py; target_slot; groundable; apply_to_record | context_only | Current target_slot preserves existing CHEBI assertions; groundable excludes conflicting corpus opinions, and apply_to_record fills ungrounded entries from proposals. This writer does not authenticate source amounts or automatically repair an existing wrong supplied-form ID. |
+| writer29 | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata | context_only | Current DSMZCompositionResolver.merge_composition copies ingredients and solutions, fills pH when absent and copies physical/medium type, but does not copy preparation steps. _add_enrichment_metadata records a naive current timestamp. This explains a present omission risk, not historical execution. |
+| writer30 | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech constructs source notes and default LIQUID with empty ingredients. Its time.strftime format contains %f, which is unsupported here and is consistent with literal .fZ in stored import events. Current code does not authenticate the original retrieval or justify rewriting historical time. |
+| writer31 | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps | context_only | Current _parse_api_composition considers the primary recipe, prefers provider g_l when available and excludes four recognized water labels; tap water is not among those exclusions; _is_api_stock_addition distinguishes stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps collects solution prose. These present behaviors do not establish historical execution and cannot justify interpreting flattened stock rates as final-medium concentrations. |
+| writer32 | src/culturemech/match/kg_media_matcher.py; extract_recipe_ingredients; find_matches; find_exact_match | context_only | Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs, find_matches compares set Jaccard and find_exact_match selects the first exact identifier set. Quantities, preparation and ungrounded ingredients are not compared, so an exact set match does not establish formulation identity. |
+| writer33 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer34 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer35 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| quantity-inventory | REVIEW_WORK/batch068/record05/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- Exact KOMODO67,67_21789 and the originally cited catalogue route returned 403. Collection association does not authenticate the historical variant or catalogue response.
+- Primary DSM67 lists 1000 ml water without an explicit measured final volume; concentrations are credited only at the API-declared base-recipe basis.
+- No claims transfer from historical same-name TOGO/NBRC records, medium 49 or medium 830. Current absence from a source is bounded to that inspected source.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T132024Z-cy-agar-batch068
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of cy_agar
+started_at: '2026-10-28T13:11:48.502041Z'
+finished_at: '2026-10-28T13:20:24.216455Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Base CY-AGAR quantities and calcium hydrate identity are supported, but the
+  KG match denotes another medium, the strain wrapper lacks exact formulation authentication,
+  and the generated target omits retained evidence/preparation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CY_Agar.yaml
+    sha256: f173327e291ddfb4dd361bb625521d1ff400bbfd9746892dfb4d0c0982d856e8
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    sha256: f852912c0d01cc21a75fe17e3daffdabc7ed8afdcf9596420378163aa853d345
+    role: context
+  - path: data/normalized_yaml/bacterial/cy_agar.yaml
+    sha256: 738bcbea109306ac3cc79e1fe70de85e6c961f6a9c39741851e64b77a69a0048
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    sha256: 5302136b437f17fc3c7132f9ef00ef1a3c6a7839dc7b4d13add3dfbfdf104b5d
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/records/bacterial/KOMODO_67_CY-AGAR.yaml.md
+    sha256: 5b940f1aa3680727d8d8f104bfb18c0eca75701fd926b99ee557107ddaffd0bd
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/records/bacterial/medium_67_modified_for_dsm_21789.yaml.md
+    sha256: 950ab9f9718c0b42f4ab1840944eca127dd9992c7add4684d06cad6c8f400590
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/cy_agar.yaml.md
+    sha256: 76013c412eab8c4da6bb22c6db0be4e97c4d2deef3627a1e90656dfbf7f164a8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CY_Agar.md
+    sha256: 283e42901dfed6ad6a7aa4e300c9ca4d2acaf4f1b9b3920e44efdd420d77b771
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cy_agar__2b917782.md
+    sha256: e97281476076a1095f57bd71865b9a8a026103aaab2bd0cf0e95cf6becbaf4b8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cy_agar__a735039c.md
+    sha256: 2c6633c5142b38165cfd478142a22100166589535353770c7d21dd7320f6120a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.md
+    sha256: 353555209850d4f8fcb1133c1c7f511a56a42e6305f9e9257f45326775f4f7b7
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cy_agar.md
+    sha256: 0804401a45a3971c37a49ad47f959e9529ed65cdf16c32a1ffcfdcb6ae300bb4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.md
+    sha256: ea41aaa33e25d984e3ec9e2803369dd528cfe31277f9301e8c9f2d75a451f052
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch068 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006279
+targets:
+- target_id: CultureMech:006279
+  path: data/merge_yaml/merged/CY_Agar.yaml
+  label: cy_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:006279
+  command: just validate-schema data/merge_yaml/merged/CY_Agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:006279
+  command: just validate-strict data/merge_yaml/merged/CY_Agar.yaml --workers 1 --out
+    REVIEW_WORK/batch068/record05/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:006279
+  command: just validate-terms data/merge_yaml/merged/CY_Agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:006279
+  command: just validate-references data/merge_yaml/merged/CY_Agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CY_Agar.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:18:51.199607Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: f173327e291ddfb4dd361bb625521d1ff400bbfd9746892dfb4d0c0982d856e8
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:18:51.199747Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: f852912c0d01cc21a75fe17e3daffdabc7ed8afdcf9596420378163aa853d345
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/cy_agar.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:18:51.199769Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 738bcbea109306ac3cc79e1fe70de85e6c961f6a9c39741851e64b77a69a0048
+- evidence_id: local3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T13:18:51.199790Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 5302136b437f17fc3c7132f9ef00ef1a3c6a7839dc7b4d13add3dfbfdf104b5d
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch068/record05/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:11:49.504595Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 1a4c6398aade85a7b47e7fc30263f979a6c4439d223e0b2a76767446da41514d
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch068/record05/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:11:50.423926Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: ace4aeda8e367e180444a3e3608681c7e15c2501cb5f96688e6d597713ec944e
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch068/record05/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:11:51.513909Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: dd2659180b303298f7c34ce0c5723f8e7aeb22293d712cfde58093a0caa9275f
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch068/record05/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T13:11:52.186611Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: b2ac9c45b9fd8b984f17e4043d96460eb70a01c32f3f837894e3c030d8696267
+- evidence_id: dsm67
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:11:56.414208Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: 970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b
+- evidence_id: api67
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/67
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:11:56.349577Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: 57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53
+- evidence_id: dsm21789
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:11:56.152726Z'
+  support: supports
+  summary: Official collection catalogue identity, strain aliases, habitat and recommended-medium
+    association read in full. This is collection guidance, not a primary experimental
+    growth measurement or authentication of a different KOMODO recipe.
+  snapshot_sha256: 015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716
+- evidence_id: komodo67
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=67
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:11:56.100435Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: df778e4253df83ebc7ead26c256d582177a746adf01efda7295caec5aca792db
+- evidence_id: komodo67_21789
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=67_21789
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:11:55.984589Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: c1f6faed03c69258b6135e66b526e901cfc3465a0378bac2c4afa127b7a5122c
+- evidence_id: api49
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/49
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:11:55.979079Z'
+  support: supports
+  summary: 'Excluded KG comparison identity: current DSM49 is C/10 MEDIUM rather than
+    selected CY-AGAR67. Only the asserted medium identity is compared; its formulation
+    is not transferred.'
+  snapshot_sha256: 5e702b51e94e3e9df5b8ca11855ae622be07093d77b4c957ecc3b0faad56a943
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:11:55.897259Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T13:11:55.075761Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: komodoOriginalList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T13:14:47.755190Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch068/record05/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T13:18:51.202516Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: c808d98b519546c540ab9908401192d5c5aad2f0a1c8198d8152cf388f2534f5
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/cy_agar.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203342Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. Current
+    api67 raw bytes exactly match the cited historical SHA, and 6 quoted objects match
+    both decoded locators and literal current raw substrings. This authenticates the
+    cited API payload and excerpts, not the reported historical access time, execution
+    or separate KOMODO catalogue/page.
+  snapshot_sha256: 76013c412eab8c4da6bb22c6db0be4e97c4d2deef3627a1e90656dfbf7f164a8
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/records/bacterial/KOMODO_67_CY-AGAR.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203365Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. Current
+    api67 raw bytes exactly match the cited historical SHA, and 6 quoted objects match
+    both decoded locators and literal current raw substrings. This authenticates the
+    cited API payload and excerpts, not the reported historical access time, execution
+    or separate KOMODO catalogue/page.
+  snapshot_sha256: 5b940f1aa3680727d8d8f104bfb18c0eca75701fd926b99ee557107ddaffd0bd
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-0000-0500/records/bacterial/medium_67_modified_for_dsm_21789.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203386Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. Current
+    api67 raw bytes exactly match the cited historical SHA, and 6 quoted objects match
+    both decoded locators and literal current raw substrings. This authenticates the
+    cited API payload and excerpts, not the reported historical access time, execution
+    or separate KOMODO catalogue/page.
+  snapshot_sha256: 950ab9f9718c0b42f4ab1840944eca127dd9992c7add4684d06cad6c8f400590
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203404Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 353555209850d4f8fcb1133c1c7f511a56a42e6305f9e9257f45326775f4f7b7
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203422Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: ea41aaa33e25d984e3ec9e2803369dd528cfe31277f9301e8c9f2d75a451f052
+- evidence_id: history5
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cy_agar.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203439Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 0804401a45a3971c37a49ad47f959e9529ed65cdf16c32a1ffcfdcb6ae300bb4
+- evidence_id: history6
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cy_agar__a735039c.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203456Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 2c6633c5142b38165cfd478142a22100166589535353770c7d21dd7320f6120a
+- evidence_id: history7
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CY_Agar.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203476Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 283e42901dfed6ad6a7aa4e300c9ca4d2acaf4f1b9b3920e44efdd420d77b771
+- evidence_id: history8
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cy_agar__2b917782.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T13:18:51.203493Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: e97281476076a1095f57bd71865b9a8a026103aaab2bd0cf0e95cf6becbaf4b8
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch068/record05/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T13:18:51.203514Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: c3f8946d82d939be107fed849674b56b86d370ef10260227cf4e3721f376a77e
+- evidence_id: writer28
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: target_slot; groundable; apply_to_record
+  accessed_at: '2026-10-28T13:18:51.203580Z'
+  support: context_only
+  summary: Current target_slot preserves existing CHEBI assertions; groundable excludes
+    conflicting corpus opinions, and apply_to_record fills ungrounded entries from
+    proposals. This writer does not authenticate source amounts or automatically repair
+    an existing wrong supplied-form ID.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer29
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata
+  accessed_at: '2026-10-28T13:18:51.203625Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, fills pH when absent and copies physical/medium type, but does not
+    copy preparation steps. _add_enrichment_metadata records a naive current timestamp.
+    This explains a present omission risk, not historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer30
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T13:18:51.203647Z'
+  support: context_only
+  summary: Current _convert_to_culturemech constructs source notes and default LIQUID
+    with empty ingredients. Its time.strftime format contains %f, which is unsupported
+    here and is consistent with literal .fZ in stored import events. Current code
+    does not authenticate the original retrieval or justify rewriting historical time.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer31
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps
+  accessed_at: '2026-10-28T13:18:51.203677Z'
+  support: context_only
+  summary: Current _parse_api_composition considers the primary recipe, prefers provider
+    g_l when available and excludes four recognized water labels; tap water is not
+    among those exclusions; _is_api_stock_addition distinguishes stock additions.
+    _parse_api_solutions retains separate stock structure. _parse_preparation_steps
+    collects solution prose. These present behaviors do not establish historical execution
+    and cannot justify interpreting flattened stock rates as final-medium concentrations.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer32
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: extract_recipe_ingredients; find_matches; find_exact_match
+  accessed_at: '2026-10-28T13:18:51.203703Z'
+  support: context_only
+  summary: Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs,
+    find_matches compares set Jaccard and find_exact_match selects the first exact
+    identifier set. Quantities, preparation and ungrounded ingredients are not compared,
+    so an exact set match does not establish formulation identity.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: writer33
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T13:18:51.203721Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer34
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T13:18:51.203741Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer35
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T13:18:51.203761Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch068/record05/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T13:18:51.207500Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: e2c9574f58551481e19f7806fb60e7908e97060c7f5f2c44d1c5937f5388949b
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Base, wrapper and KG identity
+  outcome: concern
+  summary: The base is DSM67 CY-AGAR; current DSM49 is C/10 MEDIUM and lacks the yeast-extract
+    row present in 67. A shared two-term CHEBI set cannot establish equality. DSM21789
+    resolves to environmental Flavobacterium swingsii, but its exact KOMODO wrapper
+    remains unauthenticated. Same-label TOGO/NBRC historical reports were read as
+    excluded comparisons, not additional owners.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - api67
+  - dsm67
+  - api49
+  - dsm21789
+  - komodo67_21789
+- assessment_id: a2
+  area: evidence
+  topic: Current retained claims and stale generated output
+  outcome: concern
+  summary: The eight attached base-owner formulation claims authenticate independently
+    against current API67 bytes. The target and strain wrapper contain no attached
+    formulation claims. Current base-source evidence must not be propagated as proof
+    of a distinct strain modification. The DSM base preparation is already correct
+    and is explicitly credited.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - local3
+  - history-auth
+- assessment_id: a3
+  area: grounding
+  topic: Supplied form and complex mixtures
+  outcome: supported
+  summary: Calcium chloride dihydrate and agar resolve to the correct canonical terms
+    in both asserted slots. Casitone and yeast extract remain undefined mixtures;
+    their absence from pure-compound CHEBI slots is not proof of missing composition.
+    Shared grounded identities explain the limited KG-set similarity, not medium equivalence.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - grounding
+  - chebi86158
+  - chebi2509
+- assessment_id: a4
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All nine exact-name historical reports were read, including two excluded
+    same-label TOGO/NBRC comparisons. Current API67 bytes match the cited digest and
+    all eighteen historical source objects. Historical wrapper conflict labels identify
+    missing variant support, not a proven numerical contradiction. Current conservative
+    merge guards are credited; old generated membership is not evidence of current
+    permissive merging. Current conservative merging preserves scientific fields and
+    rejects incompatible formulations. Inspected writer behavior is described separately
+    by exact file and function; it does not prove historical execution.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - history-auth
+  - writer28
+  - writer29
+  - writer30
+  - writer31
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 16 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:006279",
+    "selected_concentration_field_count": 16, "selected_concentration_fields_covered":
+    16, "decisions": [{"decision_id": "q1", "subject": "Casitone generated base field",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "3", "unit": "G_PER_L"}}],
+    "decision": "evidence_only", "stage": "DSM67 base CY-AGAR", "interpretation":
+    "The local amount and supplied form match the provider-explicit main-recipe g_l
+    and the primary batch amount. The primary lists 1000 ml distilled water but does
+    not independently state final volume. Credit provider normalization, not a final-volume
+    inference. No attached target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\":
+    84,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 4-4", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Casitone                                    3.00    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject":
+    "Casitone in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "3", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "3", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both
+    existing owner ingredient snippets and cited raw SHA match independently. Retain
+    these correct provider-declared amounts and claim scopes. The distinct catalogue
+    mapping and strain wrapper are not authenticated by these claims.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api67", "reference":
+    "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\":
+    84,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 4-4", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Casitone                                    3.00    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject":
+    "Casitone in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "3", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch",
+    "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii
+    with medium 67 solid or liquid, but does not authenticate the exact historical
+    KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values
+    remain unresolved for the named wrapper; this is missing branch support rather
+    than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Casitone\",\n                        \"compound_id\":
+    84,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 4-4", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Casitone                                    3.00    g",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789",
+    "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716",
+    "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4",
+    "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67
+    solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q4", "subject": "CaCl 2 x 2 H2O generated base field", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[1].concentration",
+    "original": {"value": "1.36", "unit": "G_PER_L"}}], "decision": "evidence_only",
+    "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied
+    form match the provider-explicit main-recipe g_l and the primary batch amount.
+    The primary lists 1000 ml distilled water but does not independently state final
+    volume. Credit provider normalization, not a final-volume inference. No attached
+    target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 1.36,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\":
+    9.25076,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "CaCl2 x 2
+    H2O                               1.36    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q5", "subject": "CaCl 2 x 2 H2O in maintained
+    base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "1.36", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path":
+    "ingredients[1].concentration", "original": {"value": "1.36", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both
+    existing owner ingredient snippets and cited raw SHA match independently. Retain
+    these correct provider-declared amounts and claim scopes. The distinct catalogue
+    mapping and strain wrapper are not authenticated by these claims.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api67", "reference":
+    "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 1.36,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\":
+    9.25076,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "CaCl2 x 2
+    H2O                               1.36    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q6", "subject": "CaCl 2 x 2 H2O in DSM21789
+    wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "1.36", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch",
+    "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii
+    with medium 67 solid or liquid, but does not authenticate the exact historical
+    KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values
+    remain unresolved for the named wrapper; this is missing branch support rather
+    than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 1.36,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.36,\n                        \"mmol_l\":
+    9.25076,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "CaCl2 x 2
+    H2O                               1.36    g", "quote_representation": "captured
+    extracted text"}, {"locator": "extracted-text lines 196-196", "source_key": "dsm21789",
+    "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789",
+    "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716",
+    "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4",
+    "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67
+    solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q7", "subject": "Yeast extract generated base field", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[2].concentration",
+    "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "evidence_only",
+    "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied
+    form match the provider-explicit main-recipe g_l and the primary batch amount.
+    The primary lists 1000 ml distilled water but does not independently state final
+    volume. Credit provider normalization, not a final-volume inference. No attached
+    target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Yeast extract                               1.00    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject":
+    "Yeast extract in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "1", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both
+    existing owner ingredient snippets and cited raw SHA match independently. Retain
+    these correct provider-declared amounts and claim scopes. The distinct catalogue
+    mapping and strain wrapper are not authenticated by these claims.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api67", "reference":
+    "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Yeast extract                               1.00    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject":
+    "Yeast extract in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch",
+    "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii
+    with medium 67 solid or liquid, but does not authenticate the exact historical
+    KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values
+    remain unresolved for the named wrapper; this is missing branch support rather
+    than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Yeast extract                               1.00    g",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789",
+    "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716",
+    "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4",
+    "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67
+    solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q10", "subject": "Agar generated base field", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CY_Agar.yaml", "field_path": "ingredients[3].concentration",
+    "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "evidence_only",
+    "stage": "DSM67 base CY-AGAR", "interpretation": "The local amount and supplied
+    form match the provider-explicit main-recipe g_l and the primary batch amount.
+    The primary lists 1000 ml distilled water but does not independently state final
+    volume. Credit provider normalization, not a final-volume inference. No attached
+    target claim remains.", "sources": [{"locator": "$.data.solutions[0].recipe[3]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Agar                                       15.00    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject":
+    "Agar in maintained base owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "15", "unit": "G_PER_L"}}],
+    "decision": "verified", "stage": "DSM67 base CY-AGAR", "interpretation": "Both
+    existing owner ingredient snippets and cited raw SHA match independently. Retain
+    these correct provider-declared amounts and claim scopes. The distinct catalogue
+    mapping and strain wrapper are not authenticated by these claims.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api67", "reference":
+    "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Agar                                       15.00    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject":
+    "Agar in DSM21789 wrapper", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO67_21789 branch",
+    "interpretation": "The current collection associates DSM21789 Flavobacterium swingsii
+    with medium 67 solid or liquid, but does not authenticate the exact historical
+    KOMODO modification. Exact MediaInfo 67_21789 returns 403. These copied base values
+    remain unresolved for the named wrapper; this is missing branch support rather
+    than a demonstrated contradictory value.", "sources": [{"locator": "$.data.solutions[0].recipe[3]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Agar                                       15.00    g",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    lines 196-196", "source_key": "dsm21789", "reference": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789",
+    "source_raw_sha256": "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716",
+    "source_text_sha256": "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4",
+    "accessed_at": "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67
+    solid or liquid", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q13", "subject": "Distilled-water preparation input", "local_fields": [], "decision":
+    "add", "stage": "Base DSM67 only", "interpretation": "The primary and API include
+    1000 ml distilled water, absent from selected base preparation. Preserve it as
+    a batch solvent volume, not 1000 g/L and not independent evidence for measured
+    final volume. Do not transfer it automatically to the unresolved wrapper.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api67", "reference":
+    "https://mediadive.dsmz.de/rest/medium/67", "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsm67",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Distilled
+    water                          1000.00   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q14", "subject": "Base pH7.2 and retained
+    DSM step", "local_fields": [{"record_path": "data/merge_yaml/merged/CY_Agar.yaml",
+    "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml",
+    "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml",
+    "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/cy_agar.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Adjust pH to 7.2."}],
+    "decision": "evidence_only", "stage": "DSM67 base preparation", "interpretation":
+    "The three base pH assertions and the DSM owner ADJUST_PH description are supported.
+    The target and KOMODO base omit that step; preserve the existing DSM procedure
+    while adding claim-scoped evidence.", "sources": [{"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api67", "reference": "https://mediadive.dsmz.de/rest/medium/67",
+    "source_raw_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "source_text_sha256": "57abca6ca0954ae731f771435c2b478df5d7e21a68a17685efbd6e4fae93fa53",
+    "accessed_at": "2026-10-28T13:11:56.349577Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 7.2.\"\n                    }", "quote_representation": "raw JSON
+    object"}, {"locator": "extracted-text lines 10-10", "source_key": "dsm67", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf", "source_raw_sha256":
+    "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b", "source_text_sha256":
+    "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6", "accessed_at":
+    "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Adjust pH to 7.2.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q15", "subject": "Wrapper pH7.2",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml",
+    "field_path": "ph_value", "original": 7.2}], "decision": "unsupported", "stage":
+    "KOMODO67_21789 unresolved branch", "interpretation": "This copied pH agrees with
+    the base recipe, but neither the accessible collection page nor the inaccessible
+    exact KOMODO variant establishes the wrapper pH. The historical catalogue row
+    records null pH. Retain uncertainty, not a claim that 7.2 is contradicted.", "sources":
+    [{"locator": "extracted-text lines 196-196", "source_key": "dsm21789", "reference":
+    "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256":
+    "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256":
+    "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at":
+    "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 67 solid or liquid",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    lines 10-10", "source_key": "dsm67", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf",
+    "source_raw_sha256": "970327784af828bf1bb3cf9264c9b3397c970a909a905f8d44f743821d30fd8b",
+    "source_text_sha256": "fe7c025d300fbaaddc1d452149195b4cfe84c9a5f89dcf5645a8faacf15bd7a6",
+    "accessed_at": "2026-10-28T13:11:56.414208Z", "exact_source_quote": "Adjust pH
+    to 7.2.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q16", "subject": "Strain association and temperature", "local_fields": [], "decision":
+    "evidence_only", "stage": "Collection guidance context only", "interpretation":
+    "DSM21789 is Flavobacterium swingsii, with medium 830 solid or medium 67 solid/liquid
+    at 24°C in the current collection catalogue. This is collection guidance for one
+    strain; it neither validates an exact KOMODO modification nor establishes a universal
+    CY-AGAR incubation temperature. Medium 830 formulation is excluded.", "sources":
+    [{"locator": "extracted-text lines 193-197", "source_key": "dsm21789", "reference":
+    "https://www.dsmz.de/collection/catalogue/details/culture/DSM-21789", "source_raw_sha256":
+    "015eb5497dfce202f4723b96affcbcd535ef9687a4f62e31b5a19565d248a716", "source_text_sha256":
+    "a56700b12eb91ed713c998790ef4225e4699335b8ee2801b5ec8d5c9931e3ba4", "accessed_at":
+    "2026-10-28T13:11:56.152726Z", "exact_source_quote": "Medium 830 solid\n, 24°C\nor\nMedium
+    67 solid or liquid\n, 24°C", "quote_representation": "captured extracted text"}]}],
+    "local_field_census_reference": "REVIEW_WORK/batch068/record05/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: supported
+  summary: 'data/merge_yaml/merged/CY_Agar.yaml: primary 2/4, secondary 2/4; data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml:
+    primary 2/4, secondary 2/4; data/normalized_yaml/bacterial/cy_agar.yaml: primary
+    2/4, secondary 2/4; data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml:
+    primary 2/4, secondary 2/4. These are ingredient-instance linkage fractions, not
+    accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - local0
+- assessment_id: a8
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:006279
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-006279-kg-medium-identity-mismatch
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: KG match 49 denotes a different medium
+  description: The target and all three owners assert mediadive.medium:49. Current
+    49 is C/10 MEDIUM with casitone, calcium chloride dihydrate and agar; it does
+    not contain the yeast-extract component of current 67. The current KG matcher
+    compares asserted CHEBI/FOODON sets and omits ungrounded components and preparation.
+  target_ids:
+  - CultureMech:006279
+  field_paths:
+  - kg_microbe_match
+  evidence_ids:
+  - api49
+  - api67
+  - local0
+  rule_id: review-yaml-record/full-formulation-identity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-006279-unverified-strain-wrapper-merge
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: A named strain wrapper is merged without exact formulation authentication
+  description: The generated base includes the DSM21789 wrapper and SOURCE_DUPLICATE
+    relationships justified by copied ingredient signatures. The current strain catalogue
+    confirms an association with 67 but cannot establish the exact historical modification.
+    The wrapper quantities and pH remain unsupported for that branch, not contradicted
+    by the base source.
+  target_ids:
+  - CultureMech:006279
+  field_paths:
+  - merged_from
+  - synonyms
+  - parent_media
+  - variant_children
+  - variant_relationship
+  - variant_modifications
+  - data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml::parent_media
+  evidence_ids:
+  - local0
+  - local1
+  - local3
+  - dsm21789
+  - komodo67_21789
+  rule_id: review-yaml-record/source-variant-identity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-006279-base-evidence-preparation-gap
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated base loses retained evidence and preparation context
+  description: The target omits eight supported base-owner amount claims and references,
+    and the DSM owner pH procedure. Source water is not represented in base preparation.
+    This does not justify importing those claims into the unresolved strain branch.
+  target_ids:
+  - CultureMech:006279
+  field_paths:
+  - ingredients[0].evidence
+  - ingredients[1].evidence
+  - ingredients[2].evidence
+  - ingredients[3].evidence
+  - references
+  - preparation_steps
+  - evidence
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm67
+  - history-auth
+  rule_id: review-yaml-record/evidence-and-preparation-freshness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-006279-import-time-and-aeration-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Malformed import time and categorical aeration remain unresolved
+  description: The target and two KOMODO-derived owners retain literal 2026-01-27T01:15:03.fZ
+    and timezone-less resolver events. Aerobic:No and SOURCE_DUPLICATE are not freshly
+    authenticated by an inaccessible catalogue. Neither absence of shaking instructions
+    nor a medium name establishes oxygen requirements.
+  target_ids:
+  - CultureMech:006279
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  - notes
+  - data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml::curation_history[0].timestamp
+  evidence_ids:
+  - local0
+  - local1
+  - local3
+  - komodo67
+  - komodoOriginalList
+  rule_id: review-yaml-record/append-only-provenance
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Reassess the maintained KG match against full source formulation, including
+    ungrounded mixtures. Retain 49 only as explicitly limited computational similarity
+    if the schema supports that meaning; do not present it as exact medium identity
+    or substitute its recipe.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006279
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Keep the base and exact named wrapper separately reviewable until the
+    original variant formulation is available. Reassess SOURCE_DUPLICATE and merge
+    membership using verified complete scientific content. Preserve existing historical
+    relationship annotations and append verified correction context.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006279
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Preserve authenticated base-owner ingredient evidence, add source-scoped
+    water/preparation evidence to the enclosing base recipe, and regenerate only after
+    current owner differences are resolved. Do not overwrite the already correct DSM
+    pH step or infer a final volume.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006279
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Retain original events and add verified provenance with the actual
+    curation date; correct future timestamp formatting without rewriting unknown historical
+    instants. Keep aeration and source identity scope explicitly qualified.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006279
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cy_agar.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- Exact KOMODO67,67_21789 and the originally cited catalogue route returned 403. Collection
+  association does not authenticate the historical variant or catalogue response.
+- Primary DSM67 lists 1000 ml water without an explicit measured final volume; concentrations
+  are credited only at the API-declared base-recipe basis.
+- No claims transfer from historical same-name TOGO/NBRC records, medium 49 or medium
+  830. Current absence from a source is bounded to that inspected source.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
