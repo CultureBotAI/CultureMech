@@ -1,0 +1,1887 @@
+# Scientific review: CALDIMICROBIUM THIODISMUTANS MEDIUM
+
+- Review: 20261028T055206Z-culturemech-000740-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T05:41:26.306680Z
+- Finished UTC: 2026-10-28T05:52:06.791966Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The current record preserves valuable main preparation but flattens four stock/process stages, mislabels a precursor volume, sums incompatible NaOH bases and misgrounds nickel hydrate. All 54 concentration fields and current numeric preparation are assessed with explicit source and normalization limits.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch057 index 09
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000740 | data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml | generated | caldimicrobium_thiodismutans_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:000740 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:000740 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:000740 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:000740 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact DSM1277b with a bounded source branch
+
+identity: supported. Targets: CultureMech:000740.
+
+Both primary pages and API identify DSM1277b. The source-specific DSM110365 substitution is a distinct branch, not proof of a new universal formula or taxon assertion. The generated target retains the same scientific fields as its maintained owner.
+
+### Defined liquid medium with an insoluble suspension stage
+
+representation: supported. Targets: CultureMech:000740.
+
+Named salts and vitamins support retaining DEFINED and liquid-medium classification; the amorphous precipitate is a separately prepared suspension. Its preparation does not justify a completely quantified retained-solute composition. Existing pH and main preparation are present and credited.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:000740.
+
+54 current concentration fields are covered by 41 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b057-quantity-inventory-v1","target":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","quantity_field_count":54,"decisions":[{"quantity_id":"q1","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 3-3","quote":"MgCl2 x 6 H2O                                               0.20        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.983753,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q2","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 4-4","quote":"CaCl2 x 2 H2O                                               0.10        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q3","label":"(NH4)2SO4","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 5-5","quote":"(NH4)2SO4                                                   0.10        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.756773,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 6-6","quote":"KH2PO4                                                      0.10        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.734835,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 7-7","quote":"KCl                                                         0.10        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.34138,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q6","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 11-11","quote":"Na2CO3                                                      2.50        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 23.5876,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"Na2S2O5","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.9","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.9","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The API explicitly declares the local g_l value, and the primary supports the identical printed batch mass. The API also declares volume 1007 mL, which does not reproduce this rate by simple mass/volume division. Retain this as a provider-declared rate only; the underlying measured-final-volume basis remains unresolved and is not independently verified.","source_stage":"main provider declaration / primary batch mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 12-12","quote":"Na2S2O5                                                     0.90        g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2S2O5\",\n                        \"compound_id\": 440,\n                        \"amount\": 0.9,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\": 4.7341,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q8","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Preserve 10 mL of 25% HCl; the percent basis/density are not supplied. The API 2.5 g/L is not independent evidence for a mass conversion.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 32-32","quote":"HCl (25%)                                                  10.00      ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"FeCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 33-33","quote":"FeCl2 x 4 H2O                                               1.50       g","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q10","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 34-34","quote":"ZnCl2                                                      70.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q11","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 35-35","quote":"MnCl2 x 4 H2O                                             100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q12","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 36-36","quote":"H3BO3                                                       6.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q13","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 37-37","quote":"CoCl2 x 6 H2O                                             190.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q14","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 38-38","quote":"CuCl2 x 2 H2O                                               2.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q15","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 39-39","quote":"NiCl2 x 6 H2O                                              24.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q16","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 40-40","quote":"Na2MoO4 x 2 H2O                                            36.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"}]},{"quantity_id":"q17","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"20.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"20.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The 20.5 g/L value sums 0.5 g/L from the selenite-tungstate stock and a provider 20 g/L label for NaOH used as an adjustable Fe(OH)3 precipitation reagent. Neither is a direct main-medium NaOH concentration. Washing/discarding supernatant prevents treating the reagent input as retained product solute. Preserve both stages and the independent unquantified pH-adjustment use.","source_stage":"mixed stock / precipitation reagent stages","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 57-57","quote":"NaOH                                                    0.50       g","quote_basis":"derivative text"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 64-72","quote":"FeCl3 x 6 H2O (60.00 g/l)                             320.00       ml\n   NaOH (10% w/v), adjust if required                     80.00       ml\n\nSlowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to\npH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80\n- 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with\nsurface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the\nsupernatant. Wash several times with distilled water. Resuspend the pellet in medium as\ndescribed above. For storage autoclave under 100% N2 atmosphere.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"condition\": \"adjust if required\",\n                        \"attribute\": \"10% w/v\",\n                        \"amount\": 80,\n                        \"unit\": \"ml\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 500.038,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q18","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 58-58","quote":"Na2SeO3 x 5 H2O                                         3.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q19","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.004","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 59-59","quote":"Na2WO4 x 2 H2O                                          4.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q20","label":"FeCl3 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"320","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"320","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source specifies 320 mL of a 60 g/L ferric-chloride-hexahydrate precursor solution, not 320 g/L ingredient. The API has amount/unit/attribute but no g_l for this row. This is reagent input to a washed precipitate, not final Fe(OH)3 composition or main-medium solute; retain dimensions and process scope without calculating retained mass.","source_stage":"precipitate precursor, not retained solute","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 64-64","quote":"FeCl3 x 6 H2O (60.00 g/l)                             320.00       ml","quote_basis":"derivative text"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 67-72","quote":"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to\npH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80\n- 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with\nsurface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the\nsupernatant. Wash several times with distilled water. Resuspend the pellet in medium as\ndescribed above. For storage autoclave under 100% N2 atmosphere.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\": 82,\n                        \"attribute\": \"60.00 g/l\",\n                        \"amount\": 320,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 77-77","quote":"Vitamin B12                                           100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q22","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 78-78","quote":"p-Aminobenzoic acid                                    80.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q23","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 79-79","quote":"D-(+)-biotin                                           20.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\": 1359,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q24","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 80-80","quote":"Nicotinic acid                                        200.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q25","label":"Calcium pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 81-81","quote":"Calcium pantothenate                                  100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q26","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 82-82","quote":"Pyridoxine hydrochloride                              300.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q27","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This local direct-main value is a source stock component. Restore its own stock containment and receiving edge; the undiluted stock number cannot remain a direct medium concentration. Its API stock g_l declaration is separate from the primary 1000 mL water input, which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 83-83","quote":"Thiamine-HCl x 2 H2O                                  200.00      mg","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q28","label":"Receiving Trace element solution SL-10","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact stock/suspension input volume and identity at the receiving stage. The 45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric chloride precursor. Do not infer a final-medium concentration or a standard 1 L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 8-8","quote":"Trace element solution SL-10                                1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q29","label":"Receiving Selenite-tungstate solution","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact stock/suspension input volume and identity at the receiving stage. The 45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric chloride precursor. Do not infer a final-medium concentration or a standard 1 L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 9-9","quote":"Selenite-tungstate solution                                 1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q30","label":"Receiving Amorphous Fe(OH)3","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact stock/suspension input volume and identity at the receiving stage. The 45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric chloride precursor. Do not infer a final-medium concentration or a standard 1 L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 10-10","quote":"Amorphous Fe(OH)3                                          45.00       ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Amorphous Fe(OH)3\",\n                        \"solution_id\": 2411,\n                        \"amount\": 45,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q31","label":"Receiving Seven vitamins solution","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact stock/suspension input volume and identity at the receiving stage. The 45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric chloride precursor. Do not infer a final-medium concentration or a standard 1 L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 13-13","quote":"Seven vitamins solution                                     1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q32","label":"Water input, source solution 0","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact solvent input and stage. Only SL-10 has an explicit separate makeup instruction. Main water plus listed additions must not be described as a measured final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 14-14","quote":"Distilled water                                           960.00       ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 960,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q33","label":"Water input, source solution 1","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact solvent input and stage. Only SL-10 has an explicit separate makeup instruction. Main water plus listed additions must not be described as a measured final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 41-41","quote":"Distilled water                                           990.00      ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q34","label":"Water input, source solution 2","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact solvent input and stage. Only SL-10 has an explicit separate makeup instruction. Main water plus listed additions must not be described as a measured final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 60-60","quote":"Distilled water                                      1000.00      ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"Water input, source solution 4","local_fields":[],"decision":"evidence_only","rationale":"Preserve the exact solvent input and stage. Only SL-10 has an explicit separate makeup instruction. Main water plus listed additions must not be described as a measured final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 84-84","quote":"Distilled water                                      1000.00      ml","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"Retained complete-medium pH","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.5,"max":8.0}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ph_range","stored":{"min":7.5,"max":8.0}}],"decision":"evidence_only","rationale":"The existing 7.5–8.0 range matches the main-medium adjustment. Fe(OH)3 precipitation pH 8.0–8.5 belongs to its separate process.","source_stage":"main pH","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 16-23","quote":"Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium\nwith 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium\nunder same gas atmosphere into Hungate-type tubes or serum vials and autoclave. Add\npyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH, made anoxic\nwith 100% N2 gas and sterilized by filtration. Vitamins are added from a stock solution\nprepared under 100% N2 gas atmosphere and sterilized by filtration and carbonate is\nadded from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\nAdjust pH of complete medium to 7.5 - 8.0. Incubate without shaking.","quote_basis":"derivative text"}]},{"quantity_id":"q37","label":"Existing preparation step 1","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into Hungate-type tubes or serum vials and autoclave. Add pyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration. Vitamins are added from a stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration and carbonate is added from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium to 7.5 - 8.0. Incubate without shaking."},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into Hungate-type tubes or serum vials and autoclave. Add pyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration. Vitamins are added from a stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration and carbonate is added from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium to 7.5 - 8.0. Incubate without shaking."}],"decision":"evidence_only","rationale":"Retain the complete main preparation sequence, 80/20 atmosphere, sparging interval, separate 10% w/v pyrosulfite and vitamin filtration, carbonate stage and final pH. No separate strain-growth claim is inferred.","source_stage":"main preparation","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 16-23","quote":"Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium\nwith 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium\nunder same gas atmosphere into Hungate-type tubes or serum vials and autoclave. Add\npyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH, made anoxic\nwith 100% N2 gas and sterilized by filtration. Vitamins are added from a stock solution\nprepared under 100% N2 gas atmosphere and sterilized by filtration and carbonate is\nadded from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\nAdjust pH of complete medium to 7.5 - 8.0. Incubate without shaking.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into Hungate-type tubes or serum vials and autoclave. Add pyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration. Vitamins are added from a stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration and carbonate is added from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium to 7.5 - 8.0. Incubate without shaking.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"Existing preparation step 2","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}],"decision":"correct","rationale":"The exact dissolution and 1000 mL makeup instruction is supported for SL-10, but needs an explicit stock association.","source_stage":"separate stock/process preparation","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"Existing preparation step 3","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"preparation_steps[2].description","stored":"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with surface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled water. Resuspend the pellet in medium as described above. For storage autoclave under 100% N2 atmosphere."},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"preparation_steps[2].description","stored":"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with surface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled water. Resuspend the pellet in medium as described above. For storage autoclave under 100% N2 atmosphere."}],"decision":"correct","rationale":"Preserve the supported precursor strength/volume, titration endpoint and approximate variable NaOH volume, overnight standing, centrifugation duration/speed, washing and storage atmosphere. These are precipitation-process values; discarded supernatant and resuspension prevent final-solute arithmetic.","source_stage":"separate stock/process preparation","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 67-72","quote":"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to\npH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80\n- 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with\nsurface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the\nsupernatant. Wash several times with distilled water. Resuspend the pellet in medium as\ndescribed above. For storage autoclave under 100% N2 atmosphere.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[3].steps[0]","quote":"{\n                        \"step\": \"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with surface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled water. Resuspend the pellet in medium as described above. For storage autoclave under 100% N2 atmosphere.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"DSM110365 source-specific variant","local_fields":[],"decision":"evidence_only","rationale":"The source restricts the printed thiosulfate replacement to DSM110365. Keep this as an explicit branch; do not overwrite the base pyrosulfite formulation, invent a taxonomy identifier or propagate a growth assertion to all records.","source_stage":"source-only named-strain variant","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 26-27","quote":"For DSM 110365: Replace pyrosulfite with 2.5 g/l Na2S2O3 x 5 H2O added from an anoxic\nstock solution sterilized by filtration.","quote_basis":"derivative text"}]},{"quantity_id":"q41","label":"Unquantified main stock pH adjustment","local_fields":[],"decision":"not_quantified","rationale":"NaOH used to adjust the pyrosulfite stock pH is not quantified independently. Do not borrow the precipitation NaOH dose for this adjustment.","source_stage":"separate pyrosulfite-stock adjustment","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt lines 18-21","quote":"under same gas atmosphere into Hungate-type tubes or serum vials and autoclave. Add\npyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH, made anoxic\nwith 100% N2 gas and sterilized by filtration. Vitamins are added from a stock solution\nprepared under 100% N2 gas atmosphere and sterilized by filtration and carbonate is","quote_basis":"derivative text"}]}],"document_scopes":{"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:000740.
+
+All primary and secondary IDs/labels and current MIM exact-key rows are joined. Nickel hexahydrate is a confirmed mismatch to anhydrous CHEBI:34887; CHEBI:53542 is independently verified. Generic calcium-pantothenate source wording does not independently establish the D stereochemistry of CHEBI:31345. Explicit D-biotin and thiamine hydrochloride dihydrate match their current scientific objects. No provider mmol-based correction is inferred.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:000740.
+
+All current histories and all four selected historical reports were read. October 7 retained the stock-topology conflicts unchanged, and its source digest matches fresh API bytes; that authenticates content separately from the old access timestamp. There are no current attached quantity claims. Current importer and duplicate cleanup have stage-preserving/no-sum behavior, while conservative merge identity does not certify the inherited science.
+
+## Findings
+
+### f1: Four stock and suspension stages are flattened into main ingredients
+
+major / open / confirmed; issue key: culturemech-000740-flattened-stock-processes.
+
+The source has SL-10, selenite-tungstate, amorphous Fe(OH)3 suspension and seven vitamins with distinct receiving doses. Restore those boundaries and solvent inputs, preserving the existing main preparation. The current primary-only importer already separates referenced stocks; source-stage reconciliation is needed for this older encoded formulation.
+
+### f2: Ferric precursor volume is encoded as a solute concentration
+
+major / open / confirmed; issue key: culturemech-000740-ferric-precursor-units.
+
+The local 320 G_PER_L describes a source 320 mL addition of 60 g/L FeCl3·6H2O solution. Correct the dimensions and attach the reagent to the amorphous Fe(OH)3 preparation. Because the source washes the precipitate and discards supernatant, neither the precursor nor NaOH becomes a directly calculable retained main-medium concentration.
+
+### f3: Sodium hydroxide sums a stock component and precipitation reagent
+
+major / open / confirmed; issue key: culturemech-000740-sodium-hydroxide-mixed-stage-sum.
+
+The local 20.5 g/L and merge note combine the selenite stock 0.5 g/L with the provider precipitation-input 20 g/L. Separate the stock component, adjustable precipitation reagent and unquantified pyrosulfite-stock pH adjustment. Current cleanup no longer sums unequal duplicate values; do not rerun it as scientific reconciliation.
+
+### f4: Source nickel hexahydrate has an anhydrous identifier
+
+major / open / confirmed; issue key: culturemech-000740-nickel-hydrate.
+
+The primary and local name specify NiCl2·6H2O, while primary and secondary CHEBI:34887 describe anhydrous nickel dichloride. Fresh CHEBI:53542 confirms a hexahydrate candidate. Correct the exact supplied form with authority evidence, separately from stock containment and dose work.
+
+### f5: Provider normalization and generic vitamin wording remain limited
+
+minor / open / confirmed; issue key: culturemech-000740-normalization-and-specificity.
+
+The provider main volume is 1007 mL, yet its g_l numbers equal printed gram inputs rather than mass divided by 1.007 L. Preserve the declaration without certifying a measured physical basis. The source says generic calcium pantothenate while CHEBI:31345 encodes D stereochemistry; that finer source correspondence remains unverified, unlike explicit D-biotin and thiamine hydrochloride dihydrate. Keep the DSM110365 variant separate from the base recipe.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+The source has SL-10, selenite-tungstate, amorphous Fe(OH)3 suspension and seven vitamins with distinct receiving doses. Restore those boundaries and solvent inputs, preserving the existing main preparation. The current primary-only importer already separates referenced stocks; source-stage reconciliation is needed for this older encoded formulation.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The local 320 G_PER_L describes a source 320 mL addition of 60 g/L FeCl3·6H2O solution. Correct the dimensions and attach the reagent to the amorphous Fe(OH)3 preparation. Because the source washes the precipitate and discards supernatant, neither the precursor nor NaOH becomes a directly calculable retained main-medium concentration.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+The local 20.5 g/L and merge note combine the selenite stock 0.5 g/L with the provider precipitation-input 20 g/L. Separate the stock component, adjustable precipitation reagent and unquantified pyrosulfite-stock pH adjustment. Current cleanup no longer sums unequal duplicate values; do not rerun it as scientific reconciliation.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+The primary and local name specify NiCl2·6H2O, while primary and secondary CHEBI:34887 describe anhydrous nickel dichloride. Fresh CHEBI:53542 confirms a hexahydrate candidate. Correct the exact supplied form with authority evidence, separately from stock containment and dose work.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a5
+
+The provider main volume is 1007 mL, yet its g_l numbers equal printed gram inputs rather than mass divided by 1.007 L. Preserve the declaration without certifying a measured physical basis. The source says generic calcium pantothenate while CHEBI:31345 encodes D stereochemistry; that finer source correspondence remains unverified, unlike explicit D-biotin and thiamine hydrochloride dihydrate. Keep the DSM110365 variant separate from the base recipe.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsm1277b | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf; REVIEW_WORK/batch057/source07-09/dsm1277b.json; exact original raw/text/hash/time metadata | context_only | Exact primary medium and its printed stock/preparation subsections; named strain variations remain separate and do not establish generic growth. |
+| api1277b | https://mediadive.dsmz.de/rest/medium/1277b; REVIEW_WORK/batch057/source07-09/api1277b.json; exact original raw/text/hash/time metadata | context_only | Exact current provider identity and declared amounts/basis; provider volume is not independently measured final volume. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch057/source07-09/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542; REVIEW_WORK/batch057/source07-09/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch057/source07-09/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch057/source07-09/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi132751 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751; REVIEW_WORK/batch057/source07-09/chebi132751.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| target | data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-16 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json; Exact selected objects and locators in historical-selected-parent-rows.json | context_only | Inspected historical parent JSON. Only exact selected record objects are included in historical-selected-parent-rows.json; unrelated rows are not evidence for this record. The full input hash establishes repository ancestry, not external raw authentication. |
+| report-17 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caldimicrobium_thiodismutans_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| report-18 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| report-20 | reports/yaml_record_review/20260922T021759Z-CALDIMICROBIUM_THIODISMUTANS_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit | context_only | Current parser reads only the primary recipe, separates referenced solutions and percentage/ml additions, and preserves their source attributes. It prefers explicit g_l but otherwise maps bare mass/volume units to per-litre schema units. This credits existing stage handling without certifying a source final volume or historical execution. |
+| writer-cleanup | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current duplicate cleanup collapses identical values but flags conflicting values without summing. Earlier sums require source-stage curation; do not rerun cleanup as a substitute for scientific reconciliation. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch057/source07-09/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch057/source07-09/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946; REVIEW_WORK/batch057/source07-09/chebi62946.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch057/source07-09/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588; REVIEW_WORK/batch057/source07-09/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377; REVIEW_WORK/batch057/source07-09/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi114786 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:114786; REVIEW_WORK/batch057/source07-09/chebi114786.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883; REVIEW_WORK/batch057/source07-09/chebi17883.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch057/source07-09/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch057/source07-09/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch057/source07-09/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch057/source07-09/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch057/source07-09/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch057/source07-09/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch057/source07-09/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145; REVIEW_WORK/batch057/source07-09/chebi32145.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361; REVIEW_WORK/batch057/source07-09/chebi131361.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939; REVIEW_WORK/batch057/source07-09/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86254; REVIEW_WORK/batch057/source07-09/chebi86254.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch057/source07-09/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch057/source07-09/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch057/source07-09/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch057/source07-09/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| quantities | REVIEW_WORK/batch057/record09/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch057/record09/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch057/record09/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch057/record09/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch057/record09/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch057/record09/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch057/record09/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch057/record09/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch057/record09/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch057/record09/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch057/record09/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Current canonical checks validate encoded structure/labels; zero reference checks do not verify external source claims.
+- All primary PDF pages were read visually as well as in their complete extracted text. Current source status, retrieval times and complete raw/text bytes remain in the capture catalog.
+- The API precipitation solution volume 400 mL is provider metadata, not a retained washed-suspension volume or measured main-medium denominator.
+- The primary HCl 25% has no explicit percent basis/density. Provider cobalt/nickel mmol values are not used to override named hexahydrates.
+- No source variant is propagated automatically and no inferred taxon is added.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T055206Z-culturemech-000740-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CALDIMICROBIUM THIODISMUTANS MEDIUM'
+started_at: '2026-10-28T05:41:26.306680Z'
+finished_at: '2026-10-28T05:52:06.791966Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The current record preserves valuable main preparation but flattens four
+  stock/process stages, mislabels a precursor volume, sums incompatible NaOH bases
+  and misgrounds nickel hydrate. All 54 concentration fields and current numeric preparation
+  are assessed with explicit source and normalization limits.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+    sha256: a8f1ce87875a0d55e4b4dbe24a5af50a465e5e1fae9b6cf903624bc9a1b01c27
+    role: target
+  - path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    sha256: 8ca04844e76eb6c2f62c3d90084716375960be54e38156993d45ef298f68d255
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caldimicrobium_thiodismutans_medium.yaml.md
+    sha256: b93c7eac0a25673a022826fa1e6bd0a7b9d90e04d2f2dd8a742821c27b2986f7
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.md
+    sha256: 5080de494de65e90ece2b9f005290992ffd6f470835ab6394d56f404c03a68ce
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.md
+    sha256: 3778ae2485e712744e00efa6073128d49d5cf35a8c80c000b2db22a306220011
+    role: context
+  - path: reports/yaml_record_review/20260922T021759Z-CALDIMICROBIUM_THIODISMUTANS_MEDIUM.md
+    sha256: 3ac090c72ea8153f6068a9c53d91ecde30d803c1c60ae23ccca2953259fcd21e
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch057 index 09
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000740
+targets:
+- target_id: CultureMech:000740
+  path: data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+  label: caldimicrobium_thiodismutans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000740
+  command: just validate-schema data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000740
+  command: just validate-strict data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+    --out REVIEW_WORK/batch057/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000740
+  command: just validate-terms data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:000740
+  command: just validate-references data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm1277b
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf
+  accessed_at: '2026-10-28T05:41:52.848532Z'
+  locator: REVIEW_WORK/batch057/source07-09/dsm1277b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact primary medium and its printed stock/preparation subsections; named
+    strain variations remain separate and do not establish generic growth.
+  snapshot_sha256: cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16
+- evidence_id: api1277b
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1277b
+  accessed_at: '2026-10-28T05:41:53.194601Z'
+  locator: REVIEW_WORK/batch057/source07-09/api1277b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current provider identity and declared amounts/basis; provider volume
+    is not independently measured final volume.
+  snapshot_sha256: cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T05:41:56.530534Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi34887.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542
+  accessed_at: '2026-10-28T05:41:57.120219Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi53542.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1e44a068cfe6b98d7bb3b0240ffdc0611e1be59f2d3dab9f04e4162ed94e4444
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T05:41:55.568437Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi31345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T05:41:54.107333Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi15956.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:132751
+  accessed_at: '2026-10-28T05:41:53.687122Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi132751.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1d5eefc753b4fbbffd69d169aa7ca7be16df737b6c8c0e1833917806ac0607e5
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:51:20.058347Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: a8f1ce87875a0d55e4b4dbe24a5af50a465e5e1fae9b6cf903624bc9a1b01c27
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:51:20.058516Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 8ca04844e76eb6c2f62c3d90084716375960be54e38156993d45ef298f68d255
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T05:51:20.058546Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T05:51:20.058878Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T05:51:20.058903Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T05:51:20.058930Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-16
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+  locator: Exact selected objects and locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T05:51:20.058957Z'
+  support: context_only
+  summary: Inspected historical parent JSON. Only exact selected record objects are
+    included in historical-selected-parent-rows.json; unrelated rows are not evidence
+    for this record. The full input hash establishes repository ancestry, not external
+    raw authentication.
+  snapshot_sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caldimicrobium_thiodismutans_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:51:20.064716Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: b93c7eac0a25673a022826fa1e6bd0a7b9d90e04d2f2dd8a742821c27b2986f7
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:51:20.064786Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 5080de494de65e90ece2b9f005290992ffd6f470835ab6394d56f404c03a68ce
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:51:20.064816Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 3778ae2485e712744e00efa6073128d49d5cf35a8c80c000b2db22a306220011
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T021759Z-CALDIMICROBIUM_THIODISMUTANS_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:51:20.064841Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 3ac090c72ea8153f6068a9c53d91ecde30d803c1c60ae23ccca2953259fcd21e
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit
+  accessed_at: '2026-10-28T05:51:20.064865Z'
+  support: context_only
+  summary: Current parser reads only the primary recipe, separates referenced solutions
+    and percentage/ml additions, and preserves their source attributes. It prefers
+    explicit g_l but otherwise maps bare mass/volume units to per-litre schema units.
+    This credits existing stage handling without certifying a source final volume
+    or historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T05:51:20.064902Z'
+  support: context_only
+  summary: Current duplicate cleanup collapses identical values but flags conflicting
+    values without summing. Earlier sums require source-stage curation; do not rerun
+    cleanup as a substitute for scientific reconciliation.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T05:41:58.474691Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T05:41:58.039533Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946
+  accessed_at: '2026-10-28T05:41:57.278089Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi62946.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e035a92736c0b968363e9db17da9a4a81390ab174a65e689f6ae45c326324b44
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T05:41:57.434993Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588
+  accessed_at: '2026-10-28T05:41:56.253560Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi32588.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 9494b26ad5d3ce43942c3e859cdefe4114e111b1d45328c0cd5faf3b75faec00
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377
+  accessed_at: '2026-10-28T05:41:54.913308Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi29377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e0c2a85ab7be9313c564f96ee47b87e1bf3e01ad1e9fd627d1dbddced5d068c4
+- evidence_id: chebi114786
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:114786
+  accessed_at: '2026-10-28T05:41:53.416167Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi114786.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: d6bfbf1a32be207566dd06d617593886daebf942281e7813b4c88a1dbbc5ff8a
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883
+  accessed_at: '2026-10-28T05:41:54.963917Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi17883.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e5ab164ef9ff955da1a504ca34ab4d3b69539d9bf721936c9dd563ccbbd0e3b0
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T05:41:58.071847Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi86249.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T05:41:56.852449Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi49976.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T05:41:58.633129Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi86368.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T05:41:56.233265Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T05:41:56.865319Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T05:41:58.599802Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi86318.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T05:41:57.467224Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32145
+  accessed_at: '2026-10-28T05:41:55.847366Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi32145.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 089212e8c86e2d4a4b145366c8bc67e0056565ef6970dcdc3df63ad20dac234d
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131361
+  accessed_at: '2026-10-28T05:41:53.545864Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi131361.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: d88b30f797a300c3935e550a4770cb598bbed342a9c2a343f77bdce496e99db9
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939
+  accessed_at: '2026-10-28T05:41:57.467179Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi63939.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 01f41117ab89dbd1d514a894850dc06afd5d95c0bee7fd89f7dfdb54c309c514
+- evidence_id: chebi86254
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86254
+  accessed_at: '2026-10-28T05:41:58.063186Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi86254.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: b3a79ee6d9359b7b827f6f87134bc166d84d3948ec20c54965c6e706aecde3a4
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T05:41:54.563054Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi176843.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T05:41:55.206388Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi30753.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T05:41:53.941904Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi15940.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T05:41:55.460870Z'
+  locator: REVIEW_WORK/batch057/source07-09/chebi30961.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.218898Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 782b72f816659633eb4b92ef68faff8bb8ba07c6f5acfc448a090bdf7737ac17
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.218986Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: ac6db077382d626d1208d1376cb2d769b940a9d5613758e2eaf4554d153fd068
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.219160Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 15fe8db5e3ef641ee4f990146327d037ab37342f074ddfd05e94b3dddd76659d
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.219230Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: e8fe532171f15e5f3d5bdac33dcb009529d5f3b11d959ee442f46db60a1da656
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.219300Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: f752c192c7881c4e55385e02226a74cf1fab5e9e274b64b79c3bd89c422b5fef
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.219338Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: a6eeb03d531f886a95fbd7cdcff84d7c5185fc868fe4cd822e5ec8ff996378b5
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record09/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:51:20.219373Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch057/record09/schema-result.json
+  accessed_at: '2026-10-28T05:41:27.523982Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 4b270e0cab59fa7a71a68350ee76b7d08fe56f58bfd6606babb328744f829753
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch057/record09/strict-result.json
+  accessed_at: '2026-10-28T05:41:28.541179Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: fcda7097b17769ecae4cd9fb0a2ef07aacced7b20bfecd36e61a5b7019edf21e
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch057/record09/terms-result.json
+  accessed_at: '2026-10-28T05:41:29.634417Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: ca7c85084d923583815c0cd5295e70e69bd3d751d9feb451a578e030cee813b8
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch057/record09/references-result.json
+  accessed_at: '2026-10-28T05:41:30.407829Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 9d95467b524972a1c1878c5f1e65c92ed23c84139a28d7ec5117b36a3347a42a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact DSM1277b with a bounded source branch
+  outcome: supported
+  summary: Both primary pages and API identify DSM1277b. The source-specific DSM110365
+    substitution is a distinct branch, not proof of a new universal formula or taxon
+    assertion. The generated target retains the same scientific fields as its maintained
+    owner.
+  target_ids:
+  - CultureMech:000740
+  evidence_ids:
+  - dsm1277b
+  - api1277b
+  - target
+  - owner
+- assessment_id: classification
+  area: representation
+  topic: Defined liquid medium with an insoluble suspension stage
+  outcome: supported
+  summary: Named salts and vitamins support retaining DEFINED and liquid-medium classification;
+    the amorphous precipitate is a separately prepared suspension. Its preparation
+    does not justify a completely quantified retained-solute composition. Existing
+    pH and main preparation are present and credited.
+  target_ids:
+  - CultureMech:000740
+  evidence_ids:
+  - dsm1277b
+  - owner
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 54 current concentration fields are covered by 41 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:000740
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b057-quantity-inventory-v1","target":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","quantity_field_count":54,"decisions":[{"quantity_id":"q1","label":"MgCl2
+    x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 3-3","quote":"MgCl2 x 6 H2O                                               0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.983753,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 4-4","quote":"CaCl2 x 2 H2O                                               0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.680203,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"(NH4)2SO4","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 5-5","quote":"(NH4)2SO4                                                   0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.756773,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 6-6","quote":"KH2PO4                                                      0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.734835,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 7-7","quote":"KCl                                                         0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    1.34138,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 11-11","quote":"Na2CO3                                                      2.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    23.5876,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q7","label":"Na2S2O5","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.9","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.9","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    API explicitly declares the local g_l value, and the primary supports the identical
+    printed batch mass. The API also declares volume 1007 mL, which does not reproduce
+    this rate by simple mass/volume division. Retain this as a provider-declared rate
+    only; the underlying measured-final-volume basis remains unresolved and is not
+    independently verified.","source_stage":"main provider declaration / primary batch
+    mass","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 12-12","quote":"Na2S2O5                                                     0.90        g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Na2S2O5\",\n                        \"compound_id\":
+    440,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\":
+    4.7341,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"HCl","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"2.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Preserve 10 mL of 25% HCl; the percent basis/density are not supplied. The API
+    2.5 g/L is not independent evidence for a mass conversion.","source_stage":"SL-10
+    stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 32-32","quote":"HCl (25%)                                                  10.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"FeCl2
+    x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 33-33","quote":"FeCl2 x 4 H2O                                               1.50       g","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q10","label":"ZnCl2","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.07","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 34-34","quote":"ZnCl2                                                      70.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q11","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 35-35","quote":"MnCl2 x 4 H2O                                             100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q12","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 36-36","quote":"H3BO3                                                       6.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q13","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 37-37","quote":"CoCl2 x 6 H2O                                             190.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q14","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 38-38","quote":"CuCl2 x 2 H2O                                               2.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q15","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.024","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.024","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 39-39","quote":"NiCl2 x 6 H2O                                              24.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q16","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.036","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.036","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    SL-10 explicitly makes up to 1000 mL, so its printed mg-to-stock-g/L conversion
+    is supported.","source_stage":"SL-10 stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 40-40","quote":"Na2MoO4 x 2 H2O                                            36.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q17","label":"NaOH","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"20.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"20.5","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    20.5 g/L value sums 0.5 g/L from the selenite-tungstate stock and a provider 20
+    g/L label for NaOH used as an adjustable Fe(OH)3 precipitation reagent. Neither
+    is a direct main-medium NaOH concentration. Washing/discarding supernatant prevents
+    treating the reagent input as retained product solute. Preserve both stages and
+    the independent unquantified pH-adjustment use.","source_stage":"mixed stock /
+    precipitation reagent stages","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 57-57","quote":"NaOH                                                    0.50       g","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 64-72","quote":"FeCl3 x 6 H2O (60.00 g/l)                             320.00       ml\n   NaOH
+    (10% w/v), adjust if required                     80.00       ml\n\nSlowly titrate
+    320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH to\npH
+    8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx.
+    80\n- 100 ml. The precipitated Fe(OH)3 should be stored at room temperature overnight
+    with\nsurface covered with water. Thereafter, centrifuge at 2000 rpm for 5 min
+    and discard the\nsupernatant. Wash several times with distilled water. Resuspend
+    the pellet in medium as\ndescribed above. For storage autoclave under 100% N2
+    atmosphere.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    12.5009,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[3].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\":
+    256,\n                        \"condition\": \"adjust if required\",\n                        \"attribute\":
+    \"10% w/v\",\n                        \"amount\": 80,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 20,\n                        \"mmol_l\":
+    500.038,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q18","label":"Na2SeO3 x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.003","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.003","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 58-58","quote":"Na2SeO3 x 5 H2O                                         3.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\":
+    0.0114062,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q19","label":"Na2WO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.004","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.004","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"selenite-tungstate stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 59-59","quote":"Na2WO4 x 2 H2O                                          4.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\":
+    0.0121267,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q20","label":"FeCl3 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"320","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"320","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source specifies 320 mL of a 60 g/L ferric-chloride-hexahydrate precursor solution,
+    not 320 g/L ingredient. The API has amount/unit/attribute but no g_l for this
+    row. This is reagent input to a washed precipitate, not final Fe(OH)3 composition
+    or main-medium solute; retain dimensions and process scope without calculating
+    retained mass.","source_stage":"precipitate precursor, not retained solute","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 64-64","quote":"FeCl3 x 6 H2O (60.00 g/l)                             320.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 67-72","quote":"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution
+    (60.00 g/l) with 10% (w/v) NaOH to\npH 8.0-8.5 under agitation (use magnetic stirrer).
+    Total amount of added NaOH approx. 80\n- 100 ml. The precipitated Fe(OH)3 should
+    be stored at room temperature overnight with\nsurface covered with water. Thereafter,
+    centrifuge at 2000 rpm for 5 min and discard the\nsupernatant. Wash several times
+    with distilled water. Resuspend the pellet in medium as\ndescribed above. For
+    storage autoclave under 100% N2 atmosphere.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[3].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\":
+    82,\n                        \"attribute\": \"60.00 g/l\",\n                        \"amount\":
+    320,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"Vitamin
+    B12","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 77-77","quote":"Vitamin B12                                           100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q22","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.08","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 78-78","quote":"p-Aminobenzoic acid                                    80.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 80,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\":
+    0.583345,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q23","label":"D-(+)-biotin","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 79-79","quote":"D-(+)-biotin                                           20.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\":
+    1359,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q24","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 80-80","quote":"Nicotinic acid                                        200.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.62456,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"Calcium pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 81-81","quote":"Calcium pantothenate                                  100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.209849,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 82-82","quote":"Pyridoxine hydrochloride                              300.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 300,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    1.45886,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q27","label":"Thiamine-HCl x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    local direct-main value is a source stock component. Restore its own stock containment
+    and receiving edge; the undiluted stock number cannot remain a direct medium concentration.
+    Its API stock g_l declaration is separate from the primary 1000 mL water input,
+    which is not explicit final makeup.","source_stage":"seven-vitamin stock","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 83-83","quote":"Thiamine-HCl x 2 H2O                                  200.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\":
+    77,\n                        \"amount\": 200,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.535761,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"Receiving Trace element solution SL-10","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact stock/suspension input volume and identity at the receiving stage. The
+    45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric
+    chloride precursor. Do not infer a final-medium concentration or a standard 1
+    L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 8-8","quote":"Trace element solution SL-10                                1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q29","label":"Receiving Selenite-tungstate solution","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact stock/suspension input volume and identity at the receiving stage. The
+    45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric
+    chloride precursor. Do not infer a final-medium concentration or a standard 1
+    L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 9-9","quote":"Selenite-tungstate solution                                 1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\":
+    777,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q30","label":"Receiving Amorphous Fe(OH)3","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact stock/suspension input volume and identity at the receiving stage. The
+    45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric
+    chloride precursor. Do not infer a final-medium concentration or a standard 1
+    L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 10-10","quote":"Amorphous Fe(OH)3                                          45.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Amorphous Fe(OH)3\",\n                        \"solution_id\":
+    2411,\n                        \"amount\": 45,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"Receiving Seven vitamins solution","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact stock/suspension input volume and identity at the receiving stage. The
+    45 mL amorphous Fe(OH)3 dose is a prepared suspension, not 45 mL of the ferric
+    chloride precursor. Do not infer a final-medium concentration or a standard 1
+    L batch.","source_stage":"source-only receiving stock/suspension","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 13-13","quote":"Seven vitamins solution                                     1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\":
+    1038,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"Water input, source solution 0","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact solvent input and stage. Only SL-10 has an explicit separate makeup
+    instruction. Main water plus listed additions must not be described as a measured
+    final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 14-14","quote":"Distilled water                                           960.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 960,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"Water input, source solution 1","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact solvent input and stage. Only SL-10 has an explicit separate makeup
+    instruction. Main water plus listed additions must not be described as a measured
+    final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 41-41","quote":"Distilled water                                           990.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q34","label":"Water input, source solution 2","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact solvent input and stage. Only SL-10 has an explicit separate makeup
+    instruction. Main water plus listed additions must not be described as a measured
+    final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 60-60","quote":"Distilled water                                      1000.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q35","label":"Water input, source solution 4","local_fields":[],"decision":"evidence_only","rationale":"Preserve
+    the exact solvent input and stage. Only SL-10 has an explicit separate makeup
+    instruction. Main water plus listed additions must not be described as a measured
+    final volume.","source_stage":"source-only solvent","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 84-84","quote":"Distilled water                                      1000.00      ml","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[4].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q36","label":"Retained complete-medium pH","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"ph_range","stored":{"min":7.5,"max":8.0}},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"ph_range","stored":{"min":7.5,"max":8.0}}],"decision":"evidence_only","rationale":"The
+    existing 7.5–8.0 range matches the main-medium adjustment. Fe(OH)3 precipitation
+    pH 8.0–8.5 belongs to its separate process.","source_stage":"main pH","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 16-23","quote":"Dissolve ingredients (except carbonate, pyrosulfite and
+    vitamins), then sparge medium\nwith 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium\nunder same gas atmosphere into Hungate-type
+    tubes or serum vials and autoclave. Add\npyrosulfite from a 10% (w/v) stock solution
+    adjusted to pH 7.5-8.0 with NaOH, made anoxic\nwith 100% N2 gas and sterilized
+    by filtration. Vitamins are added from a stock solution\nprepared under 100% N2
+    gas atmosphere and sterilized by filtration and carbonate is\nadded from a sterile
+    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\nAdjust pH of
+    complete medium to 7.5 - 8.0. Incubate without shaking.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q37","label":"Existing preparation step 1","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium with
+    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into Hungate-type tubes or serum vials and autoclave.
+    Add pyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH,
+    made anoxic with 100% N2 gas and sterilized by filtration. Vitamins are added
+    from a stock solution prepared under 100% N2 gas atmosphere and sterilized by
+    filtration and carbonate is added from a sterile stock solution prepared under
+    80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium to 7.5 - 8.0.
+    Incubate without shaking."},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium with
+    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into Hungate-type tubes or serum vials and autoclave.
+    Add pyrosulfite from a 10% (w/v) stock solution adjusted to pH 7.5-8.0 with NaOH,
+    made anoxic with 100% N2 gas and sterilized by filtration. Vitamins are added
+    from a stock solution prepared under 100% N2 gas atmosphere and sterilized by
+    filtration and carbonate is added from a sterile stock solution prepared under
+    80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium to 7.5 - 8.0.
+    Incubate without shaking."}],"decision":"evidence_only","rationale":"Retain the
+    complete main preparation sequence, 80/20 atmosphere, sparging interval, separate
+    10% w/v pyrosulfite and vitamin filtration, carbonate stage and final pH. No separate
+    strain-growth claim is inferred.","source_stage":"main preparation","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 16-23","quote":"Dissolve ingredients (except carbonate, pyrosulfite and
+    vitamins), then sparge medium\nwith 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium\nunder same gas atmosphere into Hungate-type
+    tubes or serum vials and autoclave. Add\npyrosulfite from a 10% (w/v) stock solution
+    adjusted to pH 7.5-8.0 with NaOH, made anoxic\nwith 100% N2 gas and sterilized
+    by filtration. Vitamins are added from a stock solution\nprepared under 100% N2
+    gas atmosphere and sterilized by filtration and carbonate is\nadded from a sterile
+    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.\nAdjust pH of
+    complete medium to 7.5 - 8.0. Incubate without shaking.","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into Hungate-type tubes or serum vials
+    and autoclave. Add pyrosulfite from a 10% (w/v) stock solution adjusted to pH
+    7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration.
+    Vitamins are added from a stock solution prepared under 100% N2 gas atmosphere
+    and sterilized by filtration and carbonate is added from a sterile stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium
+    to 7.5 - 8.0. Incubate without shaking.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q38","label":"Existing preparation step 2","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml."}],"decision":"correct","rationale":"The exact
+    dissolution and 1000 mL makeup instruction is supported for SL-10, but needs an
+    explicit stock association.","source_stage":"separate stock/process preparation","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 43-44","quote":"First dissolve FeCl2 in the HCl, then dilute in water, add
+    and dissolve the other salts. Finally\nmake up to 1000.00 ml.","quote_basis":"derivative
+    text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q39","label":"Existing preparation step 3","local_fields":[{"path":"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml","field_path":"preparation_steps[2].description","stored":"Slowly
+    titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH
+    to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH
+    approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored at room temperature
+    overnight with surface covered with water. Thereafter, centrifuge at 2000 rpm
+    for 5 min and discard the supernatant. Wash several times with distilled water.
+    Resuspend the pellet in medium as described above. For storage autoclave under
+    100% N2 atmosphere."},{"path":"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml","field_path":"preparation_steps[2].description","stored":"Slowly
+    titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH
+    to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH
+    approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored at room temperature
+    overnight with surface covered with water. Thereafter, centrifuge at 2000 rpm
+    for 5 min and discard the supernatant. Wash several times with distilled water.
+    Resuspend the pellet in medium as described above. For storage autoclave under
+    100% N2 atmosphere."}],"decision":"correct","rationale":"Preserve the supported
+    precursor strength/volume, titration endpoint and approximate variable NaOH volume,
+    overnight standing, centrifugation duration/speed, washing and storage atmosphere.
+    These are precipitation-process values; discarded supernatant and resuspension
+    prevent final-solute arithmetic.","source_stage":"separate stock/process preparation","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 67-72","quote":"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution
+    (60.00 g/l) with 10% (w/v) NaOH to\npH 8.0-8.5 under agitation (use magnetic stirrer).
+    Total amount of added NaOH approx. 80\n- 100 ml. The precipitated Fe(OH)3 should
+    be stored at room temperature overnight with\nsurface covered with water. Thereafter,
+    centrifuge at 2000 rpm for 5 min and discard the\nsupernatant. Wash several times
+    with distilled water. Resuspend the pellet in medium as\ndescribed above. For
+    storage autoclave under 100% N2 atmosphere.","quote_basis":"derivative text"},{"evidence_id":"api1277b","reference":"https://mediadive.dsmz.de/rest/medium/1277b","raw_path":"REVIEW_WORK/batch057/source07-09/api1277b.raw","raw_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","text_sha256":"cb403673b2576336c3aad56d5192b80dc65d5dedccbe9c29ac664ae9e8220198","accessed_at":"2026-10-28T05:41:53.194601Z","locator":"data.solutions[3].steps[0]","quote":"{\n                        \"step\":
+    \"Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10%
+    (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount
+    of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored at
+    room temperature overnight with surface covered with water. Thereafter, centrifuge
+    at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled
+    water. Resuspend the pellet in medium as described above. For storage autoclave
+    under 100% N2 atmosphere.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"DSM110365
+    source-specific variant","local_fields":[],"decision":"evidence_only","rationale":"The
+    source restricts the printed thiosulfate replacement to DSM110365. Keep this as
+    an explicit branch; do not overwrite the base pyrosulfite formulation, invent
+    a taxonomy identifier or propagate a growth assertion to all records.","source_stage":"source-only
+    named-strain variant","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 26-27","quote":"For DSM 110365: Replace pyrosulfite with 2.5 g/l Na2S2O3
+    x 5 H2O added from an anoxic\nstock solution sterilized by filtration.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q41","label":"Unquantified main stock pH adjustment","local_fields":[],"decision":"not_quantified","rationale":"NaOH
+    used to adjust the pyrosulfite stock pH is not quantified independently. Do not
+    borrow the precipitation NaOH dose for this adjustment.","source_stage":"separate
+    pyrosulfite-stock adjustment","sources":[{"evidence_id":"dsm1277b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1277b.pdf","raw_path":"REVIEW_WORK/batch057/source07-09/dsm1277b.raw","raw_sha256":"cc799d264bc664f939fa312ef9ca45a98e162cb7173e0983414e8fd50d2edb16","text_sha256":"704f657dc00f1a0713e18528517c80fce28b46f6b7dd57a7061cbaa8d0cb0a8b","accessed_at":"2026-10-28T05:41:52.848532Z","locator":"dsm1277b.txt
+    lines 18-21","quote":"under same gas atmosphere into Hungate-type tubes or serum
+    vials and autoclave. Add\npyrosulfite from a 10% (w/v) stock solution adjusted
+    to pH 7.5-8.0 with NaOH, made anoxic\nwith 100% N2 gas and sterilized by filtration.
+    Vitamins are added from a stock solution\nprepared under 100% N2 gas atmosphere
+    and sterilized by filtration and carbonate is","quote_basis":"derivative text"}]}],"document_scopes":{"data/merge_yaml/merged/CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All primary and secondary IDs/labels and current MIM exact-key rows are
+    joined. Nickel hexahydrate is a confirmed mismatch to anhydrous CHEBI:34887; CHEBI:53542
+    is independently verified. Generic calcium-pantothenate source wording does not
+    independently establish the D stereochemistry of CHEBI:31345. Explicit D-biotin
+    and thiamine hydrochloride dihydrate match their current scientific objects. No
+    provider mmol-based correction is inferred.
+  target_ids:
+  - CultureMech:000740
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: All current histories and all four selected historical reports were read.
+    October 7 retained the stock-topology conflicts unchanged, and its source digest
+    matches fresh API bytes; that authenticates content separately from the old access
+    timestamp. There are no current attached quantity claims. Current importer and
+    duplicate cleanup have stage-preserving/no-sum behavior, while conservative merge
+    identity does not certify the inherited science.
+  target_ids:
+  - CultureMech:000740
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-000740-flattened-stock-processes
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Four stock and suspension stages are flattened into main ingredients
+  description: The source has SL-10, selenite-tungstate, amorphous Fe(OH)3 suspension
+    and seven vitamins with distinct receiving doses. Restore those boundaries and
+    solvent inputs, preserving the existing main preparation. The current primary-only
+    importer already separates referenced stocks; source-stage reconciliation is needed
+    for this older encoded formulation.
+  target_ids:
+  - CultureMech:000740
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[1]
+  - preparation_steps[2]
+  evidence_ids:
+  - dsm1277b
+  - api1277b
+  - writer-mediadive
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-000740-ferric-precursor-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Ferric precursor volume is encoded as a solute concentration
+  description: The local 320 G_PER_L describes a source 320 mL addition of 60 g/L
+    FeCl3·6H2O solution. Correct the dimensions and attach the reagent to the amorphous
+    Fe(OH)3 preparation. Because the source washes the precipitate and discards supernatant,
+    neither the precursor nor NaOH becomes a directly calculable retained main-medium
+    concentration.
+  target_ids:
+  - CultureMech:000740
+  field_paths:
+  - ingredients[19].concentration
+  - preparation_steps[2]
+  evidence_ids:
+  - dsm1277b
+  - api1277b
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-000740-sodium-hydroxide-mixed-stage-sum
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium hydroxide sums a stock component and precipitation reagent
+  description: The local 20.5 g/L and merge note combine the selenite stock 0.5 g/L
+    with the provider precipitation-input 20 g/L. Separate the stock component, adjustable
+    precipitation reagent and unquantified pyrosulfite-stock pH adjustment. Current
+    cleanup no longer sums unequal duplicate values; do not rerun it as scientific
+    reconciliation.
+  target_ids:
+  - CultureMech:000740
+  field_paths:
+  - ingredients[16].concentration
+  - ingredients[16].notes
+  evidence_ids:
+  - dsm1277b
+  - api1277b
+  - writer-cleanup
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-000740-nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source nickel hexahydrate has an anhydrous identifier
+  description: The primary and local name specify NiCl2·6H2O, while primary and secondary
+    CHEBI:34887 describe anhydrous nickel dichloride. Fresh CHEBI:53542 confirms a
+    hexahydrate candidate. Correct the exact supplied form with authority evidence,
+    separately from stock containment and dose work.
+  target_ids:
+  - CultureMech:000740
+  field_paths:
+  - ingredients[14].term
+  - ingredients[14].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm1277b
+  - api1277b
+  - chebi34887
+  - chebi53542
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+- finding_id: f5
+  issue_key: culturemech-000740-normalization-and-specificity
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Provider normalization and generic vitamin wording remain limited
+  description: The provider main volume is 1007 mL, yet its g_l numbers equal printed
+    gram inputs rather than mass divided by 1.007 L. Preserve the declaration without
+    certifying a measured physical basis. The source says generic calcium pantothenate
+    while CHEBI:31345 encodes D stereochemistry; that finer source correspondence
+    remains unverified, unlike explicit D-biotin and thiamine hydrochloride dihydrate.
+    Keep the DSM110365 variant separate from the base recipe.
+  target_ids:
+  - CultureMech:000740
+  field_paths:
+  - ingredients
+  - references
+  - variant_modifications
+  evidence_ids:
+  - dsm1277b
+  - api1277b
+  - chebi31345
+  - chebi15956
+  - chebi132751
+  rule_id: review-yaml-record/evidence
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: The source has SL-10, selenite-tungstate, amorphous Fe(OH)3 suspension
+    and seven vitamins with distinct receiving doses. Restore those boundaries and
+    solvent inputs, preserving the existing main preparation. The current primary-only
+    importer already separates referenced stocks; source-stage reconciliation is needed
+    for this older encoded formulation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000740
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The local 320 G_PER_L describes a source 320 mL addition of 60 g/L
+    FeCl3·6H2O solution. Correct the dimensions and attach the reagent to the amorphous
+    Fe(OH)3 preparation. Because the source washes the precipitate and discards supernatant,
+    neither the precursor nor NaOH becomes a directly calculable retained main-medium
+    concentration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000740
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The local 20.5 g/L and merge note combine the selenite stock 0.5 g/L
+    with the provider precipitation-input 20 g/L. Separate the stock component, adjustable
+    precipitation reagent and unquantified pyrosulfite-stock pH adjustment. Current
+    cleanup no longer sums unequal duplicate values; do not rerun it as scientific
+    reconciliation.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000740
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: The primary and local name specify NiCl2·6H2O, while primary and secondary
+    CHEBI:34887 describe anhydrous nickel dichloride. Fresh CHEBI:53542 confirms a
+    hexahydrate candidate. Correct the exact supplied form with authority evidence,
+    separately from stock containment and dose work.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000740
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: The provider main volume is 1007 mL, yet its g_l numbers equal printed
+    gram inputs rather than mass divided by 1.007 L. Preserve the declaration without
+    certifying a measured physical basis. The source says generic calcium pantothenate
+    while CHEBI:31345 encodes D stereochemistry; that finer source correspondence
+    remains unverified, unlike explicit D-biotin and thiamine hydrochloride dihydrate.
+    Keep the DSM110365 variant separate from the base recipe.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000740
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldimicrobium_thiodismutans_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Current canonical checks validate encoded structure/labels; zero reference checks
+  do not verify external source claims.
+- All primary PDF pages were read visually as well as in their complete extracted
+  text. Current source status, retrieval times and complete raw/text bytes remain
+  in the capture catalog.
+- The API precipitation solution volume 400 mL is provider metadata, not a retained
+  washed-suspension volume or measured main-medium denominator.
+- The primary HCl 25% has no explicit percent basis/density. Provider cobalt/nickel
+  mmol values are not used to override named hexahydrates.
+- No source variant is propagated automatically and no inferred taxon is added.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```

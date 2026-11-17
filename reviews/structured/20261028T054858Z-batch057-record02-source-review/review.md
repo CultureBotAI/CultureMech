@@ -1,0 +1,2621 @@
+# Calderihabitans: retain the explicit1002mL basis and restore stock scope
+
+- Review: 20261028T054858Z-batch057-record02-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T05:42:16.518958Z
+- Finished UTC: 2026-10-28T05:48:58.158124Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The primary source explicitly supports the1002mL final-medium basis and the rounded main rates. SL-4 and10x vitamins remain flattened at stock strength; supplied-form and legacy-link issues are independent of that valid main denominator. Existing main process and pH are credited.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch057 native selection index 02.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000978 | data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml | generated | calderihabitans_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000978 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:000978 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:000978 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:000978 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact source and contributor boundaries
+
+identity: supported. Targets: CultureMech:000978.
+
+The exact DSMZ1508 PDF title, API accession and local source identifiers correspond. All declared maintained contributors were read completely; source-duplicate links are record-identity context, not permission to equate different preparation content. Same-genus and similarly named neighboring media are outside this review.
+
+### Unchanged classification and growth assertions
+
+scope: supported. Targets: CultureMech:000978.
+
+COMPLEX/UNDEFINED/LIQUID and bacterial filing are consistent with the source formulation and undefined extract and sea salt. The generic Microbial cultivation application is not strain-level growth evidence. No target organism, temperature optimum or strain-specific growth is inferred from the medium name.
+
+### Positive current and historical source support
+
+evidence: supported. Targets: CultureMech:000978.
+
+All primary main/stock rows and provider g_l assertions were read. Current API raw bytes exactly match the cited October report digest and every quoted JSON object; that establishes byte correspondence without proving the earlier access timestamp or accepting its blanket conflict labels. September per-final-liter stock-dose claims are not copied when the current primary source only supplies batch doses.
+
+### Current writer credit and historical limits
+
+provenance: supported. Targets: CultureMech:000978.
+
+Current MediaDive composition and stock parsers avoid flattening later solutions into direct ingredients. Current cleanup does not sum concentrations, and the merger requires formulation compatibility. Those safeguards are credited. Preparation extraction still flattens solution prose into root steps; none of these current functions proves which historical executable produced an old artifact.
+
+### Supplied-form and current catalog precision
+
+grounding: supported. Targets: CultureMech:000978.
+
+Every primary and secondary identifier is inventoried against its current exact OLS object and preferred-term CSV rows, preserving MAPPED and REJECTED statuses. Most source-explicit salts/hydrates agree; the two specific mismatches are findings. Calcium D-(+)-pantothenate is explicitly source-specified and the current31345 object has corresponding D-calcium synonyms. Generic vitaminB12 and DL-lipoic-acid names are not narrowed to an unsupported vitamer or enantiomer. Na2-EDTA specifies the disodium salt but no hydration state; CHEBI:64734 is therefore not called the wrong salt, while its anhydrous specificity remains unverified. No mass-to-molar conversion uses it.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:000978.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "Sea Salt at local direct ingredient index 0", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Sea Salt\",\n                        \"compound_id\": 423,\n                        \"attribute\": \"SIGMA, must not show signs of caking\",\n                        \"amount\": 21,\n                        \"unit\": \"g\",\n                        \"g_l\": 20.9581,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Sea Salt", "compound_id": 423, "attribute": "SIGMA, must not show signs of caking", "amount": 21, "unit": "g", "g_l": 20.9581, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "20.9581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "20.9581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q2", "topic": "K2HPO4 at local direct ingredient index 1", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0998004,\n                        \"mmol_l\": 0.572986,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "K2HPO4", "compound_id": 10, "amount": 0.1, "unit": "g", "g_l": 0.0998004, "mmol_l": 0.572986, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.0998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.0998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q3", "topic": "NH4Cl at local direct ingredient index 2", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0998004,\n                        \"mmol_l\": 1.86578,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "NH4Cl", "compound_id": 42, "amount": 0.1, "unit": "g", "g_l": 0.0998004, "mmol_l": 1.86578, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.0998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.0998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q4", "topic": "NaNO3 at local direct ingredient index 3", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0499002,\n                        \"mmol_l\": 0.587096,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "NaNO3", "compound_id": 187, "amount": 0.05, "unit": "g", "g_l": 0.0499002, "mmol_l": 0.587096, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0499002", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0499002", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q5", "topic": "Yeast extract at local direct ingredient index 4", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0499002,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "Yeast extract", "compound_id": 16, "amount": 0.05, "unit": "g", "g_l": 0.0499002, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0499002", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0499002", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q6", "topic": "Ferric citrate monohydrate at local direct ingredient index 5", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ferric citrate monohydrate\",\n                        \"compound_id\": 2378,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.00998004,\n                        \"mmol_l\": 0.0379527,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "Ferric citrate monohydrate", "compound_id": 2378, "amount": 0.01, "unit": "g", "g_l": 0.00998004, "mmol_l": 0.0379527, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.00998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.00998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q7", "topic": "Sodium resazurin at local direct ingredient index 6", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000499002, "mmol_l": 0.00198671, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates. Preserve the percent-defined stock strength and mL dose separately; the reported rate alone omits preparation context.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000499002", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates. Preserve the percent-defined stock strength and mL dose separately; the reported rate alone omits preparation context."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000499002", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates. Preserve the percent-defined stock strength and mL dose separately; the reported rate alone omits preparation context."}]}, {"quantity_id": "q8", "topic": "Na2CO3 at local direct ingredient index 7", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.49701,\n                        \"mmol_l\": 14.1243,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "Na2CO3", "compound_id": 32, "amount": 1.5, "unit": "g", "g_l": 1.49701, "mmol_l": 14.1243, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.49701", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.49701", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q9", "topic": "Na-pyruvate at local direct ingredient index 8", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na-pyruvate\",\n                        \"compound_id\": 113,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\": 9.06914,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Na-pyruvate", "compound_id": 113, "amount": 1, "unit": "g", "g_l": 0.998004, "mmol_l": 9.06914, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q10", "topic": "Na2S2O3 x 5 H2O at local direct ingredient index 9", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\": 65,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\": 4.02119,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound": "Na2S2O3 x 5 H2O", "compound_id": 65, "amount": 1, "unit": "g", "g_l": 0.998004, "mmol_l": 4.02119, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.998004", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q11", "topic": "Na2S x 9 H2O at local direct ingredient index 10", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\": 1.0388,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 13, "compound": "Na2S x 9 H2O", "compound_id": 54, "amount": 0.25, "unit": "g", "g_l": 0.249501, "mmol_l": 1.0388, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.249501", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.249501", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution row explicitly reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id": "q12", "topic": "Na2-EDTA at local direct ingredient index 11", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2-EDTA\",\n                        \"compound_id\": 34,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 1.48718,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Na2-EDTA", "compound_id": 34, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 1.48718, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q13", "topic": "FeSO4 x 7 H2O at local direct ingredient index 12", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.719386,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.2, "unit": "g", "g_l": 0.2, "mmol_l": 0.719386, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q14", "topic": "ZnSO4 x 7 H2O at local direct ingredient index 13", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.347752, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q15", "topic": "MnCl2 x 4 H2O at local direct ingredient index 14", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.151588,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "MnCl2 x 4 H2O", "compound_id": 36, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.151588, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q16", "topic": "H3BO3 at local direct ingredient index 15", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 4.85123,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "H3BO3", "compound_id": 37, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 4.85123, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.3", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.3", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q17", "topic": "CoCl2 x 6 H2O at local direct ingredient index 16", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "CoCl2 x 6 H2O", "compound_id": 38, "amount": 0.2, "unit": "g", "g_l": 0.2, "mmol_l": 1.54037, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q18", "topic": "CuCl2 x 2 H2O at local direct ingredient index 17", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0586569,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "CuCl2 x 2 H2O", "compound_id": 39, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0586569, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.01", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.01", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q19", "topic": "NiCl2 x 6 H2O at local direct ingredient index 18", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.154322, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q20", "topic": "Na2MoO4 x 2 H2O at local direct ingredient index 19", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.123993,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.123993, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q21", "topic": "Biotin at local direct ingredient index 20", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q22", "topic": "Folic acid at local direct ingredient index 21", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q23", "topic": "Pyridoxine hydrochloride at local direct ingredient index 22", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q24", "topic": "Thiamine HCl at local direct ingredient index 23", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q25", "topic": "Riboflavin at local direct ingredient index 24", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[4]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q26", "topic": "Nicotinic acid at local direct ingredient index 25", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[5]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q27", "topic": "Calcium D-(+)-pantothenate at local direct ingredient index 26", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[6]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q28", "topic": "Vitamin B12 at local direct ingredient index 27", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l": 0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q29", "topic": "p-Aminobenzoic acid at local direct ingredient index 28", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[8]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q30", "topic": "(DL)-alpha-Lipoic acid at local direct ingredient index 29", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[9]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees exactly with the provider g_l for Wolin's vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium rate. Move the source-specific component into its stock representation and preserve the separately reported receiving dose. The PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id": "q31", "topic": "Main sol. 1508 / Trace element solution SL-4", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace element solution SL-4\",\n                        \"solution_id\": 20,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "solution": "Trace element solution SL-4", "solution_id": 20, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "The source supplies 1mL of Trace element solution SL-4 at the receiving-medium batch stage. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The source supplies 1mL of Trace element solution SL-4 at the receiving-medium batch stage. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The source supplies 1mL of Trace element solution SL-4 at the receiving-medium batch stage. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "missing": true}]}, {"quantity_id": "q32", "topic": "Main sol. 1508 / Sodium resazurin", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000499002, "mmol_l": 0.00198671, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "The source supplies 0.5mL of Sodium resazurin at the receiving-medium batch stage with attribute 0.1% w/v. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The source supplies 0.5mL of Sodium resazurin at the receiving-medium batch stage with attribute 0.1% w/v. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The source supplies 0.5mL of Sodium resazurin at the receiving-medium batch stage with attribute 0.1% w/v. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "missing": true}]}, {"quantity_id": "q33", "topic": "Main sol. 1508 / Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 12, "solution": "Wolin's vitamin solution (10x)", "solution_id": 5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "The source supplies 1mL of Wolin's vitamin solution (10x) at the receiving-medium batch stage. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The source supplies 1mL of Wolin's vitamin solution (10x) at the receiving-medium batch stage. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "The source supplies 1mL of Wolin's vitamin solution (10x) at the receiving-medium batch stage. Create the missing solution descriptor and retain this literal dose and source-stage basis in root evidence. Do not label the unchanged mL amount as mL/L without the final-medium denominator; do not double-count the stock and its expanded components.", "missing": true}]}, {"quantity_id": "q34", "topic": "Main sol. 1508 / Distilled water", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[13]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 14, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Retain this exact 1000mL water input for Main sol. 1508 in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. The main PDF separately declares final1002mL.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL water input for Main sol. 1508 in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. The main PDF separately declares final1002mL."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL water input for Main sol. 1508 in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. The main PDF separately declares final1002mL."}]}, {"quantity_id": "q35", "topic": "Trace element solution SL-4 / Distilled water", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Retain this exact 1000mL water input for Trace element solution SL-4 in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. No independent final-volume conversion is made from this row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL water input for Trace element solution SL-4 in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. No independent final-volume conversion is made from this row."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL water input for Trace element solution SL-4 in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. No independent final-volume conversion is made from this row."}]}, {"quantity_id": "q36", "topic": "Wolin's vitamin solution (10x) / Distilled water", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[2].recipe[10]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Retain this exact 1000mL water input for Wolin's vitamin solution (10x) in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. No independent final-volume conversion is made from this row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL water input for Wolin's vitamin solution (10x) in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. No independent final-volume conversion is made from this row."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL water input for Wolin's vitamin solution (10x) in stage-specific preparation or root evidence. It is not a direct solute ingredient or automatically a final-volume makeup. No independent final-volume conversion is made from this row."}]}, {"quantity_id": "q37", "topic": "Main sol. 1508 preparation context", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"step\": \"Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "Read and retain the entire Main sol. 1508 step, including all pH, gas fractions, duration, liquid/normality/filter-pore values where present. Existing matching descriptions are credited; missing descriptions need source-scoped addition. An action enum does not fully encode the multi-operation paragraph.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary.", "decision": "evidence_only", "rationale": "The complete numeric and procedural text matches this source solution step. Retain its contents, but explicitly scope it to Main sol. 1508 rather than treating all stock steps as a sequence on the final medium."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary.", "decision": "evidence_only", "rationale": "The complete numeric and procedural text matches this source solution step. Retain its contents, but explicitly scope it to Main sol. 1508 rather than treating all stock steps as a sequence on the final medium."}]}, {"quantity_id": "q38", "topic": "Trace element solution SL-4 preparation context", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"step\": \"First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.\"\n                    }", "exact_decoded_object": {"step": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "Read and retain the entire Trace element solution SL-4 step, including all pH, gas fractions, duration, liquid/normality/filter-pore values where present. Existing matching descriptions are credited; missing descriptions need source-scoped addition. An action enum does not fully encode the multi-operation paragraph.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "preparation_steps[1].description", "stored_value": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.", "decision": "evidence_only", "rationale": "The complete numeric and procedural text matches this source solution step. Retain its contents, but explicitly scope it to Trace element solution SL-4 rather than treating all stock steps as a sequence on the final medium."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps[1].description", "stored_value": "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.", "decision": "evidence_only", "rationale": "The complete numeric and procedural text matches this source solution step. Retain its contents, but explicitly scope it to Trace element solution SL-4 rather than treating all stock steps as a sequence on the final medium."}]}, {"quantity_id": "q39", "topic": "Main-medium pH", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.medium", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n            \"id\": 1508,\n            \"name\": \"CALDERIHABITANS MEDIUM\",\n            \"complex_medium\": \"yes\",\n            \"min_pH\": 7.3,\n            \"max_pH\": 7.5,\n            \"source\": \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf\"\n        }", "exact_decoded_object": {"id": 1508, "name": "CALDERIHABITANS MEDIUM", "complex_medium": "yes", "min_pH": 7.3, "max_pH": 7.5, "source": "DSMZ", "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf"}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The stored ph_range matches the exact main-medium pH reported by the PDF and API. This is distinct from the mineral-stock pH adjustment; source titration amounts are not quantified.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ph_range", "stored_value": {"min": 7.3, "max": 7.5}, "decision": "evidence_only", "rationale": "The stored ph_range matches the exact main-medium pH reported by the PDF and API. This is distinct from the mineral-stock pH adjustment; source titration amounts are not quantified."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ph_range", "stored_value": {"min": 7.3, "max": 7.5}, "decision": "evidence_only", "rationale": "The stored ph_range matches the exact main-medium pH reported by the PDF and API. This is distinct from the mineral-stock pH adjustment; source titration amounts are not quantified."}]}, {"quantity_id": "q40", "topic": "Unquantified late-stock and sterilization details", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"step\": \"Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "not_quantified", "rationale": "The source specifies sterile late stock additions and stage-specific gases/filtration but does not supply fixed concentrations and addition volumes for every late solute stock, titrant amounts, or a numeric autoclave temperature/duration. Preserve these limits; do not infer common settings or concentrations.", "layer_assessments": []}, {"quantity_id": "q41", "topic": "Explicit final main-medium volume", "source": {"evidence_id": "dsm1508", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf", "raw_path": "REVIEW_WORK/batch057/source01-03/dsm1508.bin", "raw_sha256": "e1aed66201d15c38032459882f6e55e809b7b1448cc8bbd16169338a2ed097f1", "locator": "Page1 final-volume heading", "accessed_at": "2026-10-28T05:42:27.338646Z", "quote": "Final volume: 1002 ml"}, "decision": "add", "rationale": "The primary source explicitly declares final volume1002mL. This separately supports the main-medium denominator and must not be replaced by its1000mL water-input row or stock water volumes.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "notes", "stored_value": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf", "decision": "add", "rationale": "The primary source explicitly declares final volume1002mL. This separately supports the main-medium denominator and must not be replaced by its1000mL water-input row or stock water volumes."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "notes", "stored_value": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf", "decision": "add", "rationale": "The primary source explicitly declares final volume1002mL. This separately supports the main-medium denominator and must not be replaced by its1000mL water-input row or stock water volumes."}]}, {"quantity_id": "q42", "topic": "Sea salt source quality condition", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Sea Salt\",\n                        \"compound_id\": 423,\n                        \"attribute\": \"SIGMA, must not show signs of caking\",\n                        \"amount\": 21,\n                        \"unit\": \"g\",\n                        \"g_l\": 20.9581,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Sea Salt", "compound_id": 423, "attribute": "SIGMA, must not show signs of caking", "amount": 21, "unit": "g", "g_l": 20.9581, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "The exact sea-salt attribute says must not show signs of caking. Preserve the supplier/quality condition literally; it does not assert absence of anticaking additives.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[0].notes", "stored_value": null, "decision": "add", "rationale": "The exact sea-salt attribute says must not show signs of caking. Preserve the supplier/quality condition literally; it does not assert absence of anticaking additives.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[0].notes", "stored_value": null, "decision": "add", "rationale": "The exact sea-salt attribute says must not show signs of caking. Preserve the supplier/quality condition literally; it does not assert absence of anticaking additives.", "missing": true}]}]
+
+### Current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:000978.
+
+The grounding inventory enumerates every asserted identifier and exact preferred label. Exact identifier rows and ontology-linked rows are recorded separately, including mapping_status. Present catalog membership does not validate supplied hydrate form or historical identity; specific limits are assessed separately.
+
+### History and evidence scope
+
+provenance: supported. Targets: CultureMech:000978.
+
+Complete owner and target histories were read. Current source bytes and inspected code are independent evidence; historical timestamps remain historical claims unless an exact cited raw digest is recovered.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:000978.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:000978.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Mineral and vitamin stocks are flattened into direct ingredients
+
+major / open / confirmed; issue key: culturemech-000978-mineral-and-vitamin-stocks-are-flattened-into-direct-ingredients.
+
+The exact source defines Trace element solution SL-4 and Wolin's vitamin solution (10x) as separate stock formulations with separate receiving mL doses. The selected target and maintained contributors place the stock components directly under ingredients at their stock g/L values and have no solutions descriptors. This is a stage error even where the stock numbers themselves match the provider. Preserve the source stock recipes and receiving doses; do not dilute or sum them by an assumed final liter.
+
+### f2: Nickel hydrate and sodium indicator forms are not represented by their identifiers
+
+major / open / confirmed; issue key: culturemech-000978-nickel-hydrate-and-sodium-indicator-forms-are-not-represented-by-their-identifiers.
+
+NiCl2 x6H2O is assigned CHEBI:34887, whose current OLS object describes NiCl2 without the six waters. Sodium resazurin uses primary CHEBI:8806 Resazurin, which does not establish the sodium-salt form. The secondary nickel link repeats the mismatch; the resazurin node has no secondary slot to accuse. Current catalog membership and canonical label agreement do not cure supplied-form mismatch. Verify an exact supplied-form mapping or retain the precise source name with an explicit unresolved mapping; no replacement identifier is guessed.
+
+### f3: Sodium nitrate retains a legacy ingredient-catalog identifier
+
+minor / open / confirmed; issue key: culturemech-000978-sodium-nitrate-retains-a-legacy-ingredient-catalog-identifier.
+
+ingredients[3].term correctly identifies sodium nitrate as CHEBI:63005. Its separate MediaIngredientMech:000171 slot has label NaNO3 but has no exact current packaged catalog row. That is a current legacy-link resolution gap, not evidence that the identifier was historically invalid or that the nitrate chemistry is wrong.
+
+### f4: Preparation lacks explicit stock scope and source quality context
+
+minor / open / confirmed; issue key: culturemech-000978-preparation-lacks-explicit-stock-scope-and-source-quality-context.
+
+The existing main preparation paragraph and pH range agree with the source and are retained. The second root paragraph is the SL-4 procedure, including pH7.0 with2NNaOH, not a second main-medium step. Source stock additions,1000mL water input, declared1002mL final volume and sea-salt no-caking condition lack explicit structured scope and claim evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Curate the maintained contributors to represent each mineral/vitamin stock and its receiving dose separately. Preserve source-specific stock g/L claims and PDF batch amounts with exact evidence. Remove their false direct-medium placement, then regenerate; do not double-count stock expansions or invent a working concentration.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+NiCl2 x6H2O is assigned CHEBI:34887, whose current OLS object describes NiCl2 without the six waters. Sodium resazurin uses primary CHEBI:8806 Resazurin, which does not establish the sodium-salt form. The secondary nickel link repeats the mismatch; the resazurin node has no secondary slot to accuse. Current catalog membership and canonical label agreement do not cure supplied-form mismatch. Verify an exact supplied-form mapping or retain the precise source name with an explicit unresolved mapping; no replacement identifier is guessed.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+ingredients[3].term correctly identifies sodium nitrate as CHEBI:63005. Its separate MediaIngredientMech:000171 slot has label NaNO3 but has no exact current packaged catalog row. That is a current legacy-link resolution gap, not evidence that the identifier was historically invalid or that the nitrate chemistry is wrong.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Credit existing main process/pH text. Attribute the EDTA procedure to SL-4 and preserve the declared main final volume and literal sea-salt condition. Use root evidence with exact field/stage locators for preparation and solution claims; do not invent nested evidence slots.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/calderihabitans_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| dsm1508 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf; Pages1–2, exact numbered medium; main table and separately headed mineral/vitamin subsections | supports | Both complete PDF pages and rendered page images were read. Exact named formulation, all main and stock rows, source-specific chemical forms, water inputs and preparation stages are retained. No neighboring medium is substituted. |
+| api1508 | https://mediadive.dsmz.de/rest/medium/1508; $.data.medium and $.data.solutions[0..2] including recipe/steps/volume | supports | Full current official API medium object, every ordered solution recipe and preparation object were read. Explicit g_l reports retain their named stage. PDF water inputs and provider volume metadata are assessed independently. The raw digest also matches the exact October historical report response. |
+| identity-search | REVIEW_WORK/batch057/record02/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _parse_api_solutions, _parse_preparation_steps | context_only | Current composition parser restricts ingredients to the primary solution, excludes solvent and recognized stock additions, and retains explicit g_l. The solution parser preserves referenced or percent-defined stocks and source attributes. Preparation parsing still concatenates all solution steps into root preparation_steps; source-stage annotation remains important. These present functions do not prove the historical execution that produced this record. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group copies a sole contributor with merge metadata. For multiple contributors it passes records to merge_formulation_evidence, which checks compatibility; it does not authorize merging different preparation assertions. |
+| writer-formulation | src/culturemech/merge/formulation.py; formulation_content, merge_formulation_evidence | context_only | Current compatibility preserves scientific fields and list order and rejects unequal formulations; only specified provenance/evidence lists are unioned. It performs no concentration conversion or stock expansion and does not authenticate historical merges. |
+| writer-cleanup | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients, merge_ingredient_group | context_only | Current cleanup groups identical normalized names, keeps the first entry as a base, flags differing concentrations and combines a warning note; it does not sum concentrations. It can still discard distinctions when names repeat, so source stage must be retained. The current code is not proof of the earlier summed value. |
+| historical-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/calderihabitans_medium.yaml.md; Entire exact Record-header report, every claim row and narrative | context_only | Current independently captured API response has exactly the cited historical raw SHA256; all 37 literal JSON snippets and locators match. This authenticates those response bytes, not the historical access time or recommendations. |
+| historical-2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDERIHABITANS_MEDIUM.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calderihabitans_medium.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-4 | reports/yaml_record_review/20260922T015725Z-CALDERIHABITANS_MEDIUM.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-reader | REVIEW_WORK/batch057/record02/historical-reader.json | context_only | All exact target/owner historical report texts and current raw/literal/locator joins; historical recommendations remain subject to current stage and volume evidence. |
+| source-rows | REVIEW_WORK/batch057/record02/source-row-inventory.json | context_only | Every source main/stock recipe row, including omitted solvents and stock doses, with literal raw object, exact locator and named stage. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131527; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31206; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi144434 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_144434; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_50144; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32150 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32150; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_64734; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75836; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32312; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_34887; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch057/record02/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch057/record02/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch057/record02/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch057/record02/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch057/record02/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch057/record02/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch057/record02/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch057/record02/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch057/record02/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- No organism-specific growth or missing sterilization settings are inferred. The review addresses the exact source formulation and maintained contributors; neighboring or parent medium recipes are not transferred wholesale.
+- Current OLS and the pinned packaged MIM catalog describe current identifier correspondence, not historical mapping validity. No molecular-weight, density or mmol/L conversion was used.
+- Historical report raw-digest matches authenticate the current matching API response bytes and exact snippets, not the recorded old access events, old executables, or all historical scientific conclusions.
+- No fixed late-stock concentration or addition volume is invented where the source provides only a sterile-addition instruction. Exact source batches and explicitly reported source-stage g/L values remain distinct.
+- The Na2-EDTA source does not specify hydration. The explicit1002mL final-medium volume does not establish a final-volume basis for the two separate stock PDFs; stock g/L values are credited as explicit provider reports.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T054858Z-batch057-record02-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Calderihabitans: retain the explicit1002mL basis and restore stock scope'
+started_at: '2026-10-28T05:42:16.518958Z'
+finished_at: '2026-10-28T05:48:58.158124Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The primary source explicitly supports the1002mL final-medium basis and the
+  rounded main rates. SL-4 and10x vitamins remain flattened at stock strength; supplied-form
+  and legacy-link issues are independent of that valid main denominator. Existing
+  main process and pH are credited.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+    sha256: 85cae435f0c929000d3921fd4219e2d7f92581b51cd8b2ab2cc04e2d962a3222
+    role: target
+  - path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    sha256: d8491331585739eb296871ac02bc4b4d82053596b9d8257ef84e0f10521ea523
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/calderihabitans_medium.yaml.md
+    sha256: 200783e47a27bbcd2ba0616f95be89a7bf95e0253c4e709625845891fe7cbb0b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDERIHABITANS_MEDIUM.md
+    sha256: bd3655503960ebf5e699bda26ef789a6a73fbc8857c2ee453d2e6f3527530fef
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calderihabitans_medium.md
+    sha256: 9ff36f09078a48f806f19b47944d7562071ffe072eb3998bf3c623dc6b9597ba
+    role: context
+  - path: reports/yaml_record_review/20260922T015725Z-CALDERIHABITANS_MEDIUM.md
+    sha256: 017859e58de0b9802eeca811361d081e133ebe7e4a65adb000f4a17d1c44ba54
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch057 native selection index 02.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000978
+targets:
+- target_id: CultureMech:000978
+  path: data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+  label: calderihabitans_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:000978
+  command: just validate-schema data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:000978
+  command: just validate-strict data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+    --out REVIEW_WORK/batch057/record02/strict.tsv --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:000978
+  command: just validate-terms data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:000978
+  command: just validate-references data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: 85cae435f0c929000d3921fd4219e2d7f92581b51cd8b2ab2cc04e2d962a3222
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: d8491331585739eb296871ac02bc4b4d82053596b9d8257ef84e0f10521ea523
+- evidence_id: dsm1508
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf
+  locator: Pages1–2, exact numbered medium; main table and separately headed mineral/vitamin
+    subsections
+  accessed_at: '2026-10-28T05:42:27.338646Z'
+  support: supports
+  summary: Both complete PDF pages and rendered page images were read. Exact named
+    formulation, all main and stock rows, source-specific chemical forms, water inputs
+    and preparation stages are retained. No neighboring medium is substituted.
+  snapshot_sha256: e1aed66201d15c38032459882f6e55e809b7b1448cc8bbd16169338a2ed097f1
+- evidence_id: api1508
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1508
+  locator: $.data.medium and $.data.solutions[0..2] including recipe/steps/volume
+  accessed_at: '2026-10-28T05:42:27.175790Z'
+  support: supports
+  summary: Full current official API medium object, every ordered solution recipe
+    and preparation object were read. Explicit g_l reports retain their named stage.
+    PDF water inputs and provider volume metadata are assessed independently. The
+    raw digest also matches the exact October historical report response.
+  snapshot_sha256: 66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch057/record02/identity-search.json
+  accessed_at: '2026-10-28T05:48:58.108159Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems resolved uniquely. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: b121bd48b44f38b6b6a9050c908fa5c07389616024ac5d74556b93483828df16
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. The current code is not proof of the earlier summed
+    value.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/calderihabitans_medium.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 37 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: 200783e47a27bbcd2ba0616f95be89a7bf95e0253c4e709625845891fe7cbb0b
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDERIHABITANS_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: bd3655503960ebf5e699bda26ef789a6a73fbc8857c2ee453d2e6f3527530fef
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calderihabitans_medium.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 9ff36f09078a48f806f19b47944d7562071ffe072eb3998bf3c623dc6b9597ba
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T015725Z-CALDERIHABITANS_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T05:48:58.056180Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 017859e58de0b9802eeca811361d081e133ebe7e4a65adb000f4a17d1c44ba54
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record02/historical-reader.json
+  accessed_at: '2026-10-28T05:48:58.110819Z'
+  support: context_only
+  summary: All exact target/owner historical report texts and current raw/literal/locator
+    joins; historical recommendations remain subject to current stage and volume evidence.
+  snapshot_sha256: 07c2c21efa161eb589ec806d6d8d4494592427e9a6b7b4ab8a169886c1c42b36
+- evidence_id: source-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record02/source-row-inventory.json
+  accessed_at: '2026-10-28T05:48:58.115134Z'
+  support: context_only
+  summary: Every source main/stock recipe row, including omitted solvents and stock
+    doses, with literal raw object, exact locator and named stage.
+  snapshot_sha256: c0d7dee3eeb17e21db195ba64f0eaf3821b607f2d680736a2d827fadc687097c
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131527
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:28.213650Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 97e9c2b05f3937c5beeebb4e6338aa6730f9e422ee0e7570a6c622dda8d97a86
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31206
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:30.448057Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: c70055293606f21dcdfb72325a4677661b51efb723ba9357efab43f8ec9b03f7
+- evidence_id: chebi63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:32.897132Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 989f7dba2ab0bc556056f2d79a2f53fae9ce391393fc7ba373cbfe5afc25ae03
+- evidence_id: chebi144434
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_144434
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:28.469357Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 6856199dbe81b8f72a99e40316256a57a0617abb0cbba6a3f51a6ac34df3d510
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:34.891969Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: ceb05e9dd7fba3802d28b34c50bbb604ded87951e4ea3a812739824a84648d72
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:29.938655Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dee64859233d0b0898eba91901a001f1faaa5eaab37f7beb7e98318ab8c19569
+- evidence_id: chebi50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_50144
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:32.403151Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5cbd7ac1ce425bbe4d80bc9e815f0bf02693123023342deddf3bb962108bfd10
+- evidence_id: chebi32150
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32150
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:31.203454Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 3d6c95b6655ca82a6e2cab20f06d798b008e7799f09f00e0ebcca53e81174dea
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:33.711303Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 3eece7d96d2433ff020ece90db55323d138c5c828b78198f91d26b3eafa91f9f
+- evidence_id: chebi64734
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_64734
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:33.128742Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 169db4b78f8f464430da6982919f8d425063268fbd374b9e7653a8d7aed041d9
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75836
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:33.708758Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: e12b865122aab78645385260e1e83ff28f3c45365cb67c9181166628f68974b3
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32312
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:31.218452Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 6bf1390236046f1cb7b21e2fc324fccba6e6eac2bc4e519f12d998f0edce671b
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:34.806488Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2bb4588e6734285b5536bdac78701f9800fdb8d17236d12cf5a1c30490f1614d
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:31.313739Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f23e1405347fa9d8a0826d4dd1279b7cdec8361390d20e439154dcbbd386a2d4
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:32.434991Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 31dc996638b0cc1341ed24fcb38ec344af726c99d376ac94e952210fcb9ed583
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:34.298022Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 8ba4e0a242571ae9a62ca7ba5c0f4af765962a02f5119a96d47dda9df7c9d593
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_34887
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:31.662896Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: a43b8268f70ae50c4cfbc53e12bbd195618c521619cfab8f71d3704b338af95b
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:33.627010Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0271a149a298ff837ad8f690ce8cb0acf111f5d25c5efaf6fa828401ab951d56
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:28.752945Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0d2e75e0bd98dbffff14d85a41dfd0af8aae2a8d65a945d34a4126a17091c2b8
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:29.839559Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dcee85bb585d3a73341ab66eff772dc6361330b3c899c4daecbda49d5e84e590
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:30.111150Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 491af523ba70d13857fcb828561d0556e46382fa0591011a06693d7db24ad91f
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:31.828852Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fc6b8e9d8657914ed8fd568c69d8a5b2cf41b26767bd6361a5e2d258883be97d
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:29.185641Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f8bec809c7ba5a36faea58b8fe1b5110f0d75dbd4ac1929a121cd352bce63309
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:28.778119Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2890ef915cd546e70c1e638af285a3cc19b8299ae7722d00b43a40170a57ab8a
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:30.610996Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: d2a04309eb6976fd395f9684ec4c3f5192362e2b6b75464b0af128a28e188d25
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:29.374907Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5c42e2236866d0314bc8d45947ddf9eb2fdf6364d08e802b0fb271011cbfe563
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:30.005514Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 42ea4022bd68e8fa28962bc496ca757174da7bbd18ce06b7f3d521885609a50c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:42:28.831921Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: db6824ffab0d71efc11d1e64b505ae583949e9d5837086a4b0e7b364b2933a22
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record02/quantity-inventory.json
+  accessed_at: '2026-10-28T05:48:58.157394Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 27f0c88292944391a951db8e5e5c10805b8bd7a16a9e5722b949e3715ed916e7
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record02/grounding-inventory.json
+  accessed_at: '2026-10-28T05:48:58.157480Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: e035dc3e38ec44538920c7c88809d0e56cb1fc3b47239b3d8d0d542a7000c8e7
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record02/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T05:48:58.157621Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: fbed25c40281bbbd86380d53ed460ff5242c471b708366f09a661ce352a82856
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record02/scalar-census.json
+  accessed_at: '2026-10-28T05:48:58.157644Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: a0b6986824e54487f255e2b5f50fdc37a4274f2a60991c73de8e4a8a839b2abc
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch057/record02/validate-schema.json
+  accessed_at: '2026-10-28T05:42:17.606169Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: d770d850d498cc09df8e6346024208352857a799aa2fef679adad6dd0837b2c1
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch057/record02/validate-strict.json
+  accessed_at: '2026-10-28T05:42:18.587640Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch057/record02/strict.tsv\n"
+  snapshot_sha256: 3f4c80f3e016af94f5ddf205538faab620b71e1a25005be0142ea48f4e326359
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch057/record02/validate-terms.json
+  accessed_at: '2026-10-28T05:42:19.651603Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 5edb97ed48913e414694a81a78a98ae826350e3fcc71018454c1b05a57f18277
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch057/record02/validate-references.json
+  accessed_at: '2026-10-28T05:42:20.421388Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: cfdae5e4ea3835547ad20d6e1b16436385427bdbb0cd27f4ea92847683ed9a96
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact source and contributor boundaries
+  outcome: supported
+  summary: The exact DSMZ1508 PDF title, API accession and local source identifiers
+    correspond. All declared maintained contributors were read completely; source-duplicate
+    links are record-identity context, not permission to equate different preparation
+    content. Same-genus and similarly named neighboring media are outside this review.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - identity-search
+  - dsm1508
+  - api1508
+  - local-target
+- assessment_id: a2
+  area: scope
+  topic: Unchanged classification and growth assertions
+  outcome: supported
+  summary: COMPLEX/UNDEFINED/LIQUID and bacterial filing are consistent with the source
+    formulation and undefined extract and sea salt. The generic Microbial cultivation
+    application is not strain-level growth evidence. No target organism, temperature
+    optimum or strain-specific growth is inferred from the medium name.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - local-target
+  - dsm1508
+- assessment_id: a3
+  area: evidence
+  topic: Positive current and historical source support
+  outcome: supported
+  summary: All primary main/stock rows and provider g_l assertions were read. Current
+    API raw bytes exactly match the cited October report digest and every quoted JSON
+    object; that establishes byte correspondence without proving the earlier access
+    timestamp or accepting its blanket conflict labels. September per-final-liter
+    stock-dose claims are not copied when the current primary source only supplies
+    batch doses.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - historical-reader
+  - api1508
+  - dsm1508
+  - source-rows
+- assessment_id: a4
+  area: provenance
+  topic: Current writer credit and historical limits
+  outcome: supported
+  summary: Current MediaDive composition and stock parsers avoid flattening later
+    solutions into direct ingredients. Current cleanup does not sum concentrations,
+    and the merger requires formulation compatibility. Those safeguards are credited.
+    Preparation extraction still flattens solution prose into root steps; none of
+    these current functions proves which historical executable produced an old artifact.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - writer-mediadive
+  - writer-cleanup
+  - writer-merge
+  - writer-formulation
+- assessment_id: a5
+  area: grounding
+  topic: Supplied-form and current catalog precision
+  outcome: supported
+  summary: Every primary and secondary identifier is inventoried against its current
+    exact OLS object and preferred-term CSV rows, preserving MAPPED and REJECTED statuses.
+    Most source-explicit salts/hydrates agree; the two specific mismatches are findings.
+    Calcium D-(+)-pantothenate is explicitly source-specified and the current31345
+    object has corresponding D-calcium synonyms. Generic vitaminB12 and DL-lipoic-acid
+    names are not narrowed to an unsupported vitamer or enantiomer. Na2-EDTA specifies
+    the disodium salt but no hydration state; CHEBI:64734 is therefore not called
+    the wrong salt, while its anhydrous specificity remains unverified. No mass-to-molar
+    conversion uses it.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - grounding
+  - dsm1508
+- assessment_id: a6
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Sea Salt at local direct ingredient index
+    0", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Sea Salt\",\n                        \"compound_id\": 423,\n                        \"attribute\":
+    \"SIGMA, must not show signs of caking\",\n                        \"amount\":
+    21,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    20.9581,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 1, "compound": "Sea Salt", "compound_id": 423, "attribute": "SIGMA,
+    must not show signs of caking", "amount": 21, "unit": "g", "g_l": 20.9581, "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The exact
+    current main-solution row explicitly reports this g_l value. Retain the number
+    with scoped evidence; no mineral/vitamin stock rate is transferred into it. The
+    PDF explicitly declares final volume1002mL, consistent with the rounded main rates.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "20.9581",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[0].concentration",
+    "stored_value": {"value": "20.9581", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q2", "topic": "K2HPO4 at local
+    direct ingredient index 1", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0998004,\n                        \"mmol_l\": 0.572986,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "K2HPO4", "compound_id": 10, "amount": 0.1, "unit": "g", "g_l": 0.0998004, "mmol_l":
+    0.572986, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.0998004",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[1].concentration",
+    "stored_value": {"value": "0.0998004", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q3", "topic": "NH4Cl at local
+    direct ingredient index 2", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0998004,\n                        \"mmol_l\": 1.86578,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "NH4Cl", "compound_id": 42, "amount": 0.1, "unit": "g", "g_l": 0.0998004, "mmol_l":
+    1.86578, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.0998004",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "0.0998004", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q4", "topic": "NaNO3 at local
+    direct ingredient index 3", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\":
+    0.05,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0499002,\n                        \"mmol_l\": 0.587096,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "NaNO3", "compound_id": 187, "amount": 0.05, "unit": "g", "g_l": 0.0499002, "mmol_l":
+    0.587096, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0499002",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[3].concentration",
+    "stored_value": {"value": "0.0499002", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q5", "topic": "Yeast extract
+    at local direct ingredient index 4", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    0.05,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0499002,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 5, "compound": "Yeast extract", "compound_id": 16, "amount":
+    0.05, "unit": "g", "g_l": 0.0499002, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    "decision": "evidence_only", "rationale": "The exact current main-solution row
+    explicitly reports this g_l value. Retain the number with scoped evidence; no
+    mineral/vitamin stock rate is transferred into it. The PDF explicitly declares
+    final volume1002mL, consistent with the rounded main rates.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "0.0499002", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution
+    row explicitly reports this g_l value. Retain the number with scoped evidence;
+    no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares
+    final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0499002",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id":
+    "q6", "topic": "Ferric citrate monohydrate at local direct ingredient index 5",
+    "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Ferric citrate monohydrate\",\n                        \"compound_id\": 2378,\n                        \"amount\":
+    0.01,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.00998004,\n                        \"mmol_l\": 0.0379527,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Ferric citrate monohydrate", "compound_id": 2378, "amount": 0.01, "unit": "g",
+    "g_l": 0.00998004, "mmol_l": 0.0379527, "optional": 0}, "quote_basis": "Literal
+    UTF-8 raw-response substring; decoded object independently equals exact JSON locator."},
+    "decision": "evidence_only", "rationale": "The exact current main-solution row
+    explicitly reports this g_l value. Retain the number with scoped evidence; no
+    mineral/vitamin stock rate is transferred into it. The PDF explicitly declares
+    final volume1002mL, consistent with the rounded main rates.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "0.00998004", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution
+    row explicitly reports this g_l value. Retain the number with scoped evidence;
+    no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares
+    final volume1002mL, consistent with the rounded main rates."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.00998004",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}]}, {"quantity_id":
+    "q7", "topic": "Sodium resazurin at local direct ingredient index 6", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\":
+    0.00198671,\n                        \"optional\": 0\n                    }",
+    "exact_decoded_object": {"recipe_order": 8, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000499002,
+    "mmol_l": 0.00198671, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "evidence_only", "rationale": "The exact current main-solution row explicitly
+    reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin
+    stock rate is transferred into it. The PDF explicitly declares final volume1002mL,
+    consistent with the rounded main rates. Preserve the percent-defined stock strength
+    and mL dose separately; the reported rate alone omits preparation context.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "stored_value": {"value": "0.000499002", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current main-solution
+    row explicitly reports this g_l value. Retain the number with scoped evidence;
+    no mineral/vitamin stock rate is transferred into it. The PDF explicitly declares
+    final volume1002mL, consistent with the rounded main rates. Preserve the percent-defined
+    stock strength and mL dose separately; the reported rate alone omits preparation
+    context."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000499002",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates. Preserve
+    the percent-defined stock strength and mL dose separately; the reported rate alone
+    omits preparation context."}]}, {"quantity_id": "q8", "topic": "Na2CO3 at local
+    direct ingredient index 7", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.49701,\n                        \"mmol_l\": 14.1243,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "Na2CO3", "compound_id": 32, "amount": 1.5, "unit": "g", "g_l": 1.49701, "mmol_l":
+    14.1243, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.49701",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[7].concentration",
+    "stored_value": {"value": "1.49701", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q9", "topic": "Na-pyruvate
+    at local direct ingredient index 8", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Na-pyruvate\",\n                        \"compound_id\": 113,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.998004,\n                        \"mmol_l\": 9.06914,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "Na-pyruvate", "compound_id": 113, "amount": 1, "unit": "g", "g_l": 0.998004,
+    "mmol_l": 9.06914, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "evidence_only", "rationale": "The exact current main-solution row explicitly
+    reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin
+    stock rate is transferred into it. The PDF explicitly declares final volume1002mL,
+    consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.998004",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[8].concentration",
+    "stored_value": {"value": "0.998004", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q10", "topic": "Na2S2O3 x 5
+    H2O at local direct ingredient index 9", "source": {"evidence_id": "api1508",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Na2S2O3 x 5 H2O\",\n                        \"compound_id\": 65,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.998004,\n                        \"mmol_l\": 4.02119,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Na2S2O3 x 5 H2O", "compound_id": 65, "amount": 1, "unit": "g", "g_l": 0.998004,
+    "mmol_l": 4.02119, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "evidence_only", "rationale": "The exact current main-solution row explicitly
+    reports this g_l value. Retain the number with scoped evidence; no mineral/vitamin
+    stock rate is transferred into it. The PDF explicitly declares final volume1002mL,
+    consistent with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.998004",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[9].concentration",
+    "stored_value": {"value": "0.998004", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q11", "topic": "Na2S x 9 H2O
+    at local direct ingredient index 10", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.249501,\n                        \"mmol_l\": 1.0388,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 13, "compound":
+    "Na2S x 9 H2O", "compound_id": 54, "amount": 0.25, "unit": "g", "g_l": 0.249501,
+    "mmol_l": 1.0388, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.249501",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The exact current
+    main-solution row explicitly reports this g_l value. Retain the number with scoped
+    evidence; no mineral/vitamin stock rate is transferred into it. The PDF explicitly
+    declares final volume1002mL, consistent with the rounded main rates."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[10].concentration",
+    "stored_value": {"value": "0.249501", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The exact current main-solution row explicitly reports this g_l
+    value. Retain the number with scoped evidence; no mineral/vitamin stock rate is
+    transferred into it. The PDF explicitly declares final volume1002mL, consistent
+    with the rounded main rates."}]}, {"quantity_id": "q12", "topic": "Na2-EDTA at
+    local direct ingredient index 11", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na2-EDTA\",\n                        \"compound_id\": 34,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 1.48718,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Na2-EDTA", "compound_id": 34, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l":
+    1.48718, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Trace
+    element solution SL-4. It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[11].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Trace element solution SL-4. It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q13", "topic": "FeSO4 x 7 H2O at local direct ingredient index 12", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.2,\n                        \"mmol_l\": 0.719386,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.2, "unit": "g", "g_l": 0.2, "mmol_l":
+    0.719386, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Trace
+    element solution SL-4. It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[12].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Trace element solution SL-4. It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q14", "topic": "ZnSO4 x 7 H2O at local direct ingredient index 13", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l":
+    0.347752, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Trace
+    element solution SL-4. It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[13].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Trace element solution SL-4. It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q15", "topic": "MnCl2 x 4 H2O at local direct ingredient index 14", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\":
+    0.03,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.03,\n                        \"mmol_l\": 0.151588,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "MnCl2 x 4 H2O", "compound_id": 36, "amount": 0.03, "unit": "g", "g_l": 0.03,
+    "mmol_l": 0.151588, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct
+    receiving-medium rate. Move the source-specific component into its stock representation
+    and preserve the separately reported receiving dose. The PDF batch mass is not
+    independently converted using water-input volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[14].concentration",
+    "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Trace element solution
+    SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move
+    the source-specific component into its stock representation and preserve the separately
+    reported receiving dose. The PDF batch mass is not independently converted using
+    water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."}]},
+    {"quantity_id": "q16", "topic": "H3BO3 at local direct ingredient index 15", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.3,\n                        \"mmol_l\": 4.85123,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "H3BO3", "compound_id": 37, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l":
+    4.85123, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Trace
+    element solution SL-4. It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.3",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[15].concentration", "stored_value": {"value": "0.3", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Trace element solution SL-4. It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q17", "topic": "CoCl2 x 6 H2O at local direct ingredient index 16", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "CoCl2 x 6 H2O", "compound_id": 38, "amount": 0.2, "unit": "g", "g_l": 0.2, "mmol_l":
+    1.54037, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Trace
+    element solution SL-4. It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[16].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Trace element solution SL-4. It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q18", "topic": "CuCl2 x 2 H2O at local direct ingredient index 17", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\":
+    0.01,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.01,\n                        \"mmol_l\": 0.0586569,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "CuCl2 x 2 H2O", "compound_id": 39, "amount": 0.01, "unit": "g", "g_l": 0.01,
+    "mmol_l": 0.0586569, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct
+    receiving-medium rate. Move the source-specific component into its stock representation
+    and preserve the separately reported receiving dose. The PDF batch mass is not
+    independently converted using water-input volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[17].concentration",
+    "stored_value": {"value": "0.01", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Trace element solution
+    SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move
+    the source-specific component into its stock representation and preserve the separately
+    reported receiving dose. The PDF batch mass is not independently converted using
+    water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.01",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."}]},
+    {"quantity_id": "q19", "topic": "NiCl2 x 6 H2O at local direct ingredient index
+    18", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\":
+    0.02,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "NiCl2 x 6 H2O", "compound_id": 40, "amount": 0.02, "unit": "g", "g_l": 0.02,
+    "mmol_l": 0.154322, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct
+    receiving-medium rate. Move the source-specific component into its stock representation
+    and preserve the separately reported receiving dose. The PDF batch mass is not
+    independently converted using water-input volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[18].concentration",
+    "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Trace element solution
+    SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move
+    the source-specific component into its stock representation and preserve the separately
+    reported receiving dose. The PDF batch mass is not independently converted using
+    water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."}]},
+    {"quantity_id": "q20", "topic": "Na2MoO4 x 2 H2O at local direct ingredient index
+    19", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\":
+    0.03,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.03,\n                        \"mmol_l\": 0.123993,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 0.03, "unit": "g", "g_l": 0.03,
+    "mmol_l": 0.123993, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Trace element solution SL-4. It is a stock-composition rate, not a direct
+    receiving-medium rate. Move the source-specific component into its stock representation
+    and preserve the separately reported receiving dose. The PDF batch mass is not
+    independently converted using water-input volume.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "ingredients[19].concentration",
+    "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Trace element solution
+    SL-4. It is a stock-composition rate, not a direct receiving-medium rate. Move
+    the source-specific component into its stock representation and preserve the separately
+    reported receiving dose. The PDF batch mass is not independently converted using
+    water-input volume."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Trace element solution SL-4. It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."}]},
+    {"quantity_id": "q21", "topic": "Biotin at local direct ingredient index 20",
+    "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Wolin''s
+    vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[20].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q22", "topic": "Folic acid at local direct ingredient index 21", "source": {"evidence_id":
+    "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path":
+    "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Wolin''s
+    vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q23", "topic": "Pyridoxine hydrochloride at local direct ingredient index 22",
+    "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l":
+    0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate, not a
+    direct receiving-medium rate. Move the source-specific component into its stock
+    representation and preserve the separately reported receiving dose. The PDF batch
+    mass is not independently converted using water-input volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[22].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[22].concentration",
+    "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Wolin''s vitamin
+    solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume."}]}, {"quantity_id": "q24", "topic": "Thiamine
+    HCl at local direct ingredient index 23", "source": {"evidence_id": "api1508",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate, not a
+    direct receiving-medium rate. Move the source-specific component into its stock
+    representation and preserve the separately reported receiving dose. The PDF batch
+    mass is not independently converted using water-input volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[23].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[23].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Wolin''s vitamin
+    solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume."}]}, {"quantity_id": "q25", "topic": "Riboflavin
+    at local direct ingredient index 24", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[4]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l":
+    0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Wolin''s
+    vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q26", "topic": "Nicotinic acid at local direct ingredient index 25", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[5]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate, not a
+    direct receiving-medium rate. Move the source-specific component into its stock
+    representation and preserve the separately reported receiving dose. The PDF batch
+    mass is not independently converted using water-input volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[25].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Wolin''s vitamin
+    solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume."}]}, {"quantity_id": "q27", "topic": "Calcium
+    D-(+)-pantothenate at local direct ingredient index 26", "source": {"evidence_id":
+    "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path":
+    "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[6]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg",
+    "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[26].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Wolin''s vitamin
+    solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume."}]}, {"quantity_id": "q28", "topic": "Vitamin
+    B12 at local direct ingredient index 27", "source": {"evidence_id": "api1508",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l":
+    0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "correct",
+    "rationale": "The numerical value agrees exactly with the provider g_l for Wolin''s
+    vitamin solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The numerical value agrees
+    exactly with the provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition
+    rate, not a direct receiving-medium rate. Move the source-specific component into
+    its stock representation and preserve the separately reported receiving dose.
+    The PDF batch mass is not independently converted using water-input volume."},
+    {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path":
+    "ingredients[27].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}]}, {"quantity_id":
+    "q29", "topic": "p-Aminobenzoic acid at local direct ingredient index 28", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[8]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate, not a
+    direct receiving-medium rate. Move the source-specific component into its stock
+    representation and preserve the separately reported receiving dose. The PDF batch
+    mass is not independently converted using water-input volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[28].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Wolin''s vitamin
+    solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume."}]}, {"quantity_id": "q30", "topic": "(DL)-alpha-Lipoic
+    acid at local direct ingredient index 29", "source": {"evidence_id": "api1508",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[9]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l":
+    0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "correct", "rationale": "The numerical value agrees exactly with the provider
+    g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate, not a
+    direct receiving-medium rate. Move the source-specific component into its stock
+    representation and preserve the separately reported receiving dose. The PDF batch
+    mass is not independently converted using water-input volume.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The numerical value agrees exactly with the
+    provider g_l for Wolin''s vitamin solution (10x). It is a stock-composition rate,
+    not a direct receiving-medium rate. Move the source-specific component into its
+    stock representation and preserve the separately reported receiving dose. The
+    PDF batch mass is not independently converted using water-input volume."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "ingredients[29].concentration",
+    "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "The numerical value agrees exactly with the provider g_l for Wolin''s vitamin
+    solution (10x). It is a stock-composition rate, not a direct receiving-medium
+    rate. Move the source-specific component into its stock representation and preserve
+    the separately reported receiving dose. The PDF batch mass is not independently
+    converted using water-input volume."}]}, {"quantity_id": "q31", "topic": "Main
+    sol. 1508 / Trace element solution SL-4", "source": {"evidence_id": "api1508",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\":
+    \"Trace element solution SL-4\",\n                        \"solution_id\": 20,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "solution":
+    "Trace element solution SL-4", "solution_id": 20, "amount": 1, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "The source supplies
+    1mL of Trace element solution SL-4 at the receiving-medium batch stage. Create
+    the missing solution descriptor and retain this literal dose and source-stage
+    basis in root evidence. Do not label the unchanged mL amount as mL/L without the
+    final-medium denominator; do not double-count the stock and its expanded components.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The source supplies 1mL of Trace element solution SL-4 at the receiving-medium
+    batch stage. Create the missing solution descriptor and retain this literal dose
+    and source-stage basis in root evidence. Do not label the unchanged mL amount
+    as mL/L without the final-medium denominator; do not double-count the stock and
+    its expanded components.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The source supplies 1mL of Trace element solution SL-4 at the receiving-medium
+    batch stage. Create the missing solution descriptor and retain this literal dose
+    and source-stage basis in root evidence. Do not label the unchanged mL amount
+    as mL/L without the final-medium denominator; do not double-count the stock and
+    its expanded components.", "missing": true}]}, {"quantity_id": "q32", "topic":
+    "Main sol. 1508 / Sodium resazurin", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000499002,\n                        \"mmol_l\":
+    0.00198671,\n                        \"optional\": 0\n                    }",
+    "exact_decoded_object": {"recipe_order": 8, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000499002,
+    "mmol_l": 0.00198671, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, "decision":
+    "add", "rationale": "The source supplies 0.5mL of Sodium resazurin at the receiving-medium
+    batch stage with attribute 0.1% w/v. Create the missing solution descriptor and
+    retain this literal dose and source-stage basis in root evidence. Do not label
+    the unchanged mL amount as mL/L without the final-medium denominator; do not double-count
+    the stock and its expanded components.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The source supplies 0.5mL of Sodium resazurin at the receiving-medium batch stage
+    with attribute 0.1% w/v. Create the missing solution descriptor and retain this
+    literal dose and source-stage basis in root evidence. Do not label the unchanged
+    mL amount as mL/L without the final-medium denominator; do not double-count the
+    stock and its expanded components.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The source supplies 0.5mL of Sodium resazurin at the receiving-medium batch stage
+    with attribute 0.1% w/v. Create the missing solution descriptor and retain this
+    literal dose and source-stage basis in root evidence. Do not label the unchanged
+    mL amount as mL/L without the final-medium denominator; do not double-count the
+    stock and its expanded components.", "missing": true}]}, {"quantity_id": "q33",
+    "topic": "Main sol. 1508 / Wolin''s vitamin solution (10x)", "source": {"evidence_id":
+    "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path":
+    "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\":
+    \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 12, "solution": "Wolin''s vitamin solution (10x)", "solution_id":
+    5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    "decision": "add", "rationale": "The source supplies 1mL of Wolin''s vitamin solution
+    (10x) at the receiving-medium batch stage. Create the missing solution descriptor
+    and retain this literal dose and source-stage basis in root evidence. Do not label
+    the unchanged mL amount as mL/L without the final-medium denominator; do not double-count
+    the stock and its expanded components.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The source supplies 1mL of Wolin''s vitamin solution (10x) at the receiving-medium
+    batch stage. Create the missing solution descriptor and retain this literal dose
+    and source-stage basis in root evidence. Do not label the unchanged mL amount
+    as mL/L without the final-medium denominator; do not double-count the stock and
+    its expanded components.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "The source supplies 1mL of Wolin''s vitamin solution (10x) at the receiving-medium
+    batch stage. Create the missing solution descriptor and retain this literal dose
+    and source-stage basis in root evidence. Do not label the unchanged mL amount
+    as mL/L without the final-medium denominator; do not double-count the stock and
+    its expanded components.", "missing": true}]}, {"quantity_id": "q34", "topic":
+    "Main sol. 1508 / Distilled water", "source": {"evidence_id": "api1508", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[13]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 14, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Retain this exact
+    1000mL water input for Main sol. 1508 in stage-specific preparation or root evidence.
+    It is not a direct solute ingredient or automatically a final-volume makeup. The
+    main PDF separately declares final1002mL.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate,
+    thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2
+    gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate,
+    thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate
+    and vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH",
+    "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using
+    2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain
+    this exact 1000mL water input for Main sol. 1508 in stage-specific preparation
+    or root evidence. It is not a direct solute ingredient or automatically a final-volume
+    makeup. The main PDF separately declares final1002mL."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients except carbonate, pyruvate,
+    thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2
+    gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate,
+    thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate
+    and vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH",
+    "description": "First dissolve EDTA in distilled water and adjust pH to 7.0 using
+    2 N NaOH; then add other compounds."}], "decision": "add", "rationale": "Retain
+    this exact 1000mL water input for Main sol. 1508 in stage-specific preparation
+    or root evidence. It is not a direct solute ingredient or automatically a final-volume
+    makeup. The main PDF separately declares final1002mL."}]}, {"quantity_id": "q35",
+    "topic": "Trace element solution SL-4 / Distilled water", "source": {"evidence_id":
+    "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path":
+    "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Retain this exact
+    1000mL water input for Trace element solution SL-4 in stage-specific preparation
+    or root evidence. It is not a direct solute ingredient or automatically a final-volume
+    makeup. No independent final-volume conversion is made from this row.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE",
+    "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate,
+    vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for
+    30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate,
+    vitamins  and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins
+    should be sterilized by filtration. Prior to use adjust pH of complete medium
+    to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description":
+    "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then
+    add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL
+    water input for Trace element solution SL-4 in stage-specific preparation or root
+    evidence. It is not a direct solute ingredient or automatically a final-volume
+    makeup. No independent final-volume conversion is made from this row."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve
+    ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions
+    of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior
+    to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number":
+    2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water
+    and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision":
+    "add", "rationale": "Retain this exact 1000mL water input for Trace element solution
+    SL-4 in stage-specific preparation or root evidence. It is not a direct solute
+    ingredient or automatically a final-volume makeup. No independent final-volume
+    conversion is made from this row."}]}, {"quantity_id": "q36", "topic": "Wolin''s
+    vitamin solution (10x) / Distilled water", "source": {"evidence_id": "api1508",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin",
+    "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[2].recipe[10]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Retain this exact
+    1000mL water input for Wolin''s vitamin solution (10x) in stage-specific preparation
+    or root evidence. It is not a direct solute ingredient or automatically a final-volume
+    makeup. No independent final-volume conversion is made from this row.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE",
+    "description": "Dissolve ingredients except carbonate, pyruvate, thiosulfate,
+    vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for
+    30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate,
+    vitamins  and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins
+    should be sterilized by filtration. Prior to use adjust pH of complete medium
+    to 7.3 - 7.5, if necessary."}, {"step_number": 2, "action": "ADJUST_PH", "description":
+    "First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then
+    add other compounds."}], "decision": "add", "rationale": "Retain this exact 1000mL
+    water input for Wolin''s vitamin solution (10x) in stage-specific preparation
+    or root evidence. It is not a direct solute ingredient or automatically a final-volume
+    makeup. No independent final-volume conversion is made from this row."}, {"path":
+    "data/normalized_yaml/bacterial/calderihabitans_medium.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve
+    ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions
+    of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior
+    to use adjust pH of complete medium to 7.3 - 7.5, if necessary."}, {"step_number":
+    2, "action": "ADJUST_PH", "description": "First dissolve EDTA in distilled water
+    and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}], "decision":
+    "add", "rationale": "Retain this exact 1000mL water input for Wolin''s vitamin
+    solution (10x) in stage-specific preparation or root evidence. It is not a direct
+    solute ingredient or automatically a final-volume makeup. No independent final-volume
+    conversion is made from this row."}]}, {"quantity_id": "q37", "topic": "Main sol.
+    1508 preparation context", "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients except carbonate,
+    pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate
+    and vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.3 - 7.5, if necessary.\"\n                    }", "exact_decoded_object":
+    {"step": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by
+    filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "evidence_only", "rationale": "Read
+    and retain the entire Main sol. 1508 step, including all pH, gas fractions, duration,
+    liquid/normality/filter-pore values where present. Existing matching descriptions
+    are credited; missing descriptions need source-scoped addition. An action enum
+    does not fully encode the multi-operation paragraph.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path": "preparation_steps[0].description",
+    "stored_value": "Dissolve ingredients except carbonate, pyruvate, thiosulfate,
+    vitamins and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for
+    30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate,
+    vitamins  and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate and vitamins
+    should be sterilized by filtration. Prior to use adjust pH of complete medium
+    to 7.3 - 7.5, if necessary.", "decision": "evidence_only", "rationale": "The complete
+    numeric and procedural text matches this source solution step. Retain its contents,
+    but explicitly scope it to Main sol. 1508 rather than treating all stock steps
+    as a sequence on the final medium."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients
+    except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions
+    of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior
+    to use adjust pH of complete medium to 7.3 - 7.5, if necessary.", "decision":
+    "evidence_only", "rationale": "The complete numeric and procedural text matches
+    this source solution step. Retain its contents, but explicitly scope it to Main
+    sol. 1508 rather than treating all stock steps as a sequence on the final medium."}]},
+    {"quantity_id": "q38", "topic": "Trace element solution SL-4 preparation context",
+    "source": {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"step\": \"First dissolve EDTA in distilled
+    water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.\"\n                    }",
+    "exact_decoded_object": {"step": "First dissolve EDTA in distilled water and adjust
+    pH to 7.0 using 2 N NaOH; then add other compounds."}, "quote_basis": "Literal
+    UTF-8 raw-response substring; decoded object independently equals exact JSON locator."},
+    "decision": "evidence_only", "rationale": "Read and retain the entire Trace element
+    solution SL-4 step, including all pH, gas fractions, duration, liquid/normality/filter-pore
+    values where present. Existing matching descriptions are credited; missing descriptions
+    need source-scoped addition. An action enum does not fully encode the multi-operation
+    paragraph.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "First dissolve
+    EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.",
+    "decision": "evidence_only", "rationale": "The complete numeric and procedural
+    text matches this source solution step. Retain its contents, but explicitly scope
+    it to Trace element solution SL-4 rather than treating all stock steps as a sequence
+    on the final medium."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "First dissolve
+    EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.",
+    "decision": "evidence_only", "rationale": "The complete numeric and procedural
+    text matches this source solution step. Retain its contents, but explicitly scope
+    it to Trace element solution SL-4 rather than treating all stock steps as a sequence
+    on the final medium."}]}, {"quantity_id": "q39", "topic": "Main-medium pH", "source":
+    {"evidence_id": "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.medium", "accessed_at": "2026-10-28T05:42:27.175790Z", "quote":
+    "{\n            \"id\": 1508,\n            \"name\": \"CALDERIHABITANS MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 7.3,\n            \"max_pH\": 7.5,\n            \"source\":
+    \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf\"\n        }",
+    "exact_decoded_object": {"id": 1508, "name": "CALDERIHABITANS MEDIUM", "complex_medium":
+    "yes", "min_pH": 7.3, "max_pH": 7.5, "source": "DSMZ", "link": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf"},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The stored
+    ph_range matches the exact main-medium pH reported by the PDF and API. This is
+    distinct from the mineral-stock pH adjustment; source titration amounts are not
+    quantified.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "ph_range", "stored_value": {"min": 7.3, "max": 7.5}, "decision":
+    "evidence_only", "rationale": "The stored ph_range matches the exact main-medium
+    pH reported by the PDF and API. This is distinct from the mineral-stock pH adjustment;
+    source titration amounts are not quantified."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ph_range", "stored_value": {"min": 7.3, "max": 7.5}, "decision":
+    "evidence_only", "rationale": "The stored ph_range matches the exact main-medium
+    pH reported by the PDF and API. This is distinct from the mineral-stock pH adjustment;
+    source titration amounts are not quantified."}]}, {"quantity_id": "q40", "topic":
+    "Unquantified late-stock and sterilization details", "source": {"evidence_id":
+    "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path":
+    "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients except carbonate,
+    pyruvate, thiosulfate, vitamins and sulfide, then sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    pyruvate, thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of pyruvate, thiosulfate
+    and vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.3 - 7.5, if necessary.\"\n                    }", "exact_decoded_object":
+    {"step": "Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by
+    filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "not_quantified", "rationale": "The
+    source specifies sterile late stock additions and stage-specific gases/filtration
+    but does not supply fixed concentrations and addition volumes for every late solute
+    stock, titrant amounts, or a numeric autoclave temperature/duration. Preserve
+    these limits; do not infer common settings or concentrations.", "layer_assessments":
+    []}, {"quantity_id": "q41", "topic": "Explicit final main-medium volume", "source":
+    {"evidence_id": "dsm1508", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf",
+    "raw_path": "REVIEW_WORK/batch057/source01-03/dsm1508.bin", "raw_sha256": "e1aed66201d15c38032459882f6e55e809b7b1448cc8bbd16169338a2ed097f1",
+    "locator": "Page1 final-volume heading", "accessed_at": "2026-10-28T05:42:27.338646Z",
+    "quote": "Final volume: 1002 ml"}, "decision": "add", "rationale": "The primary
+    source explicitly declares final volume1002mL. This separately supports the main-medium
+    denominator and must not be replaced by its1000mL water-input row or stock water
+    volumes.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml",
+    "field_path": "notes", "stored_value": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf",
+    "decision": "add", "rationale": "The primary source explicitly declares final
+    volume1002mL. This separately supports the main-medium denominator and must not
+    be replaced by its1000mL water-input row or stock water volumes."}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "notes", "stored_value": "Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1508.pdf",
+    "decision": "add", "rationale": "The primary source explicitly declares final
+    volume1002mL. This separately supports the main-medium denominator and must not
+    be replaced by its1000mL water-input row or stock water volumes."}]}, {"quantity_id":
+    "q42", "topic": "Sea salt source quality condition", "source": {"evidence_id":
+    "api1508", "reference": "https://mediadive.dsmz.de/rest/medium/1508", "raw_path":
+    "REVIEW_WORK/batch057/source01-03/api1508.bin", "raw_sha256": "66f61b77d8931c38866b66f4cf431dace129bd197b7564dc19d1d3a50e308029",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T05:42:27.175790Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Sea Salt\",\n                        \"compound_id\": 423,\n                        \"attribute\":
+    \"SIGMA, must not show signs of caking\",\n                        \"amount\":
+    21,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    20.9581,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 1, "compound": "Sea Salt", "compound_id": 423, "attribute": "SIGMA,
+    must not show signs of caking", "amount": 21, "unit": "g", "g_l": 20.9581, "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "The exact sea-salt
+    attribute says must not show signs of caking. Preserve the supplier/quality condition
+    literally; it does not assert absence of anticaking additives.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDERIHABITANS_MEDIUM.yaml", "field_path":
+    "ingredients[0].notes", "stored_value": null, "decision": "add", "rationale":
+    "The exact sea-salt attribute says must not show signs of caking. Preserve the
+    supplier/quality condition literally; it does not assert absence of anticaking
+    additives.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calderihabitans_medium.yaml",
+    "field_path": "ingredients[0].notes", "stored_value": null, "decision": "add",
+    "rationale": "The exact sea-salt attribute says must not show signs of caking.
+    Preserve the supplier/quality condition literally; it does not assert absence
+    of anticaking additives.", "missing": true}]}]'
+- assessment_id: a7
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: supported
+  summary: The grounding inventory enumerates every asserted identifier and exact
+    preferred label. Exact identifier rows and ontology-linked rows are recorded separately,
+    including mapping_status. Present catalog membership does not validate supplied
+    hydrate form or historical identity; specific limits are assessed separately.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - grounding
+- assessment_id: a8
+  area: provenance
+  topic: History and evidence scope
+  outcome: supported
+  summary: Complete owner and target histories were read. Current source bytes and
+    inspected code are independent evidence; historical timestamps remain historical
+    claims unless an exact cited raw digest is recovered.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a9
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - local-target
+- assessment_id: a10
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:000978
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-000978-mineral-and-vitamin-stocks-are-flattened-into-direct-ingredients
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mineral and vitamin stocks are flattened into direct ingredients
+  description: The exact source defines Trace element solution SL-4 and Wolin's vitamin
+    solution (10x) as separate stock formulations with separate receiving mL doses.
+    The selected target and maintained contributors place the stock components directly
+    under ingredients at their stock g/L values and have no solutions descriptors.
+    This is a stage error even where the stock numbers themselves match the provider.
+    Preserve the source stock recipes and receiving doses; do not dilute or sum them
+    by an assumed final liter.
+  target_ids:
+  - CultureMech:000978
+  field_paths:
+  - solutions
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - ingredients[13].concentration
+  - ingredients[14].concentration
+  - ingredients[15].concentration
+  - ingredients[16].concentration
+  - ingredients[17].concentration
+  - ingredients[18].concentration
+  - ingredients[19].concentration
+  - ingredients[20].concentration
+  - ingredients[21].concentration
+  - ingredients[22].concentration
+  - ingredients[23].concentration
+  - ingredients[24].concentration
+  - ingredients[25].concentration
+  - ingredients[26].concentration
+  - ingredients[27].concentration
+  - ingredients[28].concentration
+  - ingredients[29].concentration
+  evidence_ids:
+  - dsm1508
+  - api1508
+  - source-rows
+  - quantities
+  - writer-mediadive
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-000978-nickel-hydrate-and-sodium-indicator-forms-are-not-represented-by-their-identifiers
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium indicator forms are not represented by their identifiers
+  description: NiCl2 x6H2O is assigned CHEBI:34887, whose current OLS object describes
+    NiCl2 without the six waters. Sodium resazurin uses primary CHEBI:8806 Resazurin,
+    which does not establish the sodium-salt form. The secondary nickel link repeats
+    the mismatch; the resazurin node has no secondary slot to accuse. Current catalog
+    membership and canonical label agreement do not cure supplied-form mismatch. Verify
+    an exact supplied-form mapping or retain the precise source name with an explicit
+    unresolved mapping; no replacement identifier is guessed.
+  target_ids:
+  - CultureMech:000978
+  field_paths:
+  - ingredients[18].term
+  - ingredients[18].mediaingredientmech_chebi_term
+  - ingredients[6].term
+  evidence_ids:
+  - dsm1508
+  - chebi34887
+  - chebi8806
+  - grounding
+  rule_id: id-label-supplied-form
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-000978-sodium-nitrate-retains-a-legacy-ingredient-catalog-identifier
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Sodium nitrate retains a legacy ingredient-catalog identifier
+  description: ingredients[3].term correctly identifies sodium nitrate as CHEBI:63005.
+    Its separate MediaIngredientMech:000171 slot has label NaNO3 but has no exact
+    current packaged catalog row. That is a current legacy-link resolution gap, not
+    evidence that the identifier was historically invalid or that the nitrate chemistry
+    is wrong.
+  target_ids:
+  - CultureMech:000978
+  field_paths:
+  - ingredients[3].mediaingredientmech_term
+  evidence_ids:
+  - local-target
+  - grounding
+  - chebi63005
+  rule_id: current-legacy-link-resolution
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-000978-preparation-lacks-explicit-stock-scope-and-source-quality-context
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preparation lacks explicit stock scope and source quality context
+  description: The existing main preparation paragraph and pH range agree with the
+    source and are retained. The second root paragraph is the SL-4 procedure, including
+    pH7.0 with2NNaOH, not a second main-medium step. Source stock additions,1000mL
+    water input, declared1002mL final volume and sea-salt no-caking condition lack
+    explicit structured scope and claim evidence.
+  target_ids:
+  - CultureMech:000978
+  field_paths:
+  - preparation_steps[1]
+  - ingredients[0].notes
+  - notes
+  - evidence
+  evidence_ids:
+  - dsm1508
+  - api1508
+  - quantities
+  - writer-mediadive
+  rule_id: source-stage-completeness
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Curate the maintained contributors to represent each mineral/vitamin
+    stock and its receiving dose separately. Preserve source-specific stock g/L claims
+    and PDF batch amounts with exact evidence. Remove their false direct-medium placement,
+    then regenerate; do not double-count stock expansions or invent a working concentration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000978
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: NiCl2 x6H2O is assigned CHEBI:34887, whose current OLS object describes
+    NiCl2 without the six waters. Sodium resazurin uses primary CHEBI:8806 Resazurin,
+    which does not establish the sodium-salt form. The secondary nickel link repeats
+    the mismatch; the resazurin node has no secondary slot to accuse. Current catalog
+    membership and canonical label agreement do not cure supplied-form mismatch. Verify
+    an exact supplied-form mapping or retain the precise source name with an explicit
+    unresolved mapping; no replacement identifier is guessed.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000978
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: ingredients[3].term correctly identifies sodium nitrate as CHEBI:63005.
+    Its separate MediaIngredientMech:000171 slot has label NaNO3 but has no exact
+    current packaged catalog row. That is a current legacy-link resolution gap, not
+    evidence that the identifier was historically invalid or that the nitrate chemistry
+    is wrong.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000978
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Credit existing main process/pH text. Attribute the EDTA procedure
+    to SL-4 and preserve the declared main final volume and literal sea-salt condition.
+    Use root evidence with exact field/stage locators for preparation and solution
+    claims; do not invent nested evidence slots.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000978
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calderihabitans_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- No organism-specific growth or missing sterilization settings are inferred. The
+  review addresses the exact source formulation and maintained contributors; neighboring
+  or parent medium recipes are not transferred wholesale.
+- Current OLS and the pinned packaged MIM catalog describe current identifier correspondence,
+  not historical mapping validity. No molecular-weight, density or mmol/L conversion
+  was used.
+- Historical report raw-digest matches authenticate the current matching API response
+  bytes and exact snippets, not the recorded old access events, old executables, or
+  all historical scientific conclusions.
+- No fixed late-stock concentration or addition volume is invented where the source
+  provides only a sterile-addition instruction. Exact source batches and explicitly
+  reported source-stage g/L values remain distinct.
+- The Na2-EDTA source does not specify hydration. The explicit1002mL final-medium
+  volume does not establish a final-volume basis for the two separate stock PDFs;
+  stock g/L values are credited as explicit provider reports.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```
