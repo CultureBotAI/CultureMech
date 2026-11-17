@@ -1,0 +1,2895 @@
+# Scientific review: Clostridium SW Medium
+
+- Review: 20261028T154322Z-culturemech-010056-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T15:21:45.360534Z
+- Finished UTC: 2026-10-28T15:43:22.172293Z
+- Reviewer: Codex batch006_validation (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+SW source identity and its explicit glucose rate are supported. The selected target/owner still flatten A/B stages, misstate water/resazurin/stock units, link unrelated A/B/C stocks and omit the staged preparation. Repaired scoped M180/M190 notes and attached claims are credited, while hydrate and stereochemical limits remain explicit.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch071 index 01
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010056 | data/merge_yaml/merged/Clostridium_SW_Medium.yaml | generated | clostridium_sw_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:010056 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:010056 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:010056 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:010056 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### SW accession and exact linked-stock scope
+
+identity: concern. Targets: CultureMech:010056.
+
+TOGO M654 is JCM 640, explicitly using JCM 636 with glucose replacing methanol. The unrelated MediaDive 5342/5343/5312 named A/B/C stocks are not these local solutions. M180 contributes only iron/trace compositions; M190 only vitamin composition. Parent main-medium doses and conditions are excluded.
+
+### Complex liquid medium and organism scope
+
+representation: supported. Targets: CultureMech:010056.
+
+Complex/undefined liquid classification agrees with the yeast extract and tryptone recipe. No organism or strain claim is established by the generic Clostridium title. Existing gas VARIABLE markers are not erroneous concentration measurements.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:010056.
+
+51 current concentration fields are covered by 50 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b071-quantity-inventory-v1","target":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","quantity_field_count":51,"decisions":[{"quantity_id":"q1","label":"Carbon dioxide gas","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations.","source_stage":"unquantified gas and explicit preparation context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\",\n          \"gmo_id\": \"GMO_002260\",\n          \"label\": \"Carbon dioxide gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\": 5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave Solution C in a closed tube or vial. After cooling, combine the three solutions under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 7,\n      \"comment\": \"Distribute the medium into culture vessels under the same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as 5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations."}]},{"quantity_id":"q2","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations.","source_stage":"unquantified gas and explicit preparation context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\": 5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave Solution C in a closed tube or vial. After cooling, combine the three solutions under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 7,\n      \"comment\": \"Distribute the medium into culture vessels under the same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as 5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations."}]},{"quantity_id":"q3","label":"Distilled water","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"960.0","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"960.0","unit":"G_PER_L"}}],"decision":"conflict","rationale":"960 is the sum of 860 ml A water and 100 ml B water, not 960 g/L. Keep both source inputs in their separate solutions; neither their sum nor other additions establish measured final volume.","source_stage":"separate A/B water batches","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 860,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 5 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;860.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 12 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;100.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"960 is the sum of 860 ml A water and 100 ml B water, not 960 g/L. Keep both source inputs in their separate solutions; neither their sum nor other additions establish measured final volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"960 is the sum of 860 ml A water and 100 ml B water, not 960 g/L. Keep both source inputs in their separate solutions; neither their sum nor other additions establish measured final volume."}]},{"quantity_id":"q4","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.54","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.54","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.54,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\": \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 0 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; KH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt;                                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.54&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q5","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The exact source is 1 mg resazurin in A, not 1 g/L. Preserve its mass and stage without assuming final volume.","source_stage":"Solution A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\",\n          \"gmo_id\": \"GMO_001012\",\n          \"label\": \"Resazurin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 4 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Resazurin                                               &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","decision":"conflict","rationale":"The exact source is 1 mg resazurin in A, not 1 g/L. Preserve its mass and stage without assuming final volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","decision":"conflict","rationale":"The exact source is 1 mg resazurin in A, not 1 g/L. Preserve its mass and stage without assuming final volume."}]},{"quantity_id":"q6","label":"Na2HPO4","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.34","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.34","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\": \"Na2HPO4\",\n          \"volume\": 1.34,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001069\",\n          \"gmo_id\": \"GMO_001069\",\n          \"label\": \"Disodium phosphate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 1 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;HPO&lt;sub&gt;4&lt;/sub&gt;                                           &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.34&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q7","label":"Yeast extract (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"3","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\": \"GMO_001018\",\n          \"label\": \"Bacto &amp;trade; Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 2 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Yeast extract (BD-Difco)                                           &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;3.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q8","label":"Tryptone (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\": \"Tryptone (BD-Difco)\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\": \"Bacto &amp;trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 3 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Tryptone (BD-Difco)                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q9","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[1]","quote":"{\n          \"component_name\": \"NaCl\",\n          \"volume\": 0.19,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 7 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; NaCl                                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.19&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q10","label":"CaCl2・2H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[2]","quote":"{\n          \"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.006,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 8 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; CaCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.006&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q11","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[3]","quote":"{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 0.19,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\": \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 6 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; NH&lt;sub&gt;4&lt;/sub&gt;Cl                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.19&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q12","label":"MgCl2・6H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.063","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.063","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[4]","quote":"{\n          \"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.063,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\": \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 9 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; MgCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.063&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an explicit final-medium denominator and flattens its solution stage. Credit the source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q13","label":"glucose","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"JCM640 explicitly specifies 5.0 g/L glucose replacing methanol; the current glucose value/unit are supported and need exact attached evidence. Do not retain the base methanol addition or transfer the R6 variant.","source_stage":"SW-specific explicit glucose rate","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[3].items[0]","quote":"{\n          \"component_name\": \"glucose\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm640","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/jcm640.bin","raw_sha256":"201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173","text_sha256":"56d607f7a82e71c4e0f84e755204dfe728ae6cd90ab7f5d6f21dfc8abf71516d","accessed_at":"2026-10-28T15:20:20.800019Z","locator":"Exact SW replacement sentence","quote":"with 5.0 g/L glucose instead of methanol.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","decision":"evidence_only","rationale":"JCM640 explicitly specifies 5.0 g/L glucose replacing methanol; the current glucose value/unit are supported and need exact attached evidence. Do not retain the base methanol addition or transfer the R6 variant."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","decision":"evidence_only","rationale":"JCM640 explicitly specifies 5.0 g/L glucose replacing methanol; the current glucose value/unit are supported and need exact attached evidence. Do not retain the base methanol addition or transfer the R6 variant."}]},{"quantity_id":"q14","label":"Na2S・9H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The existing VARIABLE marker does not invent a working dose or a percent basis. The source nevertheless supplies 0.025% receiving-medium context and separately 5% stock wording; retain those exact labels in scoped preparation without converting bare percent to w/v or guessing an addition volume.","source_stage":"separate reducing reagent context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[2]","quote":"{\n          \"component_name\": \"Na2S・9H2O\",\n          \"conc_value\": 0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001494\",\n          \"gmo_id\": \"GMO_001494\",\n          \"label\": \"Sodium sulfide nonahydrate solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000064\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000064\",\n              \"label\": \"Reducing agent\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 7,\n      \"comment\": \"Distribute the medium into culture vessels under the same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as 5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","decision":"evidence_only","rationale":"The existing VARIABLE marker does not invent a working dose or a percent basis. The source nevertheless supplies 0.025% receiving-medium context and separately 5% stock wording; retain those exact labels in scoped preparation without converting bare percent to w/v or guessing an addition volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","decision":"evidence_only","rationale":"The existing VARIABLE marker does not invent a working dose or a percent basis. The source nevertheless supplies 0.025% receiving-medium context and separately 5% stock wording; retain those exact labels in scoped preparation without converting bare percent to w/v or guessing an addition volume."}]},{"quantity_id":"q15","label":"L--cysteine・HCl・H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The existing VARIABLE marker does not invent a working dose or a percent basis. The source nevertheless supplies 0.025% receiving-medium context and separately 5% stock wording; retain those exact labels in scoped preparation without converting bare percent to w/v or guessing an addition volume.","source_stage":"separate reducing reagent context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[3]","quote":"{\n          \"component_name\": \"L--cysteine・HCl・H2O\",\n          \"conc_value\": 0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\",\n          \"gmo_id\": \"GMO_001205\",\n          \"label\": \"L-Cysteine hydrochloride monohydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 7,\n      \"comment\": \"Distribute the medium into culture vessels under the same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as 5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","decision":"evidence_only","rationale":"The existing VARIABLE marker does not invent a working dose or a percent basis. The source nevertheless supplies 0.025% receiving-medium context and separately 5% stock wording; retain those exact labels in scoped preparation without converting bare percent to w/v or guessing an addition volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","decision":"evidence_only","rationale":"The existing VARIABLE marker does not invent a working dose or a percent basis. The source nevertheless supplies 0.025% receiving-medium context and separately 5% stock wording; retain those exact labels in scoped preparation without converting bare percent to w/v or guessing an addition volume."}]},{"quantity_id":"q16","label":"N2","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations.","source_stage":"unquantified gas and explicit preparation context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[4]","quote":"{\n          \"component_name\": \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\": 5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave Solution C in a closed tube or vial. After cooling, combine the three solutions under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 7,\n      \"comment\": \"Distribute the medium into culture vessels under the same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as 5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","decision":"evidence_only","rationale":"VARIABLE truthfully marks a gas with no quantified dissolved-medium concentration. Preserve the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do not justify adding concentrations."}]},{"quantity_id":"q17","label":"Solution A","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"860","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"860","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration. A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve primary batch structure and do not interpret the nominal sum as measured final volume.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\": \"Solution A\",\n          \"volume\": 860,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M654\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 5 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;860.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","decision":"conflict","rationale":"The TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration. A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve primary batch structure and do not interpret the nominal sum as measured final volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","decision":"conflict","rationale":"The TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration. A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve primary batch structure and do not interpret the nominal sum as measured final volume."}]},{"quantity_id":"q18","label":"Solution B","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"102","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"102","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration. A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve primary batch structure and do not interpret the nominal sum as measured final volume.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\": \"Solution B\",\n          \"volume\": 102,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M654\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 12 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;100.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","decision":"conflict","rationale":"The TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration. A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve primary batch structure and do not interpret the nominal sum as measured final volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","decision":"conflict","rationale":"The TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration. A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve primary batch structure and do not interpret the nominal sum as measured final volume."}]},{"quantity_id":"q19","label":"Solution C","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The number 5 g/L is the explicitly supported SW glucose rate, not an independently quantified Solution C stock strength or addition volume. This solution wrapper must not double-count glucose or import the unrelated tetrathionate stock5312.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\": \"Solution C\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"reference_media_id\": \"M654\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm640","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/jcm640.bin","raw_sha256":"201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173","text_sha256":"56d607f7a82e71c4e0f84e755204dfe728ae6cd90ab7f5d6f21dfc8abf71516d","accessed_at":"2026-10-28T15:20:20.800019Z","locator":"Exact SW replacement sentence","quote":"with 5.0 g/L glucose instead of methanol.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","decision":"unsupported","rationale":"The number 5 g/L is the explicitly supported SW glucose rate, not an independently quantified Solution C stock strength or addition volume. This solution wrapper must not double-count glucose or import the unrelated tetrathionate stock5312."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","decision":"unsupported","rationale":"The number 5 g/L is the explicitly supported SW glucose rate, not an independently quantified Solution C stock strength or addition volume. This solution wrapper must not double-count glucose or import the unrelated tetrathionate stock5312."}]},{"quantity_id":"q20","label":"FeCl2 solution (see Medium [M180])","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[5]","quote":"{\n          \"component_name\": \"FeCl2 solution (see Medium [M180])\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M180\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 10 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; FeCl&lt;sub&gt;2&lt;/sub&gt; solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\"&gt;187&lt;/a&gt;)                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q21","label":"Trace element solution (see Medium [M180])","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[6]","quote":"{\n          \"component_name\": \"Trace element solution (see Medium [M180])\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M180\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 11 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trace element solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\"&gt;187&lt;/a&gt;)           &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q22","label":"8% NaHCO3 solution","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","stored":{"value":"30","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","stored":{"value":"30","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[0]","quote":"{\n          \"component_name\": \"8% NaHCO3 solution\",\n          \"volume\": 30,\n          \"unit\": \"ml\",\n          \"conc_value\": 8,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001119\",\n          \"gmo_id\": \"GMO_001119\",\n          \"label\": \"Sodium bicarbonate solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 15 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 8% NaHCO&lt;sub&gt;3&lt;/sub&gt; solution                                 &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;30.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q23","label":"Trace vitamins (see Medium [M190])","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[1]","quote":"{\n          \"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M190\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML table row 14 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trace vitamins (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=197\"&gt;197&lt;/a&gt;)                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","decision":"conflict","rationale":"The source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q24","label":"Scoped Distilled water","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"0.99","unit":"L"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].notes","stored":"Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 990.0, 990.0, 1.0]\n\nSource water batch input: 990 ml = 0.99 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 990,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 18 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;990.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q25","label":"Scoped FeCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[1].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 1.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001548\",\n          \"gmo_id\": \"GMO_001548\",\n          \"label\": \"Iron(II) chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 17 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; FeCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[1].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q26","label":"Scoped Distilled water","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"1","unit":"L"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].notes","stored":"Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 990.0, 990.0, 1.0]\n\nSource water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 26 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L        &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q27","label":"Scoped Na2MoO4・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[1].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 36 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[1]","quote":"{\n          \"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 36,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\": \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 25 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;MoO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;36.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[1].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q28","label":"Scoped H3BO3","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[2].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 6 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[2]","quote":"{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 6,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 21 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; H&lt;sub&gt;3&lt;/sub&gt;BO&lt;sub&gt;3&lt;/sub&gt;                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;6.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[2].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q29","label":"Scoped MnCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[3].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 100 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[3]","quote":"{\n          \"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001020\",\n          \"gmo_id\": \"GMO_001020\",\n          \"label\": \"Manganese chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 20 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; MnCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;100.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[3].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q30","label":"Scoped CoCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[4].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 190 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[4]","quote":"{\n          \"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 190,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\": \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 22 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; CoCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;190.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[4].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q31","label":"Scoped NiCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[5].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 24 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[5]","quote":"{\n          \"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 24,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001022\",\n          \"gmo_id\": \"GMO_001022\",\n          \"label\": \"Nickel chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 24 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; NiCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                 &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;24.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[5].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q32","label":"Scoped CuCl2・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[6].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[6]","quote":"{\n          \"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001024\",\n          \"gmo_id\": \"GMO_001024\",\n          \"label\": \"Copper(II) chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 23 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; CuCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[6].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q33","label":"Scoped ZnCl2","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[7].notes","stored":"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 70 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[7]","quote":"{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 70,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\",\n          \"gmo_id\": \"GMO_001035\",\n          \"label\": \"Zinc chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 19 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; ZnCl&lt;sub&gt;2&lt;/sub&gt;                                               &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;70.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[7].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q34","label":"Scoped Distilled water","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"1","unit":"L"}},{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].notes","stored":"Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]\n\nSource water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 25 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].concentration","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."},{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q35","label":"Scoped Biotin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[1].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\": \"Biotin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 15 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Biotin                                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[1].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q36","label":"Scoped p--Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[2].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\": \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 23 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; &lt;I&gt;p&lt;/I&gt;-Aminobenzoic acid                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[2].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q37","label":"Scoped Thiamine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[3].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\": \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 18 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Thiamine&amp;#183;HCl                                      &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[3].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q38","label":"Scoped Calcium pantothenate","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[4].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\": \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 21 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Calcium pantothenate                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[4].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q39","label":"Scoped Pyridoxine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[5].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\": \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 17 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Pyridoxine&amp;#183;HCl                                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[5].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q40","label":"Scoped Folic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[6].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\": \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 16 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Folic acid                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[6].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q41","label":"Scoped Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[7].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\": \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 22 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Vitamin B&lt;sub&gt;1&lt;/sub&gt;&lt;sub&gt;2&lt;/sub&gt;                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[7].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q42","label":"Scoped Riboflavin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[8].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\": \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 19 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Riboflavin                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[8].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q43","label":"Scoped Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[9].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\": \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 20 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Nicotinic acid                                          &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[9].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q44","label":"Scoped Lipoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[10].notes","stored":"Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180 iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\",\n          \"gmo_id\": \"GMO_001699\",\n          \"label\": \"Lipoic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000067\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\": \"Growth factor\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML table row 24 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Lipoic acid                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[10].notes","decision":"verified","rationale":"The current repaired field/note is supported by its attached literal excerpt and exact current raw digest. Water retains an explicit input-volume unit; dry mass stays in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q45","label":"HCl reagent strength","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].concentration","stored":{"value":"7.7","unit":"MOLAR"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].notes","stored":"Role: Solvating media; Properties: Defined component, Inorganic compound, Solution\n\nExplicit HCl reagent strength 7.7 M, not a final-medium concentration. The 25% basis is unspecified; the enclosing stock holds the 10 ml batch dose."}],"decision":"verified","rationale":"The attached exact TOGO excerpt/digest and primary table support 7.7 M HCl reagent strength. Bare 25% remains unspecified and is not converted.","source_stage":"nested HCl reagent","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\",\n          \"gmo_id\": \"GMO_001499\",\n          \"label\": \"Hydrochloric acid solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 16 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 25% HCl (7.7 M)                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].concentration","decision":"verified","rationale":"The attached exact TOGO excerpt/digest and primary table support 7.7 M HCl reagent strength. Bare 25% remains unspecified and is not converted."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].notes","decision":"verified","rationale":"The attached exact TOGO excerpt/digest and primary table support 7.7 M HCl reagent strength. Bare 25% remains unspecified and is not converted."}]},{"quantity_id":"q46","label":"HCl stock input volume","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].concentration","stored":{"value":"0.01","unit":"L"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].notes","stored":"Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter."}],"decision":"verified","rationale":"The exact additional root-evidence excerpt explicitly scopes this field to the 10 ml HCl input; 10 ml / 1000 = 0.01 L. Its claimed raw digest matches the fresh capture. Only this excerpt is credited, excluding the root primary snippet and parent receiving doses.","source_stage":"nested iron-stock HCl addition","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\",\n          \"gmo_id\": \"GMO_001499\",\n          \"label\": \"Hydrochloric acid solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML table row 16 (zero-based)","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 25% HCl (7.7 M)                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].concentration","decision":"verified","rationale":"The exact additional root-evidence excerpt explicitly scopes this field to the 10 ml HCl input; 10 ml / 1000 = 0.01 L. Its claimed raw digest matches the fresh capture. Only this excerpt is credited, excluding the root primary snippet and parent receiving doses."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].notes","decision":"verified","rationale":"The exact additional root-evidence excerpt explicitly scopes this field to the 10 ml HCl input; 10 ml / 1000 = 0.01 L. Its claimed raw digest matches the fresh capture. Only this excerpt is credited, excluding the root primary snippet and parent receiving doses."}]},{"quantity_id":"q47","label":"SW source-only preparation 0","local_fields":[],"decision":"evidence_only","rationale":"Restore only the exact SW/base636 scoped preparation and replacement relation. Separate autoclaving, subsequent filter-sterilized additions, gas context and bare-percent labels are preserved without invented dose/strength basis.","source_stage":"source-only SW preparation","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\": 5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave Solution C in a closed tube or vial. After cooling, combine the three solutions under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q48","label":"SW source-only preparation 1","local_fields":[],"decision":"evidence_only","rationale":"Restore only the exact SW/base636 scoped preparation and replacement relation. Separate autoclaving, subsequent filter-sterilized additions, gas context and bare-percent labels are preserved without invented dose/strength basis.","source_stage":"source-only SW preparation","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 7,\n      \"comment\": \"Distribute the medium into culture vessels under the same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as 5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q49","label":"SW source-only preparation 3","local_fields":[],"decision":"evidence_only","rationale":"Restore only the exact SW/base636 scoped preparation and replacement relation. Separate autoclaving, subsequent filter-sterilized additions, gas context and bare-percent labels are preserved without invented dose/strength basis.","source_stage":"source-only SW preparation","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[3]","quote":"{\n      \"paragraph_index\": 9,\n      \"comment\": \"Use Medium No. [636] with 5.0 g/L glucose instead of methanol.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q50","label":"JCM page-default autoclave controls","local_fields":[],"decision":"evidence_only","rationale":"Both exact JCM pages state the default 121°C for 15 minutes unless otherwise specified. Apply this only to inherited preparation steps that call for autoclaving; it does not replace the explicitly subsequent filtration steps or establish an unstated stock addition, final volume or growth condition.","source_stage":"Source-only inherited autoclave steps; later filtration excluded","sources":[{"evidence_id":"jcm640","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/jcm640.bin","raw_sha256":"201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173","text_sha256":"56d607f7a82e71c4e0f84e755204dfe728ae6cd90ab7f5d6f21dfc8abf71516d","accessed_at":"2026-10-28T15:20:20.800019Z","locator":"jcm640.txt lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"jcm636.txt lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.","quote_basis":"derivative text"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/Clostridium_SW_Medium.yaml":null,"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml":null,"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml":["solutions[0].composition","solutions[0].solutions","solutions[1].composition"],"data/normalized_yaml/bacterial/togo_medium_m190.yaml":["solutions[1].composition"],"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml":["id","name","original_name"],"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml":["id","name","original_name"],"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml":["id","name","original_name"]},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:010056.
+
+All in-scope current ontology labels and exact MIM rows are joined. Main glucose, phosphate, calcium/magnesium hydrates, resazurin, sulfide nonahydrate and cysteine hydrochloride monohydrate are chemically consistent with source names; supplier grades remain separate. M180 cobalt/nickel hydrate mismatches are confirmed. M190 generic calcium pantothenate does not establish the stereochemistry in CHEBI:31345; no unsupported replacement or mass conversion is proposed.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:010056.
+
+All fourteen report scopes and five exact historical parent rows were read; unchanged M180/M190 complete reports were rejoined to the prior full read by exact bytes. October 8 repaired stock notes and attached raw claims are credited, including the additional root HCl excerpt. October 5 no-source triage is not proof of current invalidity. September 23 parent 197 per-litre and merge recommendations are not automatically adopted: they concern other source owners/main doses and predate current scoped repairs. Current TOGO separates named sections, while current cleanup does not sum; neither proves historical execution. Original events remain append-only.
+
+## Findings
+
+### f1: Restore A/B solution boundaries and source units
+
+major / open / confirmed; issue key: culturemech-010056-unit-stock-stage.
+
+Restore the distinct A/B compositions and water inputs, source 1 mg resazurin, and ml stock additions. Keep glucose at the explicitly supported SW 5 g/L. The Solution C wrapper does not establish an additional glucose stock strength or dose; avoid double-counting it. Do not turn source batch masses or nominal liquid sums into final-medium rates.
+
+### f2: Resolve same-name stock links to the actual SW stocks
+
+major / open / confirmed; issue key: culturemech-010056-stock-link-identity.
+
+Replace the links to MediaDive 5342, 5343 and 5312 only after representing the local SW A/B/glucose context. Their source compositions differ: 5342 is a salty yeast/casamino stock, 5343 a carbonate/salt stock, 5312 tetrathionate. Generic A/B/C names cannot establish equivalence.
+
+### f3: Restore source-specific preparation and evidence
+
+major / open / confirmed; issue key: culturemech-010056-preparation-evidence.
+
+Retain the exact inherited 636 procedure with the 640 substrate substitution: separate preparations and later additions have different stages. Add root-level path-scoped evidence, preserve unspecified percent bases, and replace Unknown solution names. The source does not establish a numeric pH or final volume, so neither is invented.
+
+### f4: Reconcile scoped trace-stock hydrate IDs
+
+major / open / confirmed; issue key: culturemech-010056-scoped-stock-hydrates.
+
+Within the M180 trace stock only, cobalt and nickel hexahydrate names currently carry anhydrous chloride IDs. Verify the exact supplied hydrate and replace or qualify those assertions; preserve all authenticated batch-mass notes. Generic calcium pantothenate in M190 does not prove D stereochemistry despite current CHEBI:31345, which remains explicitly unverified.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the distinct A/B compositions and water inputs, source 1 mg resazurin, and ml stock additions. Keep glucose at the explicitly supported SW 5 g/L. The Solution C wrapper does not establish an additional glucose stock strength or dose; avoid double-counting it. Do not turn source batch masses or nominal liquid sums into final-medium rates.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+Replace the links to MediaDive 5342, 5343 and 5312 only after representing the local SW A/B/glucose context. Their source compositions differ: 5342 is a salty yeast/casamino stock, 5343 a carbonate/salt stock, 5312 tetrathionate. Generic A/B/C names cannot establish equivalence.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Retain the exact inherited 636 procedure with the 640 substrate substitution: separate preparations and later additions have different stages. Add root-level path-scoped evidence, preserve unspecified percent bases, and replace Unknown solution names. The source does not establish a numeric pH or final volume, so neither is invented.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Within the M180 trace stock only, cobalt and nickel hexahydrate names currently carry anhydrous chloride IDs. Verify the exact supplied hydrate and replace or qualify those assertions; preserve all authenticated batch-mass notes. Generic calcium pantothenate in M190 does not prove D stereochemistry despite current CHEBI:31345, which remains explicitly unverified.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| togo654 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654; REVIEW_WORK/batch071/source01-03-preflight/togo654.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Exact selected-source identity preflight. Organism/source context screened before any operational assessment; no source transfer between variants. |
+| jcm640 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640; REVIEW_WORK/batch071/source01-03-preflight/jcm640.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Exact selected-source identity preflight. Organism/source context screened before any operational assessment; no source transfer between variants. |
+| jcm636 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636; REVIEW_WORK/batch071/source01-03-supplement/jcm636.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| apiJ640 | https://mediadive.dsmz.de/rest/medium/J640; REVIEW_WORK/batch071/source01-03-supplement/apiJ640.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| apiJ636 | https://mediadive.dsmz.de/rest/medium/J636; REVIEW_WORK/batch071/source01-03-supplement/apiJ636.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| togo180 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180; REVIEW_WORK/batch071/source01-03-supplement/togo180.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| togo190 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190; REVIEW_WORK/batch071/source01-03-supplement/togo190.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| jcm187 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187; REVIEW_WORK/batch071/source01-03-supplement/jcm187.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| jcm197 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; REVIEW_WORK/batch071/source01-03-supplement/jcm197.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| solution5342 | https://mediadive.dsmz.de/rest/solution/5342; REVIEW_WORK/batch071/source01-03-supplement/solution5342.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| solution5343 | https://mediadive.dsmz.de/rest/solution/5343; REVIEW_WORK/batch071/source01-03-supplement/solution5343.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| solution5312 | https://mediadive.dsmz.de/rest/solution/5312; REVIEW_WORK/batch071/source01-03-supplement/solution5312.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| target | data/merge_yaml/merged/Clostridium_SW_Medium.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-21 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-22 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5312_Solution_C.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-23 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5342_Solution_A.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-24 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5343_Solution_B.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-25 | reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-26 | reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M180.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-27 | reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-28 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Clostridium_SW_Medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-29 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/togo_medium_m190.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-30 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-31 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-32 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5312_Solution_C.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-33 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5342_Solution_A.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-34 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5343_Solution_B.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-35 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-36 | reports/yaml_record_review/20260923T163955Z-jcm_medium_no_197.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| historical-reading | REVIEW_WORK/batch071/record01/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch071/record01/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch071/record01/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| writer-togo | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _local_batch_volume_ml; _parse_unit; _extract_ph; _extract_preparation_steps | context_only | Current _extract_primary_components separates named local stocks; _solution_from_item retains a local stock without composition if its basis is insufficient. _parse_unit now maps mg to MG_PER_L and ml to ML_PER_L, but bare g still becomes G_PER_L and bare percent becomes PERCENT_W_V without independently proving final volume or percent basis. _extract_ph reads root ph, while these API payloads provide meta.ph. _extract_preparation_steps retains comments but its classifier checks autoclave before filtration and does not split mixed-process paragraphs. These are current behaviors, not proof of historical execution. |
+| writer-cleanup | scripts/cleanup_media_quality.py; MediaQualityFixer._merge_ingredient_group | context_only | Current _merge_ingredient_group keeps identical duplicate amounts and flags disagreements; it no longer sums duplicate quantities. It cannot establish compatible stock/main bases or repair a historical flattened sum. |
+| dep180 | data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml; solutions[0].composition/solutions[0].solutions/solutions[1].composition | context_only | Only the explicitly referenced stock compositions and nested HCl reagent are assessed; parent receiving doses, main formulation and unrelated preparation are excluded. |
+| dep190 | data/normalized_yaml/bacterial/togo_medium_m190.yaml; solutions[1].composition | context_only | Only the explicitly referenced stock compositions and nested HCl reagent are assessed; parent receiving doses, main formulation and unrelated preparation are excluded. |
+| compare5342 | data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml; Identity and complete comparison composition | context_only | Identity-only comparison of a wrongly linked same-name stock. Its composition is read to distinguish identity; quantities and chemical corrections are excluded from this selected-medium review. |
+| compare5343 | data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml; Identity and complete comparison composition | context_only | Identity-only comparison of a wrongly linked same-name stock. Its composition is read to distinguish identity; quantities and chemical corrections are excluded from this selected-medium review. |
+| compare5312 | data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml; Identity and complete comparison composition | context_only | Identity-only comparison of a wrongly linked same-name stock. Its composition is read to distinguish identity; quantities and chemical corrections are excluded from this selected-medium review. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16526; REVIEW_WORK/batch071/source01-03-supplement/chebi16526.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997; REVIEW_WORK/batch071/source01-03-supplement/chebi17997.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377; REVIEW_WORK/batch071/source01-03-supplement/chebi15377.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch071/source01-03-supplement/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; REVIEW_WORK/batch071/source01-03-supplement/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34683; REVIEW_WORK/batch071/source01-03-supplement/chebi34683.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch071/source01-03-supplement/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch071/source01-03-supplement/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch071/source01-03-supplement/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch071/source01-03-supplement/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234; REVIEW_WORK/batch071/source01-03-supplement/chebi17234.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209; REVIEW_WORK/batch071/source01-03-supplement/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248; REVIEW_WORK/batch071/source01-03-supplement/chebi91248.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch071/source01-03-supplement/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch071/source01-03-supplement/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch071/source01-03-supplement/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch071/source01-03-supplement/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:35696; REVIEW_WORK/batch071/source01-03-supplement/chebi35696.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch071/source01-03-supplement/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch071/source01-03-supplement/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch071/source01-03-supplement/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch071/source01-03-supplement/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch071/source01-03-supplement/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105; REVIEW_WORK/batch071/source01-03-supplement/chebi49105.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch071/source01-03-supplement/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch071/source01-03-supplement/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; REVIEW_WORK/batch071/source01-03-supplement/chebi27470.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch071/source01-03-supplement/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; REVIEW_WORK/batch071/source01-03-supplement/chebi17015.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch071/source01-03-supplement/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494; REVIEW_WORK/batch071/source01-03-supplement/chebi16494.json; exact original raw/text/hash/time metadata | context_only | Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| quantities | REVIEW_WORK/batch071/record01/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch071/record01/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch071/record01/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch071/record01/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch071/record01/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch071/record01/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch071/record01/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch071/record01/validate-schema.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch071/record01/validate-strict.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch071/record01/validate-terms.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch071/record01/validate-references.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Wrong MediaDive 5342/5343/5312 dependencies are identity comparisons only; their amount/form repairs are excluded and no composition transfers into SW.
+- Only M180 iron/trace compositions plus nested HCl and M190 vitamin composition are scientifically assessed. Main parent recipes, receiving doses, pH and unrelated preparation are excluded.
+- Primary JCM 640 inherits the base procedure but does not give a separate glucose stock preparation volume. That gap is retained; no replacement gas mixture, methanol dose or R6 variant is imported.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T154322Z-culturemech-010056-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: Clostridium SW Medium'
+started_at: '2026-10-28T15:21:45.360534Z'
+finished_at: '2026-10-28T15:43:22.172293Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, exact
+    captured sources, fresh scoped primary sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: SW source identity and its explicit glucose rate are supported. The selected
+  target/owner still flatten A/B stages, misstate water/resazurin/stock units, link
+  unrelated A/B/C stocks and omit the staged preparation. Repaired scoped M180/M190
+  notes and attached claims are credited, while hydrate and stereochemical limits
+  remain explicit.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+    sha256: ed55d903e4125444627f7383180308a19505d22d1d81ea6e0b360e7c70c9c552
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml
+    sha256: 5d4cf1d8c967ba57f9ecc15143ebbe65a2d8d6f7b0944cf21e59388d04285331
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    sha256: 98cc4695fdda2c9331df8506a14e2b22fbb29b87100f8812a6f0e59c4b03df1e
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml
+    sha256: b62be1d475240198979f708052c230a10a5d650e51572aef8af89354e9da54d6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/plan.json
+    sha256: 458245c753b023bf5e9b57d7ac836f18fda493553786e735de56d9fdc026c46d
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5312_Solution_C.yaml.md
+    sha256: e167b06340bce70ab77d6408c8f5e9cb6b1dbeef2c36e29ff20952990e3bfbd2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5342_Solution_A.yaml.md
+    sha256: f68b7d85766061aa31ffef0f0172844d47d0aae036221dc66d608c86e8dce7a6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5343_Solution_B.yaml.md
+    sha256: aca054ad3ae72ab8aee9908cb67ceac62a96adf84ff60a5141dda9b4f13ff6d8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/plan.json
+    sha256: 00113dc0b556486b52084f2508b061b9a188423d479f8aa102511ec55074ebd5
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M180.md
+    sha256: 92add964ce82b4d35cd58f93897f8bea6420fd3ce37ce77049e8449173263c30
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md
+    sha256: 89725cdcefc5da88b06931c4db253e065a5f48c2d2b9c8c0a9bc07f6fdc157e8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Clostridium_SW_Medium.md
+    sha256: bbf664c2d0741817180e15f8081895a71127cfb9660b8626876e69f5fbe945cb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/togo_medium_m190.md
+    sha256: 4ee172b59b8f9a19921c300ecf394dc632e301c0f375a6e86adfade6ec86a619
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.md
+    sha256: f7fa9416148a602515b571aedb11d7794ccdd4b2cce57bed8b84b78fc355a46e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.md
+    sha256: 44723eea180675fbec19d2038454b07f94378aecf25c6ff0ccf0642c810b293a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5312_Solution_C.md
+    sha256: 64ab17db61f41d71c9fab76cb8c0838b8cdcd81c4e35f7f240c71642196f0ff3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5342_Solution_A.md
+    sha256: 31d821180b177a4395ac64cfe2eb443091729cb74309085beeb1b765ed2dd2f2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5343_Solution_B.md
+    sha256: a1f8fb64c671e4aae298c328e3a93b1ad420e2d60c7400dbae6775f8081a0e33
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md
+    sha256: d29c2d8798f20259a253d2b17745d675b4a789de94bdcef5279332d086383022
+    role: context
+  - path: reports/yaml_record_review/20260923T163955Z-jcm_medium_no_197.md
+    sha256: 6497a50f712e4169a8f7a7cf4ae62d97e909b6695d86b7c522679b8f08909d7f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch071 index 01
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010056
+targets:
+- target_id: CultureMech:010056
+  path: data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+  label: clostridium_sw_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:010056
+  command: just validate-schema data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:010056
+  command: just validate-strict data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+    --out REVIEW_WORK/batch071/record01/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:010056
+  command: just validate-terms data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:010056
+  command: just validate-references data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: togo654
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654
+  accessed_at: '2026-10-28T15:20:21.179956Z'
+  locator: REVIEW_WORK/batch071/source01-03-preflight/togo654.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Exact selected-source identity preflight. Organism/source
+    context screened before any operational assessment; no source transfer between
+    variants.
+  snapshot_sha256: c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2
+- evidence_id: jcm640
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640
+  accessed_at: '2026-10-28T15:20:20.800019Z'
+  locator: REVIEW_WORK/batch071/source01-03-preflight/jcm640.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Exact selected-source identity preflight. Organism/source
+    context screened before any operational assessment; no source transfer between
+    variants.
+  snapshot_sha256: 201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173
+- evidence_id: jcm636
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636
+  accessed_at: '2026-10-28T15:22:21.505144Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/jcm636.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b
+- evidence_id: apiJ640
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J640
+  accessed_at: '2026-10-28T15:22:22.044381Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/apiJ640.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9dc2c3aa738c7f2d765b43feb473c05a66759e6c7b896bee53073b5f0094fe8e
+- evidence_id: apiJ636
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J636
+  accessed_at: '2026-10-28T15:22:22.235485Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/apiJ636.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: db99fe99d41f212feb1333f90a13d879d0b19ac06eeb01a8c886fab246c29c16
+- evidence_id: togo180
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180
+  accessed_at: '2026-10-28T15:22:21.595360Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/togo180.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba
+- evidence_id: togo190
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  accessed_at: '2026-10-28T15:22:22.192852Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/togo190.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528
+- evidence_id: jcm187
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187
+  accessed_at: '2026-10-28T15:22:21.514754Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/jcm187.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804
+- evidence_id: jcm197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  accessed_at: '2026-10-28T15:22:21.519386Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/jcm197.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: solution5342
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  accessed_at: '2026-10-28T15:22:22.141789Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/solution5342.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: solution5343
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  accessed_at: '2026-10-28T15:22:22.559480Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/solution5343.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: solution5312
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5312
+  accessed_at: '2026-10-28T15:22:22.649579Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/solution5312.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 6766811e685137e51045e0a5a2c301954772fa34dd3ed711eb541ef862e480b9
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/Clostridium_SW_Medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T15:32:46.784776Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: ed55d903e4125444627f7383180308a19505d22d1d81ea6e0b360e7c70c9c552
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T15:32:46.784951Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 98cc4695fdda2c9331df8506a14e2b22fbb29b87100f8812a6f0e59c4b03df1e
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T15:32:46.784982Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T15:32:46.785279Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T15:32:46.785302Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T15:32:46.785324Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T15:32:46.785349Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 458245c753b023bf5e9b57d7ac836f18fda493553786e735de56d9fdc026c46d
+- evidence_id: report-22
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5312_Solution_C.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787259Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: e167b06340bce70ab77d6408c8f5e9cb6b1dbeef2c36e29ff20952990e3bfbd2
+- evidence_id: report-23
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5342_Solution_A.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787303Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: f68b7d85766061aa31ffef0f0172844d47d0aae036221dc66d608c86e8dce7a6
+- evidence_id: report-24
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5343_Solution_B.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787326Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: aca054ad3ae72ab8aee9908cb67ceac62a96adf84ff60a5141dda9b4f13ff6d8
+- evidence_id: report-25
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T15:32:46.787348Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 00113dc0b556486b52084f2508b061b9a188423d479f8aa102511ec55074ebd5
+- evidence_id: report-26
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M180.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787743Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 92add964ce82b4d35cd58f93897f8bea6420fd3ce37ce77049e8449173263c30
+- evidence_id: report-27
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787781Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 89725cdcefc5da88b06931c4db253e065a5f48c2d2b9c8c0a9bc07f6fdc157e8
+- evidence_id: report-28
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Clostridium_SW_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787815Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: bbf664c2d0741817180e15f8081895a71127cfb9660b8626876e69f5fbe945cb
+- evidence_id: report-29
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/togo_medium_m190.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787843Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 4ee172b59b8f9a19921c300ecf394dc632e301c0f375a6e86adfade6ec86a619
+- evidence_id: report-30
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787868Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: f7fa9416148a602515b571aedb11d7794ccdd4b2cce57bed8b84b78fc355a46e
+- evidence_id: report-31
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787891Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 44723eea180675fbec19d2038454b07f94378aecf25c6ff0ccf0642c810b293a
+- evidence_id: report-32
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5312_Solution_C.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787912Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 64ab17db61f41d71c9fab76cb8c0838b8cdcd81c4e35f7f240c71642196f0ff3
+- evidence_id: report-33
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5342_Solution_A.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787933Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 31d821180b177a4395ac64cfe2eb443091729cb74309085beeb1b765ed2dd2f2
+- evidence_id: report-34
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5343_Solution_B.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787952Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: a1f8fb64c671e4aae298c328e3a93b1ad420e2d60c7400dbae6775f8081a0e33
+- evidence_id: report-35
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787971Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: d29c2d8798f20259a253d2b17745d675b4a789de94bdcef5279332d086383022
+- evidence_id: report-36
+  kind: prior_review
+  reference: reports/yaml_record_review/20260923T163955Z-jcm_medium_no_197.md
+  locator: Complete report
+  accessed_at: '2026-10-28T15:32:46.787993Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 6497a50f712e4169a8f7a7cf4ae62d97e909b6695d86b7c522679b8f08909d7f
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/historical-reading.json
+  accessed_at: '2026-10-28T15:32:46.788019Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 87578715800550bc448bba4ae6f3c46847257f101f5bc6cd60ae5e7ed48455f1
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T15:32:46.788105Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: c1269d537e9fcd8c99afecab93ce3f38b9f3aeb7df95bf05f3ee15c4503d9e96
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/complete-document-reader.json
+  accessed_at: '2026-10-28T15:32:46.788274Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: 1edb5791a139db6181970d07e14a3e488eda02f8791f01015c8ad12d63d67e4b
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T15:32:46.788399Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _local_batch_volume_ml;
+    _parse_unit; _extract_ph; _extract_preparation_steps
+  accessed_at: '2026-10-28T15:32:46.788423Z'
+  support: context_only
+  summary: Current _extract_primary_components separates named local stocks; _solution_from_item
+    retains a local stock without composition if its basis is insufficient. _parse_unit
+    now maps mg to MG_PER_L and ml to ML_PER_L, but bare g still becomes G_PER_L and
+    bare percent becomes PERCENT_W_V without independently proving final volume or
+    percent basis. _extract_ph reads root ph, while these API payloads provide meta.ph.
+    _extract_preparation_steps retains comments but its classifier checks autoclave
+    before filtration and does not split mixed-process paragraphs. These are current
+    behaviors, not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: MediaQualityFixer._merge_ingredient_group
+  accessed_at: '2026-10-28T15:32:46.788452Z'
+  support: context_only
+  summary: Current _merge_ingredient_group keeps identical duplicate amounts and flags
+    disagreements; it no longer sums duplicate quantities. It cannot establish compatible
+    stock/main bases or repair a historical flattened sum.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: dep180
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml
+  locator: solutions[0].composition/solutions[0].solutions/solutions[1].composition
+  accessed_at: '2026-10-28T15:32:46.824671Z'
+  support: context_only
+  summary: Only the explicitly referenced stock compositions and nested HCl reagent
+    are assessed; parent receiving doses, main formulation and unrelated preparation
+    are excluded.
+  snapshot_sha256: 5d4cf1d8c967ba57f9ecc15143ebbe65a2d8d6f7b0944cf21e59388d04285331
+- evidence_id: dep190
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+  locator: solutions[1].composition
+  accessed_at: '2026-10-28T15:32:46.824763Z'
+  support: context_only
+  summary: Only the explicitly referenced stock compositions and nested HCl reagent
+    are assessed; parent receiving doses, main formulation and unrelated preparation
+    are excluded.
+  snapshot_sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+- evidence_id: compare5342
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+  locator: Identity and complete comparison composition
+  accessed_at: '2026-10-28T15:32:46.827138Z'
+  support: context_only
+  summary: Identity-only comparison of a wrongly linked same-name stock. Its composition
+    is read to distinguish identity; quantities and chemical corrections are excluded
+    from this selected-medium review.
+  snapshot_sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+- evidence_id: compare5343
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+  locator: Identity and complete comparison composition
+  accessed_at: '2026-10-28T15:32:46.828259Z'
+  support: context_only
+  summary: Identity-only comparison of a wrongly linked same-name stock. Its composition
+    is read to distinguish identity; quantities and chemical corrections are excluded
+    from this selected-medium review.
+  snapshot_sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+- evidence_id: compare5312
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml
+  locator: Identity and complete comparison composition
+  accessed_at: '2026-10-28T15:32:46.829908Z'
+  support: context_only
+  summary: Identity-only comparison of a wrongly linked same-name stock. Its composition
+    is read to distinguish identity; quantities and chemical corrections are excluded
+    from this selected-medium review.
+  snapshot_sha256: b62be1d475240198979f708052c230a10a5d650e51572aef8af89354e9da54d6
+- evidence_id: chebi16526
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16526
+  accessed_at: '2026-10-28T15:22:24.592685Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi16526.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1fc9ed85cc20ea796dc5884bab2961c0cb13288fec88089767d5ca0349e6ab66
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997
+  accessed_at: '2026-10-28T15:22:25.845333Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi17997.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c4f240d59927c0f5c6c8d29c14830d0f278cfeabc4ed924be5c2b6bbe1039c05
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377
+  accessed_at: '2026-10-28T15:22:23.721558Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi15377.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a5ab66402b598c137daa8e5c8ba95811f1619db3e0f8b4f9bd0214161bafa0fe
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T15:22:31.937219Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi63036.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T15:22:35.446481Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi8806.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi34683
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34683
+  accessed_at: '2026-10-28T15:22:29.918224Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi34683.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 77f17276e9ef67f5b284232543dcfb3c01546658eb9e93fad4cbd1a5374bfb56
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T15:22:26.739184Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi26710.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T15:22:33.601745Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi86158.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T15:22:27.810039Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi31206.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T15:22:34.272665Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi86345.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234
+  accessed_at: '2026-10-28T15:22:25.290115Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi17234.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 91e3580b7a2c3718d25272b7ac62fe34badfa75bf58b16dd6ba08dfca987b859
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T15:22:33.149513Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi76209.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248
+  accessed_at: '2026-10-28T15:22:35.476611Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi91248.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d0959ac455ece32a6e94c13fd8e592403109201b6c61144dccfe0d58f1916380
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T15:22:33.746422Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi86249.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T15:22:32.709049Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi75213.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T15:22:29.628698Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi33118.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T15:22:34.829157Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi86368.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi35696
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:35696
+  accessed_at: '2026-10-28T15:22:30.558845Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi35696.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 22f49067d1405baa8e2bbd7c4405035d8663c69aa045b7bbacf363bb30729244
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T15:22:30.247758Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi34887.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T15:22:34.329794Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi86318.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T15:22:31.323766Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi49976.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T15:22:24.390247Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi15956.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T15:22:27.734877Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi30753.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  accessed_at: '2026-10-28T15:22:31.186068Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi49105.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T15:22:28.023190Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi31345.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T15:22:27.871011Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi30961.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  accessed_at: '2026-10-28T15:22:27.199110Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi27470.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T15:22:25.635324Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi176843.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  accessed_at: '2026-10-28T15:22:25.021579Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi17015.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T15:22:24.192226Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi15940.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  accessed_at: '2026-10-28T15:22:24.002483Z'
+  locator: REVIEW_WORK/batch071/source01-03-supplement/chebi16494.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch071 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:43:22.172293Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 551245d15402c7134120ce0aab1097a31f8843afc69e54be028c878ae0852b63
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:32:46.999219Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 90bc7f20d28cf2e33f95e8b1cbed42e264a88921f984d18bd5351eb90b7cf49f
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:32:46.999364Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 455340f0a913145e44fb8faf57df916b617cc7e6aa4c148929fef5e591a0716e
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:32:46.999542Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 4ea86b35459bf449ba705d6daf5296541301c116020012d39d4e71769a3214e0
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:32:46.999693Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: d379a1399bbcf643d57e5b4f8cceca252388713ecfffa31d0eef2ce2c28c68f5
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:32:46.999734Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 8e03835d2d3a35ad70c376d9f6f2c5ebd6676388b3a8cc7d3d611df84545282f
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch071/record01/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T15:32:46.999760Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 81e0455a9e8f315380b9b65f0cec0f2327511c4346659e424ffe7ffb9a6e663d
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch071/record01/validate-schema.json
+  accessed_at: '2026-10-28T15:21:46.472708Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: d2d4af8620b08941f634a31d35901222a241d3bf441838e10e44490ed93556a1
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch071/record01/validate-strict.json
+  accessed_at: '2026-10-28T15:21:47.434029Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 3e6a976df53c1b0f4847986f69d64bfaf02ea6c5fb82295a9e9e184faefba2a4
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch071/record01/validate-terms.json
+  accessed_at: '2026-10-28T15:21:48.453982Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: a64820e7467322a068c1b08bbdf1d614d91ee1e30e314df05adf3185c8cd2b0f
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch071/record01/validate-references.json
+  accessed_at: '2026-10-28T15:21:49.141276Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 13d1fd00d6ec35bdc4bf974477a49d53a291e1abfbcb728bfb9b28283fc1941e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: SW accession and exact linked-stock scope
+  outcome: concern
+  summary: TOGO M654 is JCM 640, explicitly using JCM 636 with glucose replacing methanol.
+    The unrelated MediaDive 5342/5343/5312 named A/B/C stocks are not these local
+    solutions. M180 contributes only iron/trace compositions; M190 only vitamin composition.
+    Parent main-medium doses and conditions are excluded.
+  target_ids:
+  - CultureMech:010056
+  evidence_ids:
+  - togo654
+  - jcm640
+  - jcm636
+  - apiJ640
+  - solution5342
+  - solution5343
+  - solution5312
+  - dep180
+  - dep190
+- assessment_id: classification
+  area: representation
+  topic: Complex liquid medium and organism scope
+  outcome: supported
+  summary: Complex/undefined liquid classification agrees with the yeast extract and
+    tryptone recipe. No organism or strain claim is established by the generic Clostridium
+    title. Existing gas VARIABLE markers are not erroneous concentration measurements.
+  target_ids:
+  - CultureMech:010056
+  evidence_ids:
+  - target
+  - owner
+  - jcm640
+  - jcm636
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 51 current concentration fields are covered by 50 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:010056
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b071-quantity-inventory-v1","target":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","quantity_field_count":51,"decisions":[{"quantity_id":"q1","label":"Carbon
+    dioxide gas","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations.","source_stage":"unquantified gas and explicit
+    preparation context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\":
+    \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\",\n          \"gmo_id\":
+    \"GMO_002260\",\n          \"label\": \"Carbon dioxide gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\":
+    5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave
+    Solution C in a closed tube or vial. After cooling, combine the three solutions
+    under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    7,\n      \"comment\": \"Distribute the medium into culture vessels under the
+    same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as
+    5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations."}]},{"quantity_id":"q2","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations.","source_stage":"unquantified gas and explicit
+    preparation context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\":
+    \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\":
+    \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\":
+    5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave
+    Solution C in a closed tube or vial. After cooling, combine the three solutions
+    under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    7,\n      \"comment\": \"Distribute the medium into culture vessels under the
+    same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as
+    5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations."}]},{"quantity_id":"q3","label":"Distilled
+    water","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"960.0","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"960.0","unit":"G_PER_L"}}],"decision":"conflict","rationale":"960
+    is the sum of 860 ml A water and 100 ml B water, not 960 g/L. Keep both source
+    inputs in their separate solutions; neither their sum nor other additions establish
+    measured final volume.","source_stage":"separate A/B water batches","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 860,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\":
+    \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 5 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;860.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 12 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;100.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"960
+    is the sum of 860 ml A water and 100 ml B water, not 960 g/L. Keep both source
+    inputs in their separate solutions; neither their sum nor other additions establish
+    measured final volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"960
+    is the sum of 860 ml A water and 100 ml B water, not 960 g/L. Keep both source
+    inputs in their separate solutions; neither their sum nor other additions establish
+    measured final volume."}]},{"quantity_id":"q4","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.54","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.54","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.54,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 0 (zero-based)","quote":"<TR><TD WIDTH=75%> KH<sub>2</sub>PO<sub>4</sub>                                            </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.54&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[3].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q5","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    exact source is 1 mg resazurin in A, not 1 g/L. Preserve its mass and stage without
+    assuming final volume.","source_stage":"Solution A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001012\",\n          \"gmo_id\": \"GMO_001012\",\n          \"label\":
+    \"Resazurin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\":
+    \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 4 (zero-based)","quote":"<TR><TD WIDTH=75%> Resazurin                                               </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","decision":"conflict","rationale":"The
+    exact source is 1 mg resazurin in A, not 1 g/L. Preserve its mass and stage without
+    assuming final volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[4].concentration","decision":"conflict","rationale":"The
+    exact source is 1 mg resazurin in A, not 1 g/L. Preserve its mass and stage without
+    assuming final volume."}]},{"quantity_id":"q6","label":"Na2HPO4","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.34","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"1.34","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\":
+    \"Na2HPO4\",\n          \"volume\": 1.34,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001069\",\n          \"gmo_id\": \"GMO_001069\",\n          \"label\":
+    \"Disodium phosphate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 1 (zero-based)","quote":"<TR><TD WIDTH=75%> Na<sub>2</sub>HPO<sub>4</sub>                                           </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.34&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q7","label":"Yeast
+    extract (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"3","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\":
+    \"Yeast extract (BD-Difco)\",\n          \"volume\": 3,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\": \"GMO_001018\",\n          \"label\":
+    \"Bacto &trade; Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 2 (zero-based)","quote":"<TR><TD WIDTH=75%> Yeast extract (BD-Difco)                                           </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;3.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q8","label":"Tryptone
+    (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    A","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\":
+    \"Tryptone (BD-Difco)\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\":
+    \"Bacto &trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 3 (zero-based)","quote":"<TR><TD WIDTH=75%> Tryptone (BD-Difco)                                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[7].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q9","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[1]","quote":"{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 0.19,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 7 (zero-based)","quote":"<TR><TD WIDTH=75%> NaCl                                                    </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.19&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q10","label":"CaCl2・2H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.006","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[2]","quote":"{\n          \"component_name\":
+    \"CaCl2・2H2O\",\n          \"volume\": 0.006,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 8 (zero-based)","quote":"<TR><TD WIDTH=75%> CaCl<sub>2</sub>&#183;2H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.006&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q11","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.19","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.19","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[3]","quote":"{\n          \"component_name\":
+    \"NH4Cl\",\n          \"volume\": 0.19,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\":
+    \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\":
+    \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 6 (zero-based)","quote":"<TR><TD WIDTH=75%> NH<sub>4</sub>Cl                                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.19&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q12","label":"MgCl2・6H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.063","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.063","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate.","source_stage":"Solution
+    B","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[4]","quote":"{\n          \"component_name\":
+    \"MgCl2・6H2O\",\n          \"volume\": 0.063,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\":
+    \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 9 (zero-based)","quote":"<TR><TD WIDTH=75%> MgCl<sub>2</sub>&#183;6H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.063&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The
+    unchanged numeral is an exact source batch mass in A or B, but G_PER_L lacks an
+    explicit final-medium denominator and flattens its solution stage. Credit the
+    source mass and supplied form; do not guess a replacement final rate."}]},{"quantity_id":"q13","label":"glucose","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"JCM640
+    explicitly specifies 5.0 g/L glucose replacing methanol; the current glucose value/unit
+    are supported and need exact attached evidence. Do not retain the base methanol
+    addition or transfer the R6 variant.","source_stage":"SW-specific explicit glucose
+    rate","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[3].items[0]","quote":"{\n          \"component_name\":
+    \"glucose\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\":
+    \"Glucose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm640","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/jcm640.bin","raw_sha256":"201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173","text_sha256":"56d607f7a82e71c4e0f84e755204dfe728ae6cd90ab7f5d6f21dfc8abf71516d","accessed_at":"2026-10-28T15:20:20.800019Z","locator":"Exact
+    SW replacement sentence","quote":"with 5.0 g/L glucose instead of methanol.","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","decision":"evidence_only","rationale":"JCM640
+    explicitly specifies 5.0 g/L glucose replacing methanol; the current glucose value/unit
+    are supported and need exact attached evidence. Do not retain the base methanol
+    addition or transfer the R6 variant."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[12].concentration","decision":"evidence_only","rationale":"JCM640
+    explicitly specifies 5.0 g/L glucose replacing methanol; the current glucose value/unit
+    are supported and need exact attached evidence. Do not retain the base methanol
+    addition or transfer the R6 variant."}]},{"quantity_id":"q14","label":"Na2S・9H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The
+    existing VARIABLE marker does not invent a working dose or a percent basis. The
+    source nevertheless supplies 0.025% receiving-medium context and separately 5%
+    stock wording; retain those exact labels in scoped preparation without converting
+    bare percent to w/v or guessing an addition volume.","source_stage":"separate
+    reducing reagent context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[2]","quote":"{\n          \"component_name\":
+    \"Na2S・9H2O\",\n          \"conc_value\": 0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001494\",\n          \"gmo_id\": \"GMO_001494\",\n          \"label\":
+    \"Sodium sulfide nonahydrate solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000064\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000064\",\n              \"label\": \"Reducing
+    agent\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    7,\n      \"comment\": \"Distribute the medium into culture vessels under the
+    same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as
+    5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","decision":"evidence_only","rationale":"The
+    existing VARIABLE marker does not invent a working dose or a percent basis. The
+    source nevertheless supplies 0.025% receiving-medium context and separately 5%
+    stock wording; retain those exact labels in scoped preparation without converting
+    bare percent to w/v or guessing an addition volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[13].concentration","decision":"evidence_only","rationale":"The
+    existing VARIABLE marker does not invent a working dose or a percent basis. The
+    source nevertheless supplies 0.025% receiving-medium context and separately 5%
+    stock wording; retain those exact labels in scoped preparation without converting
+    bare percent to w/v or guessing an addition volume."}]},{"quantity_id":"q15","label":"L--cysteine・HCl・H2O","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"The
+    existing VARIABLE marker does not invent a working dose or a percent basis. The
+    source nevertheless supplies 0.025% receiving-medium context and separately 5%
+    stock wording; retain those exact labels in scoped preparation without converting
+    bare percent to w/v or guessing an addition volume.","source_stage":"separate
+    reducing reagent context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[3]","quote":"{\n          \"component_name\":
+    \"L--cysteine・HCl・H2O\",\n          \"conc_value\": 0.025,\n          \"conc_unit\":
+    \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001205\",\n          \"gmo_id\":
+    \"GMO_001205\",\n          \"label\": \"L-Cysteine hydrochloride monohydrate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    7,\n      \"comment\": \"Distribute the medium into culture vessels under the
+    same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as
+    5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","decision":"evidence_only","rationale":"The
+    existing VARIABLE marker does not invent a working dose or a percent basis. The
+    source nevertheless supplies 0.025% receiving-medium context and separately 5%
+    stock wording; retain those exact labels in scoped preparation without converting
+    bare percent to w/v or guessing an addition volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[14].concentration","decision":"evidence_only","rationale":"The
+    existing VARIABLE marker does not invent a working dose or a percent basis. The
+    source nevertheless supplies 0.025% receiving-medium context and separately 5%
+    stock wording; retain those exact labels in scoped preparation without converting
+    bare percent to w/v or guessing an addition volume."}]},{"quantity_id":"q16","label":"N2","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations.","source_stage":"unquantified gas and explicit
+    preparation context","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[4]","quote":"{\n          \"component_name\":
+    \"N2\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\":
+    \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\":
+    5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave
+    Solution C in a closed tube or vial. After cooling, combine the three solutions
+    under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    7,\n      \"comment\": \"Distribute the medium into culture vessels under the
+    same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as
+    5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"ingredients[15].concentration","decision":"evidence_only","rationale":"VARIABLE
+    truthfully marks a gas with no quantified dissolved-medium concentration. Preserve
+    the N2/CO2 and separate N2 preparation contexts; identical nitrogen labels do
+    not justify adding concentrations."}]},{"quantity_id":"q17","label":"Solution
+    A","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"860","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"860","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration.
+    A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve
+    primary batch structure and do not interpret the nominal sum as measured final
+    volume.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\":
+    \"Solution A\",\n          \"volume\": 860,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M654\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 5 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;860.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","decision":"conflict","rationale":"The
+    TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration.
+    A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve
+    primary batch structure and do not interpret the nominal sum as measured final
+    volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[0].concentration","decision":"conflict","rationale":"The
+    TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration.
+    A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve
+    primary batch structure and do not interpret the nominal sum as measured final
+    volume."}]},{"quantity_id":"q18","label":"Solution B","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"102","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"102","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration.
+    A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve
+    primary batch structure and do not interpret the nominal sum as measured final
+    volume.","source_stage":"SW source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\":
+    \"Solution B\",\n          \"volume\": 102,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M654\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 12 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;100.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","decision":"conflict","rationale":"The
+    TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration.
+    A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve
+    primary batch structure and do not interpret the nominal sum as measured final
+    volume."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[1].concentration","decision":"conflict","rationale":"The
+    TOGO wrapper carries an ml-labelled local solution addition, not a g/L concentration.
+    A860 is its water input; B102 combines 100 ml water with two 1 ml stocks. Preserve
+    primary batch structure and do not interpret the nominal sum as measured final
+    volume."}]},{"quantity_id":"q19","label":"Solution C","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    number 5 g/L is the explicitly supported SW glucose rate, not an independently
+    quantified Solution C stock strength or addition volume. This solution wrapper
+    must not double-count glucose or import the unrelated tetrathionate stock5312.","source_stage":"SW
+    source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\":
+    \"Solution C\",\n          \"volume\": 5,\n          \"unit\": \"g/L\",\n          \"reference_media_id\":
+    \"M654\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm640","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/jcm640.bin","raw_sha256":"201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173","text_sha256":"56d607f7a82e71c4e0f84e755204dfe728ae6cd90ab7f5d6f21dfc8abf71516d","accessed_at":"2026-10-28T15:20:20.800019Z","locator":"Exact
+    SW replacement sentence","quote":"with 5.0 g/L glucose instead of methanol.","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","decision":"unsupported","rationale":"The
+    number 5 g/L is the explicitly supported SW glucose rate, not an independently
+    quantified Solution C stock strength or addition volume. This solution wrapper
+    must not double-count glucose or import the unrelated tetrathionate stock5312."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[2].concentration","decision":"unsupported","rationale":"The
+    number 5 g/L is the explicitly supported SW glucose rate, not an independently
+    quantified Solution C stock strength or addition volume. This solution wrapper
+    must not double-count glucose or import the unrelated tetrathionate stock5312."}]},{"quantity_id":"q20","label":"FeCl2
+    solution (see Medium [M180])","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator.","source_stage":"SW
+    source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[5]","quote":"{\n          \"component_name\":
+    \"FeCl2 solution (see Medium [M180])\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M180\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 10 (zero-based)","quote":"<TR><TD WIDTH=75%> FeCl<sub>2</sub> solution
+    (see Medium No. <a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\">187</a>)                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[3].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q21","label":"Trace
+    element solution (see Medium [M180])","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator.","source_stage":"SW
+    source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[2].items[6]","quote":"{\n          \"component_name\":
+    \"Trace element solution (see Medium [M180])\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M180\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 11 (zero-based)","quote":"<TR><TD WIDTH=75%> Trace element solution
+    (see Medium No. <a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\">187</a>)           </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[4].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q22","label":"8%
+    NaHCO3 solution","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","stored":{"value":"30","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","stored":{"value":"30","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator.","source_stage":"SW
+    source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[0]","quote":"{\n          \"component_name\":
+    \"8% NaHCO3 solution\",\n          \"volume\": 30,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    8,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001119\",\n          \"gmo_id\":
+    \"GMO_001119\",\n          \"label\": \"Sodium bicarbonate solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 15 (zero-based)","quote":"<TR><TD WIDTH=75%> 8% NaHCO<sub>3</sub> solution                                 </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;30.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[5].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q23","label":"Trace
+    vitamins (see Medium [M190])","local_fields":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","stored":{"value":"10","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator.","source_stage":"SW
+    source-specific stock/addition","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"components[4].items[1]","quote":"{\n          \"component_name\":
+    \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M190\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"HTML
+    table row 14 (zero-based)","quote":"<TR><TD WIDTH=75%> Trace vitamins (see Medium
+    No. <a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=197\">197</a>)                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."},{"path":"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml","field_path":"solutions[6].concentration","decision":"conflict","rationale":"The
+    source specifies an ml addition, not the same numeral G_PER_L. Preserve the exact
+    named stock and its stage. The bicarbonate 8% basis is unspecified; receiving-batch
+    volume is not an independently proven final-litre denominator."}]},{"quantity_id":"q24","label":"Scoped
+    Distilled water","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"0.99","unit":"L"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].notes","stored":"Role:
+    Solvating media; Properties: Inorganic compound, Defined component, Simple component
+    [Merged 3 duplicates: 990.0, 990.0, 1.0]\n\nSource water batch input: 990 ml =
+    0.99 L. This is not a measured final volume. Prior duplicate-collapse notes describe
+    the superseded flattened record."}],"decision":"verified","rationale":"The current
+    repaired field/note is supported by its attached literal excerpt and exact current
+    raw digest. Water retains an explicit input-volume unit; dry mass stays in notes
+    with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 990,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 18 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;990.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].concentration","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[0].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q25","label":"Scoped
+    FeCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[1].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 1.5 g. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"FeCl2・4H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001548\",\n          \"gmo_id\": \"GMO_001548\",\n          \"label\":
+    \"Iron(II) chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 17 (zero-based)","quote":"<TR><TD WIDTH=75%> FeCl<sub>2</sub>&#183;4H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].composition[1].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q26","label":"Scoped
+    Distilled water","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"1","unit":"L"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].notes","stored":"Role:
+    Solvating media; Properties: Inorganic compound, Defined component, Simple component
+    [Merged 3 duplicates: 990.0, 990.0, 1.0]\n\nSource water batch input: 1 L = 1
+    L. This is not a measured final volume. Prior duplicate-collapse notes describe
+    the superseded flattened record."}],"decision":"verified","rationale":"The current
+    repaired field/note is supported by its attached literal excerpt and exact current
+    raw digest. Water retains an explicit input-volume unit; dry mass stays in notes
+    with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 26 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                         </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> L        </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].concentration","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[0].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q27","label":"Scoped
+    Na2MoO4・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[1].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 36 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[1]","quote":"{\n          \"component_name\":
+    \"Na2MoO4・2H2O\",\n          \"volume\": 36,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 25 (zero-based)","quote":"<TR><TD WIDTH=75%> Na<sub>2</sub>MoO<sub>4</sub>&#183;2H<sub>2</sub>O                            </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;36.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[1].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q28","label":"Scoped
+    H3BO3","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[2].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 6 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[2]","quote":"{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 6,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 21 (zero-based)","quote":"<TR><TD WIDTH=75%> H<sub>3</sub>BO<sub>3</sub>                                             </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;6.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[2].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q29","label":"Scoped
+    MnCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[3].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 100 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[3]","quote":"{\n          \"component_name\":
+    \"MnCl2・4H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001020\",\n          \"gmo_id\": \"GMO_001020\",\n          \"label\":
+    \"Manganese chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 20 (zero-based)","quote":"<TR><TD WIDTH=75%> MnCl<sub>2</sub>&#183;4H<sub>2</sub>O                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;100.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[3].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q30","label":"Scoped
+    CoCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[4].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 190 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[4]","quote":"{\n          \"component_name\":
+    \"CoCl2・6H2O\",\n          \"volume\": 190,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\":
+    \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 22 (zero-based)","quote":"<TR><TD WIDTH=75%> CoCl<sub>2</sub>&#183;6H<sub>2</sub>O                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;190.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[4].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q31","label":"Scoped
+    NiCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[5].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 24 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[5]","quote":"{\n          \"component_name\":
+    \"NiCl2・6H2O\",\n          \"volume\": 24,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001022\",\n          \"gmo_id\": \"GMO_001022\",\n          \"label\":
+    \"Nickel chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 24 (zero-based)","quote":"<TR><TD WIDTH=75%> NiCl<sub>2</sub>&#183;6H<sub>2</sub>O                                 </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;24.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[5].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q32","label":"Scoped
+    CuCl2・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[6].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 2 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[6]","quote":"{\n          \"component_name\":
+    \"CuCl2・2H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001024\",\n          \"gmo_id\": \"GMO_001024\",\n          \"label\":
+    \"Copper(II) chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 23 (zero-based)","quote":"<TR><TD WIDTH=75%> CuCl<sub>2</sub>&#183;2H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[6].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q33","label":"Scoped
+    ZnCl2","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[7].notes","stored":"Role:
+    Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource
+    batch input: 70 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[2].items[7]","quote":"{\n          \"component_name\":
+    \"ZnCl2\",\n          \"volume\": 70,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001035\",\n          \"gmo_id\": \"GMO_001035\",\n          \"label\":
+    \"Zinc chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 19 (zero-based)","quote":"<TR><TD WIDTH=75%> ZnCl<sub>2</sub>                                               </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;70.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[1].composition[7].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q34","label":"Scoped
+    Distilled water","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"1","unit":"L"}},{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].notes","stored":"Role:
+    Solvating media; Properties: Inorganic compound, Defined component, Simple component
+    [Merged 3 duplicates: 981.0, 1.0, 1.0]\n\nSource water batch input: 1 L = 1 L.
+    This is not a measured final volume. Prior duplicate-collapse notes describe the
+    superseded flattened record."}],"decision":"verified","rationale":"The current
+    repaired field/note is supported by its attached literal excerpt and exact current
+    raw digest. Water retains an explicit input-volume unit; dry mass stays in notes
+    with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 25 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                         </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> L  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].concentration","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."},{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q35","label":"Scoped
+    Biotin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[1].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 2 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\":
+    \"Biotin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 15 (zero-based)","quote":"<TR><TD WIDTH=75%> Biotin                                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[1].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q36","label":"Scoped
+    p--Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[2].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\":
+    \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 23 (zero-based)","quote":"<TR><TD WIDTH=75%> <I>p</I>-Aminobenzoic acid                             </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[2].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q37","label":"Scoped
+    Thiamine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[3].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\":
+    \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\":
+    \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 18 (zero-based)","quote":"<TR><TD WIDTH=75%> Thiamine&#183;HCl                                      </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[3].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q38","label":"Scoped
+    Calcium pantothenate","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[4].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\":
+    \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\":
+    \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 21 (zero-based)","quote":"<TR><TD WIDTH=75%> Calcium pantothenate                                    </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[4].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q39","label":"Scoped
+    Pyridoxine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[5].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 10 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\":
+    \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\":
+    \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 17 (zero-based)","quote":"<TR><TD WIDTH=75%> Pyridoxine&#183;HCl                                   </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[5].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q40","label":"Scoped
+    Folic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[6].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 2 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\":
+    \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\":
+    \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 16 (zero-based)","quote":"<TR><TD WIDTH=75%> Folic acid                                              </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[6].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q41","label":"Scoped
+    Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[7].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 0.1 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\":
+    \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\":
+    \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 22 (zero-based)","quote":"<TR><TD WIDTH=75%> Vitamin B<sub>1</sub><sub>2</sub>                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[7].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q42","label":"Scoped
+    Riboflavin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[8].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\":
+    \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\":
+    \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 19 (zero-based)","quote":"<TR><TD WIDTH=75%> Riboflavin                                              </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[8].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q43","label":"Scoped
+    Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[9].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\":
+    \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\":
+    \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 20 (zero-based)","quote":"<TR><TD WIDTH=75%> Nicotinic acid                                          </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[9].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q44","label":"Scoped
+    Lipoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[10].notes","stored":"Role:
+    Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The current repaired field/note
+    is supported by its attached literal excerpt and exact current raw digest. Water
+    retains an explicit input-volume unit; dry mass stays in notes with the unsupported
+    stock g/L assertion withdrawn. This does not authenticate the original retrieval
+    event, parent dose or a final working-medium concentration.","source_stage":"M180
+    iron/trace or M190 vitamin stock only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo190.bin","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"288fc01a439a7c12ae0c8421c26c5768888a01c7e983f8242be0d1cc229dafcb","accessed_at":"2026-10-28T15:22:22.192852Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\":
+    \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001699\",\n          \"gmo_id\": \"GMO_001699\",\n          \"label\":
+    \"Lipoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000067\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\": \"Growth factor\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm197.bin","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","text_sha256":"4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450","accessed_at":"2026-10-28T15:22:21.519386Z","locator":"HTML
+    table row 24 (zero-based)","quote":"<TR><TD WIDTH=75%> Lipoic acid                                             </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[10].notes","decision":"verified","rationale":"The
+    current repaired field/note is supported by its attached literal excerpt and exact
+    current raw digest. Water retains an explicit input-volume unit; dry mass stays
+    in notes with the unsupported stock g/L assertion withdrawn. This does not authenticate
+    the original retrieval event, parent dose or a final working-medium concentration."}]},{"quantity_id":"q45","label":"HCl
+    reagent strength","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].concentration","stored":{"value":"7.7","unit":"MOLAR"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].notes","stored":"Role:
+    Solvating media; Properties: Defined component, Inorganic compound, Solution\n\nExplicit
+    HCl reagent strength 7.7 M, not a final-medium concentration. The 25% basis is
+    unspecified; the enclosing stock holds the 10 ml batch dose."}],"decision":"verified","rationale":"The
+    attached exact TOGO excerpt/digest and primary table support 7.7 M HCl reagent
+    strength. Bare 25% remains unspecified and is not converted.","source_stage":"nested
+    HCl reagent","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\",\n          \"gmo_id\":
+    \"GMO_001499\",\n          \"label\": \"Hydrochloric acid solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 16 (zero-based)","quote":"<TR><TD WIDTH=75%> 25% HCl (7.7 M)                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].concentration","decision":"verified","rationale":"The
+    attached exact TOGO excerpt/digest and primary table support 7.7 M HCl reagent
+    strength. Bare 25% remains unspecified and is not converted."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].composition[0].notes","decision":"verified","rationale":"The
+    attached exact TOGO excerpt/digest and primary table support 7.7 M HCl reagent
+    strength. Bare 25% remains unspecified and is not converted."}]},{"quantity_id":"q46","label":"HCl
+    stock input volume","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].concentration","stored":{"value":"0.01","unit":"L"}},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].notes","stored":"Source
+    stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose
+    per final liter."}],"decision":"verified","rationale":"The exact additional root-evidence
+    excerpt explicitly scopes this field to the 10 ml HCl input; 10 ml / 1000 = 0.01
+    L. Its claimed raw digest matches the fresh capture. Only this excerpt is credited,
+    excluding the root primary snippet and parent receiving doses.","source_stage":"nested
+    iron-stock HCl addition","sources":[{"evidence_id":"togo180","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M180","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/togo180.bin","raw_sha256":"a2ba84bc75a35379b464d5ac8a7ce0f787642b69838cdc2b4763a5657555edba","text_sha256":"10dfb30304835338c19b715b8269918045d2fcfb8fadd207a9caf6698fe1665b","accessed_at":"2026-10-28T15:22:21.595360Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"25% HCl (7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    25,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\",\n          \"gmo_id\":
+    \"GMO_001499\",\n          \"label\": \"Hydrochloric acid solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm187.bin","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","text_sha256":"9770fd9e001c3a8aab8415d94c72cca1fadec4928f262f480c37c99279a0aa7b","accessed_at":"2026-10-28T15:22:21.514754Z","locator":"HTML
+    table row 16 (zero-based)","quote":"<TR><TD WIDTH=75%> 25% HCl (7.7 M)                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_assessments":[{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].concentration","decision":"verified","rationale":"The
+    exact additional root-evidence excerpt explicitly scopes this field to the 10
+    ml HCl input; 10 ml / 1000 = 0.01 L. Its claimed raw digest matches the fresh
+    capture. Only this excerpt is credited, excluding the root primary snippet and
+    parent receiving doses."},{"path":"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml","field_path":"solutions[0].solutions[0].notes","decision":"verified","rationale":"The
+    exact additional root-evidence excerpt explicitly scopes this field to the 10
+    ml HCl input; 10 ml / 1000 = 0.01 L. Its claimed raw digest matches the fresh
+    capture. Only this excerpt is credited, excluding the root primary snippet and
+    parent receiving doses."}]},{"quantity_id":"q47","label":"SW source-only preparation
+    0","local_fields":[],"decision":"evidence_only","rationale":"Restore only the
+    exact SW/base636 scoped preparation and replacement relation. Separate autoclaving,
+    subsequent filter-sterilized additions, gas context and bare-percent labels are
+    preserved without invented dose/strength basis.","source_stage":"source-only SW
+    preparation","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\":
+    5,\n      \"comment\": \"Autoclave Solutions A and B separately and autoclave
+    Solution C in a closed tube or vial. After cooling, combine the three solutions
+    under a stream of N2--CO2 (80:20, v/v), then add the following solutions (filter--sterilized):\"\n    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q48","label":"SW source-only
+    preparation 1","local_fields":[],"decision":"evidence_only","rationale":"Restore
+    only the exact SW/base636 scoped preparation and replacement relation. Separate
+    autoclaving, subsequent filter-sterilized additions, gas context and bare-percent
+    labels are preserved without invented dose/strength basis.","source_stage":"source-only
+    SW preparation","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    7,\n      \"comment\": \"Distribute the medium into culture vessels under the
+    same gas mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L--cysteine・HCl・H2O and 0.025% Na2S・9H2O (autoclaved as
+    5% solutions under a N2 atmosphere).\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q49","label":"SW
+    source-only preparation 3","local_fields":[],"decision":"evidence_only","rationale":"Restore
+    only the exact SW/base636 scoped preparation and replacement relation. Separate
+    autoclaving, subsequent filter-sterilized additions, gas context and bare-percent
+    labels are preserved without invented dose/strength basis.","source_stage":"source-only
+    SW preparation","sources":[{"evidence_id":"togo654","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M654","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/togo654.bin","raw_sha256":"c4aeb237422e881975aee73b8b98d5d9f3c1c26911174379ea3e26ce2d6ee6b2","text_sha256":"75378804ade4a7dc43451161576509b6c3a07ca80b100b4195b7b842fa90f1ff","accessed_at":"2026-10-28T15:20:21.179956Z","locator":"comments[3]","quote":"{\n      \"paragraph_index\":
+    9,\n      \"comment\": \"Use Medium No. [636] with 5.0 g/L glucose instead of
+    methanol.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q50","label":"JCM
+    page-default autoclave controls","local_fields":[],"decision":"evidence_only","rationale":"Both
+    exact JCM pages state the default 121°C for 15 minutes unless otherwise specified.
+    Apply this only to inherited preparation steps that call for autoclaving; it does
+    not replace the explicitly subsequent filtration steps or establish an unstated
+    stock addition, final volume or growth condition.","source_stage":"Source-only
+    inherited autoclave steps; later filtration excluded","sources":[{"evidence_id":"jcm640","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=640","raw_path":"REVIEW_WORK/batch071/source01-03-preflight/jcm640.bin","raw_sha256":"201ef33617b6813a4b03d80c3dfe4f9295cee679073d59b286b3ef8da9550173","text_sha256":"56d607f7a82e71c4e0f84e755204dfe728ae6cd90ab7f5d6f21dfc8abf71516d","accessed_at":"2026-10-28T15:20:20.800019Z","locator":"jcm640.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"jcm636","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=636","raw_path":"REVIEW_WORK/batch071/source01-03-supplement/jcm636.bin","raw_sha256":"dafcc2ffbee3d30fae13d4ba208df2e1d54636063c4e61a6c7096081d4edd27b","text_sha256":"0fc6855a49f712e8ec392406cc0b1f3d7062b93c2616679a40d44de25977b38a","accessed_at":"2026-10-28T15:22:21.505144Z","locator":"jcm636.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min.","quote_basis":"derivative text"}],"layer_assessments":[]}],"document_scopes":{"data/merge_yaml/merged/Clostridium_SW_Medium.yaml":null,"data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml":null,"data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml":["solutions[0].composition","solutions[0].solutions","solutions[1].composition"],"data/normalized_yaml/bacterial/togo_medium_m190.yaml":["solutions[1].composition"],"data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml":["id","name","original_name"],"data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml":["id","name","original_name"],"data/normalized_yaml/bacterial/mediadive_5312_Solution_C.yaml":["id","name","original_name"]},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All in-scope current ontology labels and exact MIM rows are joined. Main
+    glucose, phosphate, calcium/magnesium hydrates, resazurin, sulfide nonahydrate
+    and cysteine hydrochloride monohydrate are chemically consistent with source names;
+    supplier grades remain separate. M180 cobalt/nickel hydrate mismatches are confirmed.
+    M190 generic calcium pantothenate does not establish the stereochemistry in CHEBI:31345;
+    no unsupported replacement or mass conversion is proposed.
+  target_ids:
+  - CultureMech:010056
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: 'All fourteen report scopes and five exact historical parent rows were
+    read; unchanged M180/M190 complete reports were rejoined to the prior full read
+    by exact bytes. October 8 repaired stock notes and attached raw claims are credited,
+    including the additional root HCl excerpt. October 5 no-source triage is not proof
+    of current invalidity. September 23 parent 197 per-litre and merge recommendations
+    are not automatically adopted: they concern other source owners/main doses and
+    predate current scoped repairs. Current TOGO separates named sections, while current
+    cleanup does not sum; neither proves historical execution. Original events remain
+    append-only.'
+  target_ids:
+  - CultureMech:010056
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-010056-unit-stock-stage
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore A/B solution boundaries and source units
+  description: Restore the distinct A/B compositions and water inputs, source 1 mg
+    resazurin, and ml stock additions. Keep glucose at the explicitly supported SW
+    5 g/L. The Solution C wrapper does not establish an additional glucose stock strength
+    or dose; avoid double-counting it. Do not turn source batch masses or nominal
+    liquid sums into final-medium rates.
+  target_ids:
+  - CultureMech:010056
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - togo654
+  - jcm640
+  - jcm636
+  - writer-togo
+  - writer-cleanup
+  rule_id: review-ingredient-concentrations/unit-and-solution-stage
+  native_severity: P2
+  normalization_reason: 'Custom quantity/stage rule: wrong unit dimensions and flattened
+    solution bases materially misrepresent the recipe; this is not the narrower native
+    P2.3 physical-state rule.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-010056-stock-link-identity
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Resolve same-name stock links to the actual SW stocks
+  description: 'Replace the links to MediaDive 5342, 5343 and 5312 only after representing
+    the local SW A/B/glucose context. Their source compositions differ: 5342 is a
+    salty yeast/casamino stock, 5343 a carbonate/salt stock, 5312 tetrathionate. Generic
+    A/B/C names cannot establish equivalence.'
+  target_ids:
+  - CultureMech:010056
+  field_paths:
+  - solutions[0].term
+  - solutions[1].term
+  - solutions[2].term
+  evidence_ids:
+  - togo654
+  - jcm640
+  - jcm636
+  - solution5342
+  - solution5343
+  - solution5312
+  rule_id: review-yaml-record/identity
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-010056-preparation-evidence
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore source-specific preparation and evidence
+  description: 'Retain the exact inherited 636 procedure with the 640 substrate substitution:
+    separate preparations and later additions have different stages. Add root-level
+    path-scoped evidence, preserve unspecified percent bases, and replace Unknown
+    solution names. The source does not establish a numeric pH or final volume, so
+    neither is invented.'
+  target_ids:
+  - CultureMech:010056
+  field_paths:
+  - preparation_steps
+  - evidence
+  - solutions
+  evidence_ids:
+  - togo654
+  - jcm640
+  - jcm636
+  - writer-togo
+  rule_id: review-yaml-record/preparation-and-claim-completeness
+  native_severity: P3
+  normalization_reason: Native missing preparation/evidence concerns are normalized
+    to major because the entire staged procedure and claim evidence are absent; placeholder
+    names are a secondary P3.1 issue.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-010056-scoped-stock-hydrates
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Reconcile scoped trace-stock hydrate IDs
+  description: Within the M180 trace stock only, cobalt and nickel hexahydrate names
+    currently carry anhydrous chloride IDs. Verify the exact supplied hydrate and
+    replace or qualify those assertions; preserve all authenticated batch-mass notes.
+    Generic calcium pantothenate in M190 does not prove D stereochemistry despite
+    current CHEBI:31345, which remains explicitly unverified.
+  target_ids:
+  - CultureMech:010056
+  field_paths:
+  - data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml::solutions[1].composition[4].term
+  - data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml::solutions[1].composition[5].term
+  - data/normalized_yaml/bacterial/togo_medium_m190.yaml::solutions[1].composition[4].term
+  - data/normalized_yaml/bacterial/togo_medium_m190.yaml::solutions[1].composition[4].mediaingredientmech_chebi_term
+  evidence_ids:
+  - togo180
+  - jcm187
+  - togo190
+  - jcm197
+  - chebi35696
+  - chebi34887
+  - chebi31345
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped dependency
+actions:
+- action_id: a1
+  description: Restore the distinct A/B compositions and water inputs, source 1 mg
+    resazurin, and ml stock additions. Keep glucose at the explicitly supported SW
+    5 g/L. The Solution C wrapper does not establish an additional glucose stock strength
+    or dose; avoid double-counting it. Do not turn source batch masses or nominal
+    liquid sums into final-medium rates.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: 'Replace the links to MediaDive 5342, 5343 and 5312 only after representing
+    the local SW A/B/glucose context. Their source compositions differ: 5342 is a
+    salty yeast/casamino stock, 5343 a carbonate/salt stock, 5312 tetrathionate. Generic
+    A/B/C names cannot establish equivalence.'
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: 'Retain the exact inherited 636 procedure with the 640 substrate substitution:
+    separate preparations and later additions have different stages. Add root-level
+    path-scoped evidence, preserve unspecified percent bases, and replace Unknown
+    solution names. The source does not establish a numeric pH or final volume, so
+    neither is invented.'
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Within the M180 trace stock only, cobalt and nickel hexahydrate names
+    currently carry anhydrous chloride IDs. Verify the exact supplied hydrate and
+    replace or qualify those assertions; preserve all authenticated batch-mass notes.
+    Generic calcium pantothenate in M190 does not prove D stereochemistry despite
+    current CHEBI:31345, which remains explicitly unverified.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:010056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M654_Clostridium_SW_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Wrong MediaDive 5342/5343/5312 dependencies are identity comparisons only; their
+  amount/form repairs are excluded and no composition transfers into SW.
+- Only M180 iron/trace compositions plus nested HCl and M190 vitamin composition are
+  scientifically assessed. Main parent recipes, receiving doses, pH and unrelated
+  preparation are excluded.
+- Primary JCM 640 inherits the base procedure but does not give a separate glucose
+  stock preparation volume. That gap is retained; no replacement gas mixture, methanol
+  dose or R6 variant is imported.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
