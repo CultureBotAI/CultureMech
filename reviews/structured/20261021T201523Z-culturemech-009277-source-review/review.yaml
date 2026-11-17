@@ -1,0 +1,2395 @@
+schema_version: 1.0.0
+review_id: 20261021T201523Z-culturemech-009277-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobic_cellulolytic_medium (CultureMech:009277)'
+started_at: '2026-10-21T20:11:14Z'
+finished_at: '2026-10-21T20:15:23Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: ATCC 1345 specifies a basal preparation, a 20 mL Wolfe mineral-stock addition
+  and two later anaerobic additions. Both local layers flatten the stock, store resazurin
+  milligrams and the stock millilitre dose as g/L, and impose unsupported percent
+  bases. Generated water differs from its owner. The linked local 3952 composition
+  is incomplete and differs from the printed stock; its historical raw response is
+  unavailable, so exact remote correspondence remains unresolved and the review is
+  partial.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+    sha256: 7fd662a211e243fefd196ee12d0787fb46fd9295d0f66452d4143e2744e0c322
+    role: target
+  - path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    sha256: e4472ba29d65ad2a3f9beaf4d8d721aa8004699c11f8f92de62849036f337d74
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml
+    sha256: 90a8f7bf0c8425f53930314c987758b35f75a85c3ac1ffdcaa70253fd5a3a596
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/plan.json
+    sha256: 672b4be1b9c19f8e8c0a1b7dcd2c8a0ac8c8d7150aef74aadc05dd1cd41cf9c4
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml.md
+    sha256: 2eb7e52f004f4a3c0a9f4188835484ba3f329b735bbc8d9d744fdcba986c82a0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 361; batch 037 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-six task batches
+    contain 360 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 363 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009277
+targets:
+- target_id: CultureMech:009277
+  path: data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  label: anaerobic_cellulolytic_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch037/361/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch037/361/strict.tsv"
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009277
+- check_id: solution3952-source-access
+  name: 'Exact source content access: solution3952'
+  required: true
+  status: unavailable
+  summary: Exact current solution3952 access failed with503. Three historical raw
+    claims remain derivative-only within the documented bounded search; remote formulation
+    and exact ATCC stock correspondence are not established.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - solution3952-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:42.799337Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch037/361/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:43.896736Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch037/361/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:45.649733Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:46.602870Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml:1:id: CultureMech:009277
+
+    ./data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml:1:id: CultureMech:009277
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/source-preflight-bound/361/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: supports
+  summary: 32 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 6dfcd3a629ea2383202df0fc649ead425013bad3054326062312a854016039bf
+- evidence_id: atcc1345
+  kind: primary_source
+  reference: https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx
+  locator: ATCC medium1345; complete one-page formula and preparation, including Wolfe
+    stock
+  accessed_at: '2026-10-21T19:52:55.730244Z'
+  support: supports
+  summary: Exact original collection sheet read and visually checked. Basal makeup
+    to1L precedes later additions; gas and late percentages have no printed basis.
+  quote: 'ATCC medium: 1345 Anaerobic cellulolytic medium'
+  snapshot_sha256: 0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5
+- evidence_id: togo2727
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727
+  locator: $.meta, all three components sections and comments
+  accessed_at: '2026-10-21T19:52:54.813132Z'
+  support: supports
+  summary: Exact provider identity and all main/late/stock rows compared with the
+    original ATCC sheet. Provider row values retain stock stages and literal mass/volume
+    units.
+  snapshot_sha256: 401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d
+- evidence_id: stock3952
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml
+  locator: Complete three composition rows, placeholder and history
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: The local stock contains nickel chloride, selenite and tungstate plus a
+    placeholder; it does not encode the twelve printed ATCC solutes. Historical plan
+    context also mentions a nested Trace Minerals solution3804, so local incompleteness
+    does not establish that the remote source lacks those constituents.
+  snapshot_sha256: 90a8f7bf0c8425f53930314c987758b35f75a85c3ac1ffdcaa70253fd5a3a596
+- evidence_id: historical3952
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml.md
+  locator: Three historical amount claims and original response hash
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: Three existing snippets match this decoded derivative report. The exact
+    cited raw47ebe740fd8c6e48d62ffac5e67b1aca7521e021c5c8bd9f3be4e7259ea2f2e9 was
+    not recovered in the bounded ignored-inclusive source search.
+  snapshot_sha256: 2eb7e52f004f4a3c0a9f4188835484ba3f329b735bbc8d9d744fdcba986c82a0
+- evidence_id: solution3952-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3952
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:52:51.327679Z'
+  support: context_only
+  summary: Exact current solution3952 access failed with503. Three historical raw
+    claims remain derivative-only within the documented bounded search; remote formulation
+    and exact ATCC stock correspondence are not established.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17057
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:39.796651Z'
+  support: supports
+  summary: CHEBI:17057 resolves to cellobiose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 3548f79d3274a33683125152944998cffa00bd4fce774c8d872db9003222ed06
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.615173Z'
+  support: supports
+  summary: CHEBI:18276 resolves to dihydrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:17057": [{"label": "Cellobiose", "match_type": "preferred_term", "identifier":
+    "CHEBI:17057", "preferred_term": "Cellobiose", "ontology_id": "CHEBI:17057", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377":
+    [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206":
+    [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206",
+    "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O",
+    "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate",
+    "match_type": "preferred_term", "identifier": "CHEBI:32599", "preferred_term":
+    "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label":
+    "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term":
+    "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id":
+    "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806":
+    [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806",
+    "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Anaerobic_cellulolytic_medium.yaml; data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 14, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml", "events":
+    14, "timestamp_issues": []}]'
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS CHEBI:34887 definition and formula; dependency-only correspondence
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: Nickel dichloride is distinct from the local dependency preferred term
+    nickel chloride hexahydrate; no dependency material is transferred to the medium.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: 'Current code was read in scoped relevant sections: TOGO parsing and units,
+    duplicate handling and formulation/merge context. Current source-stage logic does
+    not authenticate historical flattening, water arithmetic or a shared-name solution
+    identity. Repair maintained inputs before separately authorized regeneration.'
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: 'Current code was read in scoped relevant sections: TOGO parsing and units,
+    duplicate handling and formulation/merge context. Current source-stage logic does
+    not authenticate historical flattening, water arithmetic or a shared-name solution
+    identity. Repair maintained inputs before separately authorized regeneration.'
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: 'Current code was read in scoped relevant sections: TOGO parsing and units,
+    duplicate handling and formulation/merge context. Current source-stage logic does
+    not authenticate historical flattening, water arithmetic or a shared-name solution
+    identity. Repair maintained inputs before separately authorized regeneration.'
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: 'Current code was read in scoped relevant sections: TOGO parsing and units,
+    duplicate handling and formulation/merge context. Current source-stage logic does
+    not authenticate historical flattening, water arithmetic or a shared-name solution
+    identity. Repair maintained inputs before separately authorized regeneration.'
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/361/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: c29232b25d0a846dbb011fa4303beeb79aa1a38fac3902087c4bf62654a8eeba
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/361/grounding-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 785a0bd4fc184020c35ecd6917362781bae310331bfbc84c1ae727a0a018210d
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/361/history-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T20:15:22Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 8cf0d73964487f6048552f144b7e3d27380362291865d19254369a2e887cbaea
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '24 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 24/26
+    primary and 13/26 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi16526
+  - chebi17057
+  - chebi17997
+  - chebi18276
+  - chebi26710
+  - chebi29377
+  - chebi31206
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi32588
+  - chebi32599
+  - chebi33118
+  - chebi3312
+  - chebi35696
+  - chebi44557
+  - chebi75213
+  - chebi75836
+  - chebi76209
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  details: 'Instance coverage on a 0–100 percent scale, denominator 26: primary 92.31%;
+    secondary 50.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 28 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact original collection and maintained owner
+  outcome: supported
+  summary: The generated target and one maintained bacterial owner share CultureMech:009277
+    and TOGO M2727, whose original URL resolves to ATCC1345. All26 ingredients and
+    two solution entries were compared; targetwater2G/L differs from owner1G/L while
+    both lose volume/stage semantics.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - record
+  - atcc1345
+  - togo2727
+  - owner-0
+- assessment_id: stock-identity
+  area: consistency
+  topic: Printed Wolfe stock versus asserted3952
+  outcome: unknown
+  summary: ATCC prints twelve stock solutes and KOH titration. The local3952 fragment
+    has three different additional solutes, placeholder and three derivative claims;
+    its historical plan refers to nested3804. Do not infer remote absence from that
+    fragment or transfer stock evidence to the medium. Exact remote identity and nested
+    composition remain unresolved.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - atcc1345
+  - stock3952
+  - historical3952
+  - solution3952-attempt
+- assessment_id: forms
+  area: grounding
+  topic: Supplied chemical forms
+  outcome: concern
+  summary: Source cobalt chloride hexahydrate is represented by anhydrous CHEBI:35696;
+    exact label validity does not establish hydration. The inspected dependency similarly
+    gives nickel hexahydrate a nickel-dichloride CHEBI:34887 mapping. Other explicitly
+    asserted hydrates and salt formulas were compared with the source; generic L-cysteine
+    hydrochloride lacks an asserted mapping and must not receive a guessed hydrate.
+    Resazurin chemical identity is separate from its1000-fold mass-unit error.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - atcc1345
+  - chebi35696
+  - chebi34887
+  - stock3952
+  - grounding-inventory
+- assessment_id: preparation
+  area: completeness
+  topic: Anaerobic stages and source percentages
+  outcome: concern
+  summary: Both layers omit boiling until colorless under80%N2/10%CO2/10%H2, cooling/dispensing16x125mm
+    tubes with the same gas, butyl closure,121°C15min, and anaerobically sterilized
+    late additions with finalpH6.9±0.1. Wolfe preparation uses about500mL initially,
+    pH6.5KOH and1L makeup before remaining solids. Source percentages lack a basis
+    and no gas flow, final fill or titrant dose is invented.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - atcc1345
+  - quantity-inventory
+  - owner-0
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid and growth scope
+  outcome: supported
+  summary: Yeast extract supports complex/undefined classification and tube preparation
+    supports liquid state. The bacterial category and title do not prove growth of
+    any organism, strain or cellulose-utilization phenotype. No target_organisms,
+    PMID/DOI, KGmatch or high_metal assertion occurs.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - record
+  - atcc1345
+  - owner-0
+- assessment_id: evidence-history
+  area: evidence
+  topic: Claim placement and historical evidence limits
+  outcome: concern
+  summary: Target and owner have no attached ingredient evidence. All their history
+    timestamps are aware; two dependency timestamps are naive and remain historical
+    provenance. Three stock claims are derivative-only; their reported amounts are
+    not newly authenticated. Append any authorized clarification without rewriting
+    old events.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - record
+  - stock3952
+  - historical3952
+  - history-metadata
+  - history-inventory
+  - owner-0
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 41 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:009277
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Distilled water\",\n    \"field_path\": \"ingredients[0].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"2.0\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\"\
+    : \"Basal preparation before late additions\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"ATCC\
+    \ says distilled water TO1L for the basal preparation. The generated2G_PER_L and\
+    \ owner1G_PER_L are both invalid mass representations; the second1L belongs to\
+    \ making the mineral stock, not a second basal water addition.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"ATCC says distilled\
+    \ water TO1L for the basal preparation. The generated2G_PER_L and owner1G_PER_L\
+    \ are both invalid mass representations; the second1L belongs to making the mineral\
+    \ stock, not a second basal water addition.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"ATCC says distilled water TO1L for the basal preparation. The generated2G_PER_L\
+    \ and owner1G_PER_L are both invalid mass representations; the second1L belongs\
+    \ to making the mineral stock, not a second basal water addition.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\": \"Yeast extract\"\
+    ,\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal preparation before\
+    \ late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"\
+    decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"The printed mass belongs to the basal preparation made up with distilled water\
+    \ to1L before subsequent additions. The local numeric g/L is consistent with that\
+    \ basal preparation only; attach the exact stage evidence rather than assuming\
+    \ final post-addition volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\": \"NH4Cl\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal preparation before\
+    \ late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"\
+    decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"The printed mass belongs to the basal preparation made up with distilled water\
+    \ to1L before subsequent additions. The local numeric g/L is consistent with that\
+    \ basal preparation only; attach the exact stage evidence rather than assuming\
+    \ final post-addition volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\": \"K2HPO4\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"0.4\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.4,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal preparation\
+    \ before late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The printed mass belongs to the basal preparation made up with distilled water\
+    \ to1L before subsequent additions. The local numeric g/L is consistent with that\
+    \ basal preparation only; attach the exact stage evidence rather than assuming\
+    \ final post-addition volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\": \"Resazurin\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"Basal preparation\
+    \ before late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n\
+    \    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Both\
+    \ primary and provider specify1mg resazurin per basal preparation, equivalent\
+    \ to0.001g in the1L pre-addition basal preparation, not local1G_PER_L. The later\
+    \ final volume is not independently specified.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Both primary and\
+    \ provider specify1mg resazurin per basal preparation, equivalent to0.001g in\
+    \ the1L pre-addition basal preparation, not local1G_PER_L. The later final volume\
+    \ is not independently specified.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Both primary and provider specify1mg resazurin per basal preparation, equivalent\
+    \ to0.001g in the1L pre-addition basal preparation, not local1G_PER_L. The later\
+    \ final volume is not independently specified.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q6\",\n    \"ingredient_or_context\": \"KCl\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 0.5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Basal preparation before late additions\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.5,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The printed mass belongs to the basal preparation made up with distilled water\
+    \ to1L before subsequent additions. The local numeric g/L is consistent with that\
+    \ basal preparation only; attach the exact stage evidence rather than assuming\
+    \ final post-addition volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"ingredient_or_context\": \"MgSO4\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal preparation\
+    \ before late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The printed mass belongs to the basal preparation made up with distilled water\
+    \ to1L before subsequent additions. The local numeric g/L is consistent with that\
+    \ basal preparation only; attach the exact stage evidence rather than assuming\
+    \ final post-addition volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"ingredient_or_context\": \"Cellobiose\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal preparation before\
+    \ late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"\
+    decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellobiose\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[7].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"evidence_only\",\n        \"rationale\":\
+    \ \"The printed mass belongs to the basal preparation made up with distilled water\
+    \ to1L before subsequent additions. The local numeric g/L is consistent with that\
+    \ basal preparation only; attach the exact stage evidence rather than assuming\
+    \ final post-addition volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"ingredient_or_context\": \"L-Cysteine\
+    \ . HCl\",\n    \"field_path\": \"ingredients[8].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Basal preparation\
+    \ before late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"L-Cysteine . HCl\\\",\\n          \\\"volume\\\
+    \": 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The printed\
+    \ mass belongs to the basal preparation made up with distilled water to1L before\
+    \ subsequent additions. The local numeric g/L is consistent with that basal preparation\
+    \ only; attach the exact stage evidence rather than assuming final post-addition\
+    \ volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The printed mass\
+    \ belongs to the basal preparation made up with distilled water to1L before subsequent\
+    \ additions. The local numeric g/L is consistent with that basal preparation only;\
+    \ attach the exact stage evidence rather than assuming final post-addition volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"ingredient_or_context\": \"\
+    CO2\",\n    \"field_path\": \"ingredients[9].concentration\",\n    \"local\":\
+    \ {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\n    },\n  \
+    \  \"source_amount\": \"10\",\n    \"source_unit\": \"% (basis not printed)\"\
+    ,\n    \"source_stage\": \"Gas stream during boiling, cooling and dispensing\"\
+    ,\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2727original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Carbon dioxide gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ },\n      {\n        \"source_key\": \"atccOriginal\",\n        \"source_url\"\
+    : \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\",\n  \
+    \      \"source_locator\": \"Basal preparation gas stream\",\n        \"exact_source_quote\"\
+    : \"80% N\\n2, 10% CO2, 10% H2\",\n        \"snapshot_sha256\": \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\"\
+    ,\n        \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[9].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"VARIABLE\
+    \ hides the specified gas-mixture proportion. Preserve the printed percentage\
+    \ without inventing v/v, flow rate, pressure or dissolved concentration.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"VARIABLE\
+    \ hides the specified gas-mixture proportion. Preserve the printed percentage\
+    \ without inventing v/v, flow rate, pressure or dissolved concentration.\"\n \
+    \     }\n    ],\n    \"arithmetic_and_scope\": \"VARIABLE hides the specified\
+    \ gas-mixture proportion. Preserve the printed percentage without inventing v/v,\
+    \ flow rate, pressure or dissolved concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q11\",\n    \"ingredient_or_context\": \"N2\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_amount\": \"80\",\n    \"source_unit\": \"% (basis not\
+    \ printed)\",\n    \"source_stage\": \"Gas stream during boiling, cooling and\
+    \ dispensing\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nitrogen gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ },\n      {\n        \"source_key\": \"atccOriginal\",\n        \"source_url\"\
+    : \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\",\n  \
+    \      \"source_locator\": \"Basal preparation gas stream\",\n        \"exact_source_quote\"\
+    : \"80% N\\n2, 10% CO2, 10% H2\",\n        \"snapshot_sha256\": \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\"\
+    ,\n        \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[10].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"VARIABLE\
+    \ hides the specified gas-mixture proportion. Preserve the printed percentage\
+    \ without inventing v/v, flow rate, pressure or dissolved concentration.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"VARIABLE\
+    \ hides the specified gas-mixture proportion. Preserve the printed percentage\
+    \ without inventing v/v, flow rate, pressure or dissolved concentration.\"\n \
+    \     }\n    ],\n    \"arithmetic_and_scope\": \"VARIABLE hides the specified\
+    \ gas-mixture proportion. Preserve the printed percentage without inventing v/v,\
+    \ flow rate, pressure or dissolved concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"ingredient_or_context\": \"H2\",\n    \"field_path\": \"ingredients[11].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_amount\": \"10\",\n    \"source_unit\": \"% (basis not\
+    \ printed)\",\n    \"source_stage\": \"Gas stream during boiling, cooling and\
+    \ dispensing\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Hydrogen gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ },\n      {\n        \"source_key\": \"atccOriginal\",\n        \"source_url\"\
+    : \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\",\n  \
+    \      \"source_locator\": \"Basal preparation gas stream\",\n        \"exact_source_quote\"\
+    : \"80% N\\n2, 10% CO2, 10% H2\",\n        \"snapshot_sha256\": \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\"\
+    ,\n        \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[11].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"VARIABLE\
+    \ hides the specified gas-mixture proportion. Preserve the printed percentage\
+    \ without inventing v/v, flow rate, pressure or dissolved concentration.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"VARIABLE\
+    \ hides the specified gas-mixture proportion. Preserve the printed percentage\
+    \ without inventing v/v, flow rate, pressure or dissolved concentration.\"\n \
+    \     }\n    ],\n    \"arithmetic_and_scope\": \"VARIABLE hides the specified\
+    \ gas-mixture proportion. Preserve the printed percentage without inventing v/v,\
+    \ flow rate, pressure or dissolved concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"ingredient_or_context\": \"Na2S . 9H2O\",\n    \"field_path\"\
+    : \"ingredients[12].concentration\",\n    \"local\": {\n      \"value\": \"0.15\"\
+    ,\n      \"unit\": \"PERCENT_W_V\"\n    },\n    \"source_amount\": 0.15,\n   \
+    \ \"source_unit\": \"%\",\n    \"source_stage\": \"Anaerobically sterilized additions\
+    \ to cooled sterile medium; indicated final percentages\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2S . 9H2O\\\",\\n          \\\"volume\\\": 0.15,\\\
+    n          \\\"unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[12].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.15\",\n          \"unit\": \"PERCENT_W_V\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ source supplies a final percentage but no w/v or v/v basis. Retain literal0.15%\
+    \ sodium sulfide nonahydrate or0.1% sodium carbonate and the late sterile-addition\
+    \ stage; do not convert to mass rates or a stock volume without a stated basis.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"PERCENT_W_V\"\n   \
+    \     },\n        \"decision\": \"correct\",\n        \"rationale\": \"The source\
+    \ supplies a final percentage but no w/v or v/v basis. Retain literal0.15% sodium\
+    \ sulfide nonahydrate or0.1% sodium carbonate and the late sterile-addition stage;\
+    \ do not convert to mass rates or a stock volume without a stated basis.\"\n \
+    \     }\n    ],\n    \"arithmetic_and_scope\": \"The source supplies a final percentage\
+    \ but no w/v or v/v basis. Retain literal0.15% sodium sulfide nonahydrate or0.1%\
+    \ sodium carbonate and the late sterile-addition stage; do not convert to mass\
+    \ rates or a stock volume without a stated basis.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q14\",\n    \"ingredient_or_context\": \"Na2CO3\",\n    \"field_path\": \"\
+    ingredients[13].concentration\",\n    \"local\": {\n      \"value\": \"0.1\",\n\
+    \      \"unit\": \"PERCENT_W_V\"\n    },\n    \"source_amount\": 0.1,\n    \"\
+    source_unit\": \"%\",\n    \"source_stage\": \"Anaerobically sterilized additions\
+    \ to cooled sterile medium; indicated final percentages\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[13].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"PERCENT_W_V\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ source supplies a final percentage but no w/v or v/v basis. Retain literal0.15%\
+    \ sodium sulfide nonahydrate or0.1% sodium carbonate and the late sterile-addition\
+    \ stage; do not convert to mass rates or a stock volume without a stated basis.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"PERCENT_W_V\"\n    \
+    \    },\n        \"decision\": \"correct\",\n        \"rationale\": \"The source\
+    \ supplies a final percentage but no w/v or v/v basis. Retain literal0.15% sodium\
+    \ sulfide nonahydrate or0.1% sodium carbonate and the late sterile-addition stage;\
+    \ do not convert to mass rates or a stock volume without a stated basis.\"\n \
+    \     }\n    ],\n    \"arithmetic_and_scope\": \"The source supplies a final percentage\
+    \ but no w/v or v/v basis. Retain literal0.15% sodium sulfide nonahydrate or0.1%\
+    \ sodium carbonate and the late sterile-addition stage; do not convert to mass\
+    \ rates or a stock volume without a stated basis.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q15\",\n    \"ingredient_or_context\": \"MgSO4 . 7H2O\",\n    \"field_path\"\
+    : \"ingredients[14].concentration\",\n    \"local\": {\n      \"value\": \"3\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 3,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"Separate Wolfe mineral-stock batch\",\n    \"\
+    primary_source_evidence_id\": \"atcc1345\",\n    \"decision\": \"correct\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM2727original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4 . 7H2O\\\",\\n          \\\"volume\\\":\
+    \ 3,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[14].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately prepared stock, of which only20mL is added\
+    \ to the basal preparation. It is not an undiluted main-medium g/L quantity. The\
+    \ instruction brings the nitrilotriacetic-acid solution to1L before remaining\
+    \ compounds are added; preserve that order rather than claim an independently\
+    \ measured final stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"ingredient_or_context\": \"\
+    NaCl\",\n    \"field_path\": \"ingredients[15].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Separate Wolfe mineral-stock\
+    \ batch\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 1,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[15].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately prepared stock, of which only20mL is added\
+    \ to the basal preparation. It is not an undiluted main-medium g/L quantity. The\
+    \ instruction brings the nitrilotriacetic-acid solution to1L before remaining\
+    \ compounds are added; preserve that order rather than claim an independently\
+    \ measured final stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"ingredient_or_context\": \"\
+    Na2MoO4 . 2H2O\",\n    \"field_path\": \"ingredients[16].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n   \
+    \ },\n    \"source_amount\": 0.01,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4 . 2H2O\\\",\\n          \\\"volume\\\"\
+    : 0.01,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\"\
+    : \"H3BO3\",\n    \"field_path\": \"ingredients[17].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.01,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Separate Wolfe mineral-stock\
+    \ batch\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[2].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[17].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately prepared stock, of which only20mL is added\
+    \ to the basal preparation. It is not an undiluted main-medium g/L quantity. The\
+    \ instruction brings the nitrilotriacetic-acid solution to1L before remaining\
+    \ compounds are added; preserve that order rather than claim an independently\
+    \ measured final stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"ingredient_or_context\"\
+    : \"FeSO4 . 7H2O\",\n    \"field_path\": \"ingredients[18].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 0.1,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4 . 7H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"ingredient_or_context\": \"\
+    CoCl2 . 6H2O\",\n    \"field_path\": \"ingredients[19].concentration\",\n    \"\
+    local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_amount\": 0.1,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2 . 6H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"\
+    ZnSO4 . 7H2O\",\n    \"field_path\": \"ingredients[20].concentration\",\n    \"\
+    local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_amount\": 0.1,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4 . 7H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"ingredient_or_context\": \"\
+    CuSO4 . 5H2O\",\n    \"field_path\": \"ingredients[21].concentration\",\n    \"\
+    local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 0.01,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuSO4 . 5H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.01,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"ingredient_or_context\"\
+    : \"AlK(SO4)2 . 12H2O\",\n    \"field_path\": \"ingredients[22].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 0.01,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"AlK(SO4)2 . 12H2O\\\",\\n          \\\"volume\\\
+    \": 0.01,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount\
+    \ belongs to the separately prepared stock, of which only20mL is added to the\
+    \ basal preparation. It is not an undiluted main-medium g/L quantity. The instruction\
+    \ brings the nitrilotriacetic-acid solution to1L before remaining compounds are\
+    \ added; preserve that order rather than claim an independently measured final\
+    \ stock volume.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"ingredient_or_context\"\
+    : \"Nitrilotriacetic acid\",\n    \"field_path\": \"ingredients[23].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": 1.5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nitrilotriacetic acid\\\",\\n          \\\"volume\\\
+    \": 1.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"ingredient_or_context\": \"\
+    CaCl2\",\n    \"field_path\": \"ingredients[24].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.1,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"Separate Wolfe mineral-stock\
+    \ batch\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM2727original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\"\
+    ,\n        \"source_locator\": \"$.components[2].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[24].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately prepared stock, of which only20mL is added\
+    \ to the basal preparation. It is not an undiluted main-medium g/L quantity. The\
+    \ instruction brings the nitrilotriacetic-acid solution to1L before remaining\
+    \ compounds are added; preserve that order rather than claim an independently\
+    \ measured final stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"ingredient_or_context\": \"\
+    MnSO4 . H2O\",\n    \"field_path\": \"ingredients[25].concentration\",\n    \"\
+    local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_amount\": 0.5,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"Separate Wolfe mineral-stock batch\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnSO4 . H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[25].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"This\
+    \ amount belongs to the separately prepared stock, of which only20mL is added\
+    \ to the basal preparation. It is not an undiluted main-medium g/L quantity. The\
+    \ instruction brings the nitrilotriacetic-acid solution to1L before remaining\
+    \ compounds are added; preserve that order rather than claim an independently\
+    \ measured final stock volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This amount belongs\
+    \ to the separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"This amount belongs to the\
+    \ separately prepared stock, of which only20mL is added to the basal preparation.\
+    \ It is not an undiluted main-medium g/L quantity. The instruction brings the\
+    \ nitrilotriacetic-acid solution to1L before remaining compounds are added; preserve\
+    \ that order rather than claim an independently measured final stock volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"ingredient_or_context\": \"\
+    Distilled water\",\n    \"field_path\": \"ingredients[0].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"2.0\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\"\
+    : \"Wolfe stock water, distinct from basal makeup\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ stock water must remain scoped to its separate preparation. Do not sum its1L\
+    \ numeral with the basal makeup or interpret either as grams.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The stock water\
+    \ must remain scoped to its separate preparation. Do not sum its1L numeral with\
+    \ the basal makeup or interpret either as grams.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"The stock water must remain scoped to its separate preparation. Do not sum\
+    \ its1L numeral with the basal makeup or interpret either as grams.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\": \"Wolfe's\
+    \ Mineral Solution\",\n    \"field_path\": \"solutions[0].concentration\",\n \
+    \   \"local\": {\n      \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 20,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"Wolfe stock addition to basal preparation\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Wolfe's Mineral Solution\\\",\\n          \\\"\
+    volume\\\": 20,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The printed addition\
+    \ is20mL, not20G_PER_L. Reconstruct the exact source stock before asserting a\
+    \ solution identifier; local3952 is incomplete and remote exact correspondence\
+    \ remains unresolved.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The printed addition\
+    \ is20mL, not20G_PER_L. Reconstruct the exact source stock before asserting a\
+    \ solution identifier; local3952 is incomplete and remote exact correspondence\
+    \ remains unresolved.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The\
+    \ printed addition is20mL, not20G_PER_L. Reconstruct the exact source stock before\
+    \ asserting a solution identifier; local3952 is incomplete and remote exact correspondence\
+    \ remains unresolved.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\"\
+    : \"KOH solution\",\n    \"field_path\": \"solutions[1].concentration\",\n   \
+    \ \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\n\
+    \    },\n    \"source_amount\": null,\n    \"source_unit\": null,\n    \"source_stage\"\
+    : \"KOH titrant for dissolving stock nitrilotriacetic acid\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"not_quantified\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM2727original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2727\",\n\
+    \        \"source_locator\": \"$.components[2].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KOH solution\\\"\",\n        \"snapshot_sha256\"\
+    : \"401cd900c9206fbe44cb5dc413624bd8ce30c4e2233ed4528a3382f2be877f2d\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    KOH adjusts the stock dissolution step to pH6.5. No strength or dose is printed.\
+    \ Preserve unknown quantity and stock-only placement; this is not an independent\
+    \ main-medium addition.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    KOH adjusts the stock dissolution step to pH6.5. No strength or dose is printed.\
+    \ Preserve unknown quantity and stock-only placement; this is not an independent\
+    \ main-medium addition.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"KOH\
+    \ adjusts the stock dissolution step to pH6.5. No strength or dose is printed.\
+    \ Preserve unknown quantity and stock-only placement; this is not an independent\
+    \ main-medium addition.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"ingredient_or_context\"\
+    : \"Basal makeup\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"1\",\n    \"source_unit\": \"L\",\n    \"source_stage\"\
+    : \"Basal before late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"atccOriginal\",\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"Distilled water to.......................1.0 L\",\n  \
+    \      \"snapshot_sha256\": \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\"\
+    ,\n        \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Explicit basal\
+    \ makeup is not a measured final volume after late additions.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Explicit basal makeup\
+    \ is not a measured final volume after late additions.\"\n      }\n    ],\n  \
+    \  \"arithmetic_and_scope\": \"Explicit basal makeup is not a measured final volume\
+    \ after late additions.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\"\
+    : \"Tube dimensions\",\n    \"field_path\": \"preparation_steps\",\n    \"local\"\
+    : null,\n    \"source_amount\": \"16 x125\",\n    \"source_unit\": \"mm\",\n \
+    \   \"source_stage\": \"Anaerobic dispensing\",\n    \"primary_source_evidence_id\"\
+    : \"atcc1345\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"atccOriginal\",\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"16 x 125 mm tubes\",\n        \"snapshot_sha256\": \"\
+    0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\",\n        \"\
+    parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Vessel dimensions,\
+    \ not fill volume; keep butyl-rubber closure and the same gas mixture.\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Vessel dimensions, not\
+    \ fill volume; keep butyl-rubber closure and the same gas mixture.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"Vessel dimensions, not fill volume; keep\
+    \ butyl-rubber closure and the same gas mixture.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q32\",\n    \"ingredient_or_context\": \"Autoclave duration\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": \"15\"\
+    ,\n    \"source_unit\": \"minutes\",\n    \"source_stage\": \"Stoppered anaerobic\
+    \ tubes\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"atccOriginal\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"15 minutes at 121C\",\n        \"snapshot_sha256\": \"\
+    0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\",\n        \"\
+    parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Keep the paired121°C\
+    \ treatment and anaerobic closure.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Keep the paired121°C treatment\
+    \ and anaerobic closure.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Keep the paired121°C treatment and anaerobic closure.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q33\",\n    \"ingredient_or_context\": \"Autoclave temperature\",\n    \"\
+    field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"121\",\n    \"source_unit\": \"°C\",\n    \"source_stage\": \"Stoppered anaerobic\
+    \ tubes\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"atccOriginal\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"15 minutes at 121C\",\n        \"snapshot_sha256\": \"\
+    0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\",\n        \"\
+    parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Keep the paired15-minute\
+    \ duration; do not transfer the cycle to unprinted stock processing.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Keep the paired15-minute\
+    \ duration; do not transfer the cycle to unprinted stock processing.\"\n     \
+    \ }\n    ],\n    \"arithmetic_and_scope\": \"Keep the paired15-minute duration;\
+    \ do not transfer the cycle to unprinted stock processing.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q34\",\n    \"ingredient_or_context\": \"Final medium pH\",\n\
+    \    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"6.9 +/-0.1\",\n    \"source_unit\": \"pH\",\n    \"source_stage\": \"After\
+    \ late additions\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"\
+    decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"atccOriginal\",\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"6.9 +/- 0.1\",\n        \"snapshot_sha256\": \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\"\
+    ,\n        \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Adjustment is\
+    \ conditional if necessary; no adjustment reagent or amount is specified.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Adjustment is conditional\
+    \ if necessary; no adjustment reagent or amount is specified.\"\n      }\n   \
+    \ ],\n    \"arithmetic_and_scope\": \"Adjustment is conditional if necessary;\
+    \ no adjustment reagent or amount is specified.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q35\",\n    \"ingredient_or_context\": \"Initial stock dissolution water\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : \"approximately500\",\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"\
+    Wolfe preparation\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n    \"\
+    decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"atccOriginal\",\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"approximately 500 ml of water\",\n        \"snapshot_sha256\"\
+    : \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\",\n    \
+    \    \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Add nitrilotriacetic\
+    \ acid first; this is not an extra stock volume.\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add nitrilotriacetic\
+    \ acid first; this is not an extra stock volume.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Add nitrilotriacetic acid first; this is not an extra stock volume.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q36\",\n    \"ingredient_or_context\": \"Stock dissolution\
+    \ pH\",\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n  \
+    \  \"source_amount\": \"6.5\",\n    \"source_unit\": \"pH\",\n    \"source_stage\"\
+    : \"Wolfe preparation\",\n    \"primary_source_evidence_id\": \"atcc1345\",\n\
+    \    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"atccOriginal\",\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"pH 6.5 with KOH\",\n        \"snapshot_sha256\": \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\"\
+    ,\n        \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"KOH strength\
+    \ and quantity remain unknown.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"KOH strength and quantity\
+    \ remain unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"KOH strength\
+    \ and quantity remain unknown.\"\n  },\n  {\n    \"quantity_id\": \"q37\",\n \
+    \   \"ingredient_or_context\": \"Stock intermediate makeup\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": \"1\",\n\
+    \    \"source_unit\": \"L\",\n    \"source_stage\": \"Wolfe preparation\",\n \
+    \   \"primary_source_evidence_id\": \"atcc1345\",\n    \"decision\": \"add\",\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atccOriginal\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/~/media/AA128C35BF4F4890A963D7A2162315D2.ashx\"\
+    ,\n        \"source_locator\": \"ATCC1345 preparation paragraph\",\n        \"\
+    exact_source_quote\": \"Bring volume to 1.0 L with\",\n        \"snapshot_sha256\"\
+    : \"0adc1a8117fb1fc5b63d561f2a67f3b05f9c69f09dd9c9f061879267d5c67db5\",\n    \
+    \    \"parsed_text_sha256\": \"e77c87973543b42a3d08de42797712cc58a81f4a40b3539eb520fe4ad95a7c21\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Bring the nitrilotriacetic-acid\
+    \ solution to1L with remaining water, then add remaining compounds one at a time.\
+    \ Do not silently reverse these stages.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n    \
+    \    \"decision\": \"add\",\n        \"rationale\": \"Bring the nitrilotriacetic-acid\
+    \ solution to1L with remaining water, then add remaining compounds one at a time.\
+    \ Do not silently reverse these stages.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Bring the nitrilotriacetic-acid solution to1L with remaining water, then add\
+    \ remaining compounds one at a time. Do not silently reverse these stages.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q38\",\n    \"ingredient_or_context\": \"NiCl2\
+    \ x 6 H2O\",\n    \"field_path\": \"composition[0].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.02\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"0.02\",\n    \"source_unit\": \"g/L (historical derivative assertion)\",\n\
+    \    \"source_stage\": \"Separate asserted stock3952 only\",\n    \"primary_source_evidence_id\"\
+    : \"stock3952\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"solution3952\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3952\",\n        \"source_locator\"\
+    : \"Failed current exact-stock request\",\n        \"exact_source_quote\": \"\
+    503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The historical\
+    \ derivative records this stock rate, but cited raw bytes are unavailable. It\
+    \ does not authenticate the receiving medium or permit transfer of nickel/selenite/tungstate\
+    \ into ATCC1345.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The historical\
+    \ derivative records this stock rate, but cited raw bytes are unavailable. It\
+    \ does not authenticate the receiving medium or permit transfer of nickel/selenite/tungstate\
+    \ into ATCC1345.\",\n    \"historical_claim\": {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/3952\"\
+    ,\n      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n               \
+    \ \\\"recipe_order\\\": 2,\\n                \\\"compound\\\": \\\"NiCl2 x 6 H2O\\\
+    \",\\n                \\\"compound_id\\\": 40,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.02,\\n                \\\"unit\\\": \\\"g\\\",\\n    \
+    \            \\\"g_l\\\": 0.02,\\n                \\\"mmol_l\\\": 0.154322,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n      \"explanation\"\
+    : \"Concentration evidence for composition[0].concentration (NiCl2 x 6 H2O) in\
+    \ MediaDive solution 3952; locator=$.data.recipe[1] (compound_id=40). Provider\
+    \ explicitly reports g_l=0.02. Arithmetic check: 0.02 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.02 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T09:26:49.091079+00:00; response SHA256=47ebe740fd8c6e48d62ffac5e67b1aca7521e021c5c8bd9f3be4e7259ea2f2e9.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml.md\"\
+    \n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"ingredient_or_context\": \"\
+    Na2SeO3\",\n    \"field_path\": \"composition[1].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.001\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_amount\": \"0.001\",\n    \"source_unit\": \"g/L (historical derivative\
+    \ assertion)\",\n    \"source_stage\": \"Separate asserted stock3952 only\",\n\
+    \    \"primary_source_evidence_id\": \"stock3952\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"solution3952\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/3952\",\n\
+    \        \"source_locator\": \"Failed current exact-stock request\",\n       \
+    \ \"exact_source_quote\": \"503 Service Unavailable\",\n        \"snapshot_sha256\"\
+    : \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\",\n    \
+    \    \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The historical\
+    \ derivative records this stock rate, but cited raw bytes are unavailable. It\
+    \ does not authenticate the receiving medium or permit transfer of nickel/selenite/tungstate\
+    \ into ATCC1345.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The historical\
+    \ derivative records this stock rate, but cited raw bytes are unavailable. It\
+    \ does not authenticate the receiving medium or permit transfer of nickel/selenite/tungstate\
+    \ into ATCC1345.\",\n    \"historical_claim\": {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/3952\"\
+    ,\n      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n               \
+    \ \\\"recipe_order\\\": 3,\\n                \\\"compound\\\": \\\"Na2SeO3\\\"\
+    ,\\n                \\\"compound_id\\\": 699,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 1,\\n                \\\"unit\\\": \\\"mg\\\",\\n      \
+    \          \\\"g_l\\\": 0.001,\\n                \\\"mmol_l\\\": null,\\n    \
+    \            \\\"optional\\\": 0\\n            }\",\n      \"explanation\": \"\
+    Concentration evidence for composition[1].concentration (Na2SeO3) in MediaDive\
+    \ solution 3952; locator=$.data.recipe[2] (compound_id=699). Provider explicitly\
+    \ reports g_l=0.001. Arithmetic check: 1 mg * 0.001 g/mg / (1000 ml / 1000 ml\
+    \ per L) = 0.001 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T09:26:49.091079+00:00; response SHA256=47ebe740fd8c6e48d62ffac5e67b1aca7521e021c5c8bd9f3be4e7259ea2f2e9.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml.md\"\
+    \n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"ingredient_or_context\": \"\
+    Na2WO4 x 2 H2O\",\n    \"field_path\": \"composition[2].concentration\",\n   \
+    \ \"local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": \"0.01\",\n    \"source_unit\": \"g/L (historical derivative\
+    \ assertion)\",\n    \"source_stage\": \"Separate asserted stock3952 only\",\n\
+    \    \"primary_source_evidence_id\": \"stock3952\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"solution3952\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/3952\",\n\
+    \        \"source_locator\": \"Failed current exact-stock request\",\n       \
+    \ \"exact_source_quote\": \"503 Service Unavailable\",\n        \"snapshot_sha256\"\
+    : \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\",\n    \
+    \    \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml\"\
+    ,\n        \"field_path\": \"composition[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The historical\
+    \ derivative records this stock rate, but cited raw bytes are unavailable. It\
+    \ does not authenticate the receiving medium or permit transfer of nickel/selenite/tungstate\
+    \ into ATCC1345.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The historical\
+    \ derivative records this stock rate, but cited raw bytes are unavailable. It\
+    \ does not authenticate the receiving medium or permit transfer of nickel/selenite/tungstate\
+    \ into ATCC1345.\",\n    \"historical_claim\": {\n      \"reference\": \"https://mediadive.dsmz.de/rest/solution/3952\"\
+    ,\n      \"supports\": \"SUPPORT\",\n      \"snippet\": \"{\\n               \
+    \ \\\"recipe_order\\\": 4,\\n                \\\"compound\\\": \\\"Na2WO4 x 2\
+    \ H2O\\\",\\n                \\\"compound_id\\\": 249,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 0.01,\\n                \\\"unit\\\": \\\"g\\\
+    \",\\n                \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\": 0.0303168,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n      \"explanation\"\
+    : \"Concentration evidence for composition[2].concentration (Na2WO4 x 2 H2O) in\
+    \ MediaDive solution 3952; locator=$.data.recipe[3] (compound_id=249). Provider\
+    \ explicitly reports g_l=0.01. Arithmetic check: 0.01 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.01 g/L, consistent with the reported value at its precision. Evidence\
+    \ supports the provider-declared concentration within this solution, not a concentration\
+    \ in a receiving medium or an independently measured final volume. Water addition\
+    \ alone is not used to infer a final volume. Additional exact excerpt at $.data.volume:\
+    \ \\\"volume\\\": 1000. Retrieved 2026-10-07T09:26:49.091079+00:00; response SHA256=47ebe740fd8c6e48d62ffac5e67b1aca7521e021c5c8bd9f3be4e7259ea2f2e9.\"\
+    \n    },\n    \"historical_derivative_path\": \"reports/ingredient_concentration_curation/20261007-mediadive-solutions-2500-3000/records/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml.md\"\
+    \n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"ingredient_or_context\": \"\
+    Composition placeholder\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_amount\": null,\n    \"source_unit\": null,\n    \"source_stage\"\
+    : \"Separate asserted stock3952 only\",\n    \"primary_source_evidence_id\": \"\
+    stock3952\",\n    \"decision\": \"not_quantified\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"solution3952\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/3952\",\n        \"source_locator\"\
+    : \"Failed current exact-stock request\",\n        \"exact_source_quote\": \"\
+    503 Service Unavailable\",\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"parsed_text_sha256\": \"faaab31b60bbf7b70ce42f09e877323f089d642869fc97f1df61bd705662e46b\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/mediadive_3952_Wolfe_s_mineral_solution.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    VARIABLE placeholder is not a quantified solute. Full exact stock identity remains\
+    \ unresolved.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"VARIABLE placeholder\
+    \ is not a quantified solute. Full exact stock identity remains unresolved.\"\n\
+    \  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.009277.stage-unit-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock amounts, millilitre additions and resazurin units are misrepresented
+  description: Both layers treat undiluted Wolfe stock ingredients and20mL stock dose
+    as receiving-medium g/L, and1mg resazurin as1g/L. Water1L is represented as mass;
+    generated2G/L also differs from owner1G/L.
+  target_ids:
+  - CultureMech:009277
+  field_paths:
+  - ingredients
+  - solutions[0].concentration
+  evidence_ids:
+  - atcc1345
+  - togo2727
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.009277.cobalt-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Cobalt hexahydrate is mapped to anhydrous cobalt chloride
+  description: The source supplies CoCl2·6H2O while the asserted CHEBI:35696 denotes
+    cobalt dichloride without that hydration.
+  target_ids:
+  - CultureMech:009277
+  field_paths:
+  - ingredients[19].term
+  evidence_ids:
+  - atcc1345
+  - chebi35696
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.009277.anaerobic-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Anaerobic sequence and qualified percentages are missing or over-specified
+  description: Gas proportions are reduced to VARIABLE, late percentages have unsupported
+    w/v bases, and medium/stock preparation stages are absent.
+  target_ids:
+  - CultureMech:009277
+  field_paths:
+  - ingredients[9]
+  - ingredients[10]
+  - ingredients[11]
+  - ingredients[12]
+  - ingredients[13]
+  - preparation_steps
+  - solutions[1]
+  evidence_ids:
+  - atcc1345
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.009277.solution3952-unresolved
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Linked stock identity and historical raw support remain unresolved
+  description: The local3952 fragment does not encode the printed ATCC stock; a nested
+    historical reference prevents concluding that the remote stock lacks its constituents.
+    Current exact access and historical raw authentication are unavailable.
+  target_ids:
+  - CultureMech:009277
+  field_paths:
+  - solutions[0].term
+  evidence_ids:
+  - stock3952
+  - historical3952
+  - solution3952-attempt
+  - atcc1345
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the basal makeup and1mg resazurin, separate the twelve-solute
+    Wolfe stock and20mL addition, and preserve intermediate versus final volumes.
+    Resolve exact stock identity before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify and assign the exact supplied hydrate while preserving its separate
+    stock amount; do not infer a replacement identifier from the label alone.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach the exact stage-specific procedure and gas proportions; retain
+    unqualified percent bases and unknown KOH/gas quantities. Preserve late sterile-addition
+    and conditional pH adjustment scope.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Recover and compare the exact3952 and nested3804 source composition,
+    or retain unresolved identity while representing the verified ATCC stock independently.
+    Preserve historical evidence scope and timestamps.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/anaerobic_cellulolytic_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact current solution3952 access failed with503. Three historical raw claims remain
+  derivative-only within the documented bounded search; remote formulation and exact
+  ATCC stock correspondence are not established.
+- Partial completion is limited to exact linked-stock/historical-raw correspondence;
+  all available ATCC and provider quantities and stages were assessed.
+- No unqualified source percentage is silently assigned a w/v or v/v basis; no measured
+  post-addition final volume is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-037
+- generated-medium
