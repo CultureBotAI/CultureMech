@@ -1,0 +1,1880 @@
+schema_version: 1.0.0
+review_id: 20261028T100129Z-culturemech-005614-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CLOSTRIDIUM AEROTOLERANS medium'
+started_at: '2026-10-28T09:30:25.495366Z'
+finished_at: '2026-10-28T10:01:29.850009Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated target loses the exact maintained DSM489 stock/evidence/process
+  repair and collapses a distinct JCM742 formulation. Both DSM489 owners and the JCM
+  nominal-rate evidence are credited, all quantities are reviewed by source stage,
+  and sodium-resazurin form, JCM source completeness and append-only timestamp corrections
+  remain bounded follow-up work.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+    sha256: c5b66c26a61598ddfd238e7e1208218791a89605fdf1cfc110ba83ee1d91b933
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    sha256: d466e3b6c68696467a9e6fbe58d25eecbf1ce32d0c83425426b297c28adc0f8e
+    role: context
+  - path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    sha256: a0fcf5e4a95b1886273619be9928dce2c14d229ab066969624f6e2e54e9a0f18
+    role: context
+  - path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    sha256: cf4015c7c1ea37127283a0b1d6d23648a43304e9a00fce60f323c1576bfb451d
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/README.md
+    sha256: 4cc190747afafa8bccb070987ddc8a429bb8a31e160cd475d0fb8524a1804f9a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/adversarial-review.md
+    sha256: eac2f4c3fb464a282152e10f61142a157d7f70842433b1bcbe9d520fae90f195
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/dsmz-followup.md
+    sha256: 925e79a7bb3a037816ac625ca2c09e7da7530d5dc5a8bd3dde73b2792ea27e26
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/komodo-followup.md
+    sha256: bf5924cbf8183e2f5621582d02ea8067790bc33c52ca853019d40e9770235ec3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json
+    sha256: 82bc1f406001639640d3817850a893fee3ecbe0c652d8ddc96ef2607880c5083
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/inspected-candidate-context.json
+    sha256: 20c95f15dfdb08b3e7019d784339ef66641789e40579c7c51f9396092b007fba
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/plan.json
+    sha256: 56e72694e73e28cee3666277d0f215973f770da991b4b42930105ec89d0ab6e3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml.md
+    sha256: cb0d7f4597fe1ed3fcf1c8540355a4391723fe21bb4826ba6eb99dfa75f3b86a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/lacrimispora_medium.yaml.md
+    sha256: fb4672dcbb830e816125e660bdf061f9ace6c902911b46c56701eb13787b13ef
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/plan.json
+    sha256: 1db6b2b69fb7a9a131c95c22d837d6a4c5f10dab810921069496169a06d6f5c2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/clostridium_aerotolerans_medium.yaml.md
+    sha256: db66042426379ec92dce6c07c4ba4b3c01dc66a85aa8fd1467fbe3a167539615
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.md
+    sha256: de9de0d8313a2529a6ef5d745484c570558ece85dbec5b1dbc37a535accaa14f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.md
+    sha256: 61f34abd7463b78f826440e0fdfbd20fff7834fd72ec3509812bdc2a344c22ac
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_aerotolerans_medium.md
+    sha256: 813a132f1e14423f19ac41701a59ceefc3fd6e059b1a55dab48c463b0837e5d2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/lacrimispora_medium.md
+    sha256: 818df4cf7d401da385217f3d91914c95a17fc09050a13ca54e8a9e13498d65e9
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_dsmz489_stocks.py
+    sha256: 0e86a9b273b82de1adf556a1d300f215da3ea64b84fc7eaadc10f77ea79d190e
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch062 index 09
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005614
+targets:
+- target_id: CultureMech:005614
+  path: data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+  label: clostridium_aerotolerans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:005614
+  command: just validate-schema data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:005614
+  command: just validate-strict data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+    --out REVIEW_WORK/batch062/record09/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:005614
+  command: just validate-terms data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:005614
+  command: just validate-references data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm489
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf
+  accessed_at: '2026-10-28T09:30:19.858161Z'
+  locator: REVIEW_WORK/batch062/source07-09/dsm489.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact selected source identity and complete source stages; inspect organism
+    context before operational assessment. KOMODO catalog is identity only.
+  snapshot_sha256: 87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba
+- evidence_id: api489
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/489
+  accessed_at: '2026-10-28T09:30:20.199332Z'
+  locator: REVIEW_WORK/batch062/source07-09/api489.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact selected source identity and complete source stages; inspect organism
+    context before operational assessment. KOMODO catalog is identity only.
+  snapshot_sha256: 5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3
+- evidence_id: apiJ742
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J742
+  accessed_at: '2026-10-28T09:30:20.028335Z'
+  locator: REVIEW_WORK/batch062/source07-09/apiJ742.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact selected source identity and complete source stages; inspect organism
+    context before operational assessment. KOMODO catalog is identity only.
+  snapshot_sha256: 02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c
+- evidence_id: jcm742HTML
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742
+  accessed_at: '2026-10-28T09:31:21.661931Z'
+  locator: REVIEW_WORK/batch062/source07-09/jcm742HTML.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current source catalog from selected record or attached historical
+    literal hyperlink. Prior guessed PDF404 preserved separately; no automatic retry.
+  snapshot_sha256: e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967
+- evidence_id: komodo489
+  kind: search
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=489
+  accessed_at: '2026-10-28T09:31:21.171742Z'
+  locator: REVIEW_WORK/batch062/source07-09/komodo489.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current source catalog from selected record or attached historical
+    literal hyperlink. Prior guessed PDF404 preserved separately; no automatic retry.
+  snapshot_sha256: 2e38bc3cf37a81289e9d696cfec4ba2b3b67b661fb3c890febec28da42cf8570
+  search_scope: One exact public GET of https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=489;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: komodoList
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  accessed_at: '2026-10-28T09:30:19.910146Z'
+  locator: REVIEW_WORK/batch062/source07-09/komodoList.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact selected source identity and complete source stages; inspect organism
+    context before operational assessment. KOMODO catalog is identity only.
+  snapshot_sha256: de31b7d1d29d80922cfcfe975db4747b35b04228f8a0531b90353cef02760ad7
+  search_scope: One exact public GET of https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;
+    retained status 403. No exhaustive repository or literature absence claim.
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T09:49:50.542621Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: c5b66c26a61598ddfd238e7e1208218791a89605fdf1cfc110ba83ee1d91b933
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T09:49:50.542793Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: d466e3b6c68696467a9e6fbe58d25eecbf1ce32d0c83425426b297c28adc0f8e
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T09:49:50.542831Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T09:49:50.543127Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T09:49:50.543152Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T09:49:50.543173Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T09:49:50.543195Z'
+  support: context_only
+  summary: Complete exact additional maintained owner.
+  snapshot_sha256: a0fcf5e4a95b1886273619be9928dce2c14d229ab066969624f6e2e54e9a0f18
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T09:49:50.543220Z'
+  support: context_only
+  summary: Complete exact additional maintained owner.
+  snapshot_sha256: cf4015c7c1ea37127283a0b1d6d23648a43304e9a00fce60f323c1576bfb451d
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/README.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.543255Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 4cc190747afafa8bccb070987ddc8a429bb8a31e160cd475d0fb8524a1804f9a
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/adversarial-review.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.543280Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: eac2f4c3fb464a282152e10f61142a157d7f70842433b1bcbe9d520fae90f195
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/dsmz-followup.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.543299Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 925e79a7bb3a037816ac625ca2c09e7da7530d5dc5a8bd3dde73b2792ea27e26
+- evidence_id: report-22
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/komodo-followup.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.543326Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: bf5924cbf8183e2f5621582d02ea8067790bc33c52ca853019d40e9770235ec3
+- evidence_id: report-23
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-dsmz489-stocks/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T09:49:50.543354Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 82bc1f406001639640d3817850a893fee3ecbe0c652d8ddc96ef2607880c5083
+- evidence_id: report-24
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/inspected-candidate-context.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T09:49:50.543485Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 20c95f15dfdb08b3e7019d784339ef66641789e40579c7c51f9396092b007fba
+- evidence_id: report-25
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T09:49:50.543565Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 56e72694e73e28cee3666277d0f215973f770da991b4b42930105ec89d0ab6e3
+- evidence_id: report-26
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.552392Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: cb0d7f4597fe1ed3fcf1c8540355a4391723fe21bb4826ba6eb99dfa75f3b86a
+- evidence_id: report-27
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T09:49:50.552446Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+- evidence_id: report-28
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/lacrimispora_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.558881Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: fb4672dcbb830e816125e660bdf061f9ace6c902911b46c56701eb13787b13ef
+- evidence_id: report-29
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T09:49:50.558941Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 1db6b2b69fb7a9a131c95c22d837d6a4c5f10dab810921069496169a06d6f5c2
+- evidence_id: report-30
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/clostridium_aerotolerans_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.563932Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: db66042426379ec92dce6c07c4ba4b3c01dc66a85aa8fd1467fbe3a167539615
+- evidence_id: report-31
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.563984Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: de9de0d8313a2529a6ef5d745484c570558ece85dbec5b1dbc37a535accaa14f
+- evidence_id: report-32
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.564013Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 61f34abd7463b78f826440e0fdfbd20fff7834fd72ec3509812bdc2a344c22ac
+- evidence_id: report-33
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_aerotolerans_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.564036Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 813a132f1e14423f19ac41701a59ceefc3fd6e059b1a55dab48c463b0837e5d2
+- evidence_id: report-34
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/lacrimispora_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T09:49:50.564057Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 818df4cf7d401da385217f3d91914c95a17fc09050a13ca54e8a9e13498d65e9
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/historical-reading.json
+  accessed_at: '2026-10-28T09:49:50.564093Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 822a54c179470c47af600613f0bbe42c19a4011ecb8fe96408888a529961f862
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T09:49:50.564149Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: 172932cf5a50dcf0ed91b260a9eda801daa9f79daa8b69edf73e7c3ddec37161
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/complete-document-reader.json
+  accessed_at: '2026-10-28T09:49:50.564417Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: f404f94bead74dc8d9effefeb377379fe16e8da53b0591de420a237c70b2a693
+- evidence_id: inspection-addendum
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/inspection-addendum-dsm489-repair/lineage.json
+  accessed_at: '2026-10-28T09:49:50.564489Z'
+  locator: Exact original 63 inputs preserved plus five specific repair-history inputs
+  support: supports
+  summary: Append-only inspection successor preserves target/owner bytes and original
+    canonical checks; only additional historical repair evidence is captured.
+  snapshot_sha256: b4dc5a990259d648289948d6a36c4aebb3096bebea35e0bd9ded9ebb21408f58
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit,
+    _parse_preparation_steps
+  accessed_at: '2026-10-28T09:49:50.564629Z'
+  support: context_only
+  summary: Current _parse_api_composition reads the primary solution only; _is_api_stock_addition
+    recognizes solution_id or percent-labelled ml rows. Molar-only stock attributes
+    are outside that predicate; preparation steps are pooled across solutions. Current
+    code is not proof of historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: merge_duplicate_ingredients and _merge_ingredient_group
+  accessed_at: '2026-10-28T09:49:50.564673Z'
+  support: context_only
+  summary: Current _merge_ingredient_group no longer sums disagreeing duplicate concentrations;
+    keeps first and flags conflicts. Historical summed notes remain separate evidence.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T09:49:50.564699Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: repair-reading
+  kind: prior_review
+  reference: REVIEW_WORK/batch062/record09/historical-repair-reading-scoped.json
+  accessed_at: '2026-10-28T09:49:50.564727Z'
+  locator: Complete scoped reader/join
+  support: supports
+  summary: Four complete native-inspected repair reports; standalone solution report
+    excluded.
+  snapshot_sha256: 52944bf9f977f3ddcd9212ee2996e1d9d73e5a17b2d729da454311de373906ba
+- evidence_id: repair-join
+  kind: prior_review
+  reference: REVIEW_WORK/batch062/record09/repair-plan-current-join.json
+  accessed_at: '2026-10-28T09:49:50.564769Z'
+  locator: Complete scoped reader/join
+  support: supports
+  summary: Exact original API489 raw and metadata in inspected repair plan, current
+    byte equality, selected owner before/after hashes and claim resolutions; historical
+    catalog row is not the full catalog raw.
+  snapshot_sha256: 596cc5ef09406cdf9ee361ec150f2d763e77d44045c31489035d5e71274d8df6
+- evidence_id: writer-repair
+  kind: record_content
+  reference: scripts/repair_dsmz489_stocks.py
+  locator: check_sources, build(before, key, sources, timestamp) including its komodo/dsmz
+    branches, process, report
+  accessed_at: '2026-10-28T09:49:50.564872Z'
+  support: context_only
+  summary: Current guarded repair checks exact source hashes and target identities,
+    builds separate resazurin/reducing stocks and water input, preserves prior evidence
+    with superseding scope, and does not invent reducer strength or dose. The inspected
+    plan after_text equals both current owners exactly; present code alone is not
+    proof of historical execution.
+  snapshot_sha256: 0e86a9b273b82de1adf556a1d300f215da3ea64b84fc7eaadc10f77ea79d190e
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T09:49:50.564901Z'
+  support: context_only
+  summary: Current timestamp construction uses time.strftime with unsupported %f;
+    source aerobic flag is import metadata, not strain-growth evidence.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: merge_composition and _add_enrichment_metadata
+  accessed_at: '2026-10-28T09:49:50.564924Z'
+  support: context_only
+  summary: Current merge_composition copies ingredients/solutions and fills only missing
+    pH; metadata uses naive datetime. This current behavior does not reconstruct a
+    historical invocation.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527
+  accessed_at: '2026-10-28T09:30:20.502208Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi131527.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: 0a5297c84ea9dd82508960482211f6b3c993fd8e2b83fe755dd2b23316cc4068
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T09:30:22.703175Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi63036.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T09:30:20.892628Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi26710.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946
+  accessed_at: '2026-10-28T09:30:22.623010Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi62946.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: e035a92736c0b968363e9db17da9a4a81390ab174a65e689f6ae45c326324b44
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T09:30:23.244782Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi86158.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  accessed_at: '2026-10-28T09:30:21.431323Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi31795.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi37166
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:37166
+  accessed_at: '2026-10-28T09:30:22.059004Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi37166.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: 165ff1c0f1da1bd4d9efb53013834e9b14cbf711006e0adc0db5cef64d30d9b5
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T09:30:23.822472Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi8806.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248
+  accessed_at: '2026-10-28T09:30:23.852060Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi91248.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: d0959ac455ece32a6e94c13fd8e592403109201b6c61144dccfe0d58f1916380
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T09:30:23.224504Z'
+  locator: REVIEW_WORK/batch062/source07-09/chebi76209.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact current returned ontology ID/label/formula/definitions; label correspondence
+    alone does not verify supplied form.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665456Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 0cffaaf3ead7a3a987b5a1e49c7487f509be970a9eee0f54e1c6ac069b81d4e8
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665532Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 39f1499b6f13789606246647e0c492625ab68e60d530f74d50669d6f5730864d
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665611Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 70e28b5b718165c22253e139f0daf65f5863d11de18750c0670c927343a82307
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665706Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 4a1a8ec07fba7a0dd452fb940a7c3a73c2e2060942555e90817ad7531436f804
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665797Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 941cc66f9e3c4addf6b96114a10e2022dd1dc0b832b5b2ad061cbd5b703ae086
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665827Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 0e72325c13a21e0850a7c6c746da7208a36334431e5802a339c22ae85db4282b
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch062/record09/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T09:49:50.665849Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: e160aaa68c9ec2815324df9eebd59047bf2debe308ce31690108b564b5573c2d
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch062/record09/schema-result.json
+  accessed_at: '2026-10-28T09:30:26.553891Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 205e8be53b6a2ffd8dceedcc72190756c1b586947436975cce03412fd08d9e86
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch062/record09/strict-result.json
+  accessed_at: '2026-10-28T09:30:27.460518Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: a2f6ea30e832719fab1b5f9fdb8f466790ac6d9f4e799a8658ae12fb5fd20f80
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch062/record09/terms-result.json
+  accessed_at: '2026-10-28T09:30:28.455549Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 594b93374238ff23b47a09fb9027f68244bdf120d30150f1a39377a8c5264a3d
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch062/record09/references-result.json
+  accessed_at: '2026-10-28T09:30:29.120655Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 088ed783113cf203d74716edfe616df620805ff9ac0a6d3eeed9c4539e0ddd61
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct collection recipes and retained ownership
+  outcome: concern
+  summary: The exact DSM489 and JCM742 provider identities and maintained owners are
+    established. Similar names do not erase their quantitative/form/process differences.
+    Current KOMODO MediaInfo489 and MediaList are unavailable (403); the exact preserved
+    mapping row supports historical correspondence only, without authenticating a
+    complete current catalog.
+  target_ids:
+  - CultureMech:005614
+  evidence_ids:
+  - api489
+  - apiJ742
+  - jcm742HTML
+  - dsm489
+  - komodo489
+  - komodoList
+  - repair-join
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium without strain-growth inference
+  outcome: supported
+  summary: Yeast extract makes these formulations chemically undefined; no solidifying
+    ingredient is listed. The exact inspected sources do not identify a specific strain
+    or establish strain-growth/optimization claims. The aerobic import flag is not
+    an experimentally authenticated growth condition.
+  target_ids:
+  - CultureMech:005614
+  evidence_ids:
+  - target
+  - owner
+  - api489
+  - apiJ742
+  - dsm489
+  - jcm742HTML
+- assessment_id: native
+  area: schema
+  topic: Native structural diagnostics
+  outcome: supported
+  summary: All four canonical checks passed once on the unchanged selected target,
+    including zero strict errors and zero reference checks. The additive inspection
+    preserves the original 63 inputs and adds five repair-history files; successful
+    shape diagnostics do not validate source stages.
+  target_ids:
+  - CultureMech:005614
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+  - inspection-addendum
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 44 current concentration fields are covered by 26 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:005614
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b062-quantity-inventory-v1","target":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","quantity_field_count":44,"decisions":[{"quantity_id":"q1","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.22","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.22","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.225","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.22","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume. DSM489 prints 0.22
+    g whereas JCM742 prints 0.225 g; retain the provider-specific difference, not
+    rounding one into the other.","source_stage":"Distinct DSM489 and JCM742 nominal
+    main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.22,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.22,\n                        \"mmol_l\":
+    1.26309,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 3-3","quote":"K2HPO4                                                  0.22         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.225,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.225,\n                        \"mmol_l\":
+    1.2918,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 0 (zero-based)","quote":"<TR><TD WIDTH=75%> K<sub>2</sub>HPO<sub>4</sub>
+    </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.225&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[0].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[0].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[0].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[0].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q2","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.22","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.22","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.225","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.22","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume. DSM489 prints 0.22
+    g whereas JCM742 prints 0.225 g; retain the provider-specific difference, not
+    rounding one into the other.","source_stage":"Distinct DSM489 and JCM742 nominal
+    main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.22,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.22,\n                        \"mmol_l\":
+    1.61664,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 4-4","quote":"KH2PO4                                                  0.22         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.225,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.225,\n                        \"mmol_l\":
+    1.65337,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 1 (zero-based)","quote":"<TR><TD WIDTH=75%> KH<sub>2</sub>PO<sub>4</sub>
+    </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.225&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[1].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[1].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[1].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[1].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q3","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.45","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume.","source_stage":"Distinct
+    DSM489 and JCM742 nominal main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.45,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\":
+    7.70021,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 5-5","quote":"NaCl                                                    0.45         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.45,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\":
+    7.70021,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 2 (zero-based)","quote":"<TR><TD WIDTH=75%> NaCl                                                    </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.45&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[2].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[2].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[2].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[2].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q4","label":"(NH4)2SO4","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.45","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.45","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume.","source_stage":"Distinct
+    DSM489 and JCM742 nominal main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.45,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\":
+    3.40548,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 6-6","quote":"(NH4)2SO4                                               0.45         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 0.45,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.45,\n                        \"mmol_l\":
+    3.40548,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 3 (zero-based)","quote":"<TR><TD WIDTH=75%> (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>                                      </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.45&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[3].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[3].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[3].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[3].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q5","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.06","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.06","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.06","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.06","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume.","source_stage":"Distinct
+    DSM489 and JCM742 nominal main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.06,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.06,\n                        \"mmol_l\":
+    0.408122,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 7-7","quote":"CaCl2 x 2 H2O                                           0.06         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.06,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.06,\n                        \"mmol_l\":
+    0.408122,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 4 (zero-based)","quote":"<TR><TD WIDTH=75%> CaCl<sub>2</sub>&#183;2H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.06&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[4].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[4].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[4].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[4].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q6","label":"MgSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.09","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.09","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.09","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.09","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume.","source_stage":"Distinct
+    DSM489 and JCM742 nominal main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.09,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.09,\n                        \"mmol_l\":
+    0.365147,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 8-8","quote":"MgSO4 x 7 H2O                                           0.09         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.09,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.09,\n                        \"mmol_l\":
+    0.365147,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 5 (zero-based)","quote":"<TR><TD WIDTH=75%> MgSO<sub>4</sub>&#183;7H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.09&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[5].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[5].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[5].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[5].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q7","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume.","source_stage":"Distinct
+    DSM489 and JCM742 nominal main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 9-9","quote":"Yeast extract                                           5.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 6 (zero-based)","quote":"<TR><TD WIDTH=75%> Yeast extract                                           </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[6].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[6].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[6].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[6].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q8","label":"Xylan","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"mixed","rationale":"Fresh
+    API489 and J742 explicitly supply their respective nominal g_l rates, with source
+    batch masses independently printed in the original recipe. All maintained owners
+    have exact attached row/digest support and explicit source basis. The generated
+    target has no attached claims; its DSM489 nominal value is evidence-only and does
+    not establish equivalence to J742 or a measured final volume.","source_stage":"Distinct
+    DSM489 and JCM742 nominal main-recipe bases","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Xylan\",\n                        \"compound_id\":
+    508,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 10-10","quote":"Xylan                                                   5.00         g","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Xylan\",\n                        \"compound_id\":
+    508,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 7 (zero-based)","quote":"<TR><TD WIDTH=75%> Xylan                                                   </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}],"layer_decisions":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[7].concentration","decision":"evidence_only","rationale":"Supported
+    nominal DSM489 rate without attached evidence."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[7].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[7].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[7].concentration","decision":"verified","rationale":"Existing
+    value/unit/declared provider basis and exact attached evidence authenticated;
+    no final-volume claim."}]},{"quantity_id":"q9","label":"Generated sodium-resazurin
+    flattened rate","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.0005","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    provider nominal 0.0005 g_l is not the source stock strength. The primary explicitly
+    specifies 0.50 ml of 0.1% w/v stock; both maintained DSM489 owners already separate
+    these. Restore that stage in the generated target, without treating the rate as
+    measured final concentration.","source_stage":"DSM489 indicator stock and receiving
+    batch","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0005,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 11-11","quote":"Sodium resazurin (0.1% w/v)                             0.50        ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q10","label":"JCM742 resazurin","local_fields":[{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"verified","rationale":"JCM742
+    specifies neutral Resazurin 1 mg, with explicit provider g_l=0.001 and an exact
+    existing row/digest claim. This supports its declared nominal basis and neutral
+    CHEBI form; do not transfer the DSM sodium-stock identity or rate.","source_stage":"JCM742
+    distinct main recipe","sources":[{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00436319,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 8 (zero-based)","quote":"<TR><TD WIDTH=75%> Resazurin                                               </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"Existing
+    DSM489 indicator strength","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"0.1","unit":"PERCENT_W_V"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[0].composition[0].concentration","stored":{"value":"0.1","unit":"PERCENT_W_V"}}],"decision":"verified","rationale":"Both
+    owners correctly retain the explicit 0.1% w/v stock separately from 0.50 ml =
+    0.0005 L batch dose, with existing attached source evidence. This is a unit conversion
+    only; neither final medium volume nor solvent identity is inferred.","source_stage":"DSM489
+    stock composition versus receiving batch","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0005,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 11-11","quote":"Sodium resazurin (0.1% w/v)                             0.50        ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q12","label":"Existing DSM489 indicator dose","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"0.0005","unit":"L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"0.0005","unit":"L"}}],"decision":"verified","rationale":"Both
+    owners correctly retain the explicit 0.1% w/v stock separately from 0.50 ml =
+    0.0005 L batch dose, with existing attached source evidence. This is a unit conversion
+    only; neither final medium volume nor solvent identity is inferred.","source_stage":"DSM489
+    stock composition versus receiving batch","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0005,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 11-11","quote":"Sodium resazurin (0.1% w/v)                             0.50        ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q13","label":"L-Cysteine HCl x H2O generated rate","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.15","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary requires this 0.15 g batch input through a post-sterilization anoxic stock;
+    provider g_l=0.15 is a nominal recipe rate, not stock strength or an independently
+    established final concentration. Both DSM489 owners already withdrew the flattened
+    rate at the stock stage. Restore that representation; no stock dose, solvent or
+    strength may be invented.","source_stage":"DSM489 post-sterilization reducing
+    stock","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\":
+    0.854039,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 12-12","quote":"L-Cysteine HCl x H2O                                    0.15         g","quote_basis":"derivative
+    text"},{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 16-20","quote":"Dissolve ingredients (except cysteine and sulfide), adjust
+    pH to 7.0, bring medium to the\nboil, then cool to room temperature under 100%
+    N2 gas. Dispense under same gas\natmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. After\nsterilization add cysteine and sulfide from
+    sterile anoxic stock solutions prepared under\n100% N2 gas.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q14","label":"L-Cysteine HCl x H2O JCM742 rate","local_fields":[{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.125","unit":"G_PER_L"}}],"decision":"verified","rationale":"JCM742
+    independently prints 0.125 g and provider g_l=0.125, supported by the exact existing
+    attached row/digest. Preserve its nominal recipe basis; the DSM489 0.15 g stock
+    instruction does not transfer.","source_stage":"JCM742 distinct main recipe","sources":[{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.125,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.125,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 9 (zero-based)","quote":"<TR><TD WIDTH=75%> L-Cysteine&#183;HCl&#183;H<sub>2</sub>O                      </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.125&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}]},{"quantity_id":"q15","label":"Existing
+    reducing-stock uncertainty 1","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[1].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[1].composition[0].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[1].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[1].composition[0].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[1].preparation_notes","stored":"After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."}],"decision":"not_quantified","rationale":"Credit both owners:
+    source batch requirement 0.15 g and preparation under 100% N2 are retained in
+    notes, while stock concentration, solvent, final stock volume and numeric receiving
+    dose are intentionally absent. The historical 0.15 g/L wording is explicitly withdrawn
+    at this stage; it is not a current stock assertion.","source_stage":"DSM489 repaired
+    stock descriptors","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\":
+    0.854039,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 12-20","quote":"L-Cysteine HCl x H2O                                    0.15         g\n   Na2S
+    x 9 H2O                                            0.15         g\n   Distilled
+    water                                      1000.00        ml\n\nDissolve ingredients
+    (except cysteine and sulfide), adjust pH to 7.0, bring medium to the\nboil, then
+    cool to room temperature under 100% N2 gas. Dispense under same gas\natmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After\nsterilization
+    add cysteine and sulfide from sterile anoxic stock solutions prepared under\n100%
+    N2 gas.","quote_basis":"derivative text"}]},{"quantity_id":"q16","label":"Na2S
+    x 9 H2O generated rate","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.15","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary requires this 0.15 g batch input through a post-sterilization anoxic stock;
+    provider g_l=0.15 is a nominal recipe rate, not stock strength or an independently
+    established final concentration. Both DSM489 owners already withdrew the flattened
+    rate at the stock stage. Restore that representation; no stock dose, solvent or
+    strength may be invented.","source_stage":"DSM489 post-sterilization reducing
+    stock","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\":
+    0.624526,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 13-13","quote":"Na2S x 9 H2O                                            0.15         g","quote_basis":"derivative
+    text"},{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 16-20","quote":"Dissolve ingredients (except cysteine and sulfide), adjust
+    pH to 7.0, bring medium to the\nboil, then cool to room temperature under 100%
+    N2 gas. Dispense under same gas\natmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. After\nsterilization add cysteine and sulfide from
+    sterile anoxic stock solutions prepared under\n100% N2 gas.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q17","label":"Na2S x 9 H2O JCM742 rate","local_fields":[{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.125","unit":"G_PER_L"}}],"decision":"verified","rationale":"JCM742
+    independently prints 0.125 g and provider g_l=0.125, supported by the exact existing
+    attached row/digest. Preserve its nominal recipe basis; the DSM489 0.15 g stock
+    instruction does not transfer.","source_stage":"JCM742 distinct main recipe","sources":[{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.125,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.125,\n                        \"mmol_l\":
+    0.520439,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 10 (zero-based)","quote":"<TR><TD WIDTH=75%> Na<sub>2</sub>S&#183;9H<sub>2</sub>O                                   </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.125&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>","quote_basis":"raw UTF-8"}]},{"quantity_id":"q18","label":"Existing
+    reducing-stock uncertainty 2","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[2].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[2].composition[0].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[2].preparation_notes","stored":"After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[2].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[2].composition[0].notes","stored":"Source
+    batch requirement: 0.15 g supplied from a sterile anoxic stock prepared under
+    100% N2, added after sterilization. Stock strength, final stock volume, solvent
+    identity and numeric stock dose are unspecified; the former 0.15 g/L flattened
+    rate is withdrawn at this preparation stage."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[2].preparation_notes","stored":"After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."}],"decision":"not_quantified","rationale":"Credit both owners:
+    source batch requirement 0.15 g and preparation under 100% N2 are retained in
+    notes, while stock concentration, solvent, final stock volume and numeric receiving
+    dose are intentionally absent. The historical 0.15 g/L wording is explicitly withdrawn
+    at this stage; it is not a current stock assertion.","source_stage":"DSM489 repaired
+    stock descriptors","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\":
+    0.624526,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 12-20","quote":"L-Cysteine HCl x H2O                                    0.15         g\n   Na2S
+    x 9 H2O                                            0.15         g\n   Distilled
+    water                                      1000.00        ml\n\nDissolve ingredients
+    (except cysteine and sulfide), adjust pH to 7.0, bring medium to the\nboil, then
+    cool to room temperature under 100% N2 gas. Dispense under same gas\natmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After\nsterilization
+    add cysteine and sulfide from sterile anoxic stock solutions prepared under\n100%
+    N2 gas.","quote_basis":"derivative text"}]},{"quantity_id":"q19","label":"Existing
+    water input","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1","unit":"L"}},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1","unit":"L"}}],"decision":"verified","rationale":"The
+    two repaired owners correctly retain 1000 ml = 1 L water input, with attached
+    evidence. This is not final-volume makeup; unknown reducer volumes prevent a measured-final-volume
+    inference.","source_stage":"DSM489 batch water input","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 14-14","quote":"Distilled water                                      1000.00        ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q20","label":"Source-only JCM742 water","local_fields":[],"decision":"evidence_only","rationale":"The
+    original catalog and provider specify 1 L water input; the JCM owner omits it.
+    Do not infer final volume or substitute DSM489 stock architecture.","source_stage":"JCM742
+    batch water input","sources":[{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"HTML
+    table row 11 (zero-based)","quote":"<TR><TD WIDTH=75%> Distilled water                                         </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> L  </TD></TR>","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"pH
+    7 assertions","local_fields":[{"path":"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml","field_path":"ph_value","stored":7.0},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"ph_value","stored":7.0},{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"ph_value","stored":7.0},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"ph_value","stored":7.0}],"decision":"evidence_only","rationale":"Both
+    originals explicitly prescribe pH 7.0, independently by recipe. This supports
+    the unchanged scalar; identical pH does not establish formulation equivalence.","source_stage":"Recipe-specific
+    pH","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 16-20","quote":"Dissolve ingredients (except cysteine and sulfide), adjust
+    pH to 7.0, bring medium to the\nboil, then cool to room temperature under 100%
+    N2 gas. Dispense under same gas\natmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. After\nsterilization add cysteine and sulfide from
+    sterile anoxic stock solutions prepared under\n100% N2 gas.","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Adjust pH to 7.0.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"jcm742HTML.txt
+    lines 67-67","quote":"Adjust pH to 7.0.","quote_basis":"derivative text"}]},{"quantity_id":"q22","label":"Existing
+    DSM489 preparation and scope","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the
+    boil, then cool to room temperature under 100% N2 gas. Dispense under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"notes","stored":"Source:
+    KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489) | Aerobic:
+    Yes\n\nPreparation scope: cysteine and sulfide are added after sterilization from
+    sterile anoxic stocks prepared under 100% N2. Their 0.15 g batch inputs do not
+    establish stock strengths or addition volumes. Resazurin is a 0.1% w/v stock added
+    at 0.50 ml per batch. Water is a 1000 ml input; final-medium volume and final
+    concentrations are not inferred. Historical annotations, including any aerobic
+    flag, are not verified incubation or growth evidence; the source establishes anoxic
+    preparation. Chemical mappings and variant links are retained, not independently
+    revalidated."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the
+    boil, then cool to room temperature under 100% N2 gas. Dispense under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"notes","stored":"Source:
+    DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf\n\nPreparation
+    scope: cysteine and sulfide are added after sterilization from sterile anoxic
+    stocks prepared under 100% N2. Their 0.15 g batch inputs do not establish stock
+    strengths or addition volumes. Resazurin is a 0.1% w/v stock added at 0.50 ml
+    per batch. Water is a 1000 ml input; final-medium volume and final concentrations
+    are not inferred. Historical annotations, including any aerobic flag, are not
+    verified incubation or growth evidence; the source establishes anoxic preparation.
+    Chemical mappings and variant links are retained, not independently revalidated."}],"decision":"verified","rationale":"Both
+    repaired owners retain the source anoxic preparation, pH, post-sterilization additions
+    and 100% N2 with attached source context. Credit these repairs; no source temperature,
+    duration, filtration or growth condition is inferred. Different existing action
+    labels do not erase the identical full description.","source_stage":"DSM489 main
+    preparation","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 11-20","quote":"Sodium resazurin (0.1% w/v)                             0.50        ml\n   L-Cysteine
+    HCl x H2O                                    0.15         g\n   Na2S x 9 H2O                                            0.15         g\n   Distilled
+    water                                      1000.00        ml\n\nDissolve ingredients
+    (except cysteine and sulfide), adjust pH to 7.0, bring medium to the\nboil, then
+    cool to room temperature under 100% N2 gas. Dispense under same gas\natmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After\nsterilization
+    add cysteine and sulfide from sterile anoxic stock solutions prepared under\n100%
+    N2 gas.","quote_basis":"derivative text"}]},{"quantity_id":"q23","label":"Existing
+    JCM742 pH preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml","field_path":"preparation_steps[0].description","stored":"Adjust
+    pH to 7.0."}],"decision":"evidence_only","rationale":"The JCM owner correctly
+    retains the exact pH instruction. It has no attached preparation-specific evidence;
+    the source is independently verified here.","source_stage":"JCM742 preparation","sources":[{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Adjust pH to 7.0.\"\n                    }","quote_basis":"raw UTF-8"},{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"jcm742HTML.txt
+    lines 67-67","quote":"Adjust pH to 7.0.","quote_basis":"derivative text"}]},{"quantity_id":"q24","label":"Existing
+    indicator stock notes","local_fields":[{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[0].notes","stored":"0.50
+    ml stock input per source recipe batch, not per liter of measured final medium.
+    No solvent identity is inferred."},{"path":"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml","field_path":"solutions[0].composition[0].notes","stored":"Source-explicit
+    0.1% w/v stock strength. The former 0.0005 g/L recipe rate is not the stock concentration.
+    Existing resazurin ontology mapping is retained, not independently validated as
+    the sodium salt."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[0].notes","stored":"0.50
+    ml stock input per source recipe batch, not per liter of measured final medium.
+    No solvent identity is inferred."},{"path":"data/normalized_yaml/bacterial/lacrimispora_medium.yaml","field_path":"solutions[0].composition[0].notes","stored":"Source-explicit
+    0.1% w/v stock strength. The former 0.0005 g/L recipe rate is not the stock concentration.
+    Existing resazurin ontology mapping is retained, not independently validated as
+    the sodium salt."}],"decision":"verified","rationale":"The existing notes correctly
+    distinguish source stock strength, batch dose and unresolved sodium-salt grounding.
+    Former nominal rate is discussed historically, not asserted as stock strength.","source_stage":"DSM489
+    indicator notes","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0005,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"dsm489","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf","raw_path":"REVIEW_WORK/batch062/source07-09/dsm489.raw","raw_sha256":"87e33303ba52375124cb2a58bd6ca8ee1827872562b37c0040775d120ba306ba","text_sha256":"e595336c46c266e778730161adddb314e57c36c060daabde22d1d5421984fa90","accessed_at":"2026-10-28T09:30:19.858161Z","locator":"dsm489.txt
+    lines 11-11","quote":"Sodium resazurin (0.1% w/v)                             0.50        ml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q25","label":"JCM catalog sterilization default","local_fields":[],"decision":"evidence_only","rationale":"The
+    catalog states 121 degrees C for 15 min unless otherwise stated. Retain this as
+    the catalog general preparation default for the exact JCM record; do not transfer
+    it to DSM489, to individual stocks, or to incubation.","source_stage":"JCM catalog
+    general default","sources":[{"evidence_id":"jcm742HTML","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=742","raw_path":"REVIEW_WORK/batch062/source07-09/jcm742HTML.raw","raw_sha256":"e35eb80e09b32cd05bfa429ca44b557a7e92d326ccfbbc19c5b043d600ae6967","text_sha256":"6b4ad911c9384562e5c5160221ef309d9028ad0ef53bc058c16d10afb69b882d","accessed_at":"2026-10-28T09:31:21.661931Z","locator":"jcm742HTML.txt
+    lines 3-5","quote":"Search for medium no. = [742].\nUnless otherwise stated, sterilize
+    media by autoclaving at 121°C for 15 min.\n742   CLOSTRIDIUM AEROTOLERANS MEDIUM","quote_basis":"derivative
+    text"}]},{"quantity_id":"q26","label":"Provider normalization volume","local_fields":[],"decision":"evidence_only","rationale":"Both
+    providers declare volume 1000 ml as normalization metadata. Water input alone
+    does not demonstrate the final volume, particularly with unspecified DSM489 reducer-stock
+    doses.","source_stage":"Provider nominal recipe metadata","sources":[{"evidence_id":"api489","reference":"https://mediadive.dsmz.de/rest/medium/489","raw_path":"REVIEW_WORK/batch062/source07-09/api489.raw","raw_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","text_sha256":"5e3a6ed7c5e1fece0f2c6852a18238f8e4413b9215893cdc23a69e6a77fbfff3","accessed_at":"2026-10-28T09:30:20.199332Z","locator":"$.data.solutions[0].volume","quote":"\"volume\":
+    1000","quote_basis":"raw UTF-8"},{"evidence_id":"apiJ742","reference":"https://mediadive.dsmz.de/rest/medium/J742","raw_path":"REVIEW_WORK/batch062/source07-09/apiJ742.raw","raw_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","text_sha256":"02ad6b73d6c7f1558b4295e1eb4d5ffa5b5a3d6130bede20fbbdd58aab0a7b9c","accessed_at":"2026-10-28T09:30:20.028335Z","locator":"$.data.solutions[0].volume","quote":"\"volume\":
+    1000","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml":null,"data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml":null,"data/normalized_yaml/bacterial/lacrimispora_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All current CHEBI primary/secondary IDs and canonical labels resolve, with
+    specified hydrate forms otherwise supported. Sodium-resazurin nodes remain neutral
+    CHEBI:8806 mismatches, whereas the JCM neutral Resazurin node is source-consistent.
+    Water mediadive.compound:4 is an exact provider identity, not a CHEBI/MIM validation
+    claim. Current MIM membership and absence are separately scoped; no historical
+    legacy equivalence is inferred.
+  target_ids:
+  - CultureMech:005614
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: The seven original exact reports and four added repair reports were read
+    in full using lossless pooling. The inspected repair plan retains actual original
+    API489 bytes and metadata, exactly equal to the fresh capture; both selected after_text
+    documents match current owners. Fresh APIJ742 and PDF489 digests also equal their
+    claimed historical hashes, but the plan retains PDF text/metadata rather than
+    PDF bytes. The catalog retains only a scoped row plus metadata, not complete original
+    raw. Old report commands are historical claims, not rerun results. Existing repairs
+    and appended superseding explanations are credited; generated evidence/process
+    loss and malformed timestamps remain concerns.
+  target_ids:
+  - CultureMech:005614
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-005614-generated-repair-loss
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated target loses the maintained DSM489 stock repair
+  description: Regenerate the target from the maintained DSM489/KOMODO owners while
+    preserving their already repaired three stocks, input water, source claims, preparation
+    and explicit uncertainty notes. The generated target retains flattened indicator/reducer
+    rates and omits the repaired evidence/process. Do not ask the owners to repeat
+    their completed repair or invent the unknown reducer stock strengths. The inspected
+    plan after_text equals both current owners byte-for-byte; current repair code
+    and conservative merging must retain those scientific assertions.
+  target_ids:
+  - CultureMech:005614
+  field_paths:
+  - ingredients[8]
+  - ingredients[9]
+  - ingredients[10]
+  - solutions
+  - preparation_steps
+  - evidence
+  - notes
+  evidence_ids:
+  - target
+  - owner
+  - owner-3
+  - api489
+  - dsm489
+  - repair-reading
+  - repair-join
+  - writer-repair
+  - writer-formulation
+  - writer-merger
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-005614-source-variant-collapse
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: JCM742 is not identical to DSM489
+  description: 'Separate the JCM742 source formulation from DSM489: phosphate amounts,
+    resazurin amount/form and reducing-agent amounts differ explicitly. Preserve the
+    JCM owner evidence and pH rather than overwriting it with DSM489 or treating matching
+    names and broad ingredient membership as equivalence. Existing SOURCE_DUPLICATE
+    links connect the two DSM489 copies only; they do not authorize collapsing JCM742.
+    Current formulation comparison includes amounts, stocks, notes and preparation.'
+  target_ids:
+  - CultureMech:005614
+  field_paths:
+  - merged_from
+  - merge_fingerprint
+  - ingredients
+  - variant_children
+  evidence_ids:
+  - api489
+  - apiJ742
+  - dsm489
+  - jcm742HTML
+  - owner-2
+  - writer-formulation
+  - writer-matcher
+  rule_id: review-yaml-record/identity
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-005614-sodium-resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium resazurin retains a neutral-molecule identifier
+  description: The generated sodium-resazurin ingredient and both DSM489 stock compositions
+    use CHEBI:8806, whose formula is C12H7NO4 with no sodium. Reconcile these supplied-salt
+    mappings; their primary-label agreement does not validate the sodium form. No
+    secondary MIM slot exists on these sodium nodes. The JCM742 Resazurin primary
+    and secondary assertions are separate neutral-form assertions and are not included
+    in this defect.
+  target_ids:
+  - CultureMech:005614
+  field_paths:
+  - ingredients[8].term
+  - data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml::solutions[0].composition[0].term
+  - data/normalized_yaml/bacterial/lacrimispora_medium.yaml::solutions[0].composition[0].term
+  evidence_ids:
+  - dsm489
+  - api489
+  - chebi8806
+  - owner
+  - owner-3
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-005614-jcm-source-completeness
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: JCM742 source water and general preparation context are omitted
+  description: The JCM owner retains pH and all eleven nominal ingredient rates with
+    exact attached evidence, but omits the explicitly listed water input and catalog
+    sterilization default. Add the source input/context only in this JCM branch; do
+    not infer final volume or import DSM489 reducing-stock instructions.
+  target_ids:
+  - CultureMech:005614
+  field_paths:
+  - ingredients
+  - data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml::ingredients
+  - data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml::preparation_steps
+  evidence_ids:
+  - jcm742HTML
+  - apiJ742
+  - owner-2
+  rule_id: review-yaml-record/completeness
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+- finding_id: f5
+  issue_key: culturemech-005614-history-timestamp
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Malformed historical timestamps need append-only correction
+  description: 'Generated/KOMODO history retains literal .fZ and a timezone-naive
+    enrichment timestamp. Current time.strftime with %f confirms a present formatting
+    issue, but not the historical execution environment. Preserve old history and
+    add an actual explanatory correction; never fabricate its original fraction/timezone.
+    Keep the already explicit repair explanation that Aerobic: Yes is unverified import
+    provenance, not preparation or growth evidence.'
+  target_ids:
+  - CultureMech:005614
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - target
+  - owner
+  - writer-komodo
+  - writer-resolver
+  - repair-reading
+  rule_id: review-yaml-record/provenance
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: Regenerate the target from the maintained DSM489/KOMODO owners while
+    preserving their already repaired three stocks, input water, source claims, preparation
+    and explicit uncertainty notes. The generated target retains flattened indicator/reducer
+    rates and omits the repaired evidence/process. Do not ask the owners to repeat
+    their completed repair or invent the unknown reducer stock strengths. The inspected
+    plan after_text equals both current owners byte-for-byte; current repair code
+    and conservative merging must retain those scientific assertions.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005614
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: 'Separate the JCM742 source formulation from DSM489: phosphate amounts,
+    resazurin amount/form and reducing-agent amounts differ explicitly. Preserve the
+    JCM owner evidence and pH rather than overwriting it with DSM489 or treating matching
+    names and broad ingredient membership as equivalence. Existing SOURCE_DUPLICATE
+    links connect the two DSM489 copies only; they do not authorize collapsing JCM742.
+    Current formulation comparison includes amounts, stocks, notes and preparation.'
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005614
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The generated sodium-resazurin ingredient and both DSM489 stock compositions
+    use CHEBI:8806, whose formula is C12H7NO4 with no sodium. Reconcile these supplied-salt
+    mappings; their primary-label agreement does not validate the sodium form. No
+    secondary MIM slot exists on these sodium nodes. The JCM742 Resazurin primary
+    and secondary assertions are separate neutral-form assertions and are not included
+    in this defect.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005614
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/lacrimispora_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: The JCM owner retains pH and all eleven nominal ingredient rates with
+    exact attached evidence, but omits the explicitly listed water input and catalog
+    sterilization default. Add the source input/context only in this JCM branch; do
+    not infer final volume or import DSM489 reducing-stock instructions.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005614
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_aerotolerans_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: 'Generated/KOMODO history retains literal .fZ and a timezone-naive
+    enrichment timestamp. Current time.strftime with %f confirms a present formatting
+    issue, but not the historical execution environment. Preserve old history and
+    add an actual explanatory correction; never fabricate its original fraction/timezone.
+    Keep the already explicit repair explanation that Aerobic: Yes is unverified import
+    provenance, not preparation or growth evidence.'
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:005614
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- This scientific review is partial because the exact KOMODO489 MediaInfo route and
+  MediaList were unavailable (HTTP403). Historical catalog-row correspondence remains
+  derivative; the complete original catalog is not recovered. Exact preserved API489
+  raw bytes and current maintained-owner repair preimages authenticate only their
+  stated claims, not the unavailable KOMODO page or an independent current branch
+  formulation.
+- The standalone solution995 record and its follow-up report are excluded from this
+  selected-record review; the initial broad private reader is retained but the scoped
+  four-report successor alone supports the added history assessment.
+- The one-page DSM489 PDF was read in full and visually checked. Its copyright is
+  not an asserted publication year, and unknown individual authors are not invented.
+- Neither source provides a measured final volume. The repaired reducing stocks intentionally
+  retain unknown strength, solvent, stock volume and dose volume. No neighboring-medium
+  values are substituted.
+- 'The stock-node sodium-resazurin form issue is independent of quantity correctness:
+  the repaired 0.1% w/v strength and 0.0005 L batch dose are supported and retained.'
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
