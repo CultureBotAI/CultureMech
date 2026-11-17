@@ -1,0 +1,2158 @@
+schema_version: 1.0.0
+review_id: 20261028T071105Z-batch059-record02-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'CAMM: primary supplied forms, unresolved salt stock and generic preparation'
+started_at: '2026-10-28T06:48:41.931938Z'
+finished_at: '2026-10-28T07:11:05.208222Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The five scanned pages of Long, Jones and Woods (1983) provide an independent
+  primary formulation. They specify hydrated salts, a separately cited salt stock
+  and a potassium-phosphate buffer, which the flattened local molar list does not
+  fully resolve. The maintained owner’s scoped paper and modern P262 taxonomy notes
+  are credited; the generated record is stale. Fresh MediaDB routes failed, so historical
+  derivative tables are not presented as recovered source bytes.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CAMM.yaml
+    sha256: f8a47058148988b55c6e404fb2649a8f5ab7ea7e8cc4fcee79da4d7390c34f35
+    role: target
+  - path: data/normalized_yaml/bacterial/camm.yaml
+    sha256: 687964fcd24ef071c6c59045ae15826479531e7cd85798cab7857926cb76ccb3
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json
+    sha256: 5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-mediadb-exceptions/cohort-assessment.json
+    sha256: bfd6b6a15fe29cd8c3024c568952407ba92ccd27576a1603cb80c3ef4284b78d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAMM.md
+    sha256: 2f203b81f2b2b0d97d16fdd8f0b003a6bf6d966ce04e17dbc1a760e4d6fc8604
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/camm.md
+    sha256: 7ba8177a641c36847982ac11eb165cf80927ed07a09c3cbb28f235c2928434b2
+    role: context
+  - path: reports/yaml_record_review/20260922T031606Z-CAMM.md
+    sha256: c2937b297339e79736b281b3cdb5dd96747337ce4e8e102ffce5dac7e60a8196
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch059 native selection index 02.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007435
+targets:
+- target_id: CultureMech:007435
+  path: data/merge_yaml/merged/CAMM.yaml
+  label: camm
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:007435
+  command: just validate-schema data/merge_yaml/merged/CAMM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:007435
+  command: just validate-strict data/merge_yaml/merged/CAMM.yaml --out REVIEW_WORK/batch059/record02/strict.tsv
+    --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:007435
+  command: just validate-terms data/merge_yaml/merged/CAMM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:007435
+  command: just validate-references data/merge_yaml/merged/CAMM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CAMM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: f8a47058148988b55c6e404fb2649a8f5ab7ea7e8cc4fcee79da4d7390c34f35
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/camm.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 687964fcd24ef071c6c59045ae15826479531e7cd85798cab7857926cb76ccb3
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch059/record02/identity-search.json
+  accessed_at: '2026-10-28T07:05:44.307205Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems resolved uniquely. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: 44a056247eefae569bf0561f56c4e9544581df062010e76c195c17d03e7f3cdd
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer-mediadb
+  kind: record_content
+  reference: src/culturemech/import/mediadb_importer.py
+  locator: _map_ingredients; _create_preparation_steps
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Current _map_ingredients preserves imported amounts and symbolic cross-reference
+    fields; _create_preparation_steps supplies generic dissolution, pH and 0.22-micrometre
+    filtration text. Those defaults are not primary-paper evidence or proof of historical
+    execution.
+  snapshot_sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+- evidence_id: long1389
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/201961a770ca/aem00173-0233.png
+  locator: Original printed page 1389
+  accessed_at: '2026-10-28T06:49:55.010845Z'
+  support: supports
+  summary: Fresh original scanned page from PMC242467, visually read in full. Formula
+    and process claims are limited to their exact page/column; comparator media, inoculum
+    activation and microscopy are not transferred to CAMM.
+  snapshot_sha256: 432916ec9b91535c866ee4d9474c4ca5c63af31b6806993f1f29ba645b740d90
+- evidence_id: long1390
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png
+  locator: Original printed page 1390
+  accessed_at: '2026-10-28T06:49:55.020527Z'
+  support: supports
+  summary: Fresh original scanned page from PMC242467, visually read in full. Formula
+    and process claims are limited to their exact page/column; comparator media, inoculum
+    activation and microscopy are not transferred to CAMM.
+  snapshot_sha256: 84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4
+- evidence_id: long1391
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/99149b011716/aem00173-0235.png
+  locator: Original printed page 1391
+  accessed_at: '2026-10-28T06:49:55.037206Z'
+  support: supports
+  summary: Fresh original scanned page from PMC242467, visually read in full. Formula
+    and process claims are limited to their exact page/column; comparator media, inoculum
+    activation and microscopy are not transferred to CAMM.
+  snapshot_sha256: 5aa443a394b9036aa68e2979b7b947aa0299039ac5881f18bc76ef61ee531d13
+- evidence_id: long1392
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/daaebeebdb98/aem00173-0236.png
+  locator: Original printed page 1392
+  accessed_at: '2026-10-28T06:49:55.175445Z'
+  support: supports
+  summary: Fresh original scanned page from PMC242467, visually read in full. Formula
+    and process claims are limited to their exact page/column; comparator media, inoculum
+    activation and microscopy are not transferred to CAMM.
+  snapshot_sha256: 547c2ff0242fe1b23bf31103f098facb4efa3cc19d523388840e24f656b17071
+- evidence_id: long1393
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/bbe7dce927b7/aem00173-0237.png
+  locator: Original printed page 1393
+  accessed_at: '2026-10-28T06:49:55.182818Z'
+  support: supports
+  summary: Fresh original scanned page from PMC242467, visually read in full. Formula
+    and process claims are limited to their exact page/column; comparator media, inoculum
+    activation and microscopy are not transferred to CAMM.
+  snapshot_sha256: 78381afc37bfd3861882d1d7b333261040f1a491957a9f70c73309228eb227d4
+- evidence_id: pubmed16346276
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=16346276&retmode=xml
+  locator: Exact article/Taxon object or type-strain entry
+  accessed_at: '2026-10-28T06:49:54.553062Z'
+  support: supports
+  summary: Fresh primary bibliographic or taxonomic authority; supports exact paper
+    or P262 identity/rank only, not transfer of another formulation or species-wide
+    growth.
+  snapshot_sha256: 8365b105cef1aa124c7ac2d3b27ccdfa6caa6aefc2d399a513dc48f5a0d3f4c6
+- evidence_id: taxonomy1345695
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1345695&retmode=xml
+  locator: Exact article/Taxon object or type-strain entry
+  accessed_at: '2026-10-28T06:49:54.827486Z'
+  support: supports
+  summary: Fresh primary bibliographic or taxonomic authority; supports exact paper
+    or P262 identity/rank only, not transfer of another formulation or species-wide
+    growth.
+  snapshot_sha256: 821e93a5457fd52cfcc6451dc45bb6a1f8c8dd29d99844bf5251644e1240e83d
+- evidence_id: taxonomy169679
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=169679&retmode=xml
+  locator: Exact article/Taxon object or type-strain entry
+  accessed_at: '2026-10-28T06:49:54.871295Z'
+  support: supports
+  summary: Fresh primary bibliographic or taxonomic authority; supports exact paper
+    or P262 identity/rank only, not transfer of another formulation or species-wide
+    growth.
+  snapshot_sha256: a0116505cf4229ee3652d20e96398400a753cb8827198a4e5b23c76d441f823f
+- evidence_id: lpsnSaccharobutylicum
+  kind: database
+  reference: https://lpsn.dsmz.de/species/clostridium-saccharobutylicum
+  locator: Exact article/Taxon object or type-strain entry
+  accessed_at: '2026-10-28T06:49:55.960927Z'
+  support: supports
+  summary: Fresh primary bibliographic or taxonomic authority; supports exact paper
+    or P262 identity/rank only, not transfer of another formulation or species-wide
+    growth.
+  snapshot_sha256: d7c08a9fbf99cca102e8bb82bf7f342e6e9b75d08a039199ad4b74d3022da301
+- evidence_id: mediadb88
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/media/88/
+  locator: Exact captured HTTP response and metadata; no unavailable body claims
+  accessed_at: '2026-10-28T06:49:54.200361Z'
+  support: context_only
+  summary: 'Retained failed or limited access: MediaDB HTTP502; DOI403; PMC HTML challenge
+    is not full text; direct genus fetch429. Successful scanned pages and taxonomy
+    lineage objects are separate evidence.'
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: mediadbSource21
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/sources/21/
+  locator: Exact captured HTTP response and metadata; no unavailable body claims
+  accessed_at: '2026-10-28T06:49:54.201964Z'
+  support: context_only
+  summary: 'Retained failed or limited access: MediaDB HTTP502; DOI403; PMC HTML challenge
+    is not full text; direct genus fetch429. Successful scanned pages and taxonomy
+    lineage objects are separate evidence.'
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: pmc242467
+  kind: database
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC242467/
+  locator: Exact captured HTTP response and metadata; no unavailable body claims
+  accessed_at: '2026-10-28T06:49:54.394643Z'
+  support: context_only
+  summary: 'Retained failed or limited access: MediaDB HTTP502; DOI403; PMC HTML challenge
+    is not full text; direct genus fetch429. Successful scanned pages and taxonomy
+    lineage objects are separate evidence.'
+  snapshot_sha256: e1939e7783b89ec35756fde5d33eb609abe8e4bbc696dd88947fc680cacfbdec
+- evidence_id: longDOI
+  kind: database
+  reference: https://doi.org/10.1128/aem.45.4.1389-1393.1983
+  locator: Exact captured HTTP response and metadata; no unavailable body claims
+  accessed_at: '2026-10-28T06:49:54.514441Z'
+  support: context_only
+  summary: 'Retained failed or limited access: MediaDB HTTP502; DOI403; PMC HTML challenge
+    is not full text; direct genus fetch429. Successful scanned pages and taxonomy
+    lineage objects are separate evidence.'
+  snapshot_sha256: cfdaf4f2da0895c76a36df02263f12081acb0172051eac8359924eac63698d06
+- evidence_id: mediadbPaper
+  kind: database
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4123892/
+  locator: Exact captured HTTP response and metadata; no unavailable body claims
+  accessed_at: '2026-10-28T06:49:54.582879Z'
+  support: context_only
+  summary: 'Retained failed or limited access: MediaDB HTTP502; DOI403; PMC HTML challenge
+    is not full text; direct genus fetch429. Successful scanned pages and taxonomy
+    lineage objects are separate evidence.'
+  snapshot_sha256: 8b94c924a280677d9a236d444d78db152e7ab0a6af58498a3baf8629e7b4a798
+- evidence_id: taxonomy1485
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1485&retmode=xml
+  locator: Exact captured HTTP response and metadata; no unavailable body claims
+  accessed_at: '2026-10-28T06:49:54.827628Z'
+  support: context_only
+  summary: 'Retained failed or limited access: MediaDB HTTP502; DOI403; PMC HTML challenge
+    is not full text; direct genus fetch429. Successful scanned pages and taxonomy
+    lineage objects are separate evidence.'
+  snapshot_sha256: 01ec4cdfa0073304c3db8986e458b8be2ba034ee6b4bdb07218fd6f2e2a7fa8c
+- evidence_id: optical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/optical-primary-reader.json
+  locator: Manual p1390 transcription with explicit scope exclusions
+  accessed_at: '2026-10-28T07:05:44.310208Z'
+  support: supports
+  summary: Optical source reader preserves exact numerical values and supplied forms
+    from the original image, with typography and line-wrap normalization disclosed.
+  snapshot_sha256: 7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2
+- evidence_id: parent-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json
+  locator: $.records[82]
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Exact CAMM row and all seventeen claims read as historical derivative evidence;
+    no current source raw recovery or implementation success is inferred.
+  snapshot_sha256: 5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4
+- evidence_id: parent-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-mediadb-exceptions/cohort-assessment.json
+  locator: $.records[94]
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Exact CAMM row and all seventeen claims read as historical derivative evidence;
+    no current source raw recovery or implementation success is inferred.
+  snapshot_sha256: bfd6b6a15fe29cd8c3024c568952407ba92ccd27576a1603cb80c3ef4284b78d
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAMM.md
+  locator: Complete exact Record-header report
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Full historical report and all quantities read; old live-source and validation
+    claims remain historical assertions.
+  snapshot_sha256: 2f203b81f2b2b0d97d16fdd8f0b003a6bf6d966ce04e17dbc1a760e4d6fc8604
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/camm.md
+  locator: Complete exact Record-header report
+  accessed_at: '2026-10-28T07:05:44.224262Z'
+  support: context_only
+  summary: Full historical report and all quantities read; old live-source and validation
+    claims remain historical assertions.
+  snapshot_sha256: 7ba8177a641c36847982ac11eb165cf80927ed07a09c3cbb28f235c2928434b2
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/historical-reader.json
+  accessed_at: '2026-10-28T07:05:44.393279Z'
+  support: context_only
+  summary: Every exact target/owner historical report in the native input manifest
+    is retained in full, with exact parent-row scope where applicable. Prior recommendations
+    are assessed against fresh primary and current code evidence.
+  snapshot_sha256: 50a7af698737c23b11f031276f863e72db77583368d35a33b62fb12c834aec07
+- evidence_id: chebi17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17634
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:56.247348Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 6e02f3cee82012b7f630c04f122676c0029753074a4421cb005301b8bf24cedb
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:55.824050Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0d2e75e0bd98dbffff14d85a41dfd0af8aae2a8d65a945d34a4126a17091c2b8
+- evidence_id: chebi17836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17836
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:56.374319Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 93d2f4126cd43ea2fca484f2c97fa9fbd7097abb85013224985cf00a1069468e
+- evidence_id: chebi3311
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_3311
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:57.207959Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 4f4be4c8891612dcbd257d803e5ac1049cc8c6fcc5c423b8df2b9b0f2e77328a
+- evidence_id: chebi3312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_3312
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:57.496508Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 76bdc025d30f15d533c0352d0584f76ec02f6904ab57a13277a2d87ae1189a47
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131527
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:55.654820Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 97e9c2b05f3937c5beeebb4e6338aa6730f9e422ee0e7570a6c622dda8d97a86
+- evidence_id: chebi75215
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75215
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.297135Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2a2ccf769ab7340ca24e1b7c62a25cb0cec628fac694515cad689eed7c6dd6dd
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:56.587321Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: b145f4ff9b90ebb993ff576d9ab35a6c10b7c42a3b99e18feffcc8d75c0e1e50
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:57.932954Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fc6b8e9d8657914ed8fd568c69d8a5b2cf41b26767bd6361a5e2d258883be97d
+- evidence_id: chebi91247
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_91247
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:59.291904Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: a79f2c5fed98052a84e073ebca292320d9aaedae22ca95a1da756aa4d6cacef3
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.243119Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32599
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:57.030554Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1a3fd204bffef0735a8d1a12385aec1c330013f84a182acc909368cd164cf821
+- evidence_id: chebi86364
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86364
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.834643Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0e8fbfc2ee82502bd7a5b4b3ba6cfaaae0ad1779400d07af8e2e0f726af793e9
+- evidence_id: chebi75832
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75832
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.531308Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fd686a9e6d5104d672f21eeb02270fd8f8a784429067af010f7bc770c0fb003f
+- evidence_id: chebi35176
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_35176
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:57.622881Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: bc0c5111bcf25886ba3e493084197b581a719cb597c5e27663ceed08d52b6661
+- evidence_id: chebi53258
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53258
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.085630Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: b8957ecd07249ac706769b79430c64d26de9a7dc75b36c65db4a13ff6cd8a504
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/quantity-inventory.json
+  accessed_at: '2026-10-28T07:05:44.544643Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: d477fbc162d867333f80d5bd8c3be066da4c229f8238d45706c2a8809dfb4f11
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/grounding-inventory.json
+  accessed_at: '2026-10-28T07:05:44.544706Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 0779b0e8ceabd67674d2c04f477f270a1174438d26b99213a5e07721d4f52eba
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T07:05:44.544774Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: f0b2860a69d379d73820c9b6d548fb36e29772adc103f74d3b18173875d634a9
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/scalar-census.json
+  accessed_at: '2026-10-28T07:05:44.544798Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 4cc466f74419a0a2ec331486f22dc89e81eeec688628aa393c8aba2f0843a23a
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch059/record02/validate-schema.json
+  accessed_at: '2026-10-28T06:48:43.020826Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 1d9c6d23121788222d6bafb91c30f870f1d91084a62dd5505dd3adbe6ee7e1c9
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch059/record02/validate-strict.json
+  accessed_at: '2026-10-28T06:48:43.994328Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch059/record02/strict.tsv\n"
+  snapshot_sha256: 2262c3438a9b09d84c566fc990144105000fe414bfa45aeb5f9c9c11637f81d8
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch059/record02/validate-terms.json
+  accessed_at: '2026-10-28T06:48:45.077562Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 6285b93146489b6198194014945342ffeb9eb39611a69564423c1bc9fc5acae7
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch059/record02/validate-references.json
+  accessed_at: '2026-10-28T06:48:45.811075Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 6bc3d5a5c65ba392903fb358ec99f7b317dc74871180425420491346738a6f94
+- evidence_id: historical-sept22
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T031606Z-CAMM.md
+  locator: Complete exact selected-target report, every quantity and recommendation
+  accessed_at: '2026-10-28T07:11:05.207020Z'
+  support: context_only
+  summary: The Sept22 report was based on database/abstract access rather than the
+    scanned article. Its claimed growth rate0.233676/h and absence-of-stock conclusion
+    are not independently authenticated or adopted. The current owner bibliography
+    repair is credited, and the freshly read primary explicitly includes an unresolved
+    referenced salt stock.
+  snapshot_sha256: c2937b297339e79736b281b3cdb5dd96747337ce4e8e102ffce5dac7e60a8196
+- evidence_id: exact-source-route-1
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/media_text/88/
+  locator: Exact historical source route, current HTTP response; metadata REVIEW_WORK/batch059/record02-exact-export-route/mediadb88-export.json
+  accessed_at: '2026-10-28T07:10:03.365681Z'
+  support: context_only
+  summary: This exact source route returned HTTP502. No unavailable table or historical
+    access event is authenticated. Original failed lead captures remain distinct.
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: source-route-supplement
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record02/source-route-supplement.json
+  accessed_at: '2026-10-28T07:11:05.207108Z'
+  support: context_only
+  summary: Exact route metadata/raw joins, with original actual retrieval timestamps
+    and failed-lead distinction.
+  snapshot_sha256: 4c5b0f71a8fd829ee32a696702fdc429792f05bc078070b454cfac6d61857344
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: CAMM source and maintained bibliography
+  outcome: supported
+  summary: MediaDB 88 is the exact local identity. The owner’s PMID16346276, DOI10.1128/aem.45.4.1389-1393.1983
+    and PMC242467 agree with fresh PubMed and the complete original pages. The October13
+    owner bibliography is credited; the generated target lacks it. Current MediaDB
+    endpoints failed, so the parent proposal tables remain derivative evidence.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - identity-search
+  - pubmed16346276
+  - long1389
+  - owner-1
+  - parent-0
+  - parent-1
+- assessment_id: a2
+  area: scope
+  topic: P262 taxonomy and heterogeneous comparison strains
+  outcome: supported
+  summary: Fresh NCBI identifies 1345695 at strain rank as Clostridium saccharobutylicum
+    DSM 13864, with NCP262 synonym and parent species 169679. LPSN lists P262/NCP262/DSM
+    13864 type-strain equivalence. Genus 1485 is verified through the successful lineage
+    objects despite direct 429. These facts support the owner’s scoped historical-name
+    mapping, not all-species growth or transfer of another paper’s formulation. The
+    original table shows different comparison-strain outcomes.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - taxonomy1345695
+  - taxonomy169679
+  - lpsnSaccharobutylicum
+  - long1390
+  - owner-1
+- assessment_id: a3
+  area: completeness
+  topic: Unchanged classification and generic applications
+  outcome: concern
+  summary: The original article describes CAMM as a defined minimal medium; liquid
+    classification is consistent. The unresolved referenced stock prevents a fully
+    reproducible local composition but does not justify replacing the author’s defined
+    classification with an invented alternative. The current high_metal flag has no
+    inspected threshold or source rationale, and broad modeling/genome-sequenced applications
+    are importer context rather than strain growth claims.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - long1389
+  - long1390
+  - local-target
+  - writer-mediadb
+- assessment_id: a4
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "D-Glucose", "source": [{"evidence_id":
+    "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "6 g of glucose", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[0]", "exact_derivative_claim": {"pointer": ["ingredients",
+    0], "ingredient": "D-Glucose", "old": {"value": "333.037", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "333.037", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "D-Glucose 333.037", "explanation": "ingredients[0].concentration
+    (D-Glucose) in MEDIADB:88: the official database directly reports 333.037 mM under
+    the ''Amount (mM)'' column. Locator: Compound table, compound ID 31; no conversion.
+    The same database''s 2015-10-07 SQL export agrees: media_compounds (medcompID,
+    medID, compID, Amount_mM) (1518,88,31,333.037). This evidence supports the amount
+    assigned to the database compound label, not an independent verification of the
+    original article or the record''s ontology mappings, supplied hydrate form, preparation
+    or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi": ["CHEBI:17634",
+    "CHEBI:17634"], "limitations": ["Official database amounts, not independently
+    verified original-article concentrations.", "Existing chemical identities, hydrate
+    forms and preparation steps remain unverified.", "No numeric edits, conversions,
+    new organisms or merging of variants."]}, "scope": "Derivative claim, not external
+    raw authentication."}], "decision": "evidence_only", "rationale": "The primary
+    mass per 100 ml medium supports the nominal molar value within its stated precision;
+    source glucose does not independently establish the D stereochemical label.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "333.037", "unit": "MILLIMOLAR"},
+    "decision": "evidence_only", "rationale": "The primary mass per 100 ml medium
+    supports the nominal molar value within its stated precision; source glucose does
+    not independently establish the D stereochemical label."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "333.037",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The primary
+    mass per 100 ml medium supports the nominal molar value within its stated precision;
+    source glucose does not independently establish the D stereochemical label."}]},
+    {"quantity_id": "q2", "topic": "Biotin", "source": [{"evidence_id": "long1390",
+    "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "5 μg of biotin", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[1]", "exact_derivative_claim": {"pointer": ["ingredients",
+    1], "ingredient": "Biotin", "old": {"value": "0.00020465", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.00020465", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Biotin 0.00020465", "explanation": "ingredients[1].concentration
+    (Biotin) in MEDIADB:88: the official database directly reports 0.00020465 mM under
+    the ''Amount (mM)'' column. Locator: Compound table, compound ID 117; no conversion.
+    The same database''s 2015-10-07 SQL export agrees: media_compounds (medcompID,
+    medID, compID, Amount_mM) (1519,88,117,0.00020465). This evidence supports the
+    amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "evidence_only", "rationale": "The source 5 µg per 100 ml supports
+    the retained biotin molarity within original precision.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path": "ingredients[1].concentration",
+    "stored_value": {"value": "0.00020465", "unit": "MILLIMOLAR"}, "decision": "evidence_only",
+    "rationale": "The source 5 µg per 100 ml supports the retained biotin molarity
+    within original precision."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.00020465",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The source 5
+    µg per 100 ml supports the retained biotin molarity within original precision."}]},
+    {"quantity_id": "q3", "topic": "4-Aminobenzoate", "source": [{"evidence_id": "long1390",
+    "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "0.1 mg of p-aminobenzoic acid", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[2]", "exact_derivative_claim": {"pointer": ["ingredients",
+    2], "ingredient": "4-Aminobenzoate", "old": {"value": "0.00729", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.00729", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "4-Aminobenzoate 0.00729", "explanation": "ingredients[2].concentration
+    (4-Aminobenzoate) in MEDIADB:88: the official database directly reports 0.00729
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 534;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1520,88,534,0.00729). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    ["CHEBI:17836", "CHEBI:17836"], "limitations": ["Official database amounts, not
+    independently verified original-article concentrations.", "Existing chemical identities,
+    hydrate forms and preparation steps remain unverified.", "No numeric edits, conversions,
+    new organisms or merging of variants."]}, "scope": "Derivative claim, not external
+    raw authentication."}], "decision": "evidence_only", "rationale": "The primary
+    p-aminobenzoic-acid mass supports this nominal molecular contribution within source
+    precision; the local anion identifier is a separate supplied-form mismatch.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "0.00729", "unit": "MILLIMOLAR"},
+    "decision": "evidence_only", "rationale": "The primary p-aminobenzoic-acid mass
+    supports this nominal molecular contribution within source precision; the local
+    anion identifier is a separate supplied-form mismatch."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.00729",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The primary
+    p-aminobenzoic-acid mass supports this nominal molecular contribution within source
+    precision; the local anion identifier is a separate supplied-form mismatch."}]},
+    {"quantity_id": "q4", "topic": "Calcium carbonate", "source": [{"evidence_id":
+    "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "2 g of CaCO3", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[3]", "exact_derivative_claim": {"pointer": ["ingredients",
+    3], "ingredient": "Calcium carbonate", "old": {"value": "199.826", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "199.826", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Calcium carbonate 199.826", "explanation":
+    "ingredients[3].concentration (Calcium carbonate) in MEDIADB:88: the official
+    database directly reports 199.826 mM under the ''Amount (mM)'' column. Locator:
+    Compound table, compound ID 6655; no conversion. The same database''s 2015-10-07
+    SQL export agrees: media_compounds (medcompID, medID, compID, Amount_mM) (1521,88,6655,199.826).
+    This evidence supports the amount assigned to the database compound label, not
+    an independent verification of the original article or the record''s ontology
+    mappings, supplied hydrate form, preparation or growth claims. Accessed 2026-10-09."},
+    "mapping_ids_not_in_source_chebi": [], "limitations": ["Official database amounts,
+    not independently verified original-article concentrations.", "Existing chemical
+    identities, hydrate forms and preparation steps remain unverified.", "No numeric
+    edits, conversions, new organisms or merging of variants."]}, "scope": "Derivative
+    claim, not external raw authentication."}], "decision": "evidence_only", "rationale":
+    "The source calcium-carbonate mass per 100 ml supports the retained nominal molarity
+    within source precision.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "199.826",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The source calcium-carbonate
+    mass per 100 ml supports the retained nominal molarity within source precision."},
+    {"path": "data/normalized_yaml/bacterial/camm.yaml", "field_path": "ingredients[3].concentration",
+    "stored_value": {"value": "199.826", "unit": "MILLIMOLAR"}, "decision": "evidence_only",
+    "rationale": "The source calcium-carbonate mass per 100 ml supports the retained
+    nominal molarity within source precision."}]}, {"quantity_id": "q5", "topic":
+    "Calcium chloride anhydrous", "source": [{"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "4 ml of the salt solution described by Holdeman et al. (8)", "quote_basis":
+    "Manual visual transcription; typography normalized, not a raw image text substring.",
+    "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[4]", "exact_derivative_claim": {"pointer": ["ingredients",
+    4], "ingredient": "Calcium chloride anhydrous", "old": {"value": "0.0720819",
+    "unit": "MILLIMOLAR"}, "proposed": {"value": "0.0720819", "unit": "MILLIMOLAR"},
+    "status": "evidence_only", "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Calcium chloride anhydrous 0.0720819", "explanation":
+    "ingredients[4].concentration (Calcium chloride anhydrous) in MEDIADB:88: the
+    official database directly reports 0.0720819 mM under the ''Amount (mM)'' column.
+    Locator: Compound table, compound ID 6656; no conversion. The same database''s
+    2015-10-07 SQL export agrees: media_compounds (medcompID, medID, compID, Amount_mM)
+    (1522,88,6656,0.0720819). This evidence supports the amount assigned to the database
+    compound label, not an independent verification of the original article or the
+    record''s ontology mappings, supplied hydrate form, preparation or growth claims.
+    Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi": [], "limitations":
+    ["Official database amounts, not independently verified original-article concentrations.",
+    "Existing chemical identities, hydrate forms and preparation steps remain unverified.",
+    "No numeric edits, conversions, new organisms or merging of variants."]}, "scope":
+    "Derivative claim, not external raw authentication."}], "decision": "unsupported",
+    "rationale": "The primary does not list a separate calcium-chloride amount; the
+    cited salt stock is unresolved. The historical MediaDB molarity cannot be promoted
+    to independently verified primary support.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0720819",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The primary does
+    not list a separate calcium-chloride amount; the cited salt stock is unresolved.
+    The historical MediaDB molarity cannot be promoted to independently verified primary
+    support."}, {"path": "data/normalized_yaml/bacterial/camm.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "0.0720819", "unit":
+    "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The primary does not list
+    a separate calcium-chloride amount; the cited salt stock is unresolved. The historical
+    MediaDB molarity cannot be promoted to independently verified primary support."}]},
+    {"quantity_id": "q6", "topic": "Potassium dibasic phosphate", "source": [{"evidence_id":
+    "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "Sterile 1 M potassium phosphate buffer was added to a final concentration
+    of 0.05 M at pH 7.0.", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[5]", "exact_derivative_claim": {"pointer": ["ingredients",
+    5], "ingredient": "Potassium dibasic phosphate", "old": {"value": "50.2296", "unit":
+    "MILLIMOLAR"}, "proposed": {"value": "50.2296", "unit": "MILLIMOLAR"}, "status":
+    "evidence_only", "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Potassium dibasic phosphate 50.2296", "explanation":
+    "ingredients[5].concentration (Potassium dibasic phosphate) in MEDIADB:88: the
+    official database directly reports 50.2296 mM under the ''Amount (mM)'' column.
+    Locator: Compound table, compound ID 11628; no conversion. The same database''s
+    2015-10-07 SQL export agrees: media_compounds (medcompID, medID, compID, Amount_mM)
+    (1523,88,11628,50.2296). This evidence supports the amount assigned to the database
+    compound label, not an independent verification of the original article or the
+    record''s ontology mappings, supplied hydrate form, preparation or growth claims.
+    Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi": ["CHEBI:131527"], "limitations":
+    ["Official database amounts, not independently verified original-article concentrations.",
+    "Existing chemical identities, hydrate forms and preparation steps remain unverified.",
+    "No numeric edits, conversions, new organisms or merging of variants."]}, "scope":
+    "Derivative claim, not external raw authentication."}], "decision": "unsupported",
+    "rationale": "The primary gives total potassium phosphate 0.05 M from 1 M buffer,
+    without a dipotassium/monopotassium split or the held-stock contribution. This
+    exact individual rate is unresolved.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "50.2296",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The primary gives
+    total potassium phosphate 0.05 M from 1 M buffer, without a dipotassium/monopotassium
+    split or the held-stock contribution. This exact individual rate is unresolved."},
+    {"path": "data/normalized_yaml/bacterial/camm.yaml", "field_path": "ingredients[5].concentration",
+    "stored_value": {"value": "50.2296", "unit": "MILLIMOLAR"}, "decision": "unsupported",
+    "rationale": "The primary gives total potassium phosphate 0.05 M from 1 M buffer,
+    without a dipotassium/monopotassium split or the held-stock contribution. This
+    exact individual rate is unresolved."}]}, {"quantity_id": "q7", "topic": "Sodium
+    molybdate", "source": [{"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "1 mg of Na2MoO4 · 2H2O", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[6]", "exact_derivative_claim": {"pointer": ["ingredients",
+    6], "ingredient": "Sodium molybdate", "old": {"value": "0.04133", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.04133", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Sodium molybdate 0.04133", "explanation": "ingredients[6].concentration
+    (Sodium molybdate) in MEDIADB:88: the official database directly reports 0.04133
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 13862;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1524,88,13862,0.04133). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "evidence_only", "rationale": "The nominal molarity corresponds to
+    the primary sodium-molybdate dihydrate contribution within precision; its current
+    anhydrous term must not be treated as the supplied form.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path": "ingredients[6].concentration",
+    "stored_value": {"value": "0.04133", "unit": "MILLIMOLAR"}, "decision": "evidence_only",
+    "rationale": "The nominal molarity corresponds to the primary sodium-molybdate
+    dihydrate contribution within precision; its current anhydrous term must not be
+    treated as the supplied form."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.04133",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The nominal
+    molarity corresponds to the primary sodium-molybdate dihydrate contribution within
+    precision; its current anhydrous term must not be treated as the supplied form."}]},
+    {"quantity_id": "q8", "topic": "Sodium chloride", "source": [{"evidence_id": "long1390",
+    "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "4 ml of the salt solution described by Holdeman et al. (8)", "quote_basis":
+    "Manual visual transcription; typography normalized, not a raw image text substring.",
+    "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[7]", "exact_derivative_claim": {"pointer": ["ingredients",
+    7], "ingredient": "Sodium chloride", "old": {"value": "1.36893", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "1.36893", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Sodium chloride 1.36893", "explanation": "ingredients[7].concentration
+    (Sodium chloride) in MEDIADB:88: the official database directly reports 1.36893
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16384;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1525,88,16384,1.36893). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "unsupported", "rationale": "No separate sodium-chloride amount appears
+    in the primary CAMM table. The unresolved salt stock may contribute it; absence
+    from the direct table is not evidence to delete it.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CAMM.yaml", "field_path": "ingredients[7].concentration",
+    "stored_value": {"value": "1.36893", "unit": "MILLIMOLAR"}, "decision": "unsupported",
+    "rationale": "No separate sodium-chloride amount appears in the primary CAMM table.
+    The unresolved salt stock may contribute it; absence from the direct table is
+    not evidence to delete it."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.36893",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "No separate sodium-chloride
+    amount appears in the primary CAMM table. The unresolved salt stock may contribute
+    it; absence from the direct table is not evidence to delete it."}]}, {"quantity_id":
+    "q9", "topic": "Thiamine HCl", "source": [{"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "0.1 mg of thiamine hydrochloride", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[8]", "exact_derivative_claim": {"pointer": ["ingredients",
+    8], "ingredient": "Thiamine HCl", "old": {"value": "0.00296", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.00296", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Thiamine HCl 0.00296", "explanation": "ingredients[8].concentration
+    (Thiamine HCl) in MEDIADB:88: the official database directly reports 0.00296 mM
+    under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16389;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1526,88,16389,0.00296). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    ["CHEBI:49105", "CHEBI:49105"], "limitations": ["Official database amounts, not
+    independently verified original-article concentrations.", "Existing chemical identities,
+    hydrate forms and preparation steps remain unverified.", "No numeric edits, conversions,
+    new organisms or merging of variants."]}, "scope": "Derivative claim, not external
+    raw authentication."}], "decision": "evidence_only", "rationale": "The primary
+    thiamine-hydrochloride contribution supports the retained nominal molarity within
+    source precision.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.00296",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The primary
+    thiamine-hydrochloride contribution supports the retained nominal molarity within
+    source precision."}, {"path": "data/normalized_yaml/bacterial/camm.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "0.00296", "unit": "MILLIMOLAR"},
+    "decision": "evidence_only", "rationale": "The primary thiamine-hydrochloride
+    contribution supports the retained nominal molarity within source precision."}]},
+    {"quantity_id": "q10", "topic": "Cysteine-HCl", "source": [{"evidence_id": "long1390",
+    "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "0.05 g of cysteine hydrochloride", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[9]", "exact_derivative_claim": {"pointer": ["ingredients",
+    9], "ingredient": "Cysteine-HCl", "old": {"value": "2.847", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "2.847", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Cysteine-HCl 2.847", "explanation": "ingredients[9].concentration
+    (Cysteine-HCl) in MEDIADB:88: the official database directly reports 2.847 mM
+    under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16390;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1527,88,16390,2.847). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    ["CHEBI:91247"], "limitations": ["Official database amounts, not independently
+    verified original-article concentrations.", "Existing chemical identities, hydrate
+    forms and preparation steps remain unverified.", "No numeric edits, conversions,
+    new organisms or merging of variants."]}, "scope": "Derivative claim, not external
+    raw authentication."}], "decision": "unsupported", "rationale": "The paper gives
+    cysteine hydrochloride mass but no hydrate or L/D designation. The local molarity
+    and anhydrous L-specific term do not establish the supplied form; do not reverse-engineer
+    a monohydrate from the number.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.847",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The paper gives
+    cysteine hydrochloride mass but no hydrate or L/D designation. The local molarity
+    and anhydrous L-specific term do not establish the supplied form; do not reverse-engineer
+    a monohydrate from the number."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.847",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The paper gives
+    cysteine hydrochloride mass but no hydrate or L/D designation. The local molarity
+    and anhydrous L-specific term do not establish the supplied form; do not reverse-engineer
+    a monohydrate from the number."}]}, {"quantity_id": "q11", "topic": "Potassium
+    dihydrogen phosphate", "source": [{"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "Sterile 1 M potassium phosphate buffer was added to a final concentration
+    of 0.05 M at pH 7.0.", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[10]", "exact_derivative_claim": {"pointer": ["ingredients",
+    10], "ingredient": "Potassium dihydrogen phosphate", "old": {"value": "0.293932",
+    "unit": "MILLIMOLAR"}, "proposed": {"value": "0.293932", "unit": "MILLIMOLAR"},
+    "status": "evidence_only", "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Potassium dihydrogen phosphate 0.293932", "explanation":
+    "ingredients[10].concentration (Potassium dihydrogen phosphate) in MEDIADB:88:
+    the official database directly reports 0.293932 mM under the ''Amount (mM)'' column.
+    Locator: Compound table, compound ID 16391; no conversion. The same database''s
+    2015-10-07 SQL export agrees: media_compounds (medcompID, medID, compID, Amount_mM)
+    (1528,88,16391,0.293932). This evidence supports the amount assigned to the database
+    compound label, not an independent verification of the original article or the
+    record''s ontology mappings, supplied hydrate form, preparation or growth claims.
+    Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi": [], "limitations":
+    ["Official database amounts, not independently verified original-article concentrations.",
+    "Existing chemical identities, hydrate forms and preparation steps remain unverified.",
+    "No numeric edits, conversions, new organisms or merging of variants."]}, "scope":
+    "Derivative claim, not external raw authentication."}], "decision": "unsupported",
+    "rationale": "The monopotassium-phosphate fraction is not specified by the primary
+    buffer instruction or unresolved salt stock; do not invent a split.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path": "ingredients[10].concentration",
+    "stored_value": {"value": "0.293932", "unit": "MILLIMOLAR"}, "decision": "unsupported",
+    "rationale": "The monopotassium-phosphate fraction is not specified by the primary
+    buffer instruction or unresolved salt stock; do not invent a split."}, {"path":
+    "data/normalized_yaml/bacterial/camm.yaml", "field_path": "ingredients[10].concentration",
+    "stored_value": {"value": "0.293932", "unit": "MILLIMOLAR"}, "decision": "unsupported",
+    "rationale": "The monopotassium-phosphate fraction is not specified by the primary
+    buffer instruction or unresolved salt stock; do not invent a split."}]}, {"quantity_id":
+    "q12", "topic": "Magnesium sulfate", "source": [{"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "20 mg of MgSO4 · 7H2O", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[11]", "exact_derivative_claim": {"pointer": ["ingredients",
+    11], "ingredient": "Magnesium sulfate", "old": {"value": "0.877863", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.877863", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Magnesium sulfate 0.877863", "explanation":
+    "ingredients[11].concentration (Magnesium sulfate) in MEDIADB:88: the official
+    database directly reports 0.877863 mM under the ''Amount (mM)'' column. Locator:
+    Compound table, compound ID 16394; no conversion. The same database''s 2015-10-07
+    SQL export agrees: media_compounds (medcompID, medID, compID, Amount_mM) (1529,88,16394,0.877863).
+    This evidence supports the amount assigned to the database compound label, not
+    an independent verification of the original article or the record''s ontology
+    mappings, supplied hydrate form, preparation or growth claims. Accessed 2026-10-09."},
+    "mapping_ids_not_in_source_chebi": ["CHEBI:32599", "CHEBI:32599"], "limitations":
+    ["Official database amounts, not independently verified original-article concentrations.",
+    "Existing chemical identities, hydrate forms and preparation steps remain unverified.",
+    "No numeric edits, conversions, new organisms or merging of variants."]}, "scope":
+    "Derivative claim, not external raw authentication."}], "decision": "unsupported",
+    "rationale": "The primary direct magnesium-sulfate heptahydrate amount does not
+    independently authenticate this total molarity; an unknown held-stock contribution
+    may exist. Preserve the direct mass separately and resolve the stock before recomputing
+    totals.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "ingredients[11].concentration", "stored_value": {"value": "0.877863", "unit":
+    "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The primary direct magnesium-sulfate
+    heptahydrate amount does not independently authenticate this total molarity; an
+    unknown held-stock contribution may exist. Preserve the direct mass separately
+    and resolve the stock before recomputing totals."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.877863",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "The primary direct
+    magnesium-sulfate heptahydrate amount does not independently authenticate this
+    total molarity; an unknown held-stock contribution may exist. Preserve the direct
+    mass separately and resolve the stock before recomputing totals."}]}, {"quantity_id":
+    "q13", "topic": "Manganese sulfate", "source": [{"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "1 mg of MnSO4 · 4H2O", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[12]", "exact_derivative_claim": {"pointer": ["ingredients",
+    12], "ingredient": "Manganese sulfate", "old": {"value": "0.04483", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.04483", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Manganese sulfate 0.04483", "explanation":
+    "ingredients[12].concentration (Manganese sulfate) in MEDIADB:88: the official
+    database directly reports 0.04483 mM under the ''Amount (mM)'' column. Locator:
+    Compound table, compound ID 16395; no conversion. The same database''s 2015-10-07
+    SQL export agrees: media_compounds (medcompID, medID, compID, Amount_mM) (1530,88,16395,0.04483).
+    This evidence supports the amount assigned to the database compound label, not
+    an independent verification of the original article or the record''s ontology
+    mappings, supplied hydrate form, preparation or growth claims. Accessed 2026-10-09."},
+    "mapping_ids_not_in_source_chebi": ["CHEBI:86364", "CHEBI:86364"], "limitations":
+    ["Official database amounts, not independently verified original-article concentrations.",
+    "Existing chemical identities, hydrate forms and preparation steps remain unverified.",
+    "No numeric edits, conversions, new organisms or merging of variants."]}, "scope":
+    "Derivative claim, not external raw authentication."}], "decision": "evidence_only",
+    "rationale": "The nominal molarity is consistent with the primary tetrahydrate
+    contribution within precision; the local monohydrate mapping is a distinct form
+    error.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "ingredients[12].concentration", "stored_value": {"value": "0.04483", "unit":
+    "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The nominal molarity
+    is consistent with the primary tetrahydrate contribution within precision; the
+    local monohydrate mapping is a distinct form error."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.04483",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The nominal
+    molarity is consistent with the primary tetrahydrate contribution within precision;
+    the local monohydrate mapping is a distinct form error."}]}, {"quantity_id": "q14",
+    "topic": "Ferrous sulfate", "source": [{"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "1 mg of FeSO4 · 7H2O", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[13]", "exact_derivative_claim": {"pointer": ["ingredients",
+    13], "ingredient": "Ferrous sulfate", "old": {"value": "0.03596", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.03596", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Ferrous sulfate 0.03596", "explanation": "ingredients[13].concentration
+    (Ferrous sulfate) in MEDIADB:88: the official database directly reports 0.03596
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16397;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1531,88,16397,0.03596). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "evidence_only", "rationale": "The retained nominal molarity is consistent
+    with the primary heptahydrate contribution within precision; the current anhydrous
+    mapping is not the supplied form.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03596",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The retained
+    nominal molarity is consistent with the primary heptahydrate contribution within
+    precision; the current anhydrous mapping is not the supplied form."}, {"path":
+    "data/normalized_yaml/bacterial/camm.yaml", "field_path": "ingredients[13].concentration",
+    "stored_value": {"value": "0.03596", "unit": "MILLIMOLAR"}, "decision": "evidence_only",
+    "rationale": "The retained nominal molarity is consistent with the primary heptahydrate
+    contribution within precision; the current anhydrous mapping is not the supplied
+    form."}]}, {"quantity_id": "q15", "topic": "Zinc sulfate", "source": [{"evidence_id":
+    "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "0.5 mg of ZnSO4 · 7H2O", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[14]", "exact_derivative_claim": {"pointer": ["ingredients",
+    14], "ingredient": "Zinc sulfate", "old": {"value": "0.017389", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "0.017389", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Zinc sulfate 0.017389", "explanation": "ingredients[14].concentration
+    (Zinc sulfate) in MEDIADB:88: the official database directly reports 0.017389
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16399;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1532,88,16399,0.017389). This evidence
+    supports the amount assigned to the database compound label, not an independent
+    verification of the original article or the record''s ontology mappings, supplied
+    hydrate form, preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "evidence_only", "rationale": "The retained nominal molarity is consistent
+    with the primary heptahydrate contribution within precision; the current anhydrous
+    mapping must be reconciled separately.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.017389",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The retained
+    nominal molarity is consistent with the primary heptahydrate contribution within
+    precision; the current anhydrous mapping must be reconciled separately."}, {"path":
+    "data/normalized_yaml/bacterial/camm.yaml", "field_path": "ingredients[14].concentration",
+    "stored_value": {"value": "0.017389", "unit": "MILLIMOLAR"}, "decision": "evidence_only",
+    "rationale": "The retained nominal molarity is consistent with the primary heptahydrate
+    contribution within precision; the current anhydrous mapping must be reconciled
+    separately."}]}, {"quantity_id": "q16", "topic": "Sodium citrate", "source": [{"evidence_id":
+    "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "4 ml of the salt solution described by Holdeman et al. (8)", "quote_basis":
+    "Manual visual transcription; typography normalized, not a raw image text substring.",
+    "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[15]", "exact_derivative_claim": {"pointer": ["ingredients",
+    15], "ingredient": "Sodium citrate", "old": {"value": "4.76152", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "4.76152", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Sodium citrate 4.76152", "explanation": "ingredients[15].concentration
+    (Sodium citrate) in MEDIADB:88: the official database directly reports 4.76152
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16408;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1533,88,16408,4.76152). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "unsupported", "rationale": "Sodium citrate is not directly quantified
+    in the primary CAMM table; unresolved salt-stock composition prevents authenticating
+    or deleting the local total.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "4.76152",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Sodium citrate
+    is not directly quantified in the primary CAMM table; unresolved salt-stock composition
+    prevents authenticating or deleting the local total."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "4.76152",
+    "unit": "MILLIMOLAR"}, "decision": "unsupported", "rationale": "Sodium citrate
+    is not directly quantified in the primary CAMM table; unresolved salt-stock composition
+    prevents authenticating or deleting the local total."}]}, {"quantity_id": "q17",
+    "topic": "Ammonium phosphate", "source": [{"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "0.6 g of (NH4)2HPO4", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    {"evidence_id": "parent-0", "reference": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_path": "reports/ingredient_concentration_curation/20261009-mediadb-evidence-draft/plan-v2.json",
+    "raw_sha256": "5ad8f39ab90834faae855d2101ba7f1d8fb7eb989bd88279d0585df7b1013ba4",
+    "locator": "$.records[82].claims[16]", "exact_derivative_claim": {"pointer": ["ingredients",
+    16], "ingredient": "Ammonium phosphate", "old": {"value": "45.43", "unit": "MILLIMOLAR"},
+    "proposed": {"value": "45.43", "unit": "MILLIMOLAR"}, "status": "evidence_only",
+    "evidence": {"reference": "https://mediadb.systemsbiology.net/defined_media/media/88/",
+    "supports": "SUPPORT", "snippet": "Ammonium phosphate 45.43", "explanation": "ingredients[16].concentration
+    (Ammonium phosphate) in MEDIADB:88: the official database directly reports 45.43
+    mM under the ''Amount (mM)'' column. Locator: Compound table, compound ID 16430;
+    no conversion. The same database''s 2015-10-07 SQL export agrees: media_compounds
+    (medcompID, medID, compID, Amount_mM) (1534,88,16430,45.43). This evidence supports
+    the amount assigned to the database compound label, not an independent verification
+    of the original article or the record''s ontology mappings, supplied hydrate form,
+    preparation or growth claims. Accessed 2026-10-09."}, "mapping_ids_not_in_source_chebi":
+    [], "limitations": ["Official database amounts, not independently verified original-article
+    concentrations.", "Existing chemical identities, hydrate forms and preparation
+    steps remain unverified.", "No numeric edits, conversions, new organisms or merging
+    of variants."]}, "scope": "Derivative claim, not external raw authentication."}],
+    "decision": "evidence_only", "rationale": "The source explicitly names diammonium
+    hydrogen phosphate through(NH4)2HPO4 and its mass supports the nominal molarity
+    within original precision. The generic local name should retain that exact source
+    specificity with verified grounding.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "45.43",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The source explicitly
+    names diammonium hydrogen phosphate through(NH4)2HPO4 and its mass supports the
+    nominal molarity within original precision. The generic local name should retain
+    that exact source specificity with verified grounding."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "45.43",
+    "unit": "MILLIMOLAR"}, "decision": "evidence_only", "rationale": "The source explicitly
+    names diammonium hydrogen phosphate through(NH4)2HPO4 and its mass supports the
+    nominal molarity within original precision. The generic local name should retain
+    that exact source specificity with verified grounding."}]}, {"quantity_id": "q18",
+    "topic": "Primary basis", "source": {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "per 100 ml of medium", "quote_basis": "Manual visual transcription;
+    typography normalized, not a raw image text substring.", "optical_reader_path":
+    "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "evidence_only", "rationale": "Per100ml of medium is explicit; it
+    is not merely solvent input. Preserve the source recipe basis without assuming
+    unknown added-stock composition.", "layer_assessments": []}, {"quantity_id": "q19",
+    "topic": "Primary heldstock", "source": {"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "4 ml of the salt solution described by Holdeman et al. (8)", "quote_basis":
+    "Manual visual transcription; typography normalized, not a raw image text substring.",
+    "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "add", "rationale": "Create a separately scoped 4 ml stock-addition
+    object with unknown composition; the paper cites Holdeman etal. reference 8 and
+    does not reproduce that stock. No guessed salt recipe or transfer from comparator
+    media.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Create a separately
+    scoped 4 ml stock-addition object with unknown composition; the paper cites Holdeman
+    etal. reference 8 and does not reproduce that stock. No guessed salt recipe or
+    transfer from comparator media.", "missing": true}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create a separately scoped 4 ml stock-addition object with unknown composition;
+    the paper cites Holdeman etal. reference 8 and does not reproduce that stock.
+    No guessed salt recipe or transfer from comparator media.", "missing": true}]},
+    {"quantity_id": "q20", "topic": "Primary separate", "source": {"evidence_id":
+    "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "(NH4)2HPO4 was autoclaved separately and added to the sterile medium.",
+    "quote_basis": "Manual visual transcription; typography normalized, not a raw
+    image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "correct", "rationale": "Retain separate ammonium-phosphate autoclaving
+    and addition to sterile medium; global filtration is not the cited method.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "DISSOLVE", "description": "Dissolve
+    all ingredients in distilled water to specified concentrations"}, {"step_number":
+    2, "action": "ADJUST_PH", "description": "Adjust pH if specified in original formulation"},
+    {"step_number": 3, "action": "FILTER_STERILIZE", "description": "Sterilize by
+    filtration (0.22 μm) to preserve heat-sensitive components"}], "decision": "correct",
+    "rationale": "Retain separate ammonium-phosphate autoclaving and addition to sterile
+    medium; global filtration is not the cited method."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "DISSOLVE", "description": "Dissolve all ingredients in distilled water to specified
+    concentrations"}, {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust
+    pH if specified in original formulation"}, {"step_number": 3, "action": "FILTER_STERILIZE",
+    "description": "Sterilize by filtration (0.22 μm) to preserve heat-sensitive components"}],
+    "decision": "correct", "rationale": "Retain separate ammonium-phosphate autoclaving
+    and addition to sterile medium; global filtration is not the cited method."}]},
+    {"quantity_id": "q21", "topic": "Primary buffer", "source": {"evidence_id": "long1390",
+    "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "Sterile 1 M potassium phosphate buffer was added to a final concentration
+    of 0.05 M at pH 7.0.", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "add", "rationale": "Retain 1 M buffer strength, final 0.05 M total
+    phosphate and pH 7.0; addition volume and individual salt split are not supplied.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Retain 1 M
+    buffer strength, final 0.05 M total phosphate and pH 7.0; addition volume and
+    individual salt split are not supplied.", "missing": true}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Retain 1 M buffer strength, final 0.05 M total phosphate and pH 7.0; addition
+    volume and individual salt split are not supplied.", "missing": true}]}, {"quantity_id":
+    "q22", "topic": "Primary reduction", "source": {"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "Volumes (50-ml) of freshly prepared medium were allowed to reduce overnight
+    in an anaerobic glove box", "quote_basis": "Manual visual transcription; typography
+    normalized, not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "correct", "rationale": "Retain 50 ml aliquots and overnight reduction
+    of freshly prepared medium. The paper does not say warm medium or growth overnight.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "DISSOLVE",
+    "description": "Dissolve all ingredients in distilled water to specified concentrations"},
+    {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust pH if specified
+    in original formulation"}, {"step_number": 3, "action": "FILTER_STERILIZE", "description":
+    "Sterilize by filtration (0.22 μm) to preserve heat-sensitive components"}], "decision":
+    "correct", "rationale": "Retain 50 ml aliquots and overnight reduction of freshly
+    prepared medium. The paper does not say warm medium or growth overnight."}, {"path":
+    "data/normalized_yaml/bacterial/camm.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "DISSOLVE", "description": "Dissolve
+    all ingredients in distilled water to specified concentrations"}, {"step_number":
+    2, "action": "ADJUST_PH", "description": "Adjust pH if specified in original formulation"},
+    {"step_number": 3, "action": "FILTER_STERILIZE", "description": "Sterilize by
+    filtration (0.22 μm) to preserve heat-sensitive components"}], "decision": "correct",
+    "rationale": "Retain 50 ml aliquots and overnight reduction of freshly prepared
+    medium. The paper does not say warm medium or growth overnight."}]}, {"quantity_id":
+    "q23", "topic": "Primary gases", "source": {"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "oxygen-free N2, CO2, and H2 (70:20:10 [vol/vol])", "quote_basis": "Manual
+    visual transcription; typography normalized, not a raw image text substring.",
+    "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "correct", "rationale": "Keep the explicit oxygen-free gas fractions
+    and vol/vol basis within the P262 paper preparation scope.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path": "preparation_steps",
+    "stored_value": [{"step_number": 1, "action": "DISSOLVE", "description": "Dissolve
+    all ingredients in distilled water to specified concentrations"}, {"step_number":
+    2, "action": "ADJUST_PH", "description": "Adjust pH if specified in original formulation"},
+    {"step_number": 3, "action": "FILTER_STERILIZE", "description": "Sterilize by
+    filtration (0.22 μm) to preserve heat-sensitive components"}], "decision": "correct",
+    "rationale": "Keep the explicit oxygen-free gas fractions and vol/vol basis within
+    the P262 paper preparation scope."}, {"path": "data/normalized_yaml/bacterial/camm.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "DISSOLVE", "description": "Dissolve all ingredients in distilled water to specified
+    concentrations"}, {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust
+    pH if specified in original formulation"}, {"step_number": 3, "action": "FILTER_STERILIZE",
+    "description": "Sterilize by filtration (0.22 μm) to preserve heat-sensitive components"}],
+    "decision": "correct", "rationale": "Keep the explicit oxygen-free gas fractions
+    and vol/vol basis within the P262 paper preparation scope."}]}, {"quantity_id":
+    "q24", "topic": "Primary incubation", "source": {"evidence_id": "long1390", "reference":
+    "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "Cultures were incubated at 34°C and agitated every 6 to 8 h by gentle
+    mixing.", "quote_basis": "Manual visual transcription; typography normalized,
+    not a raw image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "correct", "rationale": "The paper describes 34°C incubation and gentle
+    mixing every 6–8 h for the described cultures; do not turn this into species-wide
+    growth evidence.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMM.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "DISSOLVE", "description": "Dissolve all ingredients in distilled water to specified
+    concentrations"}, {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust
+    pH if specified in original formulation"}, {"step_number": 3, "action": "FILTER_STERILIZE",
+    "description": "Sterilize by filtration (0.22 μm) to preserve heat-sensitive components"}],
+    "decision": "correct", "rationale": "The paper describes 34°C incubation and gentle
+    mixing every 6–8 h for the described cultures; do not turn this into species-wide
+    growth evidence."}, {"path": "data/normalized_yaml/bacterial/camm.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "DISSOLVE",
+    "description": "Dissolve all ingredients in distilled water to specified concentrations"},
+    {"step_number": 2, "action": "ADJUST_PH", "description": "Adjust pH if specified
+    in original formulation"}, {"step_number": 3, "action": "FILTER_STERILIZE", "description":
+    "Sterilize by filtration (0.22 μm) to preserve heat-sensitive components"}], "decision":
+    "correct", "rationale": "The paper describes 34°C incubation and gentle mixing
+    every 6–8 h for the described cultures; do not turn this into species-wide growth
+    evidence."}]}, {"quantity_id": "q25", "topic": "Unsupported generic filter pore
+    size", "source": {"evidence_id": "long1390", "reference": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/888d/242467/1e3ed94a3ac0/aem00173-0234.png",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/long1390.bin",
+    "raw_sha256": "84f7f3c8ecefaf47d708bee4db7b509853e24fdcd6396e935581977ed6c858b4",
+    "locator": "Printed p1390, left column, first paragraph", "accessed_at": "2026-10-28T06:49:55.020527Z",
+    "quote": "(NH4)2HPO4 was autoclaved separately and added to the sterile medium.",
+    "quote_basis": "Manual visual transcription; typography normalized, not a raw
+    image text substring.", "optical_reader_path": "REVIEW_WORK/batch059/record02/optical-primary-reader.json",
+    "optical_reader_sha256": "7ac2b24b97727cbe785999a909b267db9596c7357fd55209e606947e7bf34cf2"},
+    "decision": "unsupported", "rationale": "Both local layers contain a generic 0.22
+    µm filtration instruction generated by the current importer template; this primary
+    paper does not supply that pore size or universal filtration method.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMM.yaml", "field_path": "preparation_steps[2].description",
+    "stored_value": "Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components", "decision": "unsupported", "rationale": "Both local layers contain
+    a generic 0.22 µm filtration instruction generated by the current importer template;
+    this primary paper does not supply that pore size or universal filtration method."},
+    {"path": "data/normalized_yaml/bacterial/camm.yaml", "field_path": "preparation_steps[2].description",
+    "stored_value": "Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components", "decision": "unsupported", "rationale": "Both local layers contain
+    a generic 0.22 µm filtration instruction generated by the current importer template;
+    this primary paper does not supply that pore size or universal filtration method."}]}]'
+- assessment_id: a5
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: The complete slot census is verified, but several source hydrates and the
+    p-aminobenzoic-acid supplied form conflict with current terms. Legacy000223 and
+    symbolic KEGG annotations remain explicitly unresolved; inventory completeness
+    is not chemical endorsement.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: The maintained owner’s scoped paper/taxonomy citation is verified, but
+    the generated target omits it. Historical MediaDB reports and parent objects remain
+    derivative evidence; no original export or old access event is authenticated.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a7
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - local-target
+- assessment_id: a8
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: a9
+  area: provenance
+  topic: Full historical report scope and rejected recommendations
+  outcome: concern
+  summary: The Sept22 report was based on database/abstract access rather than the
+    scanned article. Its claimed growth rate0.233676/h and absence-of-stock conclusion
+    are not independently authenticated or adopted. The current owner bibliography
+    repair is credited, and the freshly read primary explicitly includes an unresolved
+    referenced salt stock.
+  target_ids:
+  - CultureMech:007435
+  evidence_ids:
+  - historical-reader
+findings:
+- finding_id: f1
+  issue_key: culturemech-007435-reconcile-source-hydrates-and-supplied-molecular-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Reconcile source hydrates and supplied molecular forms
+  description: The primary specifies MgSO4 heptahydrate, MnSO4 tetrahydrate, FeSO4
+    heptahydrate, Na2MoO4 dihydrate and ZnSO4 heptahydrate. Current terms instead
+    denote anhydrous salts or manganese monohydrate. p-Aminobenzoic acid is represented
+    by the 4-aminobenzoate anion. Retain supported nominal molecular contributions
+    separately from form correction, and do not infer cysteine hydrate/stereochemistry
+    or D-glucose stereochemistry from rounded amounts. Verify any replacement identifiers
+    before applying them.
+  target_ids:
+  - CultureMech:007435
+  field_paths:
+  - ingredients[2].term
+  - ingredients[2].mediaingredientmech_chebi_term
+  - ingredients[6].term
+  - ingredients[11].term
+  - ingredients[11].mediaingredientmech_chebi_term
+  - ingredients[12].term
+  - ingredients[12].mediaingredientmech_chebi_term
+  - ingredients[13].term
+  - ingredients[14].term
+  - ingredients[14].mediaingredientmech_chebi_term
+  evidence_ids:
+  - long1390
+  - optical-reader
+  - chebi17836
+  - chebi75215
+  - chebi32599
+  - chebi86364
+  - chebi75832
+  - chebi35176
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-007435-separate-unresolved-stock-and-phosphate-contributions
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate unresolved stock and phosphate contributions
+  description: The primary adds 4 ml of a separately cited Holdeman salt stock and
+    1 M potassium-phosphate buffer to 0.05 M final phosphate at pH 7.0. Their stock
+    composition or salt split is not reproduced. Calcium chloride, sodium chloride,
+    citrate, individual phosphate rates and the magnesium total therefore remain unresolved;
+    do not delete them merely because they are absent from the direct table, or invent
+    stock composition by reverse calculation. Preserve each direct source mass and
+    separately supported nominal molarity.
+  target_ids:
+  - CultureMech:007435
+  field_paths:
+  - solutions
+  - ingredients
+  - evidence
+  evidence_ids:
+  - long1390
+  - optical-reader
+  - parent-0
+  - parent-1
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-007435-replace-unsupported-importer-preparation-defaults-with-scoped-evidence
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Replace unsupported importer preparation defaults with scoped evidence
+  description: The generic dissolution/pH/0.22 µm filtration template is not the original
+    CAMM method. Preserve separate ammonium-phosphate autoclaving, sterile phosphate
+    buffer, 50 ml aliquots reduced overnight under the stated gas mixture, and paper-specific
+    incubation context. Use root evidence for solution and preparation claims; no
+    nonexistent nested evidence field is proposed.
+  target_ids:
+  - CultureMech:007435
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - evidence
+  evidence_ids:
+  - long1390
+  - optical-reader
+  - writer-mediadb
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-007435-refresh-generated-bibliography-and-bound-legacy-annotations
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Refresh generated bibliography and bound legacy annotations
+  description: Retain the owner’s verified paper/taxonomy citation when regenerating
+    the target. Current MIM has no exact MediaIngredientMech:000223 entry; this is
+    a present catalog limit, not proof it was historically invalid. Notes KEGG:glc_D,
+    KEGG:btn and KEGG:4abz are symbolic strings, not independently verified KEGG Compound
+    accessions. The derivative SQL assessment places these aliases in BiGG_ID, but
+    the original export bytes were not recovered, so no replacement accession or namespace
+    is asserted from that alone. Document the unresolved high_metal rationale. Preserve
+    all historical events append-only.
+  target_ids:
+  - CultureMech:007435
+  field_paths:
+  - references
+  - ingredients[0].notes
+  - ingredients[1].notes
+  - ingredients[2].notes
+  - ingredients[9].mediaingredientmech_term
+  - high_metal
+  evidence_ids:
+  - owner-1
+  - parent-1
+  - writer-mediadb
+  - pubmed16346276
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: The primary specifies MgSO4 heptahydrate, MnSO4 tetrahydrate, FeSO4
+    heptahydrate, Na2MoO4 dihydrate and ZnSO4 heptahydrate. Current terms instead
+    denote anhydrous salts or manganese monohydrate. p-Aminobenzoic acid is represented
+    by the 4-aminobenzoate anion. Retain supported nominal molecular contributions
+    separately from form correction, and do not infer cysteine hydrate/stereochemistry
+    or D-glucose stereochemistry from rounded amounts. Verify any replacement identifiers
+    before applying them.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007435
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: The primary adds 4 ml of a separately cited Holdeman salt stock and
+    1 M potassium-phosphate buffer to 0.05 M final phosphate at pH 7.0. Their stock
+    composition or salt split is not reproduced. Calcium chloride, sodium chloride,
+    citrate, individual phosphate rates and the magnesium total therefore remain unresolved;
+    do not delete them merely because they are absent from the direct table, or invent
+    stock composition by reverse calculation. Preserve each direct source mass and
+    separately supported nominal molarity.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007435
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: The generic dissolution/pH/0.22 µm filtration template is not the original
+    CAMM method. Preserve separate ammonium-phosphate autoclaving, sterile phosphate
+    buffer, 50 ml aliquots reduced overnight under the stated gas mixture, and paper-specific
+    incubation context. Use root evidence for solution and preparation claims; no
+    nonexistent nested evidence field is proposed.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007435
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Retain the owner’s verified paper/taxonomy citation when regenerating
+    the target. Current MIM has no exact MediaIngredientMech:000223 entry; this is
+    a present catalog limit, not proof it was historically invalid. Notes KEGG:glc_D,
+    KEGG:btn and KEGG:4abz are symbolic strings, not independently verified KEGG Compound
+    accessions. The derivative SQL assessment places these aliases in BiGG_ID, but
+    the original export bytes were not recovered, so no replacement accession or namespace
+    is asserted from that alone. Document the unresolved high_metal rationale. Preserve
+    all historical events append-only.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007435
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/camm.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Fresh MediaDB 88 and source 21 returned HTTP 502. The historical seventeen-claim
+  plan and cohort row are inspected derivative objects; no external SQL/HTML raw was
+  recovered from repository before_text/after_text.
+- Holdeman et al. (1977), Anaerobe Laboratory Manual, reference 8, was not retrieved
+  as an original stock-composition source in the bounded search. Its 4 ml addition
+  is known; its contents remain unresolved.
+- The paper leaves cysteine hydrate/stereochemistry unspecified and does not supply
+  an individual potassium-phosphate split. No guessed formula, amount, stock strength
+  or dose is proposed.
+- Direct taxonomy 1485 returned 429; genus identity is supported by lineage objects
+  in successful strain/species responses. Complete scanned paper pages were read despite
+  challenged PMC HTML and failed DOI access.
+- The extra captured CHEBI:91245 object denotes copper(II) chloride pentahydrate and
+  is not used as a cysteine or CAMM replacement. Native reference checking performed
+  zero checks; source verification here is independent.
+- The exact historical MediaDB tab-delimited media_text/88 export route also returnedHTTP502;
+  no source amount authentication is inferred from that response.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
