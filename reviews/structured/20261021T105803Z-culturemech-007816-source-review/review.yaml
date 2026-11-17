@@ -1,0 +1,1680 @@
+schema_version: 1.0.0
+review_id: 20261021T105803Z-culturemech-007816-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidihalobacter_prosperus_f5_medium (CultureMech:007816)'
+started_at: '2026-10-21T10:48:46Z'
+finished_at: '2026-10-21T10:58:03Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact JCM1197/TOGO M1282 medium is identifiable, but both A/B stock references
+  point to different formulations, stock quantities and trace composition are lost,
+  and preparation/classification claims require correction. All required diagnostic
+  and primary-source checks are available; no final volume or hydrate stoichiometry
+  is guessed.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+    sha256: f5a7c718dd236a6d1bce27a0ba730368bd48d666738ea5f91a5c612e20e58447
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    sha256: 4c82e1b1f54be9d0fde51aefb9aaa0a1fa47742fd38f1a0c6800070bdd1abfb5
+    role: context
+  - path: data/normalized_yaml/bacterial/ferrous_iron_yeast_extract_medium.yaml
+    sha256: 5d59729232224d55de3f119c67b82b00ca8ea22f4e52332661ec06b5e6c63144
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5294_Trace_element_solution.yaml
+    sha256: 9222c603d41204a17e2eb2d4cd05b0ccc9cc102fc124f22f7be58d5aa4aaf487
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5315_Solution_A.yaml
+    sha256: b189bcf49ec0133df55fd169ee766761148f42434966527858ec4e89c8bc1f3d
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5316_Solution_B.yaml
+    sha256: f9c91d37825a12460a1df285b7a1c6ddcdc36c1285d73ae41926c9e338bc1686
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_solutions_with_chebi.py
+    sha256: b4054fb4f13ecfb8362d421c549dfd34f1e94823caa107f2d1bf2d4462697b29
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 167; batch 017 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding sixteen task batches
+    contain 160 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 162 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007816
+targets:
+- target_id: CultureMech:007816
+  path: data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  label: acidihalobacter_prosperus_f5_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch017/167/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-017/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch017/167/strict.tsv"
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007816
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:49:33.270291Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch017/167/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:49:34.375093Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-017/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch017/167/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:49:35.954044Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:49:37.037813Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml:1:id:
+    CultureMech:007816
+
+    ./data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml:1:id:
+    CultureMech:007816
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch017/source-preflight-bound/167/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: supports
+  summary: 38 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: e0b4454588416e0d05ad9d663ca28642e53f3e04694b0bc61bb74291b8e41aa5
+- evidence_id: jcm1197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1197
+  locator: Complete A/B formulation, subsequent trace addition, procedure and conditional
+    header
+  accessed_at: '2026-10-21T10:35:29.953688Z'
+  support: supports
+  summary: Exact source distinguishes freshly prepared filtered B from autoclaved
+    A and subsequently added trace solution.
+  snapshot_sha256: 7035767f111606cc5c933173bd80947120ca9e7b7ad6b1d8708c61b7d194533a
+- evidence_id: togoM1282
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282
+  locator: All four component sections and all comments
+  accessed_at: '2026-10-21T10:35:28.223103Z'
+  support: supports
+  summary: Structured source corroborates exact identity, A/B amounts and later M1267
+    trace dose.
+  snapshot_sha256: a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c
+- evidence_id: jcm1182
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1182
+  locator: Trace element solution section only
+  accessed_at: '2026-10-21T10:36:31.977481Z'
+  support: supports
+  summary: Only the named trace stock is in scope. Parent-medium yeast, iron-stock
+    additions and pH 2.0 are excluded.
+  snapshot_sha256: 8d2402eeffba4c8805c3f6a88f9e0b0e3ec1a6e90f9c00573b8bd3b59660aa5a
+- evidence_id: togoM1267
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267
+  locator: components[2] trace-element stock only
+  accessed_at: '2026-10-21T10:35:28.047747Z'
+  support: supports
+  summary: 'Twelve source rows: eleven solutes plus 1 L of 0.01 M H2SO4.'
+  snapshot_sha256: c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507
+- evidence_id: mediadiveJ1197api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1197
+  locator: $.data.medium and $.data.solutions
+  accessed_at: '2026-10-21T10:35:26.813615Z'
+  support: supports
+  summary: Correct source-specific IDs A 5315/B 5316; provider embeds trace 5294 inside
+    B, unlike the primary addition order.
+  snapshot_sha256: 6f5db31196211693cff43a8a12462d2144bd7ffc8a9772e9ef445a99cea5f42c
+- evidence_id: mediadiveJ1182api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1182
+  locator: Only the exact trace solution 5294 within $.data.solutions
+  accessed_at: '2026-10-21T10:36:31.977055Z'
+  support: supports
+  summary: Corroborates trace identity; unrelated parent-medium ingredients are excluded.
+  snapshot_sha256: d9eaf143564c0268089fbca8dca81b0b3626eaaea4b5731ef32a50f0db8c6bac
+- evidence_id: mediadiveSolution5315
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5315
+  locator: $.data full correct A
+  accessed_at: '2026-10-21T10:37:17.514872Z'
+  support: supports
+  summary: Provider-declared 900 mL A stock, not receiving-medium volume.
+  snapshot_sha256: a0a09f3dfbc225c94767b5a44579e7439ea3fdb24af32fff76966956c2b1c74b
+- evidence_id: mediadiveSolution5316
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5316
+  locator: $.data full correct B
+  accessed_at: '2026-10-21T10:37:17.515945Z'
+  support: supports
+  summary: Provider-declared 101 mL B includes a nested 1 mL trace addition; preserve
+    this provider hierarchy separately.
+  snapshot_sha256: 732ee34917f19e0a323fd4b133734b133f06bf36933dc0868e136bf28cbc7403
+- evidence_id: mediadiveSolution5294
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5294
+  locator: $.data full trace stock
+  accessed_at: '2026-10-21T10:37:16.847576Z'
+  support: supports
+  summary: Explicit trace recipe and provider-declared 1000 mL stock; variable hydrate
+    forms remain unresolved.
+  snapshot_sha256: ffdb3e4e32d9c65a43c0a4d43d824329bd3e5c13b962a93aca2f54d62c03f3c3
+- evidence_id: mediadiveSolution5342
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  locator: $.data complete recipe and steps
+  accessed_at: '2026-10-21T07:31:13.269119Z'
+  support: supports
+  summary: 'Wrong asserted A: different organic saline recipe.'
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: mediadiveSolution5343
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  locator: $.data complete recipe and steps
+  accessed_at: '2026-10-21T07:31:13.547266Z'
+  support: supports
+  summary: 'Wrong asserted B: carbonate/NaCl recipe, not iron/tetrathionate B.'
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: dependency-context
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/ferrous_iron_yeast_extract_medium.yaml;
+    data/normalized_yaml/bacterial/mediadive_5294_Trace_element_solution.yaml; data/normalized_yaml/bacterial/mediadive_5315_Solution_A.yaml;
+    data/normalized_yaml/bacterial/mediadive_5316_Solution_B.yaml; data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml;
+    data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+  locator: Complete pinned contextual YAML files; exact identities and source-specific
+    sections only
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: '[{"path": "data/normalized_yaml/bacterial/ferrous_iron_yeast_extract_medium.yaml",
+    "sha256": "5d59729232224d55de3f119c67b82b00ca8ea22f4e52332661ec06b5e6c63144",
+    "id": "CultureMech:007799", "bytes": 9780, "scope": "Dependency context only;
+    no separate record review or approval."}, {"path": "data/normalized_yaml/bacterial/mediadive_5294_Trace_element_solution.yaml",
+    "sha256": "9222c603d41204a17e2eb2d4cd05b0ccc9cc102fc124f22f7be58d5aa4aaf487",
+    "id": "CultureMech:014206", "bytes": 22569, "scope": "Dependency context only;
+    no separate record review or approval."}, {"path": "data/normalized_yaml/bacterial/mediadive_5315_Solution_A.yaml",
+    "sha256": "b189bcf49ec0133df55fd169ee766761148f42434966527858ec4e89c8bc1f3d",
+    "id": "CultureMech:014226", "bytes": 10378, "scope": "Dependency context only;
+    no separate record review or approval."}, {"path": "data/normalized_yaml/bacterial/mediadive_5316_Solution_B.yaml",
+    "sha256": "f9c91d37825a12460a1df285b7a1c6ddcdc36c1285d73ae41926c9e338bc1686",
+    "id": "CultureMech:014227", "bytes": 6649, "scope": "Dependency context only;
+    no separate record review or approval."}, {"path": "data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml",
+    "sha256": "fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566",
+    "id": "CultureMech:014254", "bytes": 4130, "scope": "Dependency context only;
+    no separate record review or approval."}, {"path": "data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml",
+    "sha256": "84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5",
+    "id": "CultureMech:014255", "bytes": 2105, "scope": "Dependency context only;
+    no separate record review or approval."}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch017/167/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 7705d9d5e5383aad943deb5c68154645ee71abfcd12cc0e991565723ad88aa05
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi26836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:29:13.222926Z'
+  support: supports
+  summary: CHEBI:26836 resolves to sulfuric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86466
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86466
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T10:35:29.714424Z'
+  support: supports
+  summary: CHEBI:86466 resolves to potassium tetrathionate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 8615f5a4f3b7210ec429cec78659e70bc7472cbd8573475ac23c212408617f01
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26836": [{"label": "H2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id":
+    "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946":
+    [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86466": [{"label": "K2S4O6", "match_type":
+    "preferred_term", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id":
+    "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 14, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml",
+    "events": 13, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Current TOGO code distinguishes primary and local stock sections and retains
+    source comments. Its bare g/mg/ml mappings are concentration-shaped and still
+    require a justified batch basis. The migration helper creates empty cross-reference
+    stubs and a name-to-ID dictionary whose repeated generic names overwrite earlier
+    entries; it copies existing amounts without scientific reconciliation. These current
+    functions explain relevant failure modes but do not establish an exact historical
+    replay. Single-owner merge correspondence does not independently verify science;
+    correct the maintained owner and inspect source-specific writer behavior before
+    regeneration.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Current TOGO code distinguishes primary and local stock sections and retains
+    source comments. Its bare g/mg/ml mappings are concentration-shaped and still
+    require a justified batch basis. The migration helper creates empty cross-reference
+    stubs and a name-to-ID dictionary whose repeated generic names overwrite earlier
+    entries; it copies existing amounts without scientific reconciliation. These current
+    functions explain relevant failure modes but do not establish an exact historical
+    replay. Single-owner merge correspondence does not independently verify science;
+    correct the maintained owner and inspect source-specific writer behavior before
+    regeneration.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Current TOGO code distinguishes primary and local stock sections and retains
+    source comments. Its bare g/mg/ml mappings are concentration-shaped and still
+    require a justified batch basis. The migration helper creates empty cross-reference
+    stubs and a name-to-ID dictionary whose repeated generic names overwrite earlier
+    entries; it copies existing amounts without scientific reconciliation. These current
+    functions explain relevant failure modes but do not establish an exact historical
+    replay. Single-owner merge correspondence does not independently verify science;
+    correct the maintained owner and inspect source-specific writer behavior before
+    regeneration.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:58:01Z'
+  support: context_only
+  summary: Current TOGO code distinguishes primary and local stock sections and retains
+    source comments. Its bare g/mg/ml mappings are concentration-shaped and still
+    require a justified batch basis. The migration helper creates empty cross-reference
+    stubs and a name-to-ID dictionary whose repeated generic names overwrite earlier
+    entries; it copies existing amounts without scientific reconciliation. These current
+    functions explain relevant failure modes but do not establish an exact historical
+    replay. Single-owner merge correspondence does not independently verify science;
+    correct the maintained owner and inspect source-specific writer behavior before
+    regeneration.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact medium and source-specific stock identities
+  outcome: concern
+  summary: M1282 identifies JCM1197. Correct source stocks are A 5315, B 5316 and
+    trace 5294 (from M1267/JCM1182). Asserted A 5342/B 5343 have positively different
+    compositions, despite identical generic labels. The trace cross-reference identifies
+    only the trace section, not the whole yeast-extract parent medium. Local dependency
+    records and complete captured APIs establish these distinctions.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - togoM1282
+  - jcm1182
+  - togoM1267
+  - mediadiveJ1197api
+  - mediadiveSolution5342
+  - mediadiveSolution5343
+  - mediadiveSolution5315
+  - mediadiveSolution5316
+  - mediadiveSolution5294
+  - dependency-context
+  details: '[{"source_key": "mediadiveSolution5342", "id": 5342, "volume": null, "recipe":
+    [{"recipe_order": 1, "compound": "Yeast extract", "compound_id": 16, "solution":
+    null, "solution_id": null, "condition": null, "attribute": "BD-Difco", "amount":
+    2, "unit": "g", "g_l": null, "mmol_l": null, "optional": 0}, {"recipe_order":
+    2, "compound": "Casamino acids", "compound_id": 101, "solution": null, "solution_id":
+    null, "condition": null, "attribute": "BD-Difco", "amount": 2, "unit": "g", "g_l":
+    null, "mmol_l": null, "optional": 0}, {"recipe_order": 3, "compound": "Na glutamate",
+    "compound_id": 839, "solution": null, "solution_id": null, "condition": null,
+    "attribute": null, "amount": 1, "unit": "g", "g_l": null, "mmol_l": null, "optional":
+    0}, {"recipe_order": 4, "compound": "Trisodium citrate x 2 H2O", "compound_id":
+    1249, "solution": null, "solution_id": null, "condition": null, "attribute": null,
+    "amount": 3, "unit": "g", "g_l": null, "mmol_l": null, "optional": 0}, {"recipe_order":
+    5, "compound": "MgSO4 x 7 H2O", "compound_id": 8, "solution": null, "solution_id":
+    null, "condition": null, "attribute": null, "amount": 0.1, "unit": "g", "g_l":
+    null, "mmol_l": null, "optional": 0}, {"recipe_order": 6, "compound": "CaSO4 x
+    2 H2O", "compound_id": 190, "solution": null, "solution_id": null, "condition":
+    null, "attribute": null, "amount": 0.1, "unit": "g", "g_l": null, "mmol_l": null,
+    "optional": 0}, {"recipe_order": 7, "compound": "KCl", "compound_id": 61, "solution":
+    null, "solution_id": null, "condition": null, "attribute": null, "amount": 1,
+    "unit": "g", "g_l": null, "mmol_l": null, "optional": 0}, {"recipe_order": 8,
+    "compound": "NaCl", "compound_id": 43, "solution": null, "solution_id": null,
+    "condition": null, "attribute": null, "amount": 100, "unit": "g", "g_l": null,
+    "mmol_l": null, "optional": 0}], "steps": [{"recipe_order": null, "step": "Add
+    components to distilled water and bring volume to 500 ml."}], "snapshot_sha256":
+    "4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240", "scope": "Source-stock
+    comparison only; no additional direct dosing or independent stock approval."},
+    {"source_key": "mediadiveSolution5343", "id": 5343, "volume": null, "recipe":
+    [{"recipe_order": 1, "compound": "Na2CO3", "compound_id": 32, "solution": null,
+    "solution_id": null, "condition": null, "attribute": null, "amount": 80, "unit":
+    "g", "g_l": null, "mmol_l": null, "optional": 0}, {"recipe_order": 2, "compound":
+    "NaCl", "compound_id": 43, "solution": null, "solution_id": null, "condition":
+    null, "attribute": null, "amount": 100, "unit": "g", "g_l": null, "mmol_l": null,
+    "optional": 0}], "steps": [{"recipe_order": null, "step": "Add components to distilled
+    water and bring volume to 500 ml."}, {"recipe_order": null, "step": "Autoclave
+    solutions A and B separately and combine them after cooling. For preparation of
+    solid medium, add 18.0 g agar to Solution A (500 ml), combine them after cooling
+    to 60-70C, mix well and quickly distribute into sterile petri dishes or test tubes."}],
+    "snapshot_sha256": "28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0",
+    "scope": "Source-stock comparison only; no additional direct dosing or independent
+    stock approval."}, {"source_key": "mediadiveSolution5315", "id": 5315, "volume":
+    900, "recipe": [{"recipe_order": 1, "compound": "NaCl", "compound_id": 43, "solution":
+    null, "solution_id": null, "condition": null, "attribute": null, "amount": 25,
+    "unit": "g", "g_l": 27.7778, "mmol_l": 475.321, "optional": 0}, {"recipe_order":
+    2, "compound": "(NH4)2SO4", "compound_id": 27, "solution": null, "solution_id":
+    null, "condition": null, "attribute": null, "amount": 0.4, "unit": "g", "g_l":
+    0.444444, "mmol_l": 3.36344, "optional": 0}, {"recipe_order": 3, "compound": "MgSO4
+    x 7 H2O", "compound_id": 8, "solution": null, "solution_id": null, "condition":
+    null, "attribute": null, "amount": 0.4, "unit": "g", "g_l": 0.444444, "mmol_l":
+    1.8032, "optional": 0}, {"recipe_order": 4, "compound": "K2HPO4", "compound_id":
+    10, "solution": null, "solution_id": null, "condition": null, "attribute": null,
+    "amount": 0.4, "unit": "g", "g_l": 0.444444, "mmol_l": 2.5517, "optional": 0},
+    {"recipe_order": 5, "compound": "Distilled water", "compound_id": 4, "solution":
+    null, "solution_id": null, "condition": null, "attribute": null, "amount": 900,
+    "unit": "ml", "g_l": null, "mmol_l": null, "optional": 0}], "steps": [{"recipe_order":
+    null, "step": "Adjust pH 2.5 with H2SO4 and autoclave."}], "snapshot_sha256":
+    "a0a09f3dfbc225c94767b5a44579e7439ea3fdb24af32fff76966956c2b1c74b", "scope": "Source-stock
+    comparison only; no additional direct dosing or independent stock approval."},
+    {"source_key": "mediadiveSolution5316", "id": 5316, "volume": 101, "recipe": [{"recipe_order":
+    1, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "solution": null, "solution_id":
+    null, "condition": null, "attribute": null, "amount": 13.9, "unit": "g", "g_l":
+    137.624, "mmol_l": 495.023, "optional": 0}, {"recipe_order": 2, "compound": "K2S4O6",
+    "compound_id": 386, "solution": null, "solution_id": null, "condition": null,
+    "attribute": null, "amount": 1.51, "unit": "g", "g_l": 14.9505, "mmol_l": null,
+    "optional": 0}, {"recipe_order": 3, "compound": "Distilled water", "compound_id":
+    4, "solution": null, "solution_id": null, "condition": null, "attribute": null,
+    "amount": 100, "unit": "ml", "g_l": null, "mmol_l": null, "optional": 0}, {"recipe_order":
+    4, "compound": null, "compound_id": null, "solution": "Trace element solution",
+    "solution_id": 5294, "condition": null, "attribute": null, "amount": 1, "unit":
+    "ml", "g_l": null, "mmol_l": null, "optional": 0}], "steps": [{"recipe_order":
+    null, "step": "Adjust pH to 2.5 and filter-sterilize. Prepare the solution just
+    prior to use."}, {"recipe_order": 4, "step": "Aseptically combine solution A and
+    solution B (freshly prepared). Then, add the following solutions (autoclaved):
+    "}], "snapshot_sha256": "732ee34917f19e0a323fd4b133734b133f06bf36933dc0868e136bf28cbc7403",
+    "scope": "Source-stock comparison only; no additional direct dosing or independent
+    stock approval."}, {"source_key": "mediadiveSolution5294", "id": 5294, "volume":
+    1000, "recipe": [{"recipe_order": 1, "compound": "ZnSO4 x 7 H2O", "compound_id":
+    35, "solution": null, "solution_id": null, "condition": null, "attribute": null,
+    "amount": 10, "unit": "g", "g_l": 10, "mmol_l": 34.7752, "optional": 0}, {"recipe_order":
+    2, "compound": "CuSO4 x 5 H2O", "compound_id": 121, "solution": null, "solution_id":
+    null, "condition": null, "attribute": null, "amount": 1, "unit": "g", "g_l": 1,
+    "mmol_l": 4.00503, "optional": 0}, {"recipe_order": 3, "compound": "MnSO4 x n
+    H2O", "compound_id": 1000, "solution": null, "solution_id": null, "condition":
+    null, "attribute": null, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": null, "optional":
+    0}, {"recipe_order": 4, "compound": "CoSO4 x 7 H2O", "compound_id": 198, "solution":
+    null, "solution_id": null, "condition": null, "attribute": null, "amount": 1,
+    "unit": "g", "g_l": 1, "mmol_l": 6.45178, "optional": 0}, {"recipe_order": 5,
+    "compound": "Cr2(SO4)3 x n H2O", "compound_id": 2024, "solution": null, "solution_id":
+    null, "condition": null, "attribute": null, "amount": 0.5, "unit": "g", "g_l":
+    0.5, "mmol_l": null, "optional": 0}, {"recipe_order": 6, "compound": "H3BO3",
+    "compound_id": 37, "solution": null, "solution_id": null, "condition": null, "attribute":
+    null, "amount": 0.6, "unit": "g", "g_l": 0.6, "mmol_l": 9.70246, "optional": 0},
+    {"recipe_order": 7, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "solution":
+    null, "solution_id": null, "condition": null, "attribute": null, "amount": 0.5,
+    "unit": "g", "g_l": 0.5, "mmol_l": 2.06654, "optional": 0}, {"recipe_order": 8,
+    "compound": "NiSO4 x 6 H2O", "compound_id": 1030, "solution": null, "solution_id":
+    null, "condition": null, "attribute": null, "amount": 1, "unit": "g", "g_l": 1,
+    "mmol_l": 6.46178, "optional": 0}, {"recipe_order": 9, "compound": "Na2SeO4",
+    "compound_id": 375, "solution": null, "solution_id": null, "condition": null,
+    "attribute": null, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 5.29241, "optional":
+    0}, {"recipe_order": 10, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "solution":
+    null, "solution_id": null, "condition": null, "attribute": null, "amount": 1,
+    "unit": "g", "g_l": 1, "mmol_l": 3.03168, "optional": 0}, {"recipe_order": 11,
+    "compound": "NaVO3", "compound_id": 1362, "solution": null, "solution_id": null,
+    "condition": null, "attribute": null, "amount": 0.1, "unit": "g", "g_l": 0.1,
+    "mmol_l": 0.820149, "optional": 0}, {"recipe_order": 12, "compound": "H2SO4",
+    "compound_id": 122, "solution": null, "solution_id": null, "condition": null,
+    "attribute": "0.01 M", "amount": 1000, "unit": "ml", "g_l": null, "mmol_l": null,
+    "optional": 0}], "steps": [], "snapshot_sha256": "ffdb3e4e32d9c65a43c0a4d43d824329bd3e5c13b962a93aca2f54d62c03f3c3",
+    "scope": "Source-stock comparison only; no additional direct dosing or independent
+    stock approval."}]'
+- assessment_id: quantities
+  area: quantity
+  topic: Every current amount and source-only stock/preparation quantity
+  outcome: concern
+  summary: Twenty-nine native decisions cover every current direct quantity and stock
+    dose, all twelve trace-stock source rows, four numeric preparation contexts and
+    the provider B hierarchy/basis discrepancy. None has attached claim evidence in
+    the reviewed layers. Main liquid inputs sum to 1001 mL (900+100+1), not a measured
+    final volume. Trace stock contains eleven solutes and 1 L of 0.01 M H2SO4; the
+    later 1 mL dose must be represented once. Source xH2O forms prevent exact hydrate-based
+    molarity without further evidence.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - owner-0
+  details: "[\n  {\n    \"field_path\": \"solutions[0].concentration\",\n    \"source_name\"\
+    : \"Solution A\",\n    \"decision\": \"correct\",\n    \"layer_decisions\": {\n\
+    \      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"A/B receiving-batch stock dose\"\
+    ,\n    \"primary_source_evidence_id\": \"jcm1197\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM1282\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\",\n\
+    \        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution A\\\",\\n          \\\"volume\\\": 900,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore the original mL dose and correct\
+    \ source-specific stock; the current g/L number is dimensionally wrong. Do not\
+    \ treat the nominal stock dose as measured final volume.\",\n    \"source_original_amount\"\
+    : 900,\n    \"source_original_unit\": \"ml\"\n  },\n  {\n    \"field_path\": \"\
+    solutions[1].concentration\",\n    \"source_name\": \"Solution B\",\n    \"decision\"\
+    : \"correct\",\n    \"layer_decisions\": {\n      \"target\": \"correct\",\n \
+    \     \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"A/B receiving-batch stock dose\"\
+    ,\n    \"primary_source_evidence_id\": \"jcm1197\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM1282\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\",\n\
+    \        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution B\\\",\\n          \\\"volume\\\": 100,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore the original mL dose and correct\
+    \ source-specific stock; the current g/L number is dimensionally wrong. Do not\
+    \ treat the nominal stock dose as measured final volume.\",\n    \"source_original_amount\"\
+    : 100,\n    \"source_original_unit\": \"ml\"\n  },\n  {\n    \"field_path\": \"\
+    ingredients[0].concentration -> source Solution A component[0]\",\n    \"source_name\"\
+    : \"Distilled water\",\n    \"decision\": \"correct\",\n    \"layer_decisions\"\
+    : {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution A batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 900,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\n      }\n\
+    \    ],\n    \"explanation\": \"The source water volume belongs to this stock\
+    \ batch. Current root water 1000 G_PER_L collapses separate 900 and 100 mL inputs\
+    \ and gives the wrong dimension; no measured final volume follows.\",\n    \"\
+    source_original_amount\": 900,\n    \"source_original_unit\": \"ml\"\n  },\n \
+    \ {\n    \"field_path\": \"ingredients[1].concentration -> source Solution A component[1]\"\
+    ,\n    \"source_name\": \"MgSO4・7H2O\",\n    \"decision\": \"correct\",\n    \"\
+    layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution A batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore this source stock-batch quantity\
+    \ inside its named A/B definition. Current root g/L lacks a final-medium basis\
+    \ and must not remain an extra direct dose after restoring the stock.\",\n   \
+    \ \"source_original_amount\": 0.4,\n    \"source_original_unit\": \"g\"\n  },\n\
+    \  {\n    \"field_path\": \"ingredients[2].concentration -> source Solution A\
+    \ component[2]\",\n    \"source_name\": \"NaCl\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution A batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 25,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore this source stock-batch quantity\
+    \ inside its named A/B definition. Current root g/L lacks a final-medium basis\
+    \ and must not remain an extra direct dose after restoring the stock.\",\n   \
+    \ \"source_original_amount\": 25,\n    \"source_original_unit\": \"g\"\n  },\n\
+    \  {\n    \"field_path\": \"ingredients[3].concentration -> source Solution A\
+    \ component[3]\",\n    \"source_name\": \"K2HPO4\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution A batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore this source stock-batch quantity\
+    \ inside its named A/B definition. Current root g/L lacks a final-medium basis\
+    \ and must not remain an extra direct dose after restoring the stock.\",\n   \
+    \ \"source_original_amount\": 0.4,\n    \"source_original_unit\": \"g\"\n  },\n\
+    \  {\n    \"field_path\": \"ingredients[4].concentration -> source Solution A\
+    \ component[4]\",\n    \"source_name\": \"(NH4)2SO4\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution A batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"(NH4)2SO4\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore this source stock-batch quantity\
+    \ inside its named A/B definition. Current root g/L lacks a final-medium basis\
+    \ and must not remain an extra direct dose after restoring the stock.\",\n   \
+    \ \"source_original_amount\": 0.4,\n    \"source_original_unit\": \"g\"\n  },\n\
+    \  {\n    \"field_path\": \"ingredients[5].concentration -> source Solution A\
+    \ component[5]\",\n    \"source_name\": \"H2SO4\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"not_quantified\",\n      \"\
+    data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"not_quantified\"\n    },\n    \"source_stage\": \"Solution A batch\",\n  \
+    \  \"primary_source_evidence_id\": \"jcm1197\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H2SO4\\\"\",\n        \"snapshot_sha256\": \"\
+    a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\n      }\n\
+    \    ],\n    \"explanation\": \"The source uses H2SO4 to adjust A to pH 2.5 without\
+    \ specifying dose or strength. Preserve the unquantified titrant and restore stage-specific\
+    \ evidence; do not infer a final acid concentration.\"\n  },\n  {\n    \"field_path\"\
+    : \"ingredients[0].concentration -> source Solution B component[0]\",\n    \"\
+    source_name\": \"Distilled water\",\n    \"decision\": \"correct\",\n    \"layer_decisions\"\
+    : {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution B batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 100,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\n      }\n\
+    \    ],\n    \"explanation\": \"The source water volume belongs to this stock\
+    \ batch. Current root water 1000 G_PER_L collapses separate 900 and 100 mL inputs\
+    \ and gives the wrong dimension; no measured final volume follows.\",\n    \"\
+    source_original_amount\": 100,\n    \"source_original_unit\": \"ml\"\n  },\n \
+    \ {\n    \"field_path\": \"ingredients[6].concentration -> source Solution B component[1]\"\
+    ,\n    \"source_name\": \"FeSO4・7H2O\",\n    \"decision\": \"correct\",\n    \"\
+    layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution B batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4・7H2O\\\",\\n          \\\"volume\\\": 13.9,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore this source stock-batch quantity\
+    \ inside its named A/B definition. Current root g/L lacks a final-medium basis\
+    \ and must not remain an extra direct dose after restoring the stock.\",\n   \
+    \ \"source_original_amount\": 13.9,\n    \"source_original_unit\": \"g\"\n  },\n\
+    \  {\n    \"field_path\": \"ingredients[7].concentration -> source Solution B\
+    \ component[2]\",\n    \"source_name\": \"K2S4O6\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"Solution B batch\",\n    \"primary_source_evidence_id\"\
+    : \"jcm1197\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1282\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2S4O6\\\",\\n          \\\"volume\\\": 1.51,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore this source stock-batch quantity\
+    \ inside its named A/B definition. Current root g/L lacks a final-medium basis\
+    \ and must not remain an extra direct dose after restoring the stock.\",\n   \
+    \ \"source_original_amount\": 1.51,\n    \"source_original_unit\": \"g\"\n  },\n\
+    \  {\n    \"field_path\": \"solutions[2].concentration\",\n    \"source_name\"\
+    : \"Trace element solution (see Medium [M1267])\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"correct\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"correct\"\n    },\n    \"source_stage\": \"after combining A with fresh B\"\
+    ,\n    \"primary_source_evidence_id\": \"jcm1197\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM1282\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1282\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution (see Medium [M1267])\\\"\
+    ,\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n   \
+    \     \"snapshot_sha256\": \"a781ebc20f31c92fb0410136612bb3d0c83d4fbd614e143c352bcb8791a6b26c\"\
+    \n      }\n    ],\n    \"explanation\": \"The primary adds 1 mL autoclaved trace\
+    \ stock after combining A/B. Restore mL rather than g/L and the exact trace definition.\
+    \ If using the provider nested B representation, account for this dose once, not\
+    \ again as an extra external trace addition.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"ml\"\n  },\n  {\n    \"field_path\": \"\
+    solutions[2].composition[source row 0]\",\n    \"source_name\": \"0.01 M H2SO4\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"\
+    add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"0.01 M H2SO4\\\",\\n          \\\"volume\\\":\
+    \ 1,\\n          \\\"unit\\\": \\\"L\\\",\\n          \\\"conc_value\\\": 0.01,\\\
+    n          \\\"conc_unit\\\": \\\"M\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred. The solvent is explicitly\
+    \ 1 L of 0.01 M H2SO4. Preserve both volume and acid strength, without treating\
+    \ that whole liter as a medium addition.\",\n    \"source_original_amount\": 1,\n\
+    \    \"source_original_unit\": \"L\",\n    \"source_strength\": 0.01,\n    \"\
+    source_strength_unit\": \"M\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 1]\",\n    \"source_name\": \"Na2MoO4・2H2O\",\n    \"decision\": \"add\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\n      }\n\
+    \    ],\n    \"explanation\": \"Add this literal component to the trace stock\
+    \ only, with original mass/volume and supplied form. It is not a direct ingredient\
+    \ at that concentration in the receiving medium; no measured final working volume\
+    \ or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 0.5,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"\
+    solutions[2].composition[source row 2]\",\n    \"source_name\": \"H3BO3\",\n \
+    \   \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"add\"\
+    ,\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 0.6,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 0.6,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"\
+    solutions[2].composition[source row 3]\",\n    \"source_name\": \"ZnSO4・7H2O\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"\
+    add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4・7H2O\\\",\\n          \\\"volume\\\": 10,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 10,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"\
+    solutions[2].composition[source row 4]\",\n    \"source_name\": \"CuSO4・5H2O\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"\
+    add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuSO4・5H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 5]\",\n    \"source_name\": \"CoSO4・7H2O\",\n    \"decision\": \"add\",\n\
+    \    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoSO4・7H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 6]\",\n    \"source_name\": \"Na2WO4・2H2O\",\n    \"decision\": \"add\"\
+    ,\n    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2WO4・2H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 7]\",\n    \"source_name\": \"MnSO4・xH2O\",\n    \"decision\": \"add\",\n\
+    \    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnSO4・xH2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred. The source specifies\
+    \ xH2O without a hydrate number. Retain that uncertainty; do not assign an anhydrous,\
+    \ monohydrate or other fixed-hydrate molar mass.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 8]\",\n    \"source_name\": \"NiSO4・6H2O\",\n    \"decision\": \"add\",\n\
+    \    \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiSO4・6H2O\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 9]\",\n    \"source_name\": \"Na2SeO4\",\n    \"decision\": \"add\",\n \
+    \   \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SeO4\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"solutions[2].composition[source\
+    \ row 10]\",\n    \"source_name\": \"NaVO3\",\n    \"decision\": \"add\",\n  \
+    \  \"layer_decisions\": {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaVO3\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\
+    \n      }\n    ],\n    \"explanation\": \"Add this literal component to the trace\
+    \ stock only, with original mass/volume and supplied form. It is not a direct\
+    \ ingredient at that concentration in the receiving medium; no measured final\
+    \ working volume or complete-transfer molarity is inferred.\",\n    \"source_original_amount\"\
+    : 0.1,\n    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"\
+    solutions[2].composition[source row 11]\",\n    \"source_name\": \"Cr2(SO4)3・xH2O\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"\
+    add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"JCM1182 trace-stock batch only\",\n\
+    \    \"primary_source_evidence_id\": \"jcm1182\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM1267\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1267\"\
+    ,\n        \"source_locator\": \"$.components[2].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cr2(SO4)3・xH2O\\\",\\n          \\\"volume\\\"\
+    : 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    c391f4a69c44662534452958eb4b00c12f898d3c225ff27e49598d4878518507\"\n      }\n\
+    \    ],\n    \"explanation\": \"Add this literal component to the trace stock\
+    \ only, with original mass/volume and supplied form. It is not a direct ingredient\
+    \ at that concentration in the receiving medium; no measured final working volume\
+    \ or complete-transfer molarity is inferred. The source specifies xH2O without\
+    \ a hydrate number. Retain that uncertainty; do not assign an anhydrous, monohydrate\
+    \ or other fixed-hydrate molar mass.\",\n    \"source_original_amount\": 0.5,\n\
+    \    \"source_original_unit\": \"g\"\n  },\n  {\n    \"field_path\": \"preparation_steps.solution_A.pH\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"\
+    add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"Solution A\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1197\",\n        \"source_locator\"\
+    : \"Named solution procedure or collection sterilization header\",\n        \"\
+    exact_source_quote\": \"Adjust pH 2.5 with H 2 SO 4 and autoclave.\",\n      \
+    \  \"snapshot_sha256\": \"7035767f111606cc5c933173bd80947120ca9e7b7ad6b1d8708c61b7d194533a\"\
+    ,\n        \"parsed_text_sha256\": \"91db87d04aaf39cb02ff6446a0c9f594739fbd6dbed3ff9cbcd0e139eb0d76b2\"\
+    \n      }\n    ],\n    \"explanation\": \"Add pH 2.5 as the A preparation endpoint;\
+    \ titrant dose/strength remain unquantified.\"\n  },\n  {\n    \"field_path\"\
+    : \"preparation_steps.solution_B.pH\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : {\n      \"target\": \"add\",\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"Fresh Solution B\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1197\",\n        \"source_locator\"\
+    : \"Named solution procedure or collection sterilization header\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 2.5 and filter-sterilize.\",\n        \"\
+    snapshot_sha256\": \"7035767f111606cc5c933173bd80947120ca9e7b7ad6b1d8708c61b7d194533a\"\
+    ,\n        \"parsed_text_sha256\": \"91db87d04aaf39cb02ff6446a0c9f594739fbd6dbed3ff9cbcd0e139eb0d76b2\"\
+    \n      }\n    ],\n    \"explanation\": \"Add pH 2.5 for B and preserve filtration/fresh\
+    \ preparation. Do not substitute a generic autoclave cycle.\"\n  },\n  {\n   \
+    \ \"field_path\": \"preparation_steps.default_autoclave_temperature\",\n    \"\
+    decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"add\",\n\
+    \      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"A and the separately autoclaved trace\
+    \ addition\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm1197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1197\"\
+    ,\n        \"source_locator\": \"Named solution procedure or collection sterilization\
+    \ header\",\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize\
+    \ media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"\
+    7035767f111606cc5c933173bd80947120ca9e7b7ad6b1d8708c61b7d194533a\",\n        \"\
+    parsed_text_sha256\": \"91db87d04aaf39cb02ff6446a0c9f594739fbd6dbed3ff9cbcd0e139eb0d76b2\"\
+    \n      }\n    ],\n    \"explanation\": \"Add the conditional 121°C default only\
+    \ to source autoclaving operations; B is explicitly filtered.\"\n  },\n  {\n \
+    \   \"field_path\": \"preparation_steps.default_autoclave_duration\",\n    \"\
+    decision\": \"add\",\n    \"layer_decisions\": {\n      \"target\": \"add\",\n\
+    \      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"add\"\n    },\n    \"source_stage\": \"A and the separately autoclaved trace\
+    \ addition\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm1197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1197\"\
+    ,\n        \"source_locator\": \"Named solution procedure or collection sterilization\
+    \ header\",\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize\
+    \ media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"\
+    7035767f111606cc5c933173bd80947120ca9e7b7ad6b1d8708c61b7d194533a\",\n        \"\
+    parsed_text_sha256\": \"91db87d04aaf39cb02ff6446a0c9f594739fbd6dbed3ff9cbcd0e139eb0d76b2\"\
+    \n      }\n    ],\n    \"explanation\": \"Add the conditional 15 min default only\
+    \ where applicable; no filtration duration is invented.\"\n  },\n  {\n    \"field_path\"\
+    : \"provider B stock.volume and nested trace dose (source context)\",\n    \"\
+    decision\": \"conflict\",\n    \"layer_decisions\": {\n      \"target\": \"conflict\"\
+    ,\n      \"data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml\"\
+    : \"conflict\"\n    },\n    \"source_stage\": \"Provider B embeds trace 5294;\
+    \ primary adds trace after A/B mixing\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadiveSolution5316\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/5316\",\n        \"source_locator\": \"\
+    $.data.volume, recipe and steps\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 101\",\n        \"snapshot_sha256\": \"732ee34917f19e0a323fd4b133734b133f06bf36933dc0868e136bf28cbc7403\"\
+    \n      }\n    ],\n    \"explanation\": \"Preserve provider 101 mL stock basis\
+    \ and the embedded 1 mL trace version separately from primary B water 100 mL plus\
+    \ later trace 1 mL. Provider B g/L uses 101 mL: 13.9/0.101=137.623762… (137.624\
+    \ reported), 1.51/0.101=14.950495… (14.9505 reported). These are provider stock\
+    \ concentrations, not independent final-medium concentrations or proof that the\
+    \ primary specifies B volume 101 mL.\"\n  }\n]"
+- assessment_id: stock-scope
+  area: quantity
+  topic: Primary and provider hierarchy without double counting
+  outcome: concern
+  summary: The primary requires fresh filtered B, combines it with A, then adds autoclaved
+    trace. MediaDive 5316 instead incorporates trace 5294 into B and declares 101
+    mL for stock concentration calculations. These formulations carry the same listed
+    material amounts but different represented stages; preserve the exact primary
+    ordering and annotate provider context rather than silently flattening it. Current
+    direct A/B components plus wrong references and an empty trace placeholder fail
+    to encode either source faithfully.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - mediadiveSolution5316
+  - mediadiveSolution5294
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Explicit hydrates and unresolved trace salt forms
+  outcome: supported
+  summary: Direct primary terms preserve magnesium and iron sulfate heptahydrates,
+    tetrathionate, phosphate, ammonium sulfate, NaCl, water and sulfuric acid. The
+    missing trace definition must retain zinc/cobalt heptahydrates, copper pentahydrate,
+    nickel hexahydrate, molybdate/tungstate dihydrates and the explicit variable xH2O
+    forms of manganese and chromium sulfates. No trace-composition IDs are currently
+    asserted in this target; do not import unrelated helper mappings or unverified
+    provider mmol/L values.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - togoM1267
+- assessment_id: preparation
+  area: completeness
+  topic: Fresh filtered B and separately sterilized additions
+  outcome: concern
+  summary: Both layers omit the two pH 2.5 stock endpoints, autoclaving A, preparing/filtering
+    B immediately before use, aseptic A/B mixing and subsequent autoclaved trace addition.
+    The exact collection header provides a conditional default for autoclaving; it
+    does not override B filtration. JCM1182 parent pH 2.0, yeast/iron additions and
+    cultivation claims do not belong to this recipe.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex/undefined assertions against complete exact composition
+  outcome: concern
+  summary: The complete exact source contains specified inorganic salts, water and
+    sulfuric-acid reagents, including an inorganic trace stock. It supplies no compositionally
+    undefined nutrient mixture supporting COMPLEX/UNDEFINED. The parent title “Ferrous
+    iron yeast extract medium” does not mean that its yeast is part of the referenced
+    trace stock. Reassess the native composition categories from the correct complete
+    formulation; retain variable hydrate and exact-quantity limitations instead of
+    declaring all molar quantities fully defined. LIQUID is consistent with the no-agar
+    source.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - mediadiveJ1197api
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '8 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 8/8 primary and 6/8 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Source forms
+    are assessed separately.'
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi26710
+  - chebi26836
+  - chebi31795
+  - chebi62946
+  - chebi75836
+  - chebi86466
+  details: 'Instance coverage on a 0–100 percent scale, denominator 8: primary 100.00%;
+    secondary 75.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 27 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained-owner and generated correspondence
+  outcome: supported
+  summary: The entire maintained source and generated target agree on the reviewed
+    formulation, stock references and classifications. The merge event identifies
+    the owner; later generated metadata does not provide independent recipe evidence.
+    Current collection captures corroborate source identity but do not authenticate
+    every historical import/enrichment assertion.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+- assessment_id: biology
+  area: scope
+  topic: Growth claims, organism identifiers and literature scope
+  outcome: supported
+  summary: The source title and generic cultivation application do not establish strain-level
+    growth. Neither reviewed layer asserts a target-organism identifier, genome accession,
+    DOI/PMID, incubation optimum or quantitative growth result. No such claim is added.
+    Bacterial placement is consistent with source identity; this is a recipe review,
+    not an exhaustive organism or literature search.
+  target_ids:
+  - CultureMech:007816
+  evidence_ids:
+  - record
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: m1282-wrong-stock-identities
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Solution A and B point to different source recipes
+  description: The linked 5342/5343 stocks are organic saline and carbonate/NaCl recipes,
+    whereas JCM1197 requires inorganic A 5315 and fresh iron/tetrathionate B 5316.
+    Following those references would replace the intended formulation. The trace cross-reference
+    must resolve only JCM1182’s trace section, not its entire yeast-extract medium.
+  target_ids:
+  - CultureMech:007816
+  field_paths:
+  - solutions[0].term
+  - solutions[0].notes
+  - solutions[1].term
+  - solutions[1].notes
+  - solutions[2]
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - mediadiveJ1197api
+  - mediadiveSolution5342
+  - mediadiveSolution5343
+  - mediadiveSolution5315
+  - mediadiveSolution5316
+  - dependency-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: m1282-quantity-stock-scope
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock doses and flattened quantities do not encode the source
+  description: The source 900/100/1 mL additions are stored as g/L, water is collapsed
+    to 1000 g/L, source A/B masses are flattened into direct g/L fields, and all twelve
+    trace-stock components are absent. A repaired stock reference alone would still
+    allow double dosing or confusion between provider stock concentration and receiving-medium
+    quantity.
+  target_ids:
+  - CultureMech:007816
+  field_paths:
+  - ingredients[*].concentration
+  - solutions[*].concentration
+  - solutions[2].composition
+  - ingredients[*].evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - togoM1282
+  - togoM1267
+  - mediadiveSolution5316
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: m1282-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Freshness, filtration and staged sterilization are missing
+  description: The record lacks the source pH endpoints, fresh preparation and filtration
+    of B, separate A/trace sterilization and order of mixing. Those distinctions are
+    material for reconstructing the exact medium; an undifferentiated autoclave instruction
+    would contradict B treatment.
+  target_ids:
+  - CultureMech:007816
+  field_paths:
+  - preparation_steps
+  - solutions[*].preparation_notes
+  - ph_value
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because missing fresh preparation,
+    filtration, separate sterilization and stock pH materially compromises reconstruction;
+    P3.4/P3.6 describe related omissions.
+- finding_id: f4
+  issue_key: m1282-composition-classification
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Complex and undefined labels lack source support
+  description: The exact full source has no yeast extract or other compositionally
+    undefined nutrient mixture. Its trace-stock parent contains yeast elsewhere, but
+    that ingredient is outside the referenced section. COMPLEX/UNDEFINED therefore
+    do not follow from the source inventory. Unspecified hydrate counts remain real
+    limitations and must not be silently resolved when reassessing categories.
+  target_ids:
+  - CultureMech:007816
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1197
+  - jcm1182
+  - mediadiveJ1197api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.4
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Resolve stock identity by exact parent source and composition rather
+    than generic labels. Correct A/B references in the maintained owner, scope trace
+    5294 to its exact source section and preserve the primary/provider hierarchy difference.
+    Recheck resolver behavior before separately authorized regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007816
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore the exact source quantities, units, stock scopes and single
+    trace dose with literal claim evidence. Keep original variable hydrates and 0.01
+    M acid solvent; do not guess final volume, fixed hydrate molecular weights or
+    final molarities. Remove duplicated direct dosing when stock structure is restored.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007816
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add the exact source stock procedures and ordered additions with evidence.
+    Apply the conditional collection default only to specified autoclaving operations,
+    preserve freshly prepared filtered B, and do not borrow parent-medium pH or yeast/iron
+    procedures.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007816
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Reassess composition categories from the correct inorganic formulation
+    and native definitions, distinguishing chemically specified ingredients from unresolved
+    hydrate/quantity details. Remove unsupported complex-mixture claims without copying
+    unrelated parent ingredients or declaring unsupported exact molar composition.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007816
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1282_Acidihalobacter_Prosperus_F5_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Source liquid additions and provider-declared stock volumes are not independently
+  measured final working-medium volumes. No unqualified final g/L or molarity is inferred
+  from sums of listed water/stock inputs.
+- Contextual stock/helper records are inspected to resolve this target; their separate
+  defects, provenance and unrelated medium sections are not blanket approvals or additional
+  reviewed targets.
+- The schema/term passes and exact pinned MIM label-index correspondence establish
+  bounded metadata support, not experimental validation or proof of historical secondary-mapping
+  methodology.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-017
+- generated-medium
