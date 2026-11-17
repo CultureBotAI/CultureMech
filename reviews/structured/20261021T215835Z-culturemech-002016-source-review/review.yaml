@@ -1,0 +1,1924 @@
+schema_version: 1.0.0
+review_id: 20261021T215835Z-culturemech-002016-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacto_middlebrook_7h9_broth (CultureMech:002016)'
+started_at: '2026-10-21T21:51:53Z'
+finished_at: '2026-10-21T21:58:35Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated Middlebrook 7H9 target retains a false LB constituent expansion
+  and exposes ADC stock concentrations as direct-medium rates. Its sole maintained
+  owner already removes that expansion, retains fourteen basal/preparation inputs
+  and a separate ADC stock with authenticated historical evidence. Reconcile and regenerate
+  from that repaired owner while preserving the explicit one-liter protocol and source
+  water-table discrepancy.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+    sha256: 009b34e03082b0a17ee4c281881fc948ff668ecf308ce0f2062a4513ecc05664
+    role: target
+  - path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    sha256: 7fdf454e6b6760dc4b81ecc20683c4907622e5244622d87c9bb25b5578ed36e5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/bacto_middlebrook_7h9_broth.yaml.md
+    sha256: d7f33450e2e7fecdca966f37297c49eae02f729aa2b7c8c5a04e69a92310af53
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-middlebrook-stages/context.json
+    sha256: 4836291dddb141d452fc5c01b0730d3badce0759dd54a8e7ba0446e7aff478d7
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-middlebrook-stages/plan.json
+    sha256: 28032eb3f5837886b5e1d1b0b972bad659942781d4ca76950e2ee774df680e13
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-middlebrook-stages/records/D857.md
+    sha256: fd6cda5ea8dacca5e4cd8aac594874bf6044cc4e5f25bc55a8ffec2291ebc3fc
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/curation_source_fixtures.py
+    sha256: 393e6bf62e56b92a577187b3bbddddf1d1a61d376d53da3e416f6d7bf220a8f8
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_lactalbumin_formulations.py
+    sha256: 3c16a3f4a2e543d280d3ccbb20a63138f2b409602d8b168b7fc742abe63b1769
+    role: context
+  - path: scripts/repair_methanogen_stock_boundaries.py
+    sha256: 8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba
+    role: context
+  - path: scripts/repair_middlebrook_stages.py
+    sha256: 27602a80e8067b18f2c9aed00823d0858b807b1328c9af7a18a66ad814faf255
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 389; batch 039 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-eight task batches
+    contain 380 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 383 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002016
+targets:
+- target_id: CultureMech:002016
+  path: data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  label: bacto_middlebrook_7h9_broth
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/389/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/389/strict.tsv"
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002016
+- check_id: mediadive857api-source-access
+  name: 'Exact source content access: mediadive857api'
+  required: false
+  status: unavailable
+  summary: The preserved optional mediadive857api attempt did not return usable content.
+    Historical raw/text recovery and the current official primary suffice for this
+    bounded review; the failed obsolete LB page cannot establish Middlebrook ingredients.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - mediadive857api-attempt
+- check_id: mediadive857api_retry-source-access
+  name: 'Exact source content access: mediadive857api_retry'
+  required: false
+  status: unavailable
+  summary: The preserved optional mediadive857api_retry attempt did not return usable
+    content. Historical raw/text recovery and the current official primary suffice
+    for this bounded review; the failed obsolete LB page cannot establish Middlebrook
+    ingredients.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - mediadive857api_retry-attempt
+- check_id: laboratoryNotesLB-source-access
+  name: 'Exact source content access: laboratoryNotesLB'
+  required: false
+  status: unavailable
+  summary: The preserved optional laboratoryNotesLB attempt did not return usable
+    content. Historical raw/text recovery and the current official primary suffice
+    for this bounded review; the failed obsolete LB page cannot establish Middlebrook
+    ingredients.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - laboratoryNotesLB-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:39.273023Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/389/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:40.294667Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/389/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:41.449411Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:42.263569Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml:1:id: CultureMech:002016
+
+    ./data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml:1:id: CultureMech:002016
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/source-preflight-bound/389/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: supports
+  summary: 22 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 590aed428e1520f500a0ae0d630305069d11cdfc50c597162d049fb7b6126e67
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/389/grounding-inventory.json
+  locator: Exact current local objects and bound snapshot joins
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: Mechanical inventory preserves per-layer values and source hashes; narrative
+    judgments are separately authored.
+  snapshot_sha256: 3929e5a6c1820068697593590289243725c975aa8ee3ae55ec512d935048d937
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/389/history-inventory.json
+  locator: Exact current local objects and bound snapshot joins
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: Mechanical inventory preserves per-layer values and source hashes; narrative
+    judgments are separately authored.
+  snapshot_sha256: 75726a9163cfadb2dd1f645a6de8b5fda79bbe132a109e76a72239c537e93a57
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf
+  locator: Complete single-page formulation and preparation
+  accessed_at: '2026-10-21T21:13:31.228050Z'
+  support: supports
+  summary: Twelve basal solids, ADC ingredients and the one-liter final-medium protocol
+    establish the applicable formulation.
+  quote: To prepare one liter of final medium, suspend the amount of dehydrated powder
+  snapshot_sha256: 5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb
+- evidence_id: adc
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf
+  locator: ADC Enrichment subsection
+  accessed_at: '2026-10-21T21:13:31.228050Z'
+  support: supports
+  summary: Bovine albumin fraction V 5 g, dextrose 2 g and beef catalase 0.0003 g
+    are in a separate stock with 100 ml water.
+  quote: Catalase (Beef) 0.0003 g
+  snapshot_sha256: 5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb
+- evidence_id: historical-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/857
+  locator: $.data.medium; $.data.solutions[0] main 1749 and [1] ADC 1750
+  accessed_at: '2026-10-09T00:07:43.579726Z'
+  support: supports
+  summary: The recovered historical raw API authenticates its original 19 owner evidence
+    objects and their source stages, including explicit stock g/L. The main water
+    table conflicts with preparation prose.
+  quote: '"volume": 1000'
+  snapshot_sha256: 27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b
+- evidence_id: historical-text
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf
+  locator: Exact historical PDF-extracted text in the pinned Middlebrook context;
+    original extraction metadata
+  accessed_at: '2026-10-09T00:07:53.856977Z'
+  support: supports
+  summary: This is an authenticated extracted-text representation with its own cited
+    digest, distinct from the raw PDF digest. It supports the twentieth owner evidence
+    object.
+  quote: To prepare one liter of final medium, suspend the amount of dehydrated powder
+  snapshot_sha256: 875dbe089e02bfc6a6b619676f8af825fd945742af536bacfecee9306d65d216
+- evidence_id: mediadive857api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/857
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:13:30.348912Z'
+  support: context_only
+  summary: The preserved optional mediadive857api attempt did not return usable content.
+    Historical raw/text recovery and the current official primary suffice for this
+    bounded review; the failed obsolete LB page cannot establish Middlebrook ingredients.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive857api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/857
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:14:38.789404Z'
+  support: context_only
+  summary: The preserved optional mediadive857api_retry attempt did not return usable
+    content. Historical raw/text recovery and the current official primary suffice
+    for this bounded review; the failed obsolete LB page cannot establish Middlebrook
+    ingredients.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: laboratoryNotesLB-attempt
+  kind: database
+  reference: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:13:31.310239Z'
+  support: context_only
+  summary: The preserved optional laboratoryNotesLB attempt did not return usable
+    content. Historical raw/text recovery and the current official primary suffice
+    for this bounded review; the failed obsolete LB page cannot establish Middlebrook
+    ingredients.
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.847456Z'
+  support: supports
+  summary: CHEBI:16015 resolves to L-glutamic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d4c039ee9f11823d174df5fa637b67506440f658c3492afcdf8032f0316f77d3
+- evidence_id: chebi16709
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16709
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.473529Z'
+  support: supports
+  summary: CHEBI:16709 resolves to pyridoxine. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 520ccaa52464e36a60d2a7f103f96537c2ab4915c9e10dc40817a76db6469e29
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi23414
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_23414
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T11:55:12.180406Z'
+  support: supports
+  summary: CHEBI:23414 resolves to copper(II) sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 7f9d81f59ca2cbe7614d7e0dd3f85cb578000bf273b1b93968e74054e475fee1
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31604
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31604
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.987529Z'
+  support: supports
+  summary: CHEBI:31604 resolves to ferric ammonium citrate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 31acf125b469ffd64e2de503550d29336a7a0f99c8a3ea24b80b53bdb715e7f8
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi35176
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35176
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:49.940050Z'
+  support: supports
+  summary: CHEBI:35176 resolves to zinc sulfate. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 81ec7a8870c22cb4add111b8bd75e37886d7c96c9fc402a01f384c4cd4b6b746
+- evidence_id: chebi53258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:54.823692Z'
+  support: supports
+  summary: CHEBI:53258 resolves to sodium citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2a35c6dc3532c2276c6b19aef0992260e14b1fc36423fa3eb812bb94f63c4371
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: foodon03315426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:49.388263Z'
+  support: supports
+  summary: FOODON:03315426 resolves to yeast extract. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: cf2b158469d7dedbe7c31242b5901230a29b5765e04bb37c92f0b1ddd6ea9c44
+- evidence_id: micro0000182
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:21.973857Z'
+  support: supports
+  summary: MICRO:0000182 resolves to tryptone. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 01875997c482a49e4d41eb35c6c697e190afd236a8527625e94b6f96df3872b0
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15956":
+    [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956",
+    "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:16015": [{"label": "L-Glutamic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:16015", "preferred_term": "L-Glutamic acid",
+    "ontology_id": "CHEBI:16015", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:16709": [{"label": "Pyridoxine", "match_type": "preferred_term", "identifier":
+    "CHEBI:16709", "preferred_term": "Pyridoxine", "ontology_id": "CHEBI:16709", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17634": [{"label": "D-Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17634", "preferred_term": "D-Glucose",
+    "ontology_id": "CHEBI:17634", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}],
+    "CHEBI:23414": [{"label": "CuSO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:23414", "preferred_term": "CuSO4", "ontology_id": "CHEBI:23414", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31604": [{"label": "Ferric ammonium
+    citrate", "match_type": "preferred_term", "identifier": "CHEBI:31604", "preferred_term":
+    "Ferric ammonium citrate", "ontology_id": "CHEBI:31604", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type":
+    "preferred_term", "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate",
+    "ontology_id": "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier":
+    "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:34683": [{"label": "Na2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:34683", "preferred_term": "Na2HPO4", "ontology_id":
+    "CHEBI:34683", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:35176":
+    [{"label": "Zinc sulfate", "match_type": "preferred_term", "identifier": "CHEBI:35176",
+    "preferred_term": "Zinc sulfate", "ontology_id": "CHEBI:35176", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:53258": [{"label": "Trisodium citrate",
+    "match_type": "preferred_term", "identifier": "CHEBI:53258", "preferred_term":
+    "Trisodium citrate", "ontology_id": "CHEBI:53258", "mapping_status": "MAPPED",
+    "ambiguity": "resolved:owned"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACTO_MIDDLEBROOK_7H9_BROTH.yaml; data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_middlebrook_stages.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: 'The complete guarded Middlebrook writer was read: D857 uses twelve basal
+    rates, 900 ml water and 2 ml glycerol, then a separate 100 ml ADC dose and its
+    four stock constituents; it preserves pH/preparation, withdraws false LB notes
+    and appends evidence/history. The owner reflects that repair. Current guarded
+    merger preserves compatible scientific content and is not inferred to have caused
+    the older target expansion.'
+  snapshot_sha256: 27602a80e8067b18f2c9aed00823d0858b807b1328c9af7a18a66ad814faf255
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: 'The complete guarded Middlebrook writer was read: D857 uses twelve basal
+    rates, 900 ml water and 2 ml glycerol, then a separate 100 ml ADC dose and its
+    four stock constituents; it preserves pH/preparation, withdraws false LB notes
+    and appends evidence/history. The owner reflects that repair. Current guarded
+    merger preserves compatible scientific content and is not inferred to have caused
+    the older target expansion.'
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: 'The complete guarded Middlebrook writer was read: D857 uses twelve basal
+    rates, 900 ml water and 2 ml glycerol, then a separate 100 ml ADC dose and its
+    four stock constituents; it preserves pH/preparation, withdraws false LB notes
+    and appends evidence/history. The owner reflects that repair. Current guarded
+    merger preserves compatible scientific content and is not inferred to have caused
+    the older target expansion.'
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: auth
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/389/historical-authentication.json
+  locator: 20 current owner evidence objects, exact snippets and cited historical
+    capture hashes
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: supports
+  summary: 19 match original API bytes and one matches exact historical extracted
+    PDF text. This does not turn provider-derived molarities or equipment metadata
+    into primary instructions.
+  snapshot_sha256: 3ea913c8925d614566755f82f1227489ca186ccc125fd5033a1cd255483ca589
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/389/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:58:33Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 903f3b24cfefe6f157cad152b2b6c25e82a848d032bf257ced33425d1b88a62a
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '16 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 16/17
+    primary and 13/17 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15956
+  - chebi16015
+  - chebi16709
+  - chebi17634
+  - chebi23414
+  - chebi26710
+  - chebi31604
+  - chebi32599
+  - chebi3312
+  - chebi34683
+  - chebi35176
+  - chebi53258
+  - chebi62946
+  - chebi63036
+  - foodon03315426
+  - micro0000182
+  details: 'Instance coverage on a 0–100 percent scale, denominator 17: primary 94.12%;
+    secondary 76.47%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 16 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Middlebrook identity versus false commercial expansion
+  outcome: concern
+  summary: DSMZ 857 identifies Middlebrook 7H9, not LB Miller. Generated tryptone
+    10 g/L, yeast extract 5 g/L and NaCl 10 g/L have no support in the complete primary
+    recipe. The owner explicitly retains the old LB reference only as superseded provenance
+    and already restores albumin/ADC.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - adc
+- assessment_id: evidence-auth
+  area: evidence
+  topic: Historical amount authentication and current access
+  outcome: supported
+  summary: 'All 20 attached owner evidence objects have exact historical representation/hash
+    support: 19 API objects and one PDF-extracted text object. The current target
+    has no corresponding attached evidence. Current API failures do not invalidate
+    recovered historical bytes, and the PDF text digest is not called an HTTP-response
+    digest.'
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - auth
+  - historical-api
+  - historical-text
+  - history-inventory
+- assessment_id: prep
+  area: completeness
+  topic: Existing preparation and pH
+  outcome: supported
+  summary: Both target and owner already retain all three preparation descriptions
+    and pH range 6.4–6.8. Preserve the one-liter final-medium instruction, 900 ml
+    water plus 2 ml glycerol, boiling, 10 or 15 minutes at printed 15 Ibs pressure/121
+    C, cooling to 50–55 C, and later aseptic ADC addition. The 25 C qualifier is a
+    pH measurement temperature, not growth. ADC equipment metadata does not override
+    the explicit post-cooling addition.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - historical-api
+- assessment_id: source-conflict
+  area: consistency
+  topic: Water, stock and commercial-base denominators
+  outcome: concern
+  summary: The main API table lists 1000 ml water, but its prose and the primary specify
+    900 ml water with 2 ml glycerol followed by 100 ml ADC for an explicitly one-liter
+    final medium. The owner documents that conflict and follows preparation. Do not
+    force a 1002 ml final denominator. Twelve basal masses sum to 4.694 g; the printed
+    4.7 g/l powder is a rounded alternative representation of the same base, not an
+    extra addition. ADC 50/20/0.003 g/L are provider-declared stock rates, not main
+    rates.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - primary
+  - historical-api
+  - owner-0
+- assessment_id: forms
+  area: grounding
+  topic: Supplied materials and molecular specificity
+  outcome: supported
+  summary: Generic salt names support name-level correspondence, without inferred
+    hydrates. Sodium citrate does not independently prove the trisodium stoichiometry
+    of CHEBI:53258; preserve that specificity limit. Ferric ammonium citrate is an
+    indefinite mixture, not a fixed iron formulation. Explicit L-glutamic acid and
+    dextrose support their respective L and D identities. Keep bovine albumin fraction
+    V and beef catalase material qualifiers without forcing single-molecule identifiers.
+    Valid tryptone/yeast/NaCl labels do not justify their presence.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - primary
+  - chebi53258
+  - chebi31604
+  - chebi16015
+  - chebi17634
+  - grounding-inventory
+- assessment_id: biology
+  area: evidence
+  topic: Growth and classification
+  outcome: not_applicable
+  summary: Bacterial, complex, undefined and liquid describe this protein-supplemented
+    broth. No organism/strain association or growth temperature is established by
+    the title or generic application; no growth finding is invented.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: repair-state
+  area: ownership
+  topic: Current repaired owner and stale generated output
+  outcome: concern
+  summary: The October 9 owner repair is present, including its 47 recorded field
+    changes and scoped amount evidence. The target predates that repair. Regenerate/reconcile
+    the target after confirming the repaired owner, rather than repeating owner repair
+    or deleting its superseded historical notes. The full current writer supports
+    this narrow lineage interpretation; its presence is not proof of every earlier
+    transformation.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - writer-0
+  - writer-1
+  - writer-2
+  - owner-0
+  - history-inventory
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 27 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002016
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"Ammonium Sulfate\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n    \
+    \  {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The basal amount is supported for the source’s explicitly one-liter final\
+    \ medium. The owner has matching historical evidence; the target agrees numerically\
+    \ but lacks that evidence. Do not add 4.7 g powder on top of these constituent\
+    \ masses.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The basal amount\
+    \ is supported for the source’s explicitly one-liter final medium. The owner has\
+    \ matching historical evidence; the target agrees numerically but lacks that evidence.\
+    \ Do not add 4.7 g powder on top of these constituent masses.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive857Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Ammonium Sulfate\\\",\\n                        \\\
+    \"compound_id\\\": 789,\\n                        \\\"amount\\\": 0.5,\\n    \
+    \                    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.5,\\n                        \\\"mmol_l\\\": 3.78387,\\n               \
+    \         \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The basal amount is supported for the source’s\
+    \ explicitly one-liter final medium. The owner has matching historical evidence;\
+    \ the target agrees numerically but lacks that evidence. Do not add 4.7 g powder\
+    \ on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\": \"q2\"\
+    ,\n    \"topic\": \"Monopotassium Phosphate\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n \
+    \       \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The basal amount\
+    \ is supported for the source’s explicitly one-liter final medium. The owner has\
+    \ matching historical evidence; the target agrees numerically but lacks that evidence.\
+    \ Do not add 4.7 g powder on top of these constituent masses.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive857Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Monopotassium Phosphate\\\",\\n                 \
+    \       \\\"compound_id\\\": 790,\\n                        \\\"amount\\\": 1,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 1,\\n                        \\\"mmol_l\\\": 7.34835,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The basal amount is supported for the source’s\
+    \ explicitly one-liter final medium. The owner has matching historical evidence;\
+    \ the target agrees numerically but lacks that evidence. Do not add 4.7 g powder\
+    \ on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\": \"q3\"\
+    ,\n    \"topic\": \"Disodium Phosphate\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"2.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The basal amount\
+    \ is supported for the source’s explicitly one-liter final medium. The owner has\
+    \ matching historical evidence; the target agrees numerically but lacks that evidence.\
+    \ Do not add 4.7 g powder on top of these constituent masses.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive857Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Disodium Phosphate\\\",\\n                      \
+    \  \\\"compound_id\\\": 791,\\n                        \\\"amount\\\": 2.5,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 2.5,\\n                        \\\"mmol_l\\\": 17.6107,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The basal amount is supported for the source’s\
+    \ explicitly one-liter final medium. The owner has matching historical evidence;\
+    \ the target agrees numerically but lacks that evidence. Do not add 4.7 g powder\
+    \ on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\": \"q4\"\
+    ,\n    \"topic\": \"Sodium citrate\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n \
+    \       \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The basal amount\
+    \ is supported for the source’s explicitly one-liter final medium. The owner has\
+    \ matching historical evidence; the target agrees numerically but lacks that evidence.\
+    \ Do not add 4.7 g powder on top of these constituent masses.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive857Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"Sodium citrate\\\",\\n                        \\\"\
+    compound_id\\\": 792,\\n                        \\\"amount\\\": 0.1,\\n      \
+    \                  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.1,\\n                        \\\"mmol_l\\\": 0.387492,\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The basal amount is supported for the source’s\
+    \ explicitly one-liter final medium. The owner has matching historical evidence;\
+    \ the target agrees numerically but lacks that evidence. Do not add 4.7 g powder\
+    \ on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\": \"q5\"\
+    ,\n    \"topic\": \"Magnesium sulfate\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.05\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"Magnesium sulfate\\\",\\n     \
+    \                   \\\"compound_id\\\": 793,\\n                        \\\"amount\\\
+    \": 0.05,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.415386,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q6\",\n    \"topic\": \"Calcium Chloride\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0005\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0005\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ basal amount is supported for the source’s explicitly one-liter final medium.\
+    \ The owner has matching historical evidence; the target agrees numerically but\
+    \ lacks that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0005\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"Calcium Chloride\\\",\\n      \
+    \                  \\\"compound_id\\\": 794,\\n                        \\\"amount\\\
+    \": 0.5,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.0005,\\n                        \\\"mmol_l\\\": 0.00340113,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q7\",\n    \"topic\": \"Zinc Sulfate\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.001\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ basal amount is supported for the source’s explicitly one-liter final medium.\
+    \ The owner has matching historical evidence; the target agrees numerically but\
+    \ lacks that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"Zinc Sulfate\\\",\\n          \
+    \              \\\"compound_id\\\": 795,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                \
+    \        \\\"g_l\\\": 0.001,\\n                        \\\"mmol_l\\\": 0.00619371,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"topic\": \"Copper Sulfate\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.001\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ basal amount is supported for the source’s explicitly one-liter final medium.\
+    \ The owner has matching historical evidence; the target agrees numerically but\
+    \ lacks that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Copper Sulfate\\\",\\n        \
+    \                \\\"compound_id\\\": 796,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                \
+    \        \\\"g_l\\\": 0.001,\\n                        \\\"mmol_l\\\": 0.00626527,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q9\",\n    \"topic\": \"L-Glutamic acid\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The basal amount\
+    \ is supported for the source’s explicitly one-liter final medium. The owner has\
+    \ matching historical evidence; the target agrees numerically but lacks that evidence.\
+    \ Do not add 4.7 g powder on top of these constituent masses.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive857Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 9,\\n                  \
+    \      \\\"compound\\\": \\\"L-Glutamic acid\\\",\\n                        \\\
+    \"compound_id\\\": 374,\\n                        \\\"amount\\\": 0.5,\\n    \
+    \                    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 0.5,\\n                        \\\"mmol_l\\\": 3.39836,\\n               \
+    \         \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The basal amount is supported for the source’s\
+    \ explicitly one-liter final medium. The owner has matching historical evidence;\
+    \ the target agrees numerically but lacks that evidence. Do not add 4.7 g powder\
+    \ on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\": \"q10\"\
+    ,\n    \"topic\": \"Ferric ammonium citrate\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.04\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[9]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 10,\\\
+    n                        \\\"compound\\\": \\\"Ferric ammonium citrate\\\",\\\
+    n                        \\\"compound_id\\\": 97,\\n                        \\\
+    \"amount\\\": 0.04,\\n                        \\\"unit\\\": \\\"g\\\",\\n    \
+    \                    \\\"g_l\\\": 0.04,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q11\",\n    \"topic\": \"Pyridoxine\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.001\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ basal amount is supported for the source’s explicitly one-liter final medium.\
+    \ The owner has matching historical evidence; the target agrees numerically but\
+    \ lacks that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[10]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 11,\\\
+    n                        \\\"compound\\\": \\\"Pyridoxine\\\",\\n            \
+    \            \\\"compound_id\\\": 637,\\n                        \\\"amount\\\"\
+    : 1,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                  \
+    \      \\\"g_l\\\": 0.001,\\n                        \\\"mmol_l\\\": 0.00591086,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"topic\": \"Biotin\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local\": {\n      \"value\": \"0.0005\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0005\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"The\
+    \ basal amount is supported for the source’s explicitly one-liter final medium.\
+    \ The owner has matching historical evidence; the target agrees numerically but\
+    \ lacks that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0005\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"verified\",\n        \"rationale\": \"The basal\
+    \ amount is supported for the source’s explicitly one-liter final medium. The\
+    \ owner has matching historical evidence; the target agrees numerically but lacks\
+    \ that evidence. Do not add 4.7 g powder on top of these constituent masses.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[11]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 12,\\\
+    n                        \\\"compound\\\": \\\"Biotin\\\",\\n                \
+    \        \\\"compound_id\\\": 46,\\n                        \\\"amount\\\": 0.5,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.0005,\\n                        \\\"mmol_l\\\": 0.00204658,\\n  \
+    \                      \\\"optional\\\": 0\\n                    }\",\n      \
+    \  \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal amount is supported for the\
+    \ source’s explicitly one-liter final medium. The owner has matching historical\
+    \ evidence; the target agrees numerically but lacks that evidence. Do not add\
+    \ 4.7 g powder on top of these constituent masses.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"topic\": \"Tryptone false LB addition\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local\": {\n      \"value\": \"10.0\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[12].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    Unsupported LB constituent introduced into Middlebrook. The maintained owner already\
+    \ withdrew it; reconcile/regenerate the target without removing any supported\
+    \ ADC material.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Albumin Fraction'; occurrence 1\",\n        \"exact_source_quote\": \"Albumin\
+    \ Fraction V, Bovine 5.0000 g\",\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'Solution\
+    \ g/liter'; occurrence 1\",\n        \"exact_source_quote\": \"Solution g/liter\
+    \ (final solution) 4.7 g/l. Final pH at  25C 6.6 ± 0.2.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Unsupported LB constituent introduced\
+    \ into Middlebrook. The maintained owner already withdrew it; reconcile/regenerate\
+    \ the target without removing any supported ADC material.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q14\",\n    \"topic\": \"Yeast extract false LB addition\",\n\
+    \    \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"5.0\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5.0\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"Unsupported LB constituent introduced into Middlebrook. The maintained owner\
+    \ already withdrew it; reconcile/regenerate the target without removing any supported\
+    \ ADC material.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Albumin Fraction'; occurrence 1\",\n        \"exact_source_quote\": \"Albumin\
+    \ Fraction V, Bovine 5.0000 g\",\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'Solution\
+    \ g/liter'; occurrence 1\",\n        \"exact_source_quote\": \"Solution g/liter\
+    \ (final solution) 4.7 g/l. Final pH at  25C 6.6 ± 0.2.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Unsupported LB constituent introduced\
+    \ into Middlebrook. The maintained owner already withdrew it; reconcile/regenerate\
+    \ the target without removing any supported ADC material.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q15\",\n    \"topic\": \"Sodium chloride false LB addition\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"10.0\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"ingredients[14].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"Unsupported LB constituent introduced into Middlebrook. The maintained\
+    \ owner already withdrew it; reconcile/regenerate the target without removing\
+    \ any supported ADC material.\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Albumin Fraction'; occurrence 1\",\n        \"exact_source_quote\": \"Albumin\
+    \ Fraction V, Bovine 5.0000 g\",\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'Solution\
+    \ g/liter'; occurrence 1\",\n        \"exact_source_quote\": \"Solution g/liter\
+    \ (final solution) 4.7 g/l. Final pH at  25C 6.6 ± 0.2.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Unsupported LB constituent introduced\
+    \ into Middlebrook. The maintained owner already withdrew it; reconcile/regenerate\
+    \ the target without removing any supported ADC material.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q16\",\n    \"topic\": \"Dextrose ADC scope\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"20\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[15].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"The\
+    \ stored value is the ADC stock rate, verified in the owner’s stock composition.\
+    \ It is incorrectly exposed as a direct-medium rate in the target. Preserve the\
+    \ separate 100 ml dose; on the provider-declared 100 ml stock basis it delivers\
+    \ 2 g dextrose or 0.3 mg catalase to the source’s explicitly one-liter medium.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[1].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"verified\",\n        \"rationale\": \"The\
+    \ stored value is the ADC stock rate, verified in the owner’s stock composition.\
+    \ It is incorrectly exposed as a direct-medium rate in the target. Preserve the\
+    \ separate 100 ml dose; on the provider-declared 100 ml stock basis it delivers\
+    \ 2 g dextrose or 0.3 mg catalase to the source’s explicitly one-liter medium.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"Dextrose\\\",\\n              \
+    \          \\\"compound_id\\\": 60,\\n                        \\\"amount\\\":\
+    \ 2,\\n                        \\\"unit\\\": \\\"g\\\",\\n                   \
+    \     \\\"g_l\\\": 20,\\n                        \\\"mmol_l\\\": 100.923,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value is the ADC stock rate,\
+    \ verified in the owner’s stock composition. It is incorrectly exposed as a direct-medium\
+    \ rate in the target. Preserve the separate 100 ml dose; on the provider-declared\
+    \ 100 ml stock basis it delivers 2 g dextrose or 0.3 mg catalase to the source’s\
+    \ explicitly one-liter medium.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n \
+    \   \"topic\": \"Catalase ADC scope\",\n    \"decision\": \"correct\",\n    \"\
+    local\": {\n      \"value\": \"0.003\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"ingredients[16].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The stored value\
+    \ is the ADC stock rate, verified in the owner’s stock composition. It is incorrectly\
+    \ exposed as a direct-medium rate in the target. Preserve the separate 100 ml\
+    \ dose; on the provider-declared 100 ml stock basis it delivers 2 g dextrose or\
+    \ 0.3 mg catalase to the source’s explicitly one-liter medium.\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[2].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.003\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The stored value is the ADC stock rate, verified in the owner’s stock composition.\
+    \ It is incorrectly exposed as a direct-medium rate in the target. Preserve the\
+    \ separate 100 ml dose; on the provider-declared 100 ml stock basis it delivers\
+    \ 2 g dextrose or 0.3 mg catalase to the source’s explicitly one-liter medium.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Catalase\\\",\\n              \
+    \          \\\"compound_id\\\": 270,\\n                        \\\"attribute\\\
+    \": \\\"Beef\\\",\\n                        \\\"amount\\\": 0.3,\\n          \
+    \              \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\"\
+    : 0.003,\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored value is the ADC stock rate,\
+    \ verified in the owner’s stock composition. It is incorrectly exposed as a direct-medium\
+    \ rate in the target. Preserve the separate 100 ml dose; on the provider-declared\
+    \ 100 ml stock basis it delivers 2 g dextrose or 0.3 mg catalase to the source’s\
+    \ explicitly one-liter medium.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n \
+    \   \"topic\": \"Main water\",\n    \"decision\": \"add\",\n    \"local\": {\n\
+    \      \"value\": \"0.9\",\n      \"unit\": \"L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.9\",\n          \"unit\": \"L\"\n        },\n  \
+    \      \"decision\": \"verified\",\n        \"rationale\": \"The owner correctly\
+    \ represents the explicit preparation input as a volume, with attached historical\
+    \ prose evidence. Add the structured input to the generated recipe through reconciliation,\
+    \ while retaining its already-present preparation text. Main water follows 900\
+    \ ml prose, not the conflicting API 1000 ml table; no density conversion is used.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'indicated under FORMULAE'; occurrence 1\",\n        \"exact_source_quote\"\
+    : \"indicated under FORMULAE-Solution (and on the package label) in 900 ml distilled\
+    \ and\",\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"The owner correctly represents the explicit\
+    \ preparation input as a volume, with attached historical prose evidence. Add\
+    \ the structured input to the generated recipe through reconciliation, while retaining\
+    \ its already-present preparation text. Main water follows 900 ml prose, not the\
+    \ conflicting API 1000 ml table; no density conversion is used.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q19\",\n    \"topic\": \"Glycerol input\",\n    \"decision\"\
+    : \"add\",\n    \"local\": {\n      \"value\": \"0.002\",\n      \"unit\": \"\
+    L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"The owner correctly\
+    \ represents the explicit preparation input as a volume, with attached historical\
+    \ prose evidence. Add the structured input to the generated recipe through reconciliation,\
+    \ while retaining its already-present preparation text. Main water follows 900\
+    \ ml prose, not the conflicting API 1000 ml table; no density conversion is used.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'deionized water containing'; occurrence 1\",\n        \"exact_source_quote\"\
+    : \"deionized water containing 2 ml glycerol and heat to boiling to dissolve completely.\"\
+    ,\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"The owner correctly represents the explicit\
+    \ preparation input as a volume, with attached historical prose evidence. Add\
+    \ the structured input to the generated recipe through reconciliation, while retaining\
+    \ its already-present preparation text. Main water follows 900 ml prose, not the\
+    \ conflicting API 1000 ml table; no density conversion is used.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q20\",\n    \"topic\": \"ADC receiving dose\",\n    \"\
+    decision\": \"add\",\n    \"local\": null,\n    \"layer_decisions\": [\n     \
+    \ {\n        \"input\": \"target\",\n        \"field_path\": \"solutions[0].concentration\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"The target has no separate ADC stock.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\",\n     \
+    \   \"field_path\": \"solutions[0].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.1\",\n          \"unit\": \"L\"\n        },\n       \
+    \ \"decision\": \"verified\",\n        \"rationale\": \"The owner already retains\
+    \ the supported 0.1 L dose with attached evidence.\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadive857Historical\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\",\n  \
+    \      \"source_locator\": \"$.data.solutions[0].recipe[13]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 14,\\n                 \
+    \       \\\"solution\\\": \\\"ADC Enrichment\\\",\\n                        \\\
+    \"solution_id\\\": 1750,\\n                        \\\"amount\\\": 100,\\n   \
+    \                     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'Aseptically\
+    \ add'; occurrence 1\",\n        \"exact_source_quote\": \"Aseptically add 100\
+    \ ml of the appropriate ADC Enrichment and mix throughly.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain 100 ml = 0.1 L ADC after cooling;\
+    \ this dose is separate from its constituent rates and stock water.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q21\",\n    \"topic\": \"Bovine albumin fraction\
+    \ V\",\n    \"decision\": \"add\",\n    \"local\": {\n      \"value\": \"50\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[0].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"50\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"verified\",\n        \"rationale\": \"The\
+    \ owner has authenticated evidence for this stock-stage quantity. Restore its\
+    \ representation in the generated output; no missing or novel owner repair is\
+    \ required.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Bovine albumin\\\",\\n        \
+    \                \\\"compound_id\\\": 1681,\\n                        \\\"condition\\\
+    \": \\\"\\\",\\n                        \\\"attribute\\\": \\\"albumin fraction\
+    \ V\\\",\\n                        \\\"amount\\\": 5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 50,\\n   \
+    \                     \\\"optional\\\": 0\\n                    }\",\n       \
+    \ \"snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      }\n    ],\n    \"rationale\": \"The owner has authenticated evidence for\
+    \ this stock-stage quantity. Restore its representation in the generated output;\
+    \ no missing or novel owner repair is required.\",\n    \"arithmetic\": \"For\
+    \ albumin, 5 g in the provider-declared 0.1 L stock corresponds to 50 g/L; for\
+    \ water, 100 ml = 0.1 L input. The primary water listing alone does not establish\
+    \ measured final stock volume.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n \
+    \   \"topic\": \"ADC water\",\n    \"decision\": \"add\",\n    \"local\": {\n\
+    \      \"value\": \"0.1\",\n      \"unit\": \"L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition[3].concentration\",\n  \
+    \      \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"L\"\
+    \n        },\n        \"decision\": \"verified\",\n        \"rationale\": \"The\
+    \ owner has authenticated evidence for this stock-stage quantity. Restore its\
+    \ representation in the generated output; no missing or novel owner repair is\
+    \ required.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive857Historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/857\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 100,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The owner has authenticated evidence for this\
+    \ stock-stage quantity. Restore its representation in the generated output; no\
+    \ missing or novel owner repair is required.\",\n    \"arithmetic\": \"For albumin,\
+    \ 5 g in the provider-declared 0.1 L stock corresponds to 50 g/L; for water, 100\
+    \ ml = 0.1 L input. The primary water listing alone does not establish measured\
+    \ final stock volume.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"topic\"\
+    : \"Commercial-base powder and final-volume declaration\",\n    \"decision\":\
+    \ \"evidence_only\",\n    \"local\": \"Solution g/liter (final solution) 4.7 g/l.\
+    \ Final pH at 25°C 6.6 ± 0.2.\",\n    \"layer_decisions\": [\n      {\n      \
+    \  \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Solution g/liter (final solution) 4.7 g/l. Final pH at\
+    \ 25°C 6.6 ± 0.2.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Existing target description retained; attach evidence.\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Solution g/liter (final solution) 4.7 g/l. Final pH at 25°C 6.6 ± 0.2.\",\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Existing owner\
+    \ context has exact historical excerpt evidence.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n        \"\
+    source_locator\": \"Extracted primary text, literal line containing 'Solution\
+    \ g/liter'; occurrence 1\",\n        \"exact_source_quote\": \"Solution g/liter\
+    \ (final solution) 4.7 g/l. Final pH at  25C 6.6 ± 0.2.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'To\
+    \ prepare one liter'; occurrence 1\",\n        \"exact_source_quote\": \"To prepare\
+    \ one liter of final medium, suspend the amount of dehydrated powder\",\n    \
+    \    \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"The 12 masses sum to 4.694 g; 4.7 g/l\
+    \ is the printed powder formulation. Preserve it as the same base, with explicit\
+    \ source one-liter final medium, not a thirteenth powder addition.\",\n    \"\
+    arithmetic\": \"0.5+1+2.5+0.1+0.05+0.0005+0.001+0.001+0.5+0.04+0.001+0.0005 =\
+    \ 4.694 g; displayed 4.7 g is rounded.\"\n  },\n  {\n    \"quantity_id\": \"q24\"\
+    ,\n    \"topic\": \"pH and its measurement temperature\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": {\n      \"min\": 6.4,\n      \"max\": 6.8\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\"\
+    : 6.4,\n          \"max\": 6.8\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"Existing 6.4–6.8 range agrees; target lacks attached\
+    \ evidence.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.4,\n          \"max\": 6.8\n        },\n        \"decision\": \"verified\"\
+    ,\n        \"rationale\": \"Owner’s root evidence includes the exact pH excerpt.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Final pH'; occurrence 1\",\n        \"exact_source_quote\": \"Solution g/liter\
+    \ (final solution) 4.7 g/l. Final pH at  25C 6.6 ± 0.2.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain 6.6 ± 0.2, equivalent to 6.4–6.8,\
+    \ at 25 C. Do not recast 25 C as incubation temperature.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q25\",\n    \"topic\": \"Boiling, autoclave alternatives and\
+    \ cooling\",\n    \"decision\": \"evidence_only\",\n    \"local\": \"To prepare\
+    \ one liter of final medium, suspend the amount of dehydrated powder indicated\
+    \ under FORMULAE-Solution (and on the package label) in 900 ml distilled and deionized\
+    \ water containing 2 ml glycerol and heat to boiling to dissolve completely. Sterilize\
+    \ in the autoclave for 10 or 15 min at 15 Ibs pressure (121°C), per label copy.\
+    \ Cool to 50-55°C.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps[1].description\",\n\
+    \        \"stored\": \"To prepare one liter of final medium, suspend the amount\
+    \ of dehydrated powder indicated under FORMULAE-Solution (and on the package label)\
+    \ in 900 ml distilled and deionized water containing 2 ml glycerol and heat to\
+    \ boiling to dissolve completely. Sterilize in the autoclave for 10 or 15 min\
+    \ at 15 Ibs pressure (121°C), per label copy. Cool to 50-55°C.\",\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"Existing full instruction\
+    \ retained.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"To prepare one liter of final medium, suspend the amount of dehydrated powder\
+    \ indicated under FORMULAE-Solution (and on the package label) in 900 ml distilled\
+    \ and deionized water containing 2 ml glycerol and heat to boiling to dissolve\
+    \ completely. Sterilize in the autoclave for 10 or 15 min at 15 Ibs pressure (121°C),\
+    \ per label copy. Cool to 50-55°C.\",\n        \"decision\": \"verified\",\n \
+    \       \"rationale\": \"Exact owner historical excerpt authenticates the existing\
+    \ step.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz857\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'deionized water containing'; occurrence 1\",\n        \"exact_source_quote\"\
+    : \"deionized water containing 2 ml glycerol and heat to boiling to dissolve completely.\"\
+    ,\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'Sterilize\
+    \ in the autoclave'; occurrence 1\",\n        \"exact_source_quote\": \"Sterilize\
+    \ in the autoclave for 10 or 15 min at 15 Ibs pressure (121C), per label copy.\"\
+    ,\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'Cool\
+    \ to'; occurrence 1\",\n        \"exact_source_quote\": \"Cool to 50-55C.\",\n\
+    \        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Boil to dissolve; autoclave for 10 OR\
+    \ 15 minutes at printed 15 Ibs pressure (121 C), per label; cool to 50–55 C before\
+    \ ADC. Do not invent pressure gauge/absolute basis, a boiling duration, or an\
+    \ ADC autoclave cycle.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"topic\"\
+    : \"Aseptic ADC addition\",\n    \"decision\": \"evidence_only\",\n    \"local\"\
+    : \"Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.\"\
+    ,\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"Already\
+    \ present in target.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.\"\
+    ,\n        \"decision\": \"verified\",\n        \"rationale\": \"Already present\
+    \ with authenticating root evidence.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n        \"\
+    source_locator\": \"Extracted primary text, literal line containing 'Aseptically\
+    \ add'; occurrence 1\",\n        \"exact_source_quote\": \"Aseptically add 100\
+    \ ml of the appropriate ADC Enrichment and mix throughly.\",\n        \"snapshot_sha256\"\
+    : \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\",\n    \
+    \    \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the late 100 ml ADC addition; this\
+    \ is not OADC and its catalase recipe is not interchangeable with other Middlebrook\
+    \ preparations.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"topic\": \"\
+    Internal API water discrepancy\",\n    \"decision\": \"conflict\",\n    \"local\"\
+    : null,\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"mediadive857Historical\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/857\",\n        \"source_locator\": \"$.data.solutions[0].recipe[12]\"\
+    ,\n        \"exact_source_quote\": \"{\\n                        \\\"recipe_order\\\
+    \": 13,\\n                        \\\"compound\\\": \\\"Distilled water\\\",\\\
+    n                        \\\"compound_id\\\": 4,\\n                        \\\"\
+    amount\\\": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"27b1043328621dbccc0777f9e0f5db26c4ae7b354b3271d2c99e748d8a46527b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz857\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf\",\n    \
+    \    \"source_locator\": \"Extracted primary text, literal line containing 'indicated\
+    \ under FORMULAE'; occurrence 1\",\n        \"exact_source_quote\": \"indicated\
+    \ under FORMULAE-Solution (and on the package label) in 900 ml distilled and\"\
+    ,\n        \"snapshot_sha256\": \"5f78d2aeb0b12de7cef7d49c3e7096f78f784f70c8258ed93195728beba667eb\"\
+    ,\n        \"parsed_text_sha256\": \"1259d4f33f51af8467caf22f7c75b23cafdb2f5a59bff9a5e426ff0b40460312\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the historical table’s 1000 ml\
+    \ water as a conflicting source assertion. Current owner preparation follows 900\
+    \ ml plus 2 ml glycerol and explicit one-liter final medium. Do not silently harmonize\
+    \ raw sources or replace the explicit denominator with summed volumes.\"\n  }\n\
+    ]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.002016.false-lb-expansion
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The generated Middlebrook recipe contains a false LB expansion
+  description: Tryptone 10 g/L, yeast extract 5 g/L and NaCl 10 g/L are unsupported
+    additions and displace the albumin formulation context. The maintained owner already
+    withdraws them and retains the old LB URL only as superseded history.
+  target_ids:
+  - CultureMech:002016
+  field_paths:
+  - ingredients[12]
+  - ingredients[13]
+  - ingredients[14]
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - adc
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.002016.stale-adc-topology
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated quantities omit the repaired ADC stock boundary
+  description: Target dextrose 20 g/L and catalase 0.003 g/L are stock-strength rates.
+    The repaired owner already has twelve basal solids, water/glycerol inputs and
+    the separate ADC dose/composition, including bovine albumin fraction V.
+  target_ids:
+  - CultureMech:002016
+  field_paths:
+  - ingredients[15].concentration
+  - ingredients[16].concentration
+  - solutions
+  evidence_ids:
+  - primary
+  - historical-api
+  - auth
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.002016.generated-evidence-lag
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated output omits current source-backed repair evidence
+  description: The target retains older generated history and lacks the owner’s authenticated
+    October 9 repair and its twenty attached evidence objects. Preparation and pH
+    are already present and must not be called missing.
+  target_ids:
+  - CultureMech:002016
+  field_paths:
+  - curation_history
+  - evidence
+  - references
+  evidence_ids:
+  - owner-0
+  - auth
+  - writer-0
+  - history-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconcile and regenerate the generated target from the verified repaired
+    owner, preserving its superseded historical section and exact Middlebrook identity.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002016
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Regenerate the current owner’s stock structure and evidence, preserving
+    provider stock rates, water-table conflict, explicit one-liter main protocol and
+    late enrichment addition. Do not reapply a repair to an already repaired owner.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002016
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve current owner provenance and exact evidence scopes during
+    separately authorized regeneration; verify saved/generated formulation and evidence
+    equality without making the older LB statement current again.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002016
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacto_middlebrook_7h9_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The preserved optional mediadive857api attempt did not return usable content. Historical
+  raw/text recovery and the current official primary suffice for this bounded review;
+  the failed obsolete LB page cannot establish Middlebrook ingredients.
+- The preserved optional mediadive857api_retry attempt did not return usable content.
+  Historical raw/text recovery and the current official primary suffice for this bounded
+  review; the failed obsolete LB page cannot establish Middlebrook ingredients.
+- The preserved optional laboratoryNotesLB attempt did not return usable content.
+  Historical raw/text recovery and the current official primary suffice for this bounded
+  review; the failed obsolete LB page cannot establish Middlebrook ingredients.
+- Generic sodium citrate does not independently establish a specific salt stoichiometry
+  or hydrate. Ferric ammonium citrate is an indefinite mixture; no iron molarity is
+  inferred.
+- Provider mmol/L values are not used to select unstated hydrate or molecular forms.
+  Albumin fraction V and beef catalase qualifiers remain material-specific.
+- This scientific assessment precedes formal review validation and saving; their outcomes
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-039
+- generated-medium

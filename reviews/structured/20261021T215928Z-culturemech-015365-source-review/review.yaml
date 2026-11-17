@@ -1,0 +1,1275 @@
+schema_version: 1.0.0
+review_id: 20261021T215928Z-culturemech-015365-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacto_photobacterium_broth (CultureMech:015365)'
+started_at: '2026-10-21T21:51:54Z'
+finished_at: '2026-10-21T21:59:28Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The primary DSMZ 608 page supports the listed mass numerals and existing
+  pH range but prints an unresolved Mg2SO4 formula where both local layers use MgSO4.
+  Seven maintained-owner amount claims cite an unrecovered historical API response,
+  so their provider-declared g/L basis cannot be authenticated. Preserve the original
+  mass recipe, Bacto qualifiers, solvent input and pH measurement context without
+  guessing sodium glycerol phosphate isomer/hydrate or a measured final volume.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+    sha256: e5dc366e71e378b90734a5bcc7dfd53774167b1555d50804f0b3ea2164abe9c6
+    role: target
+  - path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    sha256: 694a1ad761555ff0ac032ea71f238669466b892e2e588fb681ed5d372bf5f43c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/specialized/bacto_photobacterium_broth.yaml.md
+    sha256: 50633b8a504a92b211296b74efca5732e3dd17e13b8a18681b658c41a93a561f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 390; batch 039 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-eight task batches
+    contain 380 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 383 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015365
+targets:
+- target_id: CultureMech:015365
+  path: data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  label: bacto_photobacterium_broth
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/390/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/390/strict.tsv"
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015365
+- check_id: mediadive608api-source-access
+  name: 'Exact source content access: mediadive608api'
+  required: false
+  status: unavailable
+  summary: The exact current mediadive608api attempt returned 503. The preserved failure
+    is separate from the required historical response authentication.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - mediadive608api-attempt
+- check_id: mediadive608api_retry-source-access
+  name: 'Exact source content access: mediadive608api_retry'
+  required: false
+  status: unavailable
+  summary: The exact current mediadive608api_retry attempt returned 503. The preserved
+    failure is separate from the required historical response authentication.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - mediadive608api_retry-attempt
+- check_id: historical-api-authentication
+  name: Required exact historical MediaDive 608 response authentication
+  required: true
+  status: unavailable
+  summary: Seven asserted owner amount claims cite the October 7 API digest, but that
+    raw response is unrecovered within the documented bounded search. Current primary
+    mass agreement and decoded derivative rows do not authenticate its volume/g_l
+    fields.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - historical-report
+  - search-scope
+  - history-inventory
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:43.017327Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch039/390/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:44.098542Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-039/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch039/390/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:45.330777Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:52:46.133907Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: supports
+  summary: './data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml:1:id:
+    CultureMech:015365
+
+    ./data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml:1:id: CultureMech:015365
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/source-preflight-bound/390/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: supports
+  summary: 9 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 9fa3fd529c758869d3e63a14c25156e3d48177c6935b1795f9a2527294edac35
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/390/grounding-inventory.json
+  locator: Exact current local objects and bound snapshot joins
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Mechanical inventory preserves per-layer values and source hashes; narrative
+    judgments are separately authored.
+  snapshot_sha256: 1312b4052270aaaab08b942a3254065f2304e1b1da0fd2b03e7595c28c8aa62e
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/390/history-inventory.json
+  locator: Exact current local objects and bound snapshot joins
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Mechanical inventory preserves per-layer values and source hashes; narrative
+    judgments are separately authored.
+  snapshot_sha256: dcf9614add195f1d52df8a8c19a54620e0cf317937ee5ea4cbc3e2730b66f3cb
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf
+  locator: Complete primary table and pH sentence
+  accessed_at: '2026-10-21T21:13:30.411187Z'
+  support: supports
+  summary: The page lists nine solute/material masses, 1000 ml water and pH 7.0 ±
+    0.2 at 25 C. The magnesium formula anomaly is literal.
+  quote: Mg2SO4 0.30 g
+  snapshot_sha256: 239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847
+- evidence_id: materials
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf
+  locator: First two table rows
+  accessed_at: '2026-10-21T21:13:30.411187Z'
+  support: supports
+  summary: Both complex materials explicitly carry Bacto qualifiers; no exact catalog/product
+    specification is inferred.
+  quote: Tryptone (Bacto) 5.00 g
+  snapshot_sha256: 239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847
+- evidence_id: glycerophosphate
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf
+  locator: Na-glycerol phosphate row
+  accessed_at: '2026-10-21T21:13:30.411187Z'
+  support: supports
+  summary: The 23.50 g material is not specified by positional isomer, stereochemistry,
+    sodium stoichiometry or hydrate.
+  quote: Na-glycerol phosphate 23.50 g
+  snapshot_sha256: 239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847
+- evidence_id: mediadive608api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/608
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:13:29.870919Z'
+  support: context_only
+  summary: The exact current mediadive608api attempt returned 503. The preserved failure
+    is separate from the required historical response authentication.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive608api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/608
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T21:14:39.400713Z'
+  support: context_only
+  summary: The exact current mediadive608api_retry attempt returned 503. The preserved
+    failure is separate from the required historical response authentication.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi30812
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30812
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T21:13:31.293776Z'
+  support: supports
+  summary: CHEBI:30812 resolves to iron dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34f361f94dd5dc9a49f83d3d1a208fe9a93fa1282d80fe7561daec378db9dece
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi3311
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.903210Z'
+  support: supports
+  summary: CHEBI:3311 resolves to calcium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5413cec912ec253d62ba7a3f4ce7f0a9312ba8d1cb756713003f77a6e849d4b2
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30812": [{"label": "FeCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:30812", "preferred_term": "FeCl2", "ontology_id": "CHEBI:30812",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type": "preferred_term",
+    "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id":
+    "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3311":
+    [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311",
+    "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACTO_PHOTOBACTERIUM_BROTH.yaml; data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: historical-report
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/specialized/bacto_photobacterium_broth.yaml.md
+  locator: Complete historical report, all eleven decision rows and header
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Seven owner evidence snippets match decoded derivative report rows; the
+    original response SHA e3643cf3455361cdf1c194697c325ff06b1e373f6b150c11bcb91848bb9d11c0
+    was not recovered in the documented bounded search. Matching a local report does
+    not authenticate that response.
+  snapshot_sha256: 50633b8a504a92b211296b74efca5732e3dd17e13b8a18681b658c41a93a561f
+- evidence_id: search-scope
+  kind: record_content
+  reference: /private/tmp/culturemech-review-source-preflight-batch039-tail/historical-raw-search.json
+  locator: Ignored-inclusive owned038 reports/scripts exact-hash references and recursive
+    UTF-8/JSON strings in 42 matching JSON parents
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Ignored-inclusive exact-hash reference search in owned038 reports/scripts,
+    recursive raw/JSON-string hashing in 42 matching JSON parents. Exact historical
+    DSM844 and DSM857 API strings and DSM857 extracted PDF text were recovered; original
+    timestamps and representation retained. DSM305/608 were not recovered by that
+    bounded search; no universal absence claim. Current 503 attempts remain separate.
+  snapshot_sha256: 65bc050a0fd98f173e92ed6a21e5c7f3d17cb58fd7a335258d8b619a4532aeb7
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Current MediaDive import restricts direct composition to the primary recipe,
+    omits solvent rows and retains provider g_l when available. Current merge compatibility
+    is conservative and preserves scoped evidence. These implementations are not proof
+    of historical execution or of the unavailable API response; reconcile source assertions
+    before regeneration.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Current MediaDive import restricts direct composition to the primary recipe,
+    omits solvent rows and retains provider g_l when available. Current merge compatibility
+    is conservative and preserves scoped evidence. These implementations are not proof
+    of historical execution or of the unavailable API response; reconcile source assertions
+    before regeneration.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Current MediaDive import restricts direct composition to the primary recipe,
+    omits solvent rows and retains provider g_l when available. Current merge compatibility
+    is conservative and preserves scoped evidence. These implementations are not proof
+    of historical execution or of the unavailable API response; reconcile source assertions
+    before regeneration.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch039/390/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:59:26Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 8e287c7e989601d3254c21cade0a400ad309a6c2209f337a135f2560b5bead4e
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '6 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 6/9 primary
+    and 6/9 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi26710
+  - chebi30812
+  - chebi31206
+  - chebi32599
+  - chebi3311
+  - chebi63036
+  details: 'Instance coverage on a 0–100 percent scale, denominator 9: primary 66.67%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 16 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source identity
+  outcome: supported
+  summary: The single maintained specialized owner and generated target identify DSMZ
+    608. The medium title and generic microbial-cultivation application do not establish
+    a particular Photobacterium strain, growth phenotype or incubation temperature.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: forms
+  area: grounding
+  topic: Magnesium formula discrepancy and unspecified materials
+  outcome: concern
+  summary: Primary Mg2SO4 is anomalous and differs literally from local MgSO4/CHEBI:32599;
+    ontology existence cannot repair a source formula. The historical derivative snippet
+    says MgSO4 but its cited raw response is unavailable. Preserve the discrepancy
+    pending source clarification. FeCl2, NH4Cl, CaCO3, KH2PO4 and NaCl have compatible
+    name/formula correspondence without inferred hydration. Sodium glycerol phosphate
+    remains intentionally unresolved; tryptone and yeast extract are mixtures.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - primary
+  - chebi32599
+  - historical-report
+  - glycerophosphate
+  - grounding-inventory
+- assessment_id: amount-evidence
+  area: evidence
+  topic: Current primary masses versus seven historical rate claims
+  outcome: unknown
+  summary: Both layers share nine stored rates. Seven owner objects cite a historical
+    provider volume of 1000 ml and g_l values, but only their derivative report text
+    is available. Do not mark those claims verified from the current primary water
+    row. The target has no amount evidence. Partial completion records this required
+    historical-authentication gap while retaining the successful original diagnostics.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - primary
+  - historical-report
+  - search-scope
+  - history-inventory
+- assessment_id: preparation
+  area: completeness
+  topic: Solvent, pH and source limits
+  outcome: concern
+  summary: Both target and owner already retain pH 6.8–7.2 and the instruction to
+    adjust to 7.0 ± 0.2 at 25 C. The 25 C value qualifies pH measurement, not growth.
+    The 1000 ml water input is absent from both recipe representations. The source
+    states no measured final volume, adjustment reagent/dose or sterilization conditions;
+    do not invent them.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: classification
+  area: consistency
+  topic: Complex liquid and material qualifiers
+  outcome: supported
+  summary: Complex/undefined liquid is consistent with tryptone and yeast extract.
+    Specialized is the maintained organizational category, not a taxonomic growth
+    claim. Preserve Bacto source qualifiers without assigning an unverified catalog
+    number.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - record
+  - materials
+- assessment_id: history-scope
+  area: provenance
+  topic: Retained history and generation lag
+  outcome: concern
+  summary: The owner’s October 7 event adds seven amount-evidence objects without
+    changing stored rates; the generated target predates that event. The report withheld
+    the Bacto attributes and source-only solvent/procedure rows. Preserve all historical
+    statements with their authentication limit, append any later clarification and
+    reconcile evidence during regeneration after resolving source chemistry.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - history-inventory
+  - historical-report
+  - writer-0
+  - writer-1
+  - writer-2
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 12 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:015365
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"Tryptone\",\n \
+    \   \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"5\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n  \
+    \      \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The current primary mass numeral agrees, but its 1000 ml water is an input,\
+    \ not a measured final-volume statement; do not independently certify the stored\
+    \ G_PER_L from this row. No attached amount evidence exists; preserve the explicit\
+    \ Bacto material qualifier. \"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. No attached amount evidence exists; preserve the explicit Bacto material\
+    \ qualifier. \"\n      }\n    ],\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"dsmz608\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Tryptone (Bacto)'; occurrence 1\",\n        \"exact_source_quote\": \"Tryptone\
+    \ (Bacto) 5.00 g\",\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. No attached amount\
+    \ evidence exists; preserve the explicit Bacto material qualifier. \"\n  },\n\
+    \  {\n    \"quantity_id\": \"q2\",\n    \"topic\": \"Yeast extract\",\n    \"\
+    decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"2.5\",\n  \
+    \    \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n    \
+    \    \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The current primary mass numeral agrees, but its 1000 ml water is an input,\
+    \ not a measured final-volume statement; do not independently certify the stored\
+    \ G_PER_L from this row. No attached amount evidence exists; preserve the explicit\
+    \ Bacto material qualifier. \"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. No attached amount evidence exists; preserve the explicit Bacto material\
+    \ qualifier. \"\n      }\n    ],\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"dsmz608\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Yeast extract (Bacto)'; occurrence 1\",\n        \"exact_source_quote\": \"\
+    Yeast extract (Bacto) 2.50 g\",\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. No attached amount\
+    \ evidence exists; preserve the explicit Bacto material qualifier. \"\n  },\n\
+    \  {\n    \"quantity_id\": \"q3\",\n    \"topic\": \"NH4Cl\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local\": {\n      \"value\": \"0.3\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[2].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The current primary mass numeral agrees, but its 1000 ml water is an input, not\
+    \ a measured final-volume statement; do not independently certify the stored G_PER_L\
+    \ from this row. The owner’s existing provider-rate claim has a derivative match\
+    \ only; its historical raw volume/g_l fields remain unauthenticated. \"\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. \"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz608\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'NH4Cl'; occurrence 1\",\n        \"exact_source_quote\": \"NH4Cl 0.30 g\",\n\
+    \        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. \"\n  },\n  {\n    \"quantity_id\": \"q4\",\n\
+    \    \"topic\": \"MgSO4\",\n    \"decision\": \"conflict\",\n    \"local\": {\n\
+    \      \"value\": \"0.3\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"conflict\",\n        \"rationale\"\
+    : \"The current primary mass numeral agrees, but its 1000 ml water is an input,\
+    \ not a measured final-volume statement; do not independently certify the stored\
+    \ G_PER_L from this row. The owner’s existing provider-rate claim has a derivative\
+    \ match only; its historical raw volume/g_l fields remain unauthenticated. The\
+    \ primary literally prints Mg2SO4, unlike the local MgSO4 and historical derivative\
+    \ label. Preserve that source discrepancy without guessing a correction.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"rationale\": \"The current primary\
+    \ mass numeral agrees, but its 1000 ml water is an input, not a measured final-volume\
+    \ statement; do not independently certify the stored G_PER_L from this row. The\
+    \ owner’s existing provider-rate claim has a derivative match only; its historical\
+    \ raw volume/g_l fields remain unauthenticated. The primary literally prints Mg2SO4,\
+    \ unlike the local MgSO4 and historical derivative label. Preserve that source\
+    \ discrepancy without guessing a correction.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz608\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\",\n        \"\
+    source_locator\": \"Extracted primary text, literal line containing 'Mg2SO4';\
+    \ occurrence 1\",\n        \"exact_source_quote\": \"Mg2SO4 0.30 g\",\n      \
+    \  \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. The primary literally prints Mg2SO4, unlike the\
+    \ local MgSO4 and historical derivative label. Preserve that source discrepancy\
+    \ without guessing a correction.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n\
+    \    \"topic\": \"FeCl2\",\n    \"decision\": \"unsupported\",\n    \"local\"\
+    : {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The current primary mass numeral agrees, but its 1000 ml water\
+    \ is an input, not a measured final-volume statement; do not independently certify\
+    \ the stored G_PER_L from this row. The owner’s existing provider-rate claim has\
+    \ a derivative match only; its historical raw volume/g_l fields remain unauthenticated.\
+    \ \"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. \"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz608\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'FeCl2'; occurrence 1\",\n        \"exact_source_quote\": \"FeCl2 0.01 g\",\n\
+    \        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. \"\n  },\n  {\n    \"quantity_id\": \"q6\",\n\
+    \    \"topic\": \"CaCO3\",\n    \"decision\": \"unsupported\",\n    \"local\"\
+    : {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The current primary mass numeral agrees, but its 1000 ml water is an input,\
+    \ not a measured final-volume statement; do not independently certify the stored\
+    \ G_PER_L from this row. The owner’s existing provider-rate claim has a derivative\
+    \ match only; its historical raw volume/g_l fields remain unauthenticated. \"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. \"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz608\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'CaCO3'; occurrence 1\",\n        \"exact_source_quote\": \"CaCO3 1.00 g\",\n\
+    \        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. \"\n  },\n  {\n    \"quantity_id\": \"q7\",\n\
+    \    \"topic\": \"KH2PO4\",\n    \"decision\": \"unsupported\",\n    \"local\"\
+    : {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The current primary mass numeral agrees, but its 1000 ml water is an input,\
+    \ not a measured final-volume statement; do not independently certify the stored\
+    \ G_PER_L from this row. The owner’s existing provider-rate claim has a derivative\
+    \ match only; its historical raw volume/g_l fields remain unauthenticated. \"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. \"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz608\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'KH2PO4'; occurrence 1\",\n        \"exact_source_quote\": \"KH2PO4 3.00 g\"\
+    ,\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. \"\n  },\n  {\n    \"quantity_id\": \"q8\",\n\
+    \    \"topic\": \"Na-glycerol phosphate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local\": {\n      \"value\": \"23.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"23.5\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. Do not infer sodium\
+    \ stoichiometry, positional/stereochemical isomer or hydrate for sodium glycerol\
+    \ phosphate.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"23.5\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. Do not infer sodium\
+    \ stoichiometry, positional/stereochemical isomer or hydrate for sodium glycerol\
+    \ phosphate.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"dsmz608\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Na-glycerol phosphate'; occurrence 1\",\n        \"exact_source_quote\": \"\
+    Na-glycerol phosphate 23.50 g\",\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. Do not infer sodium stoichiometry, positional/stereochemical\
+    \ isomer or hydrate for sodium glycerol phosphate.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q9\",\n    \"topic\": \"NaCl\",\n    \"decision\": \"unsupported\",\n    \"\
+    local\": {\n      \"value\": \"30\",\n      \"unit\": \"G_PER_L\"\n    },\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"unsupported\",\n        \"rationale\": \"The current primary\
+    \ mass numeral agrees, but its 1000 ml water is an input, not a measured final-volume\
+    \ statement; do not independently certify the stored G_PER_L from this row. The\
+    \ owner’s existing provider-rate claim has a derivative match only; its historical\
+    \ raw volume/g_l fields remain unauthenticated. \"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The current\
+    \ primary mass numeral agrees, but its 1000 ml water is an input, not a measured\
+    \ final-volume statement; do not independently certify the stored G_PER_L from\
+    \ this row. The owner’s existing provider-rate claim has a derivative match only;\
+    \ its historical raw volume/g_l fields remain unauthenticated. \"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz608\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'NaCl'; occurrence 1\",\n        \"exact_source_quote\": \"NaCl 30.00 g\",\n\
+    \        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The current primary mass numeral agrees,\
+    \ but its 1000 ml water is an input, not a measured final-volume statement; do\
+    \ not independently certify the stored G_PER_L from this row. The owner’s existing\
+    \ provider-rate claim has a derivative match only; its historical raw volume/g_l\
+    \ fields remain unauthenticated. \"\n  },\n  {\n    \"quantity_id\": \"q10\",\n\
+    \    \"topic\": \"Water input\",\n    \"decision\": \"add\",\n    \"local\": null,\n\
+    \    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz608\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Distilled water'; occurrence 1\",\n        \"exact_source_quote\": \"Distilled\
+    \ water 1000.00 ml\",\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"Represent 1000 ml = 1 L distilled-water\
+    \ input separately. It does not prove measured final volume or independently authenticate\
+    \ the historical provider denominator.\",\n    \"proposed_source_scoped_value\"\
+    : {\n      \"amount\": \"1000.00\",\n      \"unit\": \"ml\",\n      \"scope\"\
+    : \"water input\"\n    }\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"topic\"\
+    : \"pH range and measurement temperature\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"min\": 6.8,\n      \"max\": 7.2\n    },\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ph_range\"\
+    ,\n        \"stored\": {\n          \"min\": 6.8,\n          \"max\": 7.2\n  \
+    \      },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"\
+    Existing pH range agrees with the primary.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\",\n    \
+    \    \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\":\
+    \ 6.8,\n          \"max\": 7.2\n        },\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"Existing owner range agrees but has no attached pH\
+    \ evidence.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz608\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Adjust pH'; occurrence 1\",\n        \"exact_source_quote\": \"Adjust pH to\
+    \ 7.0 ± 0.2 (at 25C).\",\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"7.0 ± 0.2 gives the existing 6.8–7.2 range.\
+    \ Retain 25 C as the pH measurement temperature, not growth; no adjustment reagent\
+    \ or amount is supplied.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"topic\"\
+    : \"Retained pH preparation\",\n    \"decision\": \"evidence_only\",\n    \"local\"\
+    : \"Adjust pH to 7.0 ± 0.2 (at 25°C).\",\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Adjust pH to 7.0 ± 0.2 (at 25°C).\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"Already present; attach source\
+    \ evidence.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.0 ± 0.2 (at 25°C).\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"Already present; attach source evidence.\"\n     \
+    \ }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz608\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium608.pdf\"\
+    ,\n        \"source_locator\": \"Extracted primary text, literal line containing\
+    \ 'Adjust pH'; occurrence 1\",\n        \"exact_source_quote\": \"Adjust pH to\
+    \ 7.0 ± 0.2 (at 25C).\",\n        \"snapshot_sha256\": \"239fcc2b0802a1e6d050ef41c3506baf878c59a8408ad0ce2ea6780c8b477847\"\
+    ,\n        \"parsed_text_sha256\": \"17a1b0194f2bcb0fcab4dedd04e52fb193b19d5f2db54bb7be690985d7827774\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing preparation is supported.\
+    \ Do not call it missing or add an inferred autoclave cycle; the primary provides\
+    \ no sterilization or growth duration.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.015365.magnesium-source-conflict
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The primary magnesium formula differs from the local ingredient
+  description: DSMZ 608 prints Mg2SO4, while both local layers and the historical
+    derivative snippet say MgSO4. The cited historical raw is not recovered, and a
+    valid magnesium sulfate identifier cannot settle the anomaly.
+  target_ids:
+  - CultureMech:015365
+  field_paths:
+  - ingredients[3].preferred_term
+  - ingredients[3].term
+  - ingredients[3].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi32599
+  - historical-report
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.015365.historical-rate-authentication
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Seven historical rate claims lack recovered raw authentication
+  description: The owner cites seven provider g_l claims and a 1000 ml volume in an
+    unrecovered October 7 response. Matching decoded local report excerpts and present
+    primary mass numerals is insufficient to certify those historical fields.
+  target_ids:
+  - CultureMech:015365
+  field_paths:
+  - ingredients[2].evidence
+  - ingredients[3].evidence
+  - ingredients[4].evidence
+  - ingredients[5].evidence
+  - ingredients[6].evidence
+  - ingredients[7].evidence
+  - ingredients[8].evidence
+  evidence_ids:
+  - historical-report
+  - search-scope
+  - history-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.015365.source-context-gaps
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Water and Bacto material qualifiers are absent
+  description: Both layers omit the 1000 ml distilled-water input and Bacto qualifiers
+    for tryptone/yeast extract, although the primary supplies them. The retained pH/preparation
+    is already present.
+  target_ids:
+  - CultureMech:015365
+  field_paths:
+  - ingredients[0]
+  - ingredients[1]
+  - ingredients
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - materials
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Retain both literal source assertions and resolve the intended magnesium
+    material with authenticated source evidence before changing the name/formula or
+    certifying its rate.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015365
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover and authenticate the exact cited response or append an explicit
+    provenance limitation; retain original evidence/history and keep provider-reported
+    rates distinct from present primary mass inputs.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015365
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the literal Bacto qualifiers and water input in the maintained
+    owner with scoped source evidence, leaving unspecified final volume, supplier
+    catalog, glycerophosphate form and sterilization explicit; regenerate afterward.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015365
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bacto_photobacterium_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact current mediadive608api attempt returned 503. The preserved failure is
+  separate from the required historical response authentication.
+- The exact current mediadive608api_retry attempt returned 503. The preserved failure
+  is separate from the required historical response authentication.
+- Completion is partial because exact authentication of seven asserted historical
+  API amount claims remains unavailable within the documented ignored-inclusive candidate
+  scope; no universal raw absence is claimed.
+- The current primary magnesium formula anomaly is unresolved, not silently corrected.
+  No sodium glycerol phosphate isomer, hydrate, sodium count or product is inferred.
+- This scientific assessment precedes formal review validation and saving; their outcomes
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-039
+- generated-medium
