@@ -1,0 +1,1296 @@
+schema_version: 1.0.0
+review_id: 20261020T065911Z-culturemech-002907-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_2_sme_medium (CultureMech:002907)'
+started_at: '2026-10-20T06:55:13Z'
+finished_at: '2026-10-20T06:59:11Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The target correctly resolves to JCM 559 and all fifteen listed mass concentrations
+  match the source/provider normalization. Source pH and detailed preparation are
+  retained. The sulfur ingredient loses the powder form and uses an atomic sulfur
+  term; source water/evidence context is incomplete. Scientific completion is partial
+  because historical MIM identifier 000232 cannot be verified.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+    sha256: 39ece69227e13999621e7e18dc0521f311529ee4fc61d2342e9b59c670a503a3
+    role: target
+  - path: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+    sha256: 2639da52280c260bd4fc222f6c7ae8f383eeffb9ac34d3cbfac87015f2e5e5cb
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 39 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 004 selects ordinals 31-40 after three
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002907
+targets:
+- target_id: CultureMech:002907
+  path: data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  label: 1_2_sme_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_2_SME_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch004/039/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-004/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch004/039/strict.tsv"
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002907
+- check_id: legacy-mim-identity
+  name: Historical MIM ingredient identity
+  required: true
+  status: unavailable
+  summary: MediaIngredientMech:000232 cannot be verified against the available current
+    registry; the required historical mapping was not available after ignored-inclusive
+    local discovery.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - legacy-search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T06:59:10Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T06:59:10Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:55:14.557425Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_2_SME_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch004/039/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:55:15.663347Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-004/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch004/039/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:55:17.385357Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:55:18.217240Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-20T06:59:10Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_2_SME_MEDIUM.yaml:1:id: CultureMech:002907
+
+    ./data/normalized_yaml/bacterial/1_2_sme_medium.yaml:1:id: CultureMech:002907
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: jcm
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=559
+  locator: Complete composition and preparation; recipe-specific instruction supersedes
+    page default
+  accessed_at: '2026-10-20T06:54:57.006980Z'
+  support: supports
+  summary: JCM 559 lists fifteen solutes plus water and a complete recipe-specific
+    preparation paragraph. The sulfur entry explicitly specifies powder, and the sulfide
+    is introduced through a percentage solution.
+  quote: Sulfur (powder)
+  snapshot_sha256: 6bc5b995749e7c1a169ed45d2200d3f82d1b6ce7462a938672623e4923258fbe
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J559
+  locator: data.medium and complete data.solutions[0]
+  accessed_at: '2026-10-20T06:54:57.007408Z'
+  support: supports
+  summary: J559 resolves to JCM 559; main solution 4381 gives volume 1000 mL, fifteen
+    g_l values and the same preparation. The sulfur powder attribute is explicit.
+  snapshot_sha256: b207249424f3321cbac607a98d97e22ba3599fd8596e47416e4b537e43a21e50
+- evidence_id: bacmedia
+  kind: database
+  reference: https://bacmedia.dsmz.de/pdf/J559
+  locator: Page 1, header, composition and preparation
+  accessed_at: '2026-10-20T06:54:57.007550Z'
+  support: supports
+  summary: The rendering confirms source identity, volume 1000 mL, pH and all fifteen
+    source masses including milligram entries.
+  quote: 'Final volume: 1000 ml'
+  snapshot_sha256: b65bdb4c644c5bbf4deb2a31e38dcaa06607916392a9fee7fedadfee90a13e23
+- evidence_id: quantities
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_SME_MEDIUM.yaml
+  locator: All fifteen target concentrations compared individually with exact API
+    rows
+  accessed_at: '2026-10-20T06:56:05.734863Z'
+  support: supports
+  summary: '[{"field": "ingredients[0].concentration", "ingredient": "NaCl", "target_value":
+    "13.85", "api_g_l": 13.85, "source_amount": 13.85, "source_unit": "g", "attribute":
+    null}, {"field": "ingredients[1].concentration", "ingredient": "MgSO4 x 7 H2O",
+    "target_value": "3.5", "api_g_l": 3.5, "source_amount": 3.5, "source_unit": "g",
+    "attribute": null}, {"field": "ingredients[2].concentration", "ingredient": "MgCl2
+    x 6 H2O", "target_value": "2.75", "api_g_l": 2.75, "source_amount": 2.75, "source_unit":
+    "g", "attribute": null}, {"field": "ingredients[3].concentration", "ingredient":
+    "KH2PO4", "target_value": "0.5", "api_g_l": 0.5, "source_amount": 0.5, "source_unit":
+    "g", "attribute": null}, {"field": "ingredients[4].concentration", "ingredient":
+    "(NH4)2SO4", "target_value": "0.25", "api_g_l": 0.25, "source_amount": 0.25, "source_unit":
+    "g", "attribute": null}, {"field": "ingredients[5].concentration", "ingredient":
+    "KCl", "target_value": "0.33", "api_g_l": 0.33, "source_amount": 0.33, "source_unit":
+    "g", "attribute": null}, {"field": "ingredients[6].concentration", "ingredient":
+    "CaCl2 x 2 H2O", "target_value": "0.38", "api_g_l": 0.38, "source_amount": 0.38,
+    "source_unit": "g", "attribute": null}, {"field": "ingredients[7].concentration",
+    "ingredient": "NaBr", "target_value": "0.05", "api_g_l": 0.05, "source_amount":
+    0.05, "source_unit": "g", "attribute": null}, {"field": "ingredients[8].concentration",
+    "ingredient": "H3BO3", "target_value": "0.015", "api_g_l": 0.015, "source_amount":
+    0.015, "source_unit": "g", "attribute": null}, {"field": "ingredients[9].concentration",
+    "ingredient": "SrCl2 x 6 H2O", "target_value": "0.0075", "api_g_l": 0.0075, "source_amount":
+    7.5, "source_unit": "mg", "attribute": null}, {"field": "ingredients[10].concentration",
+    "ingredient": "KI", "target_value": "5e-05", "api_g_l": 5e-05, "source_amount":
+    0.05, "source_unit": "mg", "attribute": null}, {"field": "ingredients[11].concentration",
+    "ingredient": "NaHCO3", "target_value": "0.16", "api_g_l": 0.16, "source_amount":
+    0.16, "source_unit": "g", "attribute": null}, {"field": "ingredients[12].concentration",
+    "ingredient": "Sulfur", "target_value": "10", "api_g_l": 10, "source_amount":
+    10, "source_unit": "g", "attribute": "powder"}, {"field": "ingredients[13].concentration",
+    "ingredient": "Resazurin", "target_value": "0.001", "api_g_l": 0.001, "source_amount":
+    1, "source_unit": "mg", "attribute": null}, {"field": "ingredients[14].concentration",
+    "ingredient": "Na2S x 9 H2O", "target_value": "0.5", "api_g_l": 0.5, "source_amount":
+    0.5, "source_unit": "g", "attribute": null}]'
+- evidence_id: legacy-search
+  kind: record_content
+  reference: repository checkout
+  locator: Ignored-inclusive exact legacy-ID and registry-file discovery
+  accessed_at: '2026-10-20T06:56:05.734863Z'
+  support: context_only
+  summary: Exact legacy ID MediaIngredientMech:000232 occurs in 154 files. The current
+    pinned index has zero matching rows. Registry-file discovery found the current
+    index and code/schema documentation, not an available historical mapping that
+    resolves this retired key.
+  search_scope: 'Whole checkout: rg --no-ignore --hidden -l exact legacy ID and rg
+    --files --no-ignore --hidden; exact legacy value checked in every packaged index
+    row. External historical nonexistence is not asserted.'
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:54:57.767507Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi26833
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:04.114839Z'
+  support: supports
+  summary: CHEBI:26833 resolves to sulfur atom and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 34952547270a6bcbbfa3a3699082c8d5359e51d0f90518ab9ca5400494a8ae33
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T03:57:34.006322Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:03.674645Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate and is not obsolete. This
+    verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:00.737662Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:02.761234Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi36385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_36385
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:02.785349Z'
+  support: supports
+  summary: CHEBI:36385 resolves to strontium dichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: a81397c907aeb36242c9f0a2aa24979df4b9aad2f624e8991ccd87a4ff9428b5
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:54:59.980253Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63004
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63004
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:01.973244Z'
+  support: supports
+  summary: CHEBI:63004 resolves to sodium bromide and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2665f3a4301ab51b67b814a8694bc906c1a13c9b301c85a4416891d3f9412c90
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:02:35.727546Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi8346
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8346
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:02.892064Z'
+  support: supports
+  summary: CHEBI:8346 resolves to potassium iodide and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 261d4862f5ae3627f515eefe14ca4f27cfed8c87604dbf8b8206b81af884631d
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:01.682554Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:54:59.898295Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:04.324083Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-20T06:59:10Z'
+  support: context_only
+  summary: '{"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label":
+    "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345",
+    "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036":
+    [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63004": [{"label": "NaBr", "match_type": "preferred_term",
+    "identifier": "CHEBI:63004", "preferred_term": "NaBr", "ontology_id": "CHEBI:63004",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:36385": [{"label": "SrCl2 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:36385", "preferred_term": "SrCl2 x 6 H2O", "ontology_id":
+    "CHEBI:36385", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139":
+    [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139",
+    "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26833": [], "CHEBI:8806": [{"label": "Resazurin",
+    "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term":
+    "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id":
+    "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}]}; Unresolved
+    current secondary keys: [''CHEBI:26833'']'
+- evidence_id: elemental-sulfur
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403
+  locator: Exact OLS term and pinned MIM Sulfur preferred-term row
+  accessed_at: '2026-10-20T06:58:42.014230Z'
+  support: supports
+  summary: CHEBI:33403 resolves to nonobsolete elemental sulfur. The packaged index
+    maps Sulfur to CHEBI:33403 and has no row carrying CHEBI:26833. This verifies
+    a material-level curation candidate, not a specific allotrope.
+  snapshot_sha256: b349493be5d8cb371d1e71751510f9205880ab9d0a14f560191e05606c127a60
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Accession, owner and recipe boundaries
+  outcome: supported
+  summary: CultureMech:002907 and its sole normalized owner resolve to JCM J559 /
+    GRMD 559. The target scientific fields reproduce the owner rather than merging
+    a different variant.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm
+  - api
+  details: The API main solution denotes the complete medium. There is no asserted
+    internal solution ID, parent, child, DOI or PMID to resolve. The source text describes
+    a sulfide solution delivery step but does not supply an exact volume or a separate
+    linked stock record.
+- assessment_id: amount-0
+  area: quantity
+  topic: ingredients[0].concentration (NaCl)
+  outcome: supported
+  summary: 'verified: target 13.85 G_PER_L equals provider g_l=13.85 for source 13.85
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration (MgSO4 x 7 H2O)
+  outcome: supported
+  summary: 'verified: target 3.5 G_PER_L equals provider g_l=3.5 for source 3.5 g
+    at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration (MgCl2 x 6 H2O)
+  outcome: supported
+  summary: 'verified: target 2.75 G_PER_L equals provider g_l=2.75 for source 2.75
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration (KH2PO4)
+  outcome: supported
+  summary: 'verified: target 0.5 G_PER_L equals provider g_l=0.5 for source 0.5 g
+    at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-4
+  area: quantity
+  topic: ingredients[4].concentration ((NH4)2SO4)
+  outcome: supported
+  summary: 'verified: target 0.25 G_PER_L equals provider g_l=0.25 for source 0.25
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-5
+  area: quantity
+  topic: ingredients[5].concentration (KCl)
+  outcome: supported
+  summary: 'verified: target 0.33 G_PER_L equals provider g_l=0.33 for source 0.33
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-6
+  area: quantity
+  topic: ingredients[6].concentration (CaCl2 x 2 H2O)
+  outcome: supported
+  summary: 'verified: target 0.38 G_PER_L equals provider g_l=0.38 for source 0.38
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-7
+  area: quantity
+  topic: ingredients[7].concentration (NaBr)
+  outcome: supported
+  summary: 'verified: target 0.05 G_PER_L equals provider g_l=0.05 for source 0.05
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-8
+  area: quantity
+  topic: ingredients[8].concentration (H3BO3)
+  outcome: supported
+  summary: 'verified: target 0.015 G_PER_L equals provider g_l=0.015 for source 0.015
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-9
+  area: quantity
+  topic: ingredients[9].concentration (SrCl2 x 6 H2O)
+  outcome: supported
+  summary: 'verified: target 0.0075 G_PER_L equals provider g_l=0.0075 for source
+    7.5 mg at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-10
+  area: quantity
+  topic: ingredients[10].concentration (KI)
+  outcome: supported
+  summary: 'verified: target 5e-05 G_PER_L equals provider g_l=5e-05 for source 0.05
+    mg at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-11
+  area: quantity
+  topic: ingredients[11].concentration (NaHCO3)
+  outcome: supported
+  summary: 'verified: target 0.16 G_PER_L equals provider g_l=0.16 for source 0.16
+    g at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-12
+  area: quantity
+  topic: ingredients[12].concentration (Sulfur)
+  outcome: supported
+  summary: 'verified: target 10 G_PER_L equals provider g_l=10 for source 10 g at
+    the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-13
+  area: quantity
+  topic: ingredients[13].concentration (Resazurin)
+  outcome: supported
+  summary: 'verified: target 0.001 G_PER_L equals provider g_l=0.001 for source 1
+    mg at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: amount-14
+  area: quantity
+  topic: ingredients[14].concentration (Na2S x 9 H2O)
+  outcome: supported
+  summary: 'verified: target 0.5 G_PER_L equals provider g_l=0.5 for source 0.5 g
+    at the declared 1000 mL recipe volume.'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - quantities
+  - jcm
+  - api
+  - bacmedia
+  details: The primary recipe lists the same mass/form. Milligram entries are converted
+    to grams by division by 1000; no mass-to-molar conversion, extra dilution from
+    the 1/2 name or assumed density is used. Numerical mass agreement does not certify
+    the separate sulfur grounding claim.
+  dimensions:
+  - name: concentration_decision
+    value: verified
+    definition: Exact source mass and explicit provider mass-per-liter normalization
+      agree
+    evidence_ids:
+    - jcm
+    - api
+    - quantities
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: concern
+  summary: '15 primary CHEBI identities resolve with matching labels; 13 of 14 current
+    secondary keys have live pinned-index rows. Unresolved keys: [''CHEBI:26833''].'
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - mim
+  - chebi26710
+  - chebi26833
+  - chebi31795
+  - chebi32139
+  - chebi32588
+  - chebi33118
+  - chebi36385
+  - chebi62946
+  - chebi63004
+  - chebi63036
+  - chebi76209
+  - chebi8346
+  - chebi86158
+  - chebi86345
+  - chebi8806
+  details: 15 direct ingredient instances; primary coverage 15/15 (100.00%), verified
+    secondary coverage 13/15 (86.67%). Percentages use a 0–100 linkage scale, not
+    a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: sulfur
+  area: grounding
+  topic: ingredients[12] supplied substance versus atomic term
+  outcome: concern
+  summary: CHEBI:26833 resolves literally to sulfur atom with formula S; the source
+    ingredient is bulk sulfur powder. The target omits that supplied-form qualifier,
+    and its secondary key repeats the atomic identity.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - chebi26833
+  - mim
+  - elemental-sulfur
+  details: ID existence and label correspondence are positive but do not establish
+    that an atomic entity identifies the source material. Preserve elemental-material
+    and powder context; do not infer a particular crystalline form, allotrope, purity
+    or replacement CHEBI from this source alone.
+- assessment_id: legacy
+  area: grounding
+  topic: Historical KI secondary linkage
+  outcome: unknown
+  summary: MediaIngredientMech:000232 remains unresolved in the available registry.
+    Its KI label and occurrence frequency are not historical identity evidence.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - legacy-search
+  - chebi8346
+  details: Fifteen direct ingredients have valid primary CHEBI references. Thirteen
+    of fourteen current secondary CHEBI keys resolve; the sulfur key is absent from
+    the pinned index; the remaining asserted legacy secondary link is not verified.
+    The required identity check is unavailable, so completion is partial rather than
+    treating schema/term passes as proof.
+- assessment_id: preparation
+  area: consistency
+  topic: pH, gas-stage instructions and sulfide delivery
+  outcome: supported
+  summary: The complete recipe-specific preparation paragraph and pH match the source.
+    Its explicit sterilization condition takes precedence over the collection page
+    default.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - bacmedia
+  details: 'The narrative retains initial versus later gas stages, vessel closure,
+    pressure and the delayed sulfide-addition order. The single AUTOCLAVE action wraps
+    a compound description but does not delete those instructions. The stated sulfide
+    percentage has no explicit percentage basis or dose volume: preserve it as source
+    text, do not calculate an asserted stock volume. LIQUID describes the medium presentation
+    even though an insoluble powder is present; no clear-solution claim is made.'
+- assessment_id: classification
+  area: scope
+  topic: Defined formulation and growth evidence
+  outcome: supported
+  summary: DEFINED classification is consistent with the listed specified chemicals
+    and the provider complex_medium=no annotation. No undefined nutrient extract is
+    listed.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - api
+  - jcm
+  details: No strain, taxon, growth outcome, nutritional-role ontology, gene or transcriptomic
+    claim is asserted. Bacterial filing and generic cultivation use do not prove taxonomic
+    exclusivity or experimental growth. No optional incubation or storage conditions
+    are inferred.
+- assessment_id: provenance
+  area: evidence
+  topic: Source basis, history and field-level evidence
+  outcome: concern
+  summary: Target and owner omit explicit water-batch context and all fifteen scoped
+    concentration-evidence entries. Their source accession/URL and complete preparation
+    remain recoverable; the reference gate checked zero excerpts.
+  target_ids:
+  - CultureMech:002907
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - validate-references
+  details: All target and owner content was read, including provenance and notes.
+    Absence observations are bounded to these exact complete objects; ignored files
+    were included in the registry/ID searches. No historical curator action was replayed
+    or granted scientific approval. Current checks do not test the sulfur form or
+    resolve the legacy identifier.
+findings:
+- finding_id: f1
+  issue_key: culturemech-002907-sulfur-material-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Bulk sulfur powder is mapped as an atomic entity
+  description: The source specifies sulfur powder. Target and owner instead omit powder
+    and map both primary and secondary identity to sulfur atom. That atomic term exists
+    but does not retain the source material/form distinction, and the asserted secondary
+    key has no pinned-index row. The live MIM Sulfur entry selects verified CHEBI:33403,
+    elemental sulfur.
+  target_ids:
+  - CultureMech:002907
+  field_paths:
+  - ingredients[12].preferred_term
+  - ingredients[12].term
+  - ingredients[12].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - chebi26833
+  - mim
+  - elemental-sulfur
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: culturemech-002907-quantity-provenance-incomplete
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Verified masses lack scoped evidence and solvent-batch context
+  description: All fifteen amounts match inspected source data, but neither owner
+    nor generated target contains narrow supporting excerpts or the explicit water-batch
+    basis.
+  target_ids:
+  - CultureMech:002907
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - bacmedia
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Preserve the supplied sulfur material/powder context in the maintained
+    owner and review the verified elemental-sulfur candidate CHEBI:33403. Do not infer
+    an allotrope-specific replacement; validate any chosen primary and secondary identity
+    together.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add source-specific short excerpts, original milligram/gram units and
+    water/provider-volume context in the maintained owner; keep the unspecified percentage-solution
+    basis explicit.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_sme_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The historical secondary MIM key remains unresolved; a correct primary potassium-iodide
+  CHEBI does not prove the retired key’s meaning.
+- Provider volume supports reported main-recipe concentrations but is not an independently
+  measured final volume. The percentage-solution basis is unspecified, so no addition
+  volume is calculated from it.
+- The bulk sulfur material is not assigned an unverified replacement allotrope or
+  ontology ID. The atomic-term/form discrepancy is reported for curation.
+tags:
+- unreviewed-records
+- batch-004
+- generated-medium
+notes:
+- Historical MIM resolution requires an authoritative archived mapping or separately
+  authorized migration; no legacy identifier was removed or replaced. Unknown historical
+  identity is not a confirmed wrong-ID finding.
