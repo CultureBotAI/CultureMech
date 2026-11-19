@@ -315,6 +315,8 @@ def test_csv_error_restores_reader_limit_and_cli_reports_failure(candidate, monk
     output, _ = candidate
 
     class UnreadableRows:
+        fieldnames = bundle._TSV_HEADERS["ingredient_occurrences.tsv"]
+
         def __next__(self):
             raise csv.Error("malformed fixture CSV")
 
@@ -369,3 +371,79 @@ def test_manifest_write_failure_reports_surviving_output_evidence(inputs, tmp_pa
     assert not list(tmp_path.glob(".write-failure.incomplete-*"))
     assert str(output) in str(error.value)
     assert ".write-failure.incomplete-" not in str(error.value)
+
+
+@pytest.mark.parametrize(
+    "product",
+    [
+        "ingredient_occurrences.tsv",
+        "ingredients_list.tsv",
+        "ingredient_aggregation_errors.tsv",
+        "variant_ingredient_changes.tsv",
+        "variant_ingredient_holds.tsv",
+    ],
+)
+@pytest.mark.parametrize("corruption", ["empty", "missing", "duplicate"])
+def test_zero_row_products_still_require_complete_unique_v3_headers(
+    inputs, tmp_path, product, corruption
+):
+    # A legitimate zero-occurrence corpus still exports every v3 companion.
+    # Rebinding the edited product hash tests the structural contract, not the
+    # separate guarantee provided by an independently accepted manifest digest.
+    source = inputs / "bacterial" / "medium.yaml"
+    record = yaml.safe_load(source.read_text())
+    record["ingredients"] = []
+    record["solutions"] = []
+    source.write_text(yaml.safe_dump(record))
+    output = tmp_path / "empty-candidate"
+    manifest = bundle.build(inputs, output)
+    path = output / product
+    with path.open(newline="") as stream:
+        fields = next(csv.reader(stream, delimiter="\t"))
+    if corruption == "empty":
+        path.write_text("")
+    else:
+        fields = fields[:-1] if corruption == "missing" else fields + [fields[0]]
+        with path.open("w", newline="") as stream:
+            csv.writer(stream, delimiter="\t").writerow(fields)
+    manifest["products"][product].update(bundle.fingerprint(path))
+    (output / "manifest.json").write_text(json.dumps(manifest))
+    with pytest.raises(bundle.BundleError, match="header"):
+        bundle.verify(output, inputs)
+
+
+@pytest.mark.parametrize("product", bundle.PRODUCTS)
+def test_product_change_after_hashing_is_detected(inputs, candidate, monkeypatch, product):
+    output, _ = candidate
+    pin = bundle.fingerprint(output / "manifest.json")["sha256"]
+    inventory = bundle.product_inventory
+    changed = False
+
+    def changing_product(directory, counts):
+        nonlocal changed
+        result = inventory(directory, counts)
+        if not changed:
+            path = directory / product
+            path.write_bytes(path.read_bytes() + b"\n")
+            changed = True
+        return result
+
+    monkeypatch.setattr(bundle, "product_inventory", changing_product)
+    with pytest.raises(bundle.BundleError, match="artifacts changed during verification"):
+        bundle.verify(output, inputs, expected_manifest_sha256=pin)
+
+
+@pytest.mark.parametrize(
+    ("product", "writer_field"),
+    [
+        ("ingredient_occurrences.tsv", "OCCURRENCE_FIELDS"),
+        ("ingredients_list.tsv", "INGREDIENT_LIST_FIELDS"),
+        ("ingredient_aggregation_errors.tsv", "ERROR_FIELDS"),
+        ("variant_ingredient_changes.tsv", "VARIANT_CHANGE_FIELDS"),
+        ("variant_ingredient_holds.tsv", "HELD_MENTION_FIELDS"),
+    ],
+)
+def test_v3_verifier_headers_match_native_writer(product, writer_field):
+    import ingredient_occurrences
+
+    assert bundle._TSV_HEADERS[product] == getattr(ingredient_occurrences, writer_field)

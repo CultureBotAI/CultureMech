@@ -2,11 +2,13 @@
 """Build/verify a provenance-bound direct-ingredient candidate (2026-11-13).
 
 Inputs: normalized YAML, native aggregator/schema and packaged MIM label index.
-Outputs: six aggregation products plus a manifest in a new directory.
+Outputs: seven aggregation products plus a manifest in a new directory.
 Serves issue #682 and review fixes #685 (manifest pin) / #686 (relocation).
 Also covers #688 (large CSV fields) and #689 (publication cleanup boundary).
 Version 2 adds structured variant occurrences and a separate complete change
-ledger (#683); version 1 consumers must explicitly adopt the new contract.
+ledger (#683); version 3 adds the withheld-mention ledger. Older consumers must
+explicitly adopt the new contract. Verification enforces TSV headers (#801) and
+checks product stability across its source-verification window (#802).
 Never publishes a MIM release.
 """
 
@@ -40,6 +42,91 @@ PRODUCTS = (
     "variant_ingredient_holds.tsv",
 )
 CONTRACT = "culturemech-direct-ingredients-v3"
+# Versioned TSV schemas stay lightweight so verification does not import the
+# schema validator or resolver. Tests bind these columns to the native writer.
+_OCCURRENCE_FIELDS = (
+    "recipe_id",
+    "recipe_label",
+    "recipe_category",
+    "source_path",
+    "record_class",
+    "component_field",
+    "component_index",
+    "preferred_term",
+    "label_source",
+    "resolved_identifier",
+    "resolution_source",
+    "local_identifier",
+    "source_compound_id",
+    "mim_preferred_term",
+    "mim_matched_label",
+    "mim_match_type",
+    "mim_mapping_status",
+    "mim_ambiguity",
+    "mim_ontology_id_diagnostic",
+    "grounding_reason",
+    "concentration_value",
+    "concentration_unit",
+    "ingredient_json",
+    "variant_index",
+    "variant_name",
+    "change_index",
+    "change_action",
+    "change_stage",
+    "descriptor_role",
+    "descriptor_path",
+    "source_modification_index",
+    "source_text",
+    "evidence_json",
+    "change_json",
+)
+_TSV_HEADERS = {
+    "ingredient_occurrences.tsv": _OCCURRENCE_FIELDS,
+    "variant_ingredient_changes.tsv": _OCCURRENCE_FIELDS + ("counts_as_presence",),
+    "ingredients_list.tsv": (
+        "preferred_term",
+        "resolved_identifier",
+        "identifier_prefix",
+        "mapping_status",
+        "occurrence_count",
+        "distinct_recipe_count",
+        "label_variant_count",
+        "label_variants",
+        "resolution_sources",
+        "recipe_categories",
+    ),
+    "ingredient_aggregation_errors.tsv": (
+        "file",
+        "layer",
+        "category",
+        "detail",
+        "path",
+        "message",
+    ),
+    "variant_ingredient_holds.tsv": (
+        "recipe_id",
+        "recipe_label",
+        "recipe_category",
+        "source_path",
+        "variant_index",
+        "variant_name",
+        "mention_index",
+        "descriptor_path",
+        "source_label",
+        "reported_action",
+        "stage",
+        "source_modification_index",
+        "source_text",
+        "reason",
+        "reported_quantity",
+        "held_fields_json",
+        "evidence_json",
+        "mention_json",
+        "review_status",
+        "counts_as_presence",
+    ),
+}
+
 SCOPE = {
     "included": [
         "root ingredients or composition selected by native record shape",
@@ -123,6 +210,9 @@ def environment() -> dict[str, Any]:
 def _rows(path: Path):
     with path.open(encoding="utf-8", newline="") as stream:
         reader = csv.DictReader(stream, delimiter="\t")
+        expected_header = _TSV_HEADERS.get(path.name)
+        if expected_header is None or tuple(reader.fieldnames or ()) != expected_header:
+            raise BundleError(f"TSV header differs from the v3 contract: {path.name}")
         while True:
             # Native ingredient_json includes uncapped schema-valid notes. Lift
             # csv's default 128 KiB cap only while reading a row, restoring the
@@ -516,6 +606,10 @@ def verify(
         raise BundleError("Candidate artifacts or accounting differ from manifest")
     if current != corpus_inventory(source) or manifest["dependencies"] != dependency_inventory():
         raise BundleError("Inputs or implementation changed during verification")
+    # Product reads/hashes are not atomic with the potentially slow input/code
+    # recheck. Reject artifact drift observed across that verification window.
+    if product_inventory(bundle_dir, counts) != manifest["products"]:
+        raise BundleError("Candidate artifacts changed during verification")
     if manifest_path.read_bytes() != manifest_bytes:
         raise BundleError("Manifest changed during verification")
     assurance = (

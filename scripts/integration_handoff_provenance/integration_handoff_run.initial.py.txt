@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Capture an explicitly selected integration-handoff command (2026-11-19).
+
+Purpose: retain actual command evidence for CultureMech issue #687.
+Inputs: an argv vector, working directory, optional environment overrides and
+read-only file pins. The caller remains responsible for command authorization.
+Outputs: a new exclusive run directory with request/receipt JSON and unchanged
+stdout/stderr bytes. Never invokes a shell or installs dependencies itself.
+This runner records execution evidence; it does not attest scientific approval.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def fingerprint(path: Path) -> dict:
+    digest = hashlib.sha256()
+    size = 0
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+            size += len(block)
+    return {"path": str(path.resolve()), "sha256": digest.hexdigest(), "bytes": size}
+
+
+def write_json(path: Path, value: dict) -> None:
+    with path.open("x", encoding="utf-8") as stream:
+        json.dump(value, stream, indent=2, sort_keys=True)
+        stream.write("\n")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", required=True, type=Path)
+    parser.add_argument("--label", required=True)
+    parser.add_argument("--cwd", required=True, type=Path)
+    parser.add_argument("--env", action="append", default=[], metavar="NAME=VALUE")
+    parser.add_argument("--pin", action="append", default=[], type=Path)
+    parser.add_argument("command", nargs=argparse.REMAINDER)
+    args = parser.parse_args()
+    command = args.command[1:] if args.command[:1] == ["--"] else args.command
+    if not command:
+        parser.error("provide an executable and arguments after --")
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*", args.label):
+        parser.error("label must contain only letters, digits, underscore, dot or dash")
+    cwd = args.cwd.resolve(strict=True)
+    if not cwd.is_dir():
+        parser.error("cwd must be a directory")
+    overrides = {}
+    for item in args.env:
+        name, separator, value = item.partition("=")
+        if not separator or not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", name):
+            parser.error("environment overrides must be NAME=VALUE")
+        overrides[name] = value
+    environment = os.environ.copy()
+    environment.update(overrides)
+    pins = [fingerprint(path.resolve(strict=True)) for path in args.pin]
+    root = args.output_dir.resolve()
+    root.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    run_dir = root / f"{stamp}-{args.label}"
+    run_dir.mkdir()  # Exclusive reservation: an existing attempt is never overwritten.
+    executable = command[0]
+    if os.sep in executable:
+        executable_path = Path(executable)
+        if not executable_path.is_absolute():
+            executable_path = cwd / executable_path
+        executable_path = executable_path.resolve()
+    else:
+        located = shutil.which(executable, path=environment.get("PATH"))
+        executable_path = Path(located).resolve() if located else None
+    request = {
+        "schema_version": 1,
+        "context": "CultureBotAI/CultureMech#687",
+        "argv": command,
+        "cwd": str(cwd),
+        "environment_overrides": overrides,
+        "environment_scope": "Only explicit overrides are recorded; inherited values are omitted.",
+        "runner": fingerprint(Path(__file__).resolve()),
+        "executable": fingerprint(executable_path) if executable_path else None,
+        "input_pins_before": pins,
+        "prepared_at": utc_now(),
+    }
+    write_json(run_dir / "request.json", request)
+    stdout_path = run_dir / "stdout.log"
+    stderr_path = run_dir / "stderr.log"
+    started = utc_now()
+    tick = time.monotonic()
+    launch_error = None
+    interrupted = False
+    with stdout_path.open("xb") as stdout, stderr_path.open("xb") as stderr:
+        try:
+            result = subprocess.run(
+                command, cwd=cwd, env=environment, stdout=stdout, stderr=stderr, check=False
+            )
+            returncode = result.returncode
+        except OSError as exc:
+            launch_error = f"{type(exc).__name__}: {exc}"
+            returncode = 127
+        except KeyboardInterrupt:
+            interrupted = True
+            returncode = 130
+    receipt = {
+        **request,
+        "started_at": started,
+        "finished_at": utc_now(),
+        "elapsed_seconds": time.monotonic() - tick,
+        "returncode": returncode,
+        "launch_error": launch_error,
+        "interrupted": interrupted,
+        "request": fingerprint(run_dir / "request.json"),
+        "stdout": fingerprint(stdout_path),
+        "stderr": fingerprint(stderr_path),
+    }
+    receipt_path = run_dir / "receipt.json"
+    write_json(receipt_path, receipt)
+    print(json.dumps({"receipt": fingerprint(receipt_path), "returncode": returncode}))
+    return returncode if returncode >= 0 else 128 - returncode
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

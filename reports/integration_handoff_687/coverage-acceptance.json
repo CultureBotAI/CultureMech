@@ -1,0 +1,246 @@
+{
+  "binding_coverage": {
+    "all": {
+      "binding_cases": 5007,
+      "cases_by_action": {
+        "ADD": 269,
+        "NO_CHANGE_ACTION": 4270,
+        "REMOVE": 47,
+        "REPLACE": 255,
+        "SET_AMOUNT": 6,
+        "SET_CONCENTRATION": 53,
+        "UNSPECIFIED": 107
+      },
+      "context_only_mentions": 163,
+      "held_source_mentions": 138,
+      "positive_occurrences": 209784
+    },
+    "supported": {
+      "binding_cases": 623,
+      "cases_by_action": {
+        "ADD": 32,
+        "NO_CHANGE_ACTION": 541,
+        "REMOVE": 8,
+        "REPLACE": 26,
+        "SET_AMOUNT": 4,
+        "SET_CONCENTRATION": 12
+      },
+      "context_only_mentions": 30,
+      "held_source_mentions": 2,
+      "positive_occurrences": 16732
+    },
+    "withheld": {
+      "binding_cases": 4384,
+      "cases_by_action": {
+        "ADD": 237,
+        "NO_CHANGE_ACTION": 3729,
+        "REMOVE": 39,
+        "REPLACE": 229,
+        "SET_AMOUNT": 2,
+        "SET_CONCENTRATION": 41,
+        "UNSPECIFIED": 107
+      },
+      "context_only_mentions": 133,
+      "held_source_mentions": 136,
+      "positive_occurrences": 193052
+    }
+  },
+  "campaign_reconciliation": "NOT_ESTABLISHED_BY_THIS_ACCOUNTING_REPORT",
+  "integrated_release_ready": false,
+  "inventory_inclusion_grants_medium_presence": false,
+  "limitations": [
+    "Native archived producer and consumer verification remain separate requirements.",
+    "Binding counts, occurrence counts and normalized ingredient groups are different units.",
+    "No assertion of complete chemical-identity deduplication.",
+    "Supported identity is not approval of dose, growth, or positive presence.",
+    "Context and held counts remain separate even where identity has a disposition.",
+    "Variant actions are not applied to parents or expanded into formulations.",
+    "The existing canonical SSSOM snapshot is not the pending campaign release.",
+    "Issue #792 NTA descriptor repair and unresolved source claims remain separate."
+  ],
+  "manifest_pins": {
+    "intake": "6bcc92540daba081d8180346d135c2ae40471c9fb0a7005b46aa5c9902d684f7",
+    "reviewed": "9fd1da62fad47c3b5b7290ea3f9fc2b687b23fc8c98e8dc926e1460572c3f1d8",
+    "source": "ede822e6424433644ae25f363cb5bfb88b154b453c1e954185ecc2c6cb3c829f"
+  },
+  "producer_commit": "6f1b1d18a5528532fa239400bd73c1a040fb78a0",
+  "remaining_gates": [
+    "Reconcile accepted v3 intake through a native source review after active campaign verification (#1879)",
+    "Consume source review evidence natively and bind it in manifest.inputs; an unbound sidecar is insufficient",
+    "Certify supported/withheld campaign SSSOM and required scoped companions",
+    "Reconcile the selected KGM source revision and source deltas",
+    "Independently admit exact release commit/archive/manifests in KGM",
+    "Review paired mapping candidate and quarantine before installation",
+    "Validate affected transforms, consumed-input receipts and graph outputs",
+    "Obtain separate owner merge/publication approval"
+  ],
+  "reviewed_products": {
+    "binding-dispositions.tsv": {
+      "bytes": 4201459,
+      "sha256": "77ed30dc97480a13a033109458d5af70ca569063e281d3eed21d171a734a7bb4"
+    },
+    "canonical-reviewed-sssom/ingredient_mappings.sssom.tsv": {
+      "bytes": 831693,
+      "sha256": "7e68fea7fd788928f29c7671156198af101baaa3b3051f19bab78a5479d2a940"
+    },
+    "canonical-reviewed-sssom/manifest.json": {
+      "bytes": 993,
+      "sha256": "b02a92446e8a613fd0d96b0dd8147d439733fcf73e731b363a6388e95d616703"
+    },
+    "canonical-reviewed-sssom/mapping-dispositions.tsv": {
+      "bytes": 1814722,
+      "sha256": "2a075c9c4a699c9d22a5e8b736bc6d7c00c344f19363f28178c0b50b6b590a19"
+    },
+    "canonical-reviewed-sssom/withheld_mappings.sssom.tsv": {
+      "bytes": 845370,
+      "sha256": "5817fb845c65f995fb0c78095168af1cbf0c837a991004fcd0a9d73cd0874c88"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-1.json": {
+      "bytes": 228857,
+      "sha256": "b11e5881c85c3df0e920d66e38ad35819df92046629ed4bc4a8403a7011f4022"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-2.json": {
+      "bytes": 388644,
+      "sha256": "39beb1f9128a734ff08463d04ed7a9beaf8f724733d5a9542be93646b9a87f60"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-3.json": {
+      "bytes": 109614,
+      "sha256": "d742b7add9dae24d2336c9acd2366caefc69a75d13122ecbcf6eb6df16a17b18"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-4.json": {
+      "bytes": 56427,
+      "sha256": "ce5e83710650ab4d9cc19b070fe6015eb1890c3cc091148518ecd82c5bfa01da"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-5.json": {
+      "bytes": 250753,
+      "sha256": "b846c03927bd2d0e5e09bbb4b6911295761c4e11f743c1e223d67bd5eac731ef"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-6.json": {
+      "bytes": 106639,
+      "sha256": "949977d4c83b91933fdd15b816087f117a2d2861331edf05a59728dbb0b5d5d4"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-7.json": {
+      "bytes": 31142,
+      "sha256": "edea0f109e4c8d7d02252f9da2c472000a7fe000defaf7b0782148b0ff7cc0f3"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/author-8.json": {
+      "bytes": 101143,
+      "sha256": "5f0660e3f828a2001e8def16a0cf3c7096a4ecc2e41f4e4baf713ecd1611e24d"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/binding-evidence.json": {
+      "bytes": 6999344,
+      "sha256": "29f657c8d14392dbb7c821c18d5c518ce5ab798ea3118f0cec9ce4b708f0362e"
+    },
+    "review-inputs/reports/culturemech_intake_1453/final-source-binding-review-v3-r2/binding-review.json": {
+      "bytes": 4592990,
+      "sha256": "b548dbcb6271f59083693da632a2318bfbbf868b5b2a208e86a77bb4ae77fa4a"
+    },
+    "supported-bindings.tsv": {
+      "bytes": 505813,
+      "sha256": "563babf77d2db5f0739b642ecca8d46344f0eb43539a0945a7b7ea82769da551"
+    },
+    "withheld-bindings.tsv": {
+      "bytes": 3695930,
+      "sha256": "3a75eb3fc778d62d139eacc6976d1694d44979d4187b0303d9197aeb16fedfed"
+    }
+  },
+  "schema_version": 1,
+  "source_counts": {
+    "base_direct_occurrences": 209330,
+    "errors": 0,
+    "groups_by_status": {
+      "AMBIGUOUS": 11,
+      "MAPPED": 1005,
+      "UNMAPPED": 1549
+    },
+    "ingredient_groups": 2565,
+    "mapped_occurrences": 205575,
+    "mapped_variant_change_mentions": 478,
+    "occurrences": 209784,
+    "occurrences_by_category": {
+      "ALGAE": 2256,
+      "ARCHAEA": 16691,
+      "BACTERIAL": 180623,
+      "FUNGAL": 1020,
+      "SPECIALIZED": 9194
+    },
+    "records_with_occurrences": 15572,
+    "records_without_direct_occurrences": 343,
+    "scanned_files_by_directory": {
+      "algae": 254,
+      "archaea": 747,
+      "bacterial": 14333,
+      "fungal": 126,
+      "specialized": 455
+    },
+    "scanned_records": 15915,
+    "unresolved_occurrences": 4209,
+    "unresolved_variant_change_mentions": 139,
+    "variant_change_events": 492,
+    "variant_change_mentions": 617,
+    "variant_changes_by_action": {
+      "ADD": 271,
+      "REMOVE": 38,
+      "REPLACE": 125,
+      "SET_AMOUNT": 8,
+      "SET_CONCENTRATION": 50
+    },
+    "variant_context_only_mentions": 163,
+    "variant_held_labels": 66,
+    "variant_held_mentions": 138,
+    "variant_positive_occurrences": 454
+  },
+  "source_products": {
+    "ingredient_aggregation_errors.tsv": {
+      "bytes": 40,
+      "sha256": "4ccba8b77ce80cf210105b5284b5953747729aba576ccdeecb81f7db84eb721b"
+    },
+    "ingredient_occurrences.tsv": {
+      "bytes": 175626133,
+      "sha256": "13fb54900815c5e490ce77f79b2f4cbc9f5d441b5ef66083e7ab014ea129ac00"
+    },
+    "ingredients_list.tsv": {
+      "bytes": 267808,
+      "sha256": "73f7d14e6086f345fbbeee89340f19ea6c3ab2069abebd24fe975e666969b32f"
+    },
+    "mapped_ingredients.yaml": {
+      "bytes": 133834405,
+      "sha256": "9f1a42e83095f9e2c1be5d79e3f9c3c43253c7af29ca42fd1f4dea08f6cd2295"
+    },
+    "unmapped_ingredients.yaml": {
+      "bytes": 3000599,
+      "sha256": "024b0cf6dba81ae1be6b2e127f287d56d9b9ca4667ed296e3f049712948b722a"
+    },
+    "variant_ingredient_changes.tsv": {
+      "bytes": 1418341,
+      "sha256": "f94e545aa120e35b061e7ee5f93140e3fb06349b05c401ed2b5fb94517a355da"
+    },
+    "variant_ingredient_holds.tsv": {
+      "bytes": 197664,
+      "sha256": "bd8a0e9ec08bbdaa2d4d1ad53c5e432d0a254f50d2b53ec7d20738077458e95b"
+    }
+  },
+  "status": "SOURCE_BINDING_ACCOUNTING_VERIFIED",
+  "unchanged_historical_sssom": {
+    "counts": {
+      "source": 3014,
+      "supported": 1739,
+      "withhold": 1275
+    },
+    "files": {
+      "ingredient_mappings.sssom.tsv": "7e68fea7fd788928f29c7671156198af101baaa3b3051f19bab78a5479d2a940",
+      "mapping-dispositions.tsv": "2a075c9c4a699c9d22a5e8b736bc6d7c00c344f19363f28178c0b50b6b590a19",
+      "withheld_mappings.sssom.tsv": "5817fb845c65f995fb0c78095168af1cbf0c837a991004fcd0a9d73cd0874c88"
+    },
+    "mapping_set_ids": {
+      "supported": "https://w3id.org/sssom/mappings/culturebotai_mim_ingredient/reviewed-supported",
+      "withhold": "https://w3id.org/sssom/mappings/culturebotai_mim_ingredient/withheld-backlog"
+    },
+    "review_sha256": "ab301d1f66276cdfeefea79080ce49f26ebb02c1920a53c71512c14b283b16cf",
+    "schema_version": 1,
+    "scope": "MIM-only reviewed SSSOM; no KGX dependency",
+    "semantic_status": "PASS_SUPPORTED_SUBSET",
+    "source_sha256": "d5f76fc404967477903fafc79eaba86ecfef9e2c391926ec08c3c1af4a5220b6",
+    "source_sssom": "mappings/ingredient_mappings.sssom.tsv"
+  }
+}

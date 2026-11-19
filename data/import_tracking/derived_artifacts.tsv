@@ -1555,6 +1555,7 @@ reports/ingredient_concentration_review/20261005T175229Z/summary.json	SNAPSHOT	t
 reports/ingredient_concentration_review/20261005T175229Z/unavailable_references.json	SNAPSHOT	timestamped concentration review			
 reports/ingredient_concentration_review/20261005T175229Z/validation_complete.json	SNAPSHOT	timestamped concentration review			
 reports/instance_validation_failures.tsv	UNKNOWN	writer purity unestablished (validate_strict.py)	scripts/validate_strict.py	scripts/validate_strict.py	
+reports/integration_handoff_687/coverage-acceptance.json	UNKNOWN	no writer found			
 reports/label_plausibility_2026-07-19.tsv	SNAPSHOT	dated filename			
 reports/label_plausibility_after_fixes.tsv	UNKNOWN	no writer found			
 reports/media_content_review_manifest.tsv	CURRENT_VIEW	build_media_content_review_manifest.py	scripts/build_media_content_review_manifest.py	scripts/build_media_content_review_manifest.py; scripts/propose_media_variant_links.py	yes
