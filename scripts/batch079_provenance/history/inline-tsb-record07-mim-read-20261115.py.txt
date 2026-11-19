@@ -1,0 +1,15 @@
+import pathlib,json,csv,yaml,collections,hashlib
+p=pathlib.Path('src/culturemech/data/mediaingredientmech');print((p/'label_index.metadata.json').read_text())
+rows=list(csv.DictReader((p/'label_index.csv').open()))
+names=[]
+for f in ['data/merge_yaml/merged/DESULFOTHERMUS_NAPHTHAE_MEDIUM.yaml','data/normalized_yaml/bacterial/KOMODO_876_TD3-MEDIUM.yaml','data/normalized_yaml/bacterial/desulfothermus_naphthae_medium.yaml']:
+ def walk(x):
+  if isinstance(x,dict):
+   if 'preferred_term'in x and 'concentration'in x:names.append(x['preferred_term'])
+   for v in x.values():walk(v)
+  elif isinstance(x,list):
+   for v in x:walk(v)
+ walk(yaml.safe_load(pathlib.Path(f).read_text()))
+for name in sorted(set(names)):
+ hits=[(i+2,r)for i,r in enumerate(rows)if r['label'].casefold()==name.casefold()]
+ print(json.dumps({'local_name':name,'exact_casefold_label_rows':hits},ensure_ascii=False))

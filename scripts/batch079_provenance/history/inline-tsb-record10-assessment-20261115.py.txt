@@ -1,0 +1,57 @@
+import csv, hashlib, json, pathlib, re, unicodedata
+from datetime import datetime, timezone
+import yaml
+D=pathlib.Path('.temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z')
+sha=lambda p: hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
+slots=json.loads((D/'input-slots.json').read_text()); captures=json.loads((D/'ols-capture-catalog.json').read_text()); mim=json.loads((D/'mim-exact-label-rows.json').read_text())
+assert not (D/'chemical-identity-assessment.json').exists() and not (D/'audit-receipt.json').exists()
+for inp in slots['inputs']:
+ assert sha(inp['path'])==inp['sha256']
+ doc=yaml.safe_load(pathlib.Path(inp['path']).read_text())
+ for s in slots['ingredient_slots']:
+  if s['document']!=inp['path']: continue
+  o=doc
+  for token in re.findall(r'[^.\[\]]+|\[(\d+)\]',s['path']): pass
+  for token in re.findall(r'[A-Za-z_][A-Za-z_0-9]*|\d+',s['path']): o=o[int(token)] if token.isdigit() else o[token]
+  assert o['id']==s['id']
+rows=[]
+for n,row in enumerate(csv.DictReader(pathlib.Path(mim['source_path']).open(newline='')),2): rows.append({'physical_csv_line':n,**row})
+assert len(rows)==9077 and sha(mim['source_path'])==mim['sha256']
+key=lambda x:unicodedata.normalize('NFC',x).strip().casefold()
+names={key(s['name']) for s in slots['ingredient_slots']}
+exact=[r for r in rows if key(r['label']) in names]
+assert exact==mim['exact_local_rows']
+assert not any(key(r['label'])==key('MgSO4・7H2O') for r in rows)
+interpretation={
+'CHEBI:113451':('compatible_named_chemical','C6H7O6.Na','Sodium counterion and ascorbate structure match the conventional named material. The authoritative structure specifies L-ascorbate stereochemistry; the source gives only Sodium ascorbate and does not establish supplier, purity or independently verified stereoisomer. No contrary stereochemistry is asserted.'),
+'CHEBI:131527':('compatible_named_chemical','HO4P.2K','Two potassium counterions and hydrogen phosphate match K2HPO4. Core formula/structure do not include hydrate waters; a loose hydrate synonym does not establish a different supplied form.'),
+'CHEBI:15377':('compatible_named_chemical','H2O','Water identity is compatible with distilled water. It neither proves distillation grade nor licenses a mass/volume or density conversion.'),
+'CHEBI:17997':('compatible_named_chemical','N2','Dinitrogen identity matches N2. It does not establish dissolved concentration, gas fraction or exposure conditions.'),
+'CHEBI:31795':('compatible_named_chemical','7H2O.Mg.O4S','Formula, InChI and structure explicitly contain seven waters and match both local heptahydrate spellings. No hydrate correction is supported.'),
+'CHEBI:32149':('compatible_named_chemical','2Na.O4S','Two sodium counterions and sulfate match Na2SO4; no hydrate is asserted locally.'),
+'CHEBI:3312':('compatible_named_chemical','Ca.2Cl','Calcium plus two chlorides match CaCl2. Neither the local name nor the primary source specifies hydrate water; do not infer it from an overly broad synonym.'),
+'CHEBI:75228':('compatible_stereochemistry_unspecified','C3H5O3.Na','Sodium lactate counterion and formula match; InChI and SMILES have no stereochemical designation. The generic source name supports this breadth, not an inferred L, D or racemic claim.'),
+'CHEBI:76181':('compatible_named_chemical','Fe.6H2O.2H4N.2O4S','Structure specifies Fe(II), two ammonium ions, two sulfates and six waters, matching the supplied ferrous ammonium sulfate hexahydrate.'),
+'FOODON:03302088':('compatible_mixture_label',None,'Exact active label is beef extract and the source uses that name. This mixture term does not establish a fixed formula, molecular weight, brand or composition.'),
+'MICRO:0000178':('material_specificity_unconfirmed',None,'The active preferred label peptone and packaged MIM mapping agree. Its definition additionally specifies an enzymatic digest of mammalian protein; the primary source says only Peptone. That origin/processing specificity is unconfirmed, not an invalid identifier or demonstrated wrong ingredient. Do not transfer the ontology supplier-example composition or force a substitute.')}
+assess=[]
+for cap in captures:
+ assert sha(cap['raw_path'])==cap['sha256'] and cap['status']==200
+ raw=json.loads(pathlib.Path(cap['raw_path']).read_text())
+ terms=raw.get('_embedded',{}).get('terms',[])
+ term=[t for t in terms if t.get('obo_id')==cap['id']]
+ assert len(term)==1 and not term[0]['is_obsolete']
+ t=term[0]; projected=cap['exact_terms'][0]
+ for k,v in projected.items(): assert t.get(k)==v,(cap['id'],k)
+ status,formula,rationale=interpretation[cap['id']]
+ if formula: assert t['annotation']['generalized_empirical_formula']==[formula]
+ assess.append({'id':cap['id'],'label':t['label'],'status':status,'rationale':rationale,'formula':formula,'mass':t['annotation'].get('mass'), 'slots':[s for s in slots['ingredient_slots'] if s['id']==cap['id']], 'source':{'url':cap['url'],'raw_path':cap['raw_path'],'sha256':cap['sha256'],'started_at':cap['started_at'],'finished_at':cap['finished_at'],'is_obsolete':False,'reused':bool(cap.get('reuse'))}})
+assert len(assess)==11 and sum(len(a['slots']) for a in assess)==48
+result={'schema':'bounded-chemical-identity-assessment-v1','record':'CultureMech:009942','scope':'All 48 asserted ingredient-ID slots across the generated target (8), sole TOGO M549 maintained owner (20), and separately labelled lowercase comparison context (20); 11 unique ingredient identifiers. Media identity, quantities, preparation and final scientific verdict remain parent review scope.','completed_at':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'inputs':slots['inputs'],'assessments':sorted(assess,key=lambda x:x['id']),'mim_policy':{'path':mim['source_path'],'sha256':mim['sha256'],'whole_file_row_count':9077,'casefold_exact_local_rows':len(exact),'scoped_rows_file':str(D/'mim-exact-label-rows.json'),'observations':['The owner spelling MgSO4 x 7H2O has a REJECTED row pointing to live CHEBI:31795. Current _group_state and hydrate-conflict logic treat compatible live-identity tombstones as mappings, not blanket chemical rejection. The supplied heptahydrate is independently supported by ChEBI.','The generated spelling MgSO4・7H2O has no casefold-exact row in the complete packaged CSV. Current strong/weak normalization does not replace Japanese middle dot; local identity fallback is distinct from index proof. No validator or resolver was executed by this audit.','Sodium lactate has both MAPPED and REJECTED spelling rows with the same identifier. This does not create an enantiomer assertion; the authoritative molecular structure is stereochemically unspecified.','MIM maps Peptone and Beef extract, but mapping policy does not prove source material origin, supplier composition or molecular identity for mixtures.'],'current_code_scope':'Read module documentation and relevant normalization, resolution, tombstone and hydrate-count functions in src/culturemech/ingredients/mim_label_index.py (through line 525); no full catalog scientific audit.'},'primary_comparison':{'path':'.temp/batch079-scientific-20261114/record10/jcm547.html','sha256':sha('.temp/batch079-scientific-20261114/record10/jcm547.html'),'scope':'Full captured HTML text read for named ingredients and supplied-form notation only. Peptone is generic; exact magnesium heptahydrate and ferrous ammonium sulfate hexahydrate are printed. Parent retains independent quantity/percentage/preparation review.'},'limits':['No new source, recipe, review or native-check mutation; evidence outputs only.','No molecular-weight conversion, percent-basis inference or final-volume conclusion is licensed by identifier compatibility.','Lowercase desulfotomaculum_pbe_medium.yaml remains comparison context only and is not promoted to a generated-record owner.','This is a bounded chemical-identity contribution, not a scientific pass or full record audit.']}
+with (D/'chemical-identity-assessment.json').open('x') as f: json.dump(result,f,indent=2,ensure_ascii=False); f.write('\n')
+pinpaths=[x['path'] for x in slots['inputs']]+[c['raw_path'] for c in captures]+[str(D/p) for p in ['input-slots.json','ols-capture-catalog.json','mim-exact-label-rows.json','chemical-identity-assessment.json']]+[mim['source_path'],'src/culturemech/data/mediaingredientmech/label_index.metadata.json','src/culturemech/ingredients/mim_label_index.py','.temp/batch079-scientific-20261114/record10/peer-review.md','.temp/batch079-scientific-20261114/record10/jcm547.html']+[c['reuse']['catalog_path'] for c in captures if c.get('reuse')]
+pins=[{'path':p,'sha256':sha(p),'bytes':pathlib.Path(p).stat().st_size} for p in dict.fromkeys(pinpaths)]
+receipt={'kind':'bounded chemical identity audit','record':'CultureMech:009942','completed_at':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'counts':{'documents_full_read':3,'ingredient_slots':48,'unique_ids':11,'chebi_ids':9,'foodon_ids':1,'micro_ids':1,'fresh_captures':10,'exact_reused_captures':1,'mim_rows_scanned':9077,'mim_exact_local_rows':len(exact),'pins':len(pins)},'checks':['All three current YAML digests equal pre-audit inventory.','All 48 exact ingredient slot locators match current YAML ID objects.','All 11 raw ontology digests and exact-ID active projections match catalog.','All 16 scoped exact CSV rows rejoin the complete packaged index in physical row order.','All chemical formulas rechecked against exact raw ontology annotations.'],'assessment_sha256':sha(D/'chemical-identity-assessment.json'),'pins':pins,'limitations':result['limits']}
+with (D/'audit-receipt.json').open('x') as f: json.dump(receipt,f,indent=2,ensure_ascii=False); f.write('\n')
+for p in [D/'chemical-identity-assessment.json',D/'audit-receipt.json',D/'ols-capture-catalog.json']: print(str(p),sha(p))
+print(json.dumps(receipt['counts']))

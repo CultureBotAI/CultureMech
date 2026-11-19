@@ -1,0 +1,11 @@
+import json,pathlib,hashlib
+D=pathlib.Path('.temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z')
+a=json.loads((D/'input-slots.json').read_text()); c=json.loads((D/'ols-capture-catalog.json').read_text()); m=json.loads((D/'mim-exact-label-rows.json').read_text())
+print('INPUT',json.dumps(a,ensure_ascii=False))
+print('CATALOG',json.dumps([{k:v for k,v in x.items() if k!='exact_terms'} for x in c],ensure_ascii=False))
+print('MIM_KEYS',m.keys())
+for x in c:
+ t=x['exact_terms'][0]
+ print(x['id'],t.get('label'),json.dumps({k:v for k,v in t.get('annotation',{}).items() if k in ['formula','mass','inchi','smiles','definition','database_cross_reference']},ensure_ascii=False))
+print('META_PATHS')
+for p in pathlib.Path('src/culturemech/data/mediaingredientmech').iterdir(): print(p)

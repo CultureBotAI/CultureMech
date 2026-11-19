@@ -1,0 +1,1111 @@
+schema_version: 1.0.0
+review_id: 20261115T082226Z-batch079-record10-desulfotomaculum
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Recovered batch079 record10: JCM547 / TOGO M549 scientific assessment'
+started_at: '2026-11-15T08:18:24.667073Z'
+finished_at: '2026-11-15T08:22:26.812287Z'
+reviewer:
+  identity: Codex recovery reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Did not author or modify the existing scientific inputs. Independent
+    primary-source and identifier contributions were checked against exact current
+    bytes; this is not human approval.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Completed bounded assessment identifies three major defects and one minor
+  provenance limitation. Existing owner volume/preparation repairs are credited; percentage-basis
+  support and generated freshness remain unresolved. No scientific source was edited.
+source:
+  git_revision: dda27db28f1e5f4f05da6d92fbd2cc1bd6e8add3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824139492Z-record10-schema.json
+    sha256: f0f5b7a4cfcf1e9ec94df87230a395242fd2c1e14657cf4e35e590f44b5ce290
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824139492Z-record10-schema.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824139492Z-record10-schema.stdout
+    sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824635873Z-record10-strict.json
+    sha256: 67798ce0af7adb6974600afd88f20056a68641de742f1c2dc9437d0ec6aad736
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824635873Z-record10-strict.stderr
+    sha256: 0785785c68316c847ed174024af2506eea4632562e58f1f53e1a9a5ef56d6252
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824635873Z-record10-strict.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824666858Z-record10-fetch-mediadive.json
+    sha256: d7146d339235aed7f6d21302a6bcb2b15e3dd2ae24b183d62660d14094cde48a
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824666858Z-record10-fetch-mediadive.stderr
+    sha256: 596a3cd35ff39426572e1851749e3184a5835452357612c404bb63d404fd39ae
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824666858Z-record10-fetch-mediadive.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824917685Z-record10-fetch-jcm.json
+    sha256: f4458d15a7d8f300c35ae7f1684c2f3f9d43423fb8c498d7e5ac2c3e1020f986
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824917685Z-record10-fetch-jcm.stderr
+    sha256: 0f3e71ae0374f9ccbb566bce52f927609ff1cd17e8902876921815cee2fdd306
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081824917685Z-record10-fetch-jcm.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081825245374Z-record10-references.json
+    sha256: 0f00dce0df506b29653b8eb87e1015f2327525f44a6223e2fa9a2224f8601ef0
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081825245374Z-record10-references.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081825245374Z-record10-references.stdout
+    sha256: 254da7eee7ae518a1951f250278e1b86383cdd1cdc205bb7c4a17786a6c89954
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081825506772Z-record10-terms.json
+    sha256: 39a02061ef4b5d4eb801eeb91b119231ba562f4b466e01ff2fa5382ba2178e9b
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081825506772Z-record10-terms.stderr
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081825506772Z-record10-terms.stdout
+    sha256: 6d1e6d9197ee2e4862a8c3e955bf66380f33809345381a786040ec40180d52e0
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081826011710Z-record10-fetch-togo.json
+    sha256: 68b6cd1dcb9f972602f6c2500647b6e60c4e05e077a31262b52648e73f980b19
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081826011710Z-record10-fetch-togo.stderr
+    sha256: 043cd1dbde6a71c207ff50409e86c89d511247fb4fc977abf34b6dd66fc3852b
+    role: context
+  - path: .temp/batch079-scientific-20261114/20261115T081826011710Z-record10-fetch-togo.stdout
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    role: context
+  - path: .temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32149.json
+    sha256: 969ae214c947d944eb086715a9f43a67e02b889258f6c61a64eb2a17b882b9a0
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_113451.json
+    sha256: 043a3e599af0465d75d66ee50d56e1302ac1db011a8e3eeb7c542eefbe4ee91a
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_131527.json
+    sha256: 508d148458aef6ee872ff7f4fb4103c2f9fe47e79cbd737da206efaf10a1169c
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_15377.json
+    sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_17997.json
+    sha256: f318e64e62e0ec43ad70dab0d833094ce31045bae1d2b10d9f8c7d13919698f2
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_31795.json
+    sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_3312.json
+    sha256: 217c9e892fe9696e955360f77f79c68a43c617fd7942dcdfbba7fa368a7bdb14
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_75228.json
+    sha256: 1e85d5805503f3beaaa624dcf8cb41559784dfbee8a568dbfc62182977b1925f
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/CHEBI_76181.json
+    sha256: 1ca5b1ee73ce8d8fd35e60c7f45baacd870b6f5fdce0a02345be62e7622dbaa5
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/FOODON_03302088.json
+    sha256: ee2e9f57bae58d8170d339f9a0575ea59cda36ff7c8a09fcf457358dcc894f22
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/MICRO_0000178.json
+    sha256: ef45aa186438f91d015280171fde8ccb25740a50cc6f2c6e848de6aad3339b31
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/audit-receipt.json
+    sha256: 3dff9e2f43ba39f9c5efce005147071b511b06f1bde136ddb0ebae8e86485316
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/chemical-identity-assessment.json
+    sha256: 976fade8e5cf542512708eba83f2538aa1f69376b7b3a64641b6fb1a90bcf6f6
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/input-slots.json
+    sha256: 10d4e694c9863597976215f2e5599f8e4e78b214401ec0c6553b6f5fbf762b1e
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/mim-exact-label-rows.json
+    sha256: b4b9a6f8fc00a5cbb158270d73b710b893a13c06091ad263322389d361080882
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/ols-capture-catalog.json
+    sha256: 04ad24d41b18e791f09e7a416f9c454f615824ede4454cbdb0c2840fcee2ad88
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/claim-inventory.json
+    sha256: 3afdd4206adef105027b41e95ba8e9420c64063b3699a45b3bce067b3e4aa156
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/issue-body-20261115.md
+    sha256: a0e43009c7a613850f92d93aee4a8c16b03ef3f03bf1e3ac676b0c978d2a6843
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/issue-filing-receipt-20261115.json
+    sha256: 631483e4edfddc15f485684b5b836c8a912a0c5d5ad59460a49a4388fd0c2b39
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/jcm547.html
+    sha256: 0257867102ac9146114c5337d2eb2b0391c2fd16aa18f392e3616aae7ce78844
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/mediadive-J547.json
+    sha256: 5a1d28467b1f436e9ec3d58f92e75dd46a83df1db644d15bb04a1aadbb457014
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/inspection.json
+    sha256: ad8bae03f66747f71edca0df0b0c4e17cee98cbd377dacdd5803aa6a9df61a14
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/references.log
+    sha256: 254da7eee7ae518a1951f250278e1b86383cdd1cdc205bb7c4a17786a6c89954
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/schema.log
+    sha256: 7f6c83aa39bdbb10305b80868a767cd345f0b6beecce0de70fdaa684c8eda050
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/strict.log
+    sha256: 1b54e5eff32885920a7e752f88891e4fd79f4714550a71f69dc5b8ea5bee3d9c
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/strict.tsv
+    sha256: 4ccba8b77ce80cf210105b5284b5953747729aba576ccdeecb81f7db84eb721b
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/targets.yaml
+    sha256: 80d6a5f551c61160cf826326489025db52f4acc4ec585f8f6cd0f520adb396f0
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/original-native/terms.log
+    sha256: 6d1e6d9197ee2e4862a8c3e955bf66380f33809345381a786040ec40180d52e0
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/peer-review.md
+    sha256: c46497ca6bda91acd00536b89a61b2a866a7f82d70376632e8595877125df88c
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/strict.tsv
+    sha256: 4ccba8b77ce80cf210105b5284b5953747729aba576ccdeecb81f7db84eb721b
+    role: context
+  - path: .temp/batch079-scientific-20261114/record10/targets.yaml
+    sha256: 80d6a5f551c61160cf826326489025db52f4acc4ec585f8f6cd0f520adb396f0
+    role: context
+  - path: AGENTS.md
+    sha256: 61991a89af8cb8d55b19dbb4a512656a438087b9f712174de99234b43183c3e5
+    role: context
+  - path: data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+    sha256: 9442e6a030c16b55629b5d2c0cf34562dd1a76336fa3919d3e523de5d7f53f33
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    sha256: 937e147f4df127a1f58ed4628eaee6c7b6ba3ea6ae80c80b64f20f3a4185ff96
+    role: context
+  - path: data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml
+    sha256: 33a73b9590837198183d7018abed116d91851d4e59ce87f60fe38a3d03d42a9c
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/batch079_build_record10_review.py
+    sha256: 508a865dec7a184b0d7ba8facfd1d7b0233e805d40aa29d2ae4f7f1f3b08090e
+    role: context
+  - path: scripts/batch079_run_check_v2.py
+    sha256: 3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_togo_m549_score15.py
+    sha256: 9c111338dba03ec282109c2aede610080e336cd03a6e53ff5c0758e5f956a67d
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 43725a6b518253da59235a20fa684f0332f2fd83ef852b2463c9e4d0cf1be9d5
+    role: context
+scope:
+  description: One exact generated target with its sole normalized TOGO owner and
+    separate context-only J547 record; full files, all direct/nested amounts, IDs,
+    conditions, history and evidence scope inspected.
+  selection: Recovered batch079 record10 explicit manifest, not a name-similarity
+    selection.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009942
+  exclusions:
+  - target: Other batch079 records, PR692, variant queue and catalog repair
+    reason: Separate scopes; no full-batch completion or release readiness is asserted.
+  - target: CultureMech:002894 as a curation target or merge owner
+    reason: Inspected only as source/variant context.
+targets:
+- target_id: CultureMech:009942
+  path: data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+  label: DESULFOTOMACULUM PBE MEDIUM
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  ownership_note: The additional desulfotomaculum_pbe_medium normalized record is
+    inspected as context; it is not assumed to be a merge input.
+checks:
+- check_id: C-schema
+  name: Native schema
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:009942
+  exit_code: 0
+  command: just validate-schema data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+  summary: Schema structure only.
+  scope_note: .temp/batch079-scientific-20261114/20261115T081824139492Z-record10-schema.json
+- check_id: C-strict
+  name: Native strict
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:009942
+  exit_code: 0
+  command: just validate-strict data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+    --out .temp/batch079-scientific-20261114/record10/strict.tsv --workers 1 --quiet
+  summary: One file, schema layer, zero errors; no corpus QC claim.
+  scope_note: .temp/batch079-scientific-20261114/20261115T081824635873Z-record10-strict.json
+- check_id: C-terms
+  name: Native terms
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:009942
+  exit_code: 0
+  command: just validate-terms data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+  summary: Configured routes only; direct identifier assessment is separate.
+  scope_note: .temp/batch079-scientific-20261114/20261115T081825506772Z-record10-terms.json
+- check_id: C-references
+  name: Native references
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:009942
+  exit_code: 0
+  command: just validate-references data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+  summary: ZERO evidence assertions checked on generated target; owner bibliography
+    is not claim-level support.
+  scope_note: .temp/batch079-scientific-20261114/20261115T081825245374Z-record10-references.json
+- check_id: C-inspect
+  name: Native input inspection
+  status: passed
+  required: true
+  target_ids:
+  - CultureMech:009942
+  exit_code: 0
+  summary: Complete assessment inputs hashed against unchanged current bytes.
+  scope_note: .temp/batch079-scientific-20261114/20261115T082138491359Z-record10-inspect-final.json
+- check_id: C-science
+  name: Primary-source scientific assessment
+  status: failed
+  required: true
+  target_ids:
+  - CultureMech:009942
+  summary: Assessment completed; generated representation and unsupported percentage-basis
+    claims prevent scientific acceptance.
+  evidence_ids:
+  - E-jcm
+  - E-owner
+  - E-record
+- check_id: C-togo
+  name: Exact direct TOGO corroboration
+  status: failed
+  required: false
+  target_ids:
+  - CultureMech:009942
+  exit_code: 28
+  command: /usr/bin/curl -fL --max-time 25 -o .temp/batch079-scientific-20261114/record10/togo-M549.json
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M549
+  summary: Direct source unavailable in bounded current retrieval; linked JCM primary
+    source supports the limited assessment.
+  evidence_ids:
+  - E-togo
+evidence:
+- evidence_id: E-record
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Complete generated target, sole normalized TOGO owner and separate context-only
+    J547 file read; all original inspection hashes match.
+  snapshot_sha256: 9442e6a030c16b55629b5d2c0cf34562dd1a76336fa3919d3e523de5d7f53f33
+- evidence_id: E-jcm
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547
+  accessed_at: '2026-11-15T08:18:24.917901Z'
+  support: partial
+  summary: Exact recipe gives batch masses, water and separate stock volumes with
+    literal percentages; default autoclave condition is explicit. Percentage basis
+    and final pH are not specified in the fully read source.
+  locator: Full recipe547, Solution A and subsequent stock table; default sterilization
+    header
+  snapshot_sha256: 0257867102ac9146114c5337d2eb2b0391c2fd16aa18f392e3616aae7ce78844
+- evidence_id: E-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J547
+  accessed_at: '2026-11-15T08:18:24.667073Z'
+  support: partial
+  summary: Provider points to exact JCM source, but Solution A volume990 and g_l values
+    conflict with nominal1000-mL assembly. Last unit ml] is also present in primary
+    JCM text; computed rates are not independent concentration support.
+  locator: $.data.solutions[1], full recipe and steps
+  snapshot_sha256: 5a1d28467b1f436e9ec3d58f92e75dd46a83df1db644d15bb04a1aadbb457014
+- evidence_id: E-owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Owner already repairs volume units, four nested stock definitions and staged
+    sterilization; its eight percentage-unit/notes assertions still overstate w/v
+    support.
+  snapshot_sha256: 937e147f4df127a1f58ed4628eaee6c7b6ba3ea6ae80c80b64f20f3a4185ff96
+- evidence_id: E-context
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Full similarly named CultureMech:002894 file is source-duplicate context
+    only, not an asserted merge input or repair owner for this selected generated
+    target.
+  snapshot_sha256: 33a73b9590837198183d7018abed116d91851d4e59ce87f60fe38a3d03d42a9c
+- evidence_id: E-repair
+  kind: record_content
+  reference: scripts/repair_togo_m549_score15.py
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Full maintained repair script read without execution. Its _stock_solution
+    hardcodes PERCENT_W_V and writes source-explicit w/v notes; future correction
+    must prevent reintroduction and preserve historical events.
+  snapshot_sha256: 9c111338dba03ec282109c2aede610080e336cd03a6e53ff5c0758e5f956a67d
+- evidence_id: E-peer
+  kind: prior_review
+  reference: .temp/batch079-scientific-20261114/record10/peer-review.md
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Independent source report rechecked against current exact JCM/API/local
+    inputs before adopting bounded findings.
+  snapshot_sha256: c46497ca6bda91acd00536b89a61b2a866a7f82d70376632e8595877125df88c
+- evidence_id: E-quantities
+  kind: record_content
+  reference: .temp/batch079-scientific-20261114/record10/claim-inventory.json
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Every current direct amount, stock addition and nested strength assessed
+    with retained values and nominal-batch/percentage limits.
+  snapshot_sha256: 3afdd4206adef105027b41e95ba8e9420c64063b3699a45b3bce067b3e4aa156
+- evidence_id: E-chemistry
+  kind: record_content
+  reference: .temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z/chemical-identity-assessment.json
+  accessed_at: '2026-11-15T08:21:38.907575Z'
+  support: context_only
+  summary: Independent identifier audit; exact primary authority captures and packaged
+    resolver statuses are separate evidence.
+  snapshot_sha256: 976fade8e5cf542512708eba83f2538aa1f69376b7b3a64641b6fb1a90bcf6f6
+- evidence_id: E-togo
+  kind: validation
+  reference: .temp/batch079-scientific-20261114/20261115T081826011710Z-record10-fetch-togo.json
+  accessed_at: '2026-11-15T08:18:26.011913Z'
+  support: context_only
+  summary: Bounded exact TOGO endpoint request exit 28; usable direct source corroboration
+    remains unavailable if timeout. This is separate from successful native diagnostics.
+  snapshot_sha256: 68b6cd1dcb9f972602f6c2500647b6e60c4e05e077a31262b52648e73f980b19
+- evidence_id: E-CHEBI-32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  accessed_at: '2026-11-15T07:58:37.171101Z'
+  support: context_only
+  summary: sodium sulfate; active status and supplied-form assessment retained in
+    chemical audit.
+  locator: CHEBI:32149
+  snapshot_sha256: 969ae214c947d944eb086715a9f43a67e02b889258f6c61a64eb2a17b882b9a0
+- evidence_id: E-CHEBI-113451
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_113451
+  accessed_at: '2026-11-15T08:18:43.201475Z'
+  support: context_only
+  summary: sodium ascorbate; active status and supplied-form assessment retained in
+    chemical audit.
+  locator: CHEBI:113451
+  snapshot_sha256: 043a3e599af0465d75d66ee50d56e1302ac1db011a8e3eeb7c542eefbe4ee91a
+- evidence_id: E-CHEBI-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  accessed_at: '2026-11-15T08:18:43.201558Z'
+  support: context_only
+  summary: dipotassium hydrogen phosphate; active status and supplied-form assessment
+    retained in chemical audit.
+  locator: CHEBI:131527
+  snapshot_sha256: 508d148458aef6ee872ff7f4fb4103c2f9fe47e79cbd737da206efaf10a1169c
+- evidence_id: E-CHEBI-15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  accessed_at: '2026-11-15T08:18:43.201636Z'
+  support: context_only
+  summary: water; active status and supplied-form assessment retained in chemical
+    audit.
+  locator: CHEBI:15377
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: E-CHEBI-17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  accessed_at: '2026-11-15T08:18:43.201705Z'
+  support: context_only
+  summary: dinitrogen; active status and supplied-form assessment retained in chemical
+    audit.
+  locator: CHEBI:17997
+  snapshot_sha256: f318e64e62e0ec43ad70dab0d833094ce31045bae1d2b10d9f8c7d13919698f2
+- evidence_id: E-CHEBI-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  accessed_at: '2026-11-15T08:18:43.201746Z'
+  support: context_only
+  summary: magnesium sulfate heptahydrate; active status and supplied-form assessment
+    retained in chemical audit.
+  locator: CHEBI:31795
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: E-CHEBI-3312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  accessed_at: '2026-11-15T08:18:43.201791Z'
+  support: context_only
+  summary: calcium dichloride; active status and supplied-form assessment retained
+    in chemical audit.
+  locator: CHEBI:3312
+  snapshot_sha256: 217c9e892fe9696e955360f77f79c68a43c617fd7942dcdfbba7fa368a7bdb14
+- evidence_id: E-CHEBI-75228
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  accessed_at: '2026-11-15T08:18:44.157362Z'
+  support: context_only
+  summary: sodium lactate; active status and supplied-form assessment retained in
+    chemical audit.
+  locator: CHEBI:75228
+  snapshot_sha256: 1e85d5805503f3beaaa624dcf8cb41559784dfbee8a568dbfc62182977b1925f
+- evidence_id: E-CHEBI-76181
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76181
+  accessed_at: '2026-11-15T08:18:44.159940Z'
+  support: context_only
+  summary: ferrous ammonium sulfate hexahydrate; active status and supplied-form assessment
+    retained in chemical audit.
+  locator: CHEBI:76181
+  snapshot_sha256: 1ca5b1ee73ce8d8fd35e60c7f45baacd870b6f5fdce0a02345be62e7622dbaa5
+- evidence_id: E-FOODON-03302088
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03302088
+  accessed_at: '2026-11-15T08:18:44.171839Z'
+  support: context_only
+  summary: beef extract; active status and supplied-form assessment retained in chemical
+    audit.
+  locator: FOODON:03302088
+  snapshot_sha256: ee2e9f57bae58d8170d339f9a0575ea59cda36ff7c8a09fcf457358dcc894f22
+- evidence_id: E-MICRO-0000178
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178
+  accessed_at: '2026-11-15T08:18:44.173923Z'
+  support: context_only
+  summary: peptone; active status and supplied-form assessment retained in chemical
+    audit.
+  locator: MICRO:0000178
+  snapshot_sha256: ef45aa186438f91d015280171fde8ccb25740a50cc6f2c6e848de6aad3339b31
+assessments:
+- assessment_id: A-identity
+  area: identity
+  topic: Exact generated target, sole owner and context
+  outcome: supported
+  summary: Current merge history identifies only TOGO_M549 as owner. Its imported
+    JCM547 attribution agrees with the source title and maintained formulation; exact
+    current direct TOGO data remain unavailable. The context-only002894 file is not
+    promoted to merge ownership.
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-record
+  - E-owner
+  - E-context
+  - E-jcm
+  - E-togo
+- assessment_id: A-amounts
+  area: quantity
+  topic: All direct, stock and nested amounts
+  outcome: concern
+  summary: All41 concentration fields reviewed. Five generated volume amounts are
+    misrepresented as mass. Owner/context stock additions preserve their nominal batch
+    roles, but eight nested percentage fields assert an unsupported w/v basis. Source
+    batch numbers and derived per-liter labels must remain distinct.
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-jcm
+  - E-api
+  - E-quantities
+  - E-owner
+  details: 'data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[0].concentration
+    Distilled water; retained={''value'': ''900'', ''unit'': ''G_PER_L''}; decision=correct;
+    Source gives an addition volume; this mass-per-volume unit is unsupported without
+    a density conversion.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[1].concentration
+    MgSO4・7H2O; retained={''value'': ''2'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[2].concentration
+    Na2SO4; retained={''value'': ''1.5'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[3].concentration
+    CaCl2; retained={''value'': ''0.1'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[4].concentration
+    Beef extract; retained={''value'': ''1'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[5].concentration
+    Peptone; retained={''value'': ''2'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[6].concentration
+    N2; retained={''value'': ''variable'', ''unit'': ''VARIABLE''}; decision=evidence_only;
+    Source specifies the N2 atmosphere; VARIABLE is not a quantified dissolved-gas
+    concentration.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::ingredients[7].concentration
+    5% Sodium lactate (autoclaved); retained={''value'': ''70'', ''unit'': ''G_PER_L''};
+    decision=correct; Source gives an addition volume; this mass-per-volume unit is
+    unsupported without a density conversion.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::solutions[0].concentration
+    4% Fe(NH4)2(SO4)2・6H2O solution (filter--sterilized); retained={''value'': ''10'',
+    ''unit'': ''G_PER_L''}; decision=correct; Source gives stock addition volume,
+    not added stock mass.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::solutions[1].concentration
+    5% K2HPO4 solution (autoclaved); retained={''value'': ''10'', ''unit'': ''G_PER_L''};
+    decision=correct; Source gives stock addition volume, not added stock mass.
+
+    data/merge_yaml/merged/DESULFOTOMACULUM_PBE_MEDIUM.yaml::solutions[2].concentration
+    1% Sodium ascorbate solution (filter--sterilized); retained={''value'': ''10'',
+    ''unit'': ''G_PER_L''}; decision=correct; Source gives stock addition volume,
+    not added stock mass.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[0].concentration
+    Peptone; retained={''value'': ''2.0'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[1].concentration
+    Beef extract; retained={''value'': ''1.0'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[2].concentration
+    MgSO4 x 7H2O; retained={''value'': ''2.0'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[3].concentration
+    Na2SO4; retained={''value'': ''1.5'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[4].concentration
+    CaCl2; retained={''value'': ''0.1'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[5].concentration
+    Distilled water; retained={''value'': ''900.0'', ''unit'': ''ML_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[6].concentration
+    N2; retained={''value'': ''variable'', ''unit'': ''VARIABLE''}; decision=evidence_only;
+    Source specifies the N2 atmosphere; VARIABLE is not a quantified dissolved-gas
+    concentration.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[0].concentration
+    5% K2HPO4 solution; retained={''value'': ''10.0'', ''unit'': ''ML_PER_L''}; decision=evidence_only;
+    Separate stock addition volume is supported on the nominal batch basis; do not
+    replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[0].composition[0].concentration
+    K2HPO4; retained={''value'': ''5.0'', ''unit'': ''PERCENT_W_V''}; decision=correct;
+    Literal percentage is supported; PERCENT_W_V and notes asserting explicit w/v
+    source support are not established. Preserve unspecified percentage basis rather
+    than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[1].concentration
+    5% Sodium lactate solution; retained={''value'': ''70.0'', ''unit'': ''ML_PER_L''};
+    decision=evidence_only; Separate stock addition volume is supported on the nominal
+    batch basis; do not replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[1].composition[0].concentration
+    Sodium lactate; retained={''value'': ''5.0'', ''unit'': ''PERCENT_W_V''}; decision=correct;
+    Literal percentage is supported; PERCENT_W_V and notes asserting explicit w/v
+    source support are not established. Preserve unspecified percentage basis rather
+    than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[2].concentration
+    4% Fe(NH4)2(SO4)2 x 6H2O solution; retained={''value'': ''10.0'', ''unit'': ''ML_PER_L''};
+    decision=evidence_only; Separate stock addition volume is supported on the nominal
+    batch basis; do not replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[2].composition[0].concentration
+    Fe(NH4)2(SO4)2 x 6H2O; retained={''value'': ''4.0'', ''unit'': ''PERCENT_W_V''};
+    decision=correct; Literal percentage is supported; PERCENT_W_V and notes asserting
+    explicit w/v source support are not established. Preserve unspecified percentage
+    basis rather than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[3].concentration
+    1% Sodium ascorbate solution; retained={''value'': ''10.0'', ''unit'': ''ML_PER_L''};
+    decision=evidence_only; Separate stock addition volume is supported on the nominal
+    batch basis; do not replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[3].composition[0].concentration
+    Sodium ascorbate; retained={''value'': ''1.0'', ''unit'': ''PERCENT_W_V''}; decision=correct;
+    Literal percentage is supported; PERCENT_W_V and notes asserting explicit w/v
+    source support are not established. Preserve unspecified percentage basis rather
+    than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[0].concentration
+    Peptone; retained={''value'': ''2.0'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[1].concentration
+    Beef extract; retained={''value'': ''1.0'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[2].concentration
+    MgSO4 x 7H2O; retained={''value'': ''2.0'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[3].concentration
+    Na2SO4; retained={''value'': ''1.5'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[4].concentration
+    CaCl2; retained={''value'': ''0.1'', ''unit'': ''G_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[5].concentration
+    Distilled water; retained={''value'': ''900.0'', ''unit'': ''ML_PER_L''}; decision=evidence_only;
+    Source supplies the named batch amount. Per-liter values are interpreted on the
+    nominal assembled 1000-mL basis, not a directly stated measured final volume.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::ingredients[6].concentration
+    N2; retained={''value'': ''variable'', ''unit'': ''VARIABLE''}; decision=evidence_only;
+    Source specifies the N2 atmosphere; VARIABLE is not a quantified dissolved-gas
+    concentration.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[0].concentration
+    5% K2HPO4 solution; retained={''value'': ''10.0'', ''unit'': ''ML_PER_L''}; decision=evidence_only;
+    Separate stock addition volume is supported on the nominal batch basis; do not
+    replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[0].composition[0].concentration
+    K2HPO4; retained={''value'': ''5.0'', ''unit'': ''PERCENT_W_V''}; decision=correct;
+    Literal percentage is supported; PERCENT_W_V and notes asserting explicit w/v
+    source support are not established. Preserve unspecified percentage basis rather
+    than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[1].concentration
+    5% Sodium lactate solution; retained={''value'': ''70.0'', ''unit'': ''ML_PER_L''};
+    decision=evidence_only; Separate stock addition volume is supported on the nominal
+    batch basis; do not replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[1].composition[0].concentration
+    Sodium lactate; retained={''value'': ''5.0'', ''unit'': ''PERCENT_W_V''}; decision=correct;
+    Literal percentage is supported; PERCENT_W_V and notes asserting explicit w/v
+    source support are not established. Preserve unspecified percentage basis rather
+    than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[2].concentration
+    4% Fe(NH4)2(SO4)2 x 6H2O solution; retained={''value'': ''10.0'', ''unit'': ''ML_PER_L''};
+    decision=evidence_only; Separate stock addition volume is supported on the nominal
+    batch basis; do not replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[2].composition[0].concentration
+    Fe(NH4)2(SO4)2 x 6H2O; retained={''value'': ''4.0'', ''unit'': ''PERCENT_W_V''};
+    decision=correct; Literal percentage is supported; PERCENT_W_V and notes asserting
+    explicit w/v source support are not established. Preserve unspecified percentage
+    basis rather than deriving a final solute concentration.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[3].concentration
+    1% Sodium ascorbate solution; retained={''value'': ''10.0'', ''unit'': ''ML_PER_L''};
+    decision=evidence_only; Separate stock addition volume is supported on the nominal
+    batch basis; do not replace it with a solute mass.
+
+    data/normalized_yaml/bacterial/desulfotomaculum_pbe_medium.yaml::solutions[3].composition[0].concentration
+    Sodium ascorbate; retained={''value'': ''1.0'', ''unit'': ''PERCENT_W_V''}; decision=correct;
+    Literal percentage is supported; PERCENT_W_V and notes asserting explicit w/v
+    source support are not established. Preserve unspecified percentage basis rather
+    than deriving a final solute concentration.'
+- assessment_id: A-preparation
+  area: scope
+  topic: Sequential sterilization and source default
+  outcome: concern
+  summary: JCM explicitly supports121C/15min as its default. Owner/context preserve
+    N2 base autoclaving, separately autoclaved phosphate/lactate and filter-sterilized
+    iron/ascorbate before aseptic anaerobic addition. Generated output omits these
+    structured instructions; stock names alone do not preserve the full sequence.
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-jcm
+  - E-record
+  - E-owner
+- assessment_id: A-class
+  area: identity
+  topic: Complex mixture, physical state and biological scope
+  outcome: supported
+  summary: Peptone and beef extract support COMPLEX/UNDEFINED with LIQUID physical
+    state. Generic cultivation is supported; no organism growth, optimality, missing
+    final pH or percentage convention is inferred.
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-jcm
+  - E-record
+  - E-owner
+- assessment_id: A-chemistry
+  area: grounding
+  topic: All asserted ontology identities
+  outcome: concern
+  summary: All asserted IDs were inspected separately from native term checks; supplied
+    hydrate forms, counterions, mixture scope and stereochemical limits are recorded
+    per identifier. A supported identity does not establish stock percentage basis
+    or concentration. MICRO:0000178 specifies an enzymatic mammalian-protein digest,
+    beyond the generic Peptone wording in JCM; that specificity remains unconfirmed,
+    with no forced replacement.
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-chemistry
+  - E-CHEBI-32149
+  - E-CHEBI-113451
+  - E-CHEBI-131527
+  - E-CHEBI-15377
+  - E-CHEBI-17997
+  - E-CHEBI-31795
+  - E-CHEBI-3312
+  - E-CHEBI-75228
+  - E-CHEBI-76181
+  - E-FOODON-03302088
+  - E-MICRO-0000178
+  details: 'CHEBI:113451; compatible_named_chemical; Sodium counterion and ascorbate
+    structure match the conventional named material. The authoritative structure specifies
+    L-ascorbate stereochemistry; the source gives only Sodium ascorbate and does not
+    establish supplier, purity or independently verified stereoisomer. No contrary
+    stereochemistry is asserted.
+
+    CHEBI:131527; compatible_named_chemical; Two potassium counterions and hydrogen
+    phosphate match K2HPO4. Core formula/structure do not include hydrate waters;
+    a loose hydrate synonym does not establish a different supplied form.
+
+    CHEBI:15377; compatible_named_chemical; Water identity is compatible with distilled
+    water. It neither proves distillation grade nor licenses a mass/volume or density
+    conversion.
+
+    CHEBI:17997; compatible_named_chemical; Dinitrogen identity matches N2. It does
+    not establish dissolved concentration, gas fraction or exposure conditions.
+
+    CHEBI:31795; compatible_named_chemical; Formula, InChI and structure explicitly
+    contain seven waters and match both local heptahydrate spellings. No hydrate correction
+    is supported.
+
+    CHEBI:32149; compatible_named_chemical; Two sodium counterions and sulfate match
+    Na2SO4; no hydrate is asserted locally.
+
+    CHEBI:3312; compatible_named_chemical; Calcium plus two chlorides match CaCl2.
+    Neither the local name nor the primary source specifies hydrate water; do not
+    infer it from an overly broad synonym.
+
+    CHEBI:75228; compatible_stereochemistry_unspecified; Sodium lactate counterion
+    and formula match; InChI and SMILES have no stereochemical designation. The generic
+    source name supports this breadth, not an inferred L, D or racemic claim.
+
+    CHEBI:76181; compatible_named_chemical; Structure specifies Fe(II), two ammonium
+    ions, two sulfates and six waters, matching the supplied ferrous ammonium sulfate
+    hexahydrate.
+
+    FOODON:03302088; compatible_mixture_label; Exact active label is beef extract
+    and the source uses that name. This mixture term does not establish a fixed formula,
+    molecular weight, brand or composition.
+
+    MICRO:0000178; material_specificity_unconfirmed; The active preferred label peptone
+    and packaged MIM mapping agree. Its definition additionally specifies an enzymatic
+    digest of mammalian protein; the primary source says only Peptone. That origin/processing
+    specificity is unconfirmed, not an invalid identifier or demonstrated wrong ingredient.
+    Do not transfer the ontology supplier-example composition or force a substitute.'
+- assessment_id: A-evidence
+  area: provenance
+  topic: History, references and current source limits
+  outcome: concern
+  summary: Generated August6 artifact predates owner September11 repair event and
+    preserves the old units/preparation structure. Existing event history and ingredients_curated
+    flags are retained as historical statements. Owner/context bibliography does not
+    support the stronger w/v assertion; target reference validation inspected zero
+    evidence assertions. JCM/API lack final pH, but direct TOGO absence cannot be
+    independently asserted.
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-record
+  - E-owner
+  - E-context
+  - E-repair
+  - E-jcm
+  - E-api
+  - E-togo
+findings:
+- finding_id: F-volume
+  issue_key: batch079-record10-f-volume
+  severity: major
+  category: quantity
+  status: open
+  certainty: confirmed
+  title: Generated source volumes are encoded as masses
+  description: Generated water900, sodium-lactate stock70 and three stock additions10
+    use G_PER_L although primary table gives volumes. The owner already uses ML_PER_L
+    and separates stock dose/strength. No density conversion justifies the old mass
+    units.
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[7].concentration
+  - solutions[*].concentration
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-record
+  - E-owner
+  - E-jcm
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/751
+  rule_id: CultureMech.single-record-checklist.quantity
+  native_severity: major
+  normalization_reason: Severity follows the concrete unsupported representation or
+    source claim; technical validator success is not scientific acceptance.
+- finding_id: F-method
+  issue_key: batch079-record10-f-method
+  severity: major
+  category: scope
+  status: open
+  certainty: confirmed
+  title: Generated target loses existing staged preparation
+  description: Generated target has neither preparation_steps nor sterilization, while
+    its owner and JCM distinguish base atmosphere, sequence and stock sterilization
+    methods. Credit the supported121C/15min default; preserve stock-specific exceptions.
+  field_paths:
+  - preparation_steps
+  - sterilization
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-record
+  - E-owner
+  - E-jcm
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/751
+  rule_id: CultureMech.single-record-checklist.scope
+  native_severity: major
+  normalization_reason: Severity follows the concrete unsupported representation or
+    source claim; technical validator success is not scientific acceptance.
+- finding_id: F-percent
+  issue_key: batch079-record10-f-percent
+  severity: major
+  category: evidence
+  status: open
+  certainty: confirmed
+  title: Owner asserts a percentage basis absent from inspected source
+  description: Four owner composition units and their notes assert PERCENT_W_V/source-explicit
+    w/v. Current JCM and API only give5%,5%,4%,1%. The repair helper hardcodes this
+    claim. Retain literal percentages with explicit uncertainty until basis is verified,
+    preserving currently supported stock doses and avoiding final-mass conversion.
+    Context002894 has the same issue but is not an additional target or owner.
+  field_paths:
+  - data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[*].composition[0].concentration.unit
+  - data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::solutions[*].composition[0].notes
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-owner
+  - E-jcm
+  - E-api
+  - E-repair
+  - E-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/repair_togo_m549_score15.py
+    role: maintained correction writer; not a merge recipe input
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/751
+  rule_id: CultureMech.single-record-checklist.evidence
+  native_severity: major
+  normalization_reason: Severity follows the concrete unsupported representation or
+    source claim; technical validator success is not scientific acceptance.
+- finding_id: F-linkage
+  issue_key: batch079-record10-f-linkage
+  severity: minor
+  category: provenance
+  status: open
+  certainty: confirmed
+  title: Evidence linkage and exact-source specificity remain limited
+  description: Target has no evidence assertions; owner/context reference URLs are
+    not exact support for every quantity or basis. Direct TOGO is unavailable, so
+    their universal statement that TOGO reports no final pH is not independently corroborated.
+    Preserve the linked JCM identity and qualify current-source scope rather than
+    inventing pH or stronger equivalence. Owner/context MICRO:0000178 specifies an
+    enzymatic mammalian digest that the generic primary Peptone label does not establish;
+    this is an unconfirmed specificity, not a demonstrated wrong product.
+  field_paths:
+  - notes
+  - references
+  - evidence
+  - data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::parent_media
+  - data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml::ingredients[0].term
+  target_ids:
+  - CultureMech:009942
+  evidence_ids:
+  - E-record
+  - E-owner
+  - E-context
+  - E-jcm
+  - E-api
+  - E-togo
+  - E-chemistry
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/751
+  rule_id: CultureMech.single-record-checklist.provenance
+  native_severity: minor
+  normalization_reason: Severity follows the concrete unsupported representation or
+    source claim; technical validator success is not scientific acceptance.
+actions:
+- action_id: ACT-source
+  description: Resolve the exact percentage convention and source attribution in the
+    sole authoritative TOGO owner and relevant maintained repair logic; otherwise
+    preserve an explicit unspecified basis. Keep supported stock volume and preparation
+    repairs.
+  finding_ids:
+  - F-percent
+  - F-linkage
+  target_ids:
+  - CultureMech:009942
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/repair_togo_m549_score15.py
+    role: maintained correction writer; not a merge recipe input
+  acceptance_checks:
+  - Attach narrow primary-source evidence or preserve explicit percentage-basis uncertainty;
+    do not invent density, final mass or final pH.
+  - Verify generic mixture grounding without assuming a peptone digest process or
+    animal source.
+  - Preserve existing history; the old repair helper replaces matching historical
+    events, so do not blindly rerun it for a new correction.
+  - Keep context-only002894 outside this target ownership; separately coordinate any
+    shared-transform effect.
+  - Correction logic must preserve unresolved percentage basis and must not recreate
+    the unsupported source-explicit w/v assertion.
+- action_id: ACT-output
+  description: After source decisions, regenerate the selected output through the
+    maintained merge workflow with its verified owner and review the exact product
+    diff.
+  finding_ids:
+  - F-volume
+  - F-method
+  target_ids:
+  - CultureMech:009942
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml
+    role: normalized source
+  depends_on:
+  - ACT-source
+  generator: src/culturemech/merge/merge_recipes.py with explicitly scoped verified
+    owner set
+  acceptance_checks:
+  - Preserve stable identity and source-specific stock additions/strengths, N2 atmosphere
+    and stock-method exceptions.
+  - Run documented schema/strict/term/reference and applicable merge/ID gates on changed
+    surfaces, then independent scientific review.
+  - Do not infer a current merger-code defect from this stale output or hand-edit
+    generated YAML.
+limitations:
+- Completed assessment is a needs_curation verdict, not scientific acceptance. Technical
+  passes and historical ingredients_curated flags do not resolve findings.
+- Per-liter interpretation uses the nominal900+10+70+10+10mL assembly; neither a measured
+  final volume nor stock percentage basis is invented. API990-mL computed rates are
+  not adopted.
+- Direct current TOGO corroboration is unavailable. JCM and provider attribution support
+  this limited source review, not unseen current TOGO content.
+- Reference validation inspected zero evidence assertions on the selected generated
+  target. Owner/context bibliography remains distinct from narrow assertion evidence.
+- No scientific file, historical event or generated product was changed; follow-up
+  is filed. Broad corpus, merge-freshness and export gates are not claimed executed.
+- Raw evidence and one-run helper scripts remain in the durable checkout; publication
+  scope is immutable review bundles only.
+notes:
+- started_at uses the first recorded current source-capture time; full-file reading
+  began earlier without a separately persisted timestamp. Original technical receipts
+  remain preserved.
+- Current JCM explicitly supplies the121C/15min default; it is retained as supported,
+  not flagged as inferred.
+- Pre-save native validation rejected UTC offset syntax and unavailable-check exit
+  semantics. Earlier drafts and failed receipts are preserved. The actual TOGO request
+  executed and failed with curl28, so it is recorded as a failed optional check; no
+  validator was waived. Independent review clarified exact owner-qualified paths and
+  maintained writer responsibility.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/751
+- https://github.com/CultureBotAI/CultureMech/issues/408
+- https://github.com/CultureBotAI/CultureMech/issues/150
+tags:
+- batch079
+- record10
+- needs_curation
+- source_review

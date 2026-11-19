@@ -1,0 +1,23 @@
+import json,csv,hashlib,pathlib,yaml,collections
+R=pathlib.Path.cwd();D=R/'.temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z'
+cat=json.loads((D/'ols-capture-catalog.json').read_text()); print('catalog type',type(cat).__name__); print('first',json.dumps(cat[0],ensure_ascii=False)[:1600])
+ps=['data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml','data/normalized_yaml/bacterial/desulfotignum_medium.yaml','data/normalized_yaml/bacterial/desulfobacterium_medium.yaml']; slots=[]
+def walk(x,p,doc):
+ if isinstance(x,dict):
+  for k,v in x.items():
+   q=(p+'.'+k).lstrip('.')
+   if isinstance(v,dict) and str(v.get('id','')).startswith('CHEBI:'): slots.append({'document':doc,'path':q,'name':x.get('preferred_term',x.get('name')),'id':v['id'],'local_label':v.get('label')})
+   walk(v,q,doc)
+ elif isinstance(x,list):
+  for i,v in enumerate(x): walk(v,p+'['+str(i)+']',doc)
+for p in ps:
+ b=(R/p).read_bytes(); walk(yaml.safe_load(b),'',p); print('input',p,hashlib.sha256(b).hexdigest())
+ids=sorted({x['id'] for x in slots}); names=sorted({x['name'] for x in slots}); print('counts',len(slots),len(ids),dict(collections.Counter(x['document'] for x in slots)))
+print('new IDs',sorted(set(ids)-{x['id'] for x in cat})); print('names',names)
+for f in ['chemical-identity-assessment.json','direct-pin-receipt.json','input-slots.json']:
+ o=json.loads((D/f).read_text()); print(f,'shape',list(o) if isinstance(o,dict) else ('list',len(o)))
+rows=[]
+with (R/'src/culturemech/data/mediaingredientmech/label_index.csv').open() as f:
+ for n,row in enumerate(csv.DictReader(f),2):
+  if row['label'].casefold() in {s.casefold() for s in names}: rows.append({'line':n,**row})
+print('MIM_ROWS',json.dumps(rows,indent=2))

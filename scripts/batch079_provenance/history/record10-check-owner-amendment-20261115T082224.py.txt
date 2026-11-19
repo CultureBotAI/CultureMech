@@ -1,0 +1,21 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import yaml,hashlib,json
+r=Path('.temp/batch079-scientific-20261114/record10');p=r/'review.yaml';b=p.read_bytes()
+assert hashlib.sha256(b).hexdigest()=='4e2edbd3fbc1dbfc43570fee62d4949edb05772b4e07d637afa0f92ae96302c9'
+with (r/'review.pre-check-status-owner-fix.yaml').open('xb') as h:h.write(b)
+d=yaml.safe_load(b);owner='data/normalized_yaml/bacterial/TOGO_M549_Desulfotomaculum_PBE_Medium.yaml';writer={'repository':'CultureBotAI/CultureMech','path':'scripts/repair_togo_m549_score15.py','role':'maintained correction writer; not a merge recipe input'}
+for c in d['checks']:
+ if c['check_id']=='C-togo':c['status']='failed'
+for f in d['findings']:
+ if f['finding_id']=='F-percent':
+  f['field_paths']=[owner+'::'+x for x in f['field_paths']];f['owner_paths'].append(writer.copy())
+ if f['finding_id']=='F-linkage':f['field_paths']=[owner+'::parent_media' if x=='parent_media' else owner+'::ingredients[0].term' if x=='owner::ingredients[0].term' else x for x in f['field_paths']]
+for a in d['actions']:
+ if a['action_id']=='ACT-source':a['owner_paths'].append(writer.copy());a['acceptance_checks'].append('Correction logic must preserve unresolved percentage basis and must not recreate the unsupported source-explicit w/v assertion.')
+now=datetime.now(timezone.utc);d['finished_at']=now.isoformat().replace('+00:00','Z');d['review_id']=now.strftime('%Y%m%dT%H%M%SZ')+'-batch079-record10-desulfotomaculum'
+d['notes'].append('Pre-save native validation rejected UTC offset syntax and unavailable-check exit semantics. Earlier drafts and failed receipts are preserved. The actual TOGO request executed and failed with curl28, so it is recorded as a failed optional check; no validator was waived. Independent review clarified exact owner-qualified paths and maintained writer responsibility.')
+class D(yaml.SafeDumper):
+ def ignore_aliases(self,data):return True
+p.write_text(yaml.dump(d,Dumper=D,sort_keys=False,allow_unicode=True,width=100))
+print(json.dumps({'draft_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'review_id':d['review_id']}))

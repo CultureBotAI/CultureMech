@@ -1,0 +1,4 @@
+import json,pathlib
+R=pathlib.Path.cwd();P=R/'.temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z';D=R/'.temp/batch079-scientific-20261114/record08/chemical-identity-tsb-20261115T080902116157Z'
+print((R/'src/culturemech/data/mediaingredientmech/label_index.metadata.json').read_text())
+a=json.loads((P/'chemical-identity-assessment.json').read_text());print('assessment entry shape',json.dumps(a['assessments'][0],indent=2)[:1800]); print('07 status counts',a['status_counts']);print('08 new capture',json.dumps(next(x for x in json.loads((D/'ols-capture-catalog.json').read_text()) if x['id']=='CHEBI:50144'),indent=2))

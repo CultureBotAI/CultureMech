@@ -1,0 +1,6 @@
+from html.parser import HTMLParser
+from pathlib import Path
+class T(HTMLParser):
+ def handle_data(self,d):
+  if d.strip(): print(d.strip())
+T().feed(Path('.temp/batch079-scientific-20261114/record10/jcm547.html').read_text())

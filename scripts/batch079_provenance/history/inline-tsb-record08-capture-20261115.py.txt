@@ -1,0 +1,37 @@
+import json,csv,hashlib,pathlib,yaml,collections,datetime,urllib.request,urllib.parse,os
+R=pathlib.Path.cwd();P=R/'.temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z';stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');D=R/'.temp/batch079-scientific-20261114/record08'/('chemical-identity-tsb-'+stamp)
+assert not os.path.lexists(D);D.mkdir(parents=True,exist_ok=False)
+sha=lambda b:hashlib.sha256(b).hexdigest()
+def now():return datetime.datetime.now(datetime.timezone.utc).isoformat().replace('+00:00','Z')
+def write(n,x):(D/n).write_text(json.dumps(x,indent=2,ensure_ascii=False)+'\n')
+paths=['data/merge_yaml/merged/DESULFOTIGNUM_MEDIUM.yaml','data/normalized_yaml/bacterial/desulfotignum_medium.yaml','data/normalized_yaml/bacterial/desulfobacterium_medium.yaml'];slots=[];inputs=[]
+def walk(x,p,doc):
+ if isinstance(x,dict):
+  for k,v in x.items():
+   q=(p+'.'+k).lstrip('.')
+   if isinstance(v,dict) and str(v.get('id','')).startswith('CHEBI:'):slots.append({'document':doc,'path':q,'name':x.get('preferred_term',x.get('name')),'id':v['id'],'local_label':v.get('label')})
+   walk(v,q,doc)
+ elif isinstance(x,list):
+  for i,v in enumerate(x):walk(v,p+'['+str(i)+']',doc)
+for p in paths:
+ b=(R/p).read_bytes();inputs.append({'path':p,'sha256':sha(b),'bytes':len(b)});walk(yaml.safe_load(b),'',p)
+ids=sorted({s['id'] for s in slots});names=sorted({s['name'] for s in slots});catalog=[];oldcat=json.loads((P/'ols-capture-catalog.json').read_text());old={x['id']:x for x in oldcat}
+for id in ids+['CHEBI:53542']:
+ if id in old:
+  x=json.loads(json.dumps(old[id]));raw=P/x['raw_file'];assert sha(raw.read_bytes())==x['sha256'];x['raw_path']=str(raw.relative_to(R));x['reuse']={'kind':'exact current-session record07 raw bytes','catalog_path':str((P/'ols-capture-catalog.json').relative_to(R)),'catalog_sha256':sha((P/'ols-capture-catalog.json').read_bytes()),'capture_times_preserved':True};catalog.append(x)
+ else:
+  u='https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?'+urllib.parse.urlencode({'iri':'http://purl.obolibrary.org/obo/'+id.replace(':','_')});start=now()
+  with urllib.request.urlopen(u,timeout=45) as resp:b=resp.read();status=resp.status;headers=dict(resp.headers.items())
+  raw=D/(id.replace(':','_')+'.json');raw.write_bytes(b);terms=json.loads(b).get('_embedded',{}).get('terms',[]);exact=[{k:t.get(k) for k in ['obo_id','iri','label','description','is_obsolete','annotation','synonyms']} for t in terms if t.get('obo_id')==id];assert len(exact)==1
+  catalog.append({'id':id,'url':u,'started_at':start,'finished_at':now(),'status':status,'headers':headers,'raw_file':raw.name,'raw_path':str(raw.relative_to(R)),'sha256':sha(b),'bytes':len(b),'exact_terms':exact,'reuse':None})
+write('input-slots.json',{'inputs':inputs,'slots':slots,'unique_asserted_ids':ids})
+cp=R/'src/culturemech/data/mediaingredientmech/label_index.csv';rows=[];total=0
+with cp.open() as f:
+ for n,row in enumerate(csv.DictReader(f),2):
+  total+=1
+  if row['label'].casefold() in {x.casefold() for x in names}:rows.append({'physical_csv_line':n,**row})
+mp=cp.with_name('label_index.metadata.json');write('mim-exact-label-rows.json',{'source_path':str(cp.relative_to(R)),'source_sha256':sha(cp.read_bytes()),'metadata_path':str(mp.relative_to(R)),'metadata_sha256':sha(mp.read_bytes()),'data_rows_scanned':total,'match_method':'casefold equality of every asserted local chemical preferred_term; all matching statuses retained','local_names':names,'rows':rows})
+write('ols-capture-catalog.json',catalog)
+print('EVIDENCE_DIR',str(D));print('counts',len(ids),len(slots),len(rows),len(catalog),'new',sum(x['reuse'] is None for x in catalog))
+for x in catalog:
+ t=x['exact_terms'][0];a=t['annotation'];print(json.dumps({'id':x['id'],'label':t['label'],'description':t['description'],'is_obsolete':t['is_obsolete'],'formula':a.get('generalized_empirical_formula'),'charge':a.get('charge'),'mass':a.get('mass'),'inchi':a.get('inchi_string'),'smiles':a.get('smiles_string'),'synonyms':t['synonyms']},ensure_ascii=False))

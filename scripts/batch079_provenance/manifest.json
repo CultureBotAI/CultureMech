@@ -1,0 +1,2731 @@
+{
+  "schema_version": "1.0",
+  "kind": "batch079_helper_source_provenance",
+  "created_at": "2026-11-15T08:31:51.341899+00:00",
+  "scope": "Exact source-data archives for record07/08/10 review authoring and command capture; no recipe repairs or whole-batch completion claim.",
+  "base_commit": "dda27db28f1e5f4f05da6d92fbd2cc1bd6e8add3",
+  "tracking_issue": "https://github.com/CultureBotAI/CultureMech/issues/752",
+  "versions": [
+    {
+      "version_id": "batch079_run_check.pre-ruff-20261115T075542",
+      "archive_path": "scripts/batch079_provenance/history/batch079_run_check.pre-ruff-20261115T075542.py.txt",
+      "sha256": "75aaad7d419d0510fe1bbcc872d59ce6eafbd18786fb20ec93384f562dbe27f4",
+      "bytes": 2920,
+      "original_runtime_path": "scripts/batch079_run_check.py",
+      "purpose": "Capture one explicitly supplied command: argv, timing, stdout/stderr and real exit.",
+      "inputs": [
+        "explicit label/argv",
+        "task runtime context"
+      ],
+      "outputs": [
+        "timestamped command JSON/stdout/stderr"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_extraction",
+      "execution_status": "executed; see original receipts and event",
+      "execution_evidence": "Executed for environment/native commands and to launch the Ruff command before that command changed the on-disk runner.",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T075839377263Z-record07-inventory.json",
+          "sha256": "46a254cf5bb899e8847a05f1d8733bbb82f86a341e81c6ee9aaeb632c6b16bf5",
+          "bytes": 1238,
+          "availability": "ignored local evidence",
+          "label": "record07-inventory",
+          "started_at": "2026-11-15T07:58:39.377462+00:00",
+          "finished_at": "2026-11-15T07:58:39.433189+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075839377263Z-record07-inventory.stdout",
+            "sha256": "c4c347c92ae9f03279e203dce420b90bf8cf8154eed62074bfbe4646880e23f2",
+            "bytes": 16212,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075839377263Z-record07-inventory.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/batch079_record07_inventory.py"
+          ]
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T075903571553Z-helper-ruff.json",
+          "sha256": "8808d451f3b2e6632691d695362f3391c06e30997e9be178b9814d6f5f52b08c",
+          "bytes": 1278,
+          "availability": "ignored local evidence",
+          "label": "helper-ruff",
+          "started_at": "2026-11-15T07:59:03.571782+00:00",
+          "finished_at": "2026-11-15T07:59:03.881978+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075903571553Z-helper-ruff.stdout",
+            "sha256": "aac3a0503d8b95052cc85fb9f1717dc82b74aa55853a5aa9749b41e30275d472",
+            "bytes": 38,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075903571553Z-helper-ruff.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "ruff",
+            "check",
+            "--fix",
+            "scripts/batch079_run_check.py",
+            "scripts/batch079_record07_inventory.py"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124266,
+          "timestamp": "2026-11-15T07:55:42.815Z",
+          "raw_line_sha256": "9519a114b676fd93f6c21630c189c391f112a27b0e9c046828685fb8210fe4a2",
+          "type": "custom_tool_call",
+          "call_id": "call_34117fdbae194b8cac5f156eb2163251"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/source-session-excerpts-20261115.json",
+        "sha256": "b9100ee423537fdb3cfac569321386a30ec4f00a266e6848ae5799164f84f144",
+        "bytes": 62171,
+        "availability": "ignored local evidence"
+      },
+      "local_recovered_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/batch079_run_check.pre-ruff-20261115T075542.py",
+        "sha256": "75aaad7d419d0510fe1bbcc872d59ce6eafbd18786fb20ec93384f562dbe27f4",
+        "bytes": 2920,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_run_check.post-ruff-pre-black-20261115T075903",
+      "archive_path": "scripts/batch079_provenance/history/batch079_run_check.post-ruff-pre-black-20261115T075903.py.txt",
+      "sha256": "c5aeccb929f0b6151eb55fd5c1abefff9425b0b98a117a859713a27279569de6",
+      "bytes": 2920,
+      "original_runtime_path": "scripts/batch079_run_check.py",
+      "purpose": "Capture one explicitly supplied command: argv, timing, stdout/stderr and real exit.",
+      "inputs": [
+        "explicit label/argv",
+        "task runtime context"
+      ],
+      "outputs": [
+        "timestamped command JSON/stdout/stderr"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "deterministic_static_formatter_reconstruction",
+      "execution_status": "executed; see original receipts and event",
+      "execution_evidence": "The next helper-black invocation loads the import-sorted runner; it changes its own on-disk formatting while running.",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T075903914027Z-helper-black.json",
+          "sha256": "227e4930cfed8a30716d351e1df82a586f0d8809d4b003be4f5f57b45475ee4b",
+          "bytes": 1256,
+          "availability": "ignored local evidence",
+          "label": "helper-black",
+          "started_at": "2026-11-15T07:59:03.914264+00:00",
+          "finished_at": "2026-11-15T07:59:04.184366+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075903914027Z-helper-black.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075903914027Z-helper-black.stderr",
+            "sha256": "ef935a27befcde067e83ba5729996eb89defb3316a4b4469fb1b7395920220b3",
+            "bytes": 138,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "black",
+            "scripts/batch079_run_check.py",
+            "scripts/batch079_record07_inventory.py"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124417,
+          "timestamp": "2026-11-15T07:58:58.474Z",
+          "raw_line_sha256": "686f3c6316d5c825ea802adad019b5accdb45ecb241a6deb2818bdd1f484e440",
+          "type": "custom_tool_call",
+          "call_id": "call_eb0542d449c44d45948fdf2cbfe6173e"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/source-session-excerpts-20261115.json",
+        "sha256": "b9100ee423537fdb3cfac569321386a30ec4f00a266e6848ae5799164f84f144",
+        "bytes": 62171,
+        "availability": "ignored local evidence"
+      },
+      "local_recovered_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/batch079_run_check.post-ruff-pre-black-20261115T075903.py",
+        "sha256": "c5aeccb929f0b6151eb55fd5c1abefff9425b0b98a117a859713a27279569de6",
+        "bytes": 2920,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_run_check.post-black-pre-pathhome-20261115T075904",
+      "archive_path": "scripts/batch079_provenance/history/batch079_run_check.post-black-pre-pathhome-20261115T075904.py.txt",
+      "sha256": "138cd0e48cc8f60c83043da53bbd1664b68374e6fb3441f7a4c2c36c6f6ae68e",
+      "bytes": 3032,
+      "original_runtime_path": "scripts/batch079_run_check.py",
+      "purpose": "Capture one explicitly supplied command: argv, timing, stdout/stderr and real exit.",
+      "inputs": [
+        "explicit label/argv",
+        "task runtime context"
+      ],
+      "outputs": [
+        "timestamped command JSON/stdout/stderr"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "deterministic_static_formatter_reconstruction",
+      "execution_status": "executed; see original receipts and event",
+      "execution_evidence": "Used after Black and before the logged 08:00:59 Path.home replacement, including record07 issue and final inspection.",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T075959662594Z-record07-file-issue.json",
+          "sha256": "54e272d2f323b6fb307a4630388142c54777c799e672f8a1ff9e52a8a441c9aa",
+          "bytes": 1387,
+          "availability": "ignored local evidence",
+          "label": "record07-file-issue",
+          "started_at": "2026-11-15T07:59:59.662790+00:00",
+          "finished_at": "2026-11-15T08:00:00.716261+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075959662594Z-record07-file-issue.stdout",
+            "sha256": "4984a6028eb5254e1c113258a4394296377cff51405f163ec34f5980c199e90b",
+            "bytes": 55,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075959662594Z-record07-file-issue.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "gh",
+            "issue",
+            "create",
+            "--repo",
+            "CultureBotAI/CultureMech",
+            "--title",
+            "DSMZ876 / CultureMech:002034: restore stock boundaries and exact chemical forms",
+            "--body-file",
+            ".temp/batch079-scientific-20261114/record07/issue-body.md"
+          ]
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T080039435860Z-record07-inspect-final.json",
+          "sha256": "67cf474709406007650e1944a2bf17fce48d18ba8a50c404b2db1aee5e52aad8",
+          "bytes": 8364,
+          "availability": "ignored local evidence",
+          "label": "record07-inspect-final",
+          "started_at": "2026-11-15T08:00:39.436056+00:00",
+          "finished_at": "2026-11-15T08:00:40.001258+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080039435860Z-record07-inspect-final.stdout",
+            "sha256": "ce0091364cd2536a7740cc24229a0a2bc44c30d151d3b1c8c633dbc80598824a",
+            "bytes": 16572,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080039435860Z-record07-inspect-final.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/record_review.py",
+            "inspect",
+            "--targets",
+            ".temp/batch079-scientific-20261114/record07/targets.yaml",
+            "--input",
+            "AGENTS.md",
+            "--input",
+            "data/normalized_yaml/bacterial/desulfothermus_naphthae_medium.yaml",
+            "--input",
+            "data/normalized_yaml/bacterial/KOMODO_876_TD3-MEDIUM.yaml",
+            "--input",
+            "src/culturemech/schema/culturemech.yaml",
+            "--input",
+            "src/culturemech/merge/merge_recipes.py",
+            "--input",
+            "src/culturemech/merge/merger.py",
+            "--input",
+            "src/culturemech/merge/formulation.py",
+            "--input",
+            "src/culturemech/merge/matcher.py",
+            "--input",
+            "src/culturemech/data/mediaingredientmech/label_index.csv",
+            "--input",
+            "src/culturemech/data/mediaingredientmech/label_index.metadata.json",
+            "--input",
+            "src/culturemech/ingredients/mim_label_index.py",
+            "--input",
+            "docs/record-review-profile.md",
+            "--input",
+            "docs/record-reviews.md",
+            "--input",
+            ".claude/skills/curate-yaml-record/references/review-checklist.md",
+            "--input",
+            ".claude/skills/review-ingredient-concentrations/references/evidence-contract.md",
+            "--input",
+            ".claude/skills/review-recipes/reference/validation-rules.md",
+            "--input",
+            "scripts/record_review.py",
+            "--input",
+            "schema/record_review.yaml",
+            "--input",
+            "uv.lock",
+            "--input",
+            "pyproject.toml",
+            "--input",
+            "scripts/batch079_record07_inventory.py",
+            "--input",
+            ".temp/batch079-scientific-20261114/peer-review-record07.md",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/medium876.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/DSMZ_Medium876.pdf",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/composition876.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/claim-inventory.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_114126.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_131361.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_132751.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_15940.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_15956.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_16494.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_17015.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_176843.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_17883.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_26710.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_27470.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_29377.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_30753.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_30961.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_31206.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_31345.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32145.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32149.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_32588.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_33118.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_34887.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_49105.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_49976.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_53503.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_53542.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_63036.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_63939.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_64103.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_75213.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_76209.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86158.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86249.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86318.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86345.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_86368.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/CHEBI_8806.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/chemical-identity-assessment.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/direct-pin-receipt.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/input-slots.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/mim-exact-label-rows.json",
+            "--input",
+            ".temp/batch079-scientific-20261114/record07/chemical-identity-tsb-20261115T075834261194Z/ols-capture-catalog.json"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124417,
+          "timestamp": "2026-11-15T07:58:58.474Z",
+          "raw_line_sha256": "686f3c6316d5c825ea802adad019b5accdb45ecb241a6deb2818bdd1f484e440",
+          "type": "custom_tool_call",
+          "call_id": "call_eb0542d449c44d45948fdf2cbfe6173e"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/source-session-excerpts-20261115.json",
+        "sha256": "b9100ee423537fdb3cfac569321386a30ec4f00a266e6848ae5799164f84f144",
+        "bytes": 62171,
+        "availability": "ignored local evidence"
+      },
+      "local_recovered_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/batch079_run_check.post-black-pre-pathhome-20261115T075904.py",
+        "sha256": "138cd0e48cc8f60c83043da53bbd1664b68374e6fb3441f7a4c2c36c6f6ae68e",
+        "bytes": 3032,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_record07_inventory.pre-black-20261115T075835",
+      "archive_path": "scripts/batch079_provenance/history/batch079_record07_inventory.pre-black-20261115T075835.py.txt",
+      "sha256": "44e0fa835092c94ed42644298880ed5342e20720425923c3e50b99f9a6b715c3",
+      "bytes": 2706,
+      "original_runtime_path": "scripts/batch079_record07_inventory.py",
+      "purpose": "Build source-location associations without deciding scientific validity.",
+      "inputs": [
+        "record07 generated/owner YAML",
+        "medium876.json"
+      ],
+      "outputs": [
+        "record07/claim-inventory.json"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_extraction",
+      "execution_status": "executed; see original receipts and event",
+      "execution_evidence": "Executed at 07:58:39 to write the retained claim inventory before formatting.",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T075839377263Z-record07-inventory.json",
+          "sha256": "46a254cf5bb899e8847a05f1d8733bbb82f86a341e81c6ee9aaeb632c6b16bf5",
+          "bytes": 1238,
+          "availability": "ignored local evidence",
+          "label": "record07-inventory",
+          "started_at": "2026-11-15T07:58:39.377462+00:00",
+          "finished_at": "2026-11-15T07:58:39.433189+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075839377263Z-record07-inventory.stdout",
+            "sha256": "c4c347c92ae9f03279e203dce420b90bf8cf8154eed62074bfbe4646880e23f2",
+            "bytes": 16212,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T075839377263Z-record07-inventory.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/batch079_record07_inventory.py"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124398,
+          "timestamp": "2026-11-15T07:58:35.772Z",
+          "raw_line_sha256": "6b0518245ac60585c96be45ea393b06bff59318233ddfaac378c79631573ade8",
+          "type": "custom_tool_call",
+          "call_id": "call_f1871460e65044e887c162c5628e66a8"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/source-session-excerpts-20261115.json",
+        "sha256": "b9100ee423537fdb3cfac569321386a30ec4f00a266e6848ae5799164f84f144",
+        "bytes": 62171,
+        "availability": "ignored local evidence"
+      },
+      "local_recovered_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/batch079_record07_inventory.pre-black-20261115T075835.py",
+        "sha256": "44e0fa835092c94ed42644298880ed5342e20720425923c3e50b99f9a6b715c3",
+        "bytes": 2706,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_build_record07_review.pre-noalias-20261115T080232",
+      "archive_path": "scripts/batch079_provenance/history/batch079_build_record07_review.pre-noalias-20261115T080232.py.txt",
+      "sha256": "33580aafd906c5b078584dc822f15e552a51cc007407cff0a0866035af2c3f77",
+      "bytes": 25866,
+      "original_runtime_path": "scripts/batch079_build_record07_review.py",
+      "purpose": "Assemble record07 review from frozen scientific decisions and evidence.",
+      "inputs": [
+        "source captures",
+        "inventory",
+        "chemical assessment",
+        "native receipts"
+      ],
+      "outputs": [
+        "record07/review.yaml"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_extraction",
+      "execution_status": "executed; see original receipts and event",
+      "execution_evidence": "Executed at 08:02:36; author exited0, then native validation exited1 on aliases; failed draft remains preserved.",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T080236517296Z-record07-author.json",
+          "sha256": "c9c88db308ed6f381837d41724bbde3712733d7a763d47abd28082b9ad3a35d4",
+          "bytes": 1232,
+          "availability": "ignored local evidence",
+          "label": "record07-author",
+          "started_at": "2026-11-15T08:02:36.517511+00:00",
+          "finished_at": "2026-11-15T08:02:36.579374+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080236517296Z-record07-author.stdout",
+            "sha256": "d29cd29abd9e6492b7ce78f8857e02191d767629b5fe6f61a137dc6864bbd886",
+            "bytes": 150,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080236517296Z-record07-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/batch079_build_record07_review.py"
+          ]
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T080236600374Z-record07-review-validate.json",
+          "sha256": "41a0c7a23f26f0c4acc887ff3e05a056b9a1fcc253eb05c10f35853029ead958",
+          "bytes": 1321,
+          "availability": "ignored local evidence",
+          "label": "record07-review-validate",
+          "started_at": "2026-11-15T08:02:36.600568+00:00",
+          "finished_at": "2026-11-15T08:02:37.009807+00:00",
+          "exit": 1,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080236600374Z-record07-review-validate.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080236600374Z-record07-review-validate.stderr",
+            "sha256": "9754fbee2c8d2e0dd5f2db7cea93dfda03c23dd6e71a1d9c6d83c082b95130e5",
+            "bytes": 71,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/record_review.py",
+            "validate",
+            ".temp/batch079-scientific-20261114/record07/review.yaml"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124495,
+          "timestamp": "2026-11-15T08:02:32.792Z",
+          "raw_line_sha256": "723b9a19f12550d4d28eae922cf1dd36517489cad44d27094b398c0bece465a1",
+          "type": "custom_tool_call",
+          "call_id": "call_228e79add82443559633bffa66b25636"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/source-session-excerpts-20261115.json",
+        "sha256": "b9100ee423537fdb3cfac569321386a30ec4f00a266e6848ae5799164f84f144",
+        "bytes": 62171,
+        "availability": "ignored local evidence"
+      },
+      "local_recovered_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/batch079_build_record07_review.pre-noalias-20261115T080232.py",
+        "sha256": "33580aafd906c5b078584dc822f15e552a51cc007407cff0a0866035af2c3f77",
+        "bytes": 25866,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_build_record07_review.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_build_record07_review.retained-pre-format.py.txt",
+      "sha256": "aee58949ebdcfba55f07a119a381a05329cf474ebef0de35e106621c6ebe99cf",
+      "bytes": 25979,
+      "original_runtime_path": "scripts/batch079_build_record07_review.py",
+      "purpose": "Assemble record07 review from frozen scientific decisions and evidence.",
+      "inputs": [
+        "source captures",
+        "inventory",
+        "chemical assessment",
+        "native receipts"
+      ],
+      "outputs": [
+        "record07/review.yaml"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "executed; selected original receipt evidence listed",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T080257488987Z-record07-author.json",
+          "sha256": "f307e1f8b193fddb8f572a0bc1d7ff607a89a1f8cea2742de9de2fd2a5f99d29",
+          "bytes": 1232,
+          "availability": "ignored local evidence",
+          "label": "record07-author",
+          "started_at": "2026-11-15T08:02:57.489193+00:00",
+          "finished_at": "2026-11-15T08:02:57.547800+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080257488987Z-record07-author.stdout",
+            "sha256": "13fbee59d8ba199d71c96c90d46ca00af9867134f0c05af816702fb06a5553c1",
+            "bytes": 150,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080257488987Z-record07-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/batch079_build_record07_review.py"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124507,
+          "timestamp": "2026-11-15T08:02:54.175Z",
+          "raw_line_sha256": "be633834835103eb3e86cf51eb410c49bc10efada14c22f370e1ff1e4e6345f3",
+          "type": "custom_tool_call",
+          "call_id": "call_b0f5f9d50a364165a1e679916ede4f65"
+        },
+        {
+          "session_line": 124510,
+          "timestamp": "2026-11-15T08:02:58.114Z",
+          "raw_line_sha256": "a49f882d36e6046d974491cab0156a3559e45b771236aa1470324168cf768e71",
+          "type": "custom_tool_call_output",
+          "call_id": "call_b0f5f9d50a364165a1e679916ede4f65"
+        }
+      ],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_build_record07_review.py",
+        "sha256": "aee58949ebdcfba55f07a119a381a05329cf474ebef0de35e106621c6ebe99cf",
+        "bytes": 25979,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_build_record08_review.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_build_record08_review.retained-pre-format.py.txt",
+      "sha256": "eaf75f36a532d5407a2d6eaca393e1078f84b14b2e042b64749e9e939f89c36c",
+      "bytes": 41134,
+      "original_runtime_path": "scripts/batch079_build_record08_review.py",
+      "purpose": "Retained first record08 authoring candidate, superseded statically before execution.",
+      "inputs": [
+        "source captures",
+        "chemical assessment",
+        "original native diagnostics",
+        "issue750"
+      ],
+      "outputs": [
+        "record08 authoring sidecars and unsaved draft"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "Written and retained; never executed by its author within the bounded complete author event interval. No claim about unknown external executions.",
+      "recorded_executions": [],
+      "source_events": [],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_build_record08_review.py",
+        "sha256": "eaf75f36a532d5407a2d6eaca393e1078f84b14b2e042b64749e9e939f89c36c",
+        "bytes": 41134,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      },
+      "execution_evidence": "Write event77424 creates v1; derivation event77469 writes distinct v2 and output77472 explicitly says unexecuted v1 preserved. Launch77483 executes v2 only, with matching output77486 and durable author receipt. No v1 execution command appears in the bounded complete own author event interval; this is not a claim about unknown external executions.",
+      "version_status_evidence": [
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77424.jsonl",
+          "sha256": "f80a0b389a12e1dfca3114b49b6df48f8cc1111d1e7b3c50029dcc40247ce4af",
+          "bytes": 42777,
+          "availability": "ignored local evidence",
+          "source_session_line": 77424
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77427.jsonl",
+          "sha256": "5ac08b98d33cdcbad2c0324b9d50f341de934a63321db2ec876aaad2062f79f3",
+          "bytes": 601,
+          "availability": "ignored local evidence",
+          "source_session_line": 77427
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77469.jsonl",
+          "sha256": "4c2ed855742e11b45ff329a69a4187a8f4e1180245813aff910ad221eb804a12",
+          "bytes": 7362,
+          "availability": "ignored local evidence",
+          "source_session_line": 77469
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77472.jsonl",
+          "sha256": "5a69cee054bc0a4ddaaace71f549c2bac1c9b6f318ee68b7cf61ceefc0bd8155",
+          "bytes": 759,
+          "availability": "ignored local evidence",
+          "source_session_line": 77472
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77483.jsonl",
+          "sha256": "5df73e33e221225f6ef57557bf81d57fac3f802ad2d0096dd67f814080756305",
+          "bytes": 1149,
+          "availability": "ignored local evidence",
+          "source_session_line": 77483
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77486.jsonl",
+          "sha256": "cde5fb226aafe7e37acf8d438d8ea0d3846500ec144c5f4811bccc4bf8fd6031",
+          "bytes": 2823,
+          "availability": "ignored local evidence",
+          "source_session_line": 77486
+        }
+      ],
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_build_record08_review_v2.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_build_record08_review_v2.retained-pre-format.py.txt",
+      "sha256": "502b88fc24fdaa85c58a0af6c23af9152f69b6756942bd8826bec26ccf8e2eab",
+      "bytes": 43504,
+      "original_runtime_path": "scripts/batch079_build_record08_review_v2.py",
+      "purpose": "Assemble record08 review and bind final native inspection inputs.",
+      "inputs": [
+        "source captures",
+        "chemical assessment",
+        "original native diagnostics",
+        "issue750"
+      ],
+      "outputs": [
+        "record08 authoring sidecars",
+        "record08/review.yaml"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "executed; selected original receipt evidence listed",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T081525838022Z-record08-author.json",
+          "sha256": "b5f61d4f0907264220efafc57b2199d0ff6a62a2b852377007fb54125916bae0",
+          "bytes": 1289,
+          "availability": "ignored local evidence",
+          "label": "record08-author",
+          "started_at": "2026-11-15T08:15:25.838254+00:00",
+          "finished_at": "2026-11-15T08:15:26.394588+00:00",
+          "exit": 0,
+          "runner_exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081525838022Z-record08-author.stdout",
+            "sha256": "35d27f9ef13c610d030dccefb03da900237343247e54bf0e27190c8a93093f89",
+            "bytes": 519,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081525838022Z-record08-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            ".venv/bin/python",
+            "-B",
+            "scripts/batch079_build_record08_review_v2.py",
+            "--issue",
+            "https://github.com/CultureBotAI/CultureMech/issues/750"
+          ]
+        }
+      ],
+      "source_events": [],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_build_record08_review_v2.py",
+        "sha256": "502b88fc24fdaa85c58a0af6c23af9152f69b6756942bd8826bec26ccf8e2eab",
+        "bytes": 43504,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      },
+      "version_status_evidence": [
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77424.jsonl",
+          "sha256": "f80a0b389a12e1dfca3114b49b6df48f8cc1111d1e7b3c50029dcc40247ce4af",
+          "bytes": 42777,
+          "availability": "ignored local evidence",
+          "source_session_line": 77424
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77427.jsonl",
+          "sha256": "5ac08b98d33cdcbad2c0324b9d50f341de934a63321db2ec876aaad2062f79f3",
+          "bytes": 601,
+          "availability": "ignored local evidence",
+          "source_session_line": 77427
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77469.jsonl",
+          "sha256": "4c2ed855742e11b45ff329a69a4187a8f4e1180245813aff910ad221eb804a12",
+          "bytes": 7362,
+          "availability": "ignored local evidence",
+          "source_session_line": 77469
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77472.jsonl",
+          "sha256": "5a69cee054bc0a4ddaaace71f549c2bac1c9b6f318ee68b7cf61ceefc0bd8155",
+          "bytes": 759,
+          "availability": "ignored local evidence",
+          "source_session_line": 77472
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77483.jsonl",
+          "sha256": "5df73e33e221225f6ef57557bf81d57fac3f802ad2d0096dd67f814080756305",
+          "bytes": 1149,
+          "availability": "ignored local evidence",
+          "source_session_line": 77483
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-author-version-status-line77486.jsonl",
+          "sha256": "cde5fb226aafe7e37acf8d438d8ea0d3846500ec144c5f4811bccc4bf8fd6031",
+          "bytes": 2823,
+          "availability": "ignored local evidence",
+          "source_session_line": 77486
+        }
+      ]
+    },
+    {
+      "version_id": "batch079_build_record10_review.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_build_record10_review.retained-pre-format.py.txt",
+      "sha256": "508a865dec7a184b0d7ba8facfd1d7b0233e805d40aa29d2ae4f7f1f3b08090e",
+      "bytes": 23804,
+      "original_runtime_path": "scripts/batch079_build_record10_review.py",
+      "purpose": "Assemble record10 review from source evidence, chemical assessment and native diagnostics.",
+      "inputs": [
+        "JCM547/provider captures",
+        "chemical assessment",
+        "native receipts",
+        "issue751"
+      ],
+      "outputs": [
+        "record10 authoring sidecars",
+        "record10/review.yaml"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "executed; selected original receipt evidence listed",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T082138430147Z-record10-author.json",
+          "sha256": "fd0bd504ec34c1ec1c4cd8277bb0c94038fd4d22bfe1f732aaf8f1061c0fbf79",
+          "bytes": 1394,
+          "availability": "ignored local evidence",
+          "label": "record10-author",
+          "started_at": "2026-11-15T08:21:38.430359+00:00",
+          "finished_at": "2026-11-15T08:21:38.925851+00:00",
+          "exit": 0,
+          "runner_exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T082138430147Z-record10-author.stdout",
+            "sha256": "bc8bf69fedff92b987f3d9ceb063feac21410aec8853c756bfcebaecd419d6c4",
+            "bytes": 243,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T082138430147Z-record10-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            ".venv/bin/python",
+            "scripts/batch079_build_record10_review.py",
+            "--chemical-dir",
+            ".temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z",
+            "--issue",
+            "https://github.com/CultureBotAI/CultureMech/issues/751"
+          ]
+        }
+      ],
+      "source_events": [],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_build_record10_review.py",
+        "sha256": "508a865dec7a184b0d7ba8facfd1d7b0233e805d40aa29d2ae4f7f1f3b08090e",
+        "bytes": 23804,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_record07_inventory.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_record07_inventory.retained-pre-format.py.txt",
+      "sha256": "79c29544e484721dfb586ed306ba876af7a4b3ff4e54fdc1e9e1902e9f9d9fce",
+      "bytes": 2949,
+      "original_runtime_path": "scripts/batch079_record07_inventory.py",
+      "purpose": "Build source-location associations without deciding scientific validity.",
+      "inputs": [
+        "record07 generated/owner YAML",
+        "medium876.json"
+      ],
+      "outputs": [
+        "record07/claim-inventory.json"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "retained formatted successor; actual inventory execution used separately archived pre-Black source; no later execution asserted",
+      "recorded_executions": [],
+      "source_events": [
+        {
+          "session_line": 124417,
+          "timestamp": "2026-11-15T07:58:58.474Z",
+          "raw_line_sha256": "686f3c6316d5c825ea802adad019b5accdb45ecb241a6deb2818bdd1f484e440",
+          "type": "custom_tool_call",
+          "call_id": "call_eb0542d449c44d45948fdf2cbfe6173e"
+        },
+        {
+          "session_line": 124420,
+          "timestamp": "2026-11-15T07:59:04.189Z",
+          "raw_line_sha256": "fc4ac7c4694a7bbe334bb61f6645a1231009be82f57ec7a9b3cb96aa99e06b16",
+          "type": "custom_tool_call_output",
+          "call_id": "call_eb0542d449c44d45948fdf2cbfe6173e"
+        }
+      ],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_record07_inventory.py",
+        "sha256": "79c29544e484721dfb586ed306ba876af7a4b3ff4e54fdc1e9e1902e9f9d9fce",
+        "bytes": 2949,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_record08_metadata_precision.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_record08_metadata_precision.retained-pre-format.py.txt",
+      "sha256": "843892ab47e8779a7c61950fc46bbfc7825a53a65f01fc1b7a62c3ffa2050b0b",
+      "bytes": 4130,
+      "original_runtime_path": "scripts/batch079_record08_metadata_precision.py",
+      "purpose": "Preserve and amend unsaved record08 metadata after exact field/source checks.",
+      "inputs": [
+        "record08 draft",
+        "claim inventory",
+        "source captures"
+      ],
+      "outputs": [
+        "record08/review.pre-metadata-precision.yaml",
+        "record08/review.yaml",
+        "record08/metadata-precision-audit.json"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "executed; selected original receipt evidence listed",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T081710494454Z-record08-metadata-precision.json",
+          "sha256": "6e839f457717245ddc29e05d255c783941fea81e5719e19ffd4045740f78ee20",
+          "bytes": 1241,
+          "availability": "ignored local evidence",
+          "label": "record08-metadata-precision",
+          "started_at": "2026-11-15T08:17:10.494710+00:00",
+          "finished_at": "2026-11-15T08:17:11.342153+00:00",
+          "exit": 0,
+          "runner_exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081710494454Z-record08-metadata-precision.stdout",
+            "sha256": "4a30b26b8d7ead1acc03732393337ee92e54faca9976fdcecc296859f7d673bc",
+            "bytes": 902,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081710494454Z-record08-metadata-precision.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            ".venv/bin/python",
+            "scripts/batch079_record08_metadata_precision.py"
+          ]
+        }
+      ],
+      "source_events": [],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_record08_metadata_precision.py",
+        "sha256": "843892ab47e8779a7c61950fc46bbfc7825a53a65f01fc1b7a62c3ffa2050b0b",
+        "bytes": 4130,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_run_check.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_run_check.retained-pre-format.py.txt",
+      "sha256": "d49b84a5864a3faa4c98996186d3917991b997fcc4dd2a8a0031431fae7cf440",
+      "bytes": 3046,
+      "original_runtime_path": "scripts/batch079_run_check.py",
+      "purpose": "Capture one explicitly supplied command: argv, timing, stdout/stderr and real exit.",
+      "inputs": [
+        "explicit label/argv",
+        "task runtime context"
+      ],
+      "outputs": [
+        "timestamped command JSON/stdout/stderr"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "executed; selected original receipt evidence listed",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T080257488987Z-record07-author.json",
+          "sha256": "f307e1f8b193fddb8f572a0bc1d7ff607a89a1f8cea2742de9de2fd2a5f99d29",
+          "bytes": 1232,
+          "availability": "ignored local evidence",
+          "label": "record07-author",
+          "started_at": "2026-11-15T08:02:57.489193+00:00",
+          "finished_at": "2026-11-15T08:02:57.547800+00:00",
+          "exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080257488987Z-record07-author.stdout",
+            "sha256": "13fbee59d8ba199d71c96c90d46ca00af9867134f0c05af816702fb06a5553c1",
+            "bytes": 150,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T080257488987Z-record07-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            "$UV",
+            "run",
+            "--no-sync",
+            "python",
+            "scripts/batch079_build_record07_review.py"
+          ]
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 124488,
+          "timestamp": "2026-11-15T08:00:59.171Z",
+          "raw_line_sha256": "b1167b7a6be48471850952dd0c87d908a4c4e4d0d0cb2580bafbe4d070ef06cb",
+          "type": "custom_tool_call",
+          "call_id": "call_5894f8fb6d3c4335a79adcd75acc8796"
+        }
+      ],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_run_check.py",
+        "sha256": "d49b84a5864a3faa4c98996186d3917991b997fcc4dd2a8a0031431fae7cf440",
+        "bytes": 3046,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "batch079_run_check_v2.retained-pre-format",
+      "archive_path": "scripts/batch079_provenance/history/batch079_run_check_v2.retained-pre-format.py.txt",
+      "sha256": "3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9",
+      "bytes": 3636,
+      "original_runtime_path": "scripts/batch079_run_check_v2.py",
+      "purpose": "Preserved runner successor additionally records launch errors and dotted labels.",
+      "inputs": [
+        "explicit label/argv",
+        "task runtime context"
+      ],
+      "outputs": [
+        "timestamped command JSON/stdout/stderr"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "exact_copy_of_retained_pre_format_source",
+      "execution_status": "executed; selected original receipt evidence listed",
+      "recorded_executions": [
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T081525838022Z-record08-author.json",
+          "sha256": "b5f61d4f0907264220efafc57b2199d0ff6a62a2b852377007fb54125916bae0",
+          "bytes": 1289,
+          "availability": "ignored local evidence",
+          "label": "record08-author",
+          "started_at": "2026-11-15T08:15:25.838254+00:00",
+          "finished_at": "2026-11-15T08:15:26.394588+00:00",
+          "exit": 0,
+          "runner_exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081525838022Z-record08-author.stdout",
+            "sha256": "35d27f9ef13c610d030dccefb03da900237343247e54bf0e27190c8a93093f89",
+            "bytes": 519,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081525838022Z-record08-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            ".venv/bin/python",
+            "-B",
+            "scripts/batch079_build_record08_review_v2.py",
+            "--issue",
+            "https://github.com/CultureBotAI/CultureMech/issues/750"
+          ]
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T081710494454Z-record08-metadata-precision.json",
+          "sha256": "6e839f457717245ddc29e05d255c783941fea81e5719e19ffd4045740f78ee20",
+          "bytes": 1241,
+          "availability": "ignored local evidence",
+          "label": "record08-metadata-precision",
+          "started_at": "2026-11-15T08:17:10.494710+00:00",
+          "finished_at": "2026-11-15T08:17:11.342153+00:00",
+          "exit": 0,
+          "runner_exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081710494454Z-record08-metadata-precision.stdout",
+            "sha256": "4a30b26b8d7ead1acc03732393337ee92e54faca9976fdcecc296859f7d673bc",
+            "bytes": 902,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T081710494454Z-record08-metadata-precision.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            ".venv/bin/python",
+            "scripts/batch079_record08_metadata_precision.py"
+          ]
+        },
+        {
+          "path": ".temp/batch079-scientific-20261114/20261115T082138430147Z-record10-author.json",
+          "sha256": "fd0bd504ec34c1ec1c4cd8277bb0c94038fd4d22bfe1f732aaf8f1061c0fbf79",
+          "bytes": 1394,
+          "availability": "ignored local evidence",
+          "label": "record10-author",
+          "started_at": "2026-11-15T08:21:38.430359+00:00",
+          "finished_at": "2026-11-15T08:21:38.925851+00:00",
+          "exit": 0,
+          "runner_exit": 0,
+          "stdout": {
+            "path": ".temp/batch079-scientific-20261114/20261115T082138430147Z-record10-author.stdout",
+            "sha256": "bc8bf69fedff92b987f3d9ceb063feac21410aec8853c756bfcebaecd419d6c4",
+            "bytes": 243,
+            "availability": "ignored local evidence"
+          },
+          "stderr": {
+            "path": ".temp/batch079-scientific-20261114/20261115T082138430147Z-record10-author.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "availability": "ignored local evidence"
+          },
+          "argv_display": [
+            ".venv/bin/python",
+            "scripts/batch079_build_record10_review.py",
+            "--chemical-dir",
+            ".temp/batch079-scientific-20261114/record10/chemical-identity-tsb-20261115T081843182821Z",
+            "--issue",
+            "https://github.com/CultureBotAI/CultureMech/issues/751"
+          ]
+        }
+      ],
+      "source_events": [],
+      "retained_source": {
+        "path": ".temp/batch079-scientific-20261114/helpers-pre-format/batch079_run_check_v2.py",
+        "sha256": "3655970eaa14fe87473cb7c79bd25f41d815401d95584706a70aab843f19dfd9",
+        "bytes": 3636,
+        "availability": "ignored local evidence"
+      },
+      "retained_source_manifest": {
+        "path": ".temp/batch079-scientific-20261114/helper-pre-format-manifest.json",
+        "sha256": "c96b4cb9cd336e7f01e1d726f92881abccde85c63d6d93dfcb5560f01788b8b9",
+        "bytes": 2249,
+        "availability": "ignored local evidence"
+      }
+    },
+    {
+      "version_id": "record10-utc-syntax-amendment-20261115T082202",
+      "archive_path": "scripts/batch079_provenance/history/record10-utc-syntax-amendment-20261115T082202.py.txt",
+      "sha256": "b77c4642fd5df9e155a824467bd8c411cc4267bd785164ed056c261b0c68457d",
+      "bytes": 684,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python - via a quoted PY heredoc",
+      "task_date": "2026-11-15",
+      "purpose": "Preserved pre-save record10 metadata amendment; source and quantity values unchanged.",
+      "inputs": [
+        "record10/review.yaml with exact precondition SHA-256 83d123100b38cc6e7460da3931116a2a01d7a9d3b07b21c1b4ba3876c9432a8b"
+      ],
+      "outputs": [
+        "preserved pre-amendment review YAML",
+        "record10/review.yaml SHA-256 4e2edbd3fbc1dbfc43570fee62d4949edb05772b4e07d637afa0f92ae96302c9"
+      ],
+      "recovery_method": "literal_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; actual output event reports the resulting draft SHA-256 and following native validation",
+      "recorded_executions": [
+        {
+          "operation": "subsequent native validation (not the inline author command)",
+          "receipt": {
+            "path": ".temp/batch079-scientific-20261114/20261115T082204964217Z-record10-validate-final.json",
+            "sha256": "a06e1d03a75bbf8a84079980748f8207ed45379c6a9e9616c885e10ab4aaa69a",
+            "bytes": 1338
+          },
+          "exit": 1,
+          "started_at": "2026-11-15T08:22:04.964635+00:00",
+          "finished_at": "2026-11-15T08:22:05.553256+00:00",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "3ce4bdfe0aa1ed787db5996c34205bdd33502e7a04d08a0da806b6c6b8a77155"
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 125449,
+          "timestamp": "2026-11-15T08:22:02.783Z",
+          "raw_line_sha256": "881800f9f181061bea6cf953a4324bd133d53445e0653fac526dec5b961d8783",
+          "type": "custom_tool_call",
+          "call_id": "call_43fda71a2292492aadb1bc8bc63b3d29"
+        },
+        {
+          "session_line": 125452,
+          "timestamp": "2026-11-15T08:22:05.558Z",
+          "raw_line_sha256": "4e93f9069b181ea53f58c073bf195c00a5b78e8fb65fe009ce036c5b9cde5a9a",
+          "type": "custom_tool_call_output",
+          "call_id": "call_43fda71a2292492aadb1bc8bc63b3d29"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/record10-inline-amendment-source-events-20261115.json",
+        "sha256": "84a4571ef014779fa113384e02869157569ec50baf1f83b38e11e710d7dd11b7",
+        "bytes": 9934
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "record10-check-owner-amendment-20261115T082224",
+      "archive_path": "scripts/batch079_provenance/history/record10-check-owner-amendment-20261115T082224.py.txt",
+      "sha256": "8b24070b3f0ef31ad8bd17cee6e6022b3c51571ea5536216438c0d983e4d01ca",
+      "bytes": 2115,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python - via a quoted PY heredoc",
+      "task_date": "2026-11-15",
+      "purpose": "Preserved pre-save record10 metadata amendment; source and quantity values unchanged.",
+      "inputs": [
+        "record10/review.yaml with exact precondition SHA-256 4e2edbd3fbc1dbfc43570fee62d4949edb05772b4e07d637afa0f92ae96302c9"
+      ],
+      "outputs": [
+        "preserved pre-amendment review YAML",
+        "record10/review.yaml SHA-256 2dc97dcbde255fc7d18d786a711c4263c8fe43332924b150c7ba400d4c7bde90"
+      ],
+      "recovery_method": "literal_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; actual output event reports the resulting draft SHA-256 and following native validation",
+      "recorded_executions": [
+        {
+          "operation": "subsequent native validation (not the inline author command)",
+          "receipt": {
+            "path": ".temp/batch079-scientific-20261114/20261115T082226849632Z-record10-validate-corrected.json",
+            "sha256": "2889f3bea63e0c889e096466623f6c36327e37774c0b3fe71ada8e101067bba9",
+            "bytes": 1350
+          },
+          "exit": 0,
+          "started_at": "2026-11-15T08:22:26.849827+00:00",
+          "finished_at": "2026-11-15T08:22:27.371670+00:00",
+          "stdout_sha256": "b42ee0197bdb886694684431f9da0d2fba4020263ed572ff756b9eaf0b042ba6",
+          "stderr_sha256": "e2cf5a8ee56373cb7afeb23be8ac2a30d67f13afa55bb51424877fc908e2a25f"
+        }
+      ],
+      "source_events": [
+        {
+          "session_line": 125458,
+          "timestamp": "2026-11-15T08:22:24.636Z",
+          "raw_line_sha256": "2804ccb0105d5efefe1d5c5e4859a4bd6441170c50e13e8e1377b06cd9a41998",
+          "type": "custom_tool_call",
+          "call_id": "call_c41662d7a0c44bfb8b6e151d04c34d72"
+        },
+        {
+          "session_line": 125461,
+          "timestamp": "2026-11-15T08:22:27.376Z",
+          "raw_line_sha256": "23ee835c46296cb35c783070c936750353799eb55708eb38b07f77c190457f4e",
+          "type": "custom_tool_call_output",
+          "call_id": "call_c41662d7a0c44bfb8b6e151d04c34d72"
+        }
+      ],
+      "source_evidence": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/record10-inline-amendment-source-events-20261115.json",
+        "sha256": "84a4571ef014779fa113384e02869157569ec50baf1f83b38e11e710d7dd11b7",
+        "bytes": 9934
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-inventory-read-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-inventory-read-20261115.py.txt",
+      "sha256": "697b999717c9d7de8984c3a65852e835bd53567580899532e19e68a67b708037",
+      "bytes": 1308,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:57:38.032Z",
+          "call_id": "call_6dfbf102840f4d05ae08e6d8eb93a079",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-inventory-read.output-line77164.jsonl",
+              "sha256": "ca1a7a18b7ea5e1f14d1324d85e69e4b5e14c6ee853e02051ede880fd99cc534",
+              "bytes": 5247,
+              "availability": "ignored local evidence",
+              "source_session_line": 77164
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77161,
+          "timestamp": "2026-11-15T07:57:38.032Z",
+          "raw_line_sha256": "8f34dabbf36add1a05b24d8ca27cadf47828d878971e7cabbe45638042fa4471",
+          "call_id": "call_6dfbf102840f4d05ae08e6d8eb93a079"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-inventory-read.call.jsonl",
+        "sha256": "8f34dabbf36add1a05b24d8ca27cadf47828d878971e7cabbe45638042fa4471",
+        "bytes": 1957,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-inventory-read.command.txt",
+        "sha256": "a756d1a487c1633f2c8314d7ef09af54fcb867d44fea5e1b5a0497d3f9cc9bb2",
+        "bytes": 1339,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-inventory-read.py.source",
+        "sha256": "697b999717c9d7de8984c3a65852e835bd53567580899532e19e68a67b708037",
+        "bytes": 1308,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-ols-probe-1-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-ols-probe-1-20261115.py.txt",
+      "sha256": "999ebca1db26b8d03f4beada287bb85e8651f8938462ab721a32d2df18c1ec76",
+      "bytes": 423,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:57:44.944Z",
+          "call_id": "call_fea0431d04b04b6587963c894193d142",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-1.output-line77171.jsonl",
+              "sha256": "833d665614f919a86e798ae301e9bd15c10420959a3033f608df8d4b6ef1361c",
+              "bytes": 633,
+              "availability": "ignored local evidence",
+              "source_session_line": 77171
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77168,
+          "timestamp": "2026-11-15T07:57:44.944Z",
+          "raw_line_sha256": "c7c0d2440b49baa2d4fca8fdf5bfe0ddedf51e53ef942650f06e86da064787d0",
+          "call_id": "call_fea0431d04b04b6587963c894193d142"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-1.call.jsonl",
+        "sha256": "c7c0d2440b49baa2d4fca8fdf5bfe0ddedf51e53ef942650f06e86da064787d0",
+        "bytes": 1047,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-1.command.txt",
+        "sha256": "35ef67c86ca2051f6bacbfbdfd75fa9e0c194abe9e94edc48fe7ede37da14969",
+        "bytes": 454,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-1.py.source",
+        "sha256": "999ebca1db26b8d03f4beada287bb85e8651f8938462ab721a32d2df18c1ec76",
+        "bytes": 423,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-ols-probe-2-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-ols-probe-2-20261115.py.txt",
+      "sha256": "f88c8396b48516b53b8853518f45ad43e3ec571194b265d3482f05a81b303a3f",
+      "bytes": 363,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:57:56.592Z",
+          "call_id": "call_fdaba2d2fe874cd7b9c04413e16a3891",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-2.output-line77185.jsonl",
+              "sha256": "e21983e8fc0a1a477d2274839e25fbb49f8804c46c64b3a680eee6cd50be94a1",
+              "bytes": 1438,
+              "availability": "ignored local evidence",
+              "source_session_line": 77185
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77182,
+          "timestamp": "2026-11-15T07:57:56.592Z",
+          "raw_line_sha256": "217536b7c72b7e78364c83727c7f22d7c311f595564c8fda42bad4148a648a7b",
+          "call_id": "call_fdaba2d2fe874cd7b9c04413e16a3891"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-2.call.jsonl",
+        "sha256": "217536b7c72b7e78364c83727c7f22d7c311f595564c8fda42bad4148a648a7b",
+        "bytes": 1242,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-2.command.txt",
+        "sha256": "415d3d8b5919fbeee5b4c19e89c8cc072201977a5119191d737b4bf67c0bb211",
+        "bytes": 394,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-ols-probe-2.py.source",
+        "sha256": "f88c8396b48516b53b8853518f45ad43e3ec571194b265d3482f05a81b303a3f",
+        "bytes": 363,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-mim-read-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-mim-read-20261115.py.txt",
+      "sha256": "ec72be7ebe4b6c88778e5093cd014b72f10533b021e8ecd423cc302fd28c09a6",
+      "bytes": 888,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:58:10.612Z",
+          "call_id": "call_1280b850f7ad4e60962a1480bfb5f5b9",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-mim-read.output-line77192.jsonl",
+              "sha256": "db7171a4592417757bf0cd54f993076b8b4e54f3fa3880153a1cbd1644954542",
+              "bytes": 14272,
+              "availability": "ignored local evidence",
+              "source_session_line": 77192
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77189,
+          "timestamp": "2026-11-15T07:58:10.612Z",
+          "raw_line_sha256": "d80b55c4f43120167cbe2e3ef4c121cbc1b149dbb9e8a28e340aa35199d12865",
+          "call_id": "call_1280b850f7ad4e60962a1480bfb5f5b9"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-mim-read.call.jsonl",
+        "sha256": "d80b55c4f43120167cbe2e3ef4c121cbc1b149dbb9e8a28e340aa35199d12865",
+        "bytes": 1531,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-mim-read.command.txt",
+        "sha256": "51b1dc1559ba13a4c0eefcaa9049101f699148bc5dad1ddfc868b0c6a566a96d",
+        "bytes": 919,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-mim-read.py.source",
+        "sha256": "ec72be7ebe4b6c88778e5093cd014b72f10533b021e8ecd423cc302fd28c09a6",
+        "bytes": 888,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-capture-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-capture-20261115.py.txt",
+      "sha256": "0d399d08757795dff62e4635c2a58d8c028c31c260ef0f923f908afaa7e2e5ab",
+      "bytes": 3196,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Capture exact chemical-ID authority responses and local slots/MIM rows, preserving any explicit earlier-capture reuse.",
+      "inputs": [
+        "selected target/owner/context YAML scoped in source",
+        "packaged MIM index",
+        "exact public OLS term URLs"
+      ],
+      "outputs": [
+        "timestamped chemical-identity evidence directory: slots, MIM projection, authority raw responses and capture catalog"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:58:30.413Z",
+          "call_id": "call_1dfffae141cb4e9a8209b71ede6b3862",
+          "exit": 0,
+          "recorded_shell_exit_codes": [
+            0
+          ],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-capture.output-line77198.jsonl",
+              "sha256": "c4742fbf68dbf8b6831b3af043e94162598ee4ac9a57234589b329dfc10c7243",
+              "bytes": 675,
+              "availability": "ignored local evidence",
+              "source_session_line": 77198
+            },
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-capture.output-line77205.jsonl",
+              "sha256": "76227e5aed51a77946e14af6aa6ed28ff630bf4c2cc2a2dc8e4a3be650c04a89",
+              "bytes": 1164,
+              "availability": "ignored local evidence",
+              "source_session_line": 77205
+            },
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-capture.completion-poll-call.jsonl",
+              "sha256": "75baef7fd23c21b12f536cf37404cee656ecdc2e8deb5d649385965540def8d5",
+              "bytes": 517,
+              "availability": "ignored local evidence",
+              "source_session_line": 77202,
+              "role": "completion poll invocation",
+              "session_id": 40388
+            }
+          ],
+          "execution_evidence_limit": null
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77196,
+          "timestamp": "2026-11-15T07:58:30.413Z",
+          "raw_line_sha256": "836de75d8c5357b5e7c97de596154d054de66b8675f4b79d78680f75dfe35f25",
+          "call_id": "call_1dfffae141cb4e9a8209b71ede6b3862"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-capture.call.jsonl",
+        "sha256": "836de75d8c5357b5e7c97de596154d054de66b8675f4b79d78680f75dfe35f25",
+        "bytes": 4209,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-capture.command.txt",
+        "sha256": "d1d2db97174c21c8c0b0d6b959257e4b0b9e4a113f351e08ecdbdb139127dc4d",
+        "bytes": 3227,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-capture.py.source",
+        "sha256": "0d399d08757795dff62e4635c2a58d8c028c31c260ef0f923f908afaa7e2e5ab",
+        "bytes": 3196,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-projection-read-1-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-projection-read-1-20261115.py.txt",
+      "sha256": "4ab0650e26da7b14db815f5582539342bfd3e3920d5866964024d9db141fd203",
+      "bytes": 563,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:58:46.549Z",
+          "call_id": "call_120bc0ddb97346bd9e8336bac64ca610",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-1.output-line77212.jsonl",
+              "sha256": "1d9ea695400fb1fbd17c675ed08c98bbcdb390758edb2765f4a75427a18f50bc",
+              "bytes": 19944,
+              "availability": "ignored local evidence",
+              "source_session_line": 77212
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77209,
+          "timestamp": "2026-11-15T07:58:46.549Z",
+          "raw_line_sha256": "14a531a2f5fc07ed014b633cfe63a3d1f6f98d917506f211245b152b3c5986a4",
+          "call_id": "call_120bc0ddb97346bd9e8336bac64ca610"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-1.call.jsonl",
+        "sha256": "14a531a2f5fc07ed014b633cfe63a3d1f6f98d917506f211245b152b3c5986a4",
+        "bytes": 1184,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-1.command.txt",
+        "sha256": "78a1bf90bc81d4fe067bfbc0842eee7485456b0a9ba14b3b13764013ce4d6208",
+        "bytes": 594,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-1.py.source",
+        "sha256": "4ab0650e26da7b14db815f5582539342bfd3e3920d5866964024d9db141fd203",
+        "bytes": 563,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-projection-read-2-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-projection-read-2-20261115.py.txt",
+      "sha256": "808293dd2d8e5a50f6ea3df28587811ef3f38fe1ca321240c1eea06725d8c4bc",
+      "bytes": 563,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:58:51.903Z",
+          "call_id": "call_e9d40e339ce64fdab26bbd7794d99aee",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-2.output-line77217.jsonl",
+              "sha256": "6542f2bb0917635897ceaf5fe0eda60783ade74341f184d265eb3ac28920b355",
+              "bytes": 14962,
+              "availability": "ignored local evidence",
+              "source_session_line": 77217
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77214,
+          "timestamp": "2026-11-15T07:58:51.903Z",
+          "raw_line_sha256": "f8577300e61c9fbcacf0044984ed1b5138fa844ca29b4dea5c24a86ade5e13ef",
+          "call_id": "call_e9d40e339ce64fdab26bbd7794d99aee"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-2.call.jsonl",
+        "sha256": "f8577300e61c9fbcacf0044984ed1b5138fa844ca29b4dea5c24a86ade5e13ef",
+        "bytes": 1184,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-2.command.txt",
+        "sha256": "e447f3d241c18ebd67534e2349eba4040f0d1eaa327a1579ac73fb449b18ebd1",
+        "bytes": 594,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-projection-read-2.py.source",
+        "sha256": "808293dd2d8e5a50f6ea3df28587811ef3f38fe1ca321240c1eea06725d8c4bc",
+        "bytes": 563,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record07-assessment-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record07-assessment-20261115.py.txt",
+      "sha256": "fd4849df7e41e03ca35e7d70faa8f09458f84e876bab5b93d424b841f0de7a0f",
+      "bytes": 6698,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Write the manually reviewed bounded chemical-identity assessment and direct-pin receipt from captured evidence.",
+      "inputs": [
+        "chemical input-slot inventory",
+        "exact authority captures and projections",
+        "packaged MIM rows",
+        "explicit manually reviewed per-ID interpretation"
+      ],
+      "outputs": [
+        "chemical-identity-assessment.json",
+        "direct-pin or audit receipt"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T07:59:44.581Z",
+          "call_id": "call_6effc199b1fc4d959bc0cb721082f23b",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-assessment.output-line77239.jsonl",
+              "sha256": "95e218b0df98a3f5d6854c9d2a90ad36293dc1123396c5e2a5ce01d97c93590c",
+              "bytes": 1195,
+              "availability": "ignored local evidence",
+              "source_session_line": 77239
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77236,
+          "timestamp": "2026-11-15T07:59:44.581Z",
+          "raw_line_sha256": "399b1761ba2da8961da4f5830914521477e462d02cb4cc869eefe924f6db97e4",
+          "call_id": "call_6effc199b1fc4d959bc0cb721082f23b"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-assessment.call.jsonl",
+        "sha256": "399b1761ba2da8961da4f5830914521477e462d02cb4cc869eefe924f6db97e4",
+        "bytes": 7669,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-assessment.command.txt",
+        "sha256": "014b0a67657e3cd6aff662d605ed8a9a1a5e863f7d1e32e3efdafafcb5b07c26",
+        "bytes": 6729,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record07-assessment.py.source",
+        "sha256": "fd4849df7e41e03ca35e7d70faa8f09458f84e876bab5b93d424b841f0de7a0f",
+        "bytes": 6698,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record08-preflight-read-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record08-preflight-read-20261115.py.txt",
+      "sha256": "57e9b8eb6f412c828a00d8eda0918bca77b87e8ccb38b6a494f22654f526ea2e",
+      "bytes": 1736,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:08:34.174Z",
+          "call_id": "call_1038bfd989dd4db8a569ea41ddcdd82a",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-preflight-read.output-line77292.jsonl",
+              "sha256": "68eddd1d07200470e09fbf23b21f62ff580b87a60e4445bf158bc7b1b0b058ef",
+              "bytes": 14538,
+              "availability": "ignored local evidence",
+              "source_session_line": 77292
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77289,
+          "timestamp": "2026-11-15T08:08:34.174Z",
+          "raw_line_sha256": "91532db770df8152041707a7224a90420e3fa8e144bb98f7bc07be7bafe306d7",
+          "call_id": "call_1038bfd989dd4db8a569ea41ddcdd82a"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-preflight-read.call.jsonl",
+        "sha256": "91532db770df8152041707a7224a90420e3fa8e144bb98f7bc07be7bafe306d7",
+        "bytes": 2406,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-preflight-read.command.txt",
+        "sha256": "e9254f05c8441894f6473fbeb42bab520230030bc840f6545c41330d140050de",
+        "bytes": 1767,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-preflight-read.py.source",
+        "sha256": "57e9b8eb6f412c828a00d8eda0918bca77b87e8ccb38b6a494f22654f526ea2e",
+        "bytes": 1736,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record08-capture-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record08-capture-20261115.py.txt",
+      "sha256": "6166b8ec56ad63d657bc3ab4f393c3008b316720950c5f1fe85a5ca02de5efd2",
+      "bytes": 4074,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Capture exact chemical-ID authority responses and local slots/MIM rows, preserving any explicit earlier-capture reuse.",
+      "inputs": [
+        "selected target/owner/context YAML scoped in source",
+        "packaged MIM index",
+        "exact public OLS term URLs"
+      ],
+      "outputs": [
+        "timestamped chemical-identity evidence directory: slots, MIM projection, authority raw responses and capture catalog"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:08:56.501Z",
+          "call_id": "call_44d8b463c19e455e9ffea36b1719ce8c",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-capture.output-line77301.jsonl",
+              "sha256": "03705360322e369813521fe9059f8d421a17c9e75c39ae9b8f7078844480c972",
+              "bytes": 32680,
+              "availability": "ignored local evidence",
+              "source_session_line": 77301
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77298,
+          "timestamp": "2026-11-15T08:08:56.501Z",
+          "raw_line_sha256": "dccf7f3f480d97c878bc1b13f009f08cc475d625f6ed7e582fae1267d886fa09",
+          "call_id": "call_44d8b463c19e455e9ffea36b1719ce8c"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-capture.call.jsonl",
+        "sha256": "dccf7f3f480d97c878bc1b13f009f08cc475d625f6ed7e582fae1267d886fa09",
+        "bytes": 5126,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-capture.command.txt",
+        "sha256": "aea963a9b09b61b05b59bce865ff4421accf5f83d914299bfc8b4e5cfcab8b9d",
+        "bytes": 4105,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-capture.py.source",
+        "sha256": "6166b8ec56ad63d657bc3ab4f393c3008b316720950c5f1fe85a5ca02de5efd2",
+        "bytes": 4074,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record08-projection-read-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record08-projection-read-20261115.py.txt",
+      "sha256": "680ff4e6ebbb6f06c7f124cc8ae0f8644b77d7259b09776a0a3ff1d5487c60dc",
+      "bytes": 658,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:09:15.318Z",
+          "call_id": "call_7ece61d4592843f4b59d181b27a4e12f",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-projection-read.output-line77315.jsonl",
+              "sha256": "d78a39af759438a974b861f4b0fd006935953a12567e001692308a2f79010815",
+              "bytes": 5857,
+              "availability": "ignored local evidence",
+              "source_session_line": 77315
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77312,
+          "timestamp": "2026-11-15T08:09:15.318Z",
+          "raw_line_sha256": "cb5fb3b0c70f7a42cf69ea4aaeabd4dc1791cf187f9157705ce751b82f54d186",
+          "call_id": "call_7ece61d4592843f4b59d181b27a4e12f"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-projection-read.call.jsonl",
+        "sha256": "cb5fb3b0c70f7a42cf69ea4aaeabd4dc1791cf187f9157705ce751b82f54d186",
+        "bytes": 1288,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-projection-read.command.txt",
+        "sha256": "a6ec0ad99910696fa31e8fd23474c468c8cddc905543dd4530042da82b3e444c",
+        "bytes": 689,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-projection-read.py.source",
+        "sha256": "680ff4e6ebbb6f06c7f124cc8ae0f8644b77d7259b09776a0a3ff1d5487c60dc",
+        "bytes": 658,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record08-assessment-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record08-assessment-20261115.py.txt",
+      "sha256": "7cb3209afa6d63e38b4585d7c10a015bae2f713c59f1b2389f834b012bb15c94",
+      "bytes": 9225,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Write the manually reviewed bounded chemical-identity assessment and direct-pin receipt from captured evidence.",
+      "inputs": [
+        "chemical input-slot inventory",
+        "exact authority captures and projections",
+        "packaged MIM rows",
+        "explicit manually reviewed per-ID interpretation"
+      ],
+      "outputs": [
+        "chemical-identity-assessment.json",
+        "direct-pin or audit receipt"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:09:54.177Z",
+          "call_id": "call_31e62cf52b61406481539ff43686ee78",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-assessment.output-line77322.jsonl",
+              "sha256": "e2823c553f387436e70bae34bcc59d82987ccbda2fc98e31f1974bad993f98f5",
+              "bytes": 1409,
+              "availability": "ignored local evidence",
+              "source_session_line": 77322
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77319,
+          "timestamp": "2026-11-15T08:09:54.177Z",
+          "raw_line_sha256": "10c619c58537dec8f65cc277ed2593a56ad0a6511e41fd714321daa30b8e96ac",
+          "call_id": "call_31e62cf52b61406481539ff43686ee78"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-assessment.call.jsonl",
+        "sha256": "10c619c58537dec8f65cc277ed2593a56ad0a6511e41fd714321daa30b8e96ac",
+        "bytes": 10220,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-assessment.command.txt",
+        "sha256": "a7cec866d4abbc2560880c8eab0c44d653533323e906f378a7f473242379ceb3",
+        "bytes": 9256,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record08-assessment.py.source",
+        "sha256": "7cb3209afa6d63e38b4585d7c10a015bae2f713c59f1b2389f834b012bb15c94",
+        "bytes": 9225,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record10-inventory-read-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record10-inventory-read-20261115.py.txt",
+      "sha256": "6f15c1ff90b14a1ed7a9828f6ae678e06322a6edc991fcef10566422e6a9f72f",
+      "bytes": 1103,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:18:04.633Z",
+          "call_id": "call_464062924d294e93a884f301118d5150",
+          "exit": null,
+          "recorded_shell_exit_codes": [],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-inventory-read.output-line77552.jsonl",
+              "sha256": "d8a2f25d0b641a0cb2129012bd959fcedb8557cd9490a27829fdd4661d61f3f0",
+              "bytes": 21059,
+              "availability": "ignored local evidence",
+              "source_session_line": 77552
+            }
+          ],
+          "execution_evidence_limit": "Matching completed tool output retained; this tool call emitted only child output text, so an explicit shell exit code was not serialized in the retained output."
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77549,
+          "timestamp": "2026-11-15T08:18:04.633Z",
+          "raw_line_sha256": "d3dd9bfdc9970d1802ac8655dfc8425a8ba1e5f47fd854b621d2880f2bbe7397",
+          "call_id": "call_464062924d294e93a884f301118d5150"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-inventory-read.call.jsonl",
+        "sha256": "d3dd9bfdc9970d1802ac8655dfc8425a8ba1e5f47fd854b621d2880f2bbe7397",
+        "bytes": 1933,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-inventory-read.command.txt",
+        "sha256": "6e7dbafcc63db5353d1aadeeef9360183ec86ba735de7667a35b55788654e731",
+        "bytes": 1134,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-inventory-read.py.source",
+        "sha256": "6f15c1ff90b14a1ed7a9828f6ae678e06322a6edc991fcef10566422e6a9f72f",
+        "bytes": 1103,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record10-capture-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record10-capture-20261115.py.txt",
+      "sha256": "cca80df7def6c3105feecd925c8f3ddccc4a5c9eec3f7cb07ca2cf7bef681a9b",
+      "bytes": 4162,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Capture exact chemical-ID authority responses and local slots/MIM rows, preserving any explicit earlier-capture reuse.",
+      "inputs": [
+        "selected target/owner/context YAML scoped in source",
+        "packaged MIM index",
+        "exact public OLS term URLs"
+      ],
+      "outputs": [
+        "timestamped chemical-identity evidence directory: slots, MIM projection, authority raw responses and capture catalog"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:18:38.684Z",
+          "call_id": "call_5673b034fbfa47878d2b73e0f6270c56",
+          "exit": 0,
+          "recorded_shell_exit_codes": [
+            0
+          ],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-capture.output-line77570.jsonl",
+              "sha256": "b14827d325c2d55a9569f8a7d60dab74c4830f4a107075e53d4b68075e6c1248",
+              "bytes": 42412,
+              "availability": "ignored local evidence",
+              "source_session_line": 77570
+            }
+          ],
+          "execution_evidence_limit": null
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77567,
+          "timestamp": "2026-11-15T08:18:38.684Z",
+          "raw_line_sha256": "4637435da73863613a47ef02c9e846c232d2fcc42a583e09895277a2e82bd6aa",
+          "call_id": "call_5673b034fbfa47878d2b73e0f6270c56"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-capture.call.jsonl",
+        "sha256": "4637435da73863613a47ef02c9e846c232d2fcc42a583e09895277a2e82bd6aa",
+        "bytes": 5228,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-capture.command.txt",
+        "sha256": "a3ee22f4bd1a345d284390468d39a08b6f336f0a01e0d7985b00efb2422f71f8",
+        "bytes": 4193,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-capture.py.source",
+        "sha256": "cca80df7def6c3105feecd925c8f3ddccc4a5c9eec3f7cb07ca2cf7bef681a9b",
+        "bytes": 4162,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record10-projection-read-1-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record10-projection-read-1-20261115.py.txt",
+      "sha256": "f4f171e64c730762bddb8fedab72f8017d82a25774ad76e77a5e2f03b3017d50",
+      "bytes": 819,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:20:07.516Z",
+          "call_id": "call_abb8d95715b543e2b67d60ba3907e9b6",
+          "exit": 0,
+          "recorded_shell_exit_codes": [
+            0
+          ],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-1.output-line77603.jsonl",
+              "sha256": "7e95fb5d6f91b0d0a38fbb6dc5f679f191ee7ec14c48719a2536149d6583a6ac",
+              "bytes": 35538,
+              "availability": "ignored local evidence",
+              "source_session_line": 77603
+            }
+          ],
+          "execution_evidence_limit": null
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77600,
+          "timestamp": "2026-11-15T08:20:07.516Z",
+          "raw_line_sha256": "f660e041896020eeb5f73b3309e2822badfcd7646ebf0af089d22af26d66a6b2",
+          "call_id": "call_abb8d95715b543e2b67d60ba3907e9b6"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-1.call.jsonl",
+        "sha256": "f660e041896020eeb5f73b3309e2822badfcd7646ebf0af089d22af26d66a6b2",
+        "bytes": 1434,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-1.command.txt",
+        "sha256": "0b6d3fd7d7277e9f85771a8ed6664ee17a481c405afe6f9fcad767daa5ff6ec5",
+        "bytes": 850,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-1.py.source",
+        "sha256": "f4f171e64c730762bddb8fedab72f8017d82a25774ad76e77a5e2f03b3017d50",
+        "bytes": 819,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record10-projection-read-2-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record10-projection-read-2-20261115.py.txt",
+      "sha256": "ac3f3209ae07351105a9050449cf4f81a5518846025bd72c118decf7553feb32",
+      "bytes": 584,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:20:13.784Z",
+          "call_id": "call_724f8cca877d4e5fa997141be13a987b",
+          "exit": 0,
+          "recorded_shell_exit_codes": [
+            0
+          ],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-2.output-line77612.jsonl",
+              "sha256": "6a1ea1e805250c645f40622917a4f899df29ff328d09675eecc2e2b76c04974a",
+              "bytes": 9098,
+              "availability": "ignored local evidence",
+              "source_session_line": 77612
+            }
+          ],
+          "execution_evidence_limit": null
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77609,
+          "timestamp": "2026-11-15T08:20:13.784Z",
+          "raw_line_sha256": "8941064d3d76e1fa1c78db97da361d1d4cc2dd9ca45503c8095f2de18d1da2e8",
+          "call_id": "call_724f8cca877d4e5fa997141be13a987b"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-2.call.jsonl",
+        "sha256": "8941064d3d76e1fa1c78db97da361d1d4cc2dd9ca45503c8095f2de18d1da2e8",
+        "bytes": 1193,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-2.command.txt",
+        "sha256": "b62eadef5c920228a80ae2c999529c90e5b42539c4cc4d35a45d12031b52985e",
+        "bytes": 615,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-projection-read-2.py.source",
+        "sha256": "ac3f3209ae07351105a9050449cf4f81a5518846025bd72c118decf7553feb32",
+        "bytes": 584,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record10-primary-text-read-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record10-primary-text-read-20261115.py.txt",
+      "sha256": "a8388b2e36dd77d076735388b695662b8d09c2b20fbb5675595d805ce1d99d78",
+      "bytes": 226,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Bounded chemical audit inspection/probe used to read local identifiers, exact authority terms or captured scientific projections.",
+      "inputs": [
+        "exact local files or public term URL visible in source"
+      ],
+      "outputs": [
+        "actual tool stdout; no invented durable response or shell exit status"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:20:21.725Z",
+          "call_id": "call_3705cf30c8254def95e9ac8ac98dfa00",
+          "exit": 0,
+          "recorded_shell_exit_codes": [
+            0
+          ],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-primary-text-read.output-line77624.jsonl",
+              "sha256": "2e1a90652f8c81800e5f86fd8a72ed312ee8136432cce367eaea3e47b17f734c",
+              "bytes": 1673,
+              "availability": "ignored local evidence",
+              "source_session_line": 77624
+            }
+          ],
+          "execution_evidence_limit": null
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77621,
+          "timestamp": "2026-11-15T08:20:21.725Z",
+          "raw_line_sha256": "83b8c94ce51ab5eb1b6a9696c7977aef1911a7a5b4cc904a606a5e05d7951471",
+          "call_id": "call_3705cf30c8254def95e9ac8ac98dfa00"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-primary-text-read.call.jsonl",
+        "sha256": "83b8c94ce51ab5eb1b6a9696c7977aef1911a7a5b4cc904a606a5e05d7951471",
+        "bytes": 831,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-primary-text-read.command.txt",
+        "sha256": "a06bd77d4752160c412de78c0faeb58f6649d09d4bb73822a13730c404de5d76",
+        "bytes": 257,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-primary-text-read.py.source",
+        "sha256": "a8388b2e36dd77d076735388b695662b8d09c2b20fbb5675595d805ce1d99d78",
+        "bytes": 226,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    },
+    {
+      "version_id": "inline-tsb-record10-assessment-20261115",
+      "archive_path": "scripts/batch079_provenance/history/inline-tsb-record10-assessment-20261115.py.txt",
+      "sha256": "80d1ae9b64e153cce6f583092643c892cc173b75426e0eaca33646d91d3c8dc5",
+      "bytes": 9826,
+      "original_runtime_path": "<stdin>",
+      "original_execution_mode": ".venv/bin/python -B - <<'PY'",
+      "purpose": "Write the manually reviewed bounded chemical-identity assessment and direct-pin receipt from captured evidence.",
+      "inputs": [
+        "chemical input-slot inventory",
+        "exact authority captures and projections",
+        "packaged MIM rows",
+        "explicit manually reviewed per-ID interpretation"
+      ],
+      "outputs": [
+        "chemical-identity-assessment.json",
+        "direct-pin or audit receipt"
+      ],
+      "task_date": "2026-11-15",
+      "recovery_method": "literal_quoted_heredoc_extraction_from_recorded_JSON_command_string",
+      "execution_status": "executed; matching tool-output events retained",
+      "recorded_executions": [
+        {
+          "invocation_timestamp": "2026-11-15T08:21:04.249Z",
+          "call_id": "call_2574be5b53c446849461e5f6904eb6ba",
+          "exit": 0,
+          "recorded_shell_exit_codes": [
+            0
+          ],
+          "output_event_pins": [
+            {
+              "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-assessment.output-line77631.jsonl",
+              "sha256": "7c9182b62cc40c994cf2471f23646f7da0345b00f7d1928bbb63a87f4ff63933",
+              "bytes": 1520,
+              "availability": "ignored local evidence",
+              "source_session_line": 77631
+            }
+          ],
+          "execution_evidence_limit": null
+        }
+      ],
+      "source_events": [
+        {
+          "source_session_id": "01a15d2b-fd05-7bb0-995e-1219e1fbed6e",
+          "session_line": 77628,
+          "timestamp": "2026-11-15T08:21:04.249Z",
+          "raw_line_sha256": "55703faa7b3c9dca302406d740c7ca14ea52a67f10b7bfb5e94d2272e24c2a42",
+          "call_id": "call_2574be5b53c446849461e5f6904eb6ba"
+        }
+      ],
+      "source_call": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-assessment.call.jsonl",
+        "sha256": "55703faa7b3c9dca302406d740c7ca14ea52a67f10b7bfb5e94d2272e24c2a42",
+        "bytes": 10733,
+        "availability": "ignored local evidence"
+      },
+      "decoded_command": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-assessment.command.txt",
+        "sha256": "fe88bcd2ff6b30018e4222a6917731f08a76600d955a28c2d7dbef6015b189b4",
+        "bytes": 9857,
+        "availability": "ignored local evidence"
+      },
+      "literal_source": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/record10-assessment.py.source",
+        "sha256": "80d1ae9b64e153cce6f583092643c892cc173b75426e0eaca33646d91d3c8dc5",
+        "bytes": 9826,
+        "availability": "ignored local evidence"
+      },
+      "source_inventory": {
+        "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+        "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+        "bytes": 33310,
+        "availability": "ignored local evidence"
+      },
+      "code_execution_during_recovery": false
+    }
+  ],
+  "recovery_proof": {
+    "literal_extraction": "Decoded only the single non-interpolated JavaScript template literal, emulated JSON-string/Python-literal round trip, AST-parsed recovered source without execution.",
+    "builder_noalias_exact_successor": true,
+    "runner_ruff_black_pathhome_exact_successor": true,
+    "inventory_black_exact_successor": true,
+    "black_version": "26.1.0",
+    "black_mode": {
+      "line_length": 100,
+      "target_version": "py310"
+    },
+    "ruff_version": "ruff 0.14.13",
+    "ruff_static_stdin_argv": [
+      ".venv/bin/ruff",
+      "check",
+      "--fix",
+      "--no-cache",
+      "--stdin-filename",
+      "scripts/batch079_run_check.py",
+      "-"
+    ],
+    "ruff_static_stdin_exit": 0,
+    "ruff_static_stderr": "Found 1 error (1 fixed, 0 remaining).\n",
+    "current_helper_execution": false,
+    "recovered_helper_execution": false,
+    "record10_inline_amendment_bodies": "Two exact decoded quoted-heredoc bodies; AST parsed only. Input and output draft digests are corroborated by preserved draft files and actual tool output events.",
+    "inline_source_extraction": "Independently decoded all18 original JSON cmd literals and quoted Python heredoc bodies; exact archived bytes, call raw-line hashes and output-event hashes match. AST parsed only; no source executed.",
+    "record08_v1": "Exact creation/static-derivation/output/v2-launch events distinguish retained unexecuted v1 from executed v2."
+  },
+  "ignored_recovery_manifest": {
+    "path": ".temp/batch079-scientific-20261114/helper-history/recovery-manifest-20261115.json",
+    "sha256": "cc1023b04ebef350a3561bb73b0dc85328c187b6d9f1c9207ab937fc6f7702c2",
+    "bytes": 11452,
+    "availability": "ignored local evidence"
+  },
+  "ignored_source_excerpts": {
+    "path": ".temp/batch079-scientific-20261114/helper-history/source-session-excerpts-20261115.json",
+    "sha256": "b9100ee423537fdb3cfac569321386a30ec4f00a266e6848ae5799164f84f144",
+    "bytes": 62171,
+    "availability": "ignored local evidence"
+  },
+  "source_session_id": "01a15303-7ab1-74c3-9bff-5bed477aa326",
+  "limits": [
+    "Historical .py.txt archives are source data; do not execute or reformat them. Current scripts/batch079*.py are separate linted copies.",
+    "Three early sources are literal creation-payload extractions. No contemporaneous original runtime digest was retained; exact successor comparisons and original receipts provide separate supporting evidence.",
+    "Two intermediate runner states are deterministic Ruff/Black reconstructions, not directly captured old runtime files.",
+    "Full session logs and ignored source/command artifacts are not published. Only exact helper sources and task-specific evidence metadata are included.",
+    "The pre-Path.home runner retains a historical workstation PATH literal as exact non-executable source data.",
+    "The archive inventories the known retained helper versions, recovered executed early states, two record10 inline amendments and eighteen task-scoped chemical audit heredocs. Read-only shell browsing, unrelated session context and packaging/recovery commands are not a general command-transcript archive. Some historical outputs omitted an explicit process exit code; those entries retain null and their actual completion events."
+  ],
+  "verification": {
+    "all_archive_source_hashes_checked": true,
+    "new_or_recovered_helpers_executed": false,
+    "scientific_review_pairs_modified": false
+  },
+  "updated_at": "2026-11-15T08:36:58.747823+00:00",
+  "argv_convention": "argv_display is display-normalized metadata: $CHECKOUT replaces the historical absolute checkout path and $UV replaces the historical absolute uv executable. The separately hash-pinned original receipt is authoritative for exact raw argv; no normalized display is claimed to be the original command string.",
+  "inline_source_inventory": {
+    "path": ".temp/batch079-scientific-20261114/helper-history/tsb-inline-20261115/manifest.json",
+    "sha256": "1e7d990fccfc4fa3d4c2eb1c4773173f59aabadec09d4187fed99806033c0810",
+    "bytes": 33310,
+    "availability": "ignored local evidence"
+  },
+  "status": "frozen_source_archive_with_explicit_evidence_limits",
+  "archive_counts": {
+    "source_files": 33,
+    "early_recovered": 5,
+    "retained_pre_format": 8,
+    "record10_inline_amendments": 2,
+    "chemical_audit_inline": 18
+  }
+}

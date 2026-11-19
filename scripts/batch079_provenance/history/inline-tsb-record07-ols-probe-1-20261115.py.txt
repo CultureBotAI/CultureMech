@@ -1,0 +1,6 @@
+import urllib.request,json
+u='https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806'
+try:
+ r=urllib.request.urlopen(u,timeout=25);j=json.load(r)
+ for t in j.get('_embedded',{}).get('terms',[]):print(json.dumps({k:t.get(k) for k in ['obo_id','label','description','is_obsolete','annotation','synonyms']},indent=2))
+except Exception as e:print(type(e).__name__,str(e))
