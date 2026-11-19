@@ -1,0 +1,118 @@
+"""Read-only source/runtime proof for archived CultureMech v3 replay, #687, 2026-11-19.
+Inputs are supplied archive, extracted tree, independent pins and Git object database.
+Output is JSON to stdout only; this script never imports or executes archive code.
+"""
+import argparse
+import ast
+import hashlib
+import importlib.metadata
+import importlib.util
+import json
+import os
+import platform
+import stat
+import subprocess
+import sys
+import tarfile
+from pathlib import Path
+
+p = argparse.ArgumentParser()
+p.add_argument("--checkout", type=Path, required=True)
+p.add_argument("--candidate", type=Path, required=True)
+p.add_argument("--commit", required=True)
+p.add_argument("--manifest-sha256", required=True)
+p.add_argument("--archive-sha256", required=True)
+a = p.parse_args()
+producer = a.candidate / "producer"
+def digest(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+archive = a.candidate / "producer-source.tar.gz"
+manifest_path = a.candidate / "bundle/manifest.json"
+assert digest(archive) == a.archive_sha256, "archive independent SHA mismatch"
+assert digest(manifest_path) == a.manifest_sha256, "manifest independent SHA mismatch"
+manifest = json.loads(manifest_path.read_text())
+assert manifest["git"]["commit"] == a.commit
+argv = ["git", "ls-tree", "-r", "-z", a.commit]
+git_run = subprocess.run(argv, cwd=a.checkout, capture_output=True, check=True)
+expected = {}
+for row in git_run.stdout.split(b"\0"):
+    if not row:
+        continue
+    metadata, raw_path = row.split(b"\t", 1)
+    mode, kind, oid = metadata.decode().split()
+    assert kind == "blob", (kind, raw_path)
+    expected[raw_path.decode()] = (mode, oid)
+def blob_oid(data):
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+archive_members = set()
+mismatches = []
+with tarfile.open(archive, "r:gz") as tar:
+    for member in tar:
+        if member.isdir():
+            continue
+        name = member.name.removeprefix("./")
+        if name.startswith("producer/"):
+            name = name[len("producer/"):]
+        archive_members.add(name)
+        if name not in expected:
+            mismatches.append({"path": name, "problem": "archive path not in Git tree"})
+            continue
+        mode, oid = expected[name]
+        data = member.linkname.encode() if member.issym() else tar.extractfile(member).read()
+        if blob_oid(data) != oid:
+            mismatches.append({"path": name, "problem": "archive content differs from Git blob"})
+        path = producer / name
+        if not os.path.lexists(path):
+            mismatches.append({"path": name, "problem": "extracted member missing"})
+            continue
+        local = os.readlink(path).encode() if path.is_symlink() else path.read_bytes()
+        if data != local:
+            mismatches.append({"path": name, "problem": "extracted content differs from archive"})
+        actual_mode = "120000" if path.is_symlink() else ("100755" if path.stat().st_mode & stat.S_IXUSR else "100644")
+        if actual_mode != mode:
+            mismatches.append({"path": name, "problem": "extracted mode differs", "expected": mode, "actual": actual_mode})
+missing_archive = sorted(set(expected) - archive_members)
+actual_files = set()
+for current, dirs, files in os.walk(producer):
+    for name in list(dirs):
+        path = Path(current) / name
+        if path.is_symlink():
+            actual_files.add(path.relative_to(producer).as_posix())
+            dirs.remove(name)
+    for name in files:
+        actual_files.add((Path(current) / name).relative_to(producer).as_posix())
+extra_extracted = sorted(actual_files - archive_members)
+script = producer / "scripts/ingredient_release_bundle.py"
+module = ast.parse(script.read_text())
+imports = sorted({n.names[0].name.split(".")[0] if isinstance(n, ast.Import) else n.module.split(".")[0] for n in module.body if isinstance(n, (ast.Import, ast.ImportFrom))})
+packages = {name: importlib.metadata.version(name) for name in manifest["environment"]["packages"]}
+lock = producer / "uv.lock"
+assert digest(lock) == manifest["dependencies"]["uv.lock"]["sha256"]
+result = {
+    "status": "PASS" if not mismatches and not missing_archive and not extra_extracted else "FAIL",
+    "producer_commit": a.commit,
+    "git_tree_argv": argv, "git_tree_cwd": str(a.checkout), "git_tree_exit": git_run.returncode,
+    "git_tree_stdout_sha256": hashlib.sha256(git_run.stdout).hexdigest(),
+    "git_tree_stderr": git_run.stderr.decode(),
+    "git_blob_count": len(expected), "archive_file_count": len(archive_members),
+    "extracted_file_count": len(actual_files),
+    "missing_archive_members": missing_archive, "extra_extracted_files": extra_extracted,
+    "mismatches": mismatches,
+    "manifest": {"path": str(manifest_path), "sha256": digest(manifest_path)},
+    "archive": {"path": str(archive), "sha256": digest(archive)},
+    "producer_lock": {"path": str(lock), "sha256": digest(lock)},
+    "producer_script": {"path": str(script), "sha256": digest(script)},
+    "recorded_environment": manifest["environment"],
+    "replay_environment": {"python": platform.python_version(), "executable": sys.executable, "packages": packages},
+    "declared_packages_match": packages == manifest["environment"]["packages"],
+    "python_minor_matches": platform.python_version().split(".")[:2] == manifest["environment"]["python"].split(".")[:2],
+    "python_patch_matches": platform.python_version() == manifest["environment"]["python"],
+    "module_level_import_origins": {name: str(importlib.util.find_spec(name).origin) for name in imports},
+    "qualification": "Verifier path is stdlib-only; build-only local imports are not executed. Python patch difference is reported, not erased. Archive, extraction and Git blobs checked without executing archived code.",
+}
+print(json.dumps(result, indent=2, sort_keys=True))
+raise SystemExit(0 if result["status"] == "PASS" and result["declared_packages_match"] and result["python_minor_matches"] else 1)

@@ -186,10 +186,10 @@ with the export rather than flattening source-scoped assertions into global
 name aliases. Do not promote withheld rows to supported mappings.
 
 KGM already documents its immutable-commit workflow in
-[MIM_REVIEWED_RELEASE.md](https://github.com/Knowledge-Graph-Hub/kg-microbe/blob/main/docs/MIM_REVIEWED_RELEASE.md)
+[MIM_REVIEWED_RELEASE.md](https://github.com/Knowledge-Graph-Hub/kg-microbe/blob/master/docs/MIM_REVIEWED_RELEASE.md)
 and scoped evidence in
-[INGREDIENT_BUNDLE.md](https://github.com/Knowledge-Graph-Hub/kg-microbe/blob/main/docs/INGREDIENT_BUNDLE.md).
-Read those files at the selected **KGM revision**; links to `main` are navigation,
+[INGREDIENT_BUNDLE.md](https://github.com/Knowledge-Graph-Hub/kg-microbe/blob/master/docs/INGREDIENT_BUNDLE.md).
+Read those files at the selected **KGM revision**; links to `master` are navigation,
 never release pins. Do not copy a historical example SHA or artifact digest into
 a new release. Its candidate command has this shape:
 
@@ -221,3 +221,20 @@ records, independently pinned consumer admission, and exact consumed-input
 receipts through graph validation. Each Mech defines its own scientific scope
 and identity policy. This first adapter does not create a universal resolver,
 automatically authorize releases, or replace KGM's existing transform contracts.
+
+## Accepted v3 integration reconciliation
+
+The accepted v3 source intake and the active stable-ID campaign are separate
+inputs. The [#687 handoff report](../reports/integration_handoff_687/README.md)
+records the independently accepted producer and native reviewed-intake pins,
+separate positive/context/held/withheld accounting, and remaining release gates.
+Do not substitute the transport package manifest for `reviewed-intake.json`.
+
+Before final KGM admission, the native source review must consume the accepted
+v3 intake and selected current KGM source evidence, and bind that exact evidence
+in its export `manifest.inputs`. An unbound sidecar, an earlier campaign's CM
+subset, or a matching success label cannot establish this reconciliation.
+[KGM #1879](https://github.com/Knowledge-Graph-Hub/kg-microbe/issues/1879) owns this
+gate in the existing dependent #1833 consumer. Preserve the running campaign;
+prepare a native-bound successor only after its verification. Inventory
+inclusion never independently grants a positive medium-presence or growth edge.
