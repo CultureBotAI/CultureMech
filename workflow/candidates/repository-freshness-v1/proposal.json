@@ -1,0 +1,48 @@
+{
+  "activation_requirements": [
+    "canonical merge and protected release proof",
+    "consumer review and merge",
+    "approved immutable boundary adoption record",
+    "verified cycle boundary with exact predecessor closure",
+    "reviewed deployment for any live claw control checkout"
+  ],
+  "adopted": false,
+  "authority": "proposal_only",
+  "canonical_source": {
+    "files": {
+      "src/kg_microbe_skills/canonical/repository-freshness.md": "569c6dc3641ff8014dee1f8b2de76b18b05208911ca1fc95de49f0cc4c2688ab",
+      "src/kg_microbe_workflows/schema/repository-freshness-v1.yaml": "19f3bd1c4bf051e7a6564bd9ecdfb82ebac7b1f357c9640b958f9575d0e9974d",
+      "src/kg_microbe_workflows/templates/repository-freshness-v1.yaml": "1066a37a7d6cb3511ebe24403b61478f55c03a33f3a1d83b9131b0d20f11c54c"
+    },
+    "released": false,
+    "repository": "CultureBotAI/culturebotai-claw",
+    "reviewed_source_commit": "c2765633a20935c1940020bbd4f7725a1f0cfef3"
+  },
+  "fleet_provenance": {
+    "loader_path": "src/kg_microbe_fleet/__init__.py",
+    "loader_sha256": "8280395a8c3542f3c7c2d1b59ab0cf5790680b6d2124679477fce8073b70a589",
+    "manifest_path": "src/kg_microbe_fleet/fleet.yaml",
+    "manifest_sha256": "05eda7b3ce544c4349fd35c5340ef788fcffbc295cd54dcb043fd5b91643a360"
+  },
+  "github_repository": "CultureBotAI/CultureMech",
+  "installed": false,
+  "observed_base": {
+    "branch": "prepare/repository-freshness-v1-20261110",
+    "head": "2c9ac2a14cc1fb0808529225b378b5ce8b24f2b8",
+    "preserved": {
+      "scripts/.vendored_canon_ref": "0b149759f0cae8c48e6175432125374296fbdf27c9d23d0868b7e4a056780ad7",
+      "workflow/mech-workflow.yaml": "89a4d9432af485456ae05cfe758f195ccc5501af989d236a7d00882480b4f864",
+      "workflow/parent/mech-cycle.yaml": "32d499de747333e42ed45d40940bfa06c60f85710814155e0fad5f7c4d2fee82",
+      "workflow/parent/workflow.yaml": "66194b3aba4540e9ee7adf91bc1fd7fb597aede130ef1603031a92002152e1d8"
+    }
+  },
+  "repository_key": "culturemech",
+  "runtime_requirements": [
+    "pre_goal_before_inventory",
+    "post_merge_before_closure",
+    "no_change_goals",
+    "agy_and_codex_same_runner"
+  ],
+  "schema_version": "1.0.0",
+  "state": "blocked_on_canonical_release"
+}
